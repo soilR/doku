@@ -1,0 +1,200 @@
+# Karten erstellen in R 🌍
+
+*Der Beitrag wurde das letzte mal am `r format(Sys.time(), '%d %B, %Y')` editiert*
+
+```{r include=FALSE}
+
+knitr::opts_chunk$set(fig.align = "center", collapse = T, echo = TRUE, message = FALSE, warning = FALSE)
+
+# With collapse = TRUE the Source and output lived together happily ever in knitr.
+# https://github.com/yihui/knitr-examples/blob/master/039-merge.md
+
+# loading multiple packages at once with `pacman`
+# create a vector name
+packages <- c("tidyverse", "markdown", "knitr", "matrixStats", "patchwork", "lubridate", "plotly",  "naniar", "stlplus", "gt", "dygraphs", "htmltools", "zoo", "xts", "ggpmisc", "forcats", "RColorBrewer", "Kendall", "rstudioapi", "multcompView", "plyr", "bookdown", "janitor", "rstatix", "ggpubr", "moments", "tweetrmd", "ggthemes", "hexbin", "ggridges", "ggstream", "openair", "treemapify", "MBA", "akima", "PlotSvalbard", "sf", "rnaturalearth", "rnaturalearthdata", "rgeos", "ggspatial")
+ 
+# Load the packages vector 
+pacman::p_load(packages, character.only = T)
+
+
+my_theme <- theme(
+  panel.background = element_rect(fill = "white", color = "black"),
+  panel.grid.major = element_blank(), 
+  panel.grid.minor = element_blank(), 
+  panel.border = element_blank())
+
+```
+
+
+
+R beinhaltet zahlreiche Funktionen um räumliche Informationen darzustellen und zu analysieren. Aktuell sind > 180 packages auf CRAN zu finden die sich explizit mit der räumlichen Datenanalyse beschäftigen, Tendenz steigend. Eine Zusammenfassung ist [HIER](https://cran.r-project.org/web/views/Spatial.html) zu finden, wobei die wichtigsten sind:
+
+* `rgdal` um Koordinaten zu transformieren
+* `sp` und `sf` für Vektordatenanalyse
+* `raster` und `rastervis` für fortgeschrittene Analyse von Rasterdaten
+* `spatstat` für Mustererkennung
+
+🔍 Dieses Kapitel basiert auf den folgenden Quellen:
+
+* [Sebastian Sauer](https://sebastiansauer.github.io/unemp-map/)
+* [FU Berlin](https://www.geo.fu-berlin.de/en/v/soga/Introduction-to-R/Spatial-Data/index.html)
+* [r-spatial](https://www.r-spatial.org/r/2018/10/25/ggplot2-sf-2.html)
+* [slcladal](https://slcladal.github.io/maps.html)
+
+## Datenquellen
+
+Für Deutschland ist die wohl wichtigste Quelle das [Bundesamt für Kartographie und Geodäsie](https://www.bkg.bund.de/DE/Home/home.html). Die Verwaltungsgebiete können als kostenfreies *shape* Format [hier](https://gdz.bkg.bund.de/index.php/default/open-data/verwaltungsgebiete-historisch-vg-hist.html) heruntergeladen werden. Shape Dateien sind das gängige Format für Geodaten. 
+
+
+## Packages
+
+### `rgdal` package
+
+Beinhaltet wichtige Funktionen um Koordinaten zu transformieren, bspw. von Geographische Länge (longitude) und Breite (latitude) zu kartesischen Koordinaten wie UTM mit dem Referenzsystem ETRS89 für Deutschland. 
+
+
+## Übungen
+
+### Erstelle eine Karte der Bundesrepublik
+
+Als erstes Laden wir unsere [Geodaten](https://gdz.bkg.bund.de/index.php/default/digitale-geodaten/verwaltungsgebiete/verwaltungsgebiete-1-2-500-000-stand-01-01-vg2500.html) der Verwaltungsgebiete im Maßstab 1:2.500.000  herunter und extrahieren sie in unseren Projektordner. "Der Datensatz umfasst sämtliche Verwaltungseinheiten der hierarchischen Verwaltungsebenen vom Staat bis zu den Kreisen mit ihren Grenzen, dem Regionalschlüssel und dem Namen der Verwaltungseinheit."
+
+```{r}
+
+# Als erstes müssen die wichtigen packages geladen werden
+library(sf)
+library(tidyverse)
+
+# Laden der Geodaten und als Objekt speichern mit `st_read`
+map_state <- sf::st_read("data/vg2500_01-01.utm32s.shape/vg2500/vg2500_sta.shp")
+
+# Ein Riesenvorteil des sf packages ist die Kompatibilität mit dem tidyverse. Daher hat man alle Funktionalitäten im Zusammenhang mit ggplot und auch m Daten zu transformieren oder zu filtern
+map_state %>%
+  ggplot() +
+  geom_sf()
+
+```
+
+Das sieht aber merkwürdig aus?! Zeile 1 in eurem erstellten Objekt steht für das Seeeinzugsgebiet Deutschlands. Wir können die erste Zeile mit `slice` und dem pipe operator `%>%` einfach entfernen:
+
+```{r}
+
+p1 <- map_state %>%
+  slice(2:3) %>%  # Zeile 1 codiert das Seeeinzugsgebiet. Mit `slice` entfernt man die erste Zeile in dem man bestätigt Zeile 2 bis 3 zu behalten
+  ggplot() +
+  geom_sf()
+
+p1
+
+```
+
+Sehr schön 😄 Sylt ist wieder zu erkennen! Falls die Farbe nicht gefällt kann man das `theme` einfach anpassen. 
+
+```{r}
+
+map_state %>%
+  slice(2:3) %>%
+  ggplot() +
+  geom_sf(fill = "grey40") +
+  theme_void()
+
+```
+
+Falls uns aber nicht die Bundesgrenzen interessieren sondern die Landes- oder sogar Kreisgrenzen, so können wir diese aus unseren Daten ebenfalls einlesen. Die Codierung der Datei lautet:
+
+* Land (`lan`)
+* Regierungsbezirk (`rbz`)
+* Kreis (`krs`)
+
+```{r}
+
+# Einlesen der Daten
+map_federal <- sf::st_read("data/vg2500_01-01.utm32s.shape/vg2500/vg2500_lan.shp")
+
+# Darstellen der Landesgrenzen
+p2 <- map_federal %>%
+  ggplot() + 
+  geom_sf()
+
+p2
+
+```
+
+```{r}
+
+# Einlesen der Daten
+map_district <- sf::st_read("data/vg2500_01-01.utm32s.shape/vg2500/vg2500_krs.shp")
+
+# Darstellen der Landesgrenzen
+p3 <- map_district %>%
+  ggplot() + 
+  geom_sf()
+
+p3
+
+```
+
+Es ist Zeit zu feiern! Wir haben unsere erste vektorbasierte Karte mit R erstellt  👍
+
+Man kann weiterhin einzelne Verwaltungsbezirke auswählen und darstellen. Die Objektstruktur eines `sf` Objektes ermöglicht dies.
+
+```{r}
+
+# Stelle die ersten 5 Zeilen des Objektes map_district dar
+head(map_district, 5)
+
+```
+
+In der Spalte **GEN** sind die Namen der Bezirke codiert wohingegen die Geometrien (Formen) in der Spalte daneben gelistet sind. 
+
+```{r}
+
+map_district %>%
+  filter(GEN == "Berlin") %>% # mit filter() durchsuchen wir die Spalte GEN nach dem Wort Berlin
+  ggplot() +
+  labs(
+    title = "Berlin"
+  ) +
+  geom_sf()
+
+```
+
+### Erstelle eine Weltkarte
+
+Shape Daten der Ländergrenzen sind im package `rnaturalearth` enthalten. 
+
+```{r}
+
+# Laden der Daten und speichern als Objekt map_world
+map_world <- rnaturalearth::ne_countries(scale = "medium", returnclass = "sf")
+  
+map_world %>%
+  ggplot() +
+  geom_sf(fill = "white", color = "black") +
+  labs(
+    title = "World map", 
+    subtitle = paste0("(", length(unique(map_world$admin)), " countries)"), # Die Funktion length() zählt die Länge des Vektors und damit die Anzahl der Länder
+    x = "Longitude",
+    y = "Latitude"
+    )
+
+```
+
+### Manuelles Hinzufügen von Punkten
+
+Es ist möglich Punktinformationen in die Karte zu übernehmen. `geom_sf` verhält sich dabei wie jedes geom das verwendet wird. Dazu ist es am einfachsten einen neuen data.frame zu erstellen.
+
+```{r eval = F}
+
+sampling_points <- tibble::tribble(
+  ~site, ~lat, ~lon,
+  "Lavesum", 51.814589, 7.216471
+)
+
+head(sampling_points)
+str(sampling_points)
+
+map_germany +
+  geom_point(data = sampling_points, mapping = aes(x = lon, y = lat), color = "red", size = 2)
+
+```

@@ -1,0 +1,295 @@
+# Blogdown
+
+*Der Beitrag wurde das letzte mal am `r format(Sys.time(), '%d %B, %Y')` editiert*
+
+```{r include=FALSE}
+
+knitr::opts_chunk$set(fig.align = "center", collapse = T, echo = TRUE, message = FALSE, warning = FALSE)
+
+# With collapse = TRUE the Source and output lived together happily ever in knitr.
+# https://github.com/yihui/knitr-examples/blob/master/039-merge.md
+
+# loading multiple packages at once with `pacman`
+# create a vector name
+packages <- c("tidyverse", "markdown", "knitr", "matrixStats", "patchwork", "lubridate", "plotly",  "naniar", "stlplus", "gt", "dygraphs", "htmltools", "zoo", "xts", "ggpmisc", "forcats", "RColorBrewer", "Kendall", "rstudioapi", "multcompView", "plyr", "bookdown", "janitor", "rstatix", "ggpubr", "moments", "tweetrmd", "ggthemes", "hexbin", "ggridges", "ggstream", "openair", "treemapify", "MBA", "akima", "PlotSvalbard", "sf", "rnaturalearth", "rnaturalearthdata", "rgeos", "ggspatial", "factoextra", "FactoMineR")
+ 
+# Load the packages vector 
+pacman::p_load(packages, character.only = T)
+
+
+my_theme <- theme(
+  panel.background = element_rect(fill = "white", color = "black"),
+  panel.grid.major = element_blank(), 
+  panel.grid.minor = element_blank(), 
+  panel.border = element_blank())
+
+```
+
+# Setup a homepage with Hugo and blogdown
+
+* A great read is from the developer of blogdown (Allison Horst) [How
+    to build a Hugo page with
+    blogdown](https://alison.rbind.io/post/new-year-new-blogdown/#pre-requisites)
+* Pre-requisites you need
+    -   R and RStudio
+    -   GitHub [What is Github](https://happygitwithr.com/).
+
+## Github
+
+-   Git is a version control system.
+-   Its original purpose was to help groups of developers work
+    collaboratively on big software projects. Git manages the evolution
+    of a set of files -- called a **repository** -- in a sane, highly
+    structured way (such as "Track Changes" features from Microsoft Word
+    on steroids)
+-   Install git for windows [here](https://gitforwindows.org/)
+    -   NOTE: When asked about "Adjusting your PATH environment", make
+        sure to select "Git from the command line and also from
+        3rd-party software". Otherwise, we believe it is good to accept
+        the defaults.
+    -   Note that RStudio for Windows prefers for Git to be installed
+        below C:/Program Files and this appears to be the default. This
+        implies, for example, that the Git executable on my Windows
+        system is found at C:/Program Files/Git/bin/git.exe. Unless you
+        have specific reasons to otherwise, follow this convention.
+-   Now: Introduce yourself to Git
+
+
+
+-   Use a Git client
+
+    -   "Git" is really just a collection of individual commands you
+        execute in the shell (Appendix A). This interface is not
+        appealing for everyone. Some may prefer to do Git operations via
+        a client with a graphical interface. Git and your Git client are
+        not the same thing, just like R and RStudio are not the same
+        thing. A Git client and an integrated development environment,
+        such as RStudio, are not necessary to use Git or R,
+        respectively.
+    -   Sourcetree is a recommended option
+
+-   The most basic commands are listed below:
+
+    -   pwd (print working directory). Shows directory or "folder" you
+        are currently operating in. This is not necessarily the same as
+        the R working directory you get from getwd().
+
+    -   ls (list files). Shows the files in the current working
+        directory. This is equivalent to looking at the files in your
+        Finder/Explorer/File Manager. Use ls -a to also list hidden
+        files, such as .Rhistory and .git.
+
+    -   cd (change directory). Allows you to navigate through your
+        directories by changing the shell's working directory. You can
+        navigate like so: go to subdirectory foo of current working
+        directory: cd foo go to parent of current working directory: cd
+        .. go to your "home" directory: cd \~ or simply cd go to
+        directory using absolute path, works regardless of your current
+        working directory: cd /home/my_username/Desktop. Windows uses a
+        slightly different syntax with the slashes between the folder
+        names reversed, , e.g. cd C:\Users\MY\_USERNAME\Desktop. - Pro
+        tip 1: Dragging and dropping a file or folder into the terminal
+        window will paste the absolute path into the window. - Pro tip
+        2: Use the tab key to autocomplete unambiguous directory and
+        file names. Hit tab twice to see all ambiguous options.
+
+        -   Use arrow-up and arrow-down to repeat previous commands. Or
+            search for previous commands with CTRL + r.
+
+-   A few Git commands:
+
+    -   git status is the most used git command and informs you of your
+        current branch, any changes or untracked files, and whether you
+        are in sync with your remotes.
+    -   git remote -v lists all remotes. Very useful for making sure git
+        knows about your remote and that the remote address is correct.
+    -   git remote add origin GITHUB_URL adds the remote GITHUB_URL with
+        nickname origin.
+    -   git remote set-url origin GITHUB_URL changes the remote url of
+        origin to GITHUB_URL. This way you can fix typos in the remote
+        url.
+    -   
+
+-   HTTPS remotes look like <https://github.com/><OWNER>/<REPO>.git.
+
+-   SSH remotes look like
+    [git\@github.com](mailto:git@github.com){.email}:<OWNER>/<REPO>.git.
+
+    -   
+
+-   Clone the new GitHub repository to your computer via RStudio
+
+    -   In RStudio, start a new Project:
+    -   File \> New Project \> Version Control \> Git.
+    -   In "Repository URL", paste the URL of your new GitHub
+        repository. It will be something like this
+        <https://github.com/jennybc/myrepo.git>.
+
+-   We create a new Project, with the preferred **"GitHub first, then
+    RStudio"** sequence. Why do we prefer this? Because this method of
+    copying the Project from GitHub to your computer also sets up the
+    local Git repository for immediate pulling and pushing. Under the
+    hood, we are doing git clone.
+
+-   Click "Create Project" to create a new directory, which will be all
+    of these things:
+
+    -   a directory or "folder" on your computer
+    -   a Git repository, linked to a remote GitHub repository
+    -   an RStudio Project
+
+-   **Make local changes, save, commit**
+
+    -   Do this every time you finish a valuable chunk of work, probably
+        many times a day.
+    -   A commit functions like a snapshot of all the files in the repo,
+        at a specific moment.
+    -   Every time you make a commit you must also write a short commit
+        message. Ideally, this conveys the motivation for the change.
+    -   PNG is the "no brainer" format in which to store figures for the
+        web.
+
+## Domain name
+
+-   [See](https://bookdown.org/yihui/blogdown/domain-name.html#domain-name)
+-   While you can use the free subdomain names like those provided by
+    GitHub or Netlify, it may be a better idea to own a domain name of
+    your own. The cost of an apex domain is minimal (typically the
+    yearly cost is about US\$10), and you will enter a much richer world
+    after you purchase a domain name. For example, you are free to point
+    your domain to any web servers, you can create as many subdomain
+    names as you want, and you can even set up your own email accounts
+    using the domain or subdomains. In this appendix, we will explain
+    some basic concepts of domain names, and mention a few (free)
+    services to help you configure your domain name.
+
+## Homepage
+
+-   max. of 5 links in the header
+
+    -   startpage (Biography with images as slideshow, e.g. recent
+        posts)
+
+    -   blog (posts)
+
+    -   redox with widgets
+
+        -   projects (with categories:
+            Distributors/Applications/Interpretation/literature
+        -   timeline/history of EH measurements ()
+
+    -   publications (recent publications)
+
+    -   about
+
+## "wowchemy/starter-academic"
+
+```{r eval = F, echo = T}
+# The whole setup can be condensed into the following part:
+remotes::install_github("rstudio/blogdown")
+usethis::create_project()
+blogdown::new_site(theme = "wowchemy/starter-academic")
+blogdown::serve_site()
+blogdown::new_post(title = "Hi Hugo", 
+                     ext = '.Rmarkdown', 
+                     subdir = "post")
+usethis::use_git()
+usethis::use_github() # requires a GitHub PAT
+```
+
+-   Information are taken from
+    -   Xie, Y., Thomas, A., Presmanes Hill, A., 2018. blogdown -
+        Creating Websites with R Markdown. CRC Press, Boca Raton.
+    -   [Allison Hill
+        blog](https://alison.rbind.io/post/new-year-new-blogdown/#pre-requisites)
+-   Setup a profile for the page with
+    -   `blogdown::config_Rprofile()`this will execute a special setup
+        at every beginning
+
+```{r eval = FALSE, echo = T}
+
+options(
+  # to automatically serve the site on RStudio startup, set this option to TRUE
+  blogdown.serve_site.startup = FALSE,
+  # to disable knitting Rmd files on save, set this option to FALSE
+  blogdown.knit.on_save = FALSE,     #<- change
+  blogdown.author = "Alison Hill",  #<- add
+  blogdown.ext = ".Rmarkdown",      #<- add
+  blogdown.subdir = "post"          #<- add
+)
+
+```
+
+-   `config.toml`= Global settings for the page
+-   `blogdown::serve_site` = LiveReload is implemented and the site is
+    built. You can preview in the viewer pane (the function is analogue
+    to `blogdown::build_site()`)
+    -   This blocks the console, meaning that you will not be able to
+        use your R console once you start this local web server.
+-   publishing directory (by default, public/ ). Your website will
+    be generated to this directory, meaning that you do not need to
+    manually add any files to this directory.
+-   All files are written in R markdown and knitted to a markdown
+    document. Hugo is a static site generator and does not know how to
+    transform **.Rmd** or **.Rmarkdown** documents into **.HTML**
+
+## Where to adjust the Homepage
+
+-   `rstudioapi::navigateToFile("content/authors/admin/_index.md")`
+    Biographie
+    -   Change your profile pic, place it in the same folder and rename
+        it with **avatar.jpg**
+-   `rstudioapi::navigateToFile("config/_default/menus.toml")` Rename or
+    change the order of the top navbar
+
+## Workflow
+
+-   Workflow
+    -   Open the RStudio project for the site.
+    -   Start the Hugo server using blogdown::serve_site() (only once
+        due to the magic of LiveReload).
+    -   View site in the RStudio viewer pane, and open in a new browser
+        window while I work.
+    -   Select existing files to edit using the file pane in RStudio.
+    -   After making changes, save if a plain .md file, or if working
+        with an .Rmd or an .Rmarkdown document, knit to preview! You can
+        now use the Knit button to knit to the correct output format.
+        You can also use the keyboard shortcut Cmd+Shift+K (Mac) or
+        Ctrl+Shift+K (Windows/Linux).
+    -   The console will detect the change (it will print Change
+        detected, rebuilding site.), the viewer pane will update, and
+        (in a few seconds) your local view in your browser will also
+        refresh. Try to avoid hitting the refresh button in your
+        browser.
+    -   When happy with changes, add/commit/push changes to GitHub.
+    -   Having blogdown::serve_site running locally with LiveReload is
+        especially useful as you can immediately see if you have totally
+        screwed up. For example, in editing my about.md file, this error
+        popped up in my console after making a change and I was able to
+        fix the error right away:
+-   If you want a featured image to accompany your post and show up on
+    your listing page (the clickable list of all your posts), you'll
+    want to add an image with the word featured in the filename:
+
+## YAML metadata
+
+-   Each page should start with YAML metadata specifying information
+    like the title, date, author, categories, tags, and so on. Depending
+    on the specific Hugo theme and templates you use, some of these
+    fields may be optional.
+-   Among all YAML fields, we want to bring these to your attention:
+-   **draft**: You can mark a document as a draft by setting draft: true
+    in its YAML metadata. Draft posts will not be rendered if the site
+    is built via blogdown::build_site() or blogdown::hugo_build(), but
+    will be rendered in the local preview mode (see Section D.3).
+-   **publishdate**: You may specify a future date to publish a post.
+    Similar to draft posts, future posts are only rendered in the local
+    preview mode.
+-   **weight**: This field can take a numeric value to tell Hugo the
+    order of pages when sorting them, e.g., when you generate a list of
+    all pages under a directory, and two posts have the same date, you
+    may assign different weights to them to get your desired order on
+    the list.
+-   **slug**: A character string as the tail of the URL. It is
+    particularly useful when you define custom rules for permanent URLs
+    (see Section 2.2.2).

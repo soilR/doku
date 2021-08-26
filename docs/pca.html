@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>9.4 PCA | Daten Analyse mit R - Dokumentation</title>
+  <meta name="description" content="Dies ist eine Dokumentation um R bei der explorativen Datenanalyse in den Geowissenschaften einzusetzen." />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="9.4 PCA | Daten Analyse mit R - Dokumentation" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Dies ist eine Dokumentation um R bei der explorativen Datenanalyse in den Geowissenschaften einzusetzen." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="9.4 PCA | Daten Analyse mit R - Dokumentation" />
+  
+  <meta name="twitter:description" content="Dies ist eine Dokumentation um R bei der explorativen Datenanalyse in den Geowissenschaften einzusetzen." />
+  
+
+<meta name="author" content="Dr. Kristof Dorau" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="korrelationen.html"/>
+<link rel="next" href="datenmanagement.html"/>
+<script src="assets/header-attrs-2.9/header-attrs.js"></script>
+<script src="assets/jquery-2.2.3/jquery.min.js"></script>
+<link href="assets/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="assets/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="assets/anchor-sections-1.0.1/anchor-sections.js"></script>
+<script src="assets/twitter-widget-0.0.1/widgets.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Einleitung</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="syntax-und-stilistische-mittel-der-dokumentation.html"><a href="syntax-und-stilistische-mittel-der-dokumentation.html"><i class="fa fa-check"></i><b>1.1</b> Syntax und stilistische Mittel der Dokumentation</a></li>
+<li class="chapter" data-level="1.2" data-path="falbeispiele.html"><a href="falbeispiele.html"><i class="fa fa-check"></i><b>1.2</b> Falbeispiele</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="falbeispiele.html"><a href="falbeispiele.html#speicherkoog"><i class="fa fa-check"></i><b>1.2.1</b> Speicherkoog</a></li>
+<li class="chapter" data-level="1.2.2" data-path="falbeispiele.html"><a href="falbeispiele.html#mtcars-datensatz"><i class="fa fa-check"></i><b>1.2.2</b> <code>mtcars</code> Datensatz</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="über-mich.html"><a href="über-mich.html"><i class="fa fa-check"></i><b>1.3</b> Über mich</a></li>
+<li class="chapter" data-level="1.4" data-path="literatur.html"><a href="literatur.html"><i class="fa fa-check"></i><b>1.4</b> Literatur 🔍</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="erste-schritte-mit-r.html"><a href="erste-schritte-mit-r.html"><i class="fa fa-check"></i><b>2</b> Erste Schritte mit R</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="installation.html"><a href="installation.html"><i class="fa fa-check"></i><b>2.1</b> Installation</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="installation.html"><a href="installation.html#r"><i class="fa fa-check"></i><b>2.1.1</b> R</a></li>
+<li class="chapter" data-level="2.1.2" data-path="installation.html"><a href="installation.html#rstudio"><i class="fa fa-check"></i><b>2.1.2</b> RStudio</a></li>
+<li class="chapter" data-level="2.1.3" data-path="installation.html"><a href="installation.html#packages---das-tidyverse"><i class="fa fa-check"></i><b>2.1.3</b> Packages - das tidyverse</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="rstudio-benutzeroberfläche.html"><a href="rstudio-benutzeroberfläche.html"><i class="fa fa-check"></i><b>2.2</b> RStudio Benutzeroberfläche</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="rstudio-benutzeroberfläche.html"><a href="rstudio-benutzeroberfläche.html#source"><i class="fa fa-check"></i><b>2.2.1</b> Source</a></li>
+<li class="chapter" data-level="2.2.2" data-path="rstudio-benutzeroberfläche.html"><a href="rstudio-benutzeroberfläche.html#konsole"><i class="fa fa-check"></i><b>2.2.2</b> Konsole</a></li>
+<li class="chapter" data-level="2.2.3" data-path="rstudio-benutzeroberfläche.html"><a href="rstudio-benutzeroberfläche.html#environment"><i class="fa fa-check"></i><b>2.2.3</b> Environment</a></li>
+<li class="chapter" data-level="2.2.4" data-path="rstudio-benutzeroberfläche.html"><a href="rstudio-benutzeroberfläche.html#files-plots-packages-help"><i class="fa fa-check"></i><b>2.2.4</b> Files / Plots / Packages / Help</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="code-lesen-und-schreiben.html"><a href="code-lesen-und-schreiben.html"><i class="fa fa-check"></i><b>2.3</b> Code lesen und schreiben</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="code-lesen-und-schreiben.html"><a href="code-lesen-und-schreiben.html#die-konsole"><i class="fa fa-check"></i><b>2.3.1</b> Die Konsole</a></li>
+<li class="chapter" data-level="2.3.2" data-path="code-lesen-und-schreiben.html"><a href="code-lesen-und-schreiben.html#r-skript"><i class="fa fa-check"></i><b>2.3.2</b> R Skript</a></li>
+<li class="chapter" data-level="2.3.3" data-path="code-lesen-und-schreiben.html"><a href="code-lesen-und-schreiben.html#good-practice-code-zu-schreiben"><i class="fa fa-check"></i><b>2.3.3</b> Good practice Code zu schreiben</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="objekte-und-funktionen.html"><a href="objekte-und-funktionen.html"><i class="fa fa-check"></i><b>2.4</b> Objekte und Funktionen</a>
+<ul>
+<li class="chapter" data-level="2.4.1" data-path="objekte-und-funktionen.html"><a href="objekte-und-funktionen.html#neue-objekte-erstellen"><i class="fa fa-check"></i><b>2.4.1</b> Neue Objekte erstellen</a></li>
+<li class="chapter" data-level="2.4.2" data-path="objekte-und-funktionen.html"><a href="objekte-und-funktionen.html#beispiel-umrechnen-von-c-in-k"><i class="fa fa-check"></i><b>2.4.2</b> Beispiel: Umrechnen von °C in K</a></li>
+</ul></li>
+<li class="chapter" data-level="2.5" data-path="cheatsheets.html"><a href="cheatsheets.html"><i class="fa fa-check"></i><b>2.5</b> Cheatsheets</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="datentypen.html"><a href="datentypen.html"><i class="fa fa-check"></i><b>3</b> Datentypen</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="objekttypen.html"><a href="objekttypen.html"><i class="fa fa-check"></i><b>3.1</b> Objekttypen</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="objekttypen.html"><a href="objekttypen.html#numerische-objekte"><i class="fa fa-check"></i><b>3.1.1</b> Numerische Objekte</a></li>
+<li class="chapter" data-level="3.1.2" data-path="objekttypen.html"><a href="objekttypen.html#textobjekte"><i class="fa fa-check"></i><b>3.1.2</b> Textobjekte</a></li>
+<li class="chapter" data-level="3.1.3" data-path="objekttypen.html"><a href="objekttypen.html#logicals"><i class="fa fa-check"></i><b>3.1.3</b> Logicals</a></li>
+<li class="chapter" data-level="3.1.4" data-path="objekttypen.html"><a href="objekttypen.html#fehlende-werte"><i class="fa fa-check"></i><b>3.1.4</b> Fehlende Werte</a></li>
+<li class="chapter" data-level="3.1.5" data-path="objekttypen.html"><a href="objekttypen.html#weitere-objekttypen"><i class="fa fa-check"></i><b>3.1.5</b> Weitere Objekttypen</a></li>
+<li class="chapter" data-level="3.1.6" data-path="objekttypen.html"><a href="objekttypen.html#objekttypen-ändern"><i class="fa fa-check"></i><b>3.1.6</b> Objekttypen ändern</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="datenstrukturen.html"><a href="datenstrukturen.html"><i class="fa fa-check"></i><b>3.2</b> Datenstrukturen</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="datenstrukturen.html"><a href="datenstrukturen.html#vektor"><i class="fa fa-check"></i><b>3.2.1</b> Vektor</a></li>
+<li class="chapter" data-level="3.2.2" data-path="datenstrukturen.html"><a href="datenstrukturen.html#liste"><i class="fa fa-check"></i><b>3.2.2</b> Liste</a></li>
+<li class="chapter" data-level="3.2.3" data-path="datenstrukturen.html"><a href="datenstrukturen.html#matrix-und-dataframe"><i class="fa fa-check"></i><b>3.2.3</b> Matrix und dataframe</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="zufallszahlen-erzeugen.html"><a href="zufallszahlen-erzeugen.html"><i class="fa fa-check"></i><b>3.3</b> Zufallszahlen erzeugen</a></li>
+<li class="chapter" data-level="3.4" data-path="rechnen-mit-vektoren.html"><a href="rechnen-mit-vektoren.html"><i class="fa fa-check"></i><b>3.4</b> Rechnen mit Vektoren</a></li>
+<li class="chapter" data-level="3.5" data-path="str-funktion.html"><a href="str-funktion.html"><i class="fa fa-check"></i><b>3.5</b> str() Funktion</a></li>
+<li class="chapter" data-level="3.6" data-path="selektion-von-spaltenzeilen-in-dataframes.html"><a href="selektion-von-spaltenzeilen-in-dataframes.html"><i class="fa fa-check"></i><b>3.6</b> Selektion von Spalten/Zeilen in dataframes</a></li>
+<li class="chapter" data-level="3.7" data-path="erstellen-von-eigenen-funktionen.html"><a href="erstellen-von-eigenen-funktionen.html"><i class="fa fa-check"></i><b>3.7</b> Erstellen von eigenen Funktionen</a>
+<ul>
+<li class="chapter" data-level="3.7.1" data-path="erstellen-von-eigenen-funktionen.html"><a href="erstellen-von-eigenen-funktionen.html#speziellere-anwendungen-von-funktionen"><i class="fa fa-check"></i><b>3.7.1</b> Speziellere Anwendungen von Funktionen</a></li>
+<li class="chapter" data-level="3.7.2" data-path="erstellen-von-eigenen-funktionen.html"><a href="erstellen-von-eigenen-funktionen.html#nutze-...-als-platzhalter"><i class="fa fa-check"></i><b>3.7.2</b> Nutze <code>...</code> als Platzhalter</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="wie-lese-ich-daten-ein.html"><a href="wie-lese-ich-daten-ein.html"><i class="fa fa-check"></i><b>4</b> Wie lese ich Daten ein</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="tidy-data.html"><a href="tidy-data.html"><i class="fa fa-check"></i><b>4.1</b> Tidy data</a></li>
+<li class="chapter" data-level="4.2" data-path="dateiformate.html"><a href="dateiformate.html"><i class="fa fa-check"></i><b>4.2</b> Dateiformate</a></li>
+<li class="chapter" data-level="4.3" data-path="readrread-delim.html"><a href="readrread-delim.html"><i class="fa fa-check"></i><b>4.3</b> readr::read_delim()</a></li>
+<li class="chapter" data-level="4.4" data-path="arbeiten-mit-zeiten.html"><a href="arbeiten-mit-zeiten.html"><i class="fa fa-check"></i><b>4.4</b> Arbeiten mit Zeiten</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="daten-manipulieren.html"><a href="daten-manipulieren.html"><i class="fa fa-check"></i><b>5</b> Daten manipulieren</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="select-variablen-auswählen-spaltenweise.html"><a href="select-variablen-auswählen-spaltenweise.html"><i class="fa fa-check"></i><b>5.1</b> select() - Variablen auswählen (spaltenweise)</a></li>
+<li class="chapter" data-level="5.2" data-path="filter-filtern-von-variablen-zeilenweise.html"><a href="filter-filtern-von-variablen-zeilenweise.html"><i class="fa fa-check"></i><b>5.2</b> filter() - Filtern von Variablen (zeilenweise)</a></li>
+<li class="chapter" data-level="5.3" data-path="arrange-sortieren-des-datensatzes.html"><a href="arrange-sortieren-des-datensatzes.html"><i class="fa fa-check"></i><b>5.3</b> arrange() - Sortieren des Datensatzes</a></li>
+<li class="chapter" data-level="5.4" data-path="mutate-erstelle-neue-variablen.html"><a href="mutate-erstelle-neue-variablen.html"><i class="fa fa-check"></i><b>5.4</b> mutate() - Erstelle neue Variablen</a></li>
+<li class="chapter" data-level="5.5" data-path="summarize-zusammenfassung-von-variablen.html"><a href="summarize-zusammenfassung-von-variablen.html"><i class="fa fa-check"></i><b>5.5</b> summarize() - Zusammenfassung von Variablen</a></li>
+<li class="chapter" data-level="5.6" data-path="group-by-gruppiere-variablen.html"><a href="group-by-gruppiere-variablen.html"><i class="fa fa-check"></i><b>5.6</b> group_by - Gruppiere Variablen</a></li>
+<li class="chapter" data-level="5.7" data-path="across-anwenden-von-funktionen-auf-spalten.html"><a href="across-anwenden-von-funktionen-auf-spalten.html"><i class="fa fa-check"></i><b>5.7</b> across() - Anwenden von Funktionen auf Spalten</a></li>
+<li class="chapter" data-level="5.8" data-path="joins.html"><a href="joins.html"><i class="fa fa-check"></i><b>5.8</b> joins</a></li>
+<li class="chapter" data-level="5.9" data-path="pivot-longer-long-data-format.html"><a href="pivot-longer-long-data-format.html"><i class="fa fa-check"></i><b>5.9</b> pivot_longer() - Long data format</a></li>
+<li class="chapter" data-level="5.10" data-path="pivot-wider-wider-data-format.html"><a href="pivot-wider-wider-data-format.html"><i class="fa fa-check"></i><b>5.10</b> pivot_wider() - wider data format</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="explorative-datenanalyse.html"><a href="explorative-datenanalyse.html"><i class="fa fa-check"></i><b>6</b> Explorative-Datenanalyse</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="fehlende-werte-1.html"><a href="fehlende-werte-1.html"><i class="fa fa-check"></i><b>6.1</b> Fehlende Werte</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="datenvisualisierung.html"><a href="datenvisualisierung.html"><i class="fa fa-check"></i><b>7</b> Datenvisualisierung</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="ggplot2-grammar-of-graphics.html"><a href="ggplot2-grammar-of-graphics.html"><i class="fa fa-check"></i><b>7.1</b> ggplot2 - grammar of graphics</a>
+<ul>
+<li class="chapter" data-level="7.1.1" data-path="ggplot2-grammar-of-graphics.html"><a href="ggplot2-grammar-of-graphics.html#schlüsselkomponenten"><i class="fa fa-check"></i><b>7.1.1</b> Schlüsselkomponenten</a></li>
+<li class="chapter" data-level="7.1.2" data-path="ggplot2-grammar-of-graphics.html"><a href="ggplot2-grammar-of-graphics.html#aesthetics-color-size-shape"><i class="fa fa-check"></i><b>7.1.2</b> Aesthetics (color, size, shape)</a></li>
+<li class="chapter" data-level="7.1.3" data-path="ggplot2-grammar-of-graphics.html"><a href="ggplot2-grammar-of-graphics.html#smoothers-and-models"><i class="fa fa-check"></i><b>7.1.3</b> Smoothers and models</a></li>
+<li class="chapter" data-level="7.1.4" data-path="ggplot2-grammar-of-graphics.html"><a href="ggplot2-grammar-of-graphics.html#labels"><i class="fa fa-check"></i><b>7.1.4</b> Labels</a></li>
+<li class="chapter" data-level="7.1.5" data-path="ggplot2-grammar-of-graphics.html"><a href="ggplot2-grammar-of-graphics.html#themes"><i class="fa fa-check"></i><b>7.1.5</b> Themes</a></li>
+<li class="chapter" data-level="7.1.6" data-path="ggplot2-grammar-of-graphics.html"><a href="ggplot2-grammar-of-graphics.html#facets"><i class="fa fa-check"></i><b>7.1.6</b> Facets</a></li>
+<li class="chapter" data-level="7.1.7" data-path="ggplot2-grammar-of-graphics.html"><a href="ggplot2-grammar-of-graphics.html#coordinate-system"><i class="fa fa-check"></i><b>7.1.7</b> Coordinate system</a></li>
+<li class="chapter" data-level="7.1.8" data-path="ggplot2-grammar-of-graphics.html"><a href="ggplot2-grammar-of-graphics.html#annotations"><i class="fa fa-check"></i><b>7.1.8</b> Annotations</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="verknüfpen-von-tidyverse-und-ggplot.html"><a href="verknüfpen-von-tidyverse-und-ggplot.html"><i class="fa fa-check"></i><b>7.2</b> Verknüfpen von tidyverse und ggplot</a></li>
+<li class="chapter" data-level="7.3" data-path="arbeiten-mit-zeiten-1.html"><a href="arbeiten-mit-zeiten-1.html"><i class="fa fa-check"></i><b>7.3</b> Arbeiten mit Zeiten</a>
+<ul>
+<li class="chapter" data-level="7.3.1" data-path="arbeiten-mit-zeiten-1.html"><a href="arbeiten-mit-zeiten-1.html#strings"><i class="fa fa-check"></i><b>7.3.1</b> strings</a></li>
+<li class="chapter" data-level="7.3.2" data-path="arbeiten-mit-zeiten-1.html"><a href="arbeiten-mit-zeiten-1.html#von-individuellen-komponenten"><i class="fa fa-check"></i><b>7.3.2</b> Von individuellen Komponenten</a></li>
+<li class="chapter" data-level="7.3.3" data-path="arbeiten-mit-zeiten-1.html"><a href="arbeiten-mit-zeiten-1.html#ein-bestehendes-objekt"><i class="fa fa-check"></i><b>7.3.3</b> Ein bestehendes Objekt</a></li>
+<li class="chapter" data-level="7.3.4" data-path="arbeiten-mit-zeiten-1.html"><a href="arbeiten-mit-zeiten-1.html#darstellung-in-abbildungen"><i class="fa fa-check"></i><b>7.3.4</b> Darstellung in Abbildungen</a></li>
+</ul></li>
+<li class="chapter" data-level="7.4" data-path="pivoting-to-longer-format.html"><a href="pivoting-to-longer-format.html"><i class="fa fa-check"></i><b>7.4</b> pivoting to longer format</a></li>
+<li class="chapter" data-level="7.5" data-path="good-practices.html"><a href="good-practices.html"><i class="fa fa-check"></i><b>7.5</b> Good practices</a></li>
+<li class="chapter" data-level="7.6" data-path="speichern-eines-plots.html"><a href="speichern-eines-plots.html"><i class="fa fa-check"></i><b>7.6</b> Speichern eines plots</a></li>
+<li class="chapter" data-level="7.7" data-path="formen-der-darstellung.html"><a href="formen-der-darstellung.html"><i class="fa fa-check"></i><b>7.7</b> Formen der Darstellung</a>
+<ul>
+<li class="chapter" data-level="7.7.1" data-path="formen-der-darstellung.html"><a href="formen-der-darstellung.html#overplotting"><i class="fa fa-check"></i><b>7.7.1</b> Overplotting</a></li>
+<li class="chapter" data-level="7.7.2" data-path="formen-der-darstellung.html"><a href="formen-der-darstellung.html#positions-argument"><i class="fa fa-check"></i><b>7.7.2</b> Positions Argument</a></li>
+<li class="chapter" data-level="7.7.3" data-path="formen-der-darstellung.html"><a href="formen-der-darstellung.html#inspirationen"><i class="fa fa-check"></i><b>7.7.3</b> Inspirationen</a></li>
+</ul></li>
+<li class="chapter" data-level="7.8" data-path="farbauswahl.html"><a href="farbauswahl.html"><i class="fa fa-check"></i><b>7.8</b> Farbauswahl</a>
+<ul>
+<li class="chapter" data-level="7.8.1" data-path="farbauswahl.html"><a href="farbauswahl.html#beispiele-für-unterschiedliche-farben"><i class="fa fa-check"></i><b>7.8.1</b> Beispiele für unterschiedliche Farben</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="karten-erstellen-in-r.html"><a href="karten-erstellen-in-r.html"><i class="fa fa-check"></i><b>8</b> Karten erstellen in R 🌍</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="datenquellen.html"><a href="datenquellen.html"><i class="fa fa-check"></i><b>8.1</b> Datenquellen</a></li>
+<li class="chapter" data-level="8.2" data-path="packages.html"><a href="packages.html"><i class="fa fa-check"></i><b>8.2</b> Packages</a>
+<ul>
+<li class="chapter" data-level="8.2.1" data-path="packages.html"><a href="packages.html#rgdal-package"><i class="fa fa-check"></i><b>8.2.1</b> <code>rgdal</code> package</a></li>
+</ul></li>
+<li class="chapter" data-level="8.3" data-path="übungen.html"><a href="übungen.html"><i class="fa fa-check"></i><b>8.3</b> Übungen</a>
+<ul>
+<li class="chapter" data-level="8.3.1" data-path="übungen.html"><a href="übungen.html#erstelle-eine-karte-der-bundesrepublik"><i class="fa fa-check"></i><b>8.3.1</b> Erstelle eine Karte der Bundesrepublik</a></li>
+<li class="chapter" data-level="8.3.2" data-path="übungen.html"><a href="übungen.html#erstelle-eine-weltkarte"><i class="fa fa-check"></i><b>8.3.2</b> Erstelle eine Weltkarte</a></li>
+<li class="chapter" data-level="8.3.3" data-path="übungen.html"><a href="übungen.html#manuelles-hinzufügen-von-punkten"><i class="fa fa-check"></i><b>8.3.3</b> Manuelles Hinzufügen von Punkten</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="statistische-auswertungen.html"><a href="statistische-auswertungen.html"><i class="fa fa-check"></i><b>9</b> Statistische Auswertungen</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="verteilung-der-daten.html"><a href="verteilung-der-daten.html"><i class="fa fa-check"></i><b>9.1</b> Verteilung der Daten</a></li>
+<li class="chapter" data-level="9.2" data-path="datentransformation.html"><a href="datentransformation.html"><i class="fa fa-check"></i><b>9.2</b> Datentransformation</a></li>
+<li class="chapter" data-level="9.3" data-path="korrelationen.html"><a href="korrelationen.html"><i class="fa fa-check"></i><b>9.3</b> Korrelationen</a>
+<ul>
+<li class="chapter" data-level="9.3.1" data-path="korrelationen.html"><a href="korrelationen.html#pearsons-korrelationkoeffizient-r"><i class="fa fa-check"></i><b>9.3.1</b> Pearson’s Korrelationkoeffizient (r)</a></li>
+<li class="chapter" data-level="9.3.2" data-path="korrelationen.html"><a href="korrelationen.html#signifikanztest"><i class="fa fa-check"></i><b>9.3.2</b> Signifikanztest</a></li>
+<li class="chapter" data-level="9.3.3" data-path="korrelationen.html"><a href="korrelationen.html#korrelation-vs.-regression"><i class="fa fa-check"></i><b>9.3.3</b> Korrelation vs. Regression</a></li>
+</ul></li>
+<li class="chapter" data-level="9.4" data-path="pca.html"><a href="pca.html"><i class="fa fa-check"></i><b>9.4</b> PCA</a>
+<ul>
+<li class="chapter" data-level="9.4.1" data-path="pca.html"><a href="pca.html#datenauswahl"><i class="fa fa-check"></i><b>9.4.1</b> Datenauswahl</a></li>
+<li class="chapter" data-level="9.4.2" data-path="pca.html"><a href="pca.html#daten-standardisieren"><i class="fa fa-check"></i><b>9.4.2</b> Daten Standardisieren</a></li>
+<li class="chapter" data-level="9.4.3" data-path="pca.html"><a href="pca.html#eigenvalues"><i class="fa fa-check"></i><b>9.4.3</b> Eigenvalues</a></li>
+<li class="chapter" data-level="9.4.4" data-path="pca.html"><a href="pca.html#darstellen-der-ergebnisse"><i class="fa fa-check"></i><b>9.4.4</b> Darstellen der Ergebnisse</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="datenmanagement.html"><a href="datenmanagement.html"><i class="fa fa-check"></i><b>10</b> Datenmanagement</a></li>
+<li class="chapter" data-level="11" data-path="reporting-in-rmarkdown.html"><a href="reporting-in-rmarkdown.html"><i class="fa fa-check"></i><b>11</b> Reporting in Rmarkdown</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="mathematische-befehle.html"><a href="mathematische-befehle.html"><i class="fa fa-check"></i><b>11.1</b> Mathematische Befehle</a>
+<ul>
+<li class="chapter" data-level="11.1.1" data-path="mathematische-befehle.html"><a href="mathematische-befehle.html#brüche"><i class="fa fa-check"></i><b>11.1.1</b> Brüche</a></li>
+<li class="chapter" data-level="11.1.2" data-path="mathematische-befehle.html"><a href="mathematische-befehle.html#hoch--und-tiefstellung"><i class="fa fa-check"></i><b>11.1.2</b> Hoch- und Tiefstellung</a></li>
+<li class="chapter" data-level="11.1.3" data-path="mathematische-befehle.html"><a href="mathematische-befehle.html#quadratwurzel"><i class="fa fa-check"></i><b>11.1.3</b> Quadratwurzel</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="github.html"><a href="github.html"><i class="fa fa-check"></i><b>12</b> Github</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="projekt-erstellen.html"><a href="projekt-erstellen.html"><i class="fa fa-check"></i><b>12.1</b> Projekt erstellen</a>
+<ul>
+<li class="chapter" data-level="12.1.1" data-path="projekt-erstellen.html"><a href="projekt-erstellen.html#workflow"><i class="fa fa-check"></i><b>12.1.1</b> Workflow</a></li>
+<li class="chapter" data-level="12.1.2" data-path="projekt-erstellen.html"><a href="projekt-erstellen.html#synchronisieren-vieler-dateien"><i class="fa fa-check"></i><b>12.1.2</b> Synchronisieren vieler Dateien</a></li>
+<li class="chapter" data-level="12.1.3" data-path="projekt-erstellen.html"><a href="projekt-erstellen.html#ordner-lokal-behalten-aber-auf-git-löschen"><i class="fa fa-check"></i><b>12.1.3</b> Ordner lokal behalten aber auf Git löschen</a></li>
+</ul></li>
+<li class="chapter" data-level="12.2" data-path="cache-säubern.html"><a href="cache-säubern.html"><i class="fa fa-check"></i><b>12.2</b> Cache säubern</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="bookdown.html"><a href="bookdown.html"><i class="fa fa-check"></i><b>13</b> Bookdown</a>
+<ul>
+<li class="chapter" data-level="13.1" data-path="vorbereitung.html"><a href="vorbereitung.html"><i class="fa fa-check"></i><b>13.1</b> Vorbereitung</a></li>
+<li class="chapter" data-level="13.2" data-path="github-pages.html"><a href="github-pages.html"><i class="fa fa-check"></i><b>13.2</b> Github pages</a></li>
+<li class="chapter" data-level="13.3" data-path="emojiys.html"><a href="emojiys.html"><i class="fa fa-check"></i><b>13.3</b> Emojiys</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="blogdown.html"><a href="blogdown.html"><i class="fa fa-check"></i><b>14</b> Blogdown</a></li>
+<li class="chapter" data-level="15" data-path="setup-a-homepage-with-hugo-and-blogdown.html"><a href="setup-a-homepage-with-hugo-and-blogdown.html"><i class="fa fa-check"></i><b>15</b> Setup a homepage with Hugo and blogdown</a>
+<ul>
+<li class="chapter" data-level="15.1" data-path="github-1.html"><a href="github-1.html"><i class="fa fa-check"></i><b>15.1</b> Github</a></li>
+<li class="chapter" data-level="15.2" data-path="domain-name.html"><a href="domain-name.html"><i class="fa fa-check"></i><b>15.2</b> Domain name</a></li>
+<li class="chapter" data-level="15.3" data-path="homepage.html"><a href="homepage.html"><i class="fa fa-check"></i><b>15.3</b> Homepage</a></li>
+<li class="chapter" data-level="15.4" data-path="wowchemystarter-academic.html"><a href="wowchemystarter-academic.html"><i class="fa fa-check"></i><b>15.4</b> “wowchemy/starter-academic”</a></li>
+<li class="chapter" data-level="15.5" data-path="where-to-adjust-the-homepage.html"><a href="where-to-adjust-the-homepage.html"><i class="fa fa-check"></i><b>15.5</b> Where to adjust the Homepage</a></li>
+<li class="chapter" data-level="15.6" data-path="workflow-1.html"><a href="workflow-1.html"><i class="fa fa-check"></i><b>15.6</b> Workflow</a></li>
+<li class="chapter" data-level="15.7" data-path="yaml-metadata.html"><a href="yaml-metadata.html"><i class="fa fa-check"></i><b>15.7</b> YAML metadata</a></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="diverses.html"><a href="diverses.html"><i class="fa fa-check"></i><b>16</b> Diverses</a>
+<ul>
+<li class="chapter" data-level="16.1" data-path="troubleshooting.html"><a href="troubleshooting.html"><i class="fa fa-check"></i><b>16.1</b> Troubleshooting</a>
+<ul>
+<li class="chapter" data-level="16.1.1" data-path="troubleshooting.html"><a href="troubleshooting.html#entfernen-aller-packages"><i class="fa fa-check"></i><b>16.1.1</b> Entfernen aller packages</a></li>
+</ul></li>
+<li class="chapter" data-level="16.2" data-path="shortcuts.html"><a href="shortcuts.html"><i class="fa fa-check"></i><b>16.2</b> Shortcuts</a></li>
+<li class="chapter" data-level="16.3" data-path="faqs.html"><a href="faqs.html"><i class="fa fa-check"></i><b>16.3</b> FAQs</a>
+<ul>
+<li class="chapter" data-level="16.3.1" data-path="faqs.html"><a href="faqs.html#rstudio-1"><i class="fa fa-check"></i><b>16.3.1</b> RStudio</a></li>
+<li class="chapter" data-level="16.3.2" data-path="faqs.html"><a href="faqs.html#datenmanipulation"><i class="fa fa-check"></i><b>16.3.2</b> Datenmanipulation</a></li>
+</ul></li>
+<li class="chapter" data-level="16.4" data-path="visualisation.html"><a href="visualisation.html"><i class="fa fa-check"></i><b>16.4</b> Visualisation</a>
+<ul>
+<li class="chapter" data-level="16.4.1" data-path="visualisation.html"><a href="visualisation.html#superscripts-and-subscripts"><i class="fa fa-check"></i><b>16.4.1</b> Superscripts and subscripts</a></li>
+<li class="chapter" data-level="16.4.2" data-path="visualisation.html"><a href="visualisation.html#modifying-labels-in-faceted-plots"><i class="fa fa-check"></i><b>16.4.2</b> Modifying labels in faceted plots</a></li>
+</ul></li>
+<li class="chapter" data-level="16.5" data-path="glossary.html"><a href="glossary.html"><i class="fa fa-check"></i><b>16.5</b> Glossary</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Daten Analyse mit R - Dokumentation</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="pca" class="section level2" number="9.4">
+<h2><span class="header-section-number">9.4</span> PCA</h2>
+<p>🔍 <a href="http://www.sthda.com/english/articles/31-principal-component-methods-in-r-practical-guide/112-pca-principal-component-analysis-essentials/">sthda.com</a></p>
+<p>Eine Hauptkomponentenanalyse (engl. Principal component analysis; PCA) ist ein Verfahren der multivariaten Statistik. Dadurch können große Datensätze strukturiert und vereinfacht werden, durch eine möglichst geringe Zahl aussagekräftiger Linearkombinationen (<strong>Hauptkomponenten</strong>). PCA wird verwendet um Informationen von einer Vielzahl (inter-korrelierten) quantitativen Variablen zu extrahieren. Diese Informationen werden reduziert zu den genannten wenigen Hauptkomponenten (= principal components = PC).</p>
+<p>Das Ziel einer PCA ist es die Hauptachsen (PC) so zu arrangieren, dass die Variation der Daten maximiert wird. Einfach ausgedrückt kann man eine PCA als Rotation des Koordinatensystems verstehen:</p>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-269"></span>
+<img src="images/046.png" alt="Illustration von C.Wilke: https://wilkelab.org/SDS375/" width="100%" />
+<p class="caption">
+Figure 9.8: Illustration von C.Wilke: <a href="https://wilkelab.org/SDS375/" class="uri">https://wilkelab.org/SDS375/</a>
+</p>
+</div>
+<p>💡 Eine PCA ist besonders dann nützlich, wenn die Variablen in einem Datensatz stark korreliert sind. Korrelation bedeutet Redundanz und wegen dieser Redundanz kann eine PCA viele Variablen in eine geringere Anzahl an neuen Variablen (= PC) umwandeln, welche möglichst viel Varianz der ursprünglichen Daten erklären.</p>
+<p>In R gibt es mehrere Möglichkeiten eine PCA durchzuführen</p>
+<ul>
+<li>prcomp() and princomp() [built-in R stats package]</li>
+<li>PCA() [FactoMineR package]</li>
+<li>dudi.pca() [ade4 package]</li>
+<li>epPCA() [ExPosition package]</li>
+</ul>
+<p>Egal welches package man verwendet, die Daten der PCA können auch mit dem <code>factoextra</code> package verarbeitet werden. Dies hat den Vorteil, dass die Visualisierung <code>ggplot2</code>-basiert ist.</p>
+<div class="sourceCode" id="cb263"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb263-1"><a href="pca.html#cb263-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Laden des Datensatzes </span></span>
+<span id="cb263-2"><a href="pca.html#cb263-2" aria-hidden="true" tabindex="-1"></a>df_ec <span class="ot">&lt;-</span> readr<span class="sc">::</span><span class="fu">read_delim</span>(<span class="st">&quot;data/data_ecuador.csv&quot;</span>, <span class="at">delim =</span> <span class="st">&quot;;&quot;</span>, <span class="at">col_types =</span> </span>
+<span id="cb263-3"><a href="pca.html#cb263-3" aria-hidden="true" tabindex="-1"></a>                          <span class="fu">cols</span>(</span>
+<span id="cb263-4"><a href="pca.html#cb263-4" aria-hidden="true" tabindex="-1"></a>                            <span class="at">wsc =</span> <span class="fu">col_double</span>(),</span>
+<span id="cb263-5"><a href="pca.html#cb263-5" aria-hidden="true" tabindex="-1"></a>                            <span class="at">wsc_ma =</span> <span class="fu">col_double</span>(),</span>
+<span id="cb263-6"><a href="pca.html#cb263-6" aria-hidden="true" tabindex="-1"></a>                            <span class="at">wsc_som =</span> <span class="fu">col_double</span>(),</span>
+<span id="cb263-7"><a href="pca.html#cb263-7" aria-hidden="true" tabindex="-1"></a>                            <span class="at">hwsc =</span> <span class="fu">col_double</span>(),</span>
+<span id="cb263-8"><a href="pca.html#cb263-8" aria-hidden="true" tabindex="-1"></a>                            <span class="at">hwsc_ma =</span> <span class="fu">col_double</span>(),</span>
+<span id="cb263-9"><a href="pca.html#cb263-9" aria-hidden="true" tabindex="-1"></a>                            <span class="at">hwsc_som =</span> <span class="fu">col_double</span>(),</span>
+<span id="cb263-10"><a href="pca.html#cb263-10" aria-hidden="true" tabindex="-1"></a>                            <span class="at">wsc_hwsc_som =</span> <span class="fu">col_double</span>(),</span>
+<span id="cb263-11"><a href="pca.html#cb263-11" aria-hidden="true" tabindex="-1"></a>                            <span class="at">Fed =</span> <span class="fu">col_double</span>(),</span>
+<span id="cb263-12"><a href="pca.html#cb263-12" aria-hidden="true" tabindex="-1"></a>                            <span class="at">Feo =</span> <span class="fu">col_double</span>(),</span>
+<span id="cb263-13"><a href="pca.html#cb263-13" aria-hidden="true" tabindex="-1"></a>                            <span class="at">Feo_Fed =</span> <span class="fu">col_double</span>(),</span>
+<span id="cb263-14"><a href="pca.html#cb263-14" aria-hidden="true" tabindex="-1"></a>                            <span class="at">Fepyro =</span> <span class="fu">col_double</span>(),</span>
+<span id="cb263-15"><a href="pca.html#cb263-15" aria-hidden="true" tabindex="-1"></a>                            <span class="at">Mno =</span> <span class="fu">col_double</span>(),</span>
+<span id="cb263-16"><a href="pca.html#cb263-16" aria-hidden="true" tabindex="-1"></a>                            <span class="at">Alo =</span> <span class="fu">col_double</span>(),</span>
+<span id="cb263-17"><a href="pca.html#cb263-17" aria-hidden="true" tabindex="-1"></a>                            <span class="at">Sio =</span> <span class="fu">col_double</span>(),</span>
+<span id="cb263-18"><a href="pca.html#cb263-18" aria-hidden="true" tabindex="-1"></a>                            <span class="at">Alpyro =</span> <span class="fu">col_double</span>()</span>
+<span id="cb263-19"><a href="pca.html#cb263-19" aria-hidden="true" tabindex="-1"></a>                          )</span>
+<span id="cb263-20"><a href="pca.html#cb263-20" aria-hidden="true" tabindex="-1"></a>                        )</span>
+<span id="cb263-21"><a href="pca.html#cb263-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb263-22"><a href="pca.html#cb263-22" aria-hidden="true" tabindex="-1"></a><span class="co"># Laden der packages</span></span>
+<span id="cb263-23"><a href="pca.html#cb263-23" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(factoextra)</span>
+<span id="cb263-24"><a href="pca.html#cb263-24" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(FactoMineR)</span></code></pre></div>
+<div id="datenauswahl" class="section level3" number="9.4.1">
+<h3><span class="header-section-number">9.4.1</span> Datenauswahl</h3>
+<p>Zuerst wählen wir die Daten aus, welche wir in der PCA berücksichtigen wollen.</p>
+<div class="sourceCode" id="cb264"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb264-1"><a href="pca.html#cb264-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create one data frame with the data</span></span>
+<span id="cb264-2"><a href="pca.html#cb264-2" aria-hidden="true" tabindex="-1"></a>df_pca <span class="ot">&lt;-</span> df_ec <span class="sc">%&gt;%</span></span>
+<span id="cb264-3"><a href="pca.html#cb264-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(site_name, depth, som<span class="sc">:</span>P2O5, <span class="sc">-</span>mat_amorph, <span class="sc">-</span>index) <span class="sc">%&gt;%</span></span>
+<span id="cb264-4"><a href="pca.html#cb264-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">na.omit</span>() <span class="co"># Mit dem Befehl werden NA Werte aus den Daten entfernt...wichtig (!) bevor die PCA durchgeführt werden kann</span></span>
+<span id="cb264-5"><a href="pca.html#cb264-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb264-6"><a href="pca.html#cb264-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Create one data frame </span></span>
+<span id="cb264-7"><a href="pca.html#cb264-7" aria-hidden="true" tabindex="-1"></a>df_var <span class="ot">&lt;-</span> df_pca <span class="sc">%&gt;%</span></span>
+<span id="cb264-8"><a href="pca.html#cb264-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(site_name, depth)</span>
+<span id="cb264-9"><a href="pca.html#cb264-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb264-10"><a href="pca.html#cb264-10" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(df_pca, <span class="at">n =</span> <span class="dv">5</span>)</span>
+<span id="cb264-11"><a href="pca.html#cb264-11" aria-hidden="true" tabindex="-1"></a><span class="do">## # A tibble: 5 x 44</span></span>
+<span id="cb264-12"><a href="pca.html#cb264-12" aria-hidden="true" tabindex="-1"></a><span class="do">##   site_name depth   som   wsc wsc_ma wsc_som  hwsc hwsc_ma hwsc_som wsc_hwsc_som</span></span>
+<span id="cb264-13"><a href="pca.html#cb264-13" aria-hidden="true" tabindex="-1"></a><span class="do">##   &lt;chr&gt;     &lt;chr&gt; &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt;   &lt;dbl&gt; &lt;dbl&gt;   &lt;dbl&gt;    &lt;dbl&gt;        &lt;dbl&gt;</span></span>
+<span id="cb264-14"><a href="pca.html#cb264-14" aria-hidden="true" tabindex="-1"></a><span class="do">## 1 PA1       0-30   167  1.24      37   0.007  5.11      44    0.031        0.038</span></span>
+<span id="cb264-15"><a href="pca.html#cb264-15" aria-hidden="true" tabindex="-1"></a><span class="do">## 2 PA1       30-60  118. 0.538     32   0.005  2.30      37    0.02         0.024</span></span>
+<span id="cb264-16"><a href="pca.html#cb264-16" aria-hidden="true" tabindex="-1"></a><span class="do">## 3 PA1       60-90  114. 0.301     31   0.003  1.46      37    0.013        0.015</span></span>
+<span id="cb264-17"><a href="pca.html#cb264-17" aria-hidden="true" tabindex="-1"></a><span class="do">## 4 PA1       0-30   162. 1.15      39   0.007  5.04      44    0.031        0.038</span></span>
+<span id="cb264-18"><a href="pca.html#cb264-18" aria-hidden="true" tabindex="-1"></a><span class="do">## 5 PA1       30-60  115. 0.46      38   0.004  1.91      37    0.017        0.021</span></span>
+<span id="cb264-19"><a href="pca.html#cb264-19" aria-hidden="true" tabindex="-1"></a><span class="do">## # ... with 34 more variables: N &lt;dbl&gt;, C_N &lt;dbl&gt;, ph_h2o &lt;dbl&gt;, ph_cacl2 &lt;dbl&gt;,</span></span>
+<span id="cb264-20"><a href="pca.html#cb264-20" aria-hidden="true" tabindex="-1"></a><span class="do">## #   delta_ph &lt;dbl&gt;, ph_naf &lt;dbl&gt;, melanic_index &lt;dbl&gt;, bs &lt;dbl&gt;, Ca &lt;dbl&gt;,</span></span>
+<span id="cb264-21"><a href="pca.html#cb264-21" aria-hidden="true" tabindex="-1"></a><span class="do">## #   Mg &lt;dbl&gt;, K &lt;dbl&gt;, Na  &lt;dbl&gt;, Al &lt;dbl&gt;, Fe &lt;dbl&gt;, Mn &lt;dbl&gt;, H &lt;dbl&gt;,</span></span>
+<span id="cb264-22"><a href="pca.html#cb264-22" aria-hidden="true" tabindex="-1"></a><span class="do">## #   Fed &lt;dbl&gt;, Feo &lt;dbl&gt;, Feo_Fed &lt;dbl&gt;, Fepyro &lt;dbl&gt;, Mno &lt;dbl&gt;, Alo &lt;dbl&gt;,</span></span>
+<span id="cb264-23"><a href="pca.html#cb264-23" aria-hidden="true" tabindex="-1"></a><span class="do">## #   Sio &lt;dbl&gt;, Alpyro &lt;dbl&gt;, SiO2 &lt;dbl&gt;, TiO2 &lt;dbl&gt;, Al2O3 &lt;dbl&gt;, Fe2O3 &lt;dbl&gt;,</span></span>
+<span id="cb264-24"><a href="pca.html#cb264-24" aria-hidden="true" tabindex="-1"></a><span class="do">## #   MnO &lt;dbl&gt;, MgO &lt;dbl&gt;, CaO &lt;dbl&gt;, Na2O &lt;dbl&gt;, K2O &lt;dbl&gt;, P2O5 &lt;dbl&gt;</span></span></code></pre></div>
+</div>
+<div id="daten-standardisieren" class="section level3" number="9.4.2">
+<h3><span class="header-section-number">9.4.2</span> Daten Standardisieren</h3>
+<p>Bei einer PCA werden die Daten häufig standardisiert, also skaliert. Dies ist besonders wichtig wenn die Einheiten stark unterschiedlich sind, bspw. in %, mg kg<sup>-1</sup>, etc.</p>
+<p>💡 Wenn man die Funktion <code>PCA()</code> im FactoMineR verwendet, gibt es das Argument die Daten zu standardisieren. Dies muss also nicht im Vorfeld durchgeführt werden.</p>
+<div class="sourceCode" id="cb265"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb265-1"><a href="pca.html#cb265-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb265-2"><a href="pca.html#cb265-2" aria-hidden="true" tabindex="-1"></a>pca <span class="ot">&lt;-</span> <span class="fu">PCA</span>(df_pca[,<span class="sc">-</span><span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>)], <span class="at">scale.unit =</span> T, <span class="at">ncp =</span> <span class="dv">5</span>, <span class="at">graph =</span> F) <span class="co"># Makes the PCA but without the site_name and depth grouping value</span></span>
+<span id="cb265-3"><a href="pca.html#cb265-3" aria-hidden="true" tabindex="-1"></a>pca</span>
+<span id="cb265-4"><a href="pca.html#cb265-4" aria-hidden="true" tabindex="-1"></a><span class="do">## **Results for the Principal Component Analysis (PCA)**</span></span>
+<span id="cb265-5"><a href="pca.html#cb265-5" aria-hidden="true" tabindex="-1"></a><span class="do">## The analysis was performed on 44 individuals, described by 42 variables</span></span>
+<span id="cb265-6"><a href="pca.html#cb265-6" aria-hidden="true" tabindex="-1"></a><span class="do">## *The results are available in the following objects:</span></span>
+<span id="cb265-7"><a href="pca.html#cb265-7" aria-hidden="true" tabindex="-1"></a><span class="do">## </span></span>
+<span id="cb265-8"><a href="pca.html#cb265-8" aria-hidden="true" tabindex="-1"></a><span class="do">##    name               description                          </span></span>
+<span id="cb265-9"><a href="pca.html#cb265-9" aria-hidden="true" tabindex="-1"></a><span class="do">## 1  &quot;$eig&quot;             &quot;eigenvalues&quot;                        </span></span>
+<span id="cb265-10"><a href="pca.html#cb265-10" aria-hidden="true" tabindex="-1"></a><span class="do">## 2  &quot;$var&quot;             &quot;results for the variables&quot;          </span></span>
+<span id="cb265-11"><a href="pca.html#cb265-11" aria-hidden="true" tabindex="-1"></a><span class="do">## 3  &quot;$var$coord&quot;       &quot;coord. for the variables&quot;           </span></span>
+<span id="cb265-12"><a href="pca.html#cb265-12" aria-hidden="true" tabindex="-1"></a><span class="do">## 4  &quot;$var$cor&quot;         &quot;correlations variables - dimensions&quot;</span></span>
+<span id="cb265-13"><a href="pca.html#cb265-13" aria-hidden="true" tabindex="-1"></a><span class="do">## 5  &quot;$var$cos2&quot;        &quot;cos2 for the variables&quot;             </span></span>
+<span id="cb265-14"><a href="pca.html#cb265-14" aria-hidden="true" tabindex="-1"></a><span class="do">## 6  &quot;$var$contrib&quot;     &quot;contributions of the variables&quot;     </span></span>
+<span id="cb265-15"><a href="pca.html#cb265-15" aria-hidden="true" tabindex="-1"></a><span class="do">## 7  &quot;$ind&quot;             &quot;results for the individuals&quot;        </span></span>
+<span id="cb265-16"><a href="pca.html#cb265-16" aria-hidden="true" tabindex="-1"></a><span class="do">## 8  &quot;$ind$coord&quot;       &quot;coord. for the individuals&quot;         </span></span>
+<span id="cb265-17"><a href="pca.html#cb265-17" aria-hidden="true" tabindex="-1"></a><span class="do">## 9  &quot;$ind$cos2&quot;        &quot;cos2 for the individuals&quot;           </span></span>
+<span id="cb265-18"><a href="pca.html#cb265-18" aria-hidden="true" tabindex="-1"></a><span class="do">## 10 &quot;$ind$contrib&quot;     &quot;contributions of the individuals&quot;   </span></span>
+<span id="cb265-19"><a href="pca.html#cb265-19" aria-hidden="true" tabindex="-1"></a><span class="do">## 11 &quot;$call&quot;            &quot;summary statistics&quot;                 </span></span>
+<span id="cb265-20"><a href="pca.html#cb265-20" aria-hidden="true" tabindex="-1"></a><span class="do">## 12 &quot;$call$centre&quot;     &quot;mean of the variables&quot;              </span></span>
+<span id="cb265-21"><a href="pca.html#cb265-21" aria-hidden="true" tabindex="-1"></a><span class="do">## 13 &quot;$call$ecart.type&quot; &quot;standard error of the variables&quot;    </span></span>
+<span id="cb265-22"><a href="pca.html#cb265-22" aria-hidden="true" tabindex="-1"></a><span class="do">## 14 &quot;$call$row.w&quot;      &quot;weights for the individuals&quot;        </span></span>
+<span id="cb265-23"><a href="pca.html#cb265-23" aria-hidden="true" tabindex="-1"></a><span class="do">## 15 &quot;$call$col.w&quot;      &quot;weights for the variables&quot;</span></span></code></pre></div>
+<p>Das Ergebnis der Funktion <code>PCA()</code> ist eine Liste mit verschiedenen Komponenten.</p>
+<p>Wichtige FUnktionen in dem factoextra package lauten:</p>
+<ul>
+<li>get_eigenvalue(res.pca): Extrahiert Eigenvalues/Varianz der PC</li>
+<li>fviz_eig(res.pca): Visualisiert die Eigenvalues</li>
+<li>get_pca_ind(res.pca), get_pca_var(res.pca): Extrahiert das Ergenis spezieller Variablen</li>
+<li>fviz_pca_ind(res.pca), fviz_pca_var(res.pca): Visualisiert das Ergenis spezieller Variablen</li>
+<li>fviz_pca_biplot(res.pca): Biplot individueller Variablen</li>
+</ul>
+</div>
+<div id="eigenvalues" class="section level3" number="9.4.3">
+<h3><span class="header-section-number">9.4.3</span> Eigenvalues</h3>
+<p>Eigenvalues messen die Stärke der Variation jeder PC.</p>
+<div class="sourceCode" id="cb266"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb266-1"><a href="pca.html#cb266-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb266-2"><a href="pca.html#cb266-2" aria-hidden="true" tabindex="-1"></a>eig.val <span class="ot">&lt;-</span> <span class="fu">get_eigenvalue</span>(pca)</span>
+<span id="cb266-3"><a href="pca.html#cb266-3" aria-hidden="true" tabindex="-1"></a>eig.val <span class="sc">%&gt;%</span></span>
+<span id="cb266-4"><a href="pca.html#cb266-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">head</span>(<span class="at">n =</span> <span class="dv">5</span>)</span>
+<span id="cb266-5"><a href="pca.html#cb266-5" aria-hidden="true" tabindex="-1"></a><span class="do">##       eigenvalue variance.percent cumulative.variance.percent</span></span>
+<span id="cb266-6"><a href="pca.html#cb266-6" aria-hidden="true" tabindex="-1"></a><span class="do">## Dim.1 22.0353186        53.744680                    53.74468</span></span>
+<span id="cb266-7"><a href="pca.html#cb266-7" aria-hidden="true" tabindex="-1"></a><span class="do">## Dim.2 10.7046683        26.108947                    79.85363</span></span>
+<span id="cb266-8"><a href="pca.html#cb266-8" aria-hidden="true" tabindex="-1"></a><span class="do">## Dim.3  2.0512772         5.003115                    84.85674</span></span>
+<span id="cb266-9"><a href="pca.html#cb266-9" aria-hidden="true" tabindex="-1"></a><span class="do">## Dim.4  1.5700885         3.829484                    88.68623</span></span>
+<span id="cb266-10"><a href="pca.html#cb266-10" aria-hidden="true" tabindex="-1"></a><span class="do">## Dim.5  0.9291947         2.266328                    90.95255</span></span></code></pre></div>
+<p>Für den Ecuador Datensatz erklären die Eigenvalues der ersten zwei PCs 83% der Varianz (das ist viel). Wieviele PCs für die Auswahl der PCA wichtig sind lässt sich nicht objektiv sagen. Eine Möglichkeit ist es einen Wert festzulegen, mit dem man selber zufrieden ist:</p>
+<blockquote>
+<p>You can also limit the number of component to that number that accounts for a certain fraction of the total variance. For example, if you are satisfied with 70% of the total variance explained then use the number of components to achieve that. (Kaiser 1961)</p>
+</blockquote>
+<p>Eine graphische Darstellung der Eigenvalue ist auch eine Möglichkeit:</p>
+<div class="sourceCode" id="cb267"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb267-1"><a href="pca.html#cb267-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb267-2"><a href="pca.html#cb267-2" aria-hidden="true" tabindex="-1"></a><span class="fu">fviz_eig</span>(pca, <span class="at">addlabels =</span> T, <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">60</span>))</span></code></pre></div>
+<p><img src="documentation_files/figure-html/unnamed-chunk-274-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<p>In der Darstellung sind die EIgenvalues absteigend sortiert und man wählt den Punkt aus, wo die vebleibenden Eigenvalues gleichbleibend klein bleiben (in unserem Fall ab der dritten PC).</p>
+</div>
+<div id="darstellen-der-ergebnisse" class="section level3" number="9.4.4">
+<h3><span class="header-section-number">9.4.4</span> Darstellen der Ergebnisse</h3>
+<p>Die einfachste Methode ist mit der Funktion <code>get_pca_var()</code>.</p>
+<div class="sourceCode" id="cb268"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb268-1"><a href="pca.html#cb268-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb268-2"><a href="pca.html#cb268-2" aria-hidden="true" tabindex="-1"></a>var <span class="ot">&lt;-</span> <span class="fu">get_pca_var</span>(pca)</span>
+<span id="cb268-3"><a href="pca.html#cb268-3" aria-hidden="true" tabindex="-1"></a>var</span>
+<span id="cb268-4"><a href="pca.html#cb268-4" aria-hidden="true" tabindex="-1"></a><span class="do">## Principal Component Analysis Results for variables</span></span>
+<span id="cb268-5"><a href="pca.html#cb268-5" aria-hidden="true" tabindex="-1"></a><span class="do">##  ===================================================</span></span>
+<span id="cb268-6"><a href="pca.html#cb268-6" aria-hidden="true" tabindex="-1"></a><span class="do">##   Name       Description                                    </span></span>
+<span id="cb268-7"><a href="pca.html#cb268-7" aria-hidden="true" tabindex="-1"></a><span class="do">## 1 &quot;$coord&quot;   &quot;Coordinates for the variables&quot;                </span></span>
+<span id="cb268-8"><a href="pca.html#cb268-8" aria-hidden="true" tabindex="-1"></a><span class="do">## 2 &quot;$cor&quot;     &quot;Correlations between variables and dimensions&quot;</span></span>
+<span id="cb268-9"><a href="pca.html#cb268-9" aria-hidden="true" tabindex="-1"></a><span class="do">## 3 &quot;$cos2&quot;    &quot;Cos2 for the variables&quot;                       </span></span>
+<span id="cb268-10"><a href="pca.html#cb268-10" aria-hidden="true" tabindex="-1"></a><span class="do">## 4 &quot;$contrib&quot; &quot;contributions of the variables&quot;</span></span></code></pre></div>
+<p>Die vier verschiedenen Komponenten von <code>get_pca_var()</code> können genutzt werden um die Ergebnisse auf verschiedenen Art darzustellen:</p>
+<div class="sourceCode" id="cb269"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb269-1"><a href="pca.html#cb269-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Coordinates</span></span>
+<span id="cb269-2"><a href="pca.html#cb269-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(var<span class="sc">$</span>coord)</span>
+<span id="cb269-3"><a href="pca.html#cb269-3" aria-hidden="true" tabindex="-1"></a><span class="do">##              Dim.1       Dim.2      Dim.3       Dim.4        Dim.5</span></span>
+<span id="cb269-4"><a href="pca.html#cb269-4" aria-hidden="true" tabindex="-1"></a><span class="do">## som     -0.9035830 0.401687675 0.02396744  0.04367303  0.007574548</span></span>
+<span id="cb269-5"><a href="pca.html#cb269-5" aria-hidden="true" tabindex="-1"></a><span class="do">## wsc     -0.4272716 0.818221888 0.23566053  0.01842607  0.228960043</span></span>
+<span id="cb269-6"><a href="pca.html#cb269-6" aria-hidden="true" tabindex="-1"></a><span class="do">## wsc_ma   0.9311431 0.009632107 0.06882345  0.31524171 -0.038210767</span></span>
+<span id="cb269-7"><a href="pca.html#cb269-7" aria-hidden="true" tabindex="-1"></a><span class="do">## wsc_som  0.1897357 0.870939967 0.25573775 -0.10827495  0.234158268</span></span>
+<span id="cb269-8"><a href="pca.html#cb269-8" aria-hidden="true" tabindex="-1"></a><span class="do">## hwsc    -0.4664379 0.858078439 0.11239753  0.02954132  0.055621320</span></span>
+<span id="cb269-9"><a href="pca.html#cb269-9" aria-hidden="true" tabindex="-1"></a><span class="do">## hwsc_ma  0.9266593 0.008194929 0.09076181  0.30533813 -0.039134670</span></span>
+<span id="cb269-10"><a href="pca.html#cb269-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Cos2: Quality on the factore map</span></span>
+<span id="cb269-11"><a href="pca.html#cb269-11" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(var<span class="sc">$</span>cos2)</span>
+<span id="cb269-12"><a href="pca.html#cb269-12" aria-hidden="true" tabindex="-1"></a><span class="do">##              Dim.1        Dim.2        Dim.3        Dim.4        Dim.5</span></span>
+<span id="cb269-13"><a href="pca.html#cb269-13" aria-hidden="true" tabindex="-1"></a><span class="do">## som     0.81646222 1.613530e-01 0.0005744384 0.0019073332 5.737378e-05</span></span>
+<span id="cb269-14"><a href="pca.html#cb269-14" aria-hidden="true" tabindex="-1"></a><span class="do">## wsc     0.18256102 6.694871e-01 0.0555358864 0.0003395199 5.242270e-02</span></span>
+<span id="cb269-15"><a href="pca.html#cb269-15" aria-hidden="true" tabindex="-1"></a><span class="do">## wsc_ma  0.86702742 9.277748e-05 0.0047366671 0.0993773365 1.460063e-03</span></span>
+<span id="cb269-16"><a href="pca.html#cb269-16" aria-hidden="true" tabindex="-1"></a><span class="do">## wsc_som 0.03599964 7.585364e-01 0.0654017962 0.0117234644 5.483009e-02</span></span>
+<span id="cb269-17"><a href="pca.html#cb269-17" aria-hidden="true" tabindex="-1"></a><span class="do">## hwsc    0.21756428 7.362986e-01 0.0126332053 0.0008726898 3.093731e-03</span></span>
+<span id="cb269-18"><a href="pca.html#cb269-18" aria-hidden="true" tabindex="-1"></a><span class="do">## hwsc_ma 0.85869745 6.715687e-05 0.0082377069 0.0932313730 1.531522e-03</span></span>
+<span id="cb269-19"><a href="pca.html#cb269-19" aria-hidden="true" tabindex="-1"></a><span class="co"># Contribution to the PCA</span></span>
+<span id="cb269-20"><a href="pca.html#cb269-20" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(var<span class="sc">$</span>contrib)</span>
+<span id="cb269-21"><a href="pca.html#cb269-21" aria-hidden="true" tabindex="-1"></a><span class="do">##             Dim.1        Dim.2      Dim.3      Dim.4      Dim.5</span></span>
+<span id="cb269-22"><a href="pca.html#cb269-22" aria-hidden="true" tabindex="-1"></a><span class="do">## som     3.7052436 1.5073142260 0.02800394 0.12147935 0.00617457</span></span>
+<span id="cb269-23"><a href="pca.html#cb269-23" aria-hidden="true" tabindex="-1"></a><span class="do">## wsc     0.8284928 6.2541597721 2.70738089 0.02162425 5.64173514</span></span>
+<span id="cb269-24"><a href="pca.html#cb269-24" aria-hidden="true" tabindex="-1"></a><span class="do">## wsc_ma  3.9347170 0.0008667011 0.23091307 6.32940986 0.15713206</span></span>
+<span id="cb269-25"><a href="pca.html#cb269-25" aria-hidden="true" tabindex="-1"></a><span class="do">## wsc_som 0.1633725 7.0860339197 3.18834513 0.74667539 5.90081897</span></span>
+<span id="cb269-26"><a href="pca.html#cb269-26" aria-hidden="true" tabindex="-1"></a><span class="do">## hwsc    0.9873435 6.8782944667 0.61587022 0.05558220 0.33294759</span></span>
+<span id="cb269-27"><a href="pca.html#cb269-27" aria-hidden="true" tabindex="-1"></a><span class="do">## hwsc_ma 3.8969142 0.0006273606 0.40158917 5.93796928 0.16482256</span></span></code></pre></div>
+<div id="darstellung-im-koordinatensystem" class="section level4" number="9.4.4.1">
+<h4><span class="header-section-number">9.4.4.1</span> Darstellung im Koordinatensystem</h4>
+<p>Um die Variablen im Koordinatensystem darzustellen eignet sich der folgende Befehl:</p>
+<div class="sourceCode" id="cb270"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb270-1"><a href="pca.html#cb270-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb270-2"><a href="pca.html#cb270-2" aria-hidden="true" tabindex="-1"></a><span class="fu">fviz_pca_var</span>(pca, <span class="at">repel =</span> T)</span></code></pre></div>
+<p><img src="documentation_files/figure-html/unnamed-chunk-277-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<p>Dieser Plot wird auch als <strong>Variable correlation plot</strong> bezeichnet und zeigt die Beziehung zwischen den Variablen:</p>
+<ul>
+<li>Positiv korrelierte Variablen clustern zusammen * Negativ korrelierte Variablen sind gegenüber positioniert (gegenüberliegende Quadranten)</li>
+<li>Der Abstand der Variable zum Zentrum des Kreises stellt die Qualität der Variable auf der factor map da. Weit entfernte Variablen werden auf der factor map besser dargestellt.</li>
+</ul>
+<p>Die Qualität der Darstellung wird über <strong>cos2</strong> definiert (quadrierter Cosinus, quadrierte Koordinaten). Darstellen kann man den Zusammenhang als barplot:</p>
+<div class="sourceCode" id="cb271"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb271-1"><a href="pca.html#cb271-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb271-2"><a href="pca.html#cb271-2" aria-hidden="true" tabindex="-1"></a><span class="fu">fviz_cos2</span>(pca, <span class="at">choice =</span> <span class="st">&quot;var&quot;</span>)</span></code></pre></div>
+<p><img src="documentation_files/figure-html/unnamed-chunk-278-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<p>Ein großer cos2 Wert bedeutet eine gute Repräsentation der Variable auf der PC. In diesem Fall ist die Variable nah am Kreisumfang positioniert.
+Ein niedriger co2 Wert bedeutet, dass die Variable nicht perfekt dargestellt wird, wobei die Variable näher am Zentrum des Kreises liegt. Die Summe des cos2 einer Variable auf allen PCs ist = 1.
+Wenn eine Variable also perfekt durch nur zwei PCs dargestellt wird, dann ist der cos2 Werte ~1 und die Variable liegt nah am Kreisumfang. Wozu ist der cos2 also wichtig?</p>
+<ul>
+<li>Beschreibt die QUalität der Darstellung</li>
+<li>Je näher die Variable am Kreisumfang desto besser wird diese Variable auf der factor map dargestellt.</li>
+<li>Variablen nahe des Kreiszentrums tragen wenig zur ersten PC bei</li>
+</ul>
+<p>Die QUalität der Variable kann auch farblich dargestellt werden:</p>
+<div class="sourceCode" id="cb272"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb272-1"><a href="pca.html#cb272-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb272-2"><a href="pca.html#cb272-2" aria-hidden="true" tabindex="-1"></a><span class="fu">fviz_pca_var</span>(pca, <span class="at">col.var =</span> <span class="st">&quot;cos2&quot;</span>, <span class="at">gradient.cols =</span> <span class="fu">c</span>(<span class="st">&quot;#00AFBB&quot;</span>, <span class="st">&quot;#E7B800&quot;</span>, <span class="st">&quot;#FC4E07&quot;</span>), </span>
+<span id="cb272-3"><a href="pca.html#cb272-3" aria-hidden="true" tabindex="-1"></a>             <span class="at">repel =</span> <span class="cn">TRUE</span> <span class="co"># Avoid text overlapping</span></span>
+<span id="cb272-4"><a href="pca.html#cb272-4" aria-hidden="true" tabindex="-1"></a>             )</span></code></pre></div>
+<p><img src="documentation_files/figure-html/unnamed-chunk-279-1.png" width="100%" style="display: block; margin: auto;" /></p>
+</div>
+<div id="beitrag-einer-variable-zur-pca" class="section level4" number="9.4.4.2">
+<h4><span class="header-section-number">9.4.4.2</span> Beitrag einer Variable zur PCA</h4>
+<p>Der Beitrag einer Variable für die Variabilität einer PC wird in % angegeben.</p>
+<ul>
+<li>Variablen die mit PC1 (Dim.1) und PC2 (Dim.2) korreliert sind haben die größte Bedeutung um die Variabilität im Datensatz zu erklären.</li>
+<li>Variablen die mit keiner PC korrelieren haben den geringsten Beitrag</li>
+</ul>
+<p>💡 Um die Aussage einer PCA zu verstärken können Variablen mit einem geringen Beitrag von der Analyse ausgeschlossen werden.</p>
+<div class="sourceCode" id="cb273"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb273-1"><a href="pca.html#cb273-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Show the variables contributing to PC1</span></span>
+<span id="cb273-2"><a href="pca.html#cb273-2" aria-hidden="true" tabindex="-1"></a><span class="fu">fviz_contrib</span>(pca, <span class="at">choice =</span> <span class="st">&quot;var&quot;</span>, <span class="at">axes =</span> <span class="dv">1</span>)</span></code></pre></div>
+<p><img src="documentation_files/figure-html/unnamed-chunk-280-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<div class="sourceCode" id="cb274"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb274-1"><a href="pca.html#cb274-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb274-2"><a href="pca.html#cb274-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Show the variables contributing to PC2</span></span>
+<span id="cb274-3"><a href="pca.html#cb274-3" aria-hidden="true" tabindex="-1"></a><span class="fu">fviz_contrib</span>(pca, <span class="at">choice =</span> <span class="st">&quot;var&quot;</span>, <span class="at">axes =</span> <span class="dv">2</span>)</span></code></pre></div>
+<p><img src="documentation_files/figure-html/unnamed-chunk-280-2.png" width="100%" style="display: block; margin: auto;" /></p>
+<div class="sourceCode" id="cb275"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb275-1"><a href="pca.html#cb275-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb275-2"><a href="pca.html#cb275-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Show the variables contributing to PC1 AND PC2</span></span>
+<span id="cb275-3"><a href="pca.html#cb275-3" aria-hidden="true" tabindex="-1"></a><span class="fu">fviz_contrib</span>(pca, <span class="at">choice =</span> <span class="st">&quot;var&quot;</span>, <span class="at">axes =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>)</span></code></pre></div>
+<p><img src="documentation_files/figure-html/unnamed-chunk-280-3.png" width="100%" style="display: block; margin: auto;" /></p>
+<p>SOM, pH und hwsc tragen am meisten zu PC1 und PC2 bei, die mineralogischen Kennwerte des Eisens spielen eine untergeordnete Rolle.</p>
+<div class="sourceCode" id="cb276"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb276-1"><a href="pca.html#cb276-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb276-2"><a href="pca.html#cb276-2" aria-hidden="true" tabindex="-1"></a><span class="fu">fviz_pca_var</span>(pca, <span class="at">col.var =</span> <span class="st">&quot;contrib&quot;</span>, <span class="at">repel =</span> T, <span class="at">gradient.cols =</span> <span class="fu">c</span>(<span class="st">&quot;#00AFBB&quot;</span>, <span class="st">&quot;#E7B800&quot;</span>, <span class="st">&quot;#FC4E07&quot;</span>))</span></code></pre></div>
+<p><img src="documentation_files/figure-html/unnamed-chunk-281-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<p>Je näher der Pfeil am Kreisumfang positioniert ist, desto größer ist der Beitrag einer Variable für die Separierung der Daten.</p>
+</div>
+<div id="darstellen-der-individuen-in-der-pca" class="section level4" number="9.4.4.3">
+<h4><span class="header-section-number">9.4.4.3</span> Darstellen der Individuen in der PCA</h4>
+<p>Die Informationen der Individuen können mit der Funktion <code>get_pca_ind()</code> abgerufen werden.</p>
+<div class="sourceCode" id="cb277"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb277-1"><a href="pca.html#cb277-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb277-2"><a href="pca.html#cb277-2" aria-hidden="true" tabindex="-1"></a>ind <span class="ot">&lt;-</span> <span class="fu">get_pca_ind</span>(pca)</span>
+<span id="cb277-3"><a href="pca.html#cb277-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb277-4"><a href="pca.html#cb277-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Coordinates of individuals</span></span>
+<span id="cb277-5"><a href="pca.html#cb277-5" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(ind<span class="sc">$</span>coord)</span>
+<span id="cb277-6"><a href="pca.html#cb277-6" aria-hidden="true" tabindex="-1"></a><span class="do">##       Dim.1      Dim.2      Dim.3      Dim.4      Dim.5</span></span>
+<span id="cb277-7"><a href="pca.html#cb277-7" aria-hidden="true" tabindex="-1"></a><span class="do">## 1 -3.555229  6.1901987 0.36582084  0.2385691  0.4755535</span></span>
+<span id="cb277-8"><a href="pca.html#cb277-8" aria-hidden="true" tabindex="-1"></a><span class="do">## 2 -1.853013 -0.1218242 1.25100363 -1.8782000 -0.3163522</span></span>
+<span id="cb277-9"><a href="pca.html#cb277-9" aria-hidden="true" tabindex="-1"></a><span class="do">## 3 -1.640374 -1.1297505 0.72048321 -0.9106315 -0.1500884</span></span>
+<span id="cb277-10"><a href="pca.html#cb277-10" aria-hidden="true" tabindex="-1"></a><span class="do">## 4 -2.135484  6.8982505 0.08300526  0.1573187  0.4908759</span></span>
+<span id="cb277-11"><a href="pca.html#cb277-11" aria-hidden="true" tabindex="-1"></a><span class="do">## 5 -1.465293  0.1039718 0.85549779 -1.3135040 -0.4857763</span></span>
+<span id="cb277-12"><a href="pca.html#cb277-12" aria-hidden="true" tabindex="-1"></a><span class="do">## 6 -1.196337 -2.4444755 0.78528722 -0.6925059  0.6547019</span></span>
+<span id="cb277-13"><a href="pca.html#cb277-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Quality of individuals</span></span>
+<span id="cb277-14"><a href="pca.html#cb277-14" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(ind<span class="sc">$</span>cos2)</span>
+<span id="cb277-15"><a href="pca.html#cb277-15" aria-hidden="true" tabindex="-1"></a><span class="do">##        Dim.1       Dim.2        Dim.3        Dim.4       Dim.5</span></span>
+<span id="cb277-16"><a href="pca.html#cb277-16" aria-hidden="true" tabindex="-1"></a><span class="do">## 1 0.23462355 0.711288225 0.0024841244 0.0010564888 0.004197930</span></span>
+<span id="cb277-17"><a href="pca.html#cb277-17" aria-hidden="true" tabindex="-1"></a><span class="do">## 2 0.28017327 0.001210980 0.1276987925 0.2878414594 0.008166037</span></span>
+<span id="cb277-18"><a href="pca.html#cb277-18" aria-hidden="true" tabindex="-1"></a><span class="do">## 3 0.23813244 0.112952985 0.0459388781 0.0733868052 0.001993549</span></span>
+<span id="cb277-19"><a href="pca.html#cb277-19" aria-hidden="true" tabindex="-1"></a><span class="do">## 4 0.07515351 0.784213920 0.0001135449 0.0004078658 0.003971002</span></span>
+<span id="cb277-20"><a href="pca.html#cb277-20" aria-hidden="true" tabindex="-1"></a><span class="do">## 5 0.30414848 0.001531328 0.1036751558 0.2443991716 0.033427938</span></span>
+<span id="cb277-21"><a href="pca.html#cb277-21" aria-hidden="true" tabindex="-1"></a><span class="do">## 6 0.09606433 0.401075715 0.0413915834 0.0321885866 0.028770156</span></span>
+<span id="cb277-22"><a href="pca.html#cb277-22" aria-hidden="true" tabindex="-1"></a><span class="co"># Contributions of individuals</span></span>
+<span id="cb277-23"><a href="pca.html#cb277-23" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(ind<span class="sc">$</span>contrib)</span>
+<span id="cb277-24"><a href="pca.html#cb277-24" aria-hidden="true" tabindex="-1"></a><span class="do">##       Dim.1        Dim.2       Dim.3      Dim.4      Dim.5</span></span>
+<span id="cb277-25"><a href="pca.html#cb277-25" aria-hidden="true" tabindex="-1"></a><span class="do">## 1 1.3036565  8.135482080 0.148272248 0.08238567 0.55314543</span></span>
+<span id="cb277-26"><a href="pca.html#cb277-26" aria-hidden="true" tabindex="-1"></a><span class="do">## 2 0.3541482  0.003150948 1.733964139 5.10630656 0.24478359</span></span>
+<span id="cb277-27"><a href="pca.html#cb277-27" aria-hidden="true" tabindex="-1"></a><span class="do">## 3 0.2775325  0.270981201 0.575136197 1.20035171 0.05509788</span></span>
+<span id="cb277-28"><a href="pca.html#cb277-28" aria-hidden="true" tabindex="-1"></a><span class="do">## 4 0.4703494 10.103039065 0.007633684 0.03582480 0.58936466</span></span>
+<span id="cb277-29"><a href="pca.html#cb277-29" aria-hidden="true" tabindex="-1"></a><span class="do">## 5 0.2214505  0.002295120 0.810887778 2.49738790 0.57718269</span></span>
+<span id="cb277-30"><a href="pca.html#cb277-30" aria-hidden="true" tabindex="-1"></a><span class="do">## 6 0.1476166  1.268660714 0.683250614 0.69417683 1.04840204</span></span></code></pre></div>
+<p>Plots: Quality and contribution</p>
+<div class="sourceCode" id="cb278"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb278-1"><a href="pca.html#cb278-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb278-2"><a href="pca.html#cb278-2" aria-hidden="true" tabindex="-1"></a><span class="fu">fviz_pca_ind</span>(pca, <span class="at">repel =</span> T)</span></code></pre></div>
+<p><img src="documentation_files/figure-html/unnamed-chunk-283-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<p>Individuen können auch nach dem cos2 Wert gruppiert werden</p>
+<div class="sourceCode" id="cb279"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb279-1"><a href="pca.html#cb279-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb279-2"><a href="pca.html#cb279-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Group by color</span></span>
+<span id="cb279-3"><a href="pca.html#cb279-3" aria-hidden="true" tabindex="-1"></a><span class="fu">fviz_pca_ind</span>(pca, <span class="at">col.ind =</span> <span class="st">&quot;cos2&quot;</span>, </span>
+<span id="cb279-4"><a href="pca.html#cb279-4" aria-hidden="true" tabindex="-1"></a>             <span class="at">gradient.cols =</span> <span class="fu">c</span>(<span class="st">&quot;#00AFBB&quot;</span>, <span class="st">&quot;#E7B800&quot;</span>, <span class="st">&quot;#FC4E07&quot;</span>),</span>
+<span id="cb279-5"><a href="pca.html#cb279-5" aria-hidden="true" tabindex="-1"></a>             <span class="at">repel =</span> <span class="cn">TRUE</span> <span class="co"># Avoid text overlapping (slow if many points)</span></span>
+<span id="cb279-6"><a href="pca.html#cb279-6" aria-hidden="true" tabindex="-1"></a>             )</span></code></pre></div>
+<p><img src="documentation_files/figure-html/unnamed-chunk-284-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<p>💡 Individuen mit ähnlichen Eigenschaften werden zusammen gruppiert.</p>
+<p>Um den Anteil (contribution) der ersten zwei PC (DIM.1 und DIM.2) darzustellen schreibe:</p>
+<div class="sourceCode" id="cb280"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb280-1"><a href="pca.html#cb280-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb280-2"><a href="pca.html#cb280-2" aria-hidden="true" tabindex="-1"></a><span class="fu">fviz_contrib</span>(pca, <span class="at">choice =</span> <span class="st">&quot;ind&quot;</span>, <span class="at">axes =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>)</span></code></pre></div>
+<p><img src="documentation_files/figure-html/unnamed-chunk-285-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<p>Die Proben 39,42,36,37 tragen am meisten für die Separierung der Daten bei, die Proben 2,3,5 am wenigsten.</p>
+</div>
+<div id="farbliche-darstellung" class="section level4" number="9.4.4.4">
+<h4><span class="header-section-number">9.4.4.4</span> Farbliche Darstellung</h4>
+<p>Wie für Variablen können auch Individuen farblich dargestellt werden, bspw. nach Kategorien gruppiert werden (Standort, Tiefe). Argument <code>habillage</code> oder <code>col.ind</code> kann genutzt werden um Individuen nach Gruppen darzustellen. Um eine Ellipse zu erzeugen kann <code>addEllipses = T</code> gesetzt werden:</p>
+<div class="sourceCode" id="cb281"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb281-1"><a href="pca.html#cb281-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create one data frame with the data</span></span>
+<span id="cb281-2"><a href="pca.html#cb281-2" aria-hidden="true" tabindex="-1"></a>df_pca <span class="ot">&lt;-</span> df_ec <span class="sc">%&gt;%</span></span>
+<span id="cb281-3"><a href="pca.html#cb281-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(site_name, depth, som<span class="sc">:</span>P2O5, <span class="sc">-</span>mat_amorph, <span class="sc">-</span>index) <span class="sc">%&gt;%</span></span>
+<span id="cb281-4"><a href="pca.html#cb281-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">na.omit</span>() <span class="co"># Mit dem Befehl werden NA Werte aus den Daten entfernt...wichtig (!) bevor die PCA durchgeführt werden kann</span></span>
+<span id="cb281-5"><a href="pca.html#cb281-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb281-6"><a href="pca.html#cb281-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Create one data frame only for the grouping variable</span></span>
+<span id="cb281-7"><a href="pca.html#cb281-7" aria-hidden="true" tabindex="-1"></a>df_var <span class="ot">&lt;-</span> df_pca <span class="sc">%&gt;%</span></span>
+<span id="cb281-8"><a href="pca.html#cb281-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(site_name, depth)</span>
+<span id="cb281-9"><a href="pca.html#cb281-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb281-10"><a href="pca.html#cb281-10" aria-hidden="true" tabindex="-1"></a>pca <span class="ot">&lt;-</span> <span class="fu">PCA</span>(df_pca[,<span class="sc">-</span><span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>)], <span class="at">scale.unit =</span> T, <span class="at">ncp =</span> <span class="dv">5</span>, <span class="at">graph =</span> F) <span class="co"># Makes the PCA but without the site_name and depth grouping value</span></span>
+<span id="cb281-11"><a href="pca.html#cb281-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb281-12"><a href="pca.html#cb281-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Gruppieren nach Standort</span></span>
+<span id="cb281-13"><a href="pca.html#cb281-13" aria-hidden="true" tabindex="-1"></a><span class="fu">fviz_pca_ind</span>(pca,</span>
+<span id="cb281-14"><a href="pca.html#cb281-14" aria-hidden="true" tabindex="-1"></a>             <span class="at">col.ind =</span> df_var<span class="sc">$</span>site_name, <span class="co"># color by site_name</span></span>
+<span id="cb281-15"><a href="pca.html#cb281-15" aria-hidden="true" tabindex="-1"></a>             <span class="at">addEllipses =</span> <span class="cn">TRUE</span>, <span class="co"># Concentration ellipses</span></span>
+<span id="cb281-16"><a href="pca.html#cb281-16" aria-hidden="true" tabindex="-1"></a>             <span class="at">label=</span> <span class="st">&quot;var&quot;</span>,</span>
+<span id="cb281-17"><a href="pca.html#cb281-17" aria-hidden="true" tabindex="-1"></a>             <span class="at">legend.title =</span> <span class="st">&quot;Plot&quot;</span>,</span>
+<span id="cb281-18"><a href="pca.html#cb281-18" aria-hidden="true" tabindex="-1"></a>             <span class="at">repel =</span> <span class="cn">TRUE</span> <span class="co"># to not have overlapping text in the figure</span></span>
+<span id="cb281-19"><a href="pca.html#cb281-19" aria-hidden="true" tabindex="-1"></a>             )</span></code></pre></div>
+<p><img src="documentation_files/figure-html/unnamed-chunk-286-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<div class="sourceCode" id="cb282"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb282-1"><a href="pca.html#cb282-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb282-2"><a href="pca.html#cb282-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Gruppieren nach Tiefe</span></span>
+<span id="cb282-3"><a href="pca.html#cb282-3" aria-hidden="true" tabindex="-1"></a><span class="fu">fviz_pca_ind</span>(pca,</span>
+<span id="cb282-4"><a href="pca.html#cb282-4" aria-hidden="true" tabindex="-1"></a>             <span class="at">geom.var =</span> <span class="st">&quot;arrow&quot;</span>,</span>
+<span id="cb282-5"><a href="pca.html#cb282-5" aria-hidden="true" tabindex="-1"></a>             <span class="at">col.ind =</span> df_var<span class="sc">$</span>depth, <span class="co"># color by depth</span></span>
+<span id="cb282-6"><a href="pca.html#cb282-6" aria-hidden="true" tabindex="-1"></a>             <span class="at">addEllipses =</span> <span class="cn">TRUE</span>, <span class="co"># Concentration ellipses</span></span>
+<span id="cb282-7"><a href="pca.html#cb282-7" aria-hidden="true" tabindex="-1"></a>             <span class="at">label=</span> <span class="st">&quot;var&quot;</span>,</span>
+<span id="cb282-8"><a href="pca.html#cb282-8" aria-hidden="true" tabindex="-1"></a>             <span class="at">legend.title =</span> <span class="st">&quot;Plot&quot;</span>,</span>
+<span id="cb282-9"><a href="pca.html#cb282-9" aria-hidden="true" tabindex="-1"></a>             <span class="at">repel =</span> <span class="cn">TRUE</span> <span class="co"># to not have overlapping text in the figure</span></span>
+<span id="cb282-10"><a href="pca.html#cb282-10" aria-hidden="true" tabindex="-1"></a>             )</span></code></pre></div>
+<p><img src="documentation_files/figure-html/unnamed-chunk-286-2.png" width="100%" style="display: block; margin: auto;" /></p>
+<p>In diese Darstellung fließen ALLE numerischen Variablen des Datensatzes ein. Die Paramo-Standorte clustern sehr schön zusammen und es gibt eine Separierung von AC1 und AC2. Besonders AC2 unterscheidet sich signifikant. Ein sehr schönes Ergebnis, dass den Einfluss von 100 Jahren landwirtschaftliche Nutzung hervorhebt.</p>
+</div>
+<div id="figure" class="section level4" number="9.4.4.5">
+<h4><span class="header-section-number">9.4.4.5</span> Figure</h4>
+<div class="sourceCode" id="cb283"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb283-1"><a href="pca.html#cb283-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb283-2"><a href="pca.html#cb283-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Gruppieren nach Standort</span></span>
+<span id="cb283-3"><a href="pca.html#cb283-3" aria-hidden="true" tabindex="-1"></a>p1 <span class="ot">&lt;-</span> <span class="fu">fviz_pca_ind</span>(pca,</span>
+<span id="cb283-4"><a href="pca.html#cb283-4" aria-hidden="true" tabindex="-1"></a>             <span class="at">col.ind =</span> df_var<span class="sc">$</span>site_name, <span class="co"># color by site_name</span></span>
+<span id="cb283-5"><a href="pca.html#cb283-5" aria-hidden="true" tabindex="-1"></a>             <span class="at">addEllipses =</span> <span class="cn">TRUE</span>, <span class="co"># Concentration ellipses</span></span>
+<span id="cb283-6"><a href="pca.html#cb283-6" aria-hidden="true" tabindex="-1"></a>             <span class="at">label=</span> <span class="st">&quot;var&quot;</span>,</span>
+<span id="cb283-7"><a href="pca.html#cb283-7" aria-hidden="true" tabindex="-1"></a>             <span class="at">legend.title =</span> <span class="st">&quot;Plot&quot;</span>,</span>
+<span id="cb283-8"><a href="pca.html#cb283-8" aria-hidden="true" tabindex="-1"></a>             <span class="at">repel =</span> <span class="cn">TRUE</span> <span class="co"># to not have overlapping text in the figure</span></span>
+<span id="cb283-9"><a href="pca.html#cb283-9" aria-hidden="true" tabindex="-1"></a>             )</span>
+<span id="cb283-10"><a href="pca.html#cb283-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb283-11"><a href="pca.html#cb283-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Gruppieren nach Tiefe</span></span>
+<span id="cb283-12"><a href="pca.html#cb283-12" aria-hidden="true" tabindex="-1"></a>p2 <span class="ot">&lt;-</span> <span class="fu">fviz_pca_ind</span>(pca,</span>
+<span id="cb283-13"><a href="pca.html#cb283-13" aria-hidden="true" tabindex="-1"></a>             <span class="at">geom.var =</span> <span class="st">&quot;arrow&quot;</span>,</span>
+<span id="cb283-14"><a href="pca.html#cb283-14" aria-hidden="true" tabindex="-1"></a>             <span class="at">col.ind =</span> df_var<span class="sc">$</span>depth, <span class="co"># color by depth</span></span>
+<span id="cb283-15"><a href="pca.html#cb283-15" aria-hidden="true" tabindex="-1"></a>             <span class="at">addEllipses =</span> <span class="cn">TRUE</span>, <span class="co"># Concentration ellipses</span></span>
+<span id="cb283-16"><a href="pca.html#cb283-16" aria-hidden="true" tabindex="-1"></a>             <span class="at">label=</span> <span class="st">&quot;var&quot;</span>,</span>
+<span id="cb283-17"><a href="pca.html#cb283-17" aria-hidden="true" tabindex="-1"></a>             <span class="at">legend.title =</span> <span class="st">&quot;Depth&quot;</span>,</span>
+<span id="cb283-18"><a href="pca.html#cb283-18" aria-hidden="true" tabindex="-1"></a>             <span class="at">repel =</span> <span class="cn">TRUE</span> <span class="co"># to not have overlapping text in the figure</span></span>
+<span id="cb283-19"><a href="pca.html#cb283-19" aria-hidden="true" tabindex="-1"></a>             )</span>
+<span id="cb283-20"><a href="pca.html#cb283-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb283-21"><a href="pca.html#cb283-21" aria-hidden="true" tabindex="-1"></a>p1 <span class="sc">+</span> p2 <span class="sc">+</span> <span class="fu">plot_annotation</span>(<span class="at">tag_levels =</span> <span class="st">&quot;A&quot;</span>)</span></code></pre></div>
+<p><img src="documentation_files/figure-html/unnamed-chunk-287-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<div class="sourceCode" id="cb284"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb284-1"><a href="pca.html#cb284-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb284-2"><a href="pca.html#cb284-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggsave</span>(<span class="st">&quot;images/results/PCA_1.png&quot;</span>, <span class="at">width =</span> <span class="dv">12</span>, <span class="at">height =</span> <span class="dv">5</span>)</span>
+<span id="cb284-3"><a href="pca.html#cb284-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb284-4"><a href="pca.html#cb284-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb284-5"><a href="pca.html#cb284-5" aria-hidden="true" tabindex="-1"></a><span class="fu">fviz_pca_biplot</span>(pca, <span class="at">repel =</span> <span class="cn">TRUE</span>,<span class="co">#to not have overlapping text</span></span>
+<span id="cb284-6"><a href="pca.html#cb284-6" aria-hidden="true" tabindex="-1"></a>                <span class="co">#variables</span></span>
+<span id="cb284-7"><a href="pca.html#cb284-7" aria-hidden="true" tabindex="-1"></a>                <span class="at">col.var =</span> <span class="st">&quot;contrib&quot;</span>,<span class="co"># colour variables according to their contribution to the variance between the axes</span></span>
+<span id="cb284-8"><a href="pca.html#cb284-8" aria-hidden="true" tabindex="-1"></a>                <span class="at">gradient.cols =</span> <span class="fu">c</span>(<span class="st">&quot;#00AFBB&quot;</span>, <span class="st">&quot;#E7B800&quot;</span>, <span class="st">&quot;#FC4E07&quot;</span>),</span>
+<span id="cb284-9"><a href="pca.html#cb284-9" aria-hidden="true" tabindex="-1"></a>               <span class="co">#individuals</span></span>
+<span id="cb284-10"><a href="pca.html#cb284-10" aria-hidden="true" tabindex="-1"></a>                <span class="at">geom.ind =</span> <span class="st">&quot;point&quot;</span>,<span class="co">#using point shape for our indidividual data points</span></span>
+<span id="cb284-11"><a href="pca.html#cb284-11" aria-hidden="true" tabindex="-1"></a>                <span class="at">fill.ind =</span> df_var<span class="sc">$</span>site_name, <span class="at">col.ind =</span> <span class="st">&quot;black&quot;</span>, <span class="co">#group and colour according to plot and black border of points</span></span>
+<span id="cb284-12"><a href="pca.html#cb284-12" aria-hidden="true" tabindex="-1"></a>                <span class="at">pointshape =</span> <span class="dv">21</span>, <span class="at">pointsize =</span> <span class="dv">2</span>,<span class="co">#pointshape 21 is the circel with 2 differing colours important for visibility, pointsize can be adjusted if you want</span></span>
+<span id="cb284-13"><a href="pca.html#cb284-13" aria-hidden="true" tabindex="-1"></a>                <span class="at">palette =</span> <span class="fu">c</span>(<span class="st">&quot;red&quot;</span>, <span class="st">&quot;orange&quot;</span>, <span class="st">&quot;#c7e9c0&quot;</span>,<span class="st">&quot;#41ab5d&quot;</span>,<span class="st">&quot;#006d2c&quot;</span>),<span class="co"># maybe adjust the colour setting here, I tried to take similar colours to before</span></span>
+<span id="cb284-14"><a href="pca.html#cb284-14" aria-hidden="true" tabindex="-1"></a>                <span class="at">addEllipses =</span> <span class="cn">TRUE</span>,<span class="co"># addinf ellipses to our group of individual data points</span></span>
+<span id="cb284-15"><a href="pca.html#cb284-15" aria-hidden="true" tabindex="-1"></a>               <span class="co">#supplements</span></span>
+<span id="cb284-16"><a href="pca.html#cb284-16" aria-hidden="true" tabindex="-1"></a>                <span class="at">legend.title =</span> <span class="fu">list</span>(<span class="at">fill=</span><span class="st">&quot;Plot&quot;</span>,<span class="at">color =</span> <span class="st">&quot;Contribution&quot;</span>))<span class="co">#customizing our legend</span></span></code></pre></div>
+<p><img src="documentation_files/figure-html/unnamed-chunk-287-2.png" width="100%" style="display: block; margin: auto;" /></p>
+<div class="sourceCode" id="cb285"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb285-1"><a href="pca.html#cb285-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb285-2"><a href="pca.html#cb285-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggsave</span>(<span class="st">&quot;images/results/PCA_2.png&quot;</span>, <span class="at">width =</span> <span class="dv">9</span>, <span class="at">height =</span> <span class="dv">9</span>)</span></code></pre></div>
+
+</div>
+</div>
+</div>
+<!-- </div> -->
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="korrelationen.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="datenmanagement.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="assets/gitbook-2.6.7/js/app.min.js"></script>
+<script src="assets/gitbook-2.6.7/js/lunr.js"></script>
+<script src="assets/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="assets/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="assets/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="assets/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="assets/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="assets/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="assets/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+},
+"toolbar": {
+"position": "fixed"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

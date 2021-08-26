@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>12.1 Projekt erstellen | Daten Analyse mit R - Dokumentation</title>
+  <meta name="description" content="Dies ist eine Dokumentation um R bei der explorativen Datenanalyse in den Geowissenschaften einzusetzen." />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="12.1 Projekt erstellen | Daten Analyse mit R - Dokumentation" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Dies ist eine Dokumentation um R bei der explorativen Datenanalyse in den Geowissenschaften einzusetzen." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="12.1 Projekt erstellen | Daten Analyse mit R - Dokumentation" />
+  
+  <meta name="twitter:description" content="Dies ist eine Dokumentation um R bei der explorativen Datenanalyse in den Geowissenschaften einzusetzen." />
+  
+
+<meta name="author" content="Dr. Kristof Dorau" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="github.html"/>
+<link rel="next" href="cache-säubern.html"/>
+<script src="assets/header-attrs-2.9/header-attrs.js"></script>
+<script src="assets/jquery-2.2.3/jquery.min.js"></script>
+<link href="assets/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="assets/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="assets/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="assets/anchor-sections-1.0.1/anchor-sections.js"></script>
+<script src="assets/twitter-widget-0.0.1/widgets.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Einleitung</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="syntax-und-stilistische-mittel-der-dokumentation.html"><a href="syntax-und-stilistische-mittel-der-dokumentation.html"><i class="fa fa-check"></i><b>1.1</b> Syntax und stilistische Mittel der Dokumentation</a></li>
+<li class="chapter" data-level="1.2" data-path="falbeispiele.html"><a href="falbeispiele.html"><i class="fa fa-check"></i><b>1.2</b> Falbeispiele</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="falbeispiele.html"><a href="falbeispiele.html#speicherkoog"><i class="fa fa-check"></i><b>1.2.1</b> Speicherkoog</a></li>
+<li class="chapter" data-level="1.2.2" data-path="falbeispiele.html"><a href="falbeispiele.html#mtcars-datensatz"><i class="fa fa-check"></i><b>1.2.2</b> <code>mtcars</code> Datensatz</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="über-mich.html"><a href="über-mich.html"><i class="fa fa-check"></i><b>1.3</b> Über mich</a></li>
+<li class="chapter" data-level="1.4" data-path="literatur.html"><a href="literatur.html"><i class="fa fa-check"></i><b>1.4</b> Literatur 🔍</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="erste-schritte-mit-r.html"><a href="erste-schritte-mit-r.html"><i class="fa fa-check"></i><b>2</b> Erste Schritte mit R</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="installation.html"><a href="installation.html"><i class="fa fa-check"></i><b>2.1</b> Installation</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="installation.html"><a href="installation.html#r"><i class="fa fa-check"></i><b>2.1.1</b> R</a></li>
+<li class="chapter" data-level="2.1.2" data-path="installation.html"><a href="installation.html#rstudio"><i class="fa fa-check"></i><b>2.1.2</b> RStudio</a></li>
+<li class="chapter" data-level="2.1.3" data-path="installation.html"><a href="installation.html#packages---das-tidyverse"><i class="fa fa-check"></i><b>2.1.3</b> Packages - das tidyverse</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="rstudio-benutzeroberfläche.html"><a href="rstudio-benutzeroberfläche.html"><i class="fa fa-check"></i><b>2.2</b> RStudio Benutzeroberfläche</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="rstudio-benutzeroberfläche.html"><a href="rstudio-benutzeroberfläche.html#source"><i class="fa fa-check"></i><b>2.2.1</b> Source</a></li>
+<li class="chapter" data-level="2.2.2" data-path="rstudio-benutzeroberfläche.html"><a href="rstudio-benutzeroberfläche.html#konsole"><i class="fa fa-check"></i><b>2.2.2</b> Konsole</a></li>
+<li class="chapter" data-level="2.2.3" data-path="rstudio-benutzeroberfläche.html"><a href="rstudio-benutzeroberfläche.html#environment"><i class="fa fa-check"></i><b>2.2.3</b> Environment</a></li>
+<li class="chapter" data-level="2.2.4" data-path="rstudio-benutzeroberfläche.html"><a href="rstudio-benutzeroberfläche.html#files-plots-packages-help"><i class="fa fa-check"></i><b>2.2.4</b> Files / Plots / Packages / Help</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="code-lesen-und-schreiben.html"><a href="code-lesen-und-schreiben.html"><i class="fa fa-check"></i><b>2.3</b> Code lesen und schreiben</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="code-lesen-und-schreiben.html"><a href="code-lesen-und-schreiben.html#die-konsole"><i class="fa fa-check"></i><b>2.3.1</b> Die Konsole</a></li>
+<li class="chapter" data-level="2.3.2" data-path="code-lesen-und-schreiben.html"><a href="code-lesen-und-schreiben.html#r-skript"><i class="fa fa-check"></i><b>2.3.2</b> R Skript</a></li>
+<li class="chapter" data-level="2.3.3" data-path="code-lesen-und-schreiben.html"><a href="code-lesen-und-schreiben.html#good-practice-code-zu-schreiben"><i class="fa fa-check"></i><b>2.3.3</b> Good practice Code zu schreiben</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="objekte-und-funktionen.html"><a href="objekte-und-funktionen.html"><i class="fa fa-check"></i><b>2.4</b> Objekte und Funktionen</a>
+<ul>
+<li class="chapter" data-level="2.4.1" data-path="objekte-und-funktionen.html"><a href="objekte-und-funktionen.html#neue-objekte-erstellen"><i class="fa fa-check"></i><b>2.4.1</b> Neue Objekte erstellen</a></li>
+<li class="chapter" data-level="2.4.2" data-path="objekte-und-funktionen.html"><a href="objekte-und-funktionen.html#beispiel-umrechnen-von-c-in-k"><i class="fa fa-check"></i><b>2.4.2</b> Beispiel: Umrechnen von °C in K</a></li>
+</ul></li>
+<li class="chapter" data-level="2.5" data-path="cheatsheets.html"><a href="cheatsheets.html"><i class="fa fa-check"></i><b>2.5</b> Cheatsheets</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="datentypen.html"><a href="datentypen.html"><i class="fa fa-check"></i><b>3</b> Datentypen</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="objekttypen.html"><a href="objekttypen.html"><i class="fa fa-check"></i><b>3.1</b> Objekttypen</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="objekttypen.html"><a href="objekttypen.html#numerische-objekte"><i class="fa fa-check"></i><b>3.1.1</b> Numerische Objekte</a></li>
+<li class="chapter" data-level="3.1.2" data-path="objekttypen.html"><a href="objekttypen.html#textobjekte"><i class="fa fa-check"></i><b>3.1.2</b> Textobjekte</a></li>
+<li class="chapter" data-level="3.1.3" data-path="objekttypen.html"><a href="objekttypen.html#logicals"><i class="fa fa-check"></i><b>3.1.3</b> Logicals</a></li>
+<li class="chapter" data-level="3.1.4" data-path="objekttypen.html"><a href="objekttypen.html#fehlende-werte"><i class="fa fa-check"></i><b>3.1.4</b> Fehlende Werte</a></li>
+<li class="chapter" data-level="3.1.5" data-path="objekttypen.html"><a href="objekttypen.html#weitere-objekttypen"><i class="fa fa-check"></i><b>3.1.5</b> Weitere Objekttypen</a></li>
+<li class="chapter" data-level="3.1.6" data-path="objekttypen.html"><a href="objekttypen.html#objekttypen-ändern"><i class="fa fa-check"></i><b>3.1.6</b> Objekttypen ändern</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="datenstrukturen.html"><a href="datenstrukturen.html"><i class="fa fa-check"></i><b>3.2</b> Datenstrukturen</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="datenstrukturen.html"><a href="datenstrukturen.html#vektor"><i class="fa fa-check"></i><b>3.2.1</b> Vektor</a></li>
+<li class="chapter" data-level="3.2.2" data-path="datenstrukturen.html"><a href="datenstrukturen.html#liste"><i class="fa fa-check"></i><b>3.2.2</b> Liste</a></li>
+<li class="chapter" data-level="3.2.3" data-path="datenstrukturen.html"><a href="datenstrukturen.html#matrix-und-dataframe"><i class="fa fa-check"></i><b>3.2.3</b> Matrix und dataframe</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="zufallszahlen-erzeugen.html"><a href="zufallszahlen-erzeugen.html"><i class="fa fa-check"></i><b>3.3</b> Zufallszahlen erzeugen</a></li>
+<li class="chapter" data-level="3.4" data-path="rechnen-mit-vektoren.html"><a href="rechnen-mit-vektoren.html"><i class="fa fa-check"></i><b>3.4</b> Rechnen mit Vektoren</a></li>
+<li class="chapter" data-level="3.5" data-path="str-funktion.html"><a href="str-funktion.html"><i class="fa fa-check"></i><b>3.5</b> str() Funktion</a></li>
+<li class="chapter" data-level="3.6" data-path="selektion-von-spaltenzeilen-in-dataframes.html"><a href="selektion-von-spaltenzeilen-in-dataframes.html"><i class="fa fa-check"></i><b>3.6</b> Selektion von Spalten/Zeilen in dataframes</a></li>
+<li class="chapter" data-level="3.7" data-path="erstellen-von-eigenen-funktionen.html"><a href="erstellen-von-eigenen-funktionen.html"><i class="fa fa-check"></i><b>3.7</b> Erstellen von eigenen Funktionen</a>
+<ul>
+<li class="chapter" data-level="3.7.1" data-path="erstellen-von-eigenen-funktionen.html"><a href="erstellen-von-eigenen-funktionen.html#speziellere-anwendungen-von-funktionen"><i class="fa fa-check"></i><b>3.7.1</b> Speziellere Anwendungen von Funktionen</a></li>
+<li class="chapter" data-level="3.7.2" data-path="erstellen-von-eigenen-funktionen.html"><a href="erstellen-von-eigenen-funktionen.html#nutze-...-als-platzhalter"><i class="fa fa-check"></i><b>3.7.2</b> Nutze <code>...</code> als Platzhalter</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="wie-lese-ich-daten-ein.html"><a href="wie-lese-ich-daten-ein.html"><i class="fa fa-check"></i><b>4</b> Wie lese ich Daten ein</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="tidy-data.html"><a href="tidy-data.html"><i class="fa fa-check"></i><b>4.1</b> Tidy data</a></li>
+<li class="chapter" data-level="4.2" data-path="dateiformate.html"><a href="dateiformate.html"><i class="fa fa-check"></i><b>4.2</b> Dateiformate</a></li>
+<li class="chapter" data-level="4.3" data-path="readrread-delim.html"><a href="readrread-delim.html"><i class="fa fa-check"></i><b>4.3</b> readr::read_delim()</a></li>
+<li class="chapter" data-level="4.4" data-path="arbeiten-mit-zeiten.html"><a href="arbeiten-mit-zeiten.html"><i class="fa fa-check"></i><b>4.4</b> Arbeiten mit Zeiten</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="daten-manipulieren.html"><a href="daten-manipulieren.html"><i class="fa fa-check"></i><b>5</b> Daten manipulieren</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="select-variablen-auswählen-spaltenweise.html"><a href="select-variablen-auswählen-spaltenweise.html"><i class="fa fa-check"></i><b>5.1</b> select() - Variablen auswählen (spaltenweise)</a></li>
+<li class="chapter" data-level="5.2" data-path="filter-filtern-von-variablen-zeilenweise.html"><a href="filter-filtern-von-variablen-zeilenweise.html"><i class="fa fa-check"></i><b>5.2</b> filter() - Filtern von Variablen (zeilenweise)</a></li>
+<li class="chapter" data-level="5.3" data-path="arrange-sortieren-des-datensatzes.html"><a href="arrange-sortieren-des-datensatzes.html"><i class="fa fa-check"></i><b>5.3</b> arrange() - Sortieren des Datensatzes</a></li>
+<li class="chapter" data-level="5.4" data-path="mutate-erstelle-neue-variablen.html"><a href="mutate-erstelle-neue-variablen.html"><i class="fa fa-check"></i><b>5.4</b> mutate() - Erstelle neue Variablen</a></li>
+<li class="chapter" data-level="5.5" data-path="summarize-zusammenfassung-von-variablen.html"><a href="summarize-zusammenfassung-von-variablen.html"><i class="fa fa-check"></i><b>5.5</b> summarize() - Zusammenfassung von Variablen</a></li>
+<li class="chapter" data-level="5.6" data-path="group-by-gruppiere-variablen.html"><a href="group-by-gruppiere-variablen.html"><i class="fa fa-check"></i><b>5.6</b> group_by - Gruppiere Variablen</a></li>
+<li class="chapter" data-level="5.7" data-path="across-anwenden-von-funktionen-auf-spalten.html"><a href="across-anwenden-von-funktionen-auf-spalten.html"><i class="fa fa-check"></i><b>5.7</b> across() - Anwenden von Funktionen auf Spalten</a></li>
+<li class="chapter" data-level="5.8" data-path="joins.html"><a href="joins.html"><i class="fa fa-check"></i><b>5.8</b> joins</a></li>
+<li class="chapter" data-level="5.9" data-path="pivot-longer-long-data-format.html"><a href="pivot-longer-long-data-format.html"><i class="fa fa-check"></i><b>5.9</b> pivot_longer() - Long data format</a></li>
+<li class="chapter" data-level="5.10" data-path="pivot-wider-wider-data-format.html"><a href="pivot-wider-wider-data-format.html"><i class="fa fa-check"></i><b>5.10</b> pivot_wider() - wider data format</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="explorative-datenanalyse.html"><a href="explorative-datenanalyse.html"><i class="fa fa-check"></i><b>6</b> Explorative-Datenanalyse</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="fehlende-werte-1.html"><a href="fehlende-werte-1.html"><i class="fa fa-check"></i><b>6.1</b> Fehlende Werte</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="datenvisualisierung.html"><a href="datenvisualisierung.html"><i class="fa fa-check"></i><b>7</b> Datenvisualisierung</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="ggplot2-grammar-of-graphics.html"><a href="ggplot2-grammar-of-graphics.html"><i class="fa fa-check"></i><b>7.1</b> ggplot2 - grammar of graphics</a>
+<ul>
+<li class="chapter" data-level="7.1.1" data-path="ggplot2-grammar-of-graphics.html"><a href="ggplot2-grammar-of-graphics.html#schlüsselkomponenten"><i class="fa fa-check"></i><b>7.1.1</b> Schlüsselkomponenten</a></li>
+<li class="chapter" data-level="7.1.2" data-path="ggplot2-grammar-of-graphics.html"><a href="ggplot2-grammar-of-graphics.html#aesthetics-color-size-shape"><i class="fa fa-check"></i><b>7.1.2</b> Aesthetics (color, size, shape)</a></li>
+<li class="chapter" data-level="7.1.3" data-path="ggplot2-grammar-of-graphics.html"><a href="ggplot2-grammar-of-graphics.html#smoothers-and-models"><i class="fa fa-check"></i><b>7.1.3</b> Smoothers and models</a></li>
+<li class="chapter" data-level="7.1.4" data-path="ggplot2-grammar-of-graphics.html"><a href="ggplot2-grammar-of-graphics.html#labels"><i class="fa fa-check"></i><b>7.1.4</b> Labels</a></li>
+<li class="chapter" data-level="7.1.5" data-path="ggplot2-grammar-of-graphics.html"><a href="ggplot2-grammar-of-graphics.html#themes"><i class="fa fa-check"></i><b>7.1.5</b> Themes</a></li>
+<li class="chapter" data-level="7.1.6" data-path="ggplot2-grammar-of-graphics.html"><a href="ggplot2-grammar-of-graphics.html#facets"><i class="fa fa-check"></i><b>7.1.6</b> Facets</a></li>
+<li class="chapter" data-level="7.1.7" data-path="ggplot2-grammar-of-graphics.html"><a href="ggplot2-grammar-of-graphics.html#coordinate-system"><i class="fa fa-check"></i><b>7.1.7</b> Coordinate system</a></li>
+<li class="chapter" data-level="7.1.8" data-path="ggplot2-grammar-of-graphics.html"><a href="ggplot2-grammar-of-graphics.html#annotations"><i class="fa fa-check"></i><b>7.1.8</b> Annotations</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="verknüfpen-von-tidyverse-und-ggplot.html"><a href="verknüfpen-von-tidyverse-und-ggplot.html"><i class="fa fa-check"></i><b>7.2</b> Verknüfpen von tidyverse und ggplot</a></li>
+<li class="chapter" data-level="7.3" data-path="arbeiten-mit-zeiten-1.html"><a href="arbeiten-mit-zeiten-1.html"><i class="fa fa-check"></i><b>7.3</b> Arbeiten mit Zeiten</a>
+<ul>
+<li class="chapter" data-level="7.3.1" data-path="arbeiten-mit-zeiten-1.html"><a href="arbeiten-mit-zeiten-1.html#strings"><i class="fa fa-check"></i><b>7.3.1</b> strings</a></li>
+<li class="chapter" data-level="7.3.2" data-path="arbeiten-mit-zeiten-1.html"><a href="arbeiten-mit-zeiten-1.html#von-individuellen-komponenten"><i class="fa fa-check"></i><b>7.3.2</b> Von individuellen Komponenten</a></li>
+<li class="chapter" data-level="7.3.3" data-path="arbeiten-mit-zeiten-1.html"><a href="arbeiten-mit-zeiten-1.html#ein-bestehendes-objekt"><i class="fa fa-check"></i><b>7.3.3</b> Ein bestehendes Objekt</a></li>
+<li class="chapter" data-level="7.3.4" data-path="arbeiten-mit-zeiten-1.html"><a href="arbeiten-mit-zeiten-1.html#darstellung-in-abbildungen"><i class="fa fa-check"></i><b>7.3.4</b> Darstellung in Abbildungen</a></li>
+</ul></li>
+<li class="chapter" data-level="7.4" data-path="pivoting-to-longer-format.html"><a href="pivoting-to-longer-format.html"><i class="fa fa-check"></i><b>7.4</b> pivoting to longer format</a></li>
+<li class="chapter" data-level="7.5" data-path="good-practices.html"><a href="good-practices.html"><i class="fa fa-check"></i><b>7.5</b> Good practices</a></li>
+<li class="chapter" data-level="7.6" data-path="speichern-eines-plots.html"><a href="speichern-eines-plots.html"><i class="fa fa-check"></i><b>7.6</b> Speichern eines plots</a></li>
+<li class="chapter" data-level="7.7" data-path="formen-der-darstellung.html"><a href="formen-der-darstellung.html"><i class="fa fa-check"></i><b>7.7</b> Formen der Darstellung</a>
+<ul>
+<li class="chapter" data-level="7.7.1" data-path="formen-der-darstellung.html"><a href="formen-der-darstellung.html#overplotting"><i class="fa fa-check"></i><b>7.7.1</b> Overplotting</a></li>
+<li class="chapter" data-level="7.7.2" data-path="formen-der-darstellung.html"><a href="formen-der-darstellung.html#positions-argument"><i class="fa fa-check"></i><b>7.7.2</b> Positions Argument</a></li>
+<li class="chapter" data-level="7.7.3" data-path="formen-der-darstellung.html"><a href="formen-der-darstellung.html#inspirationen"><i class="fa fa-check"></i><b>7.7.3</b> Inspirationen</a></li>
+</ul></li>
+<li class="chapter" data-level="7.8" data-path="farbauswahl.html"><a href="farbauswahl.html"><i class="fa fa-check"></i><b>7.8</b> Farbauswahl</a>
+<ul>
+<li class="chapter" data-level="7.8.1" data-path="farbauswahl.html"><a href="farbauswahl.html#beispiele-für-unterschiedliche-farben"><i class="fa fa-check"></i><b>7.8.1</b> Beispiele für unterschiedliche Farben</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="karten-erstellen-in-r.html"><a href="karten-erstellen-in-r.html"><i class="fa fa-check"></i><b>8</b> Karten erstellen in R 🌍</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="datenquellen.html"><a href="datenquellen.html"><i class="fa fa-check"></i><b>8.1</b> Datenquellen</a></li>
+<li class="chapter" data-level="8.2" data-path="packages.html"><a href="packages.html"><i class="fa fa-check"></i><b>8.2</b> Packages</a>
+<ul>
+<li class="chapter" data-level="8.2.1" data-path="packages.html"><a href="packages.html#rgdal-package"><i class="fa fa-check"></i><b>8.2.1</b> <code>rgdal</code> package</a></li>
+</ul></li>
+<li class="chapter" data-level="8.3" data-path="übungen.html"><a href="übungen.html"><i class="fa fa-check"></i><b>8.3</b> Übungen</a>
+<ul>
+<li class="chapter" data-level="8.3.1" data-path="übungen.html"><a href="übungen.html#erstelle-eine-karte-der-bundesrepublik"><i class="fa fa-check"></i><b>8.3.1</b> Erstelle eine Karte der Bundesrepublik</a></li>
+<li class="chapter" data-level="8.3.2" data-path="übungen.html"><a href="übungen.html#erstelle-eine-weltkarte"><i class="fa fa-check"></i><b>8.3.2</b> Erstelle eine Weltkarte</a></li>
+<li class="chapter" data-level="8.3.3" data-path="übungen.html"><a href="übungen.html#manuelles-hinzufügen-von-punkten"><i class="fa fa-check"></i><b>8.3.3</b> Manuelles Hinzufügen von Punkten</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="statistische-auswertungen.html"><a href="statistische-auswertungen.html"><i class="fa fa-check"></i><b>9</b> Statistische Auswertungen</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="verteilung-der-daten.html"><a href="verteilung-der-daten.html"><i class="fa fa-check"></i><b>9.1</b> Verteilung der Daten</a></li>
+<li class="chapter" data-level="9.2" data-path="datentransformation.html"><a href="datentransformation.html"><i class="fa fa-check"></i><b>9.2</b> Datentransformation</a></li>
+<li class="chapter" data-level="9.3" data-path="korrelationen.html"><a href="korrelationen.html"><i class="fa fa-check"></i><b>9.3</b> Korrelationen</a>
+<ul>
+<li class="chapter" data-level="9.3.1" data-path="korrelationen.html"><a href="korrelationen.html#pearsons-korrelationkoeffizient-r"><i class="fa fa-check"></i><b>9.3.1</b> Pearson’s Korrelationkoeffizient (r)</a></li>
+<li class="chapter" data-level="9.3.2" data-path="korrelationen.html"><a href="korrelationen.html#signifikanztest"><i class="fa fa-check"></i><b>9.3.2</b> Signifikanztest</a></li>
+<li class="chapter" data-level="9.3.3" data-path="korrelationen.html"><a href="korrelationen.html#korrelation-vs.-regression"><i class="fa fa-check"></i><b>9.3.3</b> Korrelation vs. Regression</a></li>
+</ul></li>
+<li class="chapter" data-level="9.4" data-path="pca.html"><a href="pca.html"><i class="fa fa-check"></i><b>9.4</b> PCA</a>
+<ul>
+<li class="chapter" data-level="9.4.1" data-path="pca.html"><a href="pca.html#datenauswahl"><i class="fa fa-check"></i><b>9.4.1</b> Datenauswahl</a></li>
+<li class="chapter" data-level="9.4.2" data-path="pca.html"><a href="pca.html#daten-standardisieren"><i class="fa fa-check"></i><b>9.4.2</b> Daten Standardisieren</a></li>
+<li class="chapter" data-level="9.4.3" data-path="pca.html"><a href="pca.html#eigenvalues"><i class="fa fa-check"></i><b>9.4.3</b> Eigenvalues</a></li>
+<li class="chapter" data-level="9.4.4" data-path="pca.html"><a href="pca.html#darstellen-der-ergebnisse"><i class="fa fa-check"></i><b>9.4.4</b> Darstellen der Ergebnisse</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="datenmanagement.html"><a href="datenmanagement.html"><i class="fa fa-check"></i><b>10</b> Datenmanagement</a></li>
+<li class="chapter" data-level="11" data-path="reporting-in-rmarkdown.html"><a href="reporting-in-rmarkdown.html"><i class="fa fa-check"></i><b>11</b> Reporting in Rmarkdown</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="mathematische-befehle.html"><a href="mathematische-befehle.html"><i class="fa fa-check"></i><b>11.1</b> Mathematische Befehle</a>
+<ul>
+<li class="chapter" data-level="11.1.1" data-path="mathematische-befehle.html"><a href="mathematische-befehle.html#brüche"><i class="fa fa-check"></i><b>11.1.1</b> Brüche</a></li>
+<li class="chapter" data-level="11.1.2" data-path="mathematische-befehle.html"><a href="mathematische-befehle.html#hoch--und-tiefstellung"><i class="fa fa-check"></i><b>11.1.2</b> Hoch- und Tiefstellung</a></li>
+<li class="chapter" data-level="11.1.3" data-path="mathematische-befehle.html"><a href="mathematische-befehle.html#quadratwurzel"><i class="fa fa-check"></i><b>11.1.3</b> Quadratwurzel</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="github.html"><a href="github.html"><i class="fa fa-check"></i><b>12</b> Github</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="projekt-erstellen.html"><a href="projekt-erstellen.html"><i class="fa fa-check"></i><b>12.1</b> Projekt erstellen</a>
+<ul>
+<li class="chapter" data-level="12.1.1" data-path="projekt-erstellen.html"><a href="projekt-erstellen.html#workflow"><i class="fa fa-check"></i><b>12.1.1</b> Workflow</a></li>
+<li class="chapter" data-level="12.1.2" data-path="projekt-erstellen.html"><a href="projekt-erstellen.html#synchronisieren-vieler-dateien"><i class="fa fa-check"></i><b>12.1.2</b> Synchronisieren vieler Dateien</a></li>
+<li class="chapter" data-level="12.1.3" data-path="projekt-erstellen.html"><a href="projekt-erstellen.html#ordner-lokal-behalten-aber-auf-git-löschen"><i class="fa fa-check"></i><b>12.1.3</b> Ordner lokal behalten aber auf Git löschen</a></li>
+</ul></li>
+<li class="chapter" data-level="12.2" data-path="cache-säubern.html"><a href="cache-säubern.html"><i class="fa fa-check"></i><b>12.2</b> Cache säubern</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="bookdown.html"><a href="bookdown.html"><i class="fa fa-check"></i><b>13</b> Bookdown</a>
+<ul>
+<li class="chapter" data-level="13.1" data-path="vorbereitung.html"><a href="vorbereitung.html"><i class="fa fa-check"></i><b>13.1</b> Vorbereitung</a></li>
+<li class="chapter" data-level="13.2" data-path="github-pages.html"><a href="github-pages.html"><i class="fa fa-check"></i><b>13.2</b> Github pages</a></li>
+<li class="chapter" data-level="13.3" data-path="emojiys.html"><a href="emojiys.html"><i class="fa fa-check"></i><b>13.3</b> Emojiys</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="blogdown.html"><a href="blogdown.html"><i class="fa fa-check"></i><b>14</b> Blogdown</a></li>
+<li class="chapter" data-level="15" data-path="setup-a-homepage-with-hugo-and-blogdown.html"><a href="setup-a-homepage-with-hugo-and-blogdown.html"><i class="fa fa-check"></i><b>15</b> Setup a homepage with Hugo and blogdown</a>
+<ul>
+<li class="chapter" data-level="15.1" data-path="github-1.html"><a href="github-1.html"><i class="fa fa-check"></i><b>15.1</b> Github</a></li>
+<li class="chapter" data-level="15.2" data-path="domain-name.html"><a href="domain-name.html"><i class="fa fa-check"></i><b>15.2</b> Domain name</a></li>
+<li class="chapter" data-level="15.3" data-path="homepage.html"><a href="homepage.html"><i class="fa fa-check"></i><b>15.3</b> Homepage</a></li>
+<li class="chapter" data-level="15.4" data-path="wowchemystarter-academic.html"><a href="wowchemystarter-academic.html"><i class="fa fa-check"></i><b>15.4</b> “wowchemy/starter-academic”</a></li>
+<li class="chapter" data-level="15.5" data-path="where-to-adjust-the-homepage.html"><a href="where-to-adjust-the-homepage.html"><i class="fa fa-check"></i><b>15.5</b> Where to adjust the Homepage</a></li>
+<li class="chapter" data-level="15.6" data-path="workflow-1.html"><a href="workflow-1.html"><i class="fa fa-check"></i><b>15.6</b> Workflow</a></li>
+<li class="chapter" data-level="15.7" data-path="yaml-metadata.html"><a href="yaml-metadata.html"><i class="fa fa-check"></i><b>15.7</b> YAML metadata</a></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="diverses.html"><a href="diverses.html"><i class="fa fa-check"></i><b>16</b> Diverses</a>
+<ul>
+<li class="chapter" data-level="16.1" data-path="troubleshooting.html"><a href="troubleshooting.html"><i class="fa fa-check"></i><b>16.1</b> Troubleshooting</a>
+<ul>
+<li class="chapter" data-level="16.1.1" data-path="troubleshooting.html"><a href="troubleshooting.html#entfernen-aller-packages"><i class="fa fa-check"></i><b>16.1.1</b> Entfernen aller packages</a></li>
+</ul></li>
+<li class="chapter" data-level="16.2" data-path="shortcuts.html"><a href="shortcuts.html"><i class="fa fa-check"></i><b>16.2</b> Shortcuts</a></li>
+<li class="chapter" data-level="16.3" data-path="faqs.html"><a href="faqs.html"><i class="fa fa-check"></i><b>16.3</b> FAQs</a>
+<ul>
+<li class="chapter" data-level="16.3.1" data-path="faqs.html"><a href="faqs.html#rstudio-1"><i class="fa fa-check"></i><b>16.3.1</b> RStudio</a></li>
+<li class="chapter" data-level="16.3.2" data-path="faqs.html"><a href="faqs.html#datenmanipulation"><i class="fa fa-check"></i><b>16.3.2</b> Datenmanipulation</a></li>
+</ul></li>
+<li class="chapter" data-level="16.4" data-path="visualisation.html"><a href="visualisation.html"><i class="fa fa-check"></i><b>16.4</b> Visualisation</a>
+<ul>
+<li class="chapter" data-level="16.4.1" data-path="visualisation.html"><a href="visualisation.html#superscripts-and-subscripts"><i class="fa fa-check"></i><b>16.4.1</b> Superscripts and subscripts</a></li>
+<li class="chapter" data-level="16.4.2" data-path="visualisation.html"><a href="visualisation.html#modifying-labels-in-faceted-plots"><i class="fa fa-check"></i><b>16.4.2</b> Modifying labels in faceted plots</a></li>
+</ul></li>
+<li class="chapter" data-level="16.5" data-path="glossary.html"><a href="glossary.html"><i class="fa fa-check"></i><b>16.5</b> Glossary</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Daten Analyse mit R - Dokumentation</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="projekt-erstellen" class="section level2" number="12.1">
+<h2><span class="header-section-number">12.1</span> Projekt erstellen</h2>
+<p>🚨 Wir erstellen ein Projekt in der Reihenfolge <strong>“GitHub first, then
+RStudio”</strong> Dadurch kopieren wird das Projekt von Github direkt auf den Computer und schalten <code>pulling</code> und <code>pushing</code> frei (äquivalent zu git clone).</p>
+<p>Nachdem wir einen Github account für uns erstellt haben, fügen wir unserem account ein neues repository hinzu.</p>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-296"></span>
+<img src="images/077.png" alt="Neues repository erstellen" width="100%" />
+<p class="caption">
+Figure 12.1: Neues repository erstellen
+</p>
+</div>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-297"></span>
+<img src="images/078.png" alt="Kurze und prägnante Namen sind gut" width="100%" />
+<p class="caption">
+Figure 12.2: Kurze und prägnante Namen sind gut
+</p>
+</div>
+<p>In unserem repo klicken wir auf Code und kopieren den Link (siehe unten).</p>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-298"></span>
+<img src="images/068.png" alt="Kopieren der URL für das Verknüpfen des Projektes" width="100%" />
+<p class="caption">
+Figure 12.3: Kopieren der URL für das Verknüpfen des Projektes
+</p>
+</div>
+<p>Dann öffnen wir ein neues Projekt mit File –&gt; New Project –&gt; Version control –&gt; Git. Dann kopieren wir die URL in das Feld <strong>Repository URL</strong> und et voila…mit create project ist unser repo bei github mit unserem lokalen Projekt in R verknüpft.</p>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-299"></span>
+<img src="images/069.png" alt="Kopieren der URL für das Verknüpfen des Projektes" width="100%" />
+<p class="caption">
+Figure 12.4: Kopieren der URL für das Verknüpfen des Projektes
+</p>
+</div>
+<div id="workflow" class="section level3" number="12.1.1">
+<h3><span class="header-section-number">12.1.1</span> Workflow</h3>
+<p>Unser Schema lautet absofort</p>
+<blockquote>
+<p><strong>Make local changes, save, commit and push to github</strong></p>
+</blockquote>
+<p>So sollte man immer vorgehen wenn man wichtige Dinge umgesetzt hat. Vorzugsweise mehrmals am Tag. Ein commit ist dabei wie ein snapshot aller Dateien, die editiert wurden.</p>
+<p>🚨 Der Text eines commits sollte daher individuell und nicht mehrmals vergeben werden, da es sonst zu Fehlermeldungen führen kann.</p>
+<p>🚨 Viele 100-1000 Dateien können zu abstürzen bei der RStudio Oberfläche führen.</p>
+<p>🚨 Dateien bei github dürfen nicht &gt; 100 mb sein!</p>
+<p>🚨 Auch Dateiendungen bei github pages sind case sensitive. <code>.png</code> ist also was anderes als <code>.PNG</code></p>
+<p>💡 Unter C: einen Ordner Bilder erstellen, dort alle Bilder reinkopieren. Dann in der Kommandoaufforderung von windows den Pfad der Bilder festlegen mit <code>cd c:\Bilder</code> und als nächstes mit <code>ren *.PNG *.png</code> automatisch alle Endungen umbenennen.</p>
+</div>
+<div id="synchronisieren-vieler-dateien" class="section level3" number="12.1.2">
+<h3><span class="header-section-number">12.1.2</span> Synchronisieren vieler Dateien</h3>
+<p>Bei vielen 100 Dateien folgender Tipp: Markieren aller Einträge mit “strg + A” und dann strg gedrückt halten und ein freies Kästchen auswählen. 🎉</p>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-300"></span>
+<img src="images/074.png" alt="Commit von vielen Dateien" width="100%" />
+<p class="caption">
+Figure 12.5: Commit von vielen Dateien
+</p>
+</div>
+<p>Eine andere Möglichkeit ist im Terminal <code>git add --all</code> und dann die commit Nachricht mit <code>git commit -m "TEXT"</code> eingeben. Nicht vergessen danach mit <code>git push</code> oder über den grünen Push button im Git Fenster die Nachrichten auf github zu übertragen. Mit</p>
+</div>
+<div id="ordner-lokal-behalten-aber-auf-git-löschen" class="section level3" number="12.1.3">
+<h3><span class="header-section-number">12.1.3</span> Ordner lokal behalten aber auf Git löschen</h3>
+<p>Dazu kann man im Terminal eingeben <code>git rm -r --cached FOLDERNAME</code>.</p>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="github.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="cache-säubern.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="assets/gitbook-2.6.7/js/app.min.js"></script>
+<script src="assets/gitbook-2.6.7/js/lunr.js"></script>
+<script src="assets/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="assets/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="assets/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="assets/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="assets/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="assets/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="assets/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+},
+"toolbar": {
+"position": "fixed"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
