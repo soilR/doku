@@ -115,7 +115,7 @@
 
 \title{Daten Analyse mit RStudio - Dokumentation}
 \author{Dr.~Kristof Dorau}
-\date{Aktualisiert am: 2021-08-26 19:15:05}
+\date{Aktualisiert am: 2021-08-26 21:18:30}
 
 \begin{document}
 \maketitle
@@ -1576,10 +1576,10 @@ Definition
 \begin{Highlighting}[]
 \CommentTok{\# Die Zahlen 1 bis 5 treten nur einmal auf}
 \FunctionTok{sample}\NormalTok{(}\AttributeTok{x =} \DecValTok{1}\SpecialCharTok{:}\DecValTok{5}\NormalTok{, }\AttributeTok{size =} \DecValTok{5}\NormalTok{)}
-\DocumentationTok{\#\# [1] 3 5 4 1 2}
+\DocumentationTok{\#\# [1] 2 4 1 3 5}
 \CommentTok{\# Die Zahlen 1 bis 5 können ggf. mehrmals auftreten hei replace = TRUE}
 \FunctionTok{sample}\NormalTok{(}\AttributeTok{x =} \DecValTok{1}\SpecialCharTok{:}\DecValTok{5}\NormalTok{, }\AttributeTok{size =} \DecValTok{5}\NormalTok{, }\AttributeTok{replace =}\NormalTok{ T)}
-\DocumentationTok{\#\# [1] 5 1 5 5 3}
+\DocumentationTok{\#\# [1] 4 4 3 5 3}
 \end{Highlighting}
 \end{Shaded}
 
@@ -1757,10 +1757,10 @@ Lasst uns den Mittelwert und die Standardabweichung des Redoxpotentziales der Ze
 \begin{Highlighting}[]
 \CommentTok{\# Mittelwert }
 \FunctionTok{mean}\NormalTok{(eh)}
-\DocumentationTok{\#\# [1] 656.0527}
+\DocumentationTok{\#\# [1] 655.2677}
 \CommentTok{\# SD}
 \FunctionTok{sd}\NormalTok{(eh)}
-\DocumentationTok{\#\# [1] 28.39588}
+\DocumentationTok{\#\# [1] 28.27485}
 \end{Highlighting}
 \end{Shaded}
 
@@ -1809,7 +1809,7 @@ Eine wichtige Funktion um Informationen über einen Datensatz oder ein Objekt zu
 \begin{Highlighting}[]
 \CommentTok{\# Erkunden eines Vektors mit 100 Zufallszahlen}
 \FunctionTok{str}\NormalTok{(eh)}
-\DocumentationTok{\#\#  num [1:100] 672 625 694 667 690 ...}
+\DocumentationTok{\#\#  num [1:100] 695 615 633 704 618 ...}
 \end{Highlighting}
 \end{Shaded}
 
@@ -2597,7 +2597,7 @@ oxy10:oxy150 & Sauerstoffgehalt & \%-Luftsättigung \\
 \hypertarget{arbeiten-mit-zeiten}{%
 \subsection{Arbeiten mit Zeiten}\label{arbeiten-mit-zeiten}}
 
-In der Spalte \texttt{time} stehen die Zeilennummern und unter \texttt{date} finden wir das Datum, allerdings als \texttt{character} hinterlegt. Beim Einlesen der Daten denkt R, dass es sich um Text handelt aber wir wissen es besser. Wir müssen R nun explizit mitteilen wie unser Zeitstempel \texttt{date} codiert ist, nämlich mit \texttt{\%Tag.\%Monat.\%Jahr\ \%Stunde:\%Minute}. In R wird ein Datum jedoch mit 2021-08-26 19:15:15 angegeben. Wir tun also folgendes:
+In der Spalte \texttt{time} stehen die Zeilennummern und unter \texttt{date} finden wir das Datum, allerdings als \texttt{character} hinterlegt. Beim Einlesen der Daten denkt R, dass es sich um Text handelt aber wir wissen es besser. Wir müssen R nun explizit mitteilen wie unser Zeitstempel \texttt{date} codiert ist, nämlich mit \texttt{\%Tag.\%Monat.\%Jahr\ \%Stunde:\%Minute}. In R wird ein Datum jedoch mit 2021-08-26 21:18:41 angegeben. Wir tun also folgendes:
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -4785,16 +4785,16 @@ Beim pivoting können wir uns Informationen in den Zeilennamen auch zunutze mach
 \DocumentationTok{\#\# \# A tibble: 10 x 3}
 \DocumentationTok{\#\#    st\_10 st\_20 st\_30}
 \DocumentationTok{\#\#    \textless{}dbl\textgreater{} \textless{}dbl\textgreater{} \textless{}dbl\textgreater{}}
-\DocumentationTok{\#\#  1  8.85  8.80  7.69}
-\DocumentationTok{\#\#  2 11.0  10.3   6.07}
-\DocumentationTok{\#\#  3  9.73 10.0   9.02}
-\DocumentationTok{\#\#  4 10.7   6.60  8.80}
-\DocumentationTok{\#\#  5 10.2   8.94  6.89}
-\DocumentationTok{\#\#  6  9.76  8.85  8.72}
-\DocumentationTok{\#\#  7 10.9   9.78  7.55}
-\DocumentationTok{\#\#  8 10.9   8.20  8.87}
-\DocumentationTok{\#\#  9 12.6   8.01  8.68}
-\DocumentationTok{\#\# 10 11.1   8.74  8.68}
+\DocumentationTok{\#\#  1 11.9   7.11  8.58}
+\DocumentationTok{\#\#  2 11.2   7.78  9.06}
+\DocumentationTok{\#\#  3  9.22  7.79  8.28}
+\DocumentationTok{\#\#  4  9.04  9.14  7.75}
+\DocumentationTok{\#\#  5 12.3   8.39  8.15}
+\DocumentationTok{\#\#  6  8.90 10.4   6.41}
+\DocumentationTok{\#\#  7 10.8   8.69  8.88}
+\DocumentationTok{\#\#  8  8.35  8.32  8.31}
+\DocumentationTok{\#\#  9 10.9   7.17  7.42}
+\DocumentationTok{\#\# 10  9.61 10.1   8.42}
 \CommentTok{\# Erstelle tibble test\_long im long format}
 \NormalTok{test\_long }\OtherTok{\textless{}{-}}\NormalTok{ test }\SpecialCharTok{\%\textgreater{}\%}
   \FunctionTok{pivot\_longer}\NormalTok{(}\AttributeTok{cols =} \FunctionTok{contains}\NormalTok{(}\StringTok{"st"}\NormalTok{), }\AttributeTok{names\_to =} \FunctionTok{c}\NormalTok{(}\StringTok{"Parameter"}\NormalTok{, }\StringTok{"Depth"}\NormalTok{), }\AttributeTok{values\_to =} \StringTok{"Wert"}\NormalTok{, }\AttributeTok{names\_sep =} \StringTok{"\_"}\NormalTok{) }\CommentTok{\# Gebe an wie die Informationen im Spaltenname getrennt sind}
@@ -4802,16 +4802,16 @@ Beim pivoting können wir uns Informationen in den Zeilennamen auch zunutze mach
 \DocumentationTok{\#\# \# A tibble: 30 x 3}
 \DocumentationTok{\#\#    Parameter Depth  Wert}
 \DocumentationTok{\#\#    \textless{}chr\textgreater{}     \textless{}chr\textgreater{} \textless{}dbl\textgreater{}}
-\DocumentationTok{\#\#  1 st        10     8.85}
-\DocumentationTok{\#\#  2 st        20     8.80}
-\DocumentationTok{\#\#  3 st        30     7.69}
-\DocumentationTok{\#\#  4 st        10    11.0 }
-\DocumentationTok{\#\#  5 st        20    10.3 }
-\DocumentationTok{\#\#  6 st        30     6.07}
-\DocumentationTok{\#\#  7 st        10     9.73}
-\DocumentationTok{\#\#  8 st        20    10.0 }
-\DocumentationTok{\#\#  9 st        30     9.02}
-\DocumentationTok{\#\# 10 st        10    10.7 }
+\DocumentationTok{\#\#  1 st        10    11.9 }
+\DocumentationTok{\#\#  2 st        20     7.11}
+\DocumentationTok{\#\#  3 st        30     8.58}
+\DocumentationTok{\#\#  4 st        10    11.2 }
+\DocumentationTok{\#\#  5 st        20     7.78}
+\DocumentationTok{\#\#  6 st        30     9.06}
+\DocumentationTok{\#\#  7 st        10     9.22}
+\DocumentationTok{\#\#  8 st        20     7.79}
+\DocumentationTok{\#\#  9 st        30     8.28}
+\DocumentationTok{\#\# 10 st        10     9.04}
 \DocumentationTok{\#\# \# ... with 20 more rows}
 \end{Highlighting}
 \end{Shaded}
