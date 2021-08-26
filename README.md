@@ -1,2 +1,3 @@
-# doku
-This is a documentation to use R in data science
+# documentation
+
+Die Dokumentation kann unter https://soilr.github.io/dokumentation/ gelesen werden. 

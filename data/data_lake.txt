@@ -1,0 +1,2336 @@
+StationID	Location Name	Visit Date	Year	Crew	Depth-M	Test Code / Units	Result
+25	Malletts Bay	06.01.2020	2020	VT	1	Chla - mg/L	1.24
+25	Malletts Bay	06.01.2020	2020	VT	1	Chla - mg/L	0.25
+25	Malletts Bay	06.01.2020	2020	VT	2	Chla - mg/L	2.48
+25	Malletts Bay	06.01.2020	2020	VT	3	Chla - mg/L	4
+25	Malletts Bay	06.01.2020	2020	VT	4	Chla - mg/L	5.33
+25	Malletts Bay	06.01.2020	2020	VT	5	Chla - mg/L	5.4
+25	Malletts Bay	06.01.2020	2020	VT	6	Chla - mg/L	6.08
+25	Malletts Bay	06.01.2020	2020	VT	7	Chla - mg/L	6.63
+25	Malletts Bay	06.01.2020	2020	VT	8	Chla - mg/L	4.96
+25	Malletts Bay	06.01.2020	2020	VT	9	Chla - mg/L	4.96
+25	Malletts Bay	06.01.2020	2020	VT	10	Chla - mg/L	5.11
+25	Malletts Bay	06.01.2020	2020	VT	11	Chla - mg/L	5.46
+25	Malletts Bay	06.01.2020	2020	VT	12	Chla - mg/L	4.43
+25	Malletts Bay	06.01.2020	2020	VT	13	Chla - mg/L	4.67
+25	Malletts Bay	06.01.2020	2020	VT	14	Chla - mg/L	4.18
+25	Malletts Bay	06.01.2020	2020	VT	15	Chla - mg/L	4
+25	Malletts Bay	06.01.2020	2020	VT	16	Chla - mg/L	4.17
+25	Malletts Bay	06.01.2020	2020	VT	17	Chla - mg/L	4.68
+25	Malletts Bay	06.01.2020	2020	VT	18	Chla - mg/L	4.56
+25	Malletts Bay	06.01.2020	2020	VT	19	Chla - mg/L	4.37
+25	Malletts Bay	06.01.2020	2020	VT	20	Chla - mg/L	4.06
+25	Malletts Bay	06.01.2020	2020	VT	21	Chla - mg/L	3.91
+25	Malletts Bay	06.01.2020	2020	VT	22	Chla - mg/L	3.64
+25	Malletts Bay	06.01.2020	2020	VT	23	Chla - mg/L	3.81
+25	Malletts Bay	06.01.2020	2020	VT	24	Chla - mg/L	3.84
+25	Malletts Bay	06.01.2020	2020	VT	25	Chla - mg/L	3.77
+25	Malletts Bay	06.01.2020	2020	VT	26	Chla - mg/L	3.8
+25	Malletts Bay	06.01.2020	2020	VT	27	Chla - mg/L	3.6
+25	Malletts Bay	06.01.2020	2020	VT	28	Chla - mg/L	3.52
+25	Malletts Bay	06.01.2020	2020	VT	29	Chla - mg/L	3.76
+25	Malletts Bay	06.01.2020	2020	VT	30	Chla - mg/L	3.87
+25	Malletts Bay	06.01.2020	2020	VT	31	Chla - mg/L	3.94
+25	Malletts Bay	06.01.2020	2020	VT	32	Chla - mg/L	4.09
+25	Malletts Bay	06.01.2020	2020	VT	1	Cond - uS/cm	102.3
+25	Malletts Bay	06.01.2020	2020	NY	1	Cond - uS/cm	124.9
+25	Malletts Bay	06.01.2020	2020	VT	1	Cond - uS/cm	102.1
+25	Malletts Bay	06.01.2020	2020	VT	2	Cond - uS/cm	101.8
+25	Malletts Bay	06.01.2020	2020	NY	2	Cond - uS/cm	124.9
+25	Malletts Bay	06.01.2020	2020	NY	3	Cond - uS/cm	124.9
+25	Malletts Bay	06.01.2020	2020	VT	3	Cond - uS/cm	101.9
+25	Malletts Bay	06.01.2020	2020	VT	4	Cond - uS/cm	101.7
+25	Malletts Bay	06.01.2020	2020	NY	4	Cond - uS/cm	124.7
+25	Malletts Bay	06.01.2020	2020	VT	5	Cond - uS/cm	101.7
+25	Malletts Bay	06.01.2020	2020	VT	6	Cond - uS/cm	101.6
+25	Malletts Bay	06.01.2020	2020	NY	6	Cond - uS/cm	124.6
+25	Malletts Bay	06.01.2020	2020	NY	7	Cond - uS/cm	124.6
+25	Malletts Bay	06.01.2020	2020	VT	7	Cond - uS/cm	101.2
+25	Malletts Bay	06.01.2020	2020	VT	8	Cond - uS/cm	101.5
+25	Malletts Bay	06.01.2020	2020	NY	8	Cond - uS/cm	124.6
+25	Malletts Bay	06.01.2020	2020	NY	9	Cond - uS/cm	124.4
+25	Malletts Bay	06.01.2020	2020	VT	9	Cond - uS/cm	101.6
+25	Malletts Bay	06.01.2020	2020	VT	10	Cond - uS/cm	101.2
+25	Malletts Bay	06.01.2020	2020	NY	10	Cond - uS/cm	124.4
+25	Malletts Bay	06.01.2020	2020	NY	11	Cond - uS/cm	124.4
+25	Malletts Bay	06.01.2020	2020	VT	11	Cond - uS/cm	101.1
+25	Malletts Bay	06.01.2020	2020	VT	12	Cond - uS/cm	100.9
+25	Malletts Bay	06.01.2020	2020	NY	12	Cond - uS/cm	124.3
+25	Malletts Bay	06.01.2020	2020	VT	13	Cond - uS/cm	101
+25	Malletts Bay	06.01.2020	2020	NY	13	Cond - uS/cm	124.2
+25	Malletts Bay	06.01.2020	2020	NY	14	Cond - uS/cm	124.5
+25	Malletts Bay	06.01.2020	2020	VT	14	Cond - uS/cm	100.9
+25	Malletts Bay	06.01.2020	2020	VT	15	Cond - uS/cm	100.8
+25	Malletts Bay	06.01.2020	2020	NY	15	Cond - uS/cm	124.7
+25	Malletts Bay	06.01.2020	2020	NY	16	Cond - uS/cm	124.7
+25	Malletts Bay	06.01.2020	2020	VT	16	Cond - uS/cm	101
+25	Malletts Bay	06.01.2020	2020	VT	17	Cond - uS/cm	101.4
+25	Malletts Bay	06.01.2020	2020	NY	17	Cond - uS/cm	125.4
+25	Malletts Bay	06.01.2020	2020	NY	18	Cond - uS/cm	125.6
+25	Malletts Bay	06.01.2020	2020	VT	18	Cond - uS/cm	101.3
+25	Malletts Bay	06.01.2020	2020	VT	19	Cond - uS/cm	101.1
+25	Malletts Bay	06.01.2020	2020	NY	19	Cond - uS/cm	125.2
+25	Malletts Bay	06.01.2020	2020	NY	20	Cond - uS/cm	125
+25	Malletts Bay	06.01.2020	2020	VT	20	Cond - uS/cm	100.8
+25	Malletts Bay	06.01.2020	2020	VT	21	Cond - uS/cm	100.7
+25	Malletts Bay	06.01.2020	2020	NY	21	Cond - uS/cm	125.1
+25	Malletts Bay	06.01.2020	2020	NY	22	Cond - uS/cm	125.1
+25	Malletts Bay	06.01.2020	2020	VT	22	Cond - uS/cm	100.9
+25	Malletts Bay	06.01.2020	2020	VT	23	Cond - uS/cm	100.7
+25	Malletts Bay	06.01.2020	2020	NY	23	Cond - uS/cm	125.1
+25	Malletts Bay	06.01.2020	2020	NY	24	Cond - uS/cm	125
+25	Malletts Bay	06.01.2020	2020	VT	24	Cond - uS/cm	100.1
+25	Malletts Bay	06.01.2020	2020	VT	25	Cond - uS/cm	99.9
+25	Malletts Bay	06.01.2020	2020	NY	25	Cond - uS/cm	124.6
+25	Malletts Bay	06.01.2020	2020	NY	26	Cond - uS/cm	124.5
+25	Malletts Bay	06.01.2020	2020	VT	26	Cond - uS/cm	100.3
+25	Malletts Bay	06.01.2020	2020	VT	27	Cond - uS/cm	99.9
+25	Malletts Bay	06.01.2020	2020	NY	27	Cond - uS/cm	124.6
+25	Malletts Bay	06.01.2020	2020	NY	28	Cond - uS/cm	124.6
+25	Malletts Bay	06.01.2020	2020	VT	28	Cond - uS/cm	99.9
+25	Malletts Bay	06.01.2020	2020	VT	29	Cond - uS/cm	100
+25	Malletts Bay	06.01.2020	2020	NY	29	Cond - uS/cm	124.5
+25	Malletts Bay	06.01.2020	2020	NY	30	Cond - uS/cm	124.6
+25	Malletts Bay	06.01.2020	2020	VT	30	Cond - uS/cm	100.4
+25	Malletts Bay	06.01.2020	2020	VT	31	Cond - uS/cm	100.1
+25	Malletts Bay	06.01.2020	2020	NY	31	Cond - uS/cm	124.6
+25	Malletts Bay	06.01.2020	2020	VT	32	Cond - uS/cm	100.4
+25	Malletts Bay	06.01.2020	2020	VT	1	DO - mg/L	10.3
+25	Malletts Bay	06.01.2020	2020	NY	1	DO - mg/L	9.9
+25	Malletts Bay	06.01.2020	2020	VT	1	DO - mg/L	10.23
+25	Malletts Bay	06.01.2020	2020	VT	2	DO - mg/L	10.23
+25	Malletts Bay	06.01.2020	2020	NY	2	DO - mg/L	10.29
+25	Malletts Bay	06.01.2020	2020	NY	3	DO - mg/L	10.38
+25	Malletts Bay	06.01.2020	2020	VT	3	DO - mg/L	10.25
+25	Malletts Bay	06.01.2020	2020	VT	4	DO - mg/L	10.25
+25	Malletts Bay	06.01.2020	2020	NY	4	DO - mg/L	10.51
+25	Malletts Bay	06.01.2020	2020	VT	5	DO - mg/L	10.25
+25	Malletts Bay	06.01.2020	2020	VT	6	DO - mg/L	10.36
+25	Malletts Bay	06.01.2020	2020	NY	6	DO - mg/L	10.63
+25	Malletts Bay	06.01.2020	2020	NY	7	DO - mg/L	10.64
+25	Malletts Bay	06.01.2020	2020	VT	7	DO - mg/L	10.37
+25	Malletts Bay	06.01.2020	2020	VT	8	DO - mg/L	10.39
+25	Malletts Bay	06.01.2020	2020	NY	8	DO - mg/L	10.65
+25	Malletts Bay	06.01.2020	2020	NY	9	DO - mg/L	10.82
+25	Malletts Bay	06.01.2020	2020	VT	9	DO - mg/L	10.39
+25	Malletts Bay	06.01.2020	2020	VT	10	DO - mg/L	10.39
+25	Malletts Bay	06.01.2020	2020	NY	10	DO - mg/L	10.72
+25	Malletts Bay	06.01.2020	2020	NY	11	DO - mg/L	10.79
+25	Malletts Bay	06.01.2020	2020	VT	11	DO - mg/L	10.48
+25	Malletts Bay	06.01.2020	2020	VT	12	DO - mg/L	10.61
+25	Malletts Bay	06.01.2020	2020	NY	12	DO - mg/L	10.96
+25	Malletts Bay	06.01.2020	2020	VT	13	DO - mg/L	10.7
+25	Malletts Bay	06.01.2020	2020	NY	13	DO - mg/L	10.97
+25	Malletts Bay	06.01.2020	2020	NY	14	DO - mg/L	11.08
+25	Malletts Bay	06.01.2020	2020	VT	14	DO - mg/L	10.77
+25	Malletts Bay	06.01.2020	2020	VT	15	DO - mg/L	10.83
+25	Malletts Bay	06.01.2020	2020	NY	15	DO - mg/L	11.11
+25	Malletts Bay	06.01.2020	2020	NY	16	DO - mg/L	11.1
+25	Malletts Bay	06.01.2020	2020	VT	16	DO - mg/L	10.8
+25	Malletts Bay	06.01.2020	2020	VT	17	DO - mg/L	10.72
+25	Malletts Bay	06.01.2020	2020	NY	17	DO - mg/L	11.09
+25	Malletts Bay	06.01.2020	2020	NY	18	DO - mg/L	11.04
+25	Malletts Bay	06.01.2020	2020	VT	18	DO - mg/L	10.8
+25	Malletts Bay	06.01.2020	2020	VT	19	DO - mg/L	10.7
+25	Malletts Bay	06.01.2020	2020	NY	19	DO - mg/L	11.08
+25	Malletts Bay	06.01.2020	2020	NY	20	DO - mg/L	11.14
+25	Malletts Bay	06.01.2020	2020	VT	20	DO - mg/L	10.69
+25	Malletts Bay	06.01.2020	2020	VT	21	DO - mg/L	10.53
+25	Malletts Bay	06.01.2020	2020	NY	21	DO - mg/L	11.2
+25	Malletts Bay	06.01.2020	2020	NY	22	DO - mg/L	11.02
+25	Malletts Bay	06.01.2020	2020	VT	22	DO - mg/L	10.41
+25	Malletts Bay	06.01.2020	2020	VT	23	DO - mg/L	10.38
+25	Malletts Bay	06.01.2020	2020	NY	23	DO - mg/L	11.05
+25	Malletts Bay	06.01.2020	2020	NY	24	DO - mg/L	11.02
+25	Malletts Bay	06.01.2020	2020	VT	24	DO - mg/L	10.38
+25	Malletts Bay	06.01.2020	2020	VT	25	DO - mg/L	10.43
+25	Malletts Bay	06.01.2020	2020	NY	25	DO - mg/L	10.96
+25	Malletts Bay	06.01.2020	2020	NY	26	DO - mg/L	10.94
+25	Malletts Bay	06.01.2020	2020	VT	26	DO - mg/L	10.37
+25	Malletts Bay	06.01.2020	2020	VT	27	DO - mg/L	10.18
+25	Malletts Bay	06.01.2020	2020	NY	27	DO - mg/L	10.92
+25	Malletts Bay	06.01.2020	2020	NY	28	DO - mg/L	10.89
+25	Malletts Bay	06.01.2020	2020	VT	28	DO - mg/L	10.09
+25	Malletts Bay	06.01.2020	2020	VT	29	DO - mg/L	10.01
+25	Malletts Bay	06.01.2020	2020	NY	29	DO - mg/L	10.82
+25	Malletts Bay	06.01.2020	2020	NY	30	DO - mg/L	10.73
+25	Malletts Bay	06.01.2020	2020	VT	30	DO - mg/L	9.92
+25	Malletts Bay	06.01.2020	2020	VT	31	DO - mg/L	9.93
+25	Malletts Bay	06.01.2020	2020	NY	31	DO - mg/L	10.67
+25	Malletts Bay	06.01.2020	2020	VT	32	DO - mg/L	9.93
+25	Malletts Bay	06.01.2020	2020	NY	1	DO%	100
+25	Malletts Bay	06.01.2020	2020	VT	1	DO%	105.5
+25	Malletts Bay	06.01.2020	2020	VT	1	DO%	104.8
+25	Malletts Bay	06.01.2020	2020	VT	2	DO%	104.7
+25	Malletts Bay	06.01.2020	2020	NY	2	DO%	104
+25	Malletts Bay	06.01.2020	2020	NY	3	DO%	104.5
+25	Malletts Bay	06.01.2020	2020	VT	3	DO%	104.6
+25	Malletts Bay	06.01.2020	2020	VT	4	DO%	104.2
+25	Malletts Bay	06.01.2020	2020	NY	4	DO%	105
+25	Malletts Bay	06.01.2020	2020	VT	5	DO%	103.7
+25	Malletts Bay	06.01.2020	2020	VT	6	DO%	104.1
+25	Malletts Bay	06.01.2020	2020	NY	6	DO%	104.9
+25	Malletts Bay	06.01.2020	2020	NY	7	DO%	104.9
+25	Malletts Bay	06.01.2020	2020	VT	7	DO%	103.9
+25	Malletts Bay	06.01.2020	2020	VT	8	DO%	104
+25	Malletts Bay	06.01.2020	2020	NY	8	DO%	104.9
+25	Malletts Bay	06.01.2020	2020	NY	9	DO%	104.8
+25	Malletts Bay	06.01.2020	2020	VT	9	DO%	103.8
+25	Malletts Bay	06.01.2020	2020	VT	10	DO%	103.1
+25	Malletts Bay	06.01.2020	2020	NY	10	DO%	102.9
+25	Malletts Bay	06.01.2020	2020	NY	11	DO%	103
+25	Malletts Bay	06.01.2020	2020	VT	11	DO%	103.1
+25	Malletts Bay	06.01.2020	2020	VT	12	DO%	100.9
+25	Malletts Bay	06.01.2020	2020	NY	12	DO%	102
+25	Malletts Bay	06.01.2020	2020	NY	13	DO%	101.7
+25	Malletts Bay	06.01.2020	2020	VT	13	DO%	101
+25	Malletts Bay	06.01.2020	2020	VT	14	DO%	100.9
+25	Malletts Bay	06.01.2020	2020	NY	14	DO%	101.4
+25	Malletts Bay	06.01.2020	2020	NY	15	DO%	101
+25	Malletts Bay	06.01.2020	2020	VT	15	DO%	100.2
+25	Malletts Bay	06.01.2020	2020	VT	16	DO%	99.4
+25	Malletts Bay	06.01.2020	2020	NY	16	DO%	100.7
+25	Malletts Bay	06.01.2020	2020	NY	17	DO%	99.1
+25	Malletts Bay	06.01.2020	2020	VT	17	DO%	97.8
+25	Malletts Bay	06.01.2020	2020	VT	18	DO%	97.5
+25	Malletts Bay	06.01.2020	2020	NY	18	DO%	98.4
+25	Malletts Bay	06.01.2020	2020	NY	19	DO%	98.2
+25	Malletts Bay	06.01.2020	2020	VT	19	DO%	95.6
+25	Malletts Bay	06.01.2020	2020	VT	20	DO%	94.2
+25	Malletts Bay	06.01.2020	2020	NY	20	DO%	97.7
+25	Malletts Bay	06.01.2020	2020	NY	21	DO%	97.2
+25	Malletts Bay	06.01.2020	2020	VT	21	DO%	92.2
+25	Malletts Bay	06.01.2020	2020	VT	22	DO%	91
+25	Malletts Bay	06.01.2020	2020	NY	22	DO%	95.4
+25	Malletts Bay	06.01.2020	2020	NY	23	DO%	95.2
+25	Malletts Bay	06.01.2020	2020	VT	23	DO%	90.4
+25	Malletts Bay	06.01.2020	2020	VT	24	DO%	90.2
+25	Malletts Bay	06.01.2020	2020	NY	24	DO%	94.6
+25	Malletts Bay	06.01.2020	2020	NY	25	DO%	93.6
+25	Malletts Bay	06.01.2020	2020	VT	25	DO%	90.3
+25	Malletts Bay	06.01.2020	2020	VT	26	DO%	89.3
+25	Malletts Bay	06.01.2020	2020	NY	26	DO%	93.1
+25	Malletts Bay	06.01.2020	2020	NY	27	DO%	92.7
+25	Malletts Bay	06.01.2020	2020	VT	27	DO%	87.5
+25	Malletts Bay	06.01.2020	2020	VT	28	DO%	86.7
+25	Malletts Bay	06.01.2020	2020	NY	28	DO%	92.3
+25	Malletts Bay	06.01.2020	2020	NY	29	DO%	91.6
+25	Malletts Bay	06.01.2020	2020	VT	29	DO%	86
+25	Malletts Bay	06.01.2020	2020	VT	30	DO%	85.2
+25	Malletts Bay	06.01.2020	2020	NY	30	DO%	90.8
+25	Malletts Bay	06.01.2020	2020	NY	31	DO%	90.2
+25	Malletts Bay	06.01.2020	2020	VT	31	DO%	85.3
+25	Malletts Bay	06.01.2020	2020	VT	32	DO%	85.2
+25	Malletts Bay	06.01.2020	2020	VT	1	pH - Units	7.93
+25	Malletts Bay	06.01.2020	2020	NY	1	pH - Units	7.14
+25	Malletts Bay	06.01.2020	2020	VT	1	pH - Units	7.86
+25	Malletts Bay	06.01.2020	2020	VT	2	pH - Units	7.88
+25	Malletts Bay	06.01.2020	2020	NY	2	pH - Units	7.3
+25	Malletts Bay	06.01.2020	2020	NY	3	pH - Units	7.36
+25	Malletts Bay	06.01.2020	2020	VT	3	pH - Units	7.89
+25	Malletts Bay	06.01.2020	2020	VT	4	pH - Units	7.88
+25	Malletts Bay	06.01.2020	2020	NY	4	pH - Units	7.47
+25	Malletts Bay	06.01.2020	2020	VT	5	pH - Units	7.86
+25	Malletts Bay	06.01.2020	2020	VT	6	pH - Units	7.86
+25	Malletts Bay	06.01.2020	2020	NY	6	pH - Units	7.89
+25	Malletts Bay	06.01.2020	2020	NY	7	pH - Units	7.89
+25	Malletts Bay	06.01.2020	2020	VT	7	pH - Units	7.84
+25	Malletts Bay	06.01.2020	2020	VT	8	pH - Units	7.84
+25	Malletts Bay	06.01.2020	2020	NY	8	pH - Units	7.89
+25	Malletts Bay	06.01.2020	2020	NY	9	pH - Units	7.89
+25	Malletts Bay	06.01.2020	2020	VT	9	pH - Units	7.84
+25	Malletts Bay	06.01.2020	2020	VT	10	pH - Units	7.81
+25	Malletts Bay	06.01.2020	2020	NY	10	pH - Units	7.89
+25	Malletts Bay	06.01.2020	2020	NY	11	pH - Units	7.88
+25	Malletts Bay	06.01.2020	2020	VT	11	pH - Units	7.76
+25	Malletts Bay	06.01.2020	2020	VT	12	pH - Units	7.64
+25	Malletts Bay	06.01.2020	2020	NY	12	pH - Units	7.87
+25	Malletts Bay	06.01.2020	2020	NY	13	pH - Units	7.87
+25	Malletts Bay	06.01.2020	2020	VT	13	pH - Units	7.63
+25	Malletts Bay	06.01.2020	2020	VT	14	pH - Units	7.62
+25	Malletts Bay	06.01.2020	2020	NY	14	pH - Units	7.86
+25	Malletts Bay	06.01.2020	2020	NY	15	pH - Units	7.85
+25	Malletts Bay	06.01.2020	2020	VT	15	pH - Units	7.6
+25	Malletts Bay	06.01.2020	2020	VT	16	pH - Units	7.58
+25	Malletts Bay	06.01.2020	2020	NY	16	pH - Units	7.84
+25	Malletts Bay	06.01.2020	2020	NY	17	pH - Units	7.78
+25	Malletts Bay	06.01.2020	2020	VT	17	pH - Units	7.55
+25	Malletts Bay	06.01.2020	2020	VT	18	pH - Units	7.53
+25	Malletts Bay	06.01.2020	2020	NY	18	pH - Units	7.77
+25	Malletts Bay	06.01.2020	2020	NY	19	pH - Units	7.77
+25	Malletts Bay	06.01.2020	2020	VT	19	pH - Units	7.5
+25	Malletts Bay	06.01.2020	2020	VT	20	pH - Units	7.47
+25	Malletts Bay	06.01.2020	2020	NY	20	pH - Units	7.77
+25	Malletts Bay	06.01.2020	2020	NY	21	pH - Units	7.76
+25	Malletts Bay	06.01.2020	2020	VT	21	pH - Units	7.43
+25	Malletts Bay	06.01.2020	2020	VT	22	pH - Units	7.4
+25	Malletts Bay	06.01.2020	2020	NY	22	pH - Units	7.75
+25	Malletts Bay	06.01.2020	2020	NY	23	pH - Units	7.75
+25	Malletts Bay	06.01.2020	2020	VT	23	pH - Units	7.39
+25	Malletts Bay	06.01.2020	2020	VT	24	pH - Units	7.39
+25	Malletts Bay	06.01.2020	2020	NY	24	pH - Units	7.74
+25	Malletts Bay	06.01.2020	2020	NY	25	pH - Units	7.73
+25	Malletts Bay	06.01.2020	2020	VT	25	pH - Units	7.39
+25	Malletts Bay	06.01.2020	2020	VT	26	pH - Units	7.36
+25	Malletts Bay	06.01.2020	2020	NY	26	pH - Units	7.73
+25	Malletts Bay	06.01.2020	2020	NY	27	pH - Units	7.72
+25	Malletts Bay	06.01.2020	2020	VT	27	pH - Units	7.34
+25	Malletts Bay	06.01.2020	2020	VT	28	pH - Units	7.33
+25	Malletts Bay	06.01.2020	2020	NY	28	pH - Units	7.72
+25	Malletts Bay	06.01.2020	2020	NY	29	pH - Units	7.71
+25	Malletts Bay	06.01.2020	2020	VT	29	pH - Units	7.31
+25	Malletts Bay	06.01.2020	2020	VT	30	pH - Units	7.3
+25	Malletts Bay	06.01.2020	2020	NY	30	pH - Units	7.7
+25	Malletts Bay	06.01.2020	2020	NY	31	pH - Units	7.69
+25	Malletts Bay	06.01.2020	2020	VT	31	pH - Units	7.29
+25	Malletts Bay	06.01.2020	2020	VT	32	pH - Units	7.28
+25	Malletts Bay	06.01.2020	2020	VT	1	TempC - deg C	15.57
+25	Malletts Bay	06.01.2020	2020	NY	1	TempC - deg C	15.45
+25	Malletts Bay	06.01.2020	2020	VT	1	TempC - deg C	15.55
+25	Malletts Bay	06.01.2020	2020	VT	2	TempC - deg C	15.53
+25	Malletts Bay	06.01.2020	2020	NY	2	TempC - deg C	15.45
+25	Malletts Bay	06.01.2020	2020	NY	3	TempC - deg C	15.32
+25	Malletts Bay	06.01.2020	2020	VT	3	TempC - deg C	15.38
+25	Malletts Bay	06.01.2020	2020	VT	4	TempC - deg C	15.23
+25	Malletts Bay	06.01.2020	2020	NY	4	TempC - deg C	14.95
+25	Malletts Bay	06.01.2020	2020	VT	5	TempC - deg C	14.97
+25	Malletts Bay	06.01.2020	2020	VT	6	TempC - deg C	14.65
+25	Malletts Bay	06.01.2020	2020	NY	6	TempC - deg C	14.38
+25	Malletts Bay	06.01.2020	2020	NY	7	TempC - deg C	14.35
+25	Malletts Bay	06.01.2020	2020	VT	7	TempC - deg C	14.51
+25	Malletts Bay	06.01.2020	2020	VT	8	TempC - deg C	14.45
+25	Malletts Bay	06.01.2020	2020	NY	8	TempC - deg C	14.29
+25	Malletts Bay	06.01.2020	2020	NY	9	TempC - deg C	13.56
+25	Malletts Bay	06.01.2020	2020	VT	9	TempC - deg C	14.41
+25	Malletts Bay	06.01.2020	2020	VT	10	TempC - deg C	14.08
+25	Malletts Bay	06.01.2020	2020	NY	10	TempC - deg C	13.16
+25	Malletts Bay	06.01.2020	2020	NY	11	TempC - deg C	12.86
+25	Malletts Bay	06.01.2020	2020	VT	11	TempC - deg C	13.67
+25	Malletts Bay	06.01.2020	2020	VT	12	TempC - deg C	12.18
+25	Malletts Bay	06.01.2020	2020	NY	12	TempC - deg C	11.76
+25	Malletts Bay	06.01.2020	2020	NY	13	TempC - deg C	11.61
+25	Malletts Bay	06.01.2020	2020	VT	13	TempC - deg C	11.85
+25	Malletts Bay	06.01.2020	2020	VT	14	TempC - deg C	11.51
+25	Malletts Bay	06.01.2020	2020	NY	14	TempC - deg C	11.03
+25	Malletts Bay	06.01.2020	2020	NY	15	TempC - deg C	10.76
+25	Malletts Bay	06.01.2020	2020	VT	15	TempC - deg C	10.95
+25	Malletts Bay	06.01.2020	2020	VT	16	TempC - deg C	10.78
+25	Malletts Bay	06.01.2020	2020	NY	16	TempC - deg C	10.67
+25	Malletts Bay	06.01.2020	2020	NY	17	TempC - deg C	10.02
+25	Malletts Bay	06.01.2020	2020	VT	17	TempC - deg C	10.36
+25	Malletts Bay	06.01.2020	2020	VT	18	TempC - deg C	9.94
+25	Malletts Bay	06.01.2020	2020	NY	18	TempC - deg C	9.91
+25	Malletts Bay	06.01.2020	2020	NY	19	TempC - deg C	9.67
+25	Malletts Bay	06.01.2020	2020	VT	19	TempC - deg C	9.51
+25	Malletts Bay	06.01.2020	2020	VT	20	TempC - deg C	8.92
+25	Malletts Bay	06.01.2020	2020	NY	20	TempC - deg C	9.23
+25	Malletts Bay	06.01.2020	2020	NY	21	TempC - deg C	8.79
+25	Malletts Bay	06.01.2020	2020	VT	21	TempC - deg C	8.65
+25	Malletts Bay	06.01.2020	2020	VT	22	TempC - deg C	8.59
+25	Malletts Bay	06.01.2020	2020	NY	22	TempC - deg C	8.7
+25	Malletts Bay	06.01.2020	2020	NY	23	TempC - deg C	8.5
+25	Malletts Bay	06.01.2020	2020	VT	23	TempC - deg C	8.43
+25	Malletts Bay	06.01.2020	2020	VT	24	TempC - deg C	8.33
+25	Malletts Bay	06.01.2020	2020	NY	24	TempC - deg C	8.34
+25	Malletts Bay	06.01.2020	2020	NY	25	TempC - deg C	8.14
+25	Malletts Bay	06.01.2020	2020	VT	25	TempC - deg C	8.19
+25	Malletts Bay	06.01.2020	2020	VT	26	TempC - deg C	7.98
+25	Malletts Bay	06.01.2020	2020	NY	26	TempC - deg C	7.99
+25	Malletts Bay	06.01.2020	2020	NY	27	TempC - deg C	7.91
+25	Malletts Bay	06.01.2020	2020	VT	27	TempC - deg C	7.92
+25	Malletts Bay	06.01.2020	2020	VT	28	TempC - deg C	7.91
+25	Malletts Bay	06.01.2020	2020	NY	28	TempC - deg C	7.82
+25	Malletts Bay	06.01.2020	2020	NY	29	TempC - deg C	7.77
+25	Malletts Bay	06.01.2020	2020	VT	29	TempC - deg C	7.88
+25	Malletts Bay	06.01.2020	2020	VT	30	TempC - deg C	7.86
+25	Malletts Bay	06.01.2020	2020	NY	30	TempC - deg C	7.74
+25	Malletts Bay	06.01.2020	2020	NY	31	TempC - deg C	7.72
+25	Malletts Bay	06.01.2020	2020	VT	31	TempC - deg C	7.85
+25	Malletts Bay	06.01.2020	2020	VT	32	TempC - deg C	7.83
+25	Malletts Bay	06/18/2020	2020	NY	1	Cond - uS/cm	130.3
+25	Malletts Bay	06/18/2020	2020	NY	2	Cond - uS/cm	130.3
+25	Malletts Bay	06/18/2020	2020	NY	3	Cond - uS/cm	130.3
+25	Malletts Bay	06/18/2020	2020	NY	4	Cond - uS/cm	129.3
+25	Malletts Bay	06/18/2020	2020	NY	5	Cond - uS/cm	129.1
+25	Malletts Bay	06/18/2020	2020	NY	6	Cond - uS/cm	128.8
+25	Malletts Bay	06/18/2020	2020	NY	7	Cond - uS/cm	128.6
+25	Malletts Bay	06/18/2020	2020	NY	8	Cond - uS/cm	128.6
+25	Malletts Bay	06/18/2020	2020	NY	9	Cond - uS/cm	128.4
+25	Malletts Bay	06/18/2020	2020	NY	10	Cond - uS/cm	128.4
+25	Malletts Bay	06/18/2020	2020	NY	11	Cond - uS/cm	128.2
+25	Malletts Bay	06/18/2020	2020	NY	12	Cond - uS/cm	126.6
+25	Malletts Bay	06/18/2020	2020	NY	13	Cond - uS/cm	126
+25	Malletts Bay	06/18/2020	2020	NY	14	Cond - uS/cm	125.5
+25	Malletts Bay	06/18/2020	2020	NY	15	Cond - uS/cm	125.5
+25	Malletts Bay	06/18/2020	2020	NY	16	Cond - uS/cm	125.4
+25	Malletts Bay	06/18/2020	2020	NY	17	Cond - uS/cm	125.4
+25	Malletts Bay	06/18/2020	2020	NY	18	Cond - uS/cm	125.5
+25	Malletts Bay	06/18/2020	2020	NY	19	Cond - uS/cm	125.4
+25	Malletts Bay	06/18/2020	2020	NY	20	Cond - uS/cm	125.3
+25	Malletts Bay	06/18/2020	2020	NY	21	Cond - uS/cm	125.3
+25	Malletts Bay	06/18/2020	2020	NY	22	Cond - uS/cm	125.4
+25	Malletts Bay	06/18/2020	2020	NY	23	Cond - uS/cm	125.6
+25	Malletts Bay	06/18/2020	2020	NY	24	Cond - uS/cm	125.5
+25	Malletts Bay	06/18/2020	2020	NY	25	Cond - uS/cm	125.6
+25	Malletts Bay	06/18/2020	2020	NY	26	Cond - uS/cm	125.7
+25	Malletts Bay	06/18/2020	2020	NY	27	Cond - uS/cm	125.8
+25	Malletts Bay	06/18/2020	2020	NY	28	Cond - uS/cm	126.3
+25	Malletts Bay	06/18/2020	2020	NY	29	Cond - uS/cm	126.6
+25	Malletts Bay	06/18/2020	2020	NY	30	Cond - uS/cm	126.7
+25	Malletts Bay	06/18/2020	2020	NY	31	Cond - uS/cm	126.8
+25	Malletts Bay	06/18/2020	2020	NY	1	DO - mg/L	9.53
+25	Malletts Bay	06/18/2020	2020	NY	2	DO - mg/L	9.73
+25	Malletts Bay	06/18/2020	2020	NY	3	DO - mg/L	9.9
+25	Malletts Bay	06/18/2020	2020	NY	4	DO - mg/L	10.41
+25	Malletts Bay	06/18/2020	2020	NY	5	DO - mg/L	10.33
+25	Malletts Bay	06/18/2020	2020	NY	6	DO - mg/L	10.43
+25	Malletts Bay	06/18/2020	2020	NY	7	DO - mg/L	10.48
+25	Malletts Bay	06/18/2020	2020	NY	8	DO - mg/L	10.31
+25	Malletts Bay	06/18/2020	2020	NY	9	DO - mg/L	10.16
+25	Malletts Bay	06/18/2020	2020	NY	10	DO - mg/L	10.01
+25	Malletts Bay	06/18/2020	2020	NY	11	DO - mg/L	10
+25	Malletts Bay	06/18/2020	2020	NY	12	DO - mg/L	10.07
+25	Malletts Bay	06/18/2020	2020	NY	13	DO - mg/L	10.08
+25	Malletts Bay	06/18/2020	2020	NY	14	DO - mg/L	10
+25	Malletts Bay	06/18/2020	2020	NY	15	DO - mg/L	9.91
+25	Malletts Bay	06/18/2020	2020	NY	16	DO - mg/L	9.9
+25	Malletts Bay	06/18/2020	2020	NY	17	DO - mg/L	9.85
+25	Malletts Bay	06/18/2020	2020	NY	18	DO - mg/L	9.71
+25	Malletts Bay	06/18/2020	2020	NY	19	DO - mg/L	9.75
+25	Malletts Bay	06/18/2020	2020	NY	20	DO - mg/L	9.77
+25	Malletts Bay	06/18/2020	2020	NY	21	DO - mg/L	9.78
+25	Malletts Bay	06/18/2020	2020	NY	22	DO - mg/L	9.78
+25	Malletts Bay	06/18/2020	2020	NY	23	DO - mg/L	9.78
+25	Malletts Bay	06/18/2020	2020	NY	24	DO - mg/L	9.7
+25	Malletts Bay	06/18/2020	2020	NY	25	DO - mg/L	9.62
+25	Malletts Bay	06/18/2020	2020	NY	26	DO - mg/L	9.47
+25	Malletts Bay	06/18/2020	2020	NY	27	DO - mg/L	9.17
+25	Malletts Bay	06/18/2020	2020	NY	28	DO - mg/L	9.07
+25	Malletts Bay	06/18/2020	2020	NY	29	DO - mg/L	8.86
+25	Malletts Bay	06/18/2020	2020	NY	30	DO - mg/L	8.72
+25	Malletts Bay	06/18/2020	2020	NY	31	DO - mg/L	8.2
+25	Malletts Bay	06/18/2020	2020	NY	1	DO%	108.1
+25	Malletts Bay	06/18/2020	2020	NY	2	DO%	110.3
+25	Malletts Bay	06/18/2020	2020	NY	3	DO%	111.7
+25	Malletts Bay	06/18/2020	2020	NY	4	DO%	111.5
+25	Malletts Bay	06/18/2020	2020	NY	5	DO%	110.2
+25	Malletts Bay	06/18/2020	2020	NY	6	DO%	110.9
+25	Malletts Bay	06/18/2020	2020	NY	7	DO%	110.7
+25	Malletts Bay	06/18/2020	2020	NY	8	DO%	108.4
+25	Malletts Bay	06/18/2020	2020	NY	9	DO%	106.6
+25	Malletts Bay	06/18/2020	2020	NY	10	DO%	104.7
+25	Malletts Bay	06/18/2020	2020	NY	11	DO%	103.7
+25	Malletts Bay	06/18/2020	2020	NY	12	DO%	99.4
+25	Malletts Bay	06/18/2020	2020	NY	13	DO%	95.5
+25	Malletts Bay	06/18/2020	2020	NY	14	DO%	92.7
+25	Malletts Bay	06/18/2020	2020	NY	15	DO%	90
+25	Malletts Bay	06/18/2020	2020	NY	16	DO%	89.2
+25	Malletts Bay	06/18/2020	2020	NY	17	DO%	88.2
+25	Malletts Bay	06/18/2020	2020	NY	18	DO%	86.1
+25	Malletts Bay	06/18/2020	2020	NY	19	DO%	85.7
+25	Malletts Bay	06/18/2020	2020	NY	20	DO%	85.3
+25	Malletts Bay	06/18/2020	2020	NY	21	DO%	84.9
+25	Malletts Bay	06/18/2020	2020	NY	22	DO%	84.3
+25	Malletts Bay	06/18/2020	2020	NY	23	DO%	83.9
+25	Malletts Bay	06/18/2020	2020	NY	24	DO%	83
+25	Malletts Bay	06/18/2020	2020	NY	25	DO%	81.9
+25	Malletts Bay	06/18/2020	2020	NY	26	DO%	80.5
+25	Malletts Bay	06/18/2020	2020	NY	27	DO%	78
+25	Malletts Bay	06/18/2020	2020	NY	28	DO%	77
+25	Malletts Bay	06/18/2020	2020	NY	29	DO%	75.2
+25	Malletts Bay	06/18/2020	2020	NY	30	DO%	73.9
+25	Malletts Bay	06/18/2020	2020	NY	31	DO%	69.5
+25	Malletts Bay	06/18/2020	2020	NY	1	pH - Units	8.18
+25	Malletts Bay	06/18/2020	2020	NY	2	pH - Units	8.15
+25	Malletts Bay	06/18/2020	2020	NY	3	pH - Units	8.16
+25	Malletts Bay	06/18/2020	2020	NY	4	pH - Units	8.2
+25	Malletts Bay	06/18/2020	2020	NY	5	pH - Units	8.22
+25	Malletts Bay	06/18/2020	2020	NY	6	pH - Units	8.22
+25	Malletts Bay	06/18/2020	2020	NY	7	pH - Units	8.19
+25	Malletts Bay	06/18/2020	2020	NY	8	pH - Units	8.11
+25	Malletts Bay	06/18/2020	2020	NY	9	pH - Units	8.07
+25	Malletts Bay	06/18/2020	2020	NY	10	pH - Units	8.01
+25	Malletts Bay	06/18/2020	2020	NY	11	pH - Units	7.99
+25	Malletts Bay	06/18/2020	2020	NY	12	pH - Units	7.94
+25	Malletts Bay	06/18/2020	2020	NY	13	pH - Units	7.9
+25	Malletts Bay	06/18/2020	2020	NY	14	pH - Units	7.87
+25	Malletts Bay	06/18/2020	2020	NY	15	pH - Units	7.82
+25	Malletts Bay	06/18/2020	2020	NY	16	pH - Units	7.8
+25	Malletts Bay	06/18/2020	2020	NY	17	pH - Units	7.77
+25	Malletts Bay	06/18/2020	2020	NY	18	pH - Units	7.72
+25	Malletts Bay	06/18/2020	2020	NY	19	pH - Units	7.71
+25	Malletts Bay	06/18/2020	2020	NY	20	pH - Units	7.69
+25	Malletts Bay	06/18/2020	2020	NY	21	pH - Units	7.68
+25	Malletts Bay	06/18/2020	2020	NY	22	pH - Units	7.67
+25	Malletts Bay	06/18/2020	2020	NY	23	pH - Units	7.67
+25	Malletts Bay	06/18/2020	2020	NY	24	pH - Units	7.66
+25	Malletts Bay	06/18/2020	2020	NY	25	pH - Units	7.65
+25	Malletts Bay	06/18/2020	2020	NY	26	pH - Units	7.64
+25	Malletts Bay	06/18/2020	2020	NY	27	pH - Units	7.62
+25	Malletts Bay	06/18/2020	2020	NY	28	pH - Units	7.61
+25	Malletts Bay	06/18/2020	2020	NY	29	pH - Units	7.6
+25	Malletts Bay	06/18/2020	2020	NY	30	pH - Units	7.59
+25	Malletts Bay	06/18/2020	2020	NY	31	pH - Units	7.55
+25	Malletts Bay	06/18/2020	2020	NY	1	TempC - deg C	21.13
+25	Malletts Bay	06/18/2020	2020	NY	2	TempC - deg C	21.12
+25	Malletts Bay	06/18/2020	2020	NY	3	TempC - deg C	20.85
+25	Malletts Bay	06/18/2020	2020	NY	4	TempC - deg C	18.25
+25	Malletts Bay	06/18/2020	2020	NY	5	TempC - deg C	18.06
+25	Malletts Bay	06/18/2020	2020	NY	6	TempC - deg C	17.87
+25	Malletts Bay	06/18/2020	2020	NY	7	TempC - deg C	17.59
+25	Malletts Bay	06/18/2020	2020	NY	8	TempC - deg C	17.38
+25	Malletts Bay	06/18/2020	2020	NY	9	TempC - deg C	17.27
+25	Malletts Bay	06/18/2020	2020	NY	10	TempC - deg C	17.1
+25	Malletts Bay	06/18/2020	2020	NY	11	TempC - deg C	16.73
+25	Malletts Bay	06/18/2020	2020	NY	12	TempC - deg C	14.41
+25	Malletts Bay	06/18/2020	2020	NY	13	TempC - deg C	12.52
+25	Malletts Bay	06/18/2020	2020	NY	14	TempC - deg C	11.57
+25	Malletts Bay	06/18/2020	2020	NY	15	TempC - deg C	10.72
+25	Malletts Bay	06/18/2020	2020	NY	16	TempC - deg C	10.38
+25	Malletts Bay	06/18/2020	2020	NY	17	TempC - deg C	10.11
+25	Malletts Bay	06/18/2020	2020	NY	18	TempC - deg C	9.72
+25	Malletts Bay	06/18/2020	2020	NY	19	TempC - deg C	9.28
+25	Malletts Bay	06/18/2020	2020	NY	20	TempC - deg C	9.02
+25	Malletts Bay	06/18/2020	2020	NY	21	TempC - deg C	8.79
+25	Malletts Bay	06/18/2020	2020	NY	22	TempC - deg C	8.52
+25	Malletts Bay	06/18/2020	2020	NY	23	TempC - deg C	8.33
+25	Malletts Bay	06/18/2020	2020	NY	24	TempC - deg C	8.18
+25	Malletts Bay	06/18/2020	2020	NY	25	TempC - deg C	8
+25	Malletts Bay	06/18/2020	2020	NY	26	TempC - deg C	7.93
+25	Malletts Bay	06/18/2020	2020	NY	27	TempC - deg C	7.93
+25	Malletts Bay	06/18/2020	2020	NY	28	TempC - deg C	7.88
+25	Malletts Bay	06/18/2020	2020	NY	29	TempC - deg C	7.84
+25	Malletts Bay	06/18/2020	2020	NY	30	TempC - deg C	7.82
+25	Malletts Bay	06/18/2020	2020	NY	31	TempC - deg C	7.8
+25	Malletts Bay	06/24/2020	2020	VT	1	Chla - mg/L	3.17
+25	Malletts Bay	06/24/2020	2020	VT	1	Chla - mg/L	2.9
+25	Malletts Bay	06/24/2020	2020	VT	2	Chla - mg/L	3.42
+25	Malletts Bay	06/24/2020	2020	VT	3	Chla - mg/L	4.27
+25	Malletts Bay	06/24/2020	2020	VT	4	Chla - mg/L	5.41
+25	Malletts Bay	06/24/2020	2020	VT	5	Chla - mg/L	7.79
+25	Malletts Bay	06/24/2020	2020	VT	6	Chla - mg/L	10.58
+25	Malletts Bay	06/24/2020	2020	VT	7	Chla - mg/L	10.84
+25	Malletts Bay	06/24/2020	2020	VT	8	Chla - mg/L	11.47
+25	Malletts Bay	06/24/2020	2020	VT	9	Chla - mg/L	10.19
+25	Malletts Bay	06/24/2020	2020	VT	10	Chla - mg/L	6.46
+25	Malletts Bay	06/24/2020	2020	VT	11	Chla - mg/L	3.81
+25	Malletts Bay	06/24/2020	2020	VT	12	Chla - mg/L	4.06
+25	Malletts Bay	06/24/2020	2020	VT	13	Chla - mg/L	3.81
+25	Malletts Bay	06/24/2020	2020	VT	14	Chla - mg/L	3.74
+25	Malletts Bay	06/24/2020	2020	VT	15	Chla - mg/L	3.21
+25	Malletts Bay	06/24/2020	2020	VT	16	Chla - mg/L	3.01
+25	Malletts Bay	06/24/2020	2020	VT	17	Chla - mg/L	2.45
+25	Malletts Bay	06/24/2020	2020	VT	18	Chla - mg/L	2.37
+25	Malletts Bay	06/24/2020	2020	VT	19	Chla - mg/L	2.39
+25	Malletts Bay	06/24/2020	2020	VT	20	Chla - mg/L	2.14
+25	Malletts Bay	06/24/2020	2020	VT	21	Chla - mg/L	2.29
+25	Malletts Bay	06/24/2020	2020	VT	22	Chla - mg/L	2.11
+25	Malletts Bay	06/24/2020	2020	VT	23	Chla - mg/L	2.15
+25	Malletts Bay	06/24/2020	2020	VT	24	Chla - mg/L	2.35
+25	Malletts Bay	06/24/2020	2020	VT	25	Chla - mg/L	2.38
+25	Malletts Bay	06/24/2020	2020	VT	26	Chla - mg/L	2.45
+25	Malletts Bay	06/24/2020	2020	VT	27	Chla - mg/L	2.32
+25	Malletts Bay	06/24/2020	2020	VT	28	Chla - mg/L	2.21
+25	Malletts Bay	06/24/2020	2020	VT	29	Chla - mg/L	2.31
+25	Malletts Bay	06/24/2020	2020	VT	30	Chla - mg/L	2.38
+25	Malletts Bay	06/24/2020	2020	VT	1	Cond - uS/cm	108
+25	Malletts Bay	06/24/2020	2020	VT	1	Cond - uS/cm	108.2
+25	Malletts Bay	06/24/2020	2020	VT	2	Cond - uS/cm	107.9
+25	Malletts Bay	06/24/2020	2020	VT	3	Cond - uS/cm	108
+25	Malletts Bay	06/24/2020	2020	VT	4	Cond - uS/cm	107.8
+25	Malletts Bay	06/24/2020	2020	VT	5	Cond - uS/cm	107.8
+25	Malletts Bay	06/24/2020	2020	VT	6	Cond - uS/cm	105.8
+25	Malletts Bay	06/24/2020	2020	VT	7	Cond - uS/cm	105.8
+25	Malletts Bay	06/24/2020	2020	VT	8	Cond - uS/cm	105.2
+25	Malletts Bay	06/24/2020	2020	VT	9	Cond - uS/cm	104.9
+25	Malletts Bay	06/24/2020	2020	VT	10	Cond - uS/cm	103.9
+25	Malletts Bay	06/24/2020	2020	VT	11	Cond - uS/cm	102.7
+25	Malletts Bay	06/24/2020	2020	VT	12	Cond - uS/cm	102.6
+25	Malletts Bay	06/24/2020	2020	VT	13	Cond - uS/cm	101.6
+25	Malletts Bay	06/24/2020	2020	VT	14	Cond - uS/cm	101.3
+25	Malletts Bay	06/24/2020	2020	VT	15	Cond - uS/cm	101.4
+25	Malletts Bay	06/24/2020	2020	VT	16	Cond - uS/cm	101.8
+25	Malletts Bay	06/24/2020	2020	VT	17	Cond - uS/cm	101.2
+25	Malletts Bay	06/24/2020	2020	VT	18	Cond - uS/cm	101.2
+25	Malletts Bay	06/24/2020	2020	VT	19	Cond - uS/cm	101.5
+25	Malletts Bay	06/24/2020	2020	VT	20	Cond - uS/cm	101.1
+25	Malletts Bay	06/24/2020	2020	VT	21	Cond - uS/cm	101.3
+25	Malletts Bay	06/24/2020	2020	VT	22	Cond - uS/cm	101.4
+25	Malletts Bay	06/24/2020	2020	VT	23	Cond - uS/cm	101.4
+25	Malletts Bay	06/24/2020	2020	VT	24	Cond - uS/cm	101.5
+25	Malletts Bay	06/24/2020	2020	VT	25	Cond - uS/cm	101.2
+25	Malletts Bay	06/24/2020	2020	VT	26	Cond - uS/cm	101.5
+25	Malletts Bay	06/24/2020	2020	VT	27	Cond - uS/cm	101.9
+25	Malletts Bay	06/24/2020	2020	VT	28	Cond - uS/cm	102.1
+25	Malletts Bay	06/24/2020	2020	VT	29	Cond - uS/cm	101.7
+25	Malletts Bay	06/24/2020	2020	VT	30	Cond - uS/cm	102.1
+25	Malletts Bay	06/24/2020	2020	VT	1	DO - mg/L	9.31
+25	Malletts Bay	06/24/2020	2020	VT	1	DO - mg/L	9.24
+25	Malletts Bay	06/24/2020	2020	VT	2	DO - mg/L	9.24
+25	Malletts Bay	06/24/2020	2020	VT	3	DO - mg/L	9.28
+25	Malletts Bay	06/24/2020	2020	VT	4	DO - mg/L	9.31
+25	Malletts Bay	06/24/2020	2020	VT	5	DO - mg/L	9.86
+25	Malletts Bay	06/24/2020	2020	VT	6	DO - mg/L	10.63
+25	Malletts Bay	06/24/2020	2020	VT	7	DO - mg/L	10.94
+25	Malletts Bay	06/24/2020	2020	VT	8	DO - mg/L	11.02
+25	Malletts Bay	06/24/2020	2020	VT	9	DO - mg/L	10.86
+25	Malletts Bay	06/24/2020	2020	VT	10	DO - mg/L	9.54
+25	Malletts Bay	06/24/2020	2020	VT	11	DO - mg/L	9.34
+25	Malletts Bay	06/24/2020	2020	VT	12	DO - mg/L	9.22
+25	Malletts Bay	06/24/2020	2020	VT	13	DO - mg/L	9.39
+25	Malletts Bay	06/24/2020	2020	VT	14	DO - mg/L	9.43
+25	Malletts Bay	06/24/2020	2020	VT	15	DO - mg/L	9.45
+25	Malletts Bay	06/24/2020	2020	VT	16	DO - mg/L	9.49
+25	Malletts Bay	06/24/2020	2020	VT	17	DO - mg/L	9.32
+25	Malletts Bay	06/24/2020	2020	VT	18	DO - mg/L	9.29
+25	Malletts Bay	06/24/2020	2020	VT	19	DO - mg/L	9.24
+25	Malletts Bay	06/24/2020	2020	VT	20	DO - mg/L	9.15
+25	Malletts Bay	06/24/2020	2020	VT	21	DO - mg/L	9.1
+25	Malletts Bay	06/24/2020	2020	VT	22	DO - mg/L	9.04
+25	Malletts Bay	06/24/2020	2020	VT	23	DO - mg/L	8.96
+25	Malletts Bay	06/24/2020	2020	VT	24	DO - mg/L	8.88
+25	Malletts Bay	06/24/2020	2020	VT	25	DO - mg/L	8.66
+25	Malletts Bay	06/24/2020	2020	VT	26	DO - mg/L	8.57
+25	Malletts Bay	06/24/2020	2020	VT	27	DO - mg/L	8.05
+25	Malletts Bay	06/24/2020	2020	VT	28	DO - mg/L	7.6
+25	Malletts Bay	06/24/2020	2020	VT	29	DO - mg/L	7.34
+25	Malletts Bay	06/24/2020	2020	VT	30	DO - mg/L	7.23
+25	Malletts Bay	06/24/2020	2020	VT	1	DO%	112.6
+25	Malletts Bay	06/24/2020	2020	VT	1	DO%	111.9
+25	Malletts Bay	06/24/2020	2020	VT	2	DO%	111.9
+25	Malletts Bay	06/24/2020	2020	VT	3	DO%	112.3
+25	Malletts Bay	06/24/2020	2020	VT	4	DO%	112.5
+25	Malletts Bay	06/24/2020	2020	VT	5	DO%	115.5
+25	Malletts Bay	06/24/2020	2020	VT	6	DO%	117.2
+25	Malletts Bay	06/24/2020	2020	VT	7	DO%	119.8
+25	Malletts Bay	06/24/2020	2020	VT	8	DO%	119.7
+25	Malletts Bay	06/24/2020	2020	VT	9	DO%	116.5
+25	Malletts Bay	06/24/2020	2020	VT	10	DO%	98.1
+25	Malletts Bay	06/24/2020	2020	VT	11	DO%	92.2
+25	Malletts Bay	06/24/2020	2020	VT	12	DO%	88
+25	Malletts Bay	06/24/2020	2020	VT	13	DO%	87.3
+25	Malletts Bay	06/24/2020	2020	VT	14	DO%	86.4
+25	Malletts Bay	06/24/2020	2020	VT	15	DO%	85.8
+25	Malletts Bay	06/24/2020	2020	VT	16	DO%	85.5
+25	Malletts Bay	06/24/2020	2020	VT	17	DO%	83.5
+25	Malletts Bay	06/24/2020	2020	VT	18	DO%	82.6
+25	Malletts Bay	06/24/2020	2020	VT	19	DO%	81.8
+25	Malletts Bay	06/24/2020	2020	VT	20	DO%	80.5
+25	Malletts Bay	06/24/2020	2020	VT	21	DO%	79.6
+25	Malletts Bay	06/24/2020	2020	VT	22	DO%	79
+25	Malletts Bay	06/24/2020	2020	VT	23	DO%	78.2
+25	Malletts Bay	06/24/2020	2020	VT	24	DO%	77.4
+25	Malletts Bay	06/24/2020	2020	VT	25	DO%	75.3
+25	Malletts Bay	06/24/2020	2020	VT	26	DO%	74.4
+25	Malletts Bay	06/24/2020	2020	VT	27	DO%	69.6
+25	Malletts Bay	06/24/2020	2020	VT	28	DO%	65.5
+25	Malletts Bay	06/24/2020	2020	VT	29	DO%	63.3
+25	Malletts Bay	06/24/2020	2020	VT	30	DO%	62.3
+25	Malletts Bay	06/24/2020	2020	VT	1	pH - Units	8.52
+25	Malletts Bay	06/24/2020	2020	VT	1	pH - Units	8.51
+25	Malletts Bay	06/24/2020	2020	VT	2	pH - Units	8.51
+25	Malletts Bay	06/24/2020	2020	VT	3	pH - Units	8.51
+25	Malletts Bay	06/24/2020	2020	VT	4	pH - Units	8.51
+25	Malletts Bay	06/24/2020	2020	VT	5	pH - Units	8.5
+25	Malletts Bay	06/24/2020	2020	VT	6	pH - Units	8.62
+25	Malletts Bay	06/24/2020	2020	VT	7	pH - Units	8.69
+25	Malletts Bay	06/24/2020	2020	VT	8	pH - Units	8.67
+25	Malletts Bay	06/24/2020	2020	VT	9	pH - Units	8.3
+25	Malletts Bay	06/24/2020	2020	VT	10	pH - Units	7.76
+25	Malletts Bay	06/24/2020	2020	VT	11	pH - Units	7.58
+25	Malletts Bay	06/24/2020	2020	VT	12	pH - Units	7.47
+25	Malletts Bay	06/24/2020	2020	VT	13	pH - Units	7.44
+25	Malletts Bay	06/24/2020	2020	VT	14	pH - Units	7.41
+25	Malletts Bay	06/24/2020	2020	VT	15	pH - Units	7.39
+25	Malletts Bay	06/24/2020	2020	VT	16	pH - Units	7.36
+25	Malletts Bay	06/24/2020	2020	VT	17	pH - Units	7.35
+25	Malletts Bay	06/24/2020	2020	VT	18	pH - Units	7.33
+25	Malletts Bay	06/24/2020	2020	VT	19	pH - Units	7.31
+25	Malletts Bay	06/24/2020	2020	VT	20	pH - Units	7.29
+25	Malletts Bay	06/24/2020	2020	VT	21	pH - Units	7.28
+25	Malletts Bay	06/24/2020	2020	VT	22	pH - Units	7.26
+25	Malletts Bay	06/24/2020	2020	VT	23	pH - Units	7.25
+25	Malletts Bay	06/24/2020	2020	VT	24	pH - Units	7.24
+25	Malletts Bay	06/24/2020	2020	VT	25	pH - Units	7.22
+25	Malletts Bay	06/24/2020	2020	VT	26	pH - Units	7.2
+25	Malletts Bay	06/24/2020	2020	VT	27	pH - Units	7.16
+25	Malletts Bay	06/24/2020	2020	VT	28	pH - Units	7.13
+25	Malletts Bay	06/24/2020	2020	VT	29	pH - Units	7.11
+25	Malletts Bay	06/24/2020	2020	VT	30	pH - Units	7.11
+25	Malletts Bay	06/24/2020	2020	VT	1	TempC - deg C	23.86
+25	Malletts Bay	06/24/2020	2020	VT	1	TempC - deg C	23.9
+25	Malletts Bay	06/24/2020	2020	VT	2	TempC - deg C	23.89
+25	Malletts Bay	06/24/2020	2020	VT	3	TempC - deg C	23.88
+25	Malletts Bay	06/24/2020	2020	VT	4	TempC - deg C	23.82
+25	Malletts Bay	06/24/2020	2020	VT	5	TempC - deg C	22.14
+25	Malletts Bay	06/24/2020	2020	VT	6	TempC - deg C	19.09
+25	Malletts Bay	06/24/2020	2020	VT	7	TempC - deg C	18.77
+25	Malletts Bay	06/24/2020	2020	VT	8	TempC - deg C	18.34
+25	Malletts Bay	06/24/2020	2020	VT	9	TempC - deg C	17.76
+25	Malletts Bay	06/24/2020	2020	VT	10	TempC - deg C	15.69
+25	Malletts Bay	06/24/2020	2020	VT	11	TempC - deg C	13.86
+25	Malletts Bay	06/24/2020	2020	VT	12	TempC - deg C	12.34
+25	Malletts Bay	06/24/2020	2020	VT	13	TempC - deg C	11.21
+25	Malletts Bay	06/24/2020	2020	VT	14	TempC - deg C	10.56
+25	Malletts Bay	06/24/2020	2020	VT	15	TempC - deg C	10.16
+25	Malletts Bay	06/24/2020	2020	VT	16	TempC - deg C	9.82
+25	Malletts Bay	06/24/2020	2020	VT	17	TempC - deg C	9.51
+25	Malletts Bay	06/24/2020	2020	VT	18	TempC - deg C	9.31
+25	Malletts Bay	06/24/2020	2020	VT	19	TempC - deg C	9.13
+25	Malletts Bay	06/24/2020	2020	VT	20	TempC - deg C	8.84
+25	Malletts Bay	06/24/2020	2020	VT	21	TempC - deg C	8.61
+25	Malletts Bay	06/24/2020	2020	VT	22	TempC - deg C	8.56
+25	Malletts Bay	06/24/2020	2020	VT	23	TempC - deg C	8.51
+25	Malletts Bay	06/24/2020	2020	VT	24	TempC - deg C	8.44
+25	Malletts Bay	06/24/2020	2020	VT	25	TempC - deg C	8.37
+25	Malletts Bay	06/24/2020	2020	VT	26	TempC - deg C	8.29
+25	Malletts Bay	06/24/2020	2020	VT	27	TempC - deg C	8.14
+25	Malletts Bay	06/24/2020	2020	VT	28	TempC - deg C	8.05
+25	Malletts Bay	06/24/2020	2020	VT	29	TempC - deg C	8.01
+25	Malletts Bay	06/24/2020	2020	VT	30	TempC - deg C	7.99
+25	Malletts Bay	07/13/2020	2020	NY	1	Cond - uS/cm	130.4
+25	Malletts Bay	07/13/2020	2020	NY	2	Cond - uS/cm	130.4
+25	Malletts Bay	07/13/2020	2020	NY	3	Cond - uS/cm	130.4
+25	Malletts Bay	07/13/2020	2020	NY	4	Cond - uS/cm	130.4
+25	Malletts Bay	07/13/2020	2020	NY	5	Cond - uS/cm	130.4
+25	Malletts Bay	07/13/2020	2020	NY	6	Cond - uS/cm	130.4
+25	Malletts Bay	07/13/2020	2020	NY	7	Cond - uS/cm	130.4
+25	Malletts Bay	07/13/2020	2020	NY	8	Cond - uS/cm	129.9
+25	Malletts Bay	07/13/2020	2020	NY	9	Cond - uS/cm	129
+25	Malletts Bay	07/13/2020	2020	NY	10	Cond - uS/cm	127.6
+25	Malletts Bay	07/13/2020	2020	NY	11	Cond - uS/cm	124.9
+25	Malletts Bay	07/13/2020	2020	NY	12	Cond - uS/cm	123.5
+25	Malletts Bay	07/13/2020	2020	NY	13	Cond - uS/cm	121.9
+25	Malletts Bay	07/13/2020	2020	NY	14	Cond - uS/cm	121.5
+25	Malletts Bay	07/13/2020	2020	NY	15	Cond - uS/cm	121.1
+25	Malletts Bay	07/13/2020	2020	NY	16	Cond - uS/cm	121
+25	Malletts Bay	07/13/2020	2020	NY	17	Cond - uS/cm	121.1
+25	Malletts Bay	07/13/2020	2020	NY	18	Cond - uS/cm	121.3
+25	Malletts Bay	07/13/2020	2020	NY	19	Cond - uS/cm	121.3
+25	Malletts Bay	07/13/2020	2020	NY	20	Cond - uS/cm	121.4
+25	Malletts Bay	07/13/2020	2020	NY	21	Cond - uS/cm	121.5
+25	Malletts Bay	07/13/2020	2020	NY	22	Cond - uS/cm	121.6
+25	Malletts Bay	07/13/2020	2020	NY	23	Cond - uS/cm	121.8
+25	Malletts Bay	07/13/2020	2020	NY	24	Cond - uS/cm	121.9
+25	Malletts Bay	07/13/2020	2020	NY	25	Cond - uS/cm	122
+25	Malletts Bay	07/13/2020	2020	NY	26	Cond - uS/cm	122.5
+25	Malletts Bay	07/13/2020	2020	NY	27	Cond - uS/cm	122.5
+25	Malletts Bay	07/13/2020	2020	NY	28	Cond - uS/cm	122.5
+25	Malletts Bay	07/13/2020	2020	NY	29	Cond - uS/cm	122.6
+25	Malletts Bay	07/13/2020	2020	NY	30	Cond - uS/cm	122.7
+25	Malletts Bay	07/13/2020	2020	NY	1	DO - mg/L	8.89
+25	Malletts Bay	07/13/2020	2020	NY	2	DO - mg/L	8.96
+25	Malletts Bay	07/13/2020	2020	NY	3	DO - mg/L	8.99
+25	Malletts Bay	07/13/2020	2020	NY	4	DO - mg/L	9.03
+25	Malletts Bay	07/13/2020	2020	NY	5	DO - mg/L	9.06
+25	Malletts Bay	07/13/2020	2020	NY	6	DO - mg/L	9.06
+25	Malletts Bay	07/13/2020	2020	NY	7	DO - mg/L	9.05
+25	Malletts Bay	07/13/2020	2020	NY	8	DO - mg/L	8.88
+25	Malletts Bay	07/13/2020	2020	NY	9	DO - mg/L	9.08
+25	Malletts Bay	07/13/2020	2020	NY	10	DO - mg/L	8.71
+25	Malletts Bay	07/13/2020	2020	NY	11	DO - mg/L	8.46
+25	Malletts Bay	07/13/2020	2020	NY	12	DO - mg/L	8.14
+25	Malletts Bay	07/13/2020	2020	NY	13	DO - mg/L	7.98
+25	Malletts Bay	07/13/2020	2020	NY	14	DO - mg/L	8.08
+25	Malletts Bay	07/13/2020	2020	NY	15	DO - mg/L	8.13
+25	Malletts Bay	07/13/2020	2020	NY	16	DO - mg/L	8.19
+25	Malletts Bay	07/13/2020	2020	NY	17	DO - mg/L	8.28
+25	Malletts Bay	07/13/2020	2020	NY	18	DO - mg/L	8.27
+25	Malletts Bay	07/13/2020	2020	NY	19	DO - mg/L	8.16
+25	Malletts Bay	07/13/2020	2020	NY	20	DO - mg/L	8.13
+25	Malletts Bay	07/13/2020	2020	NY	21	DO - mg/L	8.07
+25	Malletts Bay	07/13/2020	2020	NY	22	DO - mg/L	7.98
+25	Malletts Bay	07/13/2020	2020	NY	23	DO - mg/L	7.87
+25	Malletts Bay	07/13/2020	2020	NY	24	DO - mg/L	6.92
+25	Malletts Bay	07/13/2020	2020	NY	25	DO - mg/L	6.58
+25	Malletts Bay	07/13/2020	2020	NY	26	DO - mg/L	6.5
+25	Malletts Bay	07/13/2020	2020	NY	27	DO - mg/L	6.04
+25	Malletts Bay	07/13/2020	2020	NY	28	DO - mg/L	5.65
+25	Malletts Bay	07/13/2020	2020	NY	29	DO - mg/L	5.55
+25	Malletts Bay	07/13/2020	2020	NY	30	DO - mg/L	5.48
+25	Malletts Bay	07/13/2020	2020	NY	1	DO%	112.3
+25	Malletts Bay	07/13/2020	2020	NY	2	DO%	112.7
+25	Malletts Bay	07/13/2020	2020	NY	3	DO%	113
+25	Malletts Bay	07/13/2020	2020	NY	4	DO%	113.4
+25	Malletts Bay	07/13/2020	2020	NY	5	DO%	113.6
+25	Malletts Bay	07/13/2020	2020	NY	6	DO%	113.6
+25	Malletts Bay	07/13/2020	2020	NY	7	DO%	113.4
+25	Malletts Bay	07/13/2020	2020	NY	8	DO%	110
+25	Malletts Bay	07/13/2020	2020	NY	9	DO%	109
+25	Malletts Bay	07/13/2020	2020	NY	10	DO%	101.6
+25	Malletts Bay	07/13/2020	2020	NY	11	DO%	91.9
+25	Malletts Bay	07/13/2020	2020	NY	12	DO%	85.2
+25	Malletts Bay	07/13/2020	2020	NY	13	DO%	79.4
+25	Malletts Bay	07/13/2020	2020	NY	14	DO%	78.2
+25	Malletts Bay	07/13/2020	2020	NY	15	DO%	76.5
+25	Malletts Bay	07/13/2020	2020	NY	16	DO%	75.7
+25	Malletts Bay	07/13/2020	2020	NY	17	DO%	75.3
+25	Malletts Bay	07/13/2020	2020	NY	18	DO%	74.6
+25	Malletts Bay	07/13/2020	2020	NY	19	DO%	73.4
+25	Malletts Bay	07/13/2020	2020	NY	20	DO%	72.6
+25	Malletts Bay	07/13/2020	2020	NY	21	DO%	71.7
+25	Malletts Bay	07/13/2020	2020	NY	22	DO%	70.8
+25	Malletts Bay	07/13/2020	2020	NY	23	DO%	69.6
+25	Malletts Bay	07/13/2020	2020	NY	24	DO%	61
+25	Malletts Bay	07/13/2020	2020	NY	25	DO%	57.9
+25	Malletts Bay	07/13/2020	2020	NY	26	DO%	57.1
+25	Malletts Bay	07/13/2020	2020	NY	27	DO%	53.1
+25	Malletts Bay	07/13/2020	2020	NY	28	DO%	49.6
+25	Malletts Bay	07/13/2020	2020	NY	29	DO%	48.7
+25	Malletts Bay	07/13/2020	2020	NY	30	DO%	48
+25	Malletts Bay	07/13/2020	2020	NY	1	pH - Units	8.48
+25	Malletts Bay	07/13/2020	2020	NY	2	pH - Units	8.49
+25	Malletts Bay	07/13/2020	2020	NY	3	pH - Units	8.49
+25	Malletts Bay	07/13/2020	2020	NY	4	pH - Units	8.49
+25	Malletts Bay	07/13/2020	2020	NY	5	pH - Units	8.48
+25	Malletts Bay	07/13/2020	2020	NY	6	pH - Units	8.46
+25	Malletts Bay	07/13/2020	2020	NY	7	pH - Units	8.41
+25	Malletts Bay	07/13/2020	2020	NY	8	pH - Units	8.23
+25	Malletts Bay	07/13/2020	2020	NY	9	pH - Units	8.04
+25	Malletts Bay	07/13/2020	2020	NY	10	pH - Units	7.81
+25	Malletts Bay	07/13/2020	2020	NY	11	pH - Units	7.6
+25	Malletts Bay	07/13/2020	2020	NY	12	pH - Units	7.41
+25	Malletts Bay	07/13/2020	2020	NY	13	pH - Units	7.36
+25	Malletts Bay	07/13/2020	2020	NY	14	pH - Units	7.33
+25	Malletts Bay	07/13/2020	2020	NY	15	pH - Units	7.31
+25	Malletts Bay	07/13/2020	2020	NY	16	pH - Units	7.3
+25	Malletts Bay	07/13/2020	2020	NY	17	pH - Units	7.29
+25	Malletts Bay	07/13/2020	2020	NY	18	pH - Units	7.27
+25	Malletts Bay	07/13/2020	2020	NY	19	pH - Units	7.25
+25	Malletts Bay	07/13/2020	2020	NY	20	pH - Units	7.25
+25	Malletts Bay	07/13/2020	2020	NY	21	pH - Units	7.23
+25	Malletts Bay	07/13/2020	2020	NY	22	pH - Units	7.22
+25	Malletts Bay	07/13/2020	2020	NY	23	pH - Units	7.2
+25	Malletts Bay	07/13/2020	2020	NY	24	pH - Units	7.15
+25	Malletts Bay	07/13/2020	2020	NY	25	pH - Units	7.11
+25	Malletts Bay	07/13/2020	2020	NY	26	pH - Units	7.1
+25	Malletts Bay	07/13/2020	2020	NY	27	pH - Units	7.07
+25	Malletts Bay	07/13/2020	2020	NY	28	pH - Units	7.05
+25	Malletts Bay	07/13/2020	2020	NY	29	pH - Units	7.04
+25	Malletts Bay	07/13/2020	2020	NY	30	pH - Units	7
+25	Malletts Bay	07/13/2020	2020	NY	1	TempC - deg C	25.33
+25	Malletts Bay	07/13/2020	2020	NY	2	TempC - deg C	25.13
+25	Malletts Bay	07/13/2020	2020	NY	3	TempC - deg C	25.08
+25	Malletts Bay	07/13/2020	2020	NY	4	TempC - deg C	25.03
+25	Malletts Bay	07/13/2020	2020	NY	5	TempC - deg C	24.98
+25	Malletts Bay	07/13/2020	2020	NY	6	TempC - deg C	24.95
+25	Malletts Bay	07/13/2020	2020	NY	7	TempC - deg C	24.89
+25	Malletts Bay	07/13/2020	2020	NY	8	TempC - deg C	24.32
+25	Malletts Bay	07/13/2020	2020	NY	9	TempC - deg C	22.68
+25	Malletts Bay	07/13/2020	2020	NY	10	TempC - deg C	21.16
+25	Malletts Bay	07/13/2020	2020	NY	11	TempC - deg C	17.57
+25	Malletts Bay	07/13/2020	2020	NY	12	TempC - deg C	15.87
+25	Malletts Bay	07/13/2020	2020	NY	13	TempC - deg C	13.52
+25	Malletts Bay	07/13/2020	2020	NY	14	TempC - deg C	12.29
+25	Malletts Bay	07/13/2020	2020	NY	15	TempC - deg C	11.05
+25	Malletts Bay	07/13/2020	2020	NY	16	TempC - deg C	10.31
+25	Malletts Bay	07/13/2020	2020	NY	17	TempC - deg C	9.65
+25	Malletts Bay	07/13/2020	2020	NY	18	TempC - deg C	9.27
+25	Malletts Bay	07/13/2020	2020	NY	19	TempC - deg C	9.14
+25	Malletts Bay	07/13/2020	2020	NY	20	TempC - deg C	8.85
+25	Malletts Bay	07/13/2020	2020	NY	21	TempC - deg C	8.64
+25	Malletts Bay	07/13/2020	2020	NY	22	TempC - deg C	8.54
+25	Malletts Bay	07/13/2020	2020	NY	23	TempC - deg C	8.44
+25	Malletts Bay	07/13/2020	2020	NY	24	TempC - deg C	8.31
+25	Malletts Bay	07/13/2020	2020	NY	25	TempC - deg C	8.26
+25	Malletts Bay	07/13/2020	2020	NY	26	TempC - deg C	8.17
+25	Malletts Bay	07/13/2020	2020	NY	27	TempC - deg C	8.14
+25	Malletts Bay	07/13/2020	2020	NY	28	TempC - deg C	8.1
+25	Malletts Bay	07/13/2020	2020	NY	29	TempC - deg C	8.08
+25	Malletts Bay	07/13/2020	2020	NY	30	TempC - deg C	8.06
+25	Malletts Bay	07/27/2020	2020	VT	1	Chla - mg/L	3.2
+25	Malletts Bay	07/27/2020	2020	VT	1	Chla - mg/L	3.77
+25	Malletts Bay	07/27/2020	2020	VT	2	Chla - mg/L	3.84
+25	Malletts Bay	07/27/2020	2020	VT	3	Chla - mg/L	4.22
+25	Malletts Bay	07/27/2020	2020	VT	4	Chla - mg/L	4.64
+25	Malletts Bay	07/27/2020	2020	VT	5	Chla - mg/L	4.56
+25	Malletts Bay	07/27/2020	2020	VT	6	Chla - mg/L	4.82
+25	Malletts Bay	07/27/2020	2020	VT	7	Chla - mg/L	4.78
+25	Malletts Bay	07/27/2020	2020	VT	8	Chla - mg/L	4.43
+25	Malletts Bay	07/27/2020	2020	VT	9	Chla - mg/L	4.31
+25	Malletts Bay	07/27/2020	2020	VT	10	Chla - mg/L	4.07
+25	Malletts Bay	07/27/2020	2020	VT	11	Chla - mg/L	3.8
+25	Malletts Bay	07/27/2020	2020	VT	12	Chla - mg/L	3.67
+25	Malletts Bay	07/27/2020	2020	VT	13	Chla - mg/L	3.6
+25	Malletts Bay	07/27/2020	2020	VT	14	Chla - mg/L	2.98
+25	Malletts Bay	07/27/2020	2020	VT	15	Chla - mg/L	2.82
+25	Malletts Bay	07/27/2020	2020	VT	16	Chla - mg/L	4.35
+25	Malletts Bay	07/27/2020	2020	VT	17	Chla - mg/L	2.96
+25	Malletts Bay	07/27/2020	2020	VT	18	Chla - mg/L	3.98
+25	Malletts Bay	07/27/2020	2020	VT	19	Chla - mg/L	2.98
+25	Malletts Bay	07/27/2020	2020	VT	20	Chla - mg/L	2.69
+25	Malletts Bay	07/27/2020	2020	VT	21	Chla - mg/L	2.51
+25	Malletts Bay	07/27/2020	2020	VT	22	Chla - mg/L	2.23
+25	Malletts Bay	07/27/2020	2020	VT	23	Chla - mg/L	2.01
+25	Malletts Bay	07/27/2020	2020	VT	24	Chla - mg/L	2.08
+25	Malletts Bay	07/27/2020	2020	VT	25	Chla - mg/L	2.03
+25	Malletts Bay	07/27/2020	2020	VT	26	Chla - mg/L	2.01
+25	Malletts Bay	07/27/2020	2020	VT	27	Chla - mg/L	2
+25	Malletts Bay	07/27/2020	2020	VT	28	Chla - mg/L	1.93
+25	Malletts Bay	07/27/2020	2020	VT	1	Cond - uS/cm	113.5
+25	Malletts Bay	07/27/2020	2020	VT	1	Cond - uS/cm	113.7
+25	Malletts Bay	07/27/2020	2020	VT	2	Cond - uS/cm	113.8
+25	Malletts Bay	07/27/2020	2020	VT	3	Cond - uS/cm	113.6
+25	Malletts Bay	07/27/2020	2020	VT	4	Cond - uS/cm	113.6
+25	Malletts Bay	07/27/2020	2020	VT	5	Cond - uS/cm	113.5
+25	Malletts Bay	07/27/2020	2020	VT	6	Cond - uS/cm	113.2
+25	Malletts Bay	07/27/2020	2020	VT	7	Cond - uS/cm	113.4
+25	Malletts Bay	07/27/2020	2020	VT	8	Cond - uS/cm	112.8
+25	Malletts Bay	07/27/2020	2020	VT	9	Cond - uS/cm	113
+25	Malletts Bay	07/27/2020	2020	VT	10	Cond - uS/cm	112.3
+25	Malletts Bay	07/27/2020	2020	VT	11	Cond - uS/cm	111.6
+25	Malletts Bay	07/27/2020	2020	VT	12	Cond - uS/cm	107.4
+25	Malletts Bay	07/27/2020	2020	VT	13	Cond - uS/cm	104
+25	Malletts Bay	07/27/2020	2020	VT	14	Cond - uS/cm	103.4
+25	Malletts Bay	07/27/2020	2020	VT	15	Cond - uS/cm	102.6
+25	Malletts Bay	07/27/2020	2020	VT	16	Cond - uS/cm	102.9
+25	Malletts Bay	07/27/2020	2020	VT	17	Cond - uS/cm	102.1
+25	Malletts Bay	07/27/2020	2020	VT	18	Cond - uS/cm	102
+25	Malletts Bay	07/27/2020	2020	VT	19	Cond - uS/cm	102.4
+25	Malletts Bay	07/27/2020	2020	VT	20	Cond - uS/cm	102.3
+25	Malletts Bay	07/27/2020	2020	VT	21	Cond - uS/cm	102.4
+25	Malletts Bay	07/27/2020	2020	VT	22	Cond - uS/cm	102.2
+25	Malletts Bay	07/27/2020	2020	VT	23	Cond - uS/cm	102.2
+25	Malletts Bay	07/27/2020	2020	VT	24	Cond - uS/cm	101.9
+25	Malletts Bay	07/27/2020	2020	VT	25	Cond - uS/cm	102.7
+25	Malletts Bay	07/27/2020	2020	VT	26	Cond - uS/cm	102.2
+25	Malletts Bay	07/27/2020	2020	VT	27	Cond - uS/cm	102.7
+25	Malletts Bay	07/27/2020	2020	VT	28	Cond - uS/cm	103.2
+25	Malletts Bay	07/27/2020	2020	VT	1	DO - mg/L	8.67
+25	Malletts Bay	07/27/2020	2020	VT	1	DO - mg/L	8.66
+25	Malletts Bay	07/27/2020	2020	VT	2	DO - mg/L	8.69
+25	Malletts Bay	07/27/2020	2020	VT	3	DO - mg/L	8.68
+25	Malletts Bay	07/27/2020	2020	VT	4	DO - mg/L	8.7
+25	Malletts Bay	07/27/2020	2020	VT	5	DO - mg/L	8.71
+25	Malletts Bay	07/27/2020	2020	VT	6	DO - mg/L	8.67
+25	Malletts Bay	07/27/2020	2020	VT	7	DO - mg/L	8.67
+25	Malletts Bay	07/27/2020	2020	VT	8	DO - mg/L	8.51
+25	Malletts Bay	07/27/2020	2020	VT	9	DO - mg/L	8.37
+25	Malletts Bay	07/27/2020	2020	VT	10	DO - mg/L	8.21
+25	Malletts Bay	07/27/2020	2020	VT	11	DO - mg/L	7.99
+25	Malletts Bay	07/27/2020	2020	VT	12	DO - mg/L	6.74
+25	Malletts Bay	07/27/2020	2020	VT	13	DO - mg/L	6.68
+25	Malletts Bay	07/27/2020	2020	VT	14	DO - mg/L	6.42
+25	Malletts Bay	07/27/2020	2020	VT	15	DO - mg/L	6.49
+25	Malletts Bay	07/27/2020	2020	VT	16	DO - mg/L	6.44
+25	Malletts Bay	07/27/2020	2020	VT	17	DO - mg/L	6.47
+25	Malletts Bay	07/27/2020	2020	VT	18	DO - mg/L	6.58
+25	Malletts Bay	07/27/2020	2020	VT	19	DO - mg/L	6.68
+25	Malletts Bay	07/27/2020	2020	VT	20	DO - mg/L	6.8
+25	Malletts Bay	07/27/2020	2020	VT	21	DO - mg/L	6.62
+25	Malletts Bay	07/27/2020	2020	VT	22	DO - mg/L	6.34
+25	Malletts Bay	07/27/2020	2020	VT	23	DO - mg/L	6.53
+25	Malletts Bay	07/27/2020	2020	VT	24	DO - mg/L	6.56
+25	Malletts Bay	07/27/2020	2020	VT	25	DO - mg/L	5.42
+25	Malletts Bay	07/27/2020	2020	VT	26	DO - mg/L	5.36
+25	Malletts Bay	07/27/2020	2020	VT	27	DO - mg/L	5.22
+25	Malletts Bay	07/27/2020	2020	VT	28	DO - mg/L	4.32
+25	Malletts Bay	07/27/2020	2020	VT	1	DO%	108.8
+25	Malletts Bay	07/27/2020	2020	VT	1	DO%	108.6
+25	Malletts Bay	07/27/2020	2020	VT	2	DO%	108.9
+25	Malletts Bay	07/27/2020	2020	VT	3	DO%	108.7
+25	Malletts Bay	07/27/2020	2020	VT	4	DO%	108.5
+25	Malletts Bay	07/27/2020	2020	VT	5	DO%	108.3
+25	Malletts Bay	07/27/2020	2020	VT	6	DO%	107.6
+25	Malletts Bay	07/27/2020	2020	VT	7	DO%	107.1
+25	Malletts Bay	07/27/2020	2020	VT	8	DO%	104
+25	Malletts Bay	07/27/2020	2020	VT	9	DO%	102.1
+25	Malletts Bay	07/27/2020	2020	VT	10	DO%	99.1
+25	Malletts Bay	07/27/2020	2020	VT	11	DO%	94.9
+25	Malletts Bay	07/27/2020	2020	VT	12	DO%	73.9
+25	Malletts Bay	07/27/2020	2020	VT	13	DO%	67.4
+25	Malletts Bay	07/27/2020	2020	VT	14	DO%	62.4
+25	Malletts Bay	07/27/2020	2020	VT	15	DO%	61.8
+25	Malletts Bay	07/27/2020	2020	VT	16	DO%	60.3
+25	Malletts Bay	07/27/2020	2020	VT	17	DO%	59.8
+25	Malletts Bay	07/27/2020	2020	VT	18	DO%	60
+25	Malletts Bay	07/27/2020	2020	VT	19	DO%	60.2
+25	Malletts Bay	07/27/2020	2020	VT	20	DO%	60.7
+25	Malletts Bay	07/27/2020	2020	VT	21	DO%	58.7
+25	Malletts Bay	07/27/2020	2020	VT	22	DO%	55.9
+25	Malletts Bay	07/27/2020	2020	VT	23	DO%	57.4
+25	Malletts Bay	07/27/2020	2020	VT	24	DO%	57.6
+25	Malletts Bay	07/27/2020	2020	VT	25	DO%	47.5
+25	Malletts Bay	07/27/2020	2020	VT	26	DO%	46.7
+25	Malletts Bay	07/27/2020	2020	VT	27	DO%	45.2
+25	Malletts Bay	07/27/2020	2020	VT	28	DO%	37.4
+25	Malletts Bay	07/27/2020	2020	VT	1	pH - Units	8.59
+25	Malletts Bay	07/27/2020	2020	VT	1	pH - Units	8.59
+25	Malletts Bay	07/27/2020	2020	VT	2	pH - Units	8.6
+25	Malletts Bay	07/27/2020	2020	VT	3	pH - Units	8.6
+25	Malletts Bay	07/27/2020	2020	VT	4	pH - Units	8.6
+25	Malletts Bay	07/27/2020	2020	VT	5	pH - Units	8.58
+25	Malletts Bay	07/27/2020	2020	VT	6	pH - Units	8.57
+25	Malletts Bay	07/27/2020	2020	VT	7	pH - Units	8.54
+25	Malletts Bay	07/27/2020	2020	VT	8	pH - Units	8.33
+25	Malletts Bay	07/27/2020	2020	VT	9	pH - Units	8.25
+25	Malletts Bay	07/27/2020	2020	VT	10	pH - Units	8.08
+25	Malletts Bay	07/27/2020	2020	VT	11	pH - Units	7.89
+25	Malletts Bay	07/27/2020	2020	VT	12	pH - Units	7.46
+25	Malletts Bay	07/27/2020	2020	VT	13	pH - Units	7.37
+25	Malletts Bay	07/27/2020	2020	VT	14	pH - Units	7.26
+25	Malletts Bay	07/27/2020	2020	VT	15	pH - Units	7.23
+25	Malletts Bay	07/27/2020	2020	VT	16	pH - Units	7.2
+25	Malletts Bay	07/27/2020	2020	VT	17	pH - Units	7.19
+25	Malletts Bay	07/27/2020	2020	VT	18	pH - Units	7.18
+25	Malletts Bay	07/27/2020	2020	VT	19	pH - Units	7.18
+25	Malletts Bay	07/27/2020	2020	VT	20	pH - Units	7.17
+25	Malletts Bay	07/27/2020	2020	VT	21	pH - Units	7.15
+25	Malletts Bay	07/27/2020	2020	VT	22	pH - Units	7.14
+25	Malletts Bay	07/27/2020	2020	VT	23	pH - Units	7.14
+25	Malletts Bay	07/27/2020	2020	VT	24	pH - Units	7.13
+25	Malletts Bay	07/27/2020	2020	VT	25	pH - Units	7.08
+25	Malletts Bay	07/27/2020	2020	VT	26	pH - Units	7.06
+25	Malletts Bay	07/27/2020	2020	VT	27	pH - Units	7.04
+25	Malletts Bay	07/27/2020	2020	VT	28	pH - Units	7
+25	Malletts Bay	07/27/2020	2020	VT	1	TempC - deg C	25.81
+25	Malletts Bay	07/27/2020	2020	VT	1	TempC - deg C	25.81
+25	Malletts Bay	07/27/2020	2020	VT	2	TempC - deg C	25.78
+25	Malletts Bay	07/27/2020	2020	VT	3	TempC - deg C	25.72
+25	Malletts Bay	07/27/2020	2020	VT	4	TempC - deg C	25.5
+25	Malletts Bay	07/27/2020	2020	VT	5	TempC - deg C	25.31
+25	Malletts Bay	07/27/2020	2020	VT	6	TempC - deg C	25.24
+25	Malletts Bay	07/27/2020	2020	VT	7	TempC - deg C	25.02
+25	Malletts Bay	07/27/2020	2020	VT	8	TempC - deg C	24.44
+25	Malletts Bay	07/27/2020	2020	VT	9	TempC - deg C	24.29
+25	Malletts Bay	07/27/2020	2020	VT	10	TempC - deg C	23.72
+25	Malletts Bay	07/27/2020	2020	VT	11	TempC - deg C	22.86
+25	Malletts Bay	07/27/2020	2020	VT	12	TempC - deg C	18.87
+25	Malletts Bay	07/27/2020	2020	VT	13	TempC - deg C	14.84
+25	Malletts Bay	07/27/2020	2020	VT	14	TempC - deg C	13.19
+25	Malletts Bay	07/27/2020	2020	VT	15	TempC - deg C	12.22
+25	Malletts Bay	07/27/2020	2020	VT	16	TempC - deg C	11.5
+25	Malletts Bay	07/27/2020	2020	VT	17	TempC - deg C	10.91
+25	Malletts Bay	07/27/2020	2020	VT	18	TempC - deg C	10.39
+25	Malletts Bay	07/27/2020	2020	VT	19	TempC - deg C	9.89
+25	Malletts Bay	07/27/2020	2020	VT	20	TempC - deg C	9.48
+25	Malletts Bay	07/27/2020	2020	VT	21	TempC - deg C	9.21
+25	Malletts Bay	07/27/2020	2020	VT	22	TempC - deg C	8.94
+25	Malletts Bay	07/27/2020	2020	VT	23	TempC - deg C	8.83
+25	Malletts Bay	07/27/2020	2020	VT	24	TempC - deg C	8.75
+25	Malletts Bay	07/27/2020	2020	VT	25	TempC - deg C	8.69
+25	Malletts Bay	07/27/2020	2020	VT	26	TempC - deg C	8.42
+25	Malletts Bay	07/27/2020	2020	VT	27	TempC - deg C	8.24
+25	Malletts Bay	07/27/2020	2020	VT	28	TempC - deg C	8.15
+25	Malletts Bay	07/29/2020	2020	NY	1	Cond - uS/cm	133.6
+25	Malletts Bay	07/29/2020	2020	NY	2	Cond - uS/cm	133.5
+25	Malletts Bay	07/29/2020	2020	NY	3	Cond - uS/cm	133.5
+25	Malletts Bay	07/29/2020	2020	NY	4	Cond - uS/cm	133.5
+25	Malletts Bay	07/29/2020	2020	NY	5	Cond - uS/cm	133.5
+25	Malletts Bay	07/29/2020	2020	NY	6	Cond - uS/cm	133.5
+25	Malletts Bay	07/29/2020	2020	NY	7	Cond - uS/cm	133.5
+25	Malletts Bay	07/29/2020	2020	NY	8	Cond - uS/cm	133.5
+25	Malletts Bay	07/29/2020	2020	NY	9	Cond - uS/cm	133.4
+25	Malletts Bay	07/29/2020	2020	NY	10	Cond - uS/cm	132
+25	Malletts Bay	07/29/2020	2020	NY	11	Cond - uS/cm	131.8
+25	Malletts Bay	07/29/2020	2020	NY	12	Cond - uS/cm	127.3
+25	Malletts Bay	07/29/2020	2020	NY	13	Cond - uS/cm	124.1
+25	Malletts Bay	07/29/2020	2020	NY	14	Cond - uS/cm	122.2
+25	Malletts Bay	07/29/2020	2020	NY	15	Cond - uS/cm	122.2
+25	Malletts Bay	07/29/2020	2020	NY	16	Cond - uS/cm	122.1
+25	Malletts Bay	07/29/2020	2020	NY	17	Cond - uS/cm	122.1
+25	Malletts Bay	07/29/2020	2020	NY	18	Cond - uS/cm	122.1
+25	Malletts Bay	07/29/2020	2020	NY	19	Cond - uS/cm	122.3
+25	Malletts Bay	07/29/2020	2020	NY	20	Cond - uS/cm	122.3
+25	Malletts Bay	07/29/2020	2020	NY	21	Cond - uS/cm	122.4
+25	Malletts Bay	07/29/2020	2020	NY	22	Cond - uS/cm	122.6
+25	Malletts Bay	07/29/2020	2020	NY	23	Cond - uS/cm	123
+25	Malletts Bay	07/29/2020	2020	NY	24	Cond - uS/cm	123.2
+25	Malletts Bay	07/29/2020	2020	NY	25	Cond - uS/cm	123.2
+25	Malletts Bay	07/29/2020	2020	NY	26	Cond - uS/cm	123.6
+25	Malletts Bay	07/29/2020	2020	NY	27	Cond - uS/cm	123.6
+25	Malletts Bay	07/29/2020	2020	NY	28	Cond - uS/cm	123.7
+25	Malletts Bay	07/29/2020	2020	NY	29	Cond - uS/cm	124
+25	Malletts Bay	07/29/2020	2020	NY	1	DO - mg/L	8.37
+25	Malletts Bay	07/29/2020	2020	NY	2	DO - mg/L	8.43
+25	Malletts Bay	07/29/2020	2020	NY	3	DO - mg/L	8.59
+25	Malletts Bay	07/29/2020	2020	NY	4	DO - mg/L	8.65
+25	Malletts Bay	07/29/2020	2020	NY	5	DO - mg/L	8.71
+25	Malletts Bay	07/29/2020	2020	NY	6	DO - mg/L	8.76
+25	Malletts Bay	07/29/2020	2020	NY	7	DO - mg/L	8.78
+25	Malletts Bay	07/29/2020	2020	NY	8	DO - mg/L	8.8
+25	Malletts Bay	07/29/2020	2020	NY	9	DO - mg/L	8.84
+25	Malletts Bay	07/29/2020	2020	NY	10	DO - mg/L	8.54
+25	Malletts Bay	07/29/2020	2020	NY	11	DO - mg/L	8.22
+25	Malletts Bay	07/29/2020	2020	NY	12	DO - mg/L	8.43
+25	Malletts Bay	07/29/2020	2020	NY	13	DO - mg/L	8.6
+25	Malletts Bay	07/29/2020	2020	NY	14	DO - mg/L	8.26
+25	Malletts Bay	07/29/2020	2020	NY	15	DO - mg/L	7
+25	Malletts Bay	07/29/2020	2020	NY	16	DO - mg/L	6.98
+25	Malletts Bay	07/29/2020	2020	NY	17	DO - mg/L	6.93
+25	Malletts Bay	07/29/2020	2020	NY	18	DO - mg/L	6.94
+25	Malletts Bay	07/29/2020	2020	NY	19	DO - mg/L	6.87
+25	Malletts Bay	07/29/2020	2020	NY	20	DO - mg/L	6.73
+25	Malletts Bay	07/29/2020	2020	NY	21	DO - mg/L	6.72
+25	Malletts Bay	07/29/2020	2020	NY	22	DO - mg/L	6.53
+25	Malletts Bay	07/29/2020	2020	NY	23	DO - mg/L	6.42
+25	Malletts Bay	07/29/2020	2020	NY	24	DO - mg/L	6.33
+25	Malletts Bay	07/29/2020	2020	NY	25	DO - mg/L	6.21
+25	Malletts Bay	07/29/2020	2020	NY	26	DO - mg/L	5.94
+25	Malletts Bay	07/29/2020	2020	NY	27	DO - mg/L	5.63
+25	Malletts Bay	07/29/2020	2020	NY	28	DO - mg/L	4.54
+25	Malletts Bay	07/29/2020	2020	NY	29	DO - mg/L	4.24
+25	Malletts Bay	07/29/2020	2020	NY	1	DO%	106
+25	Malletts Bay	07/29/2020	2020	NY	2	DO%	106.7
+25	Malletts Bay	07/29/2020	2020	NY	3	DO%	108.7
+25	Malletts Bay	07/29/2020	2020	NY	4	DO%	109.5
+25	Malletts Bay	07/29/2020	2020	NY	5	DO%	110.3
+25	Malletts Bay	07/29/2020	2020	NY	6	DO%	110.9
+25	Malletts Bay	07/29/2020	2020	NY	7	DO%	111.1
+25	Malletts Bay	07/29/2020	2020	NY	8	DO%	111.2
+25	Malletts Bay	07/29/2020	2020	NY	9	DO%	111.3
+25	Malletts Bay	07/29/2020	2020	NY	10	DO%	104
+25	Malletts Bay	07/29/2020	2020	NY	11	DO%	99.7
+25	Malletts Bay	07/29/2020	2020	NY	12	DO%	92.8
+25	Malletts Bay	07/29/2020	2020	NY	13	DO%	87.4
+25	Malletts Bay	07/29/2020	2020	NY	14	DO%	78.5
+25	Malletts Bay	07/29/2020	2020	NY	15	DO%	65.5
+25	Malletts Bay	07/29/2020	2020	NY	16	DO%	64.6
+25	Malletts Bay	07/29/2020	2020	NY	17	DO%	63.7
+25	Malletts Bay	07/29/2020	2020	NY	18	DO%	63.3
+25	Malletts Bay	07/29/2020	2020	NY	19	DO%	62.2
+25	Malletts Bay	07/29/2020	2020	NY	20	DO%	60.7
+25	Malletts Bay	07/29/2020	2020	NY	21	DO%	60.3
+25	Malletts Bay	07/29/2020	2020	NY	22	DO%	58.3
+25	Malletts Bay	07/29/2020	2020	NY	23	DO%	56.9
+25	Malletts Bay	07/29/2020	2020	NY	24	DO%	56.1
+25	Malletts Bay	07/29/2020	2020	NY	25	DO%	54.9
+25	Malletts Bay	07/29/2020	2020	NY	26	DO%	52.2
+25	Malletts Bay	07/29/2020	2020	NY	27	DO%	49.5
+25	Malletts Bay	07/29/2020	2020	NY	28	DO%	39.9
+25	Malletts Bay	07/29/2020	2020	NY	29	DO%	37.2
+25	Malletts Bay	07/29/2020	2020	NY	1	pH - Units	8.36
+25	Malletts Bay	07/29/2020	2020	NY	2	pH - Units	8.37
+25	Malletts Bay	07/29/2020	2020	NY	3	pH - Units	8.37
+25	Malletts Bay	07/29/2020	2020	NY	4	pH - Units	8.38
+25	Malletts Bay	07/29/2020	2020	NY	5	pH - Units	8.38
+25	Malletts Bay	07/29/2020	2020	NY	6	pH - Units	8.38
+25	Malletts Bay	07/29/2020	2020	NY	7	pH - Units	8.38
+25	Malletts Bay	07/29/2020	2020	NY	8	pH - Units	8.37
+25	Malletts Bay	07/29/2020	2020	NY	9	pH - Units	8.33
+25	Malletts Bay	07/29/2020	2020	NY	10	pH - Units	8.05
+25	Malletts Bay	07/29/2020	2020	NY	11	pH - Units	7.91
+25	Malletts Bay	07/29/2020	2020	NY	12	pH - Units	7.77
+25	Malletts Bay	07/29/2020	2020	NY	13	pH - Units	7.75
+25	Malletts Bay	07/29/2020	2020	NY	14	pH - Units	7.74
+25	Malletts Bay	07/29/2020	2020	NY	15	pH - Units	7.66
+25	Malletts Bay	07/29/2020	2020	NY	16	pH - Units	7.64
+25	Malletts Bay	07/29/2020	2020	NY	17	pH - Units	7.63
+25	Malletts Bay	07/29/2020	2020	NY	18	pH - Units	7.63
+25	Malletts Bay	07/29/2020	2020	NY	19	pH - Units	7.6
+25	Malletts Bay	07/29/2020	2020	NY	20	pH - Units	7.57
+25	Malletts Bay	07/29/2020	2020	NY	21	pH - Units	7.56
+25	Malletts Bay	07/29/2020	2020	NY	22	pH - Units	7.53
+25	Malletts Bay	07/29/2020	2020	NY	23	pH - Units	7.51
+25	Malletts Bay	07/29/2020	2020	NY	24	pH - Units	7.5
+25	Malletts Bay	07/29/2020	2020	NY	25	pH - Units	7.48
+25	Malletts Bay	07/29/2020	2020	NY	26	pH - Units	7.46
+25	Malletts Bay	07/29/2020	2020	NY	27	pH - Units	7.44
+25	Malletts Bay	07/29/2020	2020	NY	28	pH - Units	7.38
+25	Malletts Bay	07/29/2020	2020	NY	29	pH - Units	7.34
+25	Malletts Bay	07/29/2020	2020	NY	1	TempC - deg C	25.5
+25	Malletts Bay	07/29/2020	2020	NY	2	TempC - deg C	25.47
+25	Malletts Bay	07/29/2020	2020	NY	3	TempC - deg C	25.48
+25	Malletts Bay	07/29/2020	2020	NY	4	TempC - deg C	25.46
+25	Malletts Bay	07/29/2020	2020	NY	5	TempC - deg C	25.45
+25	Malletts Bay	07/29/2020	2020	NY	6	TempC - deg C	25.48
+25	Malletts Bay	07/29/2020	2020	NY	7	TempC - deg C	25.44
+25	Malletts Bay	07/29/2020	2020	NY	8	TempC - deg C	25.39
+25	Malletts Bay	07/29/2020	2020	NY	9	TempC - deg C	25.18
+25	Malletts Bay	07/29/2020	2020	NY	10	TempC - deg C	23.37
+25	Malletts Bay	07/29/2020	2020	NY	11	TempC - deg C	23.18
+25	Malletts Bay	07/29/2020	2020	NY	12	TempC - deg C	18.28
+25	Malletts Bay	07/29/2020	2020	NY	13	TempC - deg C	14.49
+25	Malletts Bay	07/29/2020	2020	NY	14	TempC - deg C	11.49
+25	Malletts Bay	07/29/2020	2020	NY	15	TempC - deg C	10.83
+25	Malletts Bay	07/29/2020	2020	NY	16	TempC - deg C	10.32
+25	Malletts Bay	07/29/2020	2020	NY	17	TempC - deg C	10.02
+25	Malletts Bay	07/29/2020	2020	NY	18	TempC - deg C	9.72
+25	Malletts Bay	07/29/2020	2020	NY	19	TempC - deg C	9.45
+25	Malletts Bay	07/29/2020	2020	NY	20	TempC - deg C	9.28
+25	Malletts Bay	07/29/2020	2020	NY	21	TempC - deg C	9.08
+25	Malletts Bay	07/29/2020	2020	NY	22	TempC - deg C	8.82
+25	Malletts Bay	07/29/2020	2020	NY	23	TempC - deg C	8.57
+25	Malletts Bay	07/29/2020	2020	NY	24	TempC - deg C	8.52
+25	Malletts Bay	07/29/2020	2020	NY	25	TempC - deg C	8.47
+25	Malletts Bay	07/29/2020	2020	NY	26	TempC - deg C	8.19
+25	Malletts Bay	07/29/2020	2020	NY	27	TempC - deg C	8.17
+25	Malletts Bay	07/29/2020	2020	NY	28	TempC - deg C	8.14
+25	Malletts Bay	07/29/2020	2020	NY	29	TempC - deg C	8.09
+25	Malletts Bay	08/13/2020	2020	NY	1	Cond - uS/cm	134.1
+25	Malletts Bay	08/13/2020	2020	NY	2	Cond - uS/cm	134.1
+25	Malletts Bay	08/13/2020	2020	NY	3	Cond - uS/cm	134.1
+25	Malletts Bay	08/13/2020	2020	NY	4	Cond - uS/cm	134.1
+25	Malletts Bay	08/13/2020	2020	NY	5	Cond - uS/cm	134
+25	Malletts Bay	08/13/2020	2020	NY	6	Cond - uS/cm	133.9
+25	Malletts Bay	08/13/2020	2020	NY	7	Cond - uS/cm	133.8
+25	Malletts Bay	08/13/2020	2020	NY	8	Cond - uS/cm	133.8
+25	Malletts Bay	08/13/2020	2020	NY	9	Cond - uS/cm	133.9
+25	Malletts Bay	08/13/2020	2020	NY	10	Cond - uS/cm	133.9
+25	Malletts Bay	08/13/2020	2020	NY	11	Cond - uS/cm	133.7
+25	Malletts Bay	08/13/2020	2020	NY	12	Cond - uS/cm	133.5
+25	Malletts Bay	08/13/2020	2020	NY	13	Cond - uS/cm	131.2
+25	Malletts Bay	08/13/2020	2020	NY	14	Cond - uS/cm	125.7
+25	Malletts Bay	08/13/2020	2020	NY	15	Cond - uS/cm	124.2
+25	Malletts Bay	08/13/2020	2020	NY	16	Cond - uS/cm	123.5
+25	Malletts Bay	08/13/2020	2020	NY	17	Cond - uS/cm	123.3
+25	Malletts Bay	08/13/2020	2020	NY	18	Cond - uS/cm	123.1
+25	Malletts Bay	08/13/2020	2020	NY	19	Cond - uS/cm	123.2
+25	Malletts Bay	08/13/2020	2020	NY	20	Cond - uS/cm	123.3
+25	Malletts Bay	08/13/2020	2020	NY	21	Cond - uS/cm	123.3
+25	Malletts Bay	08/13/2020	2020	NY	22	Cond - uS/cm	123.2
+25	Malletts Bay	08/13/2020	2020	NY	23	Cond - uS/cm	123.4
+25	Malletts Bay	08/13/2020	2020	NY	24	Cond - uS/cm	123.4
+25	Malletts Bay	08/13/2020	2020	NY	25	Cond - uS/cm	123.5
+25	Malletts Bay	08/13/2020	2020	NY	26	Cond - uS/cm	123.8
+25	Malletts Bay	08/13/2020	2020	NY	27	Cond - uS/cm	124.1
+25	Malletts Bay	08/13/2020	2020	NY	28	Cond - uS/cm	124.6
+25	Malletts Bay	08/13/2020	2020	NY	29	Cond - uS/cm	124.6
+25	Malletts Bay	08/13/2020	2020	NY	30	Cond - uS/cm	124.7
+25	Malletts Bay	08/13/2020	2020	NY	1	DO - mg/L	9.28
+25	Malletts Bay	08/13/2020	2020	NY	2	DO - mg/L	9.32
+25	Malletts Bay	08/13/2020	2020	NY	3	DO - mg/L	9.34
+25	Malletts Bay	08/13/2020	2020	NY	4	DO - mg/L	9.37
+25	Malletts Bay	08/13/2020	2020	NY	5	DO - mg/L	9.41
+25	Malletts Bay	08/13/2020	2020	NY	6	DO - mg/L	9.37
+25	Malletts Bay	08/13/2020	2020	NY	7	DO - mg/L	9.21
+25	Malletts Bay	08/13/2020	2020	NY	8	DO - mg/L	9.1
+25	Malletts Bay	08/13/2020	2020	NY	9	DO - mg/L	8.9
+25	Malletts Bay	08/13/2020	2020	NY	10	DO - mg/L	8.81
+25	Malletts Bay	08/13/2020	2020	NY	11	DO - mg/L	8.81
+25	Malletts Bay	08/13/2020	2020	NY	12	DO - mg/L	8.66
+25	Malletts Bay	08/13/2020	2020	NY	13	DO - mg/L	8.89
+25	Malletts Bay	08/13/2020	2020	NY	14	DO - mg/L	9.32
+25	Malletts Bay	08/13/2020	2020	NY	15	DO - mg/L	8.38
+25	Malletts Bay	08/13/2020	2020	NY	16	DO - mg/L	7.08
+25	Malletts Bay	08/13/2020	2020	NY	17	DO - mg/L	6.75
+25	Malletts Bay	08/13/2020	2020	NY	18	DO - mg/L	6.42
+25	Malletts Bay	08/13/2020	2020	NY	19	DO - mg/L	6.24
+25	Malletts Bay	08/13/2020	2020	NY	20	DO - mg/L	6.09
+25	Malletts Bay	08/13/2020	2020	NY	21	DO - mg/L	5.84
+25	Malletts Bay	08/13/2020	2020	NY	22	DO - mg/L	5.67
+25	Malletts Bay	08/13/2020	2020	NY	23	DO - mg/L	5.58
+25	Malletts Bay	08/13/2020	2020	NY	24	DO - mg/L	5.44
+25	Malletts Bay	08/13/2020	2020	NY	25	DO - mg/L	5.16
+25	Malletts Bay	08/13/2020	2020	NY	26	DO - mg/L	4.97
+25	Malletts Bay	08/13/2020	2020	NY	27	DO - mg/L	4.89
+25	Malletts Bay	08/13/2020	2020	NY	28	DO - mg/L	4.58
+25	Malletts Bay	08/13/2020	2020	NY	29	DO - mg/L	4.43
+25	Malletts Bay	08/13/2020	2020	NY	30	DO - mg/L	4.27
+25	Malletts Bay	08/13/2020	2020	NY	1	DO%	116.8
+25	Malletts Bay	08/13/2020	2020	NY	2	DO%	117.1
+25	Malletts Bay	08/13/2020	2020	NY	3	DO%	117.3
+25	Malletts Bay	08/13/2020	2020	NY	4	DO%	117.5
+25	Malletts Bay	08/13/2020	2020	NY	5	DO%	117.1
+25	Malletts Bay	08/13/2020	2020	NY	6	DO%	116.3
+25	Malletts Bay	08/13/2020	2020	NY	7	DO%	114
+25	Malletts Bay	08/13/2020	2020	NY	8	DO%	112.4
+25	Malletts Bay	08/13/2020	2020	NY	9	DO%	109.7
+25	Malletts Bay	08/13/2020	2020	NY	10	DO%	108.4
+25	Malletts Bay	08/13/2020	2020	NY	11	DO%	107.2
+25	Malletts Bay	08/13/2020	2020	NY	12	DO%	104.8
+25	Malletts Bay	08/13/2020	2020	NY	13	DO%	100.6
+25	Malletts Bay	08/13/2020	2020	NY	14	DO%	94.3
+25	Malletts Bay	08/13/2020	2020	NY	15	DO%	82.1
+25	Malletts Bay	08/13/2020	2020	NY	16	DO%	67.6
+25	Malletts Bay	08/13/2020	2020	NY	17	DO%	64
+25	Malletts Bay	08/13/2020	2020	NY	18	DO%	59.9
+25	Malletts Bay	08/13/2020	2020	NY	19	DO%	57.2
+25	Malletts Bay	08/13/2020	2020	NY	20	DO%	55.4
+25	Malletts Bay	08/13/2020	2020	NY	21	DO%	52.9
+25	Malletts Bay	08/13/2020	2020	NY	22	DO%	51.2
+25	Malletts Bay	08/13/2020	2020	NY	23	DO%	50.1
+25	Malletts Bay	08/13/2020	2020	NY	24	DO%	48.6
+25	Malletts Bay	08/13/2020	2020	NY	25	DO%	45.9
+25	Malletts Bay	08/13/2020	2020	NY	26	DO%	44.1
+25	Malletts Bay	08/13/2020	2020	NY	27	DO%	43.3
+25	Malletts Bay	08/13/2020	2020	NY	28	DO%	40.4
+25	Malletts Bay	08/13/2020	2020	NY	29	DO%	39.1
+25	Malletts Bay	08/13/2020	2020	NY	30	DO%	37.7
+25	Malletts Bay	08/13/2020	2020	NY	1	pH - Units	8.52
+25	Malletts Bay	08/13/2020	2020	NY	2	pH - Units	8.53
+25	Malletts Bay	08/13/2020	2020	NY	3	pH - Units	8.53
+25	Malletts Bay	08/13/2020	2020	NY	4	pH - Units	8.53
+25	Malletts Bay	08/13/2020	2020	NY	5	pH - Units	8.46
+25	Malletts Bay	08/13/2020	2020	NY	6	pH - Units	8.34
+25	Malletts Bay	08/13/2020	2020	NY	7	pH - Units	8.26
+25	Malletts Bay	08/13/2020	2020	NY	8	pH - Units	8.2
+25	Malletts Bay	08/13/2020	2020	NY	9	pH - Units	8.11
+25	Malletts Bay	08/13/2020	2020	NY	10	pH - Units	8.08
+25	Malletts Bay	08/13/2020	2020	NY	11	pH - Units	8.01
+25	Malletts Bay	08/13/2020	2020	NY	12	pH - Units	7.92
+25	Malletts Bay	08/13/2020	2020	NY	13	pH - Units	7.83
+25	Malletts Bay	08/13/2020	2020	NY	14	pH - Units	7.79
+25	Malletts Bay	08/13/2020	2020	NY	15	pH - Units	7.71
+25	Malletts Bay	08/13/2020	2020	NY	16	pH - Units	7.63
+25	Malletts Bay	08/13/2020	2020	NY	17	pH - Units	7.59
+25	Malletts Bay	08/13/2020	2020	NY	18	pH - Units	7.55
+25	Malletts Bay	08/13/2020	2020	NY	19	pH - Units	7.53
+25	Malletts Bay	08/13/2020	2020	NY	20	pH - Units	7.51
+25	Malletts Bay	08/13/2020	2020	NY	21	pH - Units	7.48
+25	Malletts Bay	08/13/2020	2020	NY	22	pH - Units	7.45
+25	Malletts Bay	08/13/2020	2020	NY	23	pH - Units	7.43
+25	Malletts Bay	08/13/2020	2020	NY	24	pH - Units	7.4
+25	Malletts Bay	08/13/2020	2020	NY	25	pH - Units	7.37
+25	Malletts Bay	08/13/2020	2020	NY	26	pH - Units	7.34
+25	Malletts Bay	08/13/2020	2020	NY	27	pH - Units	7.33
+25	Malletts Bay	08/13/2020	2020	NY	28	pH - Units	7.3
+25	Malletts Bay	08/13/2020	2020	NY	29	pH - Units	7.28
+25	Malletts Bay	08/13/2020	2020	NY	30	pH - Units	7.27
+25	Malletts Bay	08/13/2020	2020	NY	1	TempC - deg C	25.11
+25	Malletts Bay	08/13/2020	2020	NY	2	TempC - deg C	25.07
+25	Malletts Bay	08/13/2020	2020	NY	3	TempC - deg C	25.05
+25	Malletts Bay	08/13/2020	2020	NY	4	TempC - deg C	24.95
+25	Malletts Bay	08/13/2020	2020	NY	5	TempC - deg C	24.54
+25	Malletts Bay	08/13/2020	2020	NY	6	TempC - deg C	24.4
+25	Malletts Bay	08/13/2020	2020	NY	7	TempC - deg C	24.26
+25	Malletts Bay	08/13/2020	2020	NY	8	TempC - deg C	24.1
+25	Malletts Bay	08/13/2020	2020	NY	9	TempC - deg C	24.03
+25	Malletts Bay	08/13/2020	2020	NY	10	TempC - deg C	23.95
+25	Malletts Bay	08/13/2020	2020	NY	11	TempC - deg C	23.36
+25	Malletts Bay	08/13/2020	2020	NY	12	TempC - deg C	23.06
+25	Malletts Bay	08/13/2020	2020	NY	13	TempC - deg C	19.62
+25	Malletts Bay	08/13/2020	2020	NY	14	TempC - deg C	14.28
+25	Malletts Bay	08/13/2020	2020	NY	15	TempC - deg C	12.85
+25	Malletts Bay	08/13/2020	2020	NY	16	TempC - deg C	11.68
+25	Malletts Bay	08/13/2020	2020	NY	17	TempC - deg C	11.34
+25	Malletts Bay	08/13/2020	2020	NY	18	TempC - deg C	10.65
+25	Malletts Bay	08/13/2020	2020	NY	19	TempC - deg C	9.99
+25	Malletts Bay	08/13/2020	2020	NY	20	TempC - deg C	9.66
+25	Malletts Bay	08/13/2020	2020	NY	21	TempC - deg C	9.43
+25	Malletts Bay	08/13/2020	2020	NY	22	TempC - deg C	9.3
+25	Malletts Bay	08/13/2020	2020	NY	23	TempC - deg C	9.11
+25	Malletts Bay	08/13/2020	2020	NY	24	TempC - deg C	8.85
+25	Malletts Bay	08/13/2020	2020	NY	25	TempC - deg C	8.74
+25	Malletts Bay	08/13/2020	2020	NY	26	TempC - deg C	8.5
+25	Malletts Bay	08/13/2020	2020	NY	27	TempC - deg C	8.45
+25	Malletts Bay	08/13/2020	2020	NY	28	TempC - deg C	8.39
+25	Malletts Bay	08/13/2020	2020	NY	29	TempC - deg C	8.37
+25	Malletts Bay	08/13/2020	2020	NY	30	TempC - deg C	8.35
+25	Malletts Bay	08/20/2020	2020	NY	1	Cond - uS/cm	134.3
+25	Malletts Bay	08/20/2020	2020	NY	2	Cond - uS/cm	134.2
+25	Malletts Bay	08/20/2020	2020	NY	3	Cond - uS/cm	134.1
+25	Malletts Bay	08/20/2020	2020	NY	4	Cond - uS/cm	134
+25	Malletts Bay	08/20/2020	2020	NY	5	Cond - uS/cm	134
+25	Malletts Bay	08/20/2020	2020	NY	6	Cond - uS/cm	134
+25	Malletts Bay	08/20/2020	2020	NY	7	Cond - uS/cm	134
+25	Malletts Bay	08/20/2020	2020	NY	8	Cond - uS/cm	134
+25	Malletts Bay	08/20/2020	2020	NY	9	Cond - uS/cm	133.9
+25	Malletts Bay	08/20/2020	2020	NY	10	Cond - uS/cm	134
+25	Malletts Bay	08/20/2020	2020	NY	11	Cond - uS/cm	134
+25	Malletts Bay	08/20/2020	2020	NY	12	Cond - uS/cm	134.8
+25	Malletts Bay	08/20/2020	2020	NY	13	Cond - uS/cm	129.5
+25	Malletts Bay	08/20/2020	2020	NY	14	Cond - uS/cm	126
+25	Malletts Bay	08/20/2020	2020	NY	15	Cond - uS/cm	124.6
+25	Malletts Bay	08/20/2020	2020	NY	16	Cond - uS/cm	123.7
+25	Malletts Bay	08/20/2020	2020	NY	17	Cond - uS/cm	123.3
+25	Malletts Bay	08/20/2020	2020	NY	18	Cond - uS/cm	123.5
+25	Malletts Bay	08/20/2020	2020	NY	19	Cond - uS/cm	123.4
+25	Malletts Bay	08/20/2020	2020	NY	20	Cond - uS/cm	123.4
+25	Malletts Bay	08/20/2020	2020	NY	21	Cond - uS/cm	123.4
+25	Malletts Bay	08/20/2020	2020	NY	22	Cond - uS/cm	123.5
+25	Malletts Bay	08/20/2020	2020	NY	23	Cond - uS/cm	123.5
+25	Malletts Bay	08/20/2020	2020	NY	24	Cond - uS/cm	123.9
+25	Malletts Bay	08/20/2020	2020	NY	25	Cond - uS/cm	124.5
+25	Malletts Bay	08/20/2020	2020	NY	26	Cond - uS/cm	124.3
+25	Malletts Bay	08/20/2020	2020	NY	27	Cond - uS/cm	125.6
+25	Malletts Bay	08/20/2020	2020	NY	28	Cond - uS/cm	126.1
+25	Malletts Bay	08/20/2020	2020	NY	29	Cond - uS/cm	126.5
+25	Malletts Bay	08/20/2020	2020	NY	1	DO - mg/L	8.95
+25	Malletts Bay	08/20/2020	2020	NY	2	DO - mg/L	8.99
+25	Malletts Bay	08/20/2020	2020	NY	3	DO - mg/L	9.01
+25	Malletts Bay	08/20/2020	2020	NY	4	DO - mg/L	9.03
+25	Malletts Bay	08/20/2020	2020	NY	5	DO - mg/L	9.06
+25	Malletts Bay	08/20/2020	2020	NY	6	DO - mg/L	9.07
+25	Malletts Bay	08/20/2020	2020	NY	7	DO - mg/L	9.08
+25	Malletts Bay	08/20/2020	2020	NY	8	DO - mg/L	9.07
+25	Malletts Bay	08/20/2020	2020	NY	9	DO - mg/L	9.07
+25	Malletts Bay	08/20/2020	2020	NY	10	DO - mg/L	9.06
+25	Malletts Bay	08/20/2020	2020	NY	11	DO - mg/L	9.01
+25	Malletts Bay	08/20/2020	2020	NY	12	DO - mg/L	9.24
+25	Malletts Bay	08/20/2020	2020	NY	13	DO - mg/L	8.47
+25	Malletts Bay	08/20/2020	2020	NY	14	DO - mg/L	7.33
+25	Malletts Bay	08/20/2020	2020	NY	15	DO - mg/L	7.06
+25	Malletts Bay	08/20/2020	2020	NY	16	DO - mg/L	6.93
+25	Malletts Bay	08/20/2020	2020	NY	17	DO - mg/L	6.24
+25	Malletts Bay	08/20/2020	2020	NY	18	DO - mg/L	5.79
+25	Malletts Bay	08/20/2020	2020	NY	19	DO - mg/L	5.56
+25	Malletts Bay	08/20/2020	2020	NY	20	DO - mg/L	5.39
+25	Malletts Bay	08/20/2020	2020	NY	21	DO - mg/L	5.12
+25	Malletts Bay	08/20/2020	2020	NY	22	DO - mg/L	5.09
+25	Malletts Bay	08/20/2020	2020	NY	23	DO - mg/L	5.04
+25	Malletts Bay	08/20/2020	2020	NY	24	DO - mg/L	4.94
+25	Malletts Bay	08/20/2020	2020	NY	25	DO - mg/L	4.84
+25	Malletts Bay	08/20/2020	2020	NY	26	DO - mg/L	4.68
+25	Malletts Bay	08/20/2020	2020	NY	27	DO - mg/L	4.37
+25	Malletts Bay	08/20/2020	2020	NY	28	DO - mg/L	4.08
+25	Malletts Bay	08/20/2020	2020	NY	29	DO - mg/L	3.59
+25	Malletts Bay	08/20/2020	2020	NY	1	DO%	111.6
+25	Malletts Bay	08/20/2020	2020	NY	2	DO%	111.4
+25	Malletts Bay	08/20/2020	2020	NY	3	DO%	111.2
+25	Malletts Bay	08/20/2020	2020	NY	4	DO%	111.4
+25	Malletts Bay	08/20/2020	2020	NY	5	DO%	111.5
+25	Malletts Bay	08/20/2020	2020	NY	6	DO%	111.5
+25	Malletts Bay	08/20/2020	2020	NY	7	DO%	111.5
+25	Malletts Bay	08/20/2020	2020	NY	8	DO%	111.4
+25	Malletts Bay	08/20/2020	2020	NY	9	DO%	111.3
+25	Malletts Bay	08/20/2020	2020	NY	10	DO%	111.2
+25	Malletts Bay	08/20/2020	2020	NY	11	DO%	110.5
+25	Malletts Bay	08/20/2020	2020	NY	12	DO%	110
+25	Malletts Bay	08/20/2020	2020	NY	13	DO%	93.9
+25	Malletts Bay	08/20/2020	2020	NY	14	DO%	76
+25	Malletts Bay	08/20/2020	2020	NY	15	DO%	70.3
+25	Malletts Bay	08/20/2020	2020	NY	16	DO%	65.9
+25	Malletts Bay	08/20/2020	2020	NY	17	DO%	57.9
+25	Malletts Bay	08/20/2020	2020	NY	18	DO%	53.2
+25	Malletts Bay	08/20/2020	2020	NY	19	DO%	50.7
+25	Malletts Bay	08/20/2020	2020	NY	20	DO%	48.9
+25	Malletts Bay	08/20/2020	2020	NY	21	DO%	46.3
+25	Malletts Bay	08/20/2020	2020	NY	22	DO%	45.7
+25	Malletts Bay	08/20/2020	2020	NY	23	DO%	45
+25	Malletts Bay	08/20/2020	2020	NY	24	DO%	43.9
+25	Malletts Bay	08/20/2020	2020	NY	25	DO%	42.9
+25	Malletts Bay	08/20/2020	2020	NY	26	DO%	41.3
+25	Malletts Bay	08/20/2020	2020	NY	27	DO%	38.5
+25	Malletts Bay	08/20/2020	2020	NY	28	DO%	35.9
+25	Malletts Bay	08/20/2020	2020	NY	29	DO%	31.5
+25	Malletts Bay	08/20/2020	2020	NY	1	pH - Units	8.31
+25	Malletts Bay	08/20/2020	2020	NY	2	pH - Units	8.36
+25	Malletts Bay	08/20/2020	2020	NY	3	pH - Units	8.44
+25	Malletts Bay	08/20/2020	2020	NY	4	pH - Units	8.46
+25	Malletts Bay	08/20/2020	2020	NY	5	pH - Units	8.45
+25	Malletts Bay	08/20/2020	2020	NY	6	pH - Units	8.46
+25	Malletts Bay	08/20/2020	2020	NY	7	pH - Units	8.42
+25	Malletts Bay	08/20/2020	2020	NY	8	pH - Units	8.39
+25	Malletts Bay	08/20/2020	2020	NY	9	pH - Units	8.37
+25	Malletts Bay	08/20/2020	2020	NY	10	pH - Units	8.37
+25	Malletts Bay	08/20/2020	2020	NY	11	pH - Units	8.32
+25	Malletts Bay	08/20/2020	2020	NY	12	pH - Units	8.21
+25	Malletts Bay	08/20/2020	2020	NY	13	pH - Units	7.96
+25	Malletts Bay	08/20/2020	2020	NY	14	pH - Units	7.8
+25	Malletts Bay	08/20/2020	2020	NY	15	pH - Units	7.71
+25	Malletts Bay	08/20/2020	2020	NY	16	pH - Units	7.63
+25	Malletts Bay	08/20/2020	2020	NY	17	pH - Units	7.56
+25	Malletts Bay	08/20/2020	2020	NY	18	pH - Units	7.5
+25	Malletts Bay	08/20/2020	2020	NY	19	pH - Units	7.45
+25	Malletts Bay	08/20/2020	2020	NY	20	pH - Units	7.42
+25	Malletts Bay	08/20/2020	2020	NY	21	pH - Units	7.36
+25	Malletts Bay	08/20/2020	2020	NY	22	pH - Units	7.33
+25	Malletts Bay	08/20/2020	2020	NY	23	pH - Units	7.31
+25	Malletts Bay	08/20/2020	2020	NY	24	pH - Units	7.3
+25	Malletts Bay	08/20/2020	2020	NY	25	pH - Units	7.27
+25	Malletts Bay	08/20/2020	2020	NY	26	pH - Units	7.25
+25	Malletts Bay	08/20/2020	2020	NY	27	pH - Units	7.22
+25	Malletts Bay	08/20/2020	2020	NY	28	pH - Units	7.2
+25	Malletts Bay	08/20/2020	2020	NY	29	pH - Units	7.17
+25	Malletts Bay	08/20/2020	2020	NY	1	TempC - deg C	24.63
+25	Malletts Bay	08/20/2020	2020	NY	2	TempC - deg C	24.3
+25	Malletts Bay	08/20/2020	2020	NY	3	TempC - deg C	24.14
+25	Malletts Bay	08/20/2020	2020	NY	4	TempC - deg C	24.03
+25	Malletts Bay	08/20/2020	2020	NY	5	TempC - deg C	23.94
+25	Malletts Bay	08/20/2020	2020	NY	6	TempC - deg C	23.89
+25	Malletts Bay	08/20/2020	2020	NY	7	TempC - deg C	23.86
+25	Malletts Bay	08/20/2020	2020	NY	8	TempC - deg C	23.84
+25	Malletts Bay	08/20/2020	2020	NY	9	TempC - deg C	23.82
+25	Malletts Bay	08/20/2020	2020	NY	10	TempC - deg C	23.8
+25	Malletts Bay	08/20/2020	2020	NY	11	TempC - deg C	23.79
+25	Malletts Bay	08/20/2020	2020	NY	12	TempC - deg C	22.22
+25	Malletts Bay	08/20/2020	2020	NY	13	TempC - deg C	18.59
+25	Malletts Bay	08/20/2020	2020	NY	14	TempC - deg C	15.39
+25	Malletts Bay	08/20/2020	2020	NY	15	TempC - deg C	13.56
+25	Malletts Bay	08/20/2020	2020	NY	16	TempC - deg C	11.48
+25	Malletts Bay	08/20/2020	2020	NY	17	TempC - deg C	10.45
+25	Malletts Bay	08/20/2020	2020	NY	18	TempC - deg C	10.05
+25	Malletts Bay	08/20/2020	2020	NY	19	TempC - deg C	9.68
+25	Malletts Bay	08/20/2020	2020	NY	20	TempC - deg C	9.53
+25	Malletts Bay	08/20/2020	2020	NY	21	TempC - deg C	9.32
+25	Malletts Bay	08/20/2020	2020	NY	22	TempC - deg C	9.1
+25	Malletts Bay	08/20/2020	2020	NY	23	TempC - deg C	8.89
+25	Malletts Bay	08/20/2020	2020	NY	24	TempC - deg C	8.71
+25	Malletts Bay	08/20/2020	2020	NY	25	TempC - deg C	8.51
+25	Malletts Bay	08/20/2020	2020	NY	26	TempC - deg C	8.37
+25	Malletts Bay	08/20/2020	2020	NY	27	TempC - deg C	8.26
+25	Malletts Bay	08/20/2020	2020	NY	28	TempC - deg C	8.24
+25	Malletts Bay	08/20/2020	2020	NY	29	TempC - deg C	8.23
+25	Malletts Bay	08/24/2020	2020	VT	1	Chla - mg/L	3.93
+25	Malletts Bay	08/24/2020	2020	VT	1	Chla - mg/L	4.4
+25	Malletts Bay	08/24/2020	2020	VT	2	Chla - mg/L	4.24
+25	Malletts Bay	08/24/2020	2020	VT	3	Chla - mg/L	5.79
+25	Malletts Bay	08/24/2020	2020	VT	4	Chla - mg/L	6.99
+25	Malletts Bay	08/24/2020	2020	VT	5	Chla - mg/L	7.85
+25	Malletts Bay	08/24/2020	2020	VT	6	Chla - mg/L	8.05
+25	Malletts Bay	08/24/2020	2020	VT	7	Chla - mg/L	8.93
+25	Malletts Bay	08/24/2020	2020	VT	8	Chla - mg/L	9.28
+25	Malletts Bay	08/24/2020	2020	VT	9	Chla - mg/L	8.32
+25	Malletts Bay	08/24/2020	2020	VT	10	Chla - mg/L	7.15
+25	Malletts Bay	08/24/2020	2020	VT	11	Chla - mg/L	7.25
+25	Malletts Bay	08/24/2020	2020	VT	12	Chla - mg/L	4.95
+25	Malletts Bay	08/24/2020	2020	VT	13	Chla - mg/L	4.47
+25	Malletts Bay	08/24/2020	2020	VT	14	Chla - mg/L	2.53
+25	Malletts Bay	08/24/2020	2020	VT	15	Chla - mg/L	2.28
+25	Malletts Bay	08/24/2020	2020	VT	16	Chla - mg/L	2.44
+25	Malletts Bay	08/24/2020	2020	VT	17	Chla - mg/L	2.3
+25	Malletts Bay	08/24/2020	2020	VT	18	Chla - mg/L	2.08
+25	Malletts Bay	08/24/2020	2020	VT	19	Chla - mg/L	1.92
+25	Malletts Bay	08/24/2020	2020	VT	20	Chla - mg/L	1.69
+25	Malletts Bay	08/24/2020	2020	VT	21	Chla - mg/L	1.7
+25	Malletts Bay	08/24/2020	2020	VT	22	Chla - mg/L	1.63
+25	Malletts Bay	08/24/2020	2020	VT	23	Chla - mg/L	1.6
+25	Malletts Bay	08/24/2020	2020	VT	24	Chla - mg/L	1.65
+25	Malletts Bay	08/24/2020	2020	VT	25	Chla - mg/L	1.6
+25	Malletts Bay	08/24/2020	2020	VT	26	Chla - mg/L	1.72
+25	Malletts Bay	08/24/2020	2020	VT	27	Chla - mg/L	1.69
+25	Malletts Bay	08/24/2020	2020	VT	28	Chla - mg/L	1.64
+25	Malletts Bay	08/24/2020	2020	VT	29	Chla - mg/L	1.7
+25	Malletts Bay	08/24/2020	2020	VT	30	Chla - mg/L	1.69
+25	Malletts Bay	08/24/2020	2020	VT	31	Chla - mg/L	1.78
+25	Malletts Bay	08/24/2020	2020	VT	32	Chla - mg/L	1.72
+25	Malletts Bay	08/24/2020	2020	VT	1	Cond - uS/cm	114
+25	Malletts Bay	08/24/2020	2020	VT	1	Cond - uS/cm	114.1
+25	Malletts Bay	08/24/2020	2020	VT	2	Cond - uS/cm	114.1
+25	Malletts Bay	08/24/2020	2020	VT	3	Cond - uS/cm	113.9
+25	Malletts Bay	08/24/2020	2020	VT	4	Cond - uS/cm	113.9
+25	Malletts Bay	08/24/2020	2020	VT	5	Cond - uS/cm	114
+25	Malletts Bay	08/24/2020	2020	VT	6	Cond - uS/cm	113.6
+25	Malletts Bay	08/24/2020	2020	VT	7	Cond - uS/cm	114
+25	Malletts Bay	08/24/2020	2020	VT	8	Cond - uS/cm	113.5
+25	Malletts Bay	08/24/2020	2020	VT	9	Cond - uS/cm	113.5
+25	Malletts Bay	08/24/2020	2020	VT	10	Cond - uS/cm	113.3
+25	Malletts Bay	08/24/2020	2020	VT	11	Cond - uS/cm	113.6
+25	Malletts Bay	08/24/2020	2020	VT	12	Cond - uS/cm	112.1
+25	Malletts Bay	08/24/2020	2020	VT	13	Cond - uS/cm	110.3
+25	Malletts Bay	08/24/2020	2020	VT	14	Cond - uS/cm	107.6
+25	Malletts Bay	08/24/2020	2020	VT	15	Cond - uS/cm	104.5
+25	Malletts Bay	08/24/2020	2020	VT	16	Cond - uS/cm	103.4
+25	Malletts Bay	08/24/2020	2020	VT	17	Cond - uS/cm	102.8
+25	Malletts Bay	08/24/2020	2020	VT	18	Cond - uS/cm	102.6
+25	Malletts Bay	08/24/2020	2020	VT	19	Cond - uS/cm	102.8
+25	Malletts Bay	08/24/2020	2020	VT	20	Cond - uS/cm	102.5
+25	Malletts Bay	08/24/2020	2020	VT	21	Cond - uS/cm	102.4
+25	Malletts Bay	08/24/2020	2020	VT	22	Cond - uS/cm	102.9
+25	Malletts Bay	08/24/2020	2020	VT	23	Cond - uS/cm	102.6
+25	Malletts Bay	08/24/2020	2020	VT	24	Cond - uS/cm	102.8
+25	Malletts Bay	08/24/2020	2020	VT	25	Cond - uS/cm	103
+25	Malletts Bay	08/24/2020	2020	VT	26	Cond - uS/cm	103.5
+25	Malletts Bay	08/24/2020	2020	VT	27	Cond - uS/cm	104
+25	Malletts Bay	08/24/2020	2020	VT	28	Cond - uS/cm	104.5
+25	Malletts Bay	08/24/2020	2020	VT	29	Cond - uS/cm	106.3
+25	Malletts Bay	08/24/2020	2020	VT	30	Cond - uS/cm	107.2
+25	Malletts Bay	08/24/2020	2020	VT	31	Cond - uS/cm	107.3
+25	Malletts Bay	08/24/2020	2020	VT	32	Cond - uS/cm	107.4
+25	Malletts Bay	08/24/2020	2020	VT	1	DO - mg/L	8.82
+25	Malletts Bay	08/24/2020	2020	VT	1	DO - mg/L	8.76
+25	Malletts Bay	08/24/2020	2020	VT	2	DO - mg/L	8.77
+25	Malletts Bay	08/24/2020	2020	VT	3	DO - mg/L	8.78
+25	Malletts Bay	08/24/2020	2020	VT	4	DO - mg/L	8.76
+25	Malletts Bay	08/24/2020	2020	VT	5	DO - mg/L	8.73
+25	Malletts Bay	08/24/2020	2020	VT	6	DO - mg/L	8.69
+25	Malletts Bay	08/24/2020	2020	VT	7	DO - mg/L	8.7
+25	Malletts Bay	08/24/2020	2020	VT	8	DO - mg/L	8.69
+25	Malletts Bay	08/24/2020	2020	VT	9	DO - mg/L	8.59
+25	Malletts Bay	08/24/2020	2020	VT	10	DO - mg/L	8.5
+25	Malletts Bay	08/24/2020	2020	VT	11	DO - mg/L	8.28
+25	Malletts Bay	08/24/2020	2020	VT	12	DO - mg/L	6.9
+25	Malletts Bay	08/24/2020	2020	VT	13	DO - mg/L	5.71
+25	Malletts Bay	08/24/2020	2020	VT	14	DO - mg/L	4.78
+25	Malletts Bay	08/24/2020	2020	VT	15	DO - mg/L	4.49
+25	Malletts Bay	08/24/2020	2020	VT	16	DO - mg/L	4.54
+25	Malletts Bay	08/24/2020	2020	VT	17	DO - mg/L	4.68
+25	Malletts Bay	08/24/2020	2020	VT	18	DO - mg/L	4.84
+25	Malletts Bay	08/24/2020	2020	VT	19	DO - mg/L	4.89
+25	Malletts Bay	08/24/2020	2020	VT	20	DO - mg/L	4.77
+25	Malletts Bay	08/24/2020	2020	VT	21	DO - mg/L	4.7
+25	Malletts Bay	08/24/2020	2020	VT	22	DO - mg/L	4.69
+25	Malletts Bay	08/24/2020	2020	VT	23	DO - mg/L	4.46
+25	Malletts Bay	08/24/2020	2020	VT	24	DO - mg/L	3.84
+25	Malletts Bay	08/24/2020	2020	VT	25	DO - mg/L	3.58
+25	Malletts Bay	08/24/2020	2020	VT	26	DO - mg/L	2.97
+25	Malletts Bay	08/24/2020	2020	VT	27	DO - mg/L	2.75
+25	Malletts Bay	08/24/2020	2020	VT	28	DO - mg/L	2.45
+25	Malletts Bay	08/24/2020	2020	VT	29	DO - mg/L	1.99
+25	Malletts Bay	08/24/2020	2020	VT	30	DO - mg/L	1.8
+25	Malletts Bay	08/24/2020	2020	VT	31	DO - mg/L	1.74
+25	Malletts Bay	08/24/2020	2020	VT	32	DO - mg/L	1.7
+25	Malletts Bay	08/24/2020	2020	VT	1	DO%	106.8
+25	Malletts Bay	08/24/2020	2020	VT	1	DO%	106
+25	Malletts Bay	08/24/2020	2020	VT	2	DO%	106.1
+25	Malletts Bay	08/24/2020	2020	VT	3	DO%	106.2
+25	Malletts Bay	08/24/2020	2020	VT	4	DO%	106
+25	Malletts Bay	08/24/2020	2020	VT	5	DO%	105.5
+25	Malletts Bay	08/24/2020	2020	VT	6	DO%	105
+25	Malletts Bay	08/24/2020	2020	VT	7	DO%	105.1
+25	Malletts Bay	08/24/2020	2020	VT	8	DO%	104.9
+25	Malletts Bay	08/24/2020	2020	VT	9	DO%	103.6
+25	Malletts Bay	08/24/2020	2020	VT	10	DO%	102.3
+25	Malletts Bay	08/24/2020	2020	VT	11	DO%	99.5
+25	Malletts Bay	08/24/2020	2020	VT	12	DO%	80.5
+25	Malletts Bay	08/24/2020	2020	VT	13	DO%	65.5
+25	Malletts Bay	08/24/2020	2020	VT	14	DO%	51
+25	Malletts Bay	08/24/2020	2020	VT	15	DO%	44.3
+25	Malletts Bay	08/24/2020	2020	VT	16	DO%	43.2
+25	Malletts Bay	08/24/2020	2020	VT	17	DO%	43.4
+25	Malletts Bay	08/24/2020	2020	VT	18	DO%	44.2
+25	Malletts Bay	08/24/2020	2020	VT	19	DO%	44.1
+25	Malletts Bay	08/24/2020	2020	VT	20	DO%	42.7
+25	Malletts Bay	08/24/2020	2020	VT	21	DO%	41.9
+25	Malletts Bay	08/24/2020	2020	VT	22	DO%	41.7
+25	Malletts Bay	08/24/2020	2020	VT	23	DO%	39.3
+25	Malletts Bay	08/24/2020	2020	VT	24	DO%	33.6
+25	Malletts Bay	08/24/2020	2020	VT	25	DO%	31.3
+25	Malletts Bay	08/24/2020	2020	VT	26	DO%	25.9
+25	Malletts Bay	08/24/2020	2020	VT	27	DO%	23.9
+25	Malletts Bay	08/24/2020	2020	VT	28	DO%	21.3
+25	Malletts Bay	08/24/2020	2020	VT	29	DO%	17.2
+25	Malletts Bay	08/24/2020	2020	VT	30	DO%	15.7
+25	Malletts Bay	08/24/2020	2020	VT	31	DO%	15.1
+25	Malletts Bay	08/24/2020	2020	VT	32	DO%	14.8
+25	Malletts Bay	08/24/2020	2020	VT	1	pH - Units	8.6
+25	Malletts Bay	08/24/2020	2020	VT	1	pH - Units	8.62
+25	Malletts Bay	08/24/2020	2020	VT	2	pH - Units	8.61
+25	Malletts Bay	08/24/2020	2020	VT	3	pH - Units	8.61
+25	Malletts Bay	08/24/2020	2020	VT	4	pH - Units	8.63
+25	Malletts Bay	08/24/2020	2020	VT	5	pH - Units	8.61
+25	Malletts Bay	08/24/2020	2020	VT	6	pH - Units	8.59
+25	Malletts Bay	08/24/2020	2020	VT	7	pH - Units	8.56
+25	Malletts Bay	08/24/2020	2020	VT	8	pH - Units	8.56
+25	Malletts Bay	08/24/2020	2020	VT	9	pH - Units	8.52
+25	Malletts Bay	08/24/2020	2020	VT	10	pH - Units	8.43
+25	Malletts Bay	08/24/2020	2020	VT	11	pH - Units	8.32
+25	Malletts Bay	08/24/2020	2020	VT	12	pH - Units	7.78
+25	Malletts Bay	08/24/2020	2020	VT	13	pH - Units	7.53
+25	Malletts Bay	08/24/2020	2020	VT	14	pH - Units	7.32
+25	Malletts Bay	08/24/2020	2020	VT	15	pH - Units	7.21
+25	Malletts Bay	08/24/2020	2020	VT	16	pH - Units	7.18
+25	Malletts Bay	08/24/2020	2020	VT	17	pH - Units	7.16
+25	Malletts Bay	08/24/2020	2020	VT	18	pH - Units	7.15
+25	Malletts Bay	08/24/2020	2020	VT	19	pH - Units	7.14
+25	Malletts Bay	08/24/2020	2020	VT	20	pH - Units	7.12
+25	Malletts Bay	08/24/2020	2020	VT	21	pH - Units	7.11
+25	Malletts Bay	08/24/2020	2020	VT	22	pH - Units	7.1
+25	Malletts Bay	08/24/2020	2020	VT	23	pH - Units	7.09
+25	Malletts Bay	08/24/2020	2020	VT	24	pH - Units	7.05
+25	Malletts Bay	08/24/2020	2020	VT	25	pH - Units	7.04
+25	Malletts Bay	08/24/2020	2020	VT	26	pH - Units	7.02
+25	Malletts Bay	08/24/2020	2020	VT	27	pH - Units	7
+25	Malletts Bay	08/24/2020	2020	VT	28	pH - Units	7
+25	Malletts Bay	08/24/2020	2020	VT	29	pH - Units	7
+25	Malletts Bay	08/24/2020	2020	VT	30	pH - Units	7.01
+25	Malletts Bay	08/24/2020	2020	VT	31	pH - Units	7.02
+25	Malletts Bay	08/24/2020	2020	VT	32	pH - Units	7.02
+25	Malletts Bay	08/24/2020	2020	VT	1	TempC - deg C	23.92
+25	Malletts Bay	08/24/2020	2020	VT	1	TempC - deg C	23.91
+25	Malletts Bay	08/24/2020	2020	VT	2	TempC - deg C	23.9
+25	Malletts Bay	08/24/2020	2020	VT	3	TempC - deg C	23.86
+25	Malletts Bay	08/24/2020	2020	VT	4	TempC - deg C	23.84
+25	Malletts Bay	08/24/2020	2020	VT	5	TempC - deg C	23.81
+25	Malletts Bay	08/24/2020	2020	VT	6	TempC - deg C	23.79
+25	Malletts Bay	08/24/2020	2020	VT	7	TempC - deg C	23.77
+25	Malletts Bay	08/24/2020	2020	VT	8	TempC - deg C	23.76
+25	Malletts Bay	08/24/2020	2020	VT	9	TempC - deg C	23.71
+25	Malletts Bay	08/24/2020	2020	VT	10	TempC - deg C	23.61
+25	Malletts Bay	08/24/2020	2020	VT	11	TempC - deg C	23.5
+25	Malletts Bay	08/24/2020	2020	VT	12	TempC - deg C	21.94
+25	Malletts Bay	08/24/2020	2020	VT	13	TempC - deg C	21.09
+25	Malletts Bay	08/24/2020	2020	VT	14	TempC - deg C	17.42
+25	Malletts Bay	08/24/2020	2020	VT	15	TempC - deg C	13.88
+25	Malletts Bay	08/24/2020	2020	VT	16	TempC - deg C	12.23
+25	Malletts Bay	08/24/2020	2020	VT	17	TempC - deg C	11.08
+25	Malletts Bay	08/24/2020	2020	VT	18	TempC - deg C	10.35
+25	Malletts Bay	08/24/2020	2020	VT	19	TempC - deg C	9.92
+25	Malletts Bay	08/24/2020	2020	VT	20	TempC - deg C	9.61
+25	Malletts Bay	08/24/2020	2020	VT	21	TempC - deg C	9.4
+25	Malletts Bay	08/24/2020	2020	VT	22	TempC - deg C	9.22
+25	Malletts Bay	08/24/2020	2020	VT	23	TempC - deg C	8.96
+25	Malletts Bay	08/24/2020	2020	VT	24	TempC - deg C	8.63
+25	Malletts Bay	08/24/2020	2020	VT	25	TempC - deg C	8.54
+25	Malletts Bay	08/24/2020	2020	VT	26	TempC - deg C	8.46
+25	Malletts Bay	08/24/2020	2020	VT	27	TempC - deg C	8.42
+25	Malletts Bay	08/24/2020	2020	VT	28	TempC - deg C	8.38
+25	Malletts Bay	08/24/2020	2020	VT	29	TempC - deg C	8.32
+25	Malletts Bay	08/24/2020	2020	VT	30	TempC - deg C	8.31
+25	Malletts Bay	08/24/2020	2020	VT	31	TempC - deg C	8.3
+25	Malletts Bay	08/24/2020	2020	VT	32	TempC - deg C	8.3
+25	Malletts Bay	09/21/2020	2020	VT	1	Chla - mg/L	3.48
+25	Malletts Bay	09/21/2020	2020	VT	1	Chla - mg/L	5.91
+25	Malletts Bay	09/21/2020	2020	VT	2	Chla - mg/L	999999
+25	Malletts Bay	09/21/2020	2020	VT	3	Chla - mg/L	7.78
+25	Malletts Bay	09/21/2020	2020	VT	4	Chla - mg/L	7.59
+25	Malletts Bay	09/21/2020	2020	VT	5	Chla - mg/L	7.74
+25	Malletts Bay	09/21/2020	2020	VT	6	Chla - mg/L	7.6
+25	Malletts Bay	09/21/2020	2020	VT	7	Chla - mg/L	7.93
+25	Malletts Bay	09/21/2020	2020	VT	8	Chla - mg/L	8.18
+25	Malletts Bay	09/21/2020	2020	VT	9	Chla - mg/L	8.23
+25	Malletts Bay	09/21/2020	2020	VT	10	Chla - mg/L	9.99
+25	Malletts Bay	09/21/2020	2020	VT	11	Chla - mg/L	9.1
+25	Malletts Bay	09/21/2020	2020	VT	12	Chla - mg/L	9.18
+25	Malletts Bay	09/21/2020	2020	VT	13	Chla - mg/L	9.12
+25	Malletts Bay	09/21/2020	2020	VT	14	Chla - mg/L	8.86
+25	Malletts Bay	09/21/2020	2020	VT	15	Chla - mg/L	8.46
+25	Malletts Bay	09/21/2020	2020	VT	16	Chla - mg/L	8.33
+25	Malletts Bay	09/21/2020	2020	VT	17	Chla - mg/L	8.43
+25	Malletts Bay	09/21/2020	2020	VT	18	Chla - mg/L	10.2
+25	Malletts Bay	09/21/2020	2020	VT	19	Chla - mg/L	7.34
+25	Malletts Bay	09/21/2020	2020	VT	20	Chla - mg/L	2.8
+25	Malletts Bay	09/21/2020	2020	VT	21	Chla - mg/L	2.4
+25	Malletts Bay	09/21/2020	2020	VT	22	Chla - mg/L	2.33
+25	Malletts Bay	09/21/2020	2020	VT	23	Chla - mg/L	2.15
+25	Malletts Bay	09/21/2020	2020	VT	24	Chla - mg/L	2.07
+25	Malletts Bay	09/21/2020	2020	VT	25	Chla - mg/L	2.2
+25	Malletts Bay	09/21/2020	2020	VT	26	Chla - mg/L	2.17
+25	Malletts Bay	09/21/2020	2020	VT	27	Chla - mg/L	1.98
+25	Malletts Bay	09/21/2020	2020	VT	28	Chla - mg/L	1.88
+25	Malletts Bay	09/21/2020	2020	VT	29	Chla - mg/L	1.79
+25	Malletts Bay	09/21/2020	2020	VT	30	Chla - mg/L	2.03
+25	Malletts Bay	09/21/2020	2020	VT	31	Chla - mg/L	1.92
+25	Malletts Bay	09/21/2020	2020	VT	32	Chla - mg/L	2.83
+25	Malletts Bay	09/21/2020	2020	VT	1	Cond - uS/cm	112.3
+25	Malletts Bay	09/21/2020	2020	VT	1	Cond - uS/cm	112.4
+25	Malletts Bay	09/21/2020	2020	VT	2	Cond - uS/cm	112.5
+25	Malletts Bay	09/21/2020	2020	VT	3	Cond - uS/cm	112.5
+25	Malletts Bay	09/21/2020	2020	VT	4	Cond - uS/cm	112.2
+25	Malletts Bay	09/21/2020	2020	VT	5	Cond - uS/cm	112.1
+25	Malletts Bay	09/21/2020	2020	VT	6	Cond - uS/cm	112.5
+25	Malletts Bay	09/21/2020	2020	VT	7	Cond - uS/cm	112.3
+25	Malletts Bay	09/21/2020	2020	VT	8	Cond - uS/cm	112.5
+25	Malletts Bay	09/21/2020	2020	VT	9	Cond - uS/cm	112.5
+25	Malletts Bay	09/21/2020	2020	VT	10	Cond - uS/cm	112.1
+25	Malletts Bay	09/21/2020	2020	VT	11	Cond - uS/cm	112.2
+25	Malletts Bay	09/21/2020	2020	VT	12	Cond - uS/cm	112.1
+25	Malletts Bay	09/21/2020	2020	VT	13	Cond - uS/cm	112.1
+25	Malletts Bay	09/21/2020	2020	VT	14	Cond - uS/cm	112.6
+25	Malletts Bay	09/21/2020	2020	VT	15	Cond - uS/cm	112.4
+25	Malletts Bay	09/21/2020	2020	VT	16	Cond - uS/cm	112.2
+25	Malletts Bay	09/21/2020	2020	VT	17	Cond - uS/cm	112.6
+25	Malletts Bay	09/21/2020	2020	VT	18	Cond - uS/cm	112.5
+25	Malletts Bay	09/21/2020	2020	VT	19	Cond - uS/cm	110.7
+25	Malletts Bay	09/21/2020	2020	VT	20	Cond - uS/cm	104
+25	Malletts Bay	09/21/2020	2020	VT	21	Cond - uS/cm	103.7
+25	Malletts Bay	09/21/2020	2020	VT	22	Cond - uS/cm	103.7
+25	Malletts Bay	09/21/2020	2020	VT	23	Cond - uS/cm	104
+25	Malletts Bay	09/21/2020	2020	VT	24	Cond - uS/cm	105
+25	Malletts Bay	09/21/2020	2020	VT	25	Cond - uS/cm	106.1
+25	Malletts Bay	09/21/2020	2020	VT	26	Cond - uS/cm	107.8
+25	Malletts Bay	09/21/2020	2020	VT	27	Cond - uS/cm	109.6
+25	Malletts Bay	09/21/2020	2020	VT	28	Cond - uS/cm	109.8
+25	Malletts Bay	09/21/2020	2020	VT	29	Cond - uS/cm	110.2
+25	Malletts Bay	09/21/2020	2020	VT	30	Cond - uS/cm	111
+25	Malletts Bay	09/21/2020	2020	VT	31	Cond - uS/cm	111.2
+25	Malletts Bay	09/21/2020	2020	VT	32	Cond - uS/cm	111.2
+25	Malletts Bay	09/21/2020	2020	VT	1	DO - mg/L	9.16
+25	Malletts Bay	09/21/2020	2020	VT	1	DO - mg/L	9.22
+25	Malletts Bay	09/21/2020	2020	VT	2	DO - mg/L	9.18
+25	Malletts Bay	09/21/2020	2020	VT	3	DO - mg/L	9.19
+25	Malletts Bay	09/21/2020	2020	VT	4	DO - mg/L	9.12
+25	Malletts Bay	09/21/2020	2020	VT	5	DO - mg/L	9.08
+25	Malletts Bay	09/21/2020	2020	VT	6	DO - mg/L	9.11
+25	Malletts Bay	09/21/2020	2020	VT	7	DO - mg/L	9.12
+25	Malletts Bay	09/21/2020	2020	VT	8	DO - mg/L	9.11
+25	Malletts Bay	09/21/2020	2020	VT	9	DO - mg/L	9.12
+25	Malletts Bay	09/21/2020	2020	VT	10	DO - mg/L	9.06
+25	Malletts Bay	09/21/2020	2020	VT	11	DO - mg/L	9.07
+25	Malletts Bay	09/21/2020	2020	VT	12	DO - mg/L	9.08
+25	Malletts Bay	09/21/2020	2020	VT	13	DO - mg/L	9.06
+25	Malletts Bay	09/21/2020	2020	VT	14	DO - mg/L	9.07
+25	Malletts Bay	09/21/2020	2020	VT	15	DO - mg/L	9.06
+25	Malletts Bay	09/21/2020	2020	VT	16	DO - mg/L	9.07
+25	Malletts Bay	09/21/2020	2020	VT	17	DO - mg/L	9.07
+25	Malletts Bay	09/21/2020	2020	VT	18	DO - mg/L	9.01
+25	Malletts Bay	09/21/2020	2020	VT	19	DO - mg/L	7.93
+25	Malletts Bay	09/21/2020	2020	VT	20	DO - mg/L	2.73
+25	Malletts Bay	09/21/2020	2020	VT	21	DO - mg/L	2.33
+25	Malletts Bay	09/21/2020	2020	VT	22	DO - mg/L	2.33
+25	Malletts Bay	09/21/2020	2020	VT	23	DO - mg/L	2.28
+25	Malletts Bay	09/21/2020	2020	VT	24	DO - mg/L	1.8
+25	Malletts Bay	09/21/2020	2020	VT	25	DO - mg/L	1.36
+25	Malletts Bay	09/21/2020	2020	VT	26	DO - mg/L	0.8
+25	Malletts Bay	09/21/2020	2020	VT	27	DO - mg/L	0.65
+25	Malletts Bay	09/21/2020	2020	VT	28	DO - mg/L	0.45
+25	Malletts Bay	09/21/2020	2020	VT	29	DO - mg/L	0.36
+25	Malletts Bay	09/21/2020	2020	VT	30	DO - mg/L	0
+25	Malletts Bay	09/21/2020	2020	VT	31	DO - mg/L	0
+25	Malletts Bay	09/21/2020	2020	VT	32	DO - mg/L	0
+25	Malletts Bay	09/21/2020	2020	VT	1	DO%	97.1
+25	Malletts Bay	09/21/2020	2020	VT	1	DO%	96.4
+25	Malletts Bay	09/21/2020	2020	VT	2	DO%	96.6
+25	Malletts Bay	09/21/2020	2020	VT	3	DO%	96.7
+25	Malletts Bay	09/21/2020	2020	VT	4	DO%	95.9
+25	Malletts Bay	09/21/2020	2020	VT	5	DO%	95.6
+25	Malletts Bay	09/21/2020	2020	VT	6	DO%	95.9
+25	Malletts Bay	09/21/2020	2020	VT	7	DO%	96
+25	Malletts Bay	09/21/2020	2020	VT	8	DO%	95.9
+25	Malletts Bay	09/21/2020	2020	VT	9	DO%	96
+25	Malletts Bay	09/21/2020	2020	VT	10	DO%	95.3
+25	Malletts Bay	09/21/2020	2020	VT	11	DO%	95.5
+25	Malletts Bay	09/21/2020	2020	VT	12	DO%	95.6
+25	Malletts Bay	09/21/2020	2020	VT	13	DO%	95.4
+25	Malletts Bay	09/21/2020	2020	VT	14	DO%	95.5
+25	Malletts Bay	09/21/2020	2020	VT	15	DO%	95.3
+25	Malletts Bay	09/21/2020	2020	VT	16	DO%	95.5
+25	Malletts Bay	09/21/2020	2020	VT	17	DO%	95.4
+25	Malletts Bay	09/21/2020	2020	VT	18	DO%	94.8
+25	Malletts Bay	09/21/2020	2020	VT	19	DO%	82
+25	Malletts Bay	09/21/2020	2020	VT	20	DO%	25.3
+25	Malletts Bay	09/21/2020	2020	VT	21	DO%	21.3
+25	Malletts Bay	09/21/2020	2020	VT	22	DO%	21.2
+25	Malletts Bay	09/21/2020	2020	VT	23	DO%	20.6
+25	Malletts Bay	09/21/2020	2020	VT	24	DO%	16
+25	Malletts Bay	09/21/2020	2020	VT	25	DO%	12
+25	Malletts Bay	09/21/2020	2020	VT	26	DO%	7.1
+25	Malletts Bay	09/21/2020	2020	VT	27	DO%	5.7
+25	Malletts Bay	09/21/2020	2020	VT	28	DO%	3.9
+25	Malletts Bay	09/21/2020	2020	VT	29	DO%	3.1
+25	Malletts Bay	09/21/2020	2020	VT	30	DO%	0
+25	Malletts Bay	09/21/2020	2020	VT	31	DO%	0
+25	Malletts Bay	09/21/2020	2020	VT	32	DO%	0
+25	Malletts Bay	09/21/2020	2020	VT	1	pH - Units	8.06
+25	Malletts Bay	09/21/2020	2020	VT	1	pH - Units	8.03
+25	Malletts Bay	09/21/2020	2020	VT	2	pH - Units	8.04
+25	Malletts Bay	09/21/2020	2020	VT	3	pH - Units	8.03
+25	Malletts Bay	09/21/2020	2020	VT	4	pH - Units	8.04
+25	Malletts Bay	09/21/2020	2020	VT	5	pH - Units	8.04
+25	Malletts Bay	09/21/2020	2020	VT	6	pH - Units	8.04
+25	Malletts Bay	09/21/2020	2020	VT	7	pH - Units	8.03
+25	Malletts Bay	09/21/2020	2020	VT	8	pH - Units	8.03
+25	Malletts Bay	09/21/2020	2020	VT	9	pH - Units	8.02
+25	Malletts Bay	09/21/2020	2020	VT	10	pH - Units	8.02
+25	Malletts Bay	09/21/2020	2020	VT	11	pH - Units	8.02
+25	Malletts Bay	09/21/2020	2020	VT	12	pH - Units	8.02
+25	Malletts Bay	09/21/2020	2020	VT	13	pH - Units	8.02
+25	Malletts Bay	09/21/2020	2020	VT	14	pH - Units	8.03
+25	Malletts Bay	09/21/2020	2020	VT	15	pH - Units	8.02
+25	Malletts Bay	09/21/2020	2020	VT	16	pH - Units	8.02
+25	Malletts Bay	09/21/2020	2020	VT	17	pH - Units	8.02
+25	Malletts Bay	09/21/2020	2020	VT	18	pH - Units	8
+25	Malletts Bay	09/21/2020	2020	VT	19	pH - Units	7.7
+25	Malletts Bay	09/21/2020	2020	VT	20	pH - Units	7.1
+25	Malletts Bay	09/21/2020	2020	VT	21	pH - Units	7.03
+25	Malletts Bay	09/21/2020	2020	VT	22	pH - Units	7.03
+25	Malletts Bay	09/21/2020	2020	VT	23	pH - Units	7.02
+25	Malletts Bay	09/21/2020	2020	VT	24	pH - Units	7.01
+25	Malletts Bay	09/21/2020	2020	VT	25	pH - Units	7.02
+25	Malletts Bay	09/21/2020	2020	VT	26	pH - Units	7.03
+25	Malletts Bay	09/21/2020	2020	VT	27	pH - Units	7.04
+25	Malletts Bay	09/21/2020	2020	VT	28	pH - Units	7.05
+25	Malletts Bay	09/21/2020	2020	VT	29	pH - Units	7.06
+25	Malletts Bay	09/21/2020	2020	VT	30	pH - Units	7.07
+25	Malletts Bay	09/21/2020	2020	VT	31	pH - Units	7.07
+25	Malletts Bay	09/21/2020	2020	VT	32	pH - Units	7.07
+25	Malletts Bay	09/21/2020	2020	VT	1	TempC - deg C	16.86
+25	Malletts Bay	09/21/2020	2020	VT	1	TempC - deg C	16.84
+25	Malletts Bay	09/21/2020	2020	VT	2	TempC - deg C	16.83
+25	Malletts Bay	09/21/2020	2020	VT	3	TempC - deg C	16.83
+25	Malletts Bay	09/21/2020	2020	VT	4	TempC - deg C	16.83
+25	Malletts Bay	09/21/2020	2020	VT	5	TempC - deg C	16.83
+25	Malletts Bay	09/21/2020	2020	VT	6	TempC - deg C	16.84
+25	Malletts Bay	09/21/2020	2020	VT	7	TempC - deg C	16.83
+25	Malletts Bay	09/21/2020	2020	VT	8	TempC - deg C	16.83
+25	Malletts Bay	09/21/2020	2020	VT	9	TempC - deg C	16.83
+25	Malletts Bay	09/21/2020	2020	VT	10	TempC - deg C	16.82
+25	Malletts Bay	09/21/2020	2020	VT	11	TempC - deg C	16.82
+25	Malletts Bay	09/21/2020	2020	VT	12	TempC - deg C	16.83
+25	Malletts Bay	09/21/2020	2020	VT	13	TempC - deg C	16.83
+25	Malletts Bay	09/21/2020	2020	VT	14	TempC - deg C	16.83
+25	Malletts Bay	09/21/2020	2020	VT	15	TempC - deg C	16.83
+25	Malletts Bay	09/21/2020	2020	VT	16	TempC - deg C	16.82
+25	Malletts Bay	09/21/2020	2020	VT	17	TempC - deg C	16.82
+25	Malletts Bay	09/21/2020	2020	VT	18	TempC - deg C	16.8
+25	Malletts Bay	09/21/2020	2020	VT	19	TempC - deg C	16
+25	Malletts Bay	09/21/2020	2020	VT	20	TempC - deg C	11.11
+25	Malletts Bay	09/21/2020	2020	VT	21	TempC - deg C	10.45
+25	Malletts Bay	09/21/2020	2020	VT	22	TempC - deg C	10.2
+25	Malletts Bay	09/21/2020	2020	VT	23	TempC - deg C	9.89
+25	Malletts Bay	09/21/2020	2020	VT	24	TempC - deg C	9.39
+25	Malletts Bay	09/21/2020	2020	VT	25	TempC - deg C	9.1
+25	Malletts Bay	09/21/2020	2020	VT	26	TempC - deg C	8.87
+25	Malletts Bay	09/21/2020	2020	VT	27	TempC - deg C	8.79
+25	Malletts Bay	09/21/2020	2020	VT	28	TempC - deg C	8.75
+25	Malletts Bay	09/21/2020	2020	VT	29	TempC - deg C	8.73
+25	Malletts Bay	09/21/2020	2020	VT	30	TempC - deg C	8.66
+25	Malletts Bay	09/21/2020	2020	VT	31	TempC - deg C	8.64
+25	Malletts Bay	09/21/2020	2020	VT	32	TempC - deg C	8.58
+25	Malletts Bay	09/23/2020	2020	NY	1	Cond - uS/cm	133.9
+25	Malletts Bay	09/23/2020	2020	NY	2	Cond - uS/cm	133.9
+25	Malletts Bay	09/23/2020	2020	NY	3	Cond - uS/cm	133.8
+25	Malletts Bay	09/23/2020	2020	NY	4	Cond - uS/cm	133.8
+25	Malletts Bay	09/23/2020	2020	NY	5	Cond - uS/cm	133.8
+25	Malletts Bay	09/23/2020	2020	NY	6	Cond - uS/cm	133.8
+25	Malletts Bay	09/23/2020	2020	NY	7	Cond - uS/cm	133.8
+25	Malletts Bay	09/23/2020	2020	NY	8	Cond - uS/cm	133.8
+25	Malletts Bay	09/23/2020	2020	NY	9	Cond - uS/cm	133.8
+25	Malletts Bay	09/23/2020	2020	NY	10	Cond - uS/cm	133.8
+25	Malletts Bay	09/23/2020	2020	NY	11	Cond - uS/cm	133.8
+25	Malletts Bay	09/23/2020	2020	NY	12	Cond - uS/cm	133.8
+25	Malletts Bay	09/23/2020	2020	NY	13	Cond - uS/cm	133.8
+25	Malletts Bay	09/23/2020	2020	NY	14	Cond - uS/cm	133.8
+25	Malletts Bay	09/23/2020	2020	NY	15	Cond - uS/cm	133.8
+25	Malletts Bay	09/23/2020	2020	NY	16	Cond - uS/cm	133.8
+25	Malletts Bay	09/23/2020	2020	NY	17	Cond - uS/cm	133.8
+25	Malletts Bay	09/23/2020	2020	NY	18	Cond - uS/cm	133.8
+25	Malletts Bay	09/23/2020	2020	NY	19	Cond - uS/cm	127.8
+25	Malletts Bay	09/23/2020	2020	NY	20	Cond - uS/cm	125.2
+25	Malletts Bay	09/23/2020	2020	NY	21	Cond - uS/cm	125
+25	Malletts Bay	09/23/2020	2020	NY	22	Cond - uS/cm	125.1
+25	Malletts Bay	09/23/2020	2020	NY	23	Cond - uS/cm	126.9
+25	Malletts Bay	09/23/2020	2020	NY	24	Cond - uS/cm	127.3
+25	Malletts Bay	09/23/2020	2020	NY	25	Cond - uS/cm	127.8
+25	Malletts Bay	09/23/2020	2020	NY	26	Cond - uS/cm	129.6
+25	Malletts Bay	09/23/2020	2020	NY	27	Cond - uS/cm	131.7
+25	Malletts Bay	09/23/2020	2020	NY	28	Cond - uS/cm	132.6
+25	Malletts Bay	09/23/2020	2020	NY	29	Cond - uS/cm	133.8
+25	Malletts Bay	09/23/2020	2020	NY	30	Cond - uS/cm	134.3
+25	Malletts Bay	09/23/2020	2020	NY	1	DO - mg/L	9.69
+25	Malletts Bay	09/23/2020	2020	NY	2	DO - mg/L	9.7
+25	Malletts Bay	09/23/2020	2020	NY	3	DO - mg/L	9.71
+25	Malletts Bay	09/23/2020	2020	NY	4	DO - mg/L	9.7
+25	Malletts Bay	09/23/2020	2020	NY	5	DO - mg/L	9.7
+25	Malletts Bay	09/23/2020	2020	NY	6	DO - mg/L	9.66
+25	Malletts Bay	09/23/2020	2020	NY	7	DO - mg/L	9.66
+25	Malletts Bay	09/23/2020	2020	NY	8	DO - mg/L	9.67
+25	Malletts Bay	09/23/2020	2020	NY	9	DO - mg/L	9.67
+25	Malletts Bay	09/23/2020	2020	NY	10	DO - mg/L	9.66
+25	Malletts Bay	09/23/2020	2020	NY	11	DO - mg/L	9.66
+25	Malletts Bay	09/23/2020	2020	NY	12	DO - mg/L	9.65
+25	Malletts Bay	09/23/2020	2020	NY	13	DO - mg/L	9.65
+25	Malletts Bay	09/23/2020	2020	NY	14	DO - mg/L	9.65
+25	Malletts Bay	09/23/2020	2020	NY	15	DO - mg/L	9.65
+25	Malletts Bay	09/23/2020	2020	NY	16	DO - mg/L	9.65
+25	Malletts Bay	09/23/2020	2020	NY	17	DO - mg/L	9.63
+25	Malletts Bay	09/23/2020	2020	NY	18	DO - mg/L	9.63
+25	Malletts Bay	09/23/2020	2020	NY	19	DO - mg/L	10.73
+25	Malletts Bay	09/23/2020	2020	NY	20	DO - mg/L	7.84
+25	Malletts Bay	09/23/2020	2020	NY	21	DO - mg/L	6.21
+25	Malletts Bay	09/23/2020	2020	NY	22	DO - mg/L	5.6
+25	Malletts Bay	09/23/2020	2020	NY	23	DO - mg/L	5.41
+25	Malletts Bay	09/23/2020	2020	NY	24	DO - mg/L	4.52
+25	Malletts Bay	09/23/2020	2020	NY	25	DO - mg/L	4.11
+25	Malletts Bay	09/23/2020	2020	NY	26	DO - mg/L	3.58
+25	Malletts Bay	09/23/2020	2020	NY	27	DO - mg/L	3.23
+25	Malletts Bay	09/23/2020	2020	NY	28	DO - mg/L	2.9
+25	Malletts Bay	09/23/2020	2020	NY	29	DO - mg/L	2.57
+25	Malletts Bay	09/23/2020	2020	NY	30	DO - mg/L	1.95
+25	Malletts Bay	09/23/2020	2020	NY	1	DO%	103.1
+25	Malletts Bay	09/23/2020	2020	NY	2	DO%	103.3
+25	Malletts Bay	09/23/2020	2020	NY	3	DO%	103.4
+25	Malletts Bay	09/23/2020	2020	NY	4	DO%	103.2
+25	Malletts Bay	09/23/2020	2020	NY	5	DO%	103.2
+25	Malletts Bay	09/23/2020	2020	NY	6	DO%	102.8
+25	Malletts Bay	09/23/2020	2020	NY	7	DO%	102.8
+25	Malletts Bay	09/23/2020	2020	NY	8	DO%	102.8
+25	Malletts Bay	09/23/2020	2020	NY	9	DO%	102.9
+25	Malletts Bay	09/23/2020	2020	NY	10	DO%	102.8
+25	Malletts Bay	09/23/2020	2020	NY	11	DO%	102.8
+25	Malletts Bay	09/23/2020	2020	NY	12	DO%	102.7
+25	Malletts Bay	09/23/2020	2020	NY	13	DO%	102.7
+25	Malletts Bay	09/23/2020	2020	NY	14	DO%	102.7
+25	Malletts Bay	09/23/2020	2020	NY	15	DO%	102.6
+25	Malletts Bay	09/23/2020	2020	NY	16	DO%	102.6
+25	Malletts Bay	09/23/2020	2020	NY	17	DO%	102.4
+25	Malletts Bay	09/23/2020	2020	NY	18	DO%	102.4
+25	Malletts Bay	09/23/2020	2020	NY	19	DO%	102.2
+25	Malletts Bay	09/23/2020	2020	NY	20	DO%	72.4
+25	Malletts Bay	09/23/2020	2020	NY	21	DO%	57
+25	Malletts Bay	09/23/2020	2020	NY	22	DO%	51.1
+25	Malletts Bay	09/23/2020	2020	NY	23	DO%	49
+25	Malletts Bay	09/23/2020	2020	NY	24	DO%	40.6
+25	Malletts Bay	09/23/2020	2020	NY	25	DO%	36.9
+25	Malletts Bay	09/23/2020	2020	NY	26	DO%	31.9
+25	Malletts Bay	09/23/2020	2020	NY	27	DO%	28.7
+25	Malletts Bay	09/23/2020	2020	NY	28	DO%	25.7
+25	Malletts Bay	09/23/2020	2020	NY	29	DO%	22.8
+25	Malletts Bay	09/23/2020	2020	NY	30	DO%	17.3
+25	Malletts Bay	09/23/2020	2020	NY	1	pH - Units	8.27
+25	Malletts Bay	09/23/2020	2020	NY	2	pH - Units	8.25
+25	Malletts Bay	09/23/2020	2020	NY	3	pH - Units	8.26
+25	Malletts Bay	09/23/2020	2020	NY	4	pH - Units	8.17
+25	Malletts Bay	09/23/2020	2020	NY	5	pH - Units	8.15
+25	Malletts Bay	09/23/2020	2020	NY	6	pH - Units	7.97
+25	Malletts Bay	09/23/2020	2020	NY	7	pH - Units	7.99
+25	Malletts Bay	09/23/2020	2020	NY	8	pH - Units	7.99
+25	Malletts Bay	09/23/2020	2020	NY	9	pH - Units	8
+25	Malletts Bay	09/23/2020	2020	NY	10	pH - Units	7.99
+25	Malletts Bay	09/23/2020	2020	NY	11	pH - Units	7.98
+25	Malletts Bay	09/23/2020	2020	NY	12	pH - Units	7.97
+25	Malletts Bay	09/23/2020	2020	NY	13	pH - Units	7.98
+25	Malletts Bay	09/23/2020	2020	NY	14	pH - Units	7.98
+25	Malletts Bay	09/23/2020	2020	NY	15	pH - Units	7.97
+25	Malletts Bay	09/23/2020	2020	NY	16	pH - Units	7.97
+25	Malletts Bay	09/23/2020	2020	NY	17	pH - Units	7.94
+25	Malletts Bay	09/23/2020	2020	NY	18	pH - Units	7.95
+25	Malletts Bay	09/23/2020	2020	NY	19	pH - Units	7.95
+25	Malletts Bay	09/23/2020	2020	NY	20	pH - Units	7.82
+25	Malletts Bay	09/23/2020	2020	NY	21	pH - Units	7.7
+25	Malletts Bay	09/23/2020	2020	NY	22	pH - Units	7.6
+25	Malletts Bay	09/23/2020	2020	NY	23	pH - Units	7.56
+25	Malletts Bay	09/23/2020	2020	NY	24	pH - Units	7.5
+25	Malletts Bay	09/23/2020	2020	NY	25	pH - Units	7.48
+25	Malletts Bay	09/23/2020	2020	NY	26	pH - Units	7.43
+25	Malletts Bay	09/23/2020	2020	NY	27	pH - Units	7.39
+25	Malletts Bay	09/23/2020	2020	NY	28	pH - Units	7.37
+25	Malletts Bay	09/23/2020	2020	NY	29	pH - Units	7.34
+25	Malletts Bay	09/23/2020	2020	NY	30	pH - Units	7.31
+25	Malletts Bay	09/23/2020	2020	NY	1	TempC - deg C	16.64
+25	Malletts Bay	09/23/2020	2020	NY	2	TempC - deg C	16.65
+25	Malletts Bay	09/23/2020	2020	NY	3	TempC - deg C	16.65
+25	Malletts Bay	09/23/2020	2020	NY	4	TempC - deg C	16.63
+25	Malletts Bay	09/23/2020	2020	NY	5	TempC - deg C	16.62
+25	Malletts Bay	09/23/2020	2020	NY	6	TempC - deg C	16.62
+25	Malletts Bay	09/23/2020	2020	NY	7	TempC - deg C	16.62
+25	Malletts Bay	09/23/2020	2020	NY	8	TempC - deg C	16.62
+25	Malletts Bay	09/23/2020	2020	NY	9	TempC - deg C	16.61
+25	Malletts Bay	09/23/2020	2020	NY	10	TempC - deg C	16.61
+25	Malletts Bay	09/23/2020	2020	NY	11	TempC - deg C	16.61
+25	Malletts Bay	09/23/2020	2020	NY	12	TempC - deg C	16.61
+25	Malletts Bay	09/23/2020	2020	NY	13	TempC - deg C	16.61
+25	Malletts Bay	09/23/2020	2020	NY	14	TempC - deg C	16.61
+25	Malletts Bay	09/23/2020	2020	NY	15	TempC - deg C	16.6
+25	Malletts Bay	09/23/2020	2020	NY	16	TempC - deg C	16.6
+25	Malletts Bay	09/23/2020	2020	NY	17	TempC - deg C	16.6
+25	Malletts Bay	09/23/2020	2020	NY	18	TempC - deg C	16.58
+25	Malletts Bay	09/23/2020	2020	NY	19	TempC - deg C	11.6
+25	Malletts Bay	09/23/2020	2020	NY	20	TempC - deg C	10.25
+25	Malletts Bay	09/23/2020	2020	NY	21	TempC - deg C	10.01
+25	Malletts Bay	09/23/2020	2020	NY	22	TempC - deg C	9.8
+25	Malletts Bay	09/23/2020	2020	NY	23	TempC - deg C	9.46
+25	Malletts Bay	09/23/2020	2020	NY	24	TempC - deg C	9.13
+25	Malletts Bay	09/23/2020	2020	NY	25	TempC - deg C	9.04
+25	Malletts Bay	09/23/2020	2020	NY	26	TempC - deg C	8.77
+25	Malletts Bay	09/23/2020	2020	NY	27	TempC - deg C	8.65
+25	Malletts Bay	09/23/2020	2020	NY	28	TempC - deg C	8.54
+25	Malletts Bay	09/23/2020	2020	NY	29	TempC - deg C	8.51
+25	Malletts Bay	09/23/2020	2020	NY	30	TempC - deg C	8.48
+25	Malletts Bay	10.09.2020	2020	NY	1	Cond - uS/cm	134.8
+25	Malletts Bay	10.09.2020	2020	NY	2	Cond - uS/cm	134.8
+25	Malletts Bay	10.09.2020	2020	NY	3	Cond - uS/cm	134.8
+25	Malletts Bay	10.09.2020	2020	NY	4	Cond - uS/cm	134.8
+25	Malletts Bay	10.09.2020	2020	NY	5	Cond - uS/cm	134.8
+25	Malletts Bay	10.09.2020	2020	NY	6	Cond - uS/cm	134.8
+25	Malletts Bay	10.09.2020	2020	NY	7	Cond - uS/cm	134.9
+25	Malletts Bay	10.09.2020	2020	NY	8	Cond - uS/cm	134.9
+25	Malletts Bay	10.09.2020	2020	NY	9	Cond - uS/cm	134.9
+25	Malletts Bay	10.09.2020	2020	NY	10	Cond - uS/cm	134.9
+25	Malletts Bay	10.09.2020	2020	NY	11	Cond - uS/cm	135
+25	Malletts Bay	10.09.2020	2020	NY	12	Cond - uS/cm	135
+25	Malletts Bay	10.09.2020	2020	NY	13	Cond - uS/cm	135.1
+25	Malletts Bay	10.09.2020	2020	NY	14	Cond - uS/cm	135.1
+25	Malletts Bay	10.09.2020	2020	NY	15	Cond - uS/cm	135.1
+25	Malletts Bay	10.09.2020	2020	NY	16	Cond - uS/cm	135.1
+25	Malletts Bay	10.09.2020	2020	NY	17	Cond - uS/cm	135.1
+25	Malletts Bay	10.09.2020	2020	NY	18	Cond - uS/cm	135.1
+25	Malletts Bay	10.09.2020	2020	NY	19	Cond - uS/cm	135.2
+25	Malletts Bay	10.09.2020	2020	NY	20	Cond - uS/cm	135.2
+25	Malletts Bay	10.09.2020	2020	NY	21	Cond - uS/cm	136.1
+25	Malletts Bay	10.09.2020	2020	NY	22	Cond - uS/cm	125.5
+25	Malletts Bay	10.09.2020	2020	NY	23	Cond - uS/cm	125.8
+25	Malletts Bay	10.09.2020	2020	NY	24	Cond - uS/cm	126.5
+25	Malletts Bay	10.09.2020	2020	NY	25	Cond - uS/cm	127.9
+25	Malletts Bay	10.09.2020	2020	NY	26	Cond - uS/cm	129
+25	Malletts Bay	10.09.2020	2020	NY	27	Cond - uS/cm	131.1
+25	Malletts Bay	10.09.2020	2020	NY	28	Cond - uS/cm	131.3
+25	Malletts Bay	10.09.2020	2020	NY	1	DO - mg/L	9.73
+25	Malletts Bay	10.09.2020	2020	NY	2	DO - mg/L	9.63
+25	Malletts Bay	10.09.2020	2020	NY	3	DO - mg/L	9.55
+25	Malletts Bay	10.09.2020	2020	NY	4	DO - mg/L	9.51
+25	Malletts Bay	10.09.2020	2020	NY	5	DO - mg/L	9.47
+25	Malletts Bay	10.09.2020	2020	NY	6	DO - mg/L	9.43
+25	Malletts Bay	10.09.2020	2020	NY	7	DO - mg/L	9.41
+25	Malletts Bay	10.09.2020	2020	NY	8	DO - mg/L	9.4
+25	Malletts Bay	10.09.2020	2020	NY	9	DO - mg/L	9.39
+25	Malletts Bay	10.09.2020	2020	NY	10	DO - mg/L	9.35
+25	Malletts Bay	10.09.2020	2020	NY	11	DO - mg/L	9.34
+25	Malletts Bay	10.09.2020	2020	NY	12	DO - mg/L	9.32
+25	Malletts Bay	10.09.2020	2020	NY	13	DO - mg/L	9.32
+25	Malletts Bay	10.09.2020	2020	NY	14	DO - mg/L	9.3
+25	Malletts Bay	10.09.2020	2020	NY	15	DO - mg/L	9.3
+25	Malletts Bay	10.09.2020	2020	NY	16	DO - mg/L	9.28
+25	Malletts Bay	10.09.2020	2020	NY	17	DO - mg/L	9.28
+25	Malletts Bay	10.09.2020	2020	NY	18	DO - mg/L	9.27
+25	Malletts Bay	10.09.2020	2020	NY	19	DO - mg/L	9.26
+25	Malletts Bay	10.09.2020	2020	NY	20	DO - mg/L	9.25
+25	Malletts Bay	10.09.2020	2020	NY	21	DO - mg/L	9.5
+25	Malletts Bay	10.09.2020	2020	NY	22	DO - mg/L	9.5
+25	Malletts Bay	10.09.2020	2020	NY	23	DO - mg/L	6.76
+25	Malletts Bay	10.09.2020	2020	NY	24	DO - mg/L	4.89
+25	Malletts Bay	10.09.2020	2020	NY	25	DO - mg/L	4.44
+25	Malletts Bay	10.09.2020	2020	NY	26	DO - mg/L	3.91
+25	Malletts Bay	10.09.2020	2020	NY	27	DO - mg/L	3.36
+25	Malletts Bay	10.09.2020	2020	NY	28	DO - mg/L	3.08
+25	Malletts Bay	10.09.2020	2020	NY	1	DO%	100.2
+25	Malletts Bay	10.09.2020	2020	NY	2	DO%	99.1
+25	Malletts Bay	10.09.2020	2020	NY	3	DO%	98.3
+25	Malletts Bay	10.09.2020	2020	NY	4	DO%	97.8
+25	Malletts Bay	10.09.2020	2020	NY	5	DO%	97.4
+25	Malletts Bay	10.09.2020	2020	NY	6	DO%	97.1
+25	Malletts Bay	10.09.2020	2020	NY	7	DO%	96.8
+25	Malletts Bay	10.09.2020	2020	NY	8	DO%	96.7
+25	Malletts Bay	10.09.2020	2020	NY	9	DO%	96.5
+25	Malletts Bay	10.09.2020	2020	NY	10	DO%	96.2
+25	Malletts Bay	10.09.2020	2020	NY	11	DO%	96
+25	Malletts Bay	10.09.2020	2020	NY	12	DO%	95.8
+25	Malletts Bay	10.09.2020	2020	NY	13	DO%	95.7
+25	Malletts Bay	10.09.2020	2020	NY	14	DO%	95.6
+25	Malletts Bay	10.09.2020	2020	NY	15	DO%	95.5
+25	Malletts Bay	10.09.2020	2020	NY	16	DO%	95.4
+25	Malletts Bay	10.09.2020	2020	NY	17	DO%	95.3
+25	Malletts Bay	10.09.2020	2020	NY	18	DO%	95.2
+25	Malletts Bay	10.09.2020	2020	NY	19	DO%	95.1
+25	Malletts Bay	10.09.2020	2020	NY	20	DO%	95.1
+25	Malletts Bay	10.09.2020	2020	NY	21	DO%	94.9
+25	Malletts Bay	10.09.2020	2020	NY	22	DO%	88.1
+25	Malletts Bay	10.09.2020	2020	NY	23	DO%	61.2
+25	Malletts Bay	10.09.2020	2020	NY	24	DO%	44.1
+25	Malletts Bay	10.09.2020	2020	NY	25	DO%	39.9
+25	Malletts Bay	10.09.2020	2020	NY	26	DO%	35.1
+25	Malletts Bay	10.09.2020	2020	NY	27	DO%	30.2
+25	Malletts Bay	10.09.2020	2020	NY	28	DO%	27.6
+25	Malletts Bay	10.09.2020	2020	NY	1	pH - Units	7.72
+25	Malletts Bay	10.09.2020	2020	NY	2	pH - Units	7.78
+25	Malletts Bay	10.09.2020	2020	NY	3	pH - Units	7.82
+25	Malletts Bay	10.09.2020	2020	NY	4	pH - Units	7.82
+25	Malletts Bay	10.09.2020	2020	NY	5	pH - Units	7.81
+25	Malletts Bay	10.09.2020	2020	NY	6	pH - Units	7.78
+25	Malletts Bay	10.09.2020	2020	NY	7	pH - Units	7.78
+25	Malletts Bay	10.09.2020	2020	NY	8	pH - Units	7.79
+25	Malletts Bay	10.09.2020	2020	NY	9	pH - Units	7.79
+25	Malletts Bay	10.09.2020	2020	NY	10	pH - Units	7.75
+25	Malletts Bay	10.09.2020	2020	NY	11	pH - Units	7.74
+25	Malletts Bay	10.09.2020	2020	NY	12	pH - Units	7.75
+25	Malletts Bay	10.09.2020	2020	NY	13	pH - Units	7.76
+25	Malletts Bay	10.09.2020	2020	NY	14	pH - Units	7.74
+25	Malletts Bay	10.09.2020	2020	NY	15	pH - Units	7.74
+25	Malletts Bay	10.09.2020	2020	NY	16	pH - Units	7.73
+25	Malletts Bay	10.09.2020	2020	NY	17	pH - Units	7.74
+25	Malletts Bay	10.09.2020	2020	NY	18	pH - Units	7.71
+25	Malletts Bay	10.09.2020	2020	NY	19	pH - Units	7.7
+25	Malletts Bay	10.09.2020	2020	NY	20	pH - Units	7.7
+25	Malletts Bay	10.09.2020	2020	NY	21	pH - Units	7.7
+25	Malletts Bay	10.09.2020	2020	NY	22	pH - Units	7.67
+25	Malletts Bay	10.09.2020	2020	NY	23	pH - Units	7.56
+25	Malletts Bay	10.09.2020	2020	NY	24	pH - Units	7.49
+25	Malletts Bay	10.09.2020	2020	NY	25	pH - Units	7.44
+25	Malletts Bay	10.09.2020	2020	NY	26	pH - Units	7.37
+25	Malletts Bay	10.09.2020	2020	NY	27	pH - Units	7.29
+25	Malletts Bay	10.09.2020	2020	NY	28	pH - Units	7.3
+25	Malletts Bay	10.09.2020	2020	NY	1	TempC - deg C	15.07
+25	Malletts Bay	10.09.2020	2020	NY	2	TempC - deg C	15.06
+25	Malletts Bay	10.09.2020	2020	NY	3	TempC - deg C	15.06
+25	Malletts Bay	10.09.2020	2020	NY	4	TempC - deg C	15.06
+25	Malletts Bay	10.09.2020	2020	NY	5	TempC - deg C	15.05
+25	Malletts Bay	10.09.2020	2020	NY	6	TempC - deg C	15.05
+25	Malletts Bay	10.09.2020	2020	NY	7	TempC - deg C	15.01
+25	Malletts Bay	10.09.2020	2020	NY	8	TempC - deg C	15.02
+25	Malletts Bay	10.09.2020	2020	NY	9	TempC - deg C	15.01
+25	Malletts Bay	10.09.2020	2020	NY	10	TempC - deg C	15.01
+25	Malletts Bay	10.09.2020	2020	NY	11	TempC - deg C	15
+25	Malletts Bay	10.09.2020	2020	NY	12	TempC - deg C	15
+25	Malletts Bay	10.09.2020	2020	NY	13	TempC - deg C	14.99
+25	Malletts Bay	10.09.2020	2020	NY	14	TempC - deg C	14.98
+25	Malletts Bay	10.09.2020	2020	NY	15	TempC - deg C	14.98
+25	Malletts Bay	10.09.2020	2020	NY	16	TempC - deg C	14.98
+25	Malletts Bay	10.09.2020	2020	NY	17	TempC - deg C	14.98
+25	Malletts Bay	10.09.2020	2020	NY	18	TempC - deg C	14.98
+25	Malletts Bay	10.09.2020	2020	NY	19	TempC - deg C	14.98
+25	Malletts Bay	10.09.2020	2020	NY	20	TempC - deg C	14.97
+25	Malletts Bay	10.09.2020	2020	NY	21	TempC - deg C	13.7
+25	Malletts Bay	10.09.2020	2020	NY	22	TempC - deg C	10.46
+25	Malletts Bay	10.09.2020	2020	NY	23	TempC - deg C	9.41
+25	Malletts Bay	10.09.2020	2020	NY	24	TempC - deg C	9.27
+25	Malletts Bay	10.09.2020	2020	NY	25	TempC - deg C	9.13
+25	Malletts Bay	10.09.2020	2020	NY	26	TempC - deg C	9.1
+25	Malletts Bay	10.09.2020	2020	NY	27	TempC - deg C	9.06
+25	Malletts Bay	10.09.2020	2020	NY	28	TempC - deg C	9.04
+25	Malletts Bay	10.12.2020	2020	VT	1	Chla - mg/L	3
+25	Malletts Bay	10.12.2020	2020	VT	1	Chla - mg/L	3.03
+25	Malletts Bay	10.12.2020	2020	VT	2	Chla - mg/L	3.82
+25	Malletts Bay	10.12.2020	2020	VT	3	Chla - mg/L	5
+25	Malletts Bay	10.12.2020	2020	VT	5	Chla - mg/L	5.42
+25	Malletts Bay	10.12.2020	2020	VT	6	Chla - mg/L	5.3
+25	Malletts Bay	10.12.2020	2020	VT	7	Chla - mg/L	5.22
+25	Malletts Bay	10.12.2020	2020	VT	8	Chla - mg/L	5.41
+25	Malletts Bay	10.12.2020	2020	VT	9	Chla - mg/L	5.97
+25	Malletts Bay	10.12.2020	2020	VT	10	Chla - mg/L	5.65
+25	Malletts Bay	10.12.2020	2020	VT	11	Chla - mg/L	5.53
+25	Malletts Bay	10.12.2020	2020	VT	12	Chla - mg/L	5.61
+25	Malletts Bay	10.12.2020	2020	VT	13	Chla - mg/L	5.86
+25	Malletts Bay	10.12.2020	2020	VT	15	Chla - mg/L	5.86
+25	Malletts Bay	10.12.2020	2020	VT	16	Chla - mg/L	5.61
+25	Malletts Bay	10.12.2020	2020	VT	17	Chla - mg/L	5.85
+25	Malletts Bay	10.12.2020	2020	VT	18	Chla - mg/L	5.3
+25	Malletts Bay	10.12.2020	2020	VT	19	Chla - mg/L	5.14
+25	Malletts Bay	10.12.2020	2020	VT	20	Chla - mg/L	5.92
+25	Malletts Bay	10.12.2020	2020	VT	21	Chla - mg/L	5.37
+25	Malletts Bay	10.12.2020	2020	VT	22	Chla - mg/L	5.4
+25	Malletts Bay	10.12.2020	2020	VT	23	Chla - mg/L	3.25
+25	Malletts Bay	10.12.2020	2020	VT	24	Chla - mg/L	1.81
+25	Malletts Bay	10.12.2020	2020	VT	25	Chla - mg/L	1.68
+25	Malletts Bay	10.12.2020	2020	VT	26	Chla - mg/L	1.61
+25	Malletts Bay	10.12.2020	2020	VT	27	Chla - mg/L	1.63
+25	Malletts Bay	10.12.2020	2020	VT	28	Chla - mg/L	1.52
+25	Malletts Bay	10.12.2020	2020	VT	29	Chla - mg/L	1.52
+25	Malletts Bay	10.12.2020	2020	VT	30	Chla - mg/L	1.43
+25	Malletts Bay	10.12.2020	2020	VT	31	Chla - mg/L	1.43
+25	Malletts Bay	10.12.2020	2020	VT	32	Chla - mg/L	1.42
+25	Malletts Bay	10.12.2020	2020	VT	1	Cond - uS/cm	113.6
+25	Malletts Bay	10.12.2020	2020	VT	1	Cond - uS/cm	113.6
+25	Malletts Bay	10.12.2020	2020	VT	2	Cond - uS/cm	113.3
+25	Malletts Bay	10.12.2020	2020	VT	3	Cond - uS/cm	113.6
+25	Malletts Bay	10.12.2020	2020	VT	4	Cond - uS/cm	113.2
+25	Malletts Bay	10.12.2020	2020	VT	5	Cond - uS/cm	113.3
+25	Malletts Bay	10.12.2020	2020	VT	6	Cond - uS/cm	113.2
+25	Malletts Bay	10.12.2020	2020	VT	7	Cond - uS/cm	113.6
+25	Malletts Bay	10.12.2020	2020	VT	8	Cond - uS/cm	113.2
+25	Malletts Bay	10.12.2020	2020	VT	9	Cond - uS/cm	113.2
+25	Malletts Bay	10.12.2020	2020	VT	10	Cond - uS/cm	113.2
+25	Malletts Bay	10.12.2020	2020	VT	11	Cond - uS/cm	113.6
+25	Malletts Bay	10.12.2020	2020	VT	12	Cond - uS/cm	113.3
+25	Malletts Bay	10.12.2020	2020	VT	13	Cond - uS/cm	113.6
+25	Malletts Bay	10.12.2020	2020	VT	14	Cond - uS/cm	113.3
+25	Malletts Bay	10.12.2020	2020	VT	15	Cond - uS/cm	113.6
+25	Malletts Bay	10.12.2020	2020	VT	16	Cond - uS/cm	113.6
+25	Malletts Bay	10.12.2020	2020	VT	17	Cond - uS/cm	113.3
+25	Malletts Bay	10.12.2020	2020	VT	18	Cond - uS/cm	113.6
+25	Malletts Bay	10.12.2020	2020	VT	19	Cond - uS/cm	113.6
+25	Malletts Bay	10.12.2020	2020	VT	20	Cond - uS/cm	113.2
+25	Malletts Bay	10.12.2020	2020	VT	21	Cond - uS/cm	113.6
+25	Malletts Bay	10.12.2020	2020	VT	22	Cond - uS/cm	113.5
+25	Malletts Bay	10.12.2020	2020	VT	23	Cond - uS/cm	107.7
+25	Malletts Bay	10.12.2020	2020	VT	24	Cond - uS/cm	104.4
+25	Malletts Bay	10.12.2020	2020	VT	25	Cond - uS/cm	105.4
+25	Malletts Bay	10.12.2020	2020	VT	26	Cond - uS/cm	107.3
+25	Malletts Bay	10.12.2020	2020	VT	27	Cond - uS/cm	109
+25	Malletts Bay	10.12.2020	2020	VT	28	Cond - uS/cm	109.2
+25	Malletts Bay	10.12.2020	2020	VT	29	Cond - uS/cm	109.2
+25	Malletts Bay	10.12.2020	2020	VT	30	Cond - uS/cm	109.2
+25	Malletts Bay	10.12.2020	2020	VT	31	Cond - uS/cm	109.3
+25	Malletts Bay	10.12.2020	2020	VT	32	Cond - uS/cm	109.4
+25	Malletts Bay	10.12.2020	2020	VT	1	DO - mg/L	9.43
+25	Malletts Bay	10.12.2020	2020	VT	1	DO - mg/L	9.39
+25	Malletts Bay	10.12.2020	2020	VT	2	DO - mg/L	9.42
+25	Malletts Bay	10.12.2020	2020	VT	3	DO - mg/L	9.39
+25	Malletts Bay	10.12.2020	2020	VT	4	DO - mg/L	9.36
+25	Malletts Bay	10.12.2020	2020	VT	5	DO - mg/L	9.34
+25	Malletts Bay	10.12.2020	2020	VT	6	DO - mg/L	9.34
+25	Malletts Bay	10.12.2020	2020	VT	7	DO - mg/L	9.37
+25	Malletts Bay	10.12.2020	2020	VT	8	DO - mg/L	9.33
+25	Malletts Bay	10.12.2020	2020	VT	9	DO - mg/L	9.33
+25	Malletts Bay	10.12.2020	2020	VT	10	DO - mg/L	9.34
+25	Malletts Bay	10.12.2020	2020	VT	11	DO - mg/L	9.33
+25	Malletts Bay	10.12.2020	2020	VT	12	DO - mg/L	9.3
+25	Malletts Bay	10.12.2020	2020	VT	13	DO - mg/L	9.3
+25	Malletts Bay	10.12.2020	2020	VT	14	DO - mg/L	9.32
+25	Malletts Bay	10.12.2020	2020	VT	15	DO - mg/L	9.3
+25	Malletts Bay	10.12.2020	2020	VT	16	DO - mg/L	9.28
+25	Malletts Bay	10.12.2020	2020	VT	17	DO - mg/L	9.31
+25	Malletts Bay	10.12.2020	2020	VT	18	DO - mg/L	9.3
+25	Malletts Bay	10.12.2020	2020	VT	19	DO - mg/L	9.32
+25	Malletts Bay	10.12.2020	2020	VT	20	DO - mg/L	9.31
+25	Malletts Bay	10.12.2020	2020	VT	21	DO - mg/L	9.25
+25	Malletts Bay	10.12.2020	2020	VT	22	DO - mg/L	9.24
+25	Malletts Bay	10.12.2020	2020	VT	23	DO - mg/L	3.46
+25	Malletts Bay	10.12.2020	2020	VT	24	DO - mg/L	0.72
+25	Malletts Bay	10.12.2020	2020	VT	25	DO - mg/L	0
+25	Malletts Bay	10.12.2020	2020	VT	26	DO - mg/L	0
+25	Malletts Bay	10.12.2020	2020	VT	27	DO - mg/L	0
+25	Malletts Bay	10.12.2020	2020	VT	28	DO - mg/L	0
+25	Malletts Bay	10.12.2020	2020	VT	29	DO - mg/L	0
+25	Malletts Bay	10.12.2020	2020	VT	30	DO - mg/L	0
+25	Malletts Bay	10.12.2020	2020	VT	31	DO - mg/L	0
+25	Malletts Bay	10.12.2020	2020	VT	32	DO - mg/L	0
+25	Malletts Bay	10.12.2020	2020	VT	1	DO%	94.4
+25	Malletts Bay	10.12.2020	2020	VT	1	DO%	94
+25	Malletts Bay	10.12.2020	2020	VT	2	DO%	94.3
+25	Malletts Bay	10.12.2020	2020	VT	3	DO%	93.9
+25	Malletts Bay	10.12.2020	2020	VT	4	DO%	93.7
+25	Malletts Bay	10.12.2020	2020	VT	5	DO%	93.5
+25	Malletts Bay	10.12.2020	2020	VT	6	DO%	93.5
+25	Malletts Bay	10.12.2020	2020	VT	7	DO%	93.8
+25	Malletts Bay	10.12.2020	2020	VT	8	DO%	93.4
+25	Malletts Bay	10.12.2020	2020	VT	9	DO%	93.3
+25	Malletts Bay	10.12.2020	2020	VT	10	DO%	93.5
+25	Malletts Bay	10.12.2020	2020	VT	11	DO%	93.3
+25	Malletts Bay	10.12.2020	2020	VT	12	DO%	93
+25	Malletts Bay	10.12.2020	2020	VT	13	DO%	93.1
+25	Malletts Bay	10.12.2020	2020	VT	14	DO%	93.2
+25	Malletts Bay	10.12.2020	2020	VT	15	DO%	93
+25	Malletts Bay	10.12.2020	2020	VT	16	DO%	92.8
+25	Malletts Bay	10.12.2020	2020	VT	17	DO%	93.2
+25	Malletts Bay	10.12.2020	2020	VT	18	DO%	93
+25	Malletts Bay	10.12.2020	2020	VT	19	DO%	93.2
+25	Malletts Bay	10.12.2020	2020	VT	20	DO%	93.2
+25	Malletts Bay	10.12.2020	2020	VT	21	DO%	92.5
+25	Malletts Bay	10.12.2020	2020	VT	22	DO%	92.3
+25	Malletts Bay	10.12.2020	2020	VT	23	DO%	32.9
+25	Malletts Bay	10.12.2020	2020	VT	24	DO%	6.5
+25	Malletts Bay	10.12.2020	2020	VT	25	DO%	0
+25	Malletts Bay	10.12.2020	2020	VT	26	DO%	0
+25	Malletts Bay	10.12.2020	2020	VT	27	DO%	0
+25	Malletts Bay	10.12.2020	2020	VT	28	DO%	0
+25	Malletts Bay	10.12.2020	2020	VT	29	DO%	0
+25	Malletts Bay	10.12.2020	2020	VT	30	DO%	0
+25	Malletts Bay	10.12.2020	2020	VT	31	DO%	0
+25	Malletts Bay	10.12.2020	2020	VT	32	DO%	0
+25	Malletts Bay	10.12.2020	2020	VT	1	pH - Units	8.03
+25	Malletts Bay	10.12.2020	2020	VT	1	pH - Units	7.97
+25	Malletts Bay	10.12.2020	2020	VT	2	pH - Units	7.99
+25	Malletts Bay	10.12.2020	2020	VT	3	pH - Units	8
+25	Malletts Bay	10.12.2020	2020	VT	4	pH - Units	8
+25	Malletts Bay	10.12.2020	2020	VT	5	pH - Units	8.02
+25	Malletts Bay	10.12.2020	2020	VT	6	pH - Units	8.02
+25	Malletts Bay	10.12.2020	2020	VT	7	pH - Units	8.02
+25	Malletts Bay	10.12.2020	2020	VT	8	pH - Units	8.02
+25	Malletts Bay	10.12.2020	2020	VT	9	pH - Units	8.02
+25	Malletts Bay	10.12.2020	2020	VT	10	pH - Units	8.02
+25	Malletts Bay	10.12.2020	2020	VT	11	pH - Units	8.02
+25	Malletts Bay	10.12.2020	2020	VT	12	pH - Units	8.02
+25	Malletts Bay	10.12.2020	2020	VT	13	pH - Units	8.02
+25	Malletts Bay	10.12.2020	2020	VT	14	pH - Units	8.02
+25	Malletts Bay	10.12.2020	2020	VT	15	pH - Units	8.02
+25	Malletts Bay	10.12.2020	2020	VT	16	pH - Units	8.02
+25	Malletts Bay	10.12.2020	2020	VT	17	pH - Units	8.02
+25	Malletts Bay	10.12.2020	2020	VT	18	pH - Units	8.02
+25	Malletts Bay	10.12.2020	2020	VT	19	pH - Units	8.02
+25	Malletts Bay	10.12.2020	2020	VT	20	pH - Units	8.02
+25	Malletts Bay	10.12.2020	2020	VT	21	pH - Units	8.01
+25	Malletts Bay	10.12.2020	2020	VT	22	pH - Units	8
+25	Malletts Bay	10.12.2020	2020	VT	23	pH - Units	7.21
+25	Malletts Bay	10.12.2020	2020	VT	24	pH - Units	7.06
+25	Malletts Bay	10.12.2020	2020	VT	25	pH - Units	7.03
+25	Malletts Bay	10.12.2020	2020	VT	26	pH - Units	7.04
+25	Malletts Bay	10.12.2020	2020	VT	27	pH - Units	7.07
+25	Malletts Bay	10.12.2020	2020	VT	28	pH - Units	7.09
+25	Malletts Bay	10.12.2020	2020	VT	29	pH - Units	7.1
+25	Malletts Bay	10.12.2020	2020	VT	30	pH - Units	7.11
+25	Malletts Bay	10.12.2020	2020	VT	31	pH - Units	7.11
+25	Malletts Bay	10.12.2020	2020	VT	32	pH - Units	7.11
+25	Malletts Bay	10.12.2020	2020	VT	1	TempC - deg C	14.49
+25	Malletts Bay	10.12.2020	2020	VT	1	TempC - deg C	14.47
+25	Malletts Bay	10.12.2020	2020	VT	2	TempC - deg C	14.48
+25	Malletts Bay	10.12.2020	2020	VT	3	TempC - deg C	14.47
+25	Malletts Bay	10.12.2020	2020	VT	4	TempC - deg C	14.48
+25	Malletts Bay	10.12.2020	2020	VT	5	TempC - deg C	14.47
+25	Malletts Bay	10.12.2020	2020	VT	6	TempC - deg C	14.47
+25	Malletts Bay	10.12.2020	2020	VT	7	TempC - deg C	14.47
+25	Malletts Bay	10.12.2020	2020	VT	8	TempC - deg C	14.47
+25	Malletts Bay	10.12.2020	2020	VT	9	TempC - deg C	14.46
+25	Malletts Bay	10.12.2020	2020	VT	10	TempC - deg C	14.46
+25	Malletts Bay	10.12.2020	2020	VT	11	TempC - deg C	14.45
+25	Malletts Bay	10.12.2020	2020	VT	12	TempC - deg C	14.45
+25	Malletts Bay	10.12.2020	2020	VT	13	TempC - deg C	14.45
+25	Malletts Bay	10.12.2020	2020	VT	14	TempC - deg C	14.45
+25	Malletts Bay	10.12.2020	2020	VT	15	TempC - deg C	14.45
+25	Malletts Bay	10.12.2020	2020	VT	16	TempC - deg C	14.44
+25	Malletts Bay	10.12.2020	2020	VT	17	TempC - deg C	14.44
+25	Malletts Bay	10.12.2020	2020	VT	18	TempC - deg C	14.45
+25	Malletts Bay	10.12.2020	2020	VT	19	TempC - deg C	14.45
+25	Malletts Bay	10.12.2020	2020	VT	20	TempC - deg C	14.45
+25	Malletts Bay	10.12.2020	2020	VT	21	TempC - deg C	14.43
+25	Malletts Bay	10.12.2020	2020	VT	22	TempC - deg C	14.41
+25	Malletts Bay	10.12.2020	2020	VT	23	TempC - deg C	12.14
+25	Malletts Bay	10.12.2020	2020	VT	24	TempC - deg C	10.41
+25	Malletts Bay	10.12.2020	2020	VT	25	TempC - deg C	9.82
+25	Malletts Bay	10.12.2020	2020	VT	26	TempC - deg C	9.58
+25	Malletts Bay	10.12.2020	2020	VT	27	TempC - deg C	9.36
+25	Malletts Bay	10.12.2020	2020	VT	28	TempC - deg C	9.27
+25	Malletts Bay	10.12.2020	2020	VT	29	TempC - deg C	9.25
+25	Malletts Bay	10.12.2020	2020	VT	30	TempC - deg C	9.22
+25	Malletts Bay	10.12.2020	2020	VT	31	TempC - deg C	9.19
+25	Malletts Bay	10.12.2020	2020	VT	32	TempC - deg C	9.16

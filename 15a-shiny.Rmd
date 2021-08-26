@@ -1,0 +1,192 @@
+# Shiny
+
+*Der Beitrag wurde das letzte mal am `r format(Sys.time(), '%d %B, %Y')` editiert*
+
+```{r include=FALSE}
+
+knitr::opts_chunk$set(fig.align = "center", collapse = T, echo = TRUE, message = FALSE, warning = FALSE)
+
+# With collapse = TRUE the Source and output lived together happily ever in knitr.
+# https://github.com/yihui/knitr-examples/blob/master/039-merge.md
+
+# loading multiple packages at once with `pacman`
+# create a vector name
+packages <- c("tidyverse", "markdown", "knitr", "matrixStats", "patchwork", "lubridate", "plotly",  "naniar", "stlplus", "gt", "dygraphs", "htmltools", "zoo", "xts", "ggpmisc", "forcats", "RColorBrewer", "Kendall", "rstudioapi", "multcompView", "plyr", "bookdown", "janitor", "rstatix", "ggpubr", "moments", "tweetrmd", "ggthemes", "hexbin", "ggridges", "ggstream", "openair", "treemapify", "MBA", "akima", "PlotSvalbard", "sf", "rnaturalearth", "rnaturalearthdata", "rgeos", "ggspatial", "factoextra", "FactoMineR", "gapminder", "ggforce", "gh", "globals", "openintro", "profvis", 
+  "RSQLite", "shiny", "shinycssloaders", "shinyFeedback", 
+  "shinythemes", "testthat", "thematic", "tidyverse", "vroom", 
+  "waiter", "xml2", "zeallot", "shiny", "rsconnect")
+ 
+# Load the packages vector 
+pacman::p_load(packages, character.only = T)
+
+my_theme <- theme(
+  panel.background = element_rect(fill = "white", color = "black"),
+  panel.grid.major = element_blank(), 
+  panel.grid.minor = element_blank(), 
+  panel.border = element_blank())
+
+```
+
+🔍 [Mastering Shiny - Build interactive apps, reports, dashboards](https://mastering-shiny.org/index.html)
+
+🔍 [https://www.youtube.com/watch?v=tfN10IUX9Lo](https://www.youtube.com/watch?v=tfN10IUX9Lo)
+
+Shiny ist ein R package um interaktive web apps, reports und dashbords zu bauen. Shiny kann dabei die Daten online so zur verfügung stellen (bspw. über einen web browser), dass jeder darauf zugreifen kann.
+
+😎 Mit shiny können 100 Seiten auf eine einzige Seite komprimiert werden, sodass der Nutzer individuell auf eine spezielle Seite zugreifen kann. Die Übersichtlichkeit steigt dadurch extrem. 
+
+```{r echo=FALSE, fig.cap="Shiny Prinzip, source: https://blog.efpsa.org/wp-content/uploads/2019/04/pic6.jpg"}
+knitr::include_graphics("images/081.png")
+```
+
+Die zwei Hauptkomponenten einer shiny app sind **UI** (für User Interface; definiert wie die App aussehen soll) und **server function** (definiert wie die App arbeiten soll). 
+
+```{r}
+# lade shiny
+library(shiny)
+# create UI
+ui <- fluidPage(
+  "Hello, world!"
+)
+# create server
+server <- function(input, output, session) {
+}
+# run the app
+shinyApp(ui, server)
+```
+
+Die vier Schritte können zusammengefasst werden mit:
+
+* Laden des shiny packages
+* UI = Definiere die HTML Webpage mit der Menschen interagieren können (**frontend**)
+* Wie soll sich die App verhalten durch definieren einer `server()` Funktion (ist momentan leer; **backend**)
+* Ausführen der App durch die Funktion `shinyApp(ui, server)
+
+Um ein shiny Projekt zu beginnen gibt es zwei Möglichkeiten:
+
+* Ein neues directory anlegen durch File -> New Project -> New Directory -> Shiny Web Application 
+
+Dadurch wird eine `app.R` Datei erstellt, in der die shiny app definiert wird. 
+
+🎉 Damit hast du deine erste web app gebaut!
+
+## UI Benutzeroberfläche
+
+Als nächste gestalten und modifizieren wir die UI Oberfläche:
+
+```{r}
+ui <- fluidPage(
+  selectInput("dataset", label = "Dataset", choices = ls("package:datasets")),
+  verbatimTextOutput("summary"),
+  tableOutput("table")
+)
+```
+
+* `fluidPage()` ist eine layout Funktion um die Allgemeinen visuellen Strukturen der App festzulegen. 
+* `selectInput()` lässt den Nutzer mit der App interagieren, indem eine Box bereitgestellt wird mit dem Label "Dataset".
+* `verbatimTextOutput()` und `tableOutput()` sind Funktionen um shiny zu vermitteln, wo und wie der Output dargestellt werden soll. 
+
+```{r}
+# run the shinyapp again
+shinyApp(ui, server)
+```
+
+## Welche Befehle sollen ausgeführt werden
+
+Shiny verwendet *reactive programming*, dass bedeutet wir müssen shiny vermitteln **wie** eine Berechnung oder Darstellung durchgeführt wird und nicht **die** eine Berechnung durchzuführen. 
+
+```{r}
+# define server function
+server <- function(input, output, session) {
+  output$summary <- renderPrint({
+    dataset <- get(input$dataset, "package:datasets")
+    summary(dataset)
+  })
+  
+  output$table <- renderTable({
+    dataset <- get(input$dataset, "package:datasets")
+    dataset
+  })
+}
+# run the app
+shinyApp(ui, server)
+
+
+```
+
+Das Objekt `server` kann noch besser definiert werden durch eine *reactive expression*. Dadurch muss man Objekte (in diesem Beispiel `get(input$dataset, "package:datasets")`) nur einmal definieren. Eine reactive expression wird dabei wie ein Funktionsaufruf genutzt:
+
+```{r}
+server <- function(input, output, session) {
+  # Create a reactive expression
+  dataset <- reactive({
+    get(input$dataset, "package:datasets")
+  })
+
+  output$summary <- renderPrint({
+    # Use a reactive expression by calling it like a function
+    summary(dataset())
+  })
+  
+  output$table <- renderTable({
+    dataset()
+  })
+}
+
+shinyApp(ui, server)
+```
+
+## Beispiel Speicherkoog
+
+```{r}
+# Transform the data to long format to filter by id and display value in the app
+data <- koog_day %>%
+  select(daily, contains("st")) %>%
+  pivot_longer(cols = contains("st"), names_to = "id")
+
+str(data)
+
+
+ui <- fluidPage(
+    h1()  
+    titlePanel("My first web app for Polder Koog"),
+    sidebarLayout(
+      sidebarPanel(
+        selectInput("param", "Select a Parameter", choices = data$id)
+        ),
+      mainPanel(
+    verbatimTextOutput("summary")
+  )
+  )
+)
+  
+
+server <- function(input, output, session) {
+  
+  dataset <- reactive({
+    get(input$param, data)
+  })
+  
+  output$summary <- renderPrint({
+    summary(dataset())
+
+  })
+  
+  }
+
+
+shinyApp(ui, server)
+
+```
+
+
+p2 <- data %>% filter(daily >= input$range1[1] & daily <= input&range1[2]) %>% ggplot()
+
+
+sliderInput(inputId = "range1", label = "Select the time period", 
+                  min = as.POSIXct("2010-04-01"),
+                  max = as.POSIXct("2020-12-31"),
+                  value = c(as.POSIXct("2010-04-01"), as.POSIXct("2020-12-31"))
+                  )
+
+

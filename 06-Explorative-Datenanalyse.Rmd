@@ -1,0 +1,120 @@
+# Explorative-Datenanalyse
+
+*Der Beitrag wurde das letzte mal am `r format(Sys.time(), '%d %B, %Y')` editiert*
+
+```{r include=FALSE}
+
+knitr::opts_chunk$set(fig.align = "center", collapse = T, echo = TRUE, message = FALSE, warning = FALSE)
+
+# With collapse = TRUE the Source and output lived together happily ever in knitr.
+# https://github.com/yihui/knitr-examples/blob/master/039-merge.md
+
+# loading multiple packages at once with `pacman`
+# create a vector name
+packages <- c("tidyverse", "markdown", "knitr", "matrixStats", "patchwork", "lubridate", "plotly",  "naniar", "stlplus", "gt", "dygraphs", "htmltools", "zoo", "xts", "ggpmisc", "forcats", "RColorBrewer", "Kendall", "rstudioapi", "multcompView", "plyr", "bookdown", "janitor", "rstatix", "ggpubr", "moments")
+ 
+# Load the packages vector 
+pacman::p_load(packages, character.only = T)
+
+my_theme <- theme(
+  panel.background = element_rect(fill = "white", color = "black"),
+  panel.grid.major = element_blank(), 
+  panel.grid.minor = element_blank(), 
+  panel.border = element_blank())
+
+```
+
+```{r echo = F}
+# Daten Speicherkoog einlesen
+koog_raw <- readr::read_delim("data/data.csv", delim = ";", 
+                          col_types = readr::cols(
+                            # date = überschreibt die Spalte mit der neuen Spezifikation
+                            date = readr::col_datetime(format = "%d.%m.%Y %H:%M") 
+  ))
+koog_raw <- janitor::clean_names(koog_raw)
+koog <- koog_raw %>%
+  dplyr::mutate(across(contains("eh"), ~. + 207))
+# Erstelle neue Spalten mit Zeitstempeln
+koog <- koog %>%
+  mutate(year = lubridate::year(date),
+         month = lubridate::month(date),
+         day = lubridate::day(date),
+         hour = lubridate::hour(date), 
+         daily = format(date, "%Y-%m-%d"),
+         monthly = format(date, "%Y-%m"))
+
+# Tagesmittelwerte
+koog_day <- koog %>%
+  group_by(daily) %>%
+  summarise_if(is.numeric, mean, na.rm = T)
+
+# Monatsmittelwerte
+koog_month <- koog %>%
+  group_by(monthly) %>%
+  summarise_if(is.numeric, mean, na.rm = T)
+
+# Jahresmittelwerte
+koog_year <- koog %>%
+  group_by(year) %>%
+  summarise_if(is.numeric, mean, na.rm = T)
+
+```
+
+Bevor wir uns an das vermeintlich schönste Thema reinstürzen - der Datenvisualisierung - gehen wir in diesem Kapitel auf die explorative Datenanalyse (EDA) ein. 
+
+🔍 Besser als in [r4ds](https://r4ds.had.co.nz/exploratory-data-analysis.html) lässt es sich eigentlich nicht zusammenfassen
+
+EDA ist kein strikt vorwärtsgerichteter Prozess mit bestimmten Regeln. Vielmehr geht es darum mit dem Datensatz zu spielen, Ideen zu erkunden, diese für gut oder schlecht zu befinden, um die vielversprechendsten Ansätze dem Publikum näher zu bringen. Was man hierbei nicht vergessen darf ist auch die Überprüfung der *Datenqualität*, bspw. ob die Daten mit derselben Methoden erhoben wurden, bezieht man sich auf dieselben Einheiten und gibt es Fehlwerte (`NA`s), die eine Analyse des Datensatzes in ein zweifelhaftes Licht rücken. 
+
+> “There are no routine statistical questions, only questionable statistical routines.” — Sir David Cox
+
+> “Far better an approximate answer to the right question, which is often vague, than an exact answer to the wrong question, which can always be made precise.” — John Tukey
+
+Zentrales Ziel der EDA ist es, ein Verständnis für die Daten zu erlangen auf einem möglichst kreativen Weg. 
+
+## Fehlende Werte
+
+Elektroden und Gerätschaften im Gelände sind wie Menschen - sie wollen gut gepflegt werden aber auch bei bester Pflege machen sie nicht immer das was sie tun sollen. Starten wir also damit zu erkunden, wieviele Fehlwerte wir in unserem Speicherkoog Datensatz haben. Der erste Weg wäre zu erkunden, ob überhaupt `NA`s in unserem Datensatz auftreten:
+
+```{r}
+# Tritt ein NA in unserem Vektor auf
+any_na(koog$st10)
+```
+
+Es befinden sich also Fehlwerte in st10. 
+
+```{r}
+# Mit are_na bekommen wir einen Vektor mit TRUE und FALSE über NA Werte angezeigt
+are_na(koog$st10) %>%
+  head(n = 10)
+```
+
+Wir können uns auch eine Prozentzahl angeben lassen, indem wir die Anzahl der NA Werte in unserem Vektor durch die Länge des Vektors teilen:
+
+```{r}
+n_miss(koog$st10) / nrow(koog) * 100
+```
+Es fehlen also 2.5% Der Daten. Das ist erstmal nicht viel. Mithilfe des `vis_dat` packages kann man schnell und leicht überprüfen wie die zeitliche Verteilung der Werte ist. Es spielt schließlich schon eine Rolle, ob ich jeden Tag einen systematischen Fehlwert habe oder die Fehlwerte en block während einer bestimmten Periode auftreten. 
+
+```{r}
+koog %>%
+  select(st10) %>%
+  visdat::vis_miss()
+```
+
+Wir sehen also, dass 2,5% des Datensatzes keine Werte enthalten und für nur kurze Perioden auftreten. Für die elektrische Leitfähigkeit `ec` ist dies leider nicht der Fall. Speziell zu Beginn der Untersuchung gab es immer wieder Ausfälle. Diese Werte sind also im Allgemeinen mit Vorsicht zu bewerten. 
+
+```{r}
+koog %>%
+  select(ec) %>%
+  visdat::vis_miss()
+```
+
+Tabellarisch kann man sich die Daten natürlich auch angeben lassen:
+
+```{r}
+koog %>%
+  select(!contains("oxy")) %>%
+  miss_var_summary(order = T) %>%
+  head(n = 5)
+```

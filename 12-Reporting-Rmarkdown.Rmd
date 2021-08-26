@@ -1,0 +1,58 @@
+# Reporting in Rmarkdown
+
+*Der Beitrag wurde das letzte mal am `r format(Sys.time(), '%d %B, %Y')` editiert*
+
+```{r include=FALSE}
+
+knitr::opts_chunk$set(fig.align = "center", collapse = T, echo = TRUE, message = FALSE, warning = FALSE)
+
+# With collapse = TRUE the Source and output lived together happily ever in knitr.
+# https://github.com/yihui/knitr-examples/blob/master/039-merge.md
+
+# loading multiple packages at once with `pacman`
+# create a vector name
+packages <- c("tidyverse", "markdown", "knitr", "matrixStats", "patchwork", "lubridate", "plotly",  "naniar", "stlplus", "gt", "dygraphs", "htmltools", "zoo", "xts", "ggpmisc", "forcats", "RColorBrewer", "Kendall", "rstudioapi", "multcompView", "plyr", "bookdown", "janitor", "rstatix", "ggpubr", "moments", "tweetrmd", "ggthemes", "hexbin", "ggridges", "ggstream", "openair", "treemapify", "MBA", "akima", "PlotSvalbard", "sf", "rnaturalearth", "rnaturalearthdata", "rgeos", "ggspatial", "factoextra", "FactoMineR")
+ 
+# Load the packages vector 
+pacman::p_load(packages, character.only = T)
+
+
+my_theme <- theme(
+  panel.background = element_rect(fill = "white", color = "black"),
+  panel.grid.major = element_blank(), 
+  panel.grid.minor = element_blank(), 
+  panel.border = element_blank())
+
+```
+
+## Mathematische Befehle
+
+In einem Textblock kann man sich mathematische Notationen anzeigen lassen, indem man die Gleichung mit einem `$` Zeichen umrandet für *inline equations* und zwei `$$` für Gleichungen in einer eigenen Zeile. 
+
+🚨 Kein Leerzeichen zwischen dem `$` und der Gleichung lassen
+
+💡 Gleichungen in LaTeX zu setzen basiert auf TeX, namentlich nach Leslie Laport benannt. 
+
+Beispiel 1: `$\sum_{n=1}^{10} n^2$` wird zu $\sum_{n=1}^{10} n^2$ 
+
+Beispiel 2: `$$\sum_{n=1}^{10} n^2$$` wird zu $$\sum_{n=1}^{10} n^2$$
+
+Zwei `$$` um die Gleichung resultieren, dass die Gleichung nicht in der Zeile eingebettet ist sondern frei steht. 
+
+Eine tolle Gleichung $E=mc^2$ 😎
+
+### Brüche
+
+`$\frac{1}{2}$` ergibt $\frac{1}{2}$
+
+### Hoch- und Tiefstellung
+
+`$Y = X_1 + X_2$` ergibt $Y = X_1 + X_2$
+
+`$a^2 + b^2 = c^2$` ergibt $a^2 + b^2 = c^2$
+
+### Quadratwurzel 
+
+`$\sqrt{p}$` ergibt $\sqrt{p}$
+
+`$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$` ergibt $x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$

@@ -1,0 +1,1518 @@
+StationID;Location Name;Visit Date;Year;Crew;Depth-M;Test Code / Units;Result
+25;Malletts Bay;05/13/1993;1993;NY;1;Cond - uS/cm;114
+25;Malletts Bay;05/13/1993;1993;NY;2;Cond - uS/cm;114
+25;Malletts Bay;05/13/1993;1993;NY;3;Cond - uS/cm;114
+25;Malletts Bay;05/13/1993;1993;NY;4;Cond - uS/cm;113.7
+25;Malletts Bay;05/13/1993;1993;NY;5;Cond - uS/cm;113.7
+25;Malletts Bay;05/13/1993;1993;NY;6;Cond - uS/cm;113.6
+25;Malletts Bay;05/13/1993;1993;NY;7;Cond - uS/cm;113.6
+25;Malletts Bay;05/13/1993;1993;NY;8;Cond - uS/cm;113.4
+25;Malletts Bay;05/13/1993;1993;NY;9;Cond - uS/cm;113.3
+25;Malletts Bay;05/13/1993;1993;NY;10;Cond - uS/cm;113.2
+25;Malletts Bay;05/13/1993;1993;NY;11;Cond - uS/cm;113.2
+25;Malletts Bay;05/13/1993;1993;NY;12;Cond - uS/cm;113.1
+25;Malletts Bay;05/13/1993;1993;NY;13;Cond - uS/cm;113.4
+25;Malletts Bay;05/13/1993;1993;NY;14;Cond - uS/cm;113.2
+25;Malletts Bay;05/13/1993;1993;NY;15;Cond - uS/cm;113.1
+25;Malletts Bay;05/13/1993;1993;NY;17;Cond - uS/cm;112.8
+25;Malletts Bay;05/13/1993;1993;NY;18;Cond - uS/cm;111.7
+25;Malletts Bay;05/13/1993;1993;NY;19;Cond - uS/cm;112.6
+25;Malletts Bay;05/13/1993;1993;NY;20;Cond - uS/cm;111.6
+25;Malletts Bay;05/13/1993;1993;NY;21;Cond - uS/cm;111
+25;Malletts Bay;05/13/1993;1993;NY;22;Cond - uS/cm;112.7
+25;Malletts Bay;05/13/1993;1993;NY;23;Cond - uS/cm;112.3
+25;Malletts Bay;05/13/1993;1993;NY;24;Cond - uS/cm;110.7
+25;Malletts Bay;05/13/1993;1993;NY;25;Cond - uS/cm;110.7
+25;Malletts Bay;05/13/1993;1993;NY;26;Cond - uS/cm;112
+25;Malletts Bay;05/13/1993;1993;NY;27;Cond - uS/cm;111.6
+25;Malletts Bay;05/13/1993;1993;NY;28;Cond - uS/cm;111.5
+25;Malletts Bay;05/13/1993;1993;NY;1;DO - mg/L;11.43
+25;Malletts Bay;05/13/1993;1993;NY;2;DO - mg/L;11.47
+25;Malletts Bay;05/13/1993;1993;NY;3;DO - mg/L;11.47
+25;Malletts Bay;05/13/1993;1993;NY;4;DO - mg/L;11.5
+25;Malletts Bay;05/13/1993;1993;NY;5;DO - mg/L;11.5
+25;Malletts Bay;05/13/1993;1993;NY;6;DO - mg/L;11.49
+25;Malletts Bay;05/13/1993;1993;NY;7;DO - mg/L;11.48
+25;Malletts Bay;05/13/1993;1993;NY;8;DO - mg/L;11.47
+25;Malletts Bay;05/13/1993;1993;NY;9;DO - mg/L;11.47
+25;Malletts Bay;05/13/1993;1993;NY;10;DO - mg/L;11.45
+25;Malletts Bay;05/13/1993;1993;NY;11;DO - mg/L;11.45
+25;Malletts Bay;05/13/1993;1993;NY;12;DO - mg/L;11.46
+25;Malletts Bay;05/13/1993;1993;NY;13;DO - mg/L;11.46
+25;Malletts Bay;05/13/1993;1993;NY;14;DO - mg/L;11.45
+25;Malletts Bay;05/13/1993;1993;NY;15;DO - mg/L;11.4
+25;Malletts Bay;05/13/1993;1993;NY;17;DO - mg/L;11.45
+25;Malletts Bay;05/13/1993;1993;NY;18;DO - mg/L;11.47
+25;Malletts Bay;05/13/1993;1993;NY;19;DO - mg/L;11.45
+25;Malletts Bay;05/13/1993;1993;NY;20;DO - mg/L;11.44
+25;Malletts Bay;05/13/1993;1993;NY;21;DO - mg/L;11.47
+25;Malletts Bay;05/13/1993;1993;NY;22;DO - mg/L;11.47
+25;Malletts Bay;05/13/1993;1993;NY;23;DO - mg/L;11.46
+25;Malletts Bay;05/13/1993;1993;NY;24;DO - mg/L;11.44
+25;Malletts Bay;05/13/1993;1993;NY;25;DO - mg/L;11.45
+25;Malletts Bay;05/13/1993;1993;NY;26;DO - mg/L;11.45
+25;Malletts Bay;05/13/1993;1993;NY;27;DO - mg/L;11.45
+25;Malletts Bay;05/13/1993;1993;NY;28;DO - mg/L;11.37
+25;Malletts Bay;05/13/1993;1993;NY;1;DO%;100.6
+25;Malletts Bay;05/13/1993;1993;NY;2;DO%;100.8
+25;Malletts Bay;05/13/1993;1993;NY;3;DO%;100.5
+25;Malletts Bay;05/13/1993;1993;NY;4;DO%;100.1
+25;Malletts Bay;05/13/1993;1993;NY;5;DO%;99.9
+25;Malletts Bay;05/13/1993;1993;NY;6;DO%;99.3
+25;Malletts Bay;05/13/1993;1993;NY;7;DO%;99.1
+25;Malletts Bay;05/13/1993;1993;NY;8;DO%;98.9
+25;Malletts Bay;05/13/1993;1993;NY;9;DO%;98.7
+25;Malletts Bay;05/13/1993;1993;NY;10;DO%;98.5
+25;Malletts Bay;05/13/1993;1993;NY;11;DO%;98.4
+25;Malletts Bay;05/13/1993;1993;NY;12;DO%;98.4
+25;Malletts Bay;05/13/1993;1993;NY;13;DO%;98.2
+25;Malletts Bay;05/13/1993;1993;NY;14;DO%;98.2
+25;Malletts Bay;05/13/1993;1993;NY;15;DO%;96.8
+25;Malletts Bay;05/13/1993;1993;NY;17;DO%;95.7
+25;Malletts Bay;05/13/1993;1993;NY;18;DO%;95.7
+25;Malletts Bay;05/13/1993;1993;NY;19;DO%;95.5
+25;Malletts Bay;05/13/1993;1993;NY;20;DO%;95.1
+25;Malletts Bay;05/13/1993;1993;NY;21;DO%;94.9
+25;Malletts Bay;05/13/1993;1993;NY;22;DO%;94.7
+25;Malletts Bay;05/13/1993;1993;NY;23;DO%;93.7
+25;Malletts Bay;05/13/1993;1993;NY;24;DO%;92.7
+25;Malletts Bay;05/13/1993;1993;NY;25;DO%;92.4
+25;Malletts Bay;05/13/1993;1993;NY;26;DO%;92.2
+25;Malletts Bay;05/13/1993;1993;NY;27;DO%;91.9
+25;Malletts Bay;05/13/1993;1993;NY;28;DO%;91.3
+25;Malletts Bay;05/13/1993;1993;NY;1;ORP - ug/L;355
+25;Malletts Bay;05/13/1993;1993;NY;2;ORP - ug/L;354
+25;Malletts Bay;05/13/1993;1993;NY;3;ORP - ug/L;355
+25;Malletts Bay;05/13/1993;1993;NY;4;ORP - ug/L;355
+25;Malletts Bay;05/13/1993;1993;NY;5;ORP - ug/L;356
+25;Malletts Bay;05/13/1993;1993;NY;6;ORP - ug/L;357
+25;Malletts Bay;05/13/1993;1993;NY;7;ORP - ug/L;357
+25;Malletts Bay;05/13/1993;1993;NY;8;ORP - ug/L;358
+25;Malletts Bay;05/13/1993;1993;NY;9;ORP - ug/L;358
+25;Malletts Bay;05/13/1993;1993;NY;10;ORP - ug/L;359
+25;Malletts Bay;05/13/1993;1993;NY;11;ORP - ug/L;361
+25;Malletts Bay;05/13/1993;1993;NY;12;ORP - ug/L;361
+25;Malletts Bay;05/13/1993;1993;NY;13;ORP - ug/L;362
+25;Malletts Bay;05/13/1993;1993;NY;14;ORP - ug/L;363
+25;Malletts Bay;05/13/1993;1993;NY;15;ORP - ug/L;364
+25;Malletts Bay;05/13/1993;1993;NY;17;ORP - ug/L;365
+25;Malletts Bay;05/13/1993;1993;NY;18;ORP - ug/L;365
+25;Malletts Bay;05/13/1993;1993;NY;19;ORP - ug/L;366
+25;Malletts Bay;05/13/1993;1993;NY;20;ORP - ug/L;366
+25;Malletts Bay;05/13/1993;1993;NY;21;ORP - ug/L;367
+25;Malletts Bay;05/13/1993;1993;NY;22;ORP - ug/L;367
+25;Malletts Bay;05/13/1993;1993;NY;23;ORP - ug/L;368
+25;Malletts Bay;05/13/1993;1993;NY;24;ORP - ug/L;368
+25;Malletts Bay;05/13/1993;1993;NY;25;ORP - ug/L;369
+25;Malletts Bay;05/13/1993;1993;NY;26;ORP - ug/L;369
+25;Malletts Bay;05/13/1993;1993;NY;27;ORP - ug/L;370
+25;Malletts Bay;05/13/1993;1993;NY;28;ORP - ug/L;349
+25;Malletts Bay;05/13/1993;1993;NY;1;pH - Units;7.58
+25;Malletts Bay;05/13/1993;1993;NY;2;pH - Units;7.64
+25;Malletts Bay;05/13/1993;1993;NY;3;pH - Units;7.65
+25;Malletts Bay;05/13/1993;1993;NY;4;pH - Units;7.66
+25;Malletts Bay;05/13/1993;1993;NY;5;pH - Units;7.65
+25;Malletts Bay;05/13/1993;1993;NY;6;pH - Units;7.64
+25;Malletts Bay;05/13/1993;1993;NY;7;pH - Units;7.63
+25;Malletts Bay;05/13/1993;1993;NY;8;pH - Units;7.63
+25;Malletts Bay;05/13/1993;1993;NY;9;pH - Units;7.63
+25;Malletts Bay;05/13/1993;1993;NY;10;pH - Units;7.61
+25;Malletts Bay;05/13/1993;1993;NY;11;pH - Units;7.6
+25;Malletts Bay;05/13/1993;1993;NY;12;pH - Units;7.6
+25;Malletts Bay;05/13/1993;1993;NY;13;pH - Units;7.59
+25;Malletts Bay;05/13/1993;1993;NY;14;pH - Units;7.6
+25;Malletts Bay;05/13/1993;1993;NY;15;pH - Units;7.56
+25;Malletts Bay;05/13/1993;1993;NY;17;pH - Units;7.54
+25;Malletts Bay;05/13/1993;1993;NY;18;pH - Units;7.53
+25;Malletts Bay;05/13/1993;1993;NY;19;pH - Units;7.53
+25;Malletts Bay;05/13/1993;1993;NY;20;pH - Units;7.51
+25;Malletts Bay;05/13/1993;1993;NY;22;pH - Units;7.49
+25;Malletts Bay;05/13/1993;1993;NY;23;pH - Units;7.48
+25;Malletts Bay;05/13/1993;1993;NY;24;pH - Units;7.47
+25;Malletts Bay;05/13/1993;1993;NY;25;pH - Units;7.44
+25;Malletts Bay;05/13/1993;1993;NY;26;pH - Units;7.44
+25;Malletts Bay;05/13/1993;1993;NY;27;pH - Units;7.42
+25;Malletts Bay;05/13/1993;1993;NY;28;pH - Units;7.41
+25;Malletts Bay;05/13/1993;1993;NY;1;TempC - deg C;9.68
+25;Malletts Bay;05/13/1993;1993;NY;2;TempC - deg C;9.63
+25;Malletts Bay;05/13/1993;1993;NY;3;TempC - deg C;9.49
+25;Malletts Bay;05/13/1993;1993;NY;4;TempC - deg C;9.22
+25;Malletts Bay;05/13/1993;1993;NY;5;TempC - deg C;9.14
+25;Malletts Bay;05/13/1993;1993;NY;6;TempC - deg C;8.91
+25;Malletts Bay;05/13/1993;1993;NY;7;TempC - deg C;8.9
+25;Malletts Bay;05/13/1993;1993;NY;8;TempC - deg C;8.85
+25;Malletts Bay;05/13/1993;1993;NY;9;TempC - deg C;8.78
+25;Malletts Bay;05/13/1993;1993;NY;10;TempC - deg C;8.73
+25;Malletts Bay;05/13/1993;1993;NY;11;TempC - deg C;8.72
+25;Malletts Bay;05/13/1993;1993;NY;12;TempC - deg C;8.65
+25;Malletts Bay;05/13/1993;1993;NY;13;TempC - deg C;8.57
+25;Malletts Bay;05/13/1993;1993;NY;14;TempC - deg C;8.61
+25;Malletts Bay;05/13/1993;1993;NY;15;TempC - deg C;8.22
+25;Malletts Bay;05/13/1993;1993;NY;17;TempC - deg C;7.55
+25;Malletts Bay;05/13/1993;1993;NY;18;TempC - deg C;7.49
+25;Malletts Bay;05/13/1993;1993;NY;19;TempC - deg C;7.46
+25;Malletts Bay;05/13/1993;1993;NY;20;TempC - deg C;7.33
+25;Malletts Bay;05/13/1993;1993;NY;21;TempC - deg C;7.13
+25;Malletts Bay;05/13/1993;1993;NY;22;TempC - deg C;7.05
+25;Malletts Bay;05/13/1993;1993;NY;23;TempC - deg C;6.68
+25;Malletts Bay;05/13/1993;1993;NY;24;TempC - deg C;6.3
+25;Malletts Bay;05/13/1993;1993;NY;25;TempC - deg C;6.15
+25;Malletts Bay;05/13/1993;1993;NY;26;TempC - deg C;6.04
+25;Malletts Bay;05/13/1993;1993;NY;27;TempC - deg C;5.93
+25;Malletts Bay;05/13/1993;1993;NY;28;TempC - deg C;5.93
+25;Malletts Bay;05/26/1993;1993;NY;1;Cond - uS/cm;118.5
+25;Malletts Bay;05/26/1993;1993;NY;2;Cond - uS/cm;118.4
+25;Malletts Bay;05/26/1993;1993;NY;3;Cond - uS/cm;118.2
+25;Malletts Bay;05/26/1993;1993;NY;4;Cond - uS/cm;117.7
+25;Malletts Bay;05/26/1993;1993;NY;5;Cond - uS/cm;117.6
+25;Malletts Bay;05/26/1993;1993;NY;6;Cond - uS/cm;117.7
+25;Malletts Bay;05/26/1993;1993;NY;7;Cond - uS/cm;117.6
+25;Malletts Bay;05/26/1993;1993;NY;8;Cond - uS/cm;117.4
+25;Malletts Bay;05/26/1993;1993;NY;9;Cond - uS/cm;116.5
+25;Malletts Bay;05/26/1993;1993;NY;10;Cond - uS/cm;117.2
+25;Malletts Bay;05/26/1993;1993;NY;11;Cond - uS/cm;116.5
+25;Malletts Bay;05/26/1993;1993;NY;12;Cond - uS/cm;116.4
+25;Malletts Bay;05/26/1993;1993;NY;13;Cond - uS/cm;116.2
+25;Malletts Bay;05/26/1993;1993;NY;14;Cond - uS/cm;115.5
+25;Malletts Bay;05/26/1993;1993;NY;15;Cond - uS/cm;115.6
+25;Malletts Bay;05/26/1993;1993;NY;16;Cond - uS/cm;114
+25;Malletts Bay;05/26/1993;1993;NY;17;Cond - uS/cm;114.4
+25;Malletts Bay;05/26/1993;1993;NY;18;Cond - uS/cm;114.8
+25;Malletts Bay;05/26/1993;1993;NY;19;Cond - uS/cm;116.3
+25;Malletts Bay;05/26/1993;1993;NY;20;Cond - uS/cm;114.7
+25;Malletts Bay;05/26/1993;1993;NY;21;Cond - uS/cm;114
+25;Malletts Bay;05/26/1993;1993;NY;23;Cond - uS/cm;113.9
+25;Malletts Bay;05/26/1993;1993;NY;24;Cond - uS/cm;113.2
+25;Malletts Bay;05/26/1993;1993;NY;25;Cond - uS/cm;113.6
+25;Malletts Bay;05/26/1993;1993;NY;26;Cond - uS/cm;112.3
+25;Malletts Bay;05/26/1993;1993;NY;27;Cond - uS/cm;112.5
+25;Malletts Bay;05/26/1993;1993;NY;28;Cond - uS/cm;113.2
+25;Malletts Bay;05/26/1993;1993;NY;29;Cond - uS/cm;112.5
+25;Malletts Bay;05/26/1993;1993;NY;1;DO - mg/L;10.7
+25;Malletts Bay;05/26/1993;1993;NY;2;DO - mg/L;10.76
+25;Malletts Bay;05/26/1993;1993;NY;3;DO - mg/L;10.81
+25;Malletts Bay;05/26/1993;1993;NY;4;DO - mg/L;10.8
+25;Malletts Bay;05/26/1993;1993;NY;5;DO - mg/L;10.74
+25;Malletts Bay;05/26/1993;1993;NY;6;DO - mg/L;10.72
+25;Malletts Bay;05/26/1993;1993;NY;7;DO - mg/L;10.72
+25;Malletts Bay;05/26/1993;1993;NY;8;DO - mg/L;10.69
+25;Malletts Bay;05/26/1993;1993;NY;9;DO - mg/L;10.7
+25;Malletts Bay;05/26/1993;1993;NY;10;DO - mg/L;10.63
+25;Malletts Bay;05/26/1993;1993;NY;11;DO - mg/L;10.64
+25;Malletts Bay;05/26/1993;1993;NY;12;DO - mg/L;10.65
+25;Malletts Bay;05/26/1993;1993;NY;13;DO - mg/L;10.65
+25;Malletts Bay;05/26/1993;1993;NY;14;DO - mg/L;10.66
+25;Malletts Bay;05/26/1993;1993;NY;15;DO - mg/L;10.67
+25;Malletts Bay;05/26/1993;1993;NY;16;DO - mg/L;10.7
+25;Malletts Bay;05/26/1993;1993;NY;17;DO - mg/L;10.74
+25;Malletts Bay;05/26/1993;1993;NY;18;DO - mg/L;10.74
+25;Malletts Bay;05/26/1993;1993;NY;19;DO - mg/L;10.65
+25;Malletts Bay;05/26/1993;1993;NY;20;DO - mg/L;10.64
+25;Malletts Bay;05/26/1993;1993;NY;21;DO - mg/L;10.58
+25;Malletts Bay;05/26/1993;1993;NY;23;DO - mg/L;10.5
+25;Malletts Bay;05/26/1993;1993;NY;24;DO - mg/L;10.44
+25;Malletts Bay;05/26/1993;1993;NY;25;DO - mg/L;10.38
+25;Malletts Bay;05/26/1993;1993;NY;26;DO - mg/L;10.35
+25;Malletts Bay;05/26/1993;1993;NY;27;DO - mg/L;10.28
+25;Malletts Bay;05/26/1993;1993;NY;28;DO - mg/L;10.24
+25;Malletts Bay;05/26/1993;1993;NY;29;DO - mg/L;10.23
+25;Malletts Bay;05/26/1993;1993;NY;1;DO%;100.8
+25;Malletts Bay;05/26/1993;1993;NY;2;DO%;101
+25;Malletts Bay;05/26/1993;1993;NY;3;DO%;100
+25;Malletts Bay;05/26/1993;1993;NY;4;DO%;99.3
+25;Malletts Bay;05/26/1993;1993;NY;5;DO%;98.4
+25;Malletts Bay;05/26/1993;1993;NY;6;DO%;98
+25;Malletts Bay;05/26/1993;1993;NY;7;DO%;97.5
+25;Malletts Bay;05/26/1993;1993;NY;8;DO%;97
+25;Malletts Bay;05/26/1993;1993;NY;9;DO%;95
+25;Malletts Bay;05/26/1993;1993;NY;10;DO%;93.3
+25;Malletts Bay;05/26/1993;1993;NY;11;DO%;92.7
+25;Malletts Bay;05/26/1993;1993;NY;12;DO%;92.5
+25;Malletts Bay;05/26/1993;1993;NY;13;DO%;92.5
+25;Malletts Bay;05/26/1993;1993;NY;14;DO%;92.2
+25;Malletts Bay;05/26/1993;1993;NY;15;DO%;92.3
+25;Malletts Bay;05/26/1993;1993;NY;16;DO%;91.9
+25;Malletts Bay;05/26/1993;1993;NY;17;DO%;91.6
+25;Malletts Bay;05/26/1993;1993;NY;18;DO%;91.1
+25;Malletts Bay;05/26/1993;1993;NY;19;DO%;88.9
+25;Malletts Bay;05/26/1993;1993;NY;20;DO%;88.3
+25;Malletts Bay;05/26/1993;1993;NY;21;DO%;87.5
+25;Malletts Bay;05/26/1993;1993;NY;23;DO%;85.9
+25;Malletts Bay;05/26/1993;1993;NY;24;DO%;85.1
+25;Malletts Bay;05/26/1993;1993;NY;25;DO%;84.6
+25;Malletts Bay;05/26/1993;1993;NY;26;DO%;84.2
+25;Malletts Bay;05/26/1993;1993;NY;27;DO%;83.6
+25;Malletts Bay;05/26/1993;1993;NY;28;DO%;83.2
+25;Malletts Bay;05/26/1993;1993;NY;29;DO%;83.1
+25;Malletts Bay;05/26/1993;1993;NY;1;ORP - ug/L;341
+25;Malletts Bay;05/26/1993;1993;NY;2;ORP - ug/L;341
+25;Malletts Bay;05/26/1993;1993;NY;3;ORP - ug/L;341
+25;Malletts Bay;05/26/1993;1993;NY;4;ORP - ug/L;342
+25;Malletts Bay;05/26/1993;1993;NY;5;ORP - ug/L;343
+25;Malletts Bay;05/26/1993;1993;NY;6;ORP - ug/L;344
+25;Malletts Bay;05/26/1993;1993;NY;7;ORP - ug/L;345
+25;Malletts Bay;05/26/1993;1993;NY;8;ORP - ug/L;345
+25;Malletts Bay;05/26/1993;1993;NY;9;ORP - ug/L;348
+25;Malletts Bay;05/26/1993;1993;NY;10;ORP - ug/L;350
+25;Malletts Bay;05/26/1993;1993;NY;11;ORP - ug/L;352
+25;Malletts Bay;05/26/1993;1993;NY;12;ORP - ug/L;352
+25;Malletts Bay;05/26/1993;1993;NY;13;ORP - ug/L;352
+25;Malletts Bay;05/26/1993;1993;NY;14;ORP - ug/L;353
+25;Malletts Bay;05/26/1993;1993;NY;15;ORP - ug/L;353
+25;Malletts Bay;05/26/1993;1993;NY;16;ORP - ug/L;353
+25;Malletts Bay;05/26/1993;1993;NY;17;ORP - ug/L;354
+25;Malletts Bay;05/26/1993;1993;NY;18;ORP - ug/L;354
+25;Malletts Bay;05/26/1993;1993;NY;19;ORP - ug/L;356
+25;Malletts Bay;05/26/1993;1993;NY;20;ORP - ug/L;356
+25;Malletts Bay;05/26/1993;1993;NY;21;ORP - ug/L;357
+25;Malletts Bay;05/26/1993;1993;NY;23;ORP - ug/L;358
+25;Malletts Bay;05/26/1993;1993;NY;24;ORP - ug/L;359
+25;Malletts Bay;05/26/1993;1993;NY;25;ORP - ug/L;359
+25;Malletts Bay;05/26/1993;1993;NY;26;ORP - ug/L;359
+25;Malletts Bay;05/26/1993;1993;NY;27;ORP - ug/L;360
+25;Malletts Bay;05/26/1993;1993;NY;28;ORP - ug/L;360
+25;Malletts Bay;05/26/1993;1993;NY;29;ORP - ug/L;360
+25;Malletts Bay;05/26/1993;1993;NY;1;pH - Units;7.69
+25;Malletts Bay;05/26/1993;1993;NY;2;pH - Units;7.73
+25;Malletts Bay;05/26/1993;1993;NY;3;pH - Units;7.76
+25;Malletts Bay;05/26/1993;1993;NY;4;pH - Units;7.73
+25;Malletts Bay;05/26/1993;1993;NY;5;pH - Units;7.68
+25;Malletts Bay;05/26/1993;1993;NY;6;pH - Units;7.66
+25;Malletts Bay;05/26/1993;1993;NY;7;pH - Units;7.63
+25;Malletts Bay;05/26/1993;1993;NY;8;pH - Units;7.6
+25;Malletts Bay;05/26/1993;1993;NY;9;pH - Units;7.54
+25;Malletts Bay;05/26/1993;1993;NY;10;pH - Units;7.46
+25;Malletts Bay;05/26/1993;1993;NY;11;pH - Units;7.4
+25;Malletts Bay;05/26/1993;1993;NY;12;pH - Units;7.38
+25;Malletts Bay;05/26/1993;1993;NY;13;pH - Units;7.38
+25;Malletts Bay;05/26/1993;1993;NY;14;pH - Units;7.37
+25;Malletts Bay;05/26/1993;1993;NY;15;pH - Units;7.36
+25;Malletts Bay;05/26/1993;1993;NY;16;pH - Units;7.35
+25;Malletts Bay;05/26/1993;1993;NY;17;pH - Units;7.35
+25;Malletts Bay;05/26/1993;1993;NY;18;pH - Units;7.33
+25;Malletts Bay;05/26/1993;1993;NY;19;pH - Units;7.29
+25;Malletts Bay;05/26/1993;1993;NY;20;pH - Units;7.27
+25;Malletts Bay;05/26/1993;1993;NY;21;pH - Units;7.25
+25;Malletts Bay;05/26/1993;1993;NY;23;pH - Units;7.21
+25;Malletts Bay;05/26/1993;1993;NY;24;pH - Units;7.19
+25;Malletts Bay;05/26/1993;1993;NY;25;pH - Units;7.18
+25;Malletts Bay;05/26/1993;1993;NY;26;pH - Units;7.17
+25;Malletts Bay;05/26/1993;1993;NY;27;pH - Units;7.16
+25;Malletts Bay;05/26/1993;1993;NY;28;pH - Units;7.15
+25;Malletts Bay;05/26/1993;1993;NY;29;pH - Units;7.16
+25;Malletts Bay;05/26/1993;1993;NY;1;TempC - deg C;12.61
+25;Malletts Bay;05/26/1993;1993;NY;2;TempC - deg C;12.48
+25;Malletts Bay;05/26/1993;1993;NY;3;TempC - deg C;11.84
+25;Malletts Bay;05/26/1993;1993;NY;4;TempC - deg C;11.56
+25;Malletts Bay;05/26/1993;1993;NY;5;TempC - deg C;11.41
+25;Malletts Bay;05/26/1993;1993;NY;6;TempC - deg C;11.3
+25;Malletts Bay;05/26/1993;1993;NY;7;TempC - deg C;11.1
+25;Malletts Bay;05/26/1993;1993;NY;8;TempC - deg C;11.01
+25;Malletts Bay;05/26/1993;1993;NY;9;TempC - deg C;10.07
+25;Malletts Bay;05/26/1993;1993;NY;10;TempC - deg C;9.61
+25;Malletts Bay;05/26/1993;1993;NY;11;TempC - deg C;9.27
+25;Malletts Bay;05/26/1993;1993;NY;12;TempC - deg C;9.17
+25;Malletts Bay;05/26/1993;1993;NY;13;TempC - deg C;9.12
+25;Malletts Bay;05/26/1993;1993;NY;14;TempC - deg C;9
+25;Malletts Bay;05/26/1993;1993;NY;15;TempC - deg C;8.95
+25;Malletts Bay;05/26/1993;1993;NY;16;TempC - deg C;8.66
+25;Malletts Bay;05/26/1993;1993;NY;17;TempC - deg C;8.38
+25;Malletts Bay;05/26/1993;1993;NY;18;TempC - deg C;8.18
+25;Malletts Bay;05/26/1993;1993;NY;19;TempC - deg C;7.49
+25;Malletts Bay;05/26/1993;1993;NY;20;TempC - deg C;7.27
+25;Malletts Bay;05/26/1993;1993;NY;21;TempC - deg C;7.11
+25;Malletts Bay;05/26/1993;1993;NY;23;TempC - deg C;6.69
+25;Malletts Bay;05/26/1993;1993;NY;24;TempC - deg C;6.56
+25;Malletts Bay;05/26/1993;1993;NY;25;TempC - deg C;6.51
+25;Malletts Bay;05/26/1993;1993;NY;26;TempC - deg C;6.44
+25;Malletts Bay;05/26/1993;1993;NY;27;TempC - deg C;6.42
+25;Malletts Bay;05/26/1993;1993;NY;28;TempC - deg C;6.42
+25;Malletts Bay;05/26/1993;1993;NY;29;TempC - deg C;6.41
+25;Malletts Bay;06.09.1993;1993;NY;1;Cond - uS/cm;122.1
+25;Malletts Bay;06.09.1993;1993;NY;2;Cond - uS/cm;121.9
+25;Malletts Bay;06.09.1993;1993;NY;3;Cond - uS/cm;121.9
+25;Malletts Bay;06.09.1993;1993;NY;4;Cond - uS/cm;121.9
+25;Malletts Bay;06.09.1993;1993;NY;5;Cond - uS/cm;121.9
+25;Malletts Bay;06.09.1993;1993;NY;6;Cond - uS/cm;121.8
+25;Malletts Bay;06.09.1993;1993;NY;7;Cond - uS/cm;121.2
+25;Malletts Bay;06.09.1993;1993;NY;8;Cond - uS/cm;120.8
+25;Malletts Bay;06.09.1993;1993;NY;9;Cond - uS/cm;120.3
+25;Malletts Bay;06.09.1993;1993;NY;10;Cond - uS/cm;119.7
+25;Malletts Bay;06.09.1993;1993;NY;11;Cond - uS/cm;119.4
+25;Malletts Bay;06.09.1993;1993;NY;12;Cond - uS/cm;119.2
+25;Malletts Bay;06.09.1993;1993;NY;13;Cond - uS/cm;119
+25;Malletts Bay;06.09.1993;1993;NY;14;Cond - uS/cm;118.7
+25;Malletts Bay;06.09.1993;1993;NY;15;Cond - uS/cm;118.6
+25;Malletts Bay;06.09.1993;1993;NY;16;Cond - uS/cm;118.3
+25;Malletts Bay;06.09.1993;1993;NY;17;Cond - uS/cm;118.1
+25;Malletts Bay;06.09.1993;1993;NY;18;Cond - uS/cm;117.9
+25;Malletts Bay;06.09.1993;1993;NY;19;Cond - uS/cm;117.9
+25;Malletts Bay;06.09.1993;1993;NY;20;Cond - uS/cm;117.1
+25;Malletts Bay;06.09.1993;1993;NY;21;Cond - uS/cm;116.2
+25;Malletts Bay;06.09.1993;1993;NY;22;Cond - uS/cm;115.9
+25;Malletts Bay;06.09.1993;1993;NY;23;Cond - uS/cm;115.1
+25;Malletts Bay;06.09.1993;1993;NY;24;Cond - uS/cm;114.9
+25;Malletts Bay;06.09.1993;1993;NY;25;Cond - uS/cm;114.9
+25;Malletts Bay;06.09.1993;1993;NY;26;Cond - uS/cm;114.9
+25;Malletts Bay;06.09.1993;1993;NY;27;Cond - uS/cm;114.9
+25;Malletts Bay;06.09.1993;1993;NY;28;Cond - uS/cm;114.8
+25;Malletts Bay;06.09.1993;1993;NY;29;Cond - uS/cm;114.9
+25;Malletts Bay;06.09.1993;1993;NY;30;Cond - uS/cm;114.9
+25;Malletts Bay;06.09.1993;1993;NY;31;Cond - uS/cm;115
+25;Malletts Bay;06.09.1993;1993;NY;1;DO - mg/L;10.02
+25;Malletts Bay;06.09.1993;1993;NY;2;DO - mg/L;10.12
+25;Malletts Bay;06.09.1993;1993;NY;3;DO - mg/L;10.17
+25;Malletts Bay;06.09.1993;1993;NY;4;DO - mg/L;10.2
+25;Malletts Bay;06.09.1993;1993;NY;5;DO - mg/L;10.19
+25;Malletts Bay;06.09.1993;1993;NY;6;DO - mg/L;10.16
+25;Malletts Bay;06.09.1993;1993;NY;7;DO - mg/L;10.04
+25;Malletts Bay;06.09.1993;1993;NY;8;DO - mg/L;9.96
+25;Malletts Bay;06.09.1993;1993;NY;9;DO - mg/L;9.88
+25;Malletts Bay;06.09.1993;1993;NY;10;DO - mg/L;9.8
+25;Malletts Bay;06.09.1993;1993;NY;11;DO - mg/L;9.73
+25;Malletts Bay;06.09.1993;1993;NY;12;DO - mg/L;9.71
+25;Malletts Bay;06.09.1993;1993;NY;13;DO - mg/L;9.64
+25;Malletts Bay;06.09.1993;1993;NY;14;DO - mg/L;9.62
+25;Malletts Bay;06.09.1993;1993;NY;15;DO - mg/L;9.57
+25;Malletts Bay;06.09.1993;1993;NY;16;DO - mg/L;9.53
+25;Malletts Bay;06.09.1993;1993;NY;17;DO - mg/L;9.53
+25;Malletts Bay;06.09.1993;1993;NY;18;DO - mg/L;9.49
+25;Malletts Bay;06.09.1993;1993;NY;19;DO - mg/L;9.48
+25;Malletts Bay;06.09.1993;1993;NY;20;DO - mg/L;9.39
+25;Malletts Bay;06.09.1993;1993;NY;21;DO - mg/L;9.37
+25;Malletts Bay;06.09.1993;1993;NY;22;DO - mg/L;9.37
+25;Malletts Bay;06.09.1993;1993;NY;23;DO - mg/L;9.2
+25;Malletts Bay;06.09.1993;1993;NY;24;DO - mg/L;9.04
+25;Malletts Bay;06.09.1993;1993;NY;25;DO - mg/L;8.98
+25;Malletts Bay;06.09.1993;1993;NY;26;DO - mg/L;8.98
+25;Malletts Bay;06.09.1993;1993;NY;27;DO - mg/L;8.87
+25;Malletts Bay;06.09.1993;1993;NY;28;DO - mg/L;8.66
+25;Malletts Bay;06.09.1993;1993;NY;29;DO - mg/L;8.52
+25;Malletts Bay;06.09.1993;1993;NY;30;DO - mg/L;8.51
+25;Malletts Bay;06.09.1993;1993;NY;31;DO - mg/L;8.49
+25;Malletts Bay;06.09.1993;1993;NY;1;DO%;99
+25;Malletts Bay;06.09.1993;1993;NY;2;DO%;98.9
+25;Malletts Bay;06.09.1993;1993;NY;3;DO%;99.1
+25;Malletts Bay;06.09.1993;1993;NY;4;DO%;99.2
+25;Malletts Bay;06.09.1993;1993;NY;5;DO%;99.1
+25;Malletts Bay;06.09.1993;1993;NY;6;DO%;98.6
+25;Malletts Bay;06.09.1993;1993;NY;7;DO%;95.4
+25;Malletts Bay;06.09.1993;1993;NY;8;DO%;94
+25;Malletts Bay;06.09.1993;1993;NY;9;DO%;92.6
+25;Malletts Bay;06.09.1993;1993;NY;10;DO%;90.6
+25;Malletts Bay;06.09.1993;1993;NY;11;DO%;89.3
+25;Malletts Bay;06.09.1993;1993;NY;12;DO%;88.4
+25;Malletts Bay;06.09.1993;1993;NY;13;DO%;87.5
+25;Malletts Bay;06.09.1993;1993;NY;14;DO%;86.9
+25;Malletts Bay;06.09.1993;1993;NY;15;DO%;86.1
+25;Malletts Bay;06.09.1993;1993;NY;16;DO%;85.3
+25;Malletts Bay;06.09.1993;1993;NY;17;DO%;84.6
+25;Malletts Bay;06.09.1993;1993;NY;18;DO%;84.2
+25;Malletts Bay;06.09.1993;1993;NY;19;DO%;84
+25;Malletts Bay;06.09.1993;1993;NY;20;DO%;82.5
+25;Malletts Bay;06.09.1993;1993;NY;21;DO%;81.1
+25;Malletts Bay;06.09.1993;1993;NY;22;DO%;79.7
+25;Malletts Bay;06.09.1993;1993;NY;23;DO%;77.1
+25;Malletts Bay;06.09.1993;1993;NY;24;DO%;75.5
+25;Malletts Bay;06.09.1993;1993;NY;25;DO%;75
+25;Malletts Bay;06.09.1993;1993;NY;26;DO%;74.7
+25;Malletts Bay;06.09.1993;1993;NY;27;DO%;73.9
+25;Malletts Bay;06.09.1993;1993;NY;28;DO%;72.1
+25;Malletts Bay;06.09.1993;1993;NY;29;DO%;70.8
+25;Malletts Bay;06.09.1993;1993;NY;30;DO%;70.6
+25;Malletts Bay;06.09.1993;1993;NY;31;DO%;70.4
+25;Malletts Bay;06.09.1993;1993;NY;1;ORP - ug/L;337
+25;Malletts Bay;06.09.1993;1993;NY;2;ORP - ug/L;336
+25;Malletts Bay;06.09.1993;1993;NY;3;ORP - ug/L;336
+25;Malletts Bay;06.09.1993;1993;NY;4;ORP - ug/L;336
+25;Malletts Bay;06.09.1993;1993;NY;5;ORP - ug/L;336
+25;Malletts Bay;06.09.1993;1993;NY;6;ORP - ug/L;337
+25;Malletts Bay;06.09.1993;1993;NY;7;ORP - ug/L;340
+25;Malletts Bay;06.09.1993;1993;NY;8;ORP - ug/L;342
+25;Malletts Bay;06.09.1993;1993;NY;9;ORP - ug/L;343
+25;Malletts Bay;06.09.1993;1993;NY;10;ORP - ug/L;345
+25;Malletts Bay;06.09.1993;1993;NY;11;ORP - ug/L;346
+25;Malletts Bay;06.09.1993;1993;NY;12;ORP - ug/L;348
+25;Malletts Bay;06.09.1993;1993;NY;13;ORP - ug/L;349
+25;Malletts Bay;06.09.1993;1993;NY;14;ORP - ug/L;350
+25;Malletts Bay;06.09.1993;1993;NY;15;ORP - ug/L;351
+25;Malletts Bay;06.09.1993;1993;NY;16;ORP - ug/L;352
+25;Malletts Bay;06.09.1993;1993;NY;17;ORP - ug/L;353
+25;Malletts Bay;06.09.1993;1993;NY;18;ORP - ug/L;354
+25;Malletts Bay;06.09.1993;1993;NY;19;ORP - ug/L;354
+25;Malletts Bay;06.09.1993;1993;NY;20;ORP - ug/L;355
+25;Malletts Bay;06.09.1993;1993;NY;21;ORP - ug/L;356
+25;Malletts Bay;06.09.1993;1993;NY;22;ORP - ug/L;357
+25;Malletts Bay;06.09.1993;1993;NY;23;ORP - ug/L;359
+25;Malletts Bay;06.09.1993;1993;NY;24;ORP - ug/L;360
+25;Malletts Bay;06.09.1993;1993;NY;25;ORP - ug/L;361
+25;Malletts Bay;06.09.1993;1993;NY;26;ORP - ug/L;361
+25;Malletts Bay;06.09.1993;1993;NY;27;ORP - ug/L;362
+25;Malletts Bay;06.09.1993;1993;NY;28;ORP - ug/L;364
+25;Malletts Bay;06.09.1993;1993;NY;29;ORP - ug/L;365
+25;Malletts Bay;06.09.1993;1993;NY;30;ORP - ug/L;365
+25;Malletts Bay;06.09.1993;1993;NY;31;ORP - ug/L;365
+25;Malletts Bay;06.09.1993;1993;NY;1;pH - Units;8.01
+25;Malletts Bay;06.09.1993;1993;NY;2;pH - Units;8.03
+25;Malletts Bay;06.09.1993;1993;NY;3;pH - Units;8.05
+25;Malletts Bay;06.09.1993;1993;NY;4;pH - Units;8.05
+25;Malletts Bay;06.09.1993;1993;NY;5;pH - Units;8.04
+25;Malletts Bay;06.09.1993;1993;NY;6;pH - Units;8.02
+25;Malletts Bay;06.09.1993;1993;NY;7;pH - Units;7.9
+25;Malletts Bay;06.09.1993;1993;NY;8;pH - Units;7.85
+25;Malletts Bay;06.09.1993;1993;NY;9;pH - Units;7.79
+25;Malletts Bay;06.09.1993;1993;NY;10;pH - Units;7.71
+25;Malletts Bay;06.09.1993;1993;NY;11;pH - Units;7.66
+25;Malletts Bay;06.09.1993;1993;NY;12;pH - Units;7.62
+25;Malletts Bay;06.09.1993;1993;NY;13;pH - Units;7.57
+25;Malletts Bay;06.09.1993;1993;NY;14;pH - Units;7.54
+25;Malletts Bay;06.09.1993;1993;NY;15;pH - Units;7.5
+25;Malletts Bay;06.09.1993;1993;NY;16;pH - Units;7.47
+25;Malletts Bay;06.09.1993;1993;NY;17;pH - Units;7.44
+25;Malletts Bay;06.09.1993;1993;NY;18;pH - Units;7.42
+25;Malletts Bay;06.09.1993;1993;NY;19;pH - Units;7.41
+25;Malletts Bay;06.09.1993;1993;NY;20;pH - Units;7.38
+25;Malletts Bay;06.09.1993;1993;NY;21;pH - Units;7.36
+25;Malletts Bay;06.09.1993;1993;NY;22;pH - Units;7.34
+25;Malletts Bay;06.09.1993;1993;NY;23;pH - Units;7.3
+25;Malletts Bay;06.09.1993;1993;NY;24;pH - Units;7.26
+25;Malletts Bay;06.09.1993;1993;NY;25;pH - Units;7.23
+25;Malletts Bay;06.09.1993;1993;NY;26;pH - Units;7.21
+25;Malletts Bay;06.09.1993;1993;NY;27;pH - Units;7.19
+25;Malletts Bay;06.09.1993;1993;NY;28;pH - Units;7.14
+25;Malletts Bay;06.09.1993;1993;NY;29;pH - Units;7.1
+25;Malletts Bay;06.09.1993;1993;NY;30;pH - Units;7.09
+25;Malletts Bay;06.09.1993;1993;NY;31;pH - Units;7.09
+25;Malletts Bay;06.09.1993;1993;NY;1;TempC - deg C;14.8
+25;Malletts Bay;06.09.1993;1993;NY;2;TempC - deg C;14.29
+25;Malletts Bay;06.09.1993;1993;NY;3;TempC - deg C;14.17
+25;Malletts Bay;06.09.1993;1993;NY;4;TempC - deg C;14.11
+25;Malletts Bay;06.09.1993;1993;NY;5;TempC - deg C;14.06
+25;Malletts Bay;06.09.1993;1993;NY;6;TempC - deg C;14.01
+25;Malletts Bay;06.09.1993;1993;NY;7;TempC - deg C;13.04
+25;Malletts Bay;06.09.1993;1993;NY;8;TempC - deg C;12.73
+25;Malletts Bay;06.09.1993;1993;NY;9;TempC - deg C;12.4
+25;Malletts Bay;06.09.1993;1993;NY;10;TempC - deg C;11.81
+25;Malletts Bay;06.09.1993;1993;NY;11;TempC - deg C;11.53
+25;Malletts Bay;06.09.1993;1993;NY;12;TempC - deg C;11.18
+25;Malletts Bay;06.09.1993;1993;NY;13;TempC - deg C;11.04
+25;Malletts Bay;06.09.1993;1993;NY;14;TempC - deg C;10.79
+25;Malletts Bay;06.09.1993;1993;NY;15;TempC - deg C;10.63
+25;Malletts Bay;06.09.1993;1993;NY;16;TempC - deg C;10.42
+25;Malletts Bay;06.09.1993;1993;NY;17;TempC - deg C;10.07
+25;Malletts Bay;06.09.1993;1993;NY;18;TempC - deg C;10.03
+25;Malletts Bay;06.09.1993;1993;NY;19;TempC - deg C;9.99
+25;Malletts Bay;06.09.1993;1993;NY;20;TempC - deg C;9.62
+25;Malletts Bay;06.09.1993;1993;NY;21;TempC - deg C;9.01
+25;Malletts Bay;06.09.1993;1993;NY;22;TempC - deg C;8.24
+25;Malletts Bay;06.09.1993;1993;NY;23;TempC - deg C;7.63
+25;Malletts Bay;06.09.1993;1993;NY;24;TempC - deg C;7.55
+25;Malletts Bay;06.09.1993;1993;NY;25;TempC - deg C;7.5
+25;Malletts Bay;06.09.1993;1993;NY;26;TempC - deg C;7.4
+25;Malletts Bay;06.09.1993;1993;NY;27;TempC - deg C;7.41
+25;Malletts Bay;06.09.1993;1993;NY;28;TempC - deg C;7.42
+25;Malletts Bay;06.09.1993;1993;NY;29;TempC - deg C;7.31
+25;Malletts Bay;06.09.1993;1993;NY;30;TempC - deg C;7.27
+25;Malletts Bay;06.09.1993;1993;NY;31;TempC - deg C;7.26
+25;Malletts Bay;06/29/1993;1993;NY;1;Cond - uS/cm;125.4
+25;Malletts Bay;06/29/1993;1993;NY;2;Cond - uS/cm;125.4
+25;Malletts Bay;06/29/1993;1993;NY;3;Cond - uS/cm;125.3
+25;Malletts Bay;06/29/1993;1993;NY;4;Cond - uS/cm;125.2
+25;Malletts Bay;06/29/1993;1993;NY;5;Cond - uS/cm;125
+25;Malletts Bay;06/29/1993;1993;NY;6;Cond - uS/cm;125.2
+25;Malletts Bay;06/29/1993;1993;NY;7;Cond - uS/cm;125.2
+25;Malletts Bay;06/29/1993;1993;NY;8;Cond - uS/cm;124.8
+25;Malletts Bay;06/29/1993;1993;NY;9;Cond - uS/cm;124.6
+25;Malletts Bay;06/29/1993;1993;NY;10;Cond - uS/cm;123.9
+25;Malletts Bay;06/29/1993;1993;NY;11;Cond - uS/cm;123.8
+25;Malletts Bay;06/29/1993;1993;NY;12;Cond - uS/cm;123.4
+25;Malletts Bay;06/29/1993;1993;NY;13;Cond - uS/cm;122.3
+25;Malletts Bay;06/29/1993;1993;NY;14;Cond - uS/cm;120.6
+25;Malletts Bay;06/29/1993;1993;NY;15;Cond - uS/cm;119.2
+25;Malletts Bay;06/29/1993;1993;NY;16;Cond - uS/cm;117.8
+25;Malletts Bay;06/29/1993;1993;NY;17;Cond - uS/cm;118.2
+25;Malletts Bay;06/29/1993;1993;NY;18;Cond - uS/cm;118.2
+25;Malletts Bay;06/29/1993;1993;NY;19;Cond - uS/cm;117.2
+25;Malletts Bay;06/29/1993;1993;NY;20;Cond - uS/cm;116.8
+25;Malletts Bay;06/29/1993;1993;NY;21;Cond - uS/cm;116.8
+25;Malletts Bay;06/29/1993;1993;NY;22;Cond - uS/cm;116.5
+25;Malletts Bay;06/29/1993;1993;NY;23;Cond - uS/cm;116.4
+25;Malletts Bay;06/29/1993;1993;NY;24;Cond - uS/cm;116.1
+25;Malletts Bay;06/29/1993;1993;NY;25;Cond - uS/cm;116.2
+25;Malletts Bay;06/29/1993;1993;NY;26;Cond - uS/cm;115.9
+25;Malletts Bay;06/29/1993;1993;NY;27;Cond - uS/cm;116.2
+25;Malletts Bay;06/29/1993;1993;NY;28;Cond - uS/cm;116.3
+25;Malletts Bay;06/29/1993;1993;NY;29;Cond - uS/cm;116.6
+25;Malletts Bay;06/29/1993;1993;NY;30;Cond - uS/cm;117.5
+25;Malletts Bay;06/29/1993;1993;NY;1;DO - mg/L;8.23
+25;Malletts Bay;06/29/1993;1993;NY;2;DO - mg/L;8.38
+25;Malletts Bay;06/29/1993;1993;NY;3;DO - mg/L;8.38
+25;Malletts Bay;06/29/1993;1993;NY;4;DO - mg/L;8.39
+25;Malletts Bay;06/29/1993;1993;NY;5;DO - mg/L;8.41
+25;Malletts Bay;06/29/1993;1993;NY;6;DO - mg/L;8.42
+25;Malletts Bay;06/29/1993;1993;NY;7;DO - mg/L;8.39
+25;Malletts Bay;06/29/1993;1993;NY;8;DO - mg/L;8.17
+25;Malletts Bay;06/29/1993;1993;NY;9;DO - mg/L;8.14
+25;Malletts Bay;06/29/1993;1993;NY;10;DO - mg/L;8.14
+25;Malletts Bay;06/29/1993;1993;NY;11;DO - mg/L;8.09
+25;Malletts Bay;06/29/1993;1993;NY;12;DO - mg/L;8.06
+25;Malletts Bay;06/29/1993;1993;NY;13;DO - mg/L;8.05
+25;Malletts Bay;06/29/1993;1993;NY;14;DO - mg/L;8.01
+25;Malletts Bay;06/29/1993;1993;NY;15;DO - mg/L;7.91
+25;Malletts Bay;06/29/1993;1993;NY;16;DO - mg/L;7.78
+25;Malletts Bay;06/29/1993;1993;NY;17;DO - mg/L;7.72
+25;Malletts Bay;06/29/1993;1993;NY;18;DO - mg/L;7.68
+25;Malletts Bay;06/29/1993;1993;NY;19;DO - mg/L;7.46
+25;Malletts Bay;06/29/1993;1993;NY;20;DO - mg/L;7.13
+25;Malletts Bay;06/29/1993;1993;NY;21;DO - mg/L;6.88
+25;Malletts Bay;06/29/1993;1993;NY;22;DO - mg/L;6.76
+25;Malletts Bay;06/29/1993;1993;NY;23;DO - mg/L;6.69
+25;Malletts Bay;06/29/1993;1993;NY;24;DO - mg/L;6.65
+25;Malletts Bay;06/29/1993;1993;NY;25;DO - mg/L;6.43
+25;Malletts Bay;06/29/1993;1993;NY;26;DO - mg/L;6.39
+25;Malletts Bay;06/29/1993;1993;NY;27;DO - mg/L;6.4
+25;Malletts Bay;06/29/1993;1993;NY;28;DO - mg/L;6.4
+25;Malletts Bay;06/29/1993;1993;NY;29;DO - mg/L;6.4
+25;Malletts Bay;06/29/1993;1993;NY;30;DO - mg/L;6.17
+25;Malletts Bay;06/29/1993;1993;NY;1;DO%;90
+25;Malletts Bay;06/29/1993;1993;NY;2;DO%;91
+25;Malletts Bay;06/29/1993;1993;NY;3;DO%;90.7
+25;Malletts Bay;06/29/1993;1993;NY;4;DO%;90.6
+25;Malletts Bay;06/29/1993;1993;NY;5;DO%;90.6
+25;Malletts Bay;06/29/1993;1993;NY;6;DO%;90.4
+25;Malletts Bay;06/29/1993;1993;NY;7;DO%;90
+25;Malletts Bay;06/29/1993;1993;NY;8;DO%;86.5
+25;Malletts Bay;06/29/1993;1993;NY;9;DO%;85.3
+25;Malletts Bay;06/29/1993;1993;NY;10;DO%;84.2
+25;Malletts Bay;06/29/1993;1993;NY;11;DO%;82.9
+25;Malletts Bay;06/29/1993;1993;NY;12;DO%;80.3
+25;Malletts Bay;06/29/1993;1993;NY;13;DO%;77.9
+25;Malletts Bay;06/29/1993;1993;NY;14;DO%;75
+25;Malletts Bay;06/29/1993;1993;NY;15;DO%;71.3
+25;Malletts Bay;06/29/1993;1993;NY;16;DO%;68.6
+25;Malletts Bay;06/29/1993;1993;NY;17;DO%;67.3
+25;Malletts Bay;06/29/1993;1993;NY;18;DO%;66.8
+25;Malletts Bay;06/29/1993;1993;NY;19;DO%;64.6
+25;Malletts Bay;06/29/1993;1993;NY;20;DO%;60.9
+25;Malletts Bay;06/29/1993;1993;NY;21;DO%;58.4
+25;Malletts Bay;06/29/1993;1993;NY;22;DO%;57.4
+25;Malletts Bay;06/29/1993;1993;NY;23;DO%;56.6
+25;Malletts Bay;06/29/1993;1993;NY;24;DO%;56.2
+25;Malletts Bay;06/29/1993;1993;NY;25;DO%;54.3
+25;Malletts Bay;06/29/1993;1993;NY;26;DO%;54
+25;Malletts Bay;06/29/1993;1993;NY;27;DO%;54
+25;Malletts Bay;06/29/1993;1993;NY;28;DO%;54
+25;Malletts Bay;06/29/1993;1993;NY;29;DO%;54
+25;Malletts Bay;06/29/1993;1993;NY;30;DO%;52.1
+25;Malletts Bay;06/29/1993;1993;NY;1;ORP - ug/L;334
+25;Malletts Bay;06/29/1993;1993;NY;2;ORP - ug/L;338
+25;Malletts Bay;06/29/1993;1993;NY;3;ORP - ug/L;338
+25;Malletts Bay;06/29/1993;1993;NY;4;ORP - ug/L;339
+25;Malletts Bay;06/29/1993;1993;NY;5;ORP - ug/L;339
+25;Malletts Bay;06/29/1993;1993;NY;6;ORP - ug/L;340
+25;Malletts Bay;06/29/1993;1993;NY;7;ORP - ug/L;341
+25;Malletts Bay;06/29/1993;1993;NY;8;ORP - ug/L;345
+25;Malletts Bay;06/29/1993;1993;NY;9;ORP - ug/L;346
+25;Malletts Bay;06/29/1993;1993;NY;10;ORP - ug/L;349
+25;Malletts Bay;06/29/1993;1993;NY;11;ORP - ug/L;350
+25;Malletts Bay;06/29/1993;1993;NY;12;ORP - ug/L;351
+25;Malletts Bay;06/29/1993;1993;NY;13;ORP - ug/L;352
+25;Malletts Bay;06/29/1993;1993;NY;14;ORP - ug/L;355
+25;Malletts Bay;06/29/1993;1993;NY;15;ORP - ug/L;356
+25;Malletts Bay;06/29/1993;1993;NY;16;ORP - ug/L;359
+25;Malletts Bay;06/29/1993;1993;NY;17;ORP - ug/L;360
+25;Malletts Bay;06/29/1993;1993;NY;18;ORP - ug/L;361
+25;Malletts Bay;06/29/1993;1993;NY;19;ORP - ug/L;362
+25;Malletts Bay;06/29/1993;1993;NY;20;ORP - ug/L;364
+25;Malletts Bay;06/29/1993;1993;NY;21;ORP - ug/L;365
+25;Malletts Bay;06/29/1993;1993;NY;22;ORP - ug/L;365
+25;Malletts Bay;06/29/1993;1993;NY;23;ORP - ug/L;367
+25;Malletts Bay;06/29/1993;1993;NY;24;ORP - ug/L;367
+25;Malletts Bay;06/29/1993;1993;NY;25;ORP - ug/L;368
+25;Malletts Bay;06/29/1993;1993;NY;26;ORP - ug/L;369
+25;Malletts Bay;06/29/1993;1993;NY;27;ORP - ug/L;370
+25;Malletts Bay;06/29/1993;1993;NY;28;ORP - ug/L;370
+25;Malletts Bay;06/29/1993;1993;NY;29;ORP - ug/L;370
+25;Malletts Bay;06/29/1993;1993;NY;30;ORP - ug/L;337
+25;Malletts Bay;06/29/1993;1993;NY;1;pH - Units;7.85
+25;Malletts Bay;06/29/1993;1993;NY;2;pH - Units;7.95
+25;Malletts Bay;06/29/1993;1993;NY;3;pH - Units;7.95
+25;Malletts Bay;06/29/1993;1993;NY;4;pH - Units;7.95
+25;Malletts Bay;06/29/1993;1993;NY;5;pH - Units;7.95
+25;Malletts Bay;06/29/1993;1993;NY;6;pH - Units;7.94
+25;Malletts Bay;06/29/1993;1993;NY;7;pH - Units;7.92
+25;Malletts Bay;06/29/1993;1993;NY;8;pH - Units;7.76
+25;Malletts Bay;06/29/1993;1993;NY;9;pH - Units;7.71
+25;Malletts Bay;06/29/1993;1993;NY;10;pH - Units;7.61
+25;Malletts Bay;06/29/1993;1993;NY;11;pH - Units;7.58
+25;Malletts Bay;06/29/1993;1993;NY;12;pH - Units;7.54
+25;Malletts Bay;06/29/1993;1993;NY;13;pH - Units;7.5
+25;Malletts Bay;06/29/1993;1993;NY;14;pH - Units;7.43
+25;Malletts Bay;06/29/1993;1993;NY;15;pH - Units;7.37
+25;Malletts Bay;06/29/1993;1993;NY;16;pH - Units;7.3
+25;Malletts Bay;06/29/1993;1993;NY;17;pH - Units;7.27
+25;Malletts Bay;06/29/1993;1993;NY;18;pH - Units;7.24
+25;Malletts Bay;06/29/1993;1993;NY;19;pH - Units;7.2
+25;Malletts Bay;06/29/1993;1993;NY;20;pH - Units;7.17
+25;Malletts Bay;06/29/1993;1993;NY;21;pH - Units;7.14
+25;Malletts Bay;06/29/1993;1993;NY;22;pH - Units;7.13
+25;Malletts Bay;06/29/1993;1993;NY;23;pH - Units;7.09
+25;Malletts Bay;06/29/1993;1993;NY;24;pH - Units;7.08
+25;Malletts Bay;06/29/1993;1993;NY;25;pH - Units;7.04
+25;Malletts Bay;06/29/1993;1993;NY;26;pH - Units;7.03
+25;Malletts Bay;06/29/1993;1993;NY;27;pH - Units;7.02
+25;Malletts Bay;06/29/1993;1993;NY;28;pH - Units;7.01
+25;Malletts Bay;06/29/1993;1993;NY;29;pH - Units;7.01
+25;Malletts Bay;06/29/1993;1993;NY;30;pH - Units;7.01
+25;Malletts Bay;06/29/1993;1993;NY;1;TempC - deg C;19.75
+25;Malletts Bay;06/29/1993;1993;NY;2;TempC - deg C;19.33
+25;Malletts Bay;06/29/1993;1993;NY;3;TempC - deg C;19.16
+25;Malletts Bay;06/29/1993;1993;NY;4;TempC - deg C;19.09
+25;Malletts Bay;06/29/1993;1993;NY;5;TempC - deg C;18.96
+25;Malletts Bay;06/29/1993;1993;NY;6;TempC - deg C;18.81
+25;Malletts Bay;06/29/1993;1993;NY;7;TempC - deg C;18.73
+25;Malletts Bay;06/29/1993;1993;NY;8;TempC - deg C;18.08
+25;Malletts Bay;06/29/1993;1993;NY;9;TempC - deg C;17.61
+25;Malletts Bay;06/29/1993;1993;NY;10;TempC - deg C;16.96
+25;Malletts Bay;06/29/1993;1993;NY;11;TempC - deg C;16.53
+25;Malletts Bay;06/29/1993;1993;NY;12;TempC - deg C;15.23
+25;Malletts Bay;06/29/1993;1993;NY;13;TempC - deg C;13.86
+25;Malletts Bay;06/29/1993;1993;NY;14;TempC - deg C;12.39
+25;Malletts Bay;06/29/1993;1993;NY;15;TempC - deg C;10.72
+25;Malletts Bay;06/29/1993;1993;NY;16;TempC - deg C;9.77
+25;Malletts Bay;06/29/1993;1993;NY;17;TempC - deg C;9.32
+25;Malletts Bay;06/29/1993;1993;NY;18;TempC - deg C;9.17
+25;Malletts Bay;06/29/1993;1993;NY;19;TempC - deg C;9
+25;Malletts Bay;06/29/1993;1993;NY;20;TempC - deg C;8.44
+25;Malletts Bay;06/29/1993;1993;NY;21;TempC - deg C;8.25
+25;Malletts Bay;06/29/1993;1993;NY;22;TempC - deg C;8.16
+25;Malletts Bay;06/29/1993;1993;NY;23;TempC - deg C;8.11
+25;Malletts Bay;06/29/1993;1993;NY;24;TempC - deg C;8.01
+25;Malletts Bay;06/29/1993;1993;NY;25;TempC - deg C;8.01
+25;Malletts Bay;06/29/1993;1993;NY;26;TempC - deg C;8.04
+25;Malletts Bay;06/29/1993;1993;NY;27;TempC - deg C;7.96
+25;Malletts Bay;06/29/1993;1993;NY;28;TempC - deg C;7.94
+25;Malletts Bay;06/29/1993;1993;NY;29;TempC - deg C;7.93
+25;Malletts Bay;06/29/1993;1993;NY;30;TempC - deg C;7.94
+25;Malletts Bay;07.08.1993;1993;NY;1;Cond - uS/cm;128.5
+25;Malletts Bay;07.08.1993;1993;NY;2;Cond - uS/cm;127.8
+25;Malletts Bay;07.08.1993;1993;NY;3;Cond - uS/cm;127.2
+25;Malletts Bay;07.08.1993;1993;NY;4;Cond - uS/cm;126.8
+25;Malletts Bay;07.08.1993;1993;NY;5;Cond - uS/cm;127.7
+25;Malletts Bay;07.08.1993;1993;NY;6;Cond - uS/cm;126.7
+25;Malletts Bay;07.08.1993;1993;NY;7;Cond - uS/cm;126.4
+25;Malletts Bay;07.08.1993;1993;NY;8;Cond - uS/cm;126.2
+25;Malletts Bay;07.08.1993;1993;NY;9;Cond - uS/cm;125.8
+25;Malletts Bay;07.08.1993;1993;NY;10;Cond - uS/cm;125.3
+25;Malletts Bay;07.08.1993;1993;NY;11;Cond - uS/cm;123.8
+25;Malletts Bay;07.08.1993;1993;NY;12;Cond - uS/cm;122.9
+25;Malletts Bay;07.08.1993;1993;NY;13;Cond - uS/cm;121.7
+25;Malletts Bay;07.08.1993;1993;NY;14;Cond - uS/cm;121.1
+25;Malletts Bay;07.08.1993;1993;NY;15;Cond - uS/cm;120.7
+25;Malletts Bay;07.08.1993;1993;NY;16;Cond - uS/cm;119.6
+25;Malletts Bay;07.08.1993;1993;NY;17;Cond - uS/cm;119.1
+25;Malletts Bay;07.08.1993;1993;NY;18;Cond - uS/cm;118.8
+25;Malletts Bay;07.08.1993;1993;NY;19;Cond - uS/cm;118.4
+25;Malletts Bay;07.08.1993;1993;NY;20;Cond - uS/cm;117.9
+25;Malletts Bay;07.08.1993;1993;NY;25;Cond - uS/cm;116.4
+25;Malletts Bay;07.08.1993;1993;NY;29;Cond - uS/cm;116.6
+25;Malletts Bay;07.08.1993;1993;NY;1;DO - mg/L;8.16
+25;Malletts Bay;07.08.1993;1993;NY;2;DO - mg/L;8.21
+25;Malletts Bay;07.08.1993;1993;NY;3;DO - mg/L;8.42
+25;Malletts Bay;07.08.1993;1993;NY;4;DO - mg/L;8.45
+25;Malletts Bay;07.08.1993;1993;NY;5;DO - mg/L;8.32
+25;Malletts Bay;07.08.1993;1993;NY;6;DO - mg/L;8.28
+25;Malletts Bay;07.08.1993;1993;NY;7;DO - mg/L;8.15
+25;Malletts Bay;07.08.1993;1993;NY;8;DO - mg/L;8.12
+25;Malletts Bay;07.08.1993;1993;NY;9;DO - mg/L;8.08
+25;Malletts Bay;07.08.1993;1993;NY;10;DO - mg/L;7.91
+25;Malletts Bay;07.08.1993;1993;NY;11;DO - mg/L;7.59
+25;Malletts Bay;07.08.1993;1993;NY;12;DO - mg/L;7.62
+25;Malletts Bay;07.08.1993;1993;NY;13;DO - mg/L;7.55
+25;Malletts Bay;07.08.1993;1993;NY;14;DO - mg/L;7.5
+25;Malletts Bay;07.08.1993;1993;NY;15;DO - mg/L;7.47
+25;Malletts Bay;07.08.1993;1993;NY;16;DO - mg/L;7.55
+25;Malletts Bay;07.08.1993;1993;NY;17;DO - mg/L;7.57
+25;Malletts Bay;07.08.1993;1993;NY;18;DO - mg/L;7.6
+25;Malletts Bay;07.08.1993;1993;NY;19;DO - mg/L;7.54
+25;Malletts Bay;07.08.1993;1993;NY;20;DO - mg/L;7.44
+25;Malletts Bay;07.08.1993;1993;NY;25;DO - mg/L;6.38
+25;Malletts Bay;07.08.1993;1993;NY;29;DO - mg/L;5.61
+25;Malletts Bay;07.08.1993;1993;NY;1;DO%;97.8
+25;Malletts Bay;07.08.1993;1993;NY;2;DO%;97.6
+25;Malletts Bay;07.08.1993;1993;NY;3;DO%;98.8
+25;Malletts Bay;07.08.1993;1993;NY;4;DO%;96.9
+25;Malletts Bay;07.08.1993;1993;NY;5;DO%;94.6
+25;Malletts Bay;07.08.1993;1993;NY;6;DO%;93.4
+25;Malletts Bay;07.08.1993;1993;NY;7;DO%;91.3
+25;Malletts Bay;07.08.1993;1993;NY;8;DO%;90
+25;Malletts Bay;07.08.1993;1993;NY;9;DO%;89
+25;Malletts Bay;07.08.1993;1993;NY;10;DO%;85.4
+25;Malletts Bay;07.08.1993;1993;NY;11;DO%;77.5
+25;Malletts Bay;07.08.1993;1993;NY;12;DO%;75
+25;Malletts Bay;07.08.1993;1993;NY;13;DO%;72.2
+25;Malletts Bay;07.08.1993;1993;NY;14;DO%;70.6
+25;Malletts Bay;07.08.1993;1993;NY;15;DO%;69.8
+25;Malletts Bay;07.08.1993;1993;NY;16;DO%;68.3
+25;Malletts Bay;07.08.1993;1993;NY;17;DO%;67.9
+25;Malletts Bay;07.08.1993;1993;NY;18;DO%;67.4
+25;Malletts Bay;07.08.1993;1993;NY;19;DO%;66.4
+25;Malletts Bay;07.08.1993;1993;NY;20;DO%;64.9
+25;Malletts Bay;07.08.1993;1993;NY;25;DO%;54.1
+25;Malletts Bay;07.08.1993;1993;NY;29;DO%;47.4
+25;Malletts Bay;07.08.1993;1993;NY;1;ORP - ug/L;325
+25;Malletts Bay;07.08.1993;1993;NY;2;ORP - ug/L;326
+25;Malletts Bay;07.08.1993;1993;NY;3;ORP - ug/L;325
+25;Malletts Bay;07.08.1993;1993;NY;4;ORP - ug/L;326
+25;Malletts Bay;07.08.1993;1993;NY;5;ORP - ug/L;329
+25;Malletts Bay;07.08.1993;1993;NY;6;ORP - ug/L;331
+25;Malletts Bay;07.08.1993;1993;NY;7;ORP - ug/L;334
+25;Malletts Bay;07.08.1993;1993;NY;8;ORP - ug/L;336
+25;Malletts Bay;07.08.1993;1993;NY;9;ORP - ug/L;338
+25;Malletts Bay;07.08.1993;1993;NY;10;ORP - ug/L;342
+25;Malletts Bay;07.08.1993;1993;NY;11;ORP - ug/L;346
+25;Malletts Bay;07.08.1993;1993;NY;12;ORP - ug/L;347
+25;Malletts Bay;07.08.1993;1993;NY;13;ORP - ug/L;347
+25;Malletts Bay;07.08.1993;1993;NY;14;ORP - ug/L;348
+25;Malletts Bay;07.08.1993;1993;NY;15;ORP - ug/L;350
+25;Malletts Bay;07.08.1993;1993;NY;16;ORP - ug/L;351
+25;Malletts Bay;07.08.1993;1993;NY;17;ORP - ug/L;352
+25;Malletts Bay;07.08.1993;1993;NY;18;ORP - ug/L;352
+25;Malletts Bay;07.08.1993;1993;NY;19;ORP - ug/L;353
+25;Malletts Bay;07.08.1993;1993;NY;20;ORP - ug/L;354
+25;Malletts Bay;07.08.1993;1993;NY;25;ORP - ug/L;358
+25;Malletts Bay;07.08.1993;1993;NY;29;ORP - ug/L;339
+25;Malletts Bay;07.08.1993;1993;NY;1;pH - Units;8.3
+25;Malletts Bay;07.08.1993;1993;NY;2;pH - Units;8.31
+25;Malletts Bay;07.08.1993;1993;NY;3;pH - Units;8.38
+25;Malletts Bay;07.08.1993;1993;NY;4;pH - Units;8.32
+25;Malletts Bay;07.08.1993;1993;NY;5;pH - Units;8.21
+25;Malletts Bay;07.08.1993;1993;NY;6;pH - Units;8.12
+25;Malletts Bay;07.08.1993;1993;NY;7;pH - Units;8
+25;Malletts Bay;07.08.1993;1993;NY;8;pH - Units;7.9
+25;Malletts Bay;07.08.1993;1993;NY;9;pH - Units;7.83
+25;Malletts Bay;07.08.1993;1993;NY;10;pH - Units;7.71
+25;Malletts Bay;07.08.1993;1993;NY;11;pH - Units;7.5
+25;Malletts Bay;07.08.1993;1993;NY;12;pH - Units;7.46
+25;Malletts Bay;07.08.1993;1993;NY;13;pH - Units;7.42
+25;Malletts Bay;07.08.1993;1993;NY;14;pH - Units;7.36
+25;Malletts Bay;07.08.1993;1993;NY;15;pH - Units;7.3
+25;Malletts Bay;07.08.1993;1993;NY;16;pH - Units;7.28
+25;Malletts Bay;07.08.1993;1993;NY;17;pH - Units;7.25
+25;Malletts Bay;07.08.1993;1993;NY;18;pH - Units;7.24
+25;Malletts Bay;07.08.1993;1993;NY;19;pH - Units;7.21
+25;Malletts Bay;07.08.1993;1993;NY;20;pH - Units;7.18
+25;Malletts Bay;07.08.1993;1993;NY;25;pH - Units;7.06
+25;Malletts Bay;07.08.1993;1993;NY;29;pH - Units;6.97
+25;Malletts Bay;07.08.1993;1993;NY;1;TempC - deg C;24.44
+25;Malletts Bay;07.08.1993;1993;NY;2;TempC - deg C;24.01
+25;Malletts Bay;07.08.1993;1993;NY;3;TempC - deg C;23.29
+25;Malletts Bay;07.08.1993;1993;NY;4;TempC - deg C;22.09
+25;Malletts Bay;07.08.1993;1993;NY;5;TempC - deg C;21.63
+25;Malletts Bay;07.08.1993;1993;NY;6;TempC - deg C;21.25
+25;Malletts Bay;07.08.1993;1993;NY;7;TempC - deg C;20.94
+25;Malletts Bay;07.08.1993;1993;NY;8;TempC - deg C;20.33
+25;Malletts Bay;07.08.1993;1993;NY;9;TempC - deg C;20.04
+25;Malletts Bay;07.08.1993;1993;NY;10;TempC - deg C;19.03
+25;Malletts Bay;07.08.1993;1993;NY;11;TempC - deg C;16.36
+25;Malletts Bay;07.08.1993;1993;NY;12;TempC - deg C;14.66
+25;Malletts Bay;07.08.1993;1993;NY;13;TempC - deg C;13.34
+25;Malletts Bay;07.08.1993;1993;NY;14;TempC - deg C;12.57
+25;Malletts Bay;07.08.1993;1993;NY;15;TempC - deg C;12.25
+25;Malletts Bay;07.08.1993;1993;NY;16;TempC - deg C;10.89
+25;Malletts Bay;07.08.1993;1993;NY;17;TempC - deg C;10.47
+25;Malletts Bay;07.08.1993;1993;NY;18;TempC - deg C;10.04
+25;Malletts Bay;07.08.1993;1993;NY;19;TempC - deg C;9.72
+25;Malletts Bay;07.08.1993;1993;NY;20;TempC - deg C;9.33
+25;Malletts Bay;07.08.1993;1993;NY;25;TempC - deg C;8.12
+25;Malletts Bay;07.08.1993;1993;NY;29;TempC - deg C;7.99
+25;Malletts Bay;08.06.1993;1993;NY;1;Cond - uS/cm;131.2
+25;Malletts Bay;08.06.1993;1993;NY;2;Cond - uS/cm;131
+25;Malletts Bay;08.06.1993;1993;NY;3;Cond - uS/cm;131.2
+25;Malletts Bay;08.06.1993;1993;NY;4;Cond - uS/cm;131.2
+25;Malletts Bay;08.06.1993;1993;NY;5;Cond - uS/cm;131.1
+25;Malletts Bay;08.06.1993;1993;NY;6;Cond - uS/cm;131
+25;Malletts Bay;08.06.1993;1993;NY;7;Cond - uS/cm;131.4
+25;Malletts Bay;08.06.1993;1993;NY;8;Cond - uS/cm;131.1
+25;Malletts Bay;08.06.1993;1993;NY;9;Cond - uS/cm;131.3
+25;Malletts Bay;08.06.1993;1993;NY;10;Cond - uS/cm;130.4
+25;Malletts Bay;08.06.1993;1993;NY;11;Cond - uS/cm;128.5
+25;Malletts Bay;08.06.1993;1993;NY;12;Cond - uS/cm;128.6
+25;Malletts Bay;08.06.1993;1993;NY;13;Cond - uS/cm;124
+25;Malletts Bay;08.06.1993;1993;NY;14;Cond - uS/cm;121.5
+25;Malletts Bay;08.06.1993;1993;NY;15;Cond - uS/cm;120.8
+25;Malletts Bay;08.06.1993;1993;NY;16;Cond - uS/cm;121.2
+25;Malletts Bay;08.06.1993;1993;NY;17;Cond - uS/cm;119.9
+25;Malletts Bay;08.06.1993;1993;NY;18;Cond - uS/cm;119.7
+25;Malletts Bay;08.06.1993;1993;NY;19;Cond - uS/cm;118.5
+25;Malletts Bay;08.06.1993;1993;NY;20;Cond - uS/cm;120.1
+25;Malletts Bay;08.06.1993;1993;NY;25;Cond - uS/cm;117.9
+25;Malletts Bay;08.06.1993;1993;NY;29;Cond - uS/cm;118.5
+25;Malletts Bay;08.06.1993;1993;NY;1;DO - mg/L;8.72
+25;Malletts Bay;08.06.1993;1993;NY;2;DO - mg/L;8.71
+25;Malletts Bay;08.06.1993;1993;NY;3;DO - mg/L;8.71
+25;Malletts Bay;08.06.1993;1993;NY;4;DO - mg/L;8.69
+25;Malletts Bay;08.06.1993;1993;NY;5;DO - mg/L;8.69
+25;Malletts Bay;08.06.1993;1993;NY;6;DO - mg/L;8.68
+25;Malletts Bay;08.06.1993;1993;NY;7;DO - mg/L;8.67
+25;Malletts Bay;08.06.1993;1993;NY;8;DO - mg/L;8.67
+25;Malletts Bay;08.06.1993;1993;NY;9;DO - mg/L;8.65
+25;Malletts Bay;08.06.1993;1993;NY;10;DO - mg/L;8.41
+25;Malletts Bay;08.06.1993;1993;NY;11;DO - mg/L;8
+25;Malletts Bay;08.06.1993;1993;NY;12;DO - mg/L;7.98
+25;Malletts Bay;08.06.1993;1993;NY;13;DO - mg/L;6.66
+25;Malletts Bay;08.06.1993;1993;NY;14;DO - mg/L;6.66
+25;Malletts Bay;08.06.1993;1993;NY;15;DO - mg/L;6.64
+25;Malletts Bay;08.06.1993;1993;NY;16;DO - mg/L;6.69
+25;Malletts Bay;08.06.1993;1993;NY;17;DO - mg/L;6.58
+25;Malletts Bay;08.06.1993;1993;NY;18;DO - mg/L;6.53
+25;Malletts Bay;08.06.1993;1993;NY;19;DO - mg/L;6.49
+25;Malletts Bay;08.06.1993;1993;NY;20;DO - mg/L;6.46
+25;Malletts Bay;08.06.1993;1993;NY;25;DO - mg/L;5.17
+25;Malletts Bay;08.06.1993;1993;NY;29;DO - mg/L;3.97
+25;Malletts Bay;08.06.1993;1993;NY;1;DO%;99.7
+25;Malletts Bay;08.06.1993;1993;NY;2;DO%;99.6
+25;Malletts Bay;08.06.1993;1993;NY;3;DO%;99.5
+25;Malletts Bay;08.06.1993;1993;NY;4;DO%;99.4
+25;Malletts Bay;08.06.1993;1993;NY;5;DO%;99.3
+25;Malletts Bay;08.06.1993;1993;NY;6;DO%;99.1
+25;Malletts Bay;08.06.1993;1993;NY;7;DO%;99
+25;Malletts Bay;08.06.1993;1993;NY;8;DO%;99
+25;Malletts Bay;08.06.1993;1993;NY;9;DO%;98.7
+25;Malletts Bay;08.06.1993;1993;NY;10;DO%;95.2
+25;Malletts Bay;08.06.1993;1993;NY;11;DO%;88.8
+25;Malletts Bay;08.06.1993;1993;NY;12;DO%;88.5
+25;Malletts Bay;08.06.1993;1993;NY;13;DO%;67.6
+25;Malletts Bay;08.06.1993;1993;NY;14;DO%;63.8
+25;Malletts Bay;08.06.1993;1993;NY;15;DO%;61.9
+25;Malletts Bay;08.06.1993;1993;NY;16;DO%;61.4
+25;Malletts Bay;08.06.1993;1993;NY;17;DO%;59.3
+25;Malletts Bay;08.06.1993;1993;NY;18;DO%;58.2
+25;Malletts Bay;08.06.1993;1993;NY;19;DO%;57.4
+25;Malletts Bay;08.06.1993;1993;NY;20;DO%;56.7
+25;Malletts Bay;08.06.1993;1993;NY;25;DO%;44.2
+25;Malletts Bay;08.06.1993;1993;NY;29;DO%;33.8
+25;Malletts Bay;08.06.1993;1993;NY;1;ORP - ug/L;319
+25;Malletts Bay;08.06.1993;1993;NY;2;ORP - ug/L;319
+25;Malletts Bay;08.06.1993;1993;NY;3;ORP - ug/L;319
+25;Malletts Bay;08.06.1993;1993;NY;4;ORP - ug/L;320
+25;Malletts Bay;08.06.1993;1993;NY;5;ORP - ug/L;320
+25;Malletts Bay;08.06.1993;1993;NY;6;ORP - ug/L;321
+25;Malletts Bay;08.06.1993;1993;NY;7;ORP - ug/L;321
+25;Malletts Bay;08.06.1993;1993;NY;8;ORP - ug/L;322
+25;Malletts Bay;08.06.1993;1993;NY;9;ORP - ug/L;322
+25;Malletts Bay;08.06.1993;1993;NY;10;ORP - ug/L;325
+25;Malletts Bay;08.06.1993;1993;NY;11;ORP - ug/L;330
+25;Malletts Bay;08.06.1993;1993;NY;12;ORP - ug/L;332
+25;Malletts Bay;08.06.1993;1993;NY;13;ORP - ug/L;337
+25;Malletts Bay;08.06.1993;1993;NY;14;ORP - ug/L;339
+25;Malletts Bay;08.06.1993;1993;NY;15;ORP - ug/L;339
+25;Malletts Bay;08.06.1993;1993;NY;16;ORP - ug/L;341
+25;Malletts Bay;08.06.1993;1993;NY;17;ORP - ug/L;342
+25;Malletts Bay;08.06.1993;1993;NY;18;ORP - ug/L;343
+25;Malletts Bay;08.06.1993;1993;NY;19;ORP - ug/L;344
+25;Malletts Bay;08.06.1993;1993;NY;20;ORP - ug/L;345
+25;Malletts Bay;08.06.1993;1993;NY;25;ORP - ug/L;347
+25;Malletts Bay;08.06.1993;1993;NY;29;ORP - ug/L;327
+25;Malletts Bay;08.06.1993;1993;NY;1;pH - Units;7.86
+25;Malletts Bay;08.06.1993;1993;NY;2;pH - Units;7.86
+25;Malletts Bay;08.06.1993;1993;NY;3;pH - Units;7.86
+25;Malletts Bay;08.06.1993;1993;NY;4;pH - Units;7.86
+25;Malletts Bay;08.06.1993;1993;NY;5;pH - Units;7.85
+25;Malletts Bay;08.06.1993;1993;NY;6;pH - Units;7.85
+25;Malletts Bay;08.06.1993;1993;NY;7;pH - Units;7.84
+25;Malletts Bay;08.06.1993;1993;NY;8;pH - Units;7.84
+25;Malletts Bay;08.06.1993;1993;NY;9;pH - Units;7.83
+25;Malletts Bay;08.06.1993;1993;NY;10;pH - Units;7.72
+25;Malletts Bay;08.06.1993;1993;NY;11;pH - Units;7.45
+25;Malletts Bay;08.06.1993;1993;NY;12;pH - Units;7.41
+25;Malletts Bay;08.06.1993;1993;NY;13;pH - Units;7.22
+25;Malletts Bay;08.06.1993;1993;NY;14;pH - Units;7.12
+25;Malletts Bay;08.06.1993;1993;NY;15;pH - Units;7.1
+25;Malletts Bay;08.06.1993;1993;NY;16;pH - Units;7.04
+25;Malletts Bay;08.06.1993;1993;NY;17;pH - Units;7.02
+25;Malletts Bay;08.06.1993;1993;NY;18;pH - Units;7
+25;Malletts Bay;08.06.1993;1993;NY;19;pH - Units;6.98
+25;Malletts Bay;08.06.1993;1993;NY;20;pH - Units;6.97
+25;Malletts Bay;08.06.1993;1993;NY;25;pH - Units;6.88
+25;Malletts Bay;08.06.1993;1993;NY;29;pH - Units;6.83
+25;Malletts Bay;08.06.1993;1993;NY;1;TempC - deg C;21.95
+25;Malletts Bay;08.06.1993;1993;NY;2;TempC - deg C;21.95
+25;Malletts Bay;08.06.1993;1993;NY;3;TempC - deg C;21.95
+25;Malletts Bay;08.06.1993;1993;NY;4;TempC - deg C;21.95
+25;Malletts Bay;08.06.1993;1993;NY;5;TempC - deg C;21.93
+25;Malletts Bay;08.06.1993;1993;NY;6;TempC - deg C;21.9
+25;Malletts Bay;08.06.1993;1993;NY;7;TempC - deg C;21.89
+25;Malletts Bay;08.06.1993;1993;NY;8;TempC - deg C;21.89
+25;Malletts Bay;08.06.1993;1993;NY;9;TempC - deg C;21.88
+25;Malletts Bay;08.06.1993;1993;NY;10;TempC - deg C;21.45
+25;Malletts Bay;08.06.1993;1993;NY;11;TempC - deg C;20.42
+25;Malletts Bay;08.06.1993;1993;NY;12;TempC - deg C;20.38
+25;Malletts Bay;08.06.1993;1993;NY;13;TempC - deg C;16.08
+25;Malletts Bay;08.06.1993;1993;NY;14;TempC - deg C;13.4
+25;Malletts Bay;08.06.1993;1993;NY;15;TempC - deg C;12.15
+25;Malletts Bay;08.06.1993;1993;NY;16;TempC - deg C;11.51
+25;Malletts Bay;08.06.1993;1993;NY;17;TempC - deg C;10.65
+25;Malletts Bay;08.06.1993;1993;NY;18;TempC - deg C;10.25
+25;Malletts Bay;08.06.1993;1993;NY;19;TempC - deg C;9.89
+25;Malletts Bay;08.06.1993;1993;NY;20;TempC - deg C;9.6
+25;Malletts Bay;08.06.1993;1993;NY;25;TempC - deg C;8.49
+25;Malletts Bay;08.06.1993;1993;NY;29;TempC - deg C;8.29
+25;Malletts Bay;08/17/1993;1993;NY;1;Cond - uS/cm;131.7
+25;Malletts Bay;08/17/1993;1993;NY;2;Cond - uS/cm;131.7
+25;Malletts Bay;08/17/1993;1993;NY;3;Cond - uS/cm;131.7
+25;Malletts Bay;08/17/1993;1993;NY;4;Cond - uS/cm;131.7
+25;Malletts Bay;08/17/1993;1993;NY;5;Cond - uS/cm;131.7
+25;Malletts Bay;08/17/1993;1993;NY;6;Cond - uS/cm;131.7
+25;Malletts Bay;08/17/1993;1993;NY;7;Cond - uS/cm;131.7
+25;Malletts Bay;08/17/1993;1993;NY;8;Cond - uS/cm;131.6
+25;Malletts Bay;08/17/1993;1993;NY;9;Cond - uS/cm;131.7
+25;Malletts Bay;08/17/1993;1993;NY;10;Cond - uS/cm;131.4
+25;Malletts Bay;08/17/1993;1993;NY;11;Cond - uS/cm;133
+25;Malletts Bay;08/17/1993;1993;NY;12;Cond - uS/cm;128.2
+25;Malletts Bay;08/17/1993;1993;NY;13;Cond - uS/cm;127.4
+25;Malletts Bay;08/17/1993;1993;NY;14;Cond - uS/cm;124.7
+25;Malletts Bay;08/17/1993;1993;NY;15;Cond - uS/cm;121.4
+25;Malletts Bay;08/17/1993;1993;NY;20;Cond - uS/cm;119.6
+25;Malletts Bay;08/17/1993;1993;NY;25;Cond - uS/cm;118.1
+25;Malletts Bay;08/17/1993;1993;NY;29;Cond - uS/cm;120
+25;Malletts Bay;08/17/1993;1993;NY;1;DO - mg/L;8.58
+25;Malletts Bay;08/17/1993;1993;NY;2;DO - mg/L;8.59
+25;Malletts Bay;08/17/1993;1993;NY;3;DO - mg/L;8.6
+25;Malletts Bay;08/17/1993;1993;NY;4;DO - mg/L;8.59
+25;Malletts Bay;08/17/1993;1993;NY;5;DO - mg/L;8.59
+25;Malletts Bay;08/17/1993;1993;NY;6;DO - mg/L;8.58
+25;Malletts Bay;08/17/1993;1993;NY;7;DO - mg/L;8.58
+25;Malletts Bay;08/17/1993;1993;NY;8;DO - mg/L;8.57
+25;Malletts Bay;08/17/1993;1993;NY;9;DO - mg/L;8.56
+25;Malletts Bay;08/17/1993;1993;NY;10;DO - mg/L;8.47
+25;Malletts Bay;08/17/1993;1993;NY;11;DO - mg/L;7.02
+25;Malletts Bay;08/17/1993;1993;NY;12;DO - mg/L;6.82
+25;Malletts Bay;08/17/1993;1993;NY;13;DO - mg/L;6.52
+25;Malletts Bay;08/17/1993;1993;NY;14;DO - mg/L;5.91
+25;Malletts Bay;08/17/1993;1993;NY;15;DO - mg/L;5.73
+25;Malletts Bay;08/17/1993;1993;NY;20;DO - mg/L;5.46
+25;Malletts Bay;08/17/1993;1993;NY;25;DO - mg/L;3.7
+25;Malletts Bay;08/17/1993;1993;NY;29;DO - mg/L;3.22
+25;Malletts Bay;08/17/1993;1993;NY;1;DO%;100
+25;Malletts Bay;08/17/1993;1993;NY;2;DO%;100.1
+25;Malletts Bay;08/17/1993;1993;NY;3;DO%;100.2
+25;Malletts Bay;08/17/1993;1993;NY;4;DO%;100
+25;Malletts Bay;08/17/1993;1993;NY;5;DO%;100
+25;Malletts Bay;08/17/1993;1993;NY;6;DO%;99.8
+25;Malletts Bay;08/17/1993;1993;NY;7;DO%;99.8
+25;Malletts Bay;08/17/1993;1993;NY;8;DO%;99.5
+25;Malletts Bay;08/17/1993;1993;NY;9;DO%;99.1
+25;Malletts Bay;08/17/1993;1993;NY;10;DO%;97.3
+25;Malletts Bay;08/17/1993;1993;NY;11;DO%;78.7
+25;Malletts Bay;08/17/1993;1993;NY;12;DO%;74
+25;Malletts Bay;08/17/1993;1993;NY;13;DO%;69.6
+25;Malletts Bay;08/17/1993;1993;NY;14;DO%;60.7
+25;Malletts Bay;08/17/1993;1993;NY;15;DO%;53.9
+25;Malletts Bay;08/17/1993;1993;NY;20;DO%;47.4
+25;Malletts Bay;08/17/1993;1993;NY;25;DO%;31.7
+25;Malletts Bay;08/17/1993;1993;NY;29;DO%;27.4
+25;Malletts Bay;08/17/1993;1993;NY;1;ORP - ug/L;327
+25;Malletts Bay;08/17/1993;1993;NY;2;ORP - ug/L;328
+25;Malletts Bay;08/17/1993;1993;NY;3;ORP - ug/L;329
+25;Malletts Bay;08/17/1993;1993;NY;4;ORP - ug/L;329
+25;Malletts Bay;08/17/1993;1993;NY;5;ORP - ug/L;329
+25;Malletts Bay;08/17/1993;1993;NY;6;ORP - ug/L;330
+25;Malletts Bay;08/17/1993;1993;NY;7;ORP - ug/L;330
+25;Malletts Bay;08/17/1993;1993;NY;8;ORP - ug/L;331
+25;Malletts Bay;08/17/1993;1993;NY;9;ORP - ug/L;332
+25;Malletts Bay;08/17/1993;1993;NY;10;ORP - ug/L;335
+25;Malletts Bay;08/17/1993;1993;NY;11;ORP - ug/L;345
+25;Malletts Bay;08/17/1993;1993;NY;12;ORP - ug/L;350
+25;Malletts Bay;08/17/1993;1993;NY;13;ORP - ug/L;353
+25;Malletts Bay;08/17/1993;1993;NY;14;ORP - ug/L;355
+25;Malletts Bay;08/17/1993;1993;NY;15;ORP - ug/L;352
+25;Malletts Bay;08/17/1993;1993;NY;20;ORP - ug/L;355
+25;Malletts Bay;08/17/1993;1993;NY;25;ORP - ug/L;360
+25;Malletts Bay;08/17/1993;1993;NY;29;ORP - ug/L;343
+25;Malletts Bay;08/17/1993;1993;NY;1;pH - Units;8.18
+25;Malletts Bay;08/17/1993;1993;NY;2;pH - Units;8.17
+25;Malletts Bay;08/17/1993;1993;NY;3;pH - Units;8.17
+25;Malletts Bay;08/17/1993;1993;NY;4;pH - Units;8.16
+25;Malletts Bay;08/17/1993;1993;NY;5;pH - Units;8.15
+25;Malletts Bay;08/17/1993;1993;NY;6;pH - Units;8.14
+25;Malletts Bay;08/17/1993;1993;NY;7;pH - Units;8.14
+25;Malletts Bay;08/17/1993;1993;NY;8;pH - Units;8.11
+25;Malletts Bay;08/17/1993;1993;NY;9;pH - Units;8.09
+25;Malletts Bay;08/17/1993;1993;NY;10;pH - Units;7.98
+25;Malletts Bay;08/17/1993;1993;NY;11;pH - Units;7.53
+25;Malletts Bay;08/17/1993;1993;NY;12;pH - Units;7.4
+25;Malletts Bay;08/17/1993;1993;NY;13;pH - Units;7.28
+25;Malletts Bay;08/17/1993;1993;NY;14;pH - Units;7.19
+25;Malletts Bay;08/17/1993;1993;NY;15;pH - Units;7.23
+25;Malletts Bay;08/17/1993;1993;NY;20;pH - Units;7.11
+25;Malletts Bay;08/17/1993;1993;NY;25;pH - Units;6.94
+25;Malletts Bay;08/17/1993;1993;NY;29;pH - Units;6.89
+25;Malletts Bay;08/17/1993;1993;NY;1;TempC - deg C;22.96
+25;Malletts Bay;08/17/1993;1993;NY;2;TempC - deg C;22.95
+25;Malletts Bay;08/17/1993;1993;NY;3;TempC - deg C;22.94
+25;Malletts Bay;08/17/1993;1993;NY;4;TempC - deg C;22.91
+25;Malletts Bay;08/17/1993;1993;NY;5;TempC - deg C;22.89
+25;Malletts Bay;08/17/1993;1993;NY;6;TempC - deg C;22.87
+25;Malletts Bay;08/17/1993;1993;NY;7;TempC - deg C;22.86
+25;Malletts Bay;08/17/1993;1993;NY;8;TempC - deg C;22.74
+25;Malletts Bay;08/17/1993;1993;NY;9;TempC - deg C;22.62
+25;Malletts Bay;08/17/1993;1993;NY;10;TempC - deg C;22.18
+25;Malletts Bay;08/17/1993;1993;NY;11;TempC - deg C;20.88
+25;Malletts Bay;08/17/1993;1993;NY;12;TempC - deg C;19.32
+25;Malletts Bay;08/17/1993;1993;NY;13;TempC - deg C;18.47
+25;Malletts Bay;08/17/1993;1993;NY;14;TempC - deg C;16.64
+25;Malletts Bay;08/17/1993;1993;NY;15;TempC - deg C;12.54
+25;Malletts Bay;08/17/1993;1993;NY;20;TempC - deg C;9.08
+25;Malletts Bay;08/17/1993;1993;NY;25;TempC - deg C;8.55
+25;Malletts Bay;08/17/1993;1993;NY;29;TempC - deg C;8.3
+25;Malletts Bay;09.07.1993;1993;NY;1;Cond - uS/cm;132.6
+25;Malletts Bay;09.07.1993;1993;NY;2;Cond - uS/cm;132.4
+25;Malletts Bay;09.07.1993;1993;NY;3;Cond - uS/cm;132.3
+25;Malletts Bay;09.07.1993;1993;NY;4;Cond - uS/cm;132.3
+25;Malletts Bay;09.07.1993;1993;NY;5;Cond - uS/cm;132.6
+25;Malletts Bay;09.07.1993;1993;NY;6;Cond - uS/cm;132.3
+25;Malletts Bay;09.07.1993;1993;NY;7;Cond - uS/cm;132.4
+25;Malletts Bay;09.07.1993;1993;NY;8;Cond - uS/cm;132.6
+25;Malletts Bay;09.07.1993;1993;NY;9;Cond - uS/cm;132.3
+25;Malletts Bay;09.07.1993;1993;NY;10;Cond - uS/cm;132.4
+25;Malletts Bay;09.07.1993;1993;NY;11;Cond - uS/cm;132.3
+25;Malletts Bay;09.07.1993;1993;NY;12;Cond - uS/cm;132.6
+25;Malletts Bay;09.07.1993;1993;NY;13;Cond - uS/cm;132.9
+25;Malletts Bay;09.07.1993;1993;NY;14;Cond - uS/cm;127.9
+25;Malletts Bay;09.07.1993;1993;NY;15;Cond - uS/cm;123.6
+25;Malletts Bay;09.07.1993;1993;NY;16;Cond - uS/cm;122
+25;Malletts Bay;09.07.1993;1993;NY;17;Cond - uS/cm;120.5
+25;Malletts Bay;09.07.1993;1993;NY;18;Cond - uS/cm;120.2
+25;Malletts Bay;09.07.1993;1993;NY;19;Cond - uS/cm;119
+25;Malletts Bay;09.07.1993;1993;NY;20;Cond - uS/cm;119.2
+25;Malletts Bay;09.07.1993;1993;NY;25;Cond - uS/cm;119.7
+25;Malletts Bay;09.07.1993;1993;NY;29;Cond - uS/cm;120.3
+25;Malletts Bay;09.07.1993;1993;NY;1;DO - mg/L;8.52
+25;Malletts Bay;09.07.1993;1993;NY;2;DO - mg/L;8.57
+25;Malletts Bay;09.07.1993;1993;NY;3;DO - mg/L;8.59
+25;Malletts Bay;09.07.1993;1993;NY;4;DO - mg/L;8.6
+25;Malletts Bay;09.07.1993;1993;NY;5;DO - mg/L;8.6
+25;Malletts Bay;09.07.1993;1993;NY;6;DO - mg/L;8.58
+25;Malletts Bay;09.07.1993;1993;NY;7;DO - mg/L;8.55
+25;Malletts Bay;09.07.1993;1993;NY;8;DO - mg/L;8.53
+25;Malletts Bay;09.07.1993;1993;NY;9;DO - mg/L;8.53
+25;Malletts Bay;09.07.1993;1993;NY;10;DO - mg/L;8.51
+25;Malletts Bay;09.07.1993;1993;NY;11;DO - mg/L;8.51
+25;Malletts Bay;09.07.1993;1993;NY;12;DO - mg/L;8.49
+25;Malletts Bay;09.07.1993;1993;NY;13;DO - mg/L;8.37
+25;Malletts Bay;09.07.1993;1993;NY;14;DO - mg/L;5.61
+25;Malletts Bay;09.07.1993;1993;NY;15;DO - mg/L;4.62
+25;Malletts Bay;09.07.1993;1993;NY;16;DO - mg/L;4.42
+25;Malletts Bay;09.07.1993;1993;NY;17;DO - mg/L;4.35
+25;Malletts Bay;09.07.1993;1993;NY;18;DO - mg/L;4.3
+25;Malletts Bay;09.07.1993;1993;NY;19;DO - mg/L;4.44
+25;Malletts Bay;09.07.1993;1993;NY;20;DO - mg/L;4.55
+25;Malletts Bay;09.07.1993;1993;NY;25;DO - mg/L;2.24
+25;Malletts Bay;09.07.1993;1993;NY;29;DO - mg/L;1.81
+25;Malletts Bay;09.07.1993;1993;NY;1;DO%;97.9
+25;Malletts Bay;09.07.1993;1993;NY;2;DO%;98.1
+25;Malletts Bay;09.07.1993;1993;NY;3;DO%;98.1
+25;Malletts Bay;09.07.1993;1993;NY;4;DO%;98.2
+25;Malletts Bay;09.07.1993;1993;NY;5;DO%;98.1
+25;Malletts Bay;09.07.1993;1993;NY;6;DO%;97.8
+25;Malletts Bay;09.07.1993;1993;NY;7;DO%;97.5
+25;Malletts Bay;09.07.1993;1993;NY;8;DO%;97.2
+25;Malletts Bay;09.07.1993;1993;NY;9;DO%;97.2
+25;Malletts Bay;09.07.1993;1993;NY;10;DO%;96.9
+25;Malletts Bay;09.07.1993;1993;NY;11;DO%;96.9
+25;Malletts Bay;09.07.1993;1993;NY;12;DO%;96.7
+25;Malletts Bay;09.07.1993;1993;NY;13;DO%;95.3
+25;Malletts Bay;09.07.1993;1993;NY;14;DO%;59.6
+25;Malletts Bay;09.07.1993;1993;NY;15;DO%;46
+25;Malletts Bay;09.07.1993;1993;NY;16;DO%;41.4
+25;Malletts Bay;09.07.1993;1993;NY;17;DO%;40
+25;Malletts Bay;09.07.1993;1993;NY;18;DO%;38.7
+25;Malletts Bay;09.07.1993;1993;NY;19;DO%;39.5
+25;Malletts Bay;09.07.1993;1993;NY;20;DO%;40.3
+25;Malletts Bay;09.07.1993;1993;NY;25;DO%;19.2
+25;Malletts Bay;09.07.1993;1993;NY;29;DO%;15.5
+25;Malletts Bay;09.07.1993;1993;NY;1;ORP - ug/L;344
+25;Malletts Bay;09.07.1993;1993;NY;2;ORP - ug/L;343
+25;Malletts Bay;09.07.1993;1993;NY;3;ORP - ug/L;343
+25;Malletts Bay;09.07.1993;1993;NY;4;ORP - ug/L;343
+25;Malletts Bay;09.07.1993;1993;NY;5;ORP - ug/L;343
+25;Malletts Bay;09.07.1993;1993;NY;6;ORP - ug/L;344
+25;Malletts Bay;09.07.1993;1993;NY;7;ORP - ug/L;344
+25;Malletts Bay;09.07.1993;1993;NY;8;ORP - ug/L;345
+25;Malletts Bay;09.07.1993;1993;NY;9;ORP - ug/L;345
+25;Malletts Bay;09.07.1993;1993;NY;10;ORP - ug/L;345
+25;Malletts Bay;09.07.1993;1993;NY;11;ORP - ug/L;345
+25;Malletts Bay;09.07.1993;1993;NY;12;ORP - ug/L;346
+25;Malletts Bay;09.07.1993;1993;NY;13;ORP - ug/L;346
+25;Malletts Bay;09.07.1993;1993;NY;14;ORP - ug/L;356
+25;Malletts Bay;09.07.1993;1993;NY;15;ORP - ug/L;357
+25;Malletts Bay;09.07.1993;1993;NY;16;ORP - ug/L;360
+25;Malletts Bay;09.07.1993;1993;NY;17;ORP - ug/L;360
+25;Malletts Bay;09.07.1993;1993;NY;18;ORP - ug/L;361
+25;Malletts Bay;09.07.1993;1993;NY;19;ORP - ug/L;362
+25;Malletts Bay;09.07.1993;1993;NY;20;ORP - ug/L;362
+25;Malletts Bay;09.07.1993;1993;NY;25;ORP - ug/L;364
+25;Malletts Bay;09.07.1993;1993;NY;29;ORP - ug/L;364
+25;Malletts Bay;09.07.1993;1993;NY;1;pH - Units;7.67
+25;Malletts Bay;09.07.1993;1993;NY;2;pH - Units;7.74
+25;Malletts Bay;09.07.1993;1993;NY;3;pH - Units;7.77
+25;Malletts Bay;09.07.1993;1993;NY;4;pH - Units;7.77
+25;Malletts Bay;09.07.1993;1993;NY;5;pH - Units;7.78
+25;Malletts Bay;09.07.1993;1993;NY;6;pH - Units;7.77
+25;Malletts Bay;09.07.1993;1993;NY;7;pH - Units;7.76
+25;Malletts Bay;09.07.1993;1993;NY;8;pH - Units;7.75
+25;Malletts Bay;09.07.1993;1993;NY;9;pH - Units;7.74
+25;Malletts Bay;09.07.1993;1993;NY;10;pH - Units;7.73
+25;Malletts Bay;09.07.1993;1993;NY;11;pH - Units;7.72
+25;Malletts Bay;09.07.1993;1993;NY;12;pH - Units;7.72
+25;Malletts Bay;09.07.1993;1993;NY;13;pH - Units;7.71
+25;Malletts Bay;09.07.1993;1993;NY;14;pH - Units;7.3
+25;Malletts Bay;09.07.1993;1993;NY;15;pH - Units;7.21
+25;Malletts Bay;09.07.1993;1993;NY;16;pH - Units;7.06
+25;Malletts Bay;09.07.1993;1993;NY;17;pH - Units;7.03
+25;Malletts Bay;09.07.1993;1993;NY;18;pH - Units;6.99
+25;Malletts Bay;09.07.1993;1993;NY;19;pH - Units;6.98
+25;Malletts Bay;09.07.1993;1993;NY;20;pH - Units;6.97
+25;Malletts Bay;09.07.1993;1993;NY;25;pH - Units;6.86
+25;Malletts Bay;09.07.1993;1993;NY;29;pH - Units;6.82
+25;Malletts Bay;09.07.1993;1993;NY;1;TempC - deg C;22.23
+25;Malletts Bay;09.07.1993;1993;NY;2;TempC - deg C;21.99
+25;Malletts Bay;09.07.1993;1993;NY;3;TempC - deg C;21.91
+25;Malletts Bay;09.07.1993;1993;NY;4;TempC - deg C;21.86
+25;Malletts Bay;09.07.1993;1993;NY;5;TempC - deg C;21.84
+25;Malletts Bay;09.07.1993;1993;NY;6;TempC - deg C;21.82
+25;Malletts Bay;09.07.1993;1993;NY;7;TempC - deg C;21.81
+25;Malletts Bay;09.07.1993;1993;NY;8;TempC - deg C;21.8
+25;Malletts Bay;09.07.1993;1993;NY;9;TempC - deg C;21.79
+25;Malletts Bay;09.07.1993;1993;NY;10;TempC - deg C;21.78
+25;Malletts Bay;09.07.1993;1993;NY;11;TempC - deg C;21.77
+25;Malletts Bay;09.07.1993;1993;NY;12;TempC - deg C;21.77
+25;Malletts Bay;09.07.1993;1993;NY;13;TempC - deg C;21.75
+25;Malletts Bay;09.07.1993;1993;NY;14;TempC - deg C;18.28
+25;Malletts Bay;09.07.1993;1993;NY;15;TempC - deg C;15.13
+25;Malletts Bay;09.07.1993;1993;NY;16;TempC - deg C;12.35
+25;Malletts Bay;09.07.1993;1993;NY;17;TempC - deg C;11.64
+25;Malletts Bay;09.07.1993;1993;NY;18;TempC - deg C;10.67
+25;Malletts Bay;09.07.1993;1993;NY;19;TempC - deg C;10.14
+25;Malletts Bay;09.07.1993;1993;NY;20;TempC - deg C;9.91
+25;Malletts Bay;09.07.1993;1993;NY;25;TempC - deg C;8.58
+25;Malletts Bay;09.07.1993;1993;NY;29;TempC - deg C;8.47
+25;Malletts Bay;09/21/1993;1993;NY;1;Cond - uS/cm;131.4
+25;Malletts Bay;09/21/1993;1993;NY;2;Cond - uS/cm;131.4
+25;Malletts Bay;09/21/1993;1993;NY;3;Cond - uS/cm;131.5
+25;Malletts Bay;09/21/1993;1993;NY;4;Cond - uS/cm;131.4
+25;Malletts Bay;09/21/1993;1993;NY;5;Cond - uS/cm;131.6
+25;Malletts Bay;09/21/1993;1993;NY;6;Cond - uS/cm;131.5
+25;Malletts Bay;09/21/1993;1993;NY;7;Cond - uS/cm;131.4
+25;Malletts Bay;09/21/1993;1993;NY;8;Cond - uS/cm;131.4
+25;Malletts Bay;09/21/1993;1993;NY;9;Cond - uS/cm;131.3
+25;Malletts Bay;09/21/1993;1993;NY;10;Cond - uS/cm;131.5
+25;Malletts Bay;09/21/1993;1993;NY;11;Cond - uS/cm;131.6
+25;Malletts Bay;09/21/1993;1993;NY;12;Cond - uS/cm;131.4
+25;Malletts Bay;09/21/1993;1993;NY;13;Cond - uS/cm;131.6
+25;Malletts Bay;09/21/1993;1993;NY;14;Cond - uS/cm;131.2
+25;Malletts Bay;09/21/1993;1993;NY;15;Cond - uS/cm;131.3
+25;Malletts Bay;09/21/1993;1993;NY;16;Cond - uS/cm;131.1
+25;Malletts Bay;09/21/1993;1993;NY;17;Cond - uS/cm;131
+25;Malletts Bay;09/21/1993;1993;NY;18;Cond - uS/cm;123.6
+25;Malletts Bay;09/21/1993;1993;NY;19;Cond - uS/cm;121.3
+25;Malletts Bay;09/21/1993;1993;NY;20;Cond - uS/cm;120.8
+25;Malletts Bay;09/21/1993;1993;NY;25;Cond - uS/cm;119.7
+25;Malletts Bay;09/21/1993;1993;NY;30;Cond - uS/cm;120.6
+25;Malletts Bay;09/21/1993;1993;NY;1;DO - mg/L;8.94
+25;Malletts Bay;09/21/1993;1993;NY;2;DO - mg/L;8.94
+25;Malletts Bay;09/21/1993;1993;NY;3;DO - mg/L;8.93
+25;Malletts Bay;09/21/1993;1993;NY;4;DO - mg/L;8.93
+25;Malletts Bay;09/21/1993;1993;NY;5;DO - mg/L;8.92
+25;Malletts Bay;09/21/1993;1993;NY;6;DO - mg/L;8.89
+25;Malletts Bay;09/21/1993;1993;NY;7;DO - mg/L;8.86
+25;Malletts Bay;09/21/1993;1993;NY;8;DO - mg/L;8.83
+25;Malletts Bay;09/21/1993;1993;NY;9;DO - mg/L;8.75
+25;Malletts Bay;09/21/1993;1993;NY;10;DO - mg/L;8.73
+25;Malletts Bay;09/21/1993;1993;NY;11;DO - mg/L;8.71
+25;Malletts Bay;09/21/1993;1993;NY;12;DO - mg/L;8.7
+25;Malletts Bay;09/21/1993;1993;NY;13;DO - mg/L;8.69
+25;Malletts Bay;09/21/1993;1993;NY;14;DO - mg/L;8.69
+25;Malletts Bay;09/21/1993;1993;NY;15;DO - mg/L;8.71
+25;Malletts Bay;09/21/1993;1993;NY;16;DO - mg/L;8.71
+25;Malletts Bay;09/21/1993;1993;NY;17;DO - mg/L;7.69
+25;Malletts Bay;09/21/1993;1993;NY;18;DO - mg/L;4.73
+25;Malletts Bay;09/21/1993;1993;NY;19;DO - mg/L;3.74
+25;Malletts Bay;09/21/1993;1993;NY;20;DO - mg/L;3.51
+25;Malletts Bay;09/21/1993;1993;NY;25;DO - mg/L;2.23
+25;Malletts Bay;09/21/1993;1993;NY;30;DO - mg/L;0.96
+25;Malletts Bay;09/21/1993;1993;NY;1;DO%;94.4
+25;Malletts Bay;09/21/1993;1993;NY;2;DO%;94.4
+25;Malletts Bay;09/21/1993;1993;NY;3;DO%;94.3
+25;Malletts Bay;09/21/1993;1993;NY;4;DO%;94.2
+25;Malletts Bay;09/21/1993;1993;NY;5;DO%;94
+25;Malletts Bay;09/21/1993;1993;NY;6;DO%;93.6
+25;Malletts Bay;09/21/1993;1993;NY;7;DO%;93
+25;Malletts Bay;09/21/1993;1993;NY;8;DO%;92.7
+25;Malletts Bay;09/21/1993;1993;NY;9;DO%;91.8
+25;Malletts Bay;09/21/1993;1993;NY;10;DO%;91.5
+25;Malletts Bay;09/21/1993;1993;NY;11;DO%;91.3
+25;Malletts Bay;09/21/1993;1993;NY;12;DO%;91.1
+25;Malletts Bay;09/21/1993;1993;NY;13;DO%;91
+25;Malletts Bay;09/21/1993;1993;NY;14;DO%;91
+25;Malletts Bay;09/21/1993;1993;NY;15;DO%;91.2
+25;Malletts Bay;09/21/1993;1993;NY;16;DO%;91.1
+25;Malletts Bay;09/21/1993;1993;NY;17;DO%;80.2
+25;Malletts Bay;09/21/1993;1993;NY;18;DO%;44.1
+25;Malletts Bay;09/21/1993;1993;NY;19;DO%;33.7
+25;Malletts Bay;09/21/1993;1993;NY;20;DO%;31.4
+25;Malletts Bay;09/21/1993;1993;NY;25;DO%;19.4
+25;Malletts Bay;09/21/1993;1993;NY;30;DO%;8.2
+25;Malletts Bay;09/21/1993;1993;NY;1;ORP - ug/L;333
+25;Malletts Bay;09/21/1993;1993;NY;2;ORP - ug/L;334
+25;Malletts Bay;09/21/1993;1993;NY;3;ORP - ug/L;334
+25;Malletts Bay;09/21/1993;1993;NY;4;ORP - ug/L;334
+25;Malletts Bay;09/21/1993;1993;NY;5;ORP - ug/L;335
+25;Malletts Bay;09/21/1993;1993;NY;6;ORP - ug/L;336
+25;Malletts Bay;09/21/1993;1993;NY;7;ORP - ug/L;336
+25;Malletts Bay;09/21/1993;1993;NY;8;ORP - ug/L;337
+25;Malletts Bay;09/21/1993;1993;NY;9;ORP - ug/L;338
+25;Malletts Bay;09/21/1993;1993;NY;10;ORP - ug/L;338
+25;Malletts Bay;09/21/1993;1993;NY;11;ORP - ug/L;339
+25;Malletts Bay;09/21/1993;1993;NY;12;ORP - ug/L;339
+25;Malletts Bay;09/21/1993;1993;NY;13;ORP - ug/L;340
+25;Malletts Bay;09/21/1993;1993;NY;14;ORP - ug/L;341
+25;Malletts Bay;09/21/1993;1993;NY;15;ORP - ug/L;341
+25;Malletts Bay;09/21/1993;1993;NY;16;ORP - ug/L;341
+25;Malletts Bay;09/21/1993;1993;NY;17;ORP - ug/L;342
+25;Malletts Bay;09/21/1993;1993;NY;18;ORP - ug/L;350
+25;Malletts Bay;09/21/1993;1993;NY;19;ORP - ug/L;353
+25;Malletts Bay;09/21/1993;1993;NY;20;ORP - ug/L;355
+25;Malletts Bay;09/21/1993;1993;NY;25;ORP - ug/L;360
+25;Malletts Bay;09/21/1993;1993;NY;30;ORP - ug/L;363
+25;Malletts Bay;09/21/1993;1993;NY;1;pH - Units;7.88
+25;Malletts Bay;09/21/1993;1993;NY;2;pH - Units;7.87
+25;Malletts Bay;09/21/1993;1993;NY;3;pH - Units;7.87
+25;Malletts Bay;09/21/1993;1993;NY;4;pH - Units;7.87
+25;Malletts Bay;09/21/1993;1993;NY;5;pH - Units;7.86
+25;Malletts Bay;09/21/1993;1993;NY;6;pH - Units;7.85
+25;Malletts Bay;09/21/1993;1993;NY;7;pH - Units;7.84
+25;Malletts Bay;09/21/1993;1993;NY;8;pH - Units;7.83
+25;Malletts Bay;09/21/1993;1993;NY;9;pH - Units;7.8
+25;Malletts Bay;09/21/1993;1993;NY;10;pH - Units;7.78
+25;Malletts Bay;09/21/1993;1993;NY;11;pH - Units;7.78
+25;Malletts Bay;09/21/1993;1993;NY;12;pH - Units;7.77
+25;Malletts Bay;09/21/1993;1993;NY;13;pH - Units;7.76
+25;Malletts Bay;09/21/1993;1993;NY;14;pH - Units;7.75
+25;Malletts Bay;09/21/1993;1993;NY;15;pH - Units;7.75
+25;Malletts Bay;09/21/1993;1993;NY;16;pH - Units;7.75
+25;Malletts Bay;09/21/1993;1993;NY;17;pH - Units;7.68
+25;Malletts Bay;09/21/1993;1993;NY;18;pH - Units;7.41
+25;Malletts Bay;09/21/1993;1993;NY;19;pH - Units;7.25
+25;Malletts Bay;09/21/1993;1993;NY;20;pH - Units;7.17
+25;Malletts Bay;09/21/1993;1993;NY;25;pH - Units;7
+25;Malletts Bay;09/21/1993;1993;NY;30;pH - Units;6.86
+25;Malletts Bay;09/21/1993;1993;NY;1;TempC - deg C;17.96
+25;Malletts Bay;09/21/1993;1993;NY;2;TempC - deg C;17.95
+25;Malletts Bay;09/21/1993;1993;NY;3;TempC - deg C;17.94
+25;Malletts Bay;09/21/1993;1993;NY;4;TempC - deg C;17.94
+25;Malletts Bay;09/21/1993;1993;NY;5;TempC - deg C;17.89
+25;Malletts Bay;09/21/1993;1993;NY;6;TempC - deg C;17.83
+25;Malletts Bay;09/21/1993;1993;NY;7;TempC - deg C;17.72
+25;Malletts Bay;09/21/1993;1993;NY;8;TempC - deg C;17.68
+25;Malletts Bay;09/21/1993;1993;NY;9;TempC - deg C;17.65
+25;Malletts Bay;09/21/1993;1993;NY;10;TempC - deg C;17.63
+25;Malletts Bay;09/21/1993;1993;NY;11;TempC - deg C;17.62
+25;Malletts Bay;09/21/1993;1993;NY;12;TempC - deg C;17.6
+25;Malletts Bay;09/21/1993;1993;NY;13;TempC - deg C;17.59
+25;Malletts Bay;09/21/1993;1993;NY;14;TempC - deg C;17.57
+25;Malletts Bay;09/21/1993;1993;NY;15;TempC - deg C;17.54
+25;Malletts Bay;09/21/1993;1993;NY;16;TempC - deg C;17.52
+25;Malletts Bay;09/21/1993;1993;NY;17;TempC - deg C;17.37
+25;Malletts Bay;09/21/1993;1993;NY;18;TempC - deg C;12.25
+25;Malletts Bay;09/21/1993;1993;NY;19;TempC - deg C;10.68
+25;Malletts Bay;09/21/1993;1993;NY;20;TempC - deg C;10.34
+25;Malletts Bay;09/21/1993;1993;NY;25;TempC - deg C;9.13
+25;Malletts Bay;09/21/1993;1993;NY;30;TempC - deg C;8.51
+25;Malletts Bay;10.06.1993;1993;NY;1;Cond - uS/cm;129.3
+25;Malletts Bay;10.06.1993;1993;NY;2;Cond - uS/cm;129.3
+25;Malletts Bay;10.06.1993;1993;NY;3;Cond - uS/cm;129.3
+25;Malletts Bay;10.06.1993;1993;NY;4;Cond - uS/cm;129.2
+25;Malletts Bay;10.06.1993;1993;NY;5;Cond - uS/cm;129.3
+25;Malletts Bay;10.06.1993;1993;NY;6;Cond - uS/cm;129.1
+25;Malletts Bay;10.06.1993;1993;NY;7;Cond - uS/cm;129.2
+25;Malletts Bay;10.06.1993;1993;NY;8;Cond - uS/cm;129.2
+25;Malletts Bay;10.06.1993;1993;NY;9;Cond - uS/cm;129.2
+25;Malletts Bay;10.06.1993;1993;NY;10;Cond - uS/cm;129.3
+25;Malletts Bay;10.06.1993;1993;NY;11;Cond - uS/cm;129.2
+25;Malletts Bay;10.06.1993;1993;NY;12;Cond - uS/cm;129.3
+25;Malletts Bay;10.06.1993;1993;NY;13;Cond - uS/cm;129.3
+25;Malletts Bay;10.06.1993;1993;NY;14;Cond - uS/cm;129.3
+25;Malletts Bay;10.06.1993;1993;NY;15;Cond - uS/cm;129.3
+25;Malletts Bay;10.06.1993;1993;NY;16;Cond - uS/cm;129.5
+25;Malletts Bay;10.06.1993;1993;NY;17;Cond - uS/cm;129.2
+25;Malletts Bay;10.06.1993;1993;NY;18;Cond - uS/cm;129.1
+25;Malletts Bay;10.06.1993;1993;NY;19;Cond - uS/cm;129.2
+25;Malletts Bay;10.06.1993;1993;NY;20;Cond - uS/cm;129.3
+25;Malletts Bay;10.06.1993;1993;NY;21;Cond - uS/cm;129.3
+25;Malletts Bay;10.06.1993;1993;NY;22;Cond - uS/cm;129.3
+25;Malletts Bay;10.06.1993;1993;NY;23;Cond - uS/cm;129
+25;Malletts Bay;10.06.1993;1993;NY;24;Cond - uS/cm;128
+25;Malletts Bay;10.06.1993;1993;NY;25;Cond - uS/cm;124.2
+25;Malletts Bay;10.06.1993;1993;NY;26;Cond - uS/cm;123.4
+25;Malletts Bay;10.06.1993;1993;NY;27;Cond - uS/cm;122.7
+25;Malletts Bay;10.06.1993;1993;NY;28;Cond - uS/cm;122.7
+25;Malletts Bay;10.06.1993;1993;NY;29;Cond - uS/cm;122.8
+25;Malletts Bay;10.06.1993;1993;NY;30;Cond - uS/cm;123.3
+25;Malletts Bay;10.06.1993;1993;NY;30;Cond - uS/cm;123.2
+25;Malletts Bay;10.06.1993;1993;NY;1;DO - mg/L;9.66
+25;Malletts Bay;10.06.1993;1993;NY;2;DO - mg/L;9.61
+25;Malletts Bay;10.06.1993;1993;NY;3;DO - mg/L;9.59
+25;Malletts Bay;10.06.1993;1993;NY;4;DO - mg/L;9.55
+25;Malletts Bay;10.06.1993;1993;NY;5;DO - mg/L;9.49
+25;Malletts Bay;10.06.1993;1993;NY;6;DO - mg/L;9.48
+25;Malletts Bay;10.06.1993;1993;NY;7;DO - mg/L;9.46
+25;Malletts Bay;10.06.1993;1993;NY;8;DO - mg/L;9.46
+25;Malletts Bay;10.06.1993;1993;NY;9;DO - mg/L;9.59
+25;Malletts Bay;10.06.1993;1993;NY;10;DO - mg/L;9.46
+25;Malletts Bay;10.06.1993;1993;NY;11;DO - mg/L;9.43
+25;Malletts Bay;10.06.1993;1993;NY;12;DO - mg/L;9.42
+25;Malletts Bay;10.06.1993;1993;NY;13;DO - mg/L;9.41
+25;Malletts Bay;10.06.1993;1993;NY;14;DO - mg/L;9.4
+25;Malletts Bay;10.06.1993;1993;NY;15;DO - mg/L;9.4
+25;Malletts Bay;10.06.1993;1993;NY;16;DO - mg/L;9.42
+25;Malletts Bay;10.06.1993;1993;NY;17;DO - mg/L;9.42
+25;Malletts Bay;10.06.1993;1993;NY;18;DO - mg/L;9.4
+25;Malletts Bay;10.06.1993;1993;NY;19;DO - mg/L;9.42
+25;Malletts Bay;10.06.1993;1993;NY;20;DO - mg/L;9.41
+25;Malletts Bay;10.06.1993;1993;NY;21;DO - mg/L;9.41
+25;Malletts Bay;10.06.1993;1993;NY;22;DO - mg/L;9.4
+25;Malletts Bay;10.06.1993;1993;NY;23;DO - mg/L;9.23
+25;Malletts Bay;10.06.1993;1993;NY;24;DO - mg/L;7.39
+25;Malletts Bay;10.06.1993;1993;NY;25;DO - mg/L;4.09
+25;Malletts Bay;10.06.1993;1993;NY;26;DO - mg/L;3.06
+25;Malletts Bay;10.06.1993;1993;NY;27;DO - mg/L;2.61
+25;Malletts Bay;10.06.1993;1993;NY;28;DO - mg/L;2.02
+25;Malletts Bay;10.06.1993;1993;NY;29;DO - mg/L;1.87
+25;Malletts Bay;10.06.1993;1993;NY;30;DO - mg/L;1.8
+25;Malletts Bay;10.06.1993;1993;NY;30;DO - mg/L;1.68
+25;Malletts Bay;10.06.1993;1993;NY;1;DO%;93.3
+25;Malletts Bay;10.06.1993;1993;NY;2;DO%;92.8
+25;Malletts Bay;10.06.1993;1993;NY;3;DO%;92.2
+25;Malletts Bay;10.06.1993;1993;NY;4;DO%;91.6
+25;Malletts Bay;10.06.1993;1993;NY;5;DO%;91.1
+25;Malletts Bay;10.06.1993;1993;NY;6;DO%;91
+25;Malletts Bay;10.06.1993;1993;NY;7;DO%;90.8
+25;Malletts Bay;10.06.1993;1993;NY;8;DO%;90.7
+25;Malletts Bay;10.06.1993;1993;NY;9;DO%;91.9
+25;Malletts Bay;10.06.1993;1993;NY;10;DO%;90.7
+25;Malletts Bay;10.06.1993;1993;NY;11;DO%;90.4
+25;Malletts Bay;10.06.1993;1993;NY;12;DO%;90.4
+25;Malletts Bay;10.06.1993;1993;NY;13;DO%;90.2
+25;Malletts Bay;10.06.1993;1993;NY;14;DO%;90.1
+25;Malletts Bay;10.06.1993;1993;NY;15;DO%;90.1
+25;Malletts Bay;10.06.1993;1993;NY;16;DO%;90.2
+25;Malletts Bay;10.06.1993;1993;NY;17;DO%;90.2
+25;Malletts Bay;10.06.1993;1993;NY;18;DO%;90.1
+25;Malletts Bay;10.06.1993;1993;NY;19;DO%;90.3
+25;Malletts Bay;10.06.1993;1993;NY;20;DO%;90.2
+25;Malletts Bay;10.06.1993;1993;NY;21;DO%;90.2
+25;Malletts Bay;10.06.1993;1993;NY;22;DO%;90
+25;Malletts Bay;10.06.1993;1993;NY;23;DO%;88.3
+25;Malletts Bay;10.06.1993;1993;NY;24;DO%;70.2
+25;Malletts Bay;10.06.1993;1993;NY;25;DO%;37.1
+25;Malletts Bay;10.06.1993;1993;NY;26;DO%;27.5
+25;Malletts Bay;10.06.1993;1993;NY;27;DO%;23.3
+25;Malletts Bay;10.06.1993;1993;NY;28;DO%;17.9
+25;Malletts Bay;10.06.1993;1993;NY;29;DO%;16.6
+25;Malletts Bay;10.06.1993;1993;NY;30;DO%;15.9
+25;Malletts Bay;10.06.1993;1993;NY;30;DO%;14.8
+25;Malletts Bay;10.06.1993;1993;NY;1;ORP - ug/L;326
+25;Malletts Bay;10.06.1993;1993;NY;2;ORP - ug/L;326
+25;Malletts Bay;10.06.1993;1993;NY;3;ORP - ug/L;327
+25;Malletts Bay;10.06.1993;1993;NY;4;ORP - ug/L;327
+25;Malletts Bay;10.06.1993;1993;NY;5;ORP - ug/L;328
+25;Malletts Bay;10.06.1993;1993;NY;6;ORP - ug/L;329
+25;Malletts Bay;10.06.1993;1993;NY;7;ORP - ug/L;329
+25;Malletts Bay;10.06.1993;1993;NY;8;ORP - ug/L;329
+25;Malletts Bay;10.06.1993;1993;NY;9;ORP - ug/L;330
+25;Malletts Bay;10.06.1993;1993;NY;10;ORP - ug/L;330
+25;Malletts Bay;10.06.1993;1993;NY;11;ORP - ug/L;330
+25;Malletts Bay;10.06.1993;1993;NY;12;ORP - ug/L;330
+25;Malletts Bay;10.06.1993;1993;NY;13;ORP - ug/L;331
+25;Malletts Bay;10.06.1993;1993;NY;14;ORP - ug/L;331
+25;Malletts Bay;10.06.1993;1993;NY;15;ORP - ug/L;331
+25;Malletts Bay;10.06.1993;1993;NY;16;ORP - ug/L;332
+25;Malletts Bay;10.06.1993;1993;NY;17;ORP - ug/L;332
+25;Malletts Bay;10.06.1993;1993;NY;18;ORP - ug/L;333
+25;Malletts Bay;10.06.1993;1993;NY;19;ORP - ug/L;333
+25;Malletts Bay;10.06.1993;1993;NY;20;ORP - ug/L;333
+25;Malletts Bay;10.06.1993;1993;NY;21;ORP - ug/L;333
+25;Malletts Bay;10.06.1993;1993;NY;22;ORP - ug/L;333
+25;Malletts Bay;10.06.1993;1993;NY;23;ORP - ug/L;334
+25;Malletts Bay;10.06.1993;1993;NY;24;ORP - ug/L;338
+25;Malletts Bay;10.06.1993;1993;NY;25;ORP - ug/L;345
+25;Malletts Bay;10.06.1993;1993;NY;26;ORP - ug/L;348
+25;Malletts Bay;10.06.1993;1993;NY;27;ORP - ug/L;349
+25;Malletts Bay;10.06.1993;1993;NY;28;ORP - ug/L;350
+25;Malletts Bay;10.06.1993;1993;NY;29;ORP - ug/L;351
+25;Malletts Bay;10.06.1993;1993;NY;30;ORP - ug/L;351
+25;Malletts Bay;10.06.1993;1993;NY;30;ORP - ug/L;352
+25;Malletts Bay;10.06.1993;1993;NY;1;pH - Units;7.49
+25;Malletts Bay;10.06.1993;1993;NY;2;pH - Units;7.48
+25;Malletts Bay;10.06.1993;1993;NY;3;pH - Units;7.47
+25;Malletts Bay;10.06.1993;1993;NY;4;pH - Units;7.46
+25;Malletts Bay;10.06.1993;1993;NY;5;pH - Units;7.44
+25;Malletts Bay;10.06.1993;1993;NY;6;pH - Units;7.44
+25;Malletts Bay;10.06.1993;1993;NY;7;pH - Units;7.43
+25;Malletts Bay;10.06.1993;1993;NY;8;pH - Units;7.43
+25;Malletts Bay;10.06.1993;1993;NY;9;pH - Units;7.43
+25;Malletts Bay;10.06.1993;1993;NY;10;pH - Units;7.43
+25;Malletts Bay;10.06.1993;1993;NY;11;pH - Units;7.42
+25;Malletts Bay;10.06.1993;1993;NY;12;pH - Units;7.42
+25;Malletts Bay;10.06.1993;1993;NY;13;pH - Units;7.42
+25;Malletts Bay;10.06.1993;1993;NY;14;pH - Units;7.42
+25;Malletts Bay;10.06.1993;1993;NY;15;pH - Units;7.42
+25;Malletts Bay;10.06.1993;1993;NY;16;pH - Units;7.41
+25;Malletts Bay;10.06.1993;1993;NY;17;pH - Units;7.4
+25;Malletts Bay;10.06.1993;1993;NY;18;pH - Units;7.4
+25;Malletts Bay;10.06.1993;1993;NY;19;pH - Units;7.41
+25;Malletts Bay;10.06.1993;1993;NY;20;pH - Units;7.4
+25;Malletts Bay;10.06.1993;1993;NY;21;pH - Units;7.41
+25;Malletts Bay;10.06.1993;1993;NY;22;pH - Units;7.41
+25;Malletts Bay;10.06.1993;1993;NY;23;pH - Units;7.37
+25;Malletts Bay;10.06.1993;1993;NY;24;pH - Units;7.23
+25;Malletts Bay;10.06.1993;1993;NY;25;pH - Units;6.94
+25;Malletts Bay;10.06.1993;1993;NY;26;pH - Units;6.83
+25;Malletts Bay;10.06.1993;1993;NY;27;pH - Units;6.79
+25;Malletts Bay;10.06.1993;1993;NY;28;pH - Units;6.73
+25;Malletts Bay;10.06.1993;1993;NY;29;pH - Units;6.71
+25;Malletts Bay;10.06.1993;1993;NY;30;pH - Units;6.7
+25;Malletts Bay;10.06.1993;1993;NY;30;pH - Units;6.7
+25;Malletts Bay;10.06.1993;1993;NY;1;TempC - deg C;13.79
+25;Malletts Bay;10.06.1993;1993;NY;2;TempC - deg C;13.75
+25;Malletts Bay;10.06.1993;1993;NY;3;TempC - deg C;13.55
+25;Malletts Bay;10.06.1993;1993;NY;4;TempC - deg C;13.5
+25;Malletts Bay;10.06.1993;1993;NY;5;TempC - deg C;13.48
+25;Malletts Bay;10.06.1993;1993;NY;6;TempC - deg C;13.47
+25;Malletts Bay;10.06.1993;1993;NY;7;TempC - deg C;13.46
+25;Malletts Bay;10.06.1993;1993;NY;8;TempC - deg C;13.45
+25;Malletts Bay;10.06.1993;1993;NY;9;TempC - deg C;13.45
+25;Malletts Bay;10.06.1993;1993;NY;10;TempC - deg C;13.44
+25;Malletts Bay;10.06.1993;1993;NY;11;TempC - deg C;13.44
+25;Malletts Bay;10.06.1993;1993;NY;12;TempC - deg C;13.44
+25;Malletts Bay;10.06.1993;1993;NY;13;TempC - deg C;13.43
+25;Malletts Bay;10.06.1993;1993;NY;14;TempC - deg C;13.42
+25;Malletts Bay;10.06.1993;1993;NY;15;TempC - deg C;13.42
+25;Malletts Bay;10.06.1993;1993;NY;16;TempC - deg C;13.42
+25;Malletts Bay;10.06.1993;1993;NY;17;TempC - deg C;13.42
+25;Malletts Bay;10.06.1993;1993;NY;18;TempC - deg C;13.42
+25;Malletts Bay;10.06.1993;1993;NY;19;TempC - deg C;13.41
+25;Malletts Bay;10.06.1993;1993;NY;20;TempC - deg C;13.41
+25;Malletts Bay;10.06.1993;1993;NY;21;TempC - deg C;13.41
+25;Malletts Bay;10.06.1993;1993;NY;22;TempC - deg C;13.4
+25;Malletts Bay;10.06.1993;1993;NY;23;TempC - deg C;13.32
+25;Malletts Bay;10.06.1993;1993;NY;24;TempC - deg C;13.06
+25;Malletts Bay;10.06.1993;1993;NY;25;TempC - deg C;11.01
+25;Malletts Bay;10.06.1993;1993;NY;26;TempC - deg C;10.56
+25;Malletts Bay;10.06.1993;1993;NY;27;TempC - deg C;10.23
+25;Malletts Bay;10.06.1993;1993;NY;28;TempC - deg C;9.93
+25;Malletts Bay;10.06.1993;1993;NY;29;TempC - deg C;9.89
+25;Malletts Bay;10.06.1993;1993;NY;30;TempC - deg C;9.82
+25;Malletts Bay;10.06.1993;1993;NY;30;TempC - deg C;9.86
