@@ -185,6 +185,11 @@ Falls Dateinamen zu lang sind können ebenfalls Probleme entstehen [stackoverflo
 
 einzugeben. Dann wird die Option "lange Dateinnamen" für das spezielle repository deaktiviert. 
 
+Falls Systemdateien sich auf dem lokalen Ordner befiden (bspw. `nul`) kann man diese entfernen mit:
+
+- rechtsklick und "Git Bash Here"
+- Schreibe: "rm nul" (oder die jeweilige *Dateiname.Dateiendung*...falls keine Dateiendung vorhanden wie bei diese MS-DOS Datei dann weglassen)
+
 ### Ordner lokal behalten aber auf Git löschen
 
 Dazu kann man im Terminal eingeben `git rm -r --cached FOLDERNAME`. 
