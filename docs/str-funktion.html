@@ -4,21 +4,21 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>3.5 str() Funktion | Daten Analyse mit R - Dokumentation</title>
-  <meta name="description" content="Dies ist eine Dokumentation um R bei der explorativen Datenanalyse in den Geowissenschaften einzusetzen." />
-  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+  <title>3.5 str() Funktion | Daten Analyse mit RStudio - Dokumentation</title>
+  <meta name="description" content="Explorative Datenanalyse in den Geowissenschaften" />
+  <meta name="generator" content="bookdown 0.23 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="3.5 str() Funktion | Daten Analyse mit R - Dokumentation" />
+  <meta property="og:title" content="3.5 str() Funktion | Daten Analyse mit RStudio - Dokumentation" />
   <meta property="og:type" content="book" />
   
   
-  <meta property="og:description" content="Dies ist eine Dokumentation um R bei der explorativen Datenanalyse in den Geowissenschaften einzusetzen." />
+  <meta property="og:description" content="Explorative Datenanalyse in den Geowissenschaften" />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="3.5 str() Funktion | Daten Analyse mit R - Dokumentation" />
+  <meta name="twitter:title" content="3.5 str() Funktion | Daten Analyse mit RStudio - Dokumentation" />
   
-  <meta name="twitter:description" content="Dies ist eine Dokumentation um R bei der explorativen Datenanalyse in den Geowissenschaften einzusetzen." />
+  <meta name="twitter:description" content="Explorative Datenanalyse in den Geowissenschaften" />
   
 
 <meta name="author" content="Dr. Kristof Dorau" />
@@ -32,8 +32,8 @@
   
 <link rel="prev" href="rechnen-mit-vektoren.html"/>
 <link rel="next" href="selektion-von-spaltenzeilen-in-dataframes.html"/>
-<script src="assets/header-attrs-2.9/header-attrs.js"></script>
-<script src="assets/jquery-2.2.3/jquery.min.js"></script>
+<script src="assets/header-attrs-2.10/header-attrs.js"></script>
+<script src="assets/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <link href="assets/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="assets/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="assets/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -52,6 +52,7 @@
 
 <link href="assets/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
 <script src="assets/anchor-sections-1.0.1/anchor-sections.js"></script>
+<script src="assets/twitter-widget-0.0.1/widgets.js"></script>
 
 
 <style type="text/css">
@@ -202,21 +203,21 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="4.1" data-path="tidy-data.html"><a href="tidy-data.html"><i class="fa fa-check"></i><b>4.1</b> Tidy data</a></li>
 <li class="chapter" data-level="4.2" data-path="dateiformate.html"><a href="dateiformate.html"><i class="fa fa-check"></i><b>4.2</b> Dateiformate</a></li>
-<li class="chapter" data-level="4.3" data-path="readrread-delim.html"><a href="readrread-delim.html"><i class="fa fa-check"></i><b>4.3</b> readr::read_delim()</a></li>
+<li class="chapter" data-level="4.3" data-path="readrread_delim.html"><a href="readrread_delim.html"><i class="fa fa-check"></i><b>4.3</b> readr::read_delim()</a></li>
 <li class="chapter" data-level="4.4" data-path="arbeiten-mit-zeiten.html"><a href="arbeiten-mit-zeiten.html"><i class="fa fa-check"></i><b>4.4</b> Arbeiten mit Zeiten</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="daten-manipulieren.html"><a href="daten-manipulieren.html"><i class="fa fa-check"></i><b>5</b> Daten manipulieren</a>
 <ul>
-<li class="chapter" data-level="5.1" data-path="select-variablen-auswählen-spaltenweise.html"><a href="select-variablen-auswählen-spaltenweise.html"><i class="fa fa-check"></i><b>5.1</b> select() - Variablen auswählen (spaltenweise)</a></li>
-<li class="chapter" data-level="5.2" data-path="filter-filtern-von-variablen-zeilenweise.html"><a href="filter-filtern-von-variablen-zeilenweise.html"><i class="fa fa-check"></i><b>5.2</b> filter() - Filtern von Variablen (zeilenweise)</a></li>
-<li class="chapter" data-level="5.3" data-path="arrange-sortieren-des-datensatzes.html"><a href="arrange-sortieren-des-datensatzes.html"><i class="fa fa-check"></i><b>5.3</b> arrange() - Sortieren des Datensatzes</a></li>
-<li class="chapter" data-level="5.4" data-path="mutate-erstelle-neue-variablen.html"><a href="mutate-erstelle-neue-variablen.html"><i class="fa fa-check"></i><b>5.4</b> mutate() - Erstelle neue Variablen</a></li>
-<li class="chapter" data-level="5.5" data-path="summarize-zusammenfassung-von-variablen.html"><a href="summarize-zusammenfassung-von-variablen.html"><i class="fa fa-check"></i><b>5.5</b> summarize() - Zusammenfassung von Variablen</a></li>
-<li class="chapter" data-level="5.6" data-path="group-by-gruppiere-variablen.html"><a href="group-by-gruppiere-variablen.html"><i class="fa fa-check"></i><b>5.6</b> group_by - Gruppiere Variablen</a></li>
-<li class="chapter" data-level="5.7" data-path="across-anwenden-von-funktionen-auf-spalten.html"><a href="across-anwenden-von-funktionen-auf-spalten.html"><i class="fa fa-check"></i><b>5.7</b> across() - Anwenden von Funktionen auf Spalten</a></li>
+<li class="chapter" data-level="5.1" data-path="select---variablen-auswählen-spaltenweise.html"><a href="select---variablen-auswählen-spaltenweise.html"><i class="fa fa-check"></i><b>5.1</b> select() - Variablen auswählen (spaltenweise)</a></li>
+<li class="chapter" data-level="5.2" data-path="filter---filtern-von-variablen-zeilenweise.html"><a href="filter---filtern-von-variablen-zeilenweise.html"><i class="fa fa-check"></i><b>5.2</b> filter() - Filtern von Variablen (zeilenweise)</a></li>
+<li class="chapter" data-level="5.3" data-path="arrange---sortieren-des-datensatzes.html"><a href="arrange---sortieren-des-datensatzes.html"><i class="fa fa-check"></i><b>5.3</b> arrange() - Sortieren des Datensatzes</a></li>
+<li class="chapter" data-level="5.4" data-path="mutate---erstelle-neue-variablen.html"><a href="mutate---erstelle-neue-variablen.html"><i class="fa fa-check"></i><b>5.4</b> mutate() - Erstelle neue Variablen</a></li>
+<li class="chapter" data-level="5.5" data-path="summarize---zusammenfassung-von-variablen.html"><a href="summarize---zusammenfassung-von-variablen.html"><i class="fa fa-check"></i><b>5.5</b> summarize() - Zusammenfassung von Variablen</a></li>
+<li class="chapter" data-level="5.6" data-path="group_by---gruppiere-variablen.html"><a href="group_by---gruppiere-variablen.html"><i class="fa fa-check"></i><b>5.6</b> group_by - Gruppiere Variablen</a></li>
+<li class="chapter" data-level="5.7" data-path="across---anwenden-von-funktionen-auf-spalten.html"><a href="across---anwenden-von-funktionen-auf-spalten.html"><i class="fa fa-check"></i><b>5.7</b> across() - Anwenden von Funktionen auf Spalten</a></li>
 <li class="chapter" data-level="5.8" data-path="joins.html"><a href="joins.html"><i class="fa fa-check"></i><b>5.8</b> joins</a></li>
-<li class="chapter" data-level="5.9" data-path="pivot-longer-long-data-format.html"><a href="pivot-longer-long-data-format.html"><i class="fa fa-check"></i><b>5.9</b> pivot_longer() - Long data format</a></li>
-<li class="chapter" data-level="5.10" data-path="pivot-wider-wider-data-format.html"><a href="pivot-wider-wider-data-format.html"><i class="fa fa-check"></i><b>5.10</b> pivot_wider() - wider data format</a></li>
+<li class="chapter" data-level="5.9" data-path="pivot_longer---long-data-format.html"><a href="pivot_longer---long-data-format.html"><i class="fa fa-check"></i><b>5.9</b> pivot_longer() - Long data format</a></li>
+<li class="chapter" data-level="5.10" data-path="pivot_wider---wider-data-format.html"><a href="pivot_wider---wider-data-format.html"><i class="fa fa-check"></i><b>5.10</b> pivot_wider() - wider data format</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="explorative-datenanalyse.html"><a href="explorative-datenanalyse.html"><i class="fa fa-check"></i><b>6</b> Explorative-Datenanalyse</a>
 <ul>
@@ -224,16 +225,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="7" data-path="datenvisualisierung.html"><a href="datenvisualisierung.html"><i class="fa fa-check"></i><b>7</b> Datenvisualisierung</a>
 <ul>
-<li class="chapter" data-level="7.1" data-path="ggplot2-grammar-of-graphics.html"><a href="ggplot2-grammar-of-graphics.html"><i class="fa fa-check"></i><b>7.1</b> ggplot2 - grammar of graphics</a>
+<li class="chapter" data-level="7.1" data-path="ggplot2---grammar-of-graphics.html"><a href="ggplot2---grammar-of-graphics.html"><i class="fa fa-check"></i><b>7.1</b> ggplot2 - grammar of graphics</a>
 <ul>
-<li class="chapter" data-level="7.1.1" data-path="ggplot2-grammar-of-graphics.html"><a href="ggplot2-grammar-of-graphics.html#schlüsselkomponenten"><i class="fa fa-check"></i><b>7.1.1</b> Schlüsselkomponenten</a></li>
-<li class="chapter" data-level="7.1.2" data-path="ggplot2-grammar-of-graphics.html"><a href="ggplot2-grammar-of-graphics.html#aesthetics-color-size-shape"><i class="fa fa-check"></i><b>7.1.2</b> Aesthetics (color, size, shape)</a></li>
-<li class="chapter" data-level="7.1.3" data-path="ggplot2-grammar-of-graphics.html"><a href="ggplot2-grammar-of-graphics.html#smoothers-and-models"><i class="fa fa-check"></i><b>7.1.3</b> Smoothers and models</a></li>
-<li class="chapter" data-level="7.1.4" data-path="ggplot2-grammar-of-graphics.html"><a href="ggplot2-grammar-of-graphics.html#labels"><i class="fa fa-check"></i><b>7.1.4</b> Labels</a></li>
-<li class="chapter" data-level="7.1.5" data-path="ggplot2-grammar-of-graphics.html"><a href="ggplot2-grammar-of-graphics.html#themes"><i class="fa fa-check"></i><b>7.1.5</b> Themes</a></li>
-<li class="chapter" data-level="7.1.6" data-path="ggplot2-grammar-of-graphics.html"><a href="ggplot2-grammar-of-graphics.html#facets"><i class="fa fa-check"></i><b>7.1.6</b> Facets</a></li>
-<li class="chapter" data-level="7.1.7" data-path="ggplot2-grammar-of-graphics.html"><a href="ggplot2-grammar-of-graphics.html#coordinate-system"><i class="fa fa-check"></i><b>7.1.7</b> Coordinate system</a></li>
-<li class="chapter" data-level="7.1.8" data-path="ggplot2-grammar-of-graphics.html"><a href="ggplot2-grammar-of-graphics.html#annotations"><i class="fa fa-check"></i><b>7.1.8</b> Annotations</a></li>
+<li class="chapter" data-level="7.1.1" data-path="ggplot2---grammar-of-graphics.html"><a href="ggplot2---grammar-of-graphics.html#schlüsselkomponenten"><i class="fa fa-check"></i><b>7.1.1</b> Schlüsselkomponenten</a></li>
+<li class="chapter" data-level="7.1.2" data-path="ggplot2---grammar-of-graphics.html"><a href="ggplot2---grammar-of-graphics.html#aesthetics-color-size-shape"><i class="fa fa-check"></i><b>7.1.2</b> Aesthetics (color, size, shape)</a></li>
+<li class="chapter" data-level="7.1.3" data-path="ggplot2---grammar-of-graphics.html"><a href="ggplot2---grammar-of-graphics.html#smoothers-and-models"><i class="fa fa-check"></i><b>7.1.3</b> Smoothers and models</a></li>
+<li class="chapter" data-level="7.1.4" data-path="ggplot2---grammar-of-graphics.html"><a href="ggplot2---grammar-of-graphics.html#labels"><i class="fa fa-check"></i><b>7.1.4</b> Labels</a></li>
+<li class="chapter" data-level="7.1.5" data-path="ggplot2---grammar-of-graphics.html"><a href="ggplot2---grammar-of-graphics.html#themes"><i class="fa fa-check"></i><b>7.1.5</b> Themes</a></li>
+<li class="chapter" data-level="7.1.6" data-path="ggplot2---grammar-of-graphics.html"><a href="ggplot2---grammar-of-graphics.html#facets"><i class="fa fa-check"></i><b>7.1.6</b> Facets</a></li>
+<li class="chapter" data-level="7.1.7" data-path="ggplot2---grammar-of-graphics.html"><a href="ggplot2---grammar-of-graphics.html#coordinate-system"><i class="fa fa-check"></i><b>7.1.7</b> Coordinate system</a></li>
+<li class="chapter" data-level="7.1.8" data-path="ggplot2---grammar-of-graphics.html"><a href="ggplot2---grammar-of-graphics.html#annotations"><i class="fa fa-check"></i><b>7.1.8</b> Annotations</a></li>
 </ul></li>
 <li class="chapter" data-level="7.2" data-path="verknüfpen-von-tidyverse-und-ggplot.html"><a href="verknüfpen-von-tidyverse-und-ggplot.html"><i class="fa fa-check"></i><b>7.2</b> Verknüfpen von tidyverse und ggplot</a></li>
 <li class="chapter" data-level="7.3" data-path="arbeiten-mit-zeiten-1.html"><a href="arbeiten-mit-zeiten-1.html"><i class="fa fa-check"></i><b>7.3</b> Arbeiten mit Zeiten</a>
@@ -315,34 +316,39 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="13.2" data-path="github-pages.html"><a href="github-pages.html"><i class="fa fa-check"></i><b>13.2</b> Github pages</a></li>
 <li class="chapter" data-level="13.3" data-path="emojiys.html"><a href="emojiys.html"><i class="fa fa-check"></i><b>13.3</b> Emojiys</a></li>
 </ul></li>
-<li class="chapter" data-level="14" data-path="blogdown.html"><a href="blogdown.html"><i class="fa fa-check"></i><b>14</b> Blogdown</a>
+<li class="chapter" data-level="14" data-path="blogdown.html"><a href="blogdown.html"><i class="fa fa-check"></i><b>14</b> Blogdown</a></li>
+<li class="chapter" data-level="15" data-path="setup-a-homepage-with-hugo-and-blogdown.html"><a href="setup-a-homepage-with-hugo-and-blogdown.html"><i class="fa fa-check"></i><b>15</b> Setup a homepage with Hugo and blogdown</a>
 <ul>
-<li class="chapter" data-level="14.1" data-path="github-1.html"><a href="github-1.html"><i class="fa fa-check"></i><b>14.1</b> Github</a></li>
-<li class="chapter" data-level="14.2" data-path="domain-name.html"><a href="domain-name.html"><i class="fa fa-check"></i><b>14.2</b> Domain name</a></li>
-<li class="chapter" data-level="14.3" data-path="homepage.html"><a href="homepage.html"><i class="fa fa-check"></i><b>14.3</b> Homepage</a></li>
-<li class="chapter" data-level="14.4" data-path="wowchemystarter-academic.html"><a href="wowchemystarter-academic.html"><i class="fa fa-check"></i><b>14.4</b> “wowchemy/starter-academic”</a></li>
-<li class="chapter" data-level="14.5" data-path="where-to-adjust-the-homepage.html"><a href="where-to-adjust-the-homepage.html"><i class="fa fa-check"></i><b>14.5</b> Where to adjust the Homepage</a></li>
-<li class="chapter" data-level="14.6" data-path="workflow-1.html"><a href="workflow-1.html"><i class="fa fa-check"></i><b>14.6</b> Workflow</a></li>
-<li class="chapter" data-level="14.7" data-path="yaml-metadata.html"><a href="yaml-metadata.html"><i class="fa fa-check"></i><b>14.7</b> YAML metadata</a></li>
+<li class="chapter" data-level="15.1" data-path="github-1.html"><a href="github-1.html"><i class="fa fa-check"></i><b>15.1</b> Github</a></li>
+<li class="chapter" data-level="15.2" data-path="domain-name.html"><a href="domain-name.html"><i class="fa fa-check"></i><b>15.2</b> Domain name</a></li>
+<li class="chapter" data-level="15.3" data-path="homepage.html"><a href="homepage.html"><i class="fa fa-check"></i><b>15.3</b> Homepage</a></li>
+<li class="chapter" data-level="15.4" data-path="wowchemystarter-academic.html"><a href="wowchemystarter-academic.html"><i class="fa fa-check"></i><b>15.4</b> “wowchemy/starter-academic”</a></li>
+<li class="chapter" data-level="15.5" data-path="where-to-adjust-the-homepage.html"><a href="where-to-adjust-the-homepage.html"><i class="fa fa-check"></i><b>15.5</b> Where to adjust the Homepage</a></li>
+<li class="chapter" data-level="15.6" data-path="workflow-1.html"><a href="workflow-1.html"><i class="fa fa-check"></i><b>15.6</b> Workflow</a></li>
+<li class="chapter" data-level="15.7" data-path="yaml-metadata.html"><a href="yaml-metadata.html"><i class="fa fa-check"></i><b>15.7</b> YAML metadata</a></li>
 </ul></li>
-<li class="chapter" data-level="15" data-path="diverses.html"><a href="diverses.html"><i class="fa fa-check"></i><b>15</b> Diverses</a>
+<li class="chapter" data-level="16" data-path="shiny.html"><a href="shiny.html"><i class="fa fa-check"></i><b>16</b> Shiny</a>
 <ul>
-<li class="chapter" data-level="15.1" data-path="troubleshooting.html"><a href="troubleshooting.html"><i class="fa fa-check"></i><b>15.1</b> Troubleshooting</a>
-<ul>
-<li class="chapter" data-level="15.1.1" data-path="troubleshooting.html"><a href="troubleshooting.html#entfernen-aller-packages"><i class="fa fa-check"></i><b>15.1.1</b> Entfernen aller packages</a></li>
+<li class="chapter" data-level="16.1" data-path="ui-benutzeroberfläche.html"><a href="ui-benutzeroberfläche.html"><i class="fa fa-check"></i><b>16.1</b> UI Benutzeroberfläche</a></li>
+<li class="chapter" data-level="16.2" data-path="welche-befehle-sollen-ausgeführt-werden.html"><a href="welche-befehle-sollen-ausgeführt-werden.html"><i class="fa fa-check"></i><b>16.2</b> Welche Befehle sollen ausgeführt werden</a></li>
+<li class="chapter" data-level="16.3" data-path="beispiel-speicherkoog.html"><a href="beispiel-speicherkoog.html"><i class="fa fa-check"></i><b>16.3</b> Beispiel Speicherkoog</a></li>
 </ul></li>
-<li class="chapter" data-level="15.2" data-path="shortcuts.html"><a href="shortcuts.html"><i class="fa fa-check"></i><b>15.2</b> Shortcuts</a></li>
-<li class="chapter" data-level="15.3" data-path="faqs.html"><a href="faqs.html"><i class="fa fa-check"></i><b>15.3</b> FAQs</a>
+<li class="chapter" data-level="17" data-path="diverses.html"><a href="diverses.html"><i class="fa fa-check"></i><b>17</b> Diverses</a>
 <ul>
-<li class="chapter" data-level="15.3.1" data-path="faqs.html"><a href="faqs.html#rstudio-1"><i class="fa fa-check"></i><b>15.3.1</b> RStudio</a></li>
-<li class="chapter" data-level="15.3.2" data-path="faqs.html"><a href="faqs.html#datenmanipulation"><i class="fa fa-check"></i><b>15.3.2</b> Datenmanipulation</a></li>
-</ul></li>
-<li class="chapter" data-level="15.4" data-path="visualisation.html"><a href="visualisation.html"><i class="fa fa-check"></i><b>15.4</b> Visualisation</a>
+<li class="chapter" data-level="17.0.1" data-path="diverses.html"><a href="diverses.html#entfernen-aller-packages"><i class="fa fa-check"></i><b>17.0.1</b> Entfernen aller packages</a></li>
+<li class="chapter" data-level="17.0.2" data-path="diverses.html"><a href="diverses.html#shortcuts"><i class="fa fa-check"></i><b>17.0.2</b> Shortcuts</a></li>
+<li class="chapter" data-level="17.1" data-path="faqs.html"><a href="faqs.html"><i class="fa fa-check"></i><b>17.1</b> FAQs</a>
 <ul>
-<li class="chapter" data-level="15.4.1" data-path="visualisation.html"><a href="visualisation.html#superscripts-and-subscripts"><i class="fa fa-check"></i><b>15.4.1</b> Superscripts and subscripts</a></li>
-<li class="chapter" data-level="15.4.2" data-path="visualisation.html"><a href="visualisation.html#modifying-labels-in-faceted-plots"><i class="fa fa-check"></i><b>15.4.2</b> Modifying labels in faceted plots</a></li>
+<li class="chapter" data-level="17.1.1" data-path="faqs.html"><a href="faqs.html#kalender-erstellen"><i class="fa fa-check"></i><b>17.1.1</b> Kalender erstellen</a></li>
+<li class="chapter" data-level="17.1.2" data-path="faqs.html"><a href="faqs.html#rstudio-1"><i class="fa fa-check"></i><b>17.1.2</b> RStudio</a></li>
+<li class="chapter" data-level="17.1.3" data-path="faqs.html"><a href="faqs.html#datenmanipulation"><i class="fa fa-check"></i><b>17.1.3</b> Datenmanipulation</a></li>
 </ul></li>
-<li class="chapter" data-level="15.5" data-path="glossary.html"><a href="glossary.html"><i class="fa fa-check"></i><b>15.5</b> Glossary</a></li>
+<li class="chapter" data-level="17.2" data-path="visualisation.html"><a href="visualisation.html"><i class="fa fa-check"></i><b>17.2</b> Visualisation</a>
+<ul>
+<li class="chapter" data-level="17.2.1" data-path="visualisation.html"><a href="visualisation.html#superscripts-and-subscripts"><i class="fa fa-check"></i><b>17.2.1</b> Superscripts and subscripts</a></li>
+<li class="chapter" data-level="17.2.2" data-path="visualisation.html"><a href="visualisation.html#modifying-labels-in-faceted-plots"><i class="fa fa-check"></i><b>17.2.2</b> Modifying labels in faceted plots</a></li>
+</ul></li>
+<li class="chapter" data-level="17.3" data-path="glossary.html"><a href="glossary.html"><i class="fa fa-check"></i><b>17.3</b> Glossary</a></li>
 </ul></li>
 </ul>
 
@@ -353,7 +359,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Daten Analyse mit R - Dokumentation</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Daten Analyse mit RStudio - Dokumentation</a>
           </h1>
         </div>
 
@@ -364,9 +370,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="str-funktion" class="section level2" number="3.5">
 <h2><span class="header-section-number">3.5</span> str() Funktion</h2>
 <p>Eine wichtige Funktion um Informationen über einen Datensatz oder ein Objekt zu bekommen ist die Funktion <code>str()</code>, kurz für <strong>structure</strong>. Diese Funktion lässt sich auf alle Datenstrukturen in R anweden, also für Vektoren, Listen, Matrix und dataframes.</p>
-<div class="sourceCode" id="cb38"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb38-1"><a href="str-funktion.html#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Erkunden eines Vektors mit 100 Zufallszahlen</span></span>
-<span id="cb38-2"><a href="str-funktion.html#cb38-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(eh)</span>
-<span id="cb38-3"><a href="str-funktion.html#cb38-3" aria-hidden="true" tabindex="-1"></a><span class="do">##  num [1:100] 650 643 680 630 685 ...</span></span></code></pre></div>
+<div class="sourceCode" id="cb57"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb57-1"><a href="str-funktion.html#cb57-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Erkunden eines Vektors mit 100 Zufallszahlen</span></span>
+<span id="cb57-2"><a href="str-funktion.html#cb57-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(eh)</span>
+<span id="cb57-3"><a href="str-funktion.html#cb57-3" aria-hidden="true" tabindex="-1"></a><span class="do">##  num [1:100] 670 703 645 670 676 ...</span></span></code></pre></div>
 <p>Hier kann man folgende Informationen draus ablesen:</p>
 <ul>
 <li>Es handelt sich um ein <code>numeric</code> Datenformat</li>
@@ -374,37 +380,37 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>Die ersten fünf Zahlen lauten …</li>
 </ul>
 <p>Haben wir ein komplizierteres Objekt wie den mtcars Datensatz wird die <code>str()</code> Auflistung etwas komplexer:</p>
-<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb39-1"><a href="str-funktion.html#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Erkunden des Datensatzes mtcars</span></span>
-<span id="cb39-2"><a href="str-funktion.html#cb39-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(mtcars)</span>
-<span id="cb39-3"><a href="str-funktion.html#cb39-3" aria-hidden="true" tabindex="-1"></a><span class="do">## &#39;data.frame&#39;:    32 obs. of  11 variables:</span></span>
-<span id="cb39-4"><a href="str-funktion.html#cb39-4" aria-hidden="true" tabindex="-1"></a><span class="do">##  $ mpg : num  21 21 22.8 21.4 18.7 18.1 14.3 24.4 22.8 19.2 ...</span></span>
-<span id="cb39-5"><a href="str-funktion.html#cb39-5" aria-hidden="true" tabindex="-1"></a><span class="do">##  $ cyl : num  6 6 4 6 8 6 8 4 4 6 ...</span></span>
-<span id="cb39-6"><a href="str-funktion.html#cb39-6" aria-hidden="true" tabindex="-1"></a><span class="do">##  $ disp: num  160 160 108 258 360 ...</span></span>
-<span id="cb39-7"><a href="str-funktion.html#cb39-7" aria-hidden="true" tabindex="-1"></a><span class="do">##  $ hp  : num  110 110 93 110 175 105 245 62 95 123 ...</span></span>
-<span id="cb39-8"><a href="str-funktion.html#cb39-8" aria-hidden="true" tabindex="-1"></a><span class="do">##  $ drat: num  3.9 3.9 3.85 3.08 3.15 2.76 3.21 3.69 3.92 3.92 ...</span></span>
-<span id="cb39-9"><a href="str-funktion.html#cb39-9" aria-hidden="true" tabindex="-1"></a><span class="do">##  $ wt  : num  2.62 2.88 2.32 3.21 3.44 ...</span></span>
-<span id="cb39-10"><a href="str-funktion.html#cb39-10" aria-hidden="true" tabindex="-1"></a><span class="do">##  $ qsec: num  16.5 17 18.6 19.4 17 ...</span></span>
-<span id="cb39-11"><a href="str-funktion.html#cb39-11" aria-hidden="true" tabindex="-1"></a><span class="do">##  $ vs  : num  0 0 1 1 0 1 0 1 1 1 ...</span></span>
-<span id="cb39-12"><a href="str-funktion.html#cb39-12" aria-hidden="true" tabindex="-1"></a><span class="do">##  $ am  : num  1 1 1 0 0 0 0 0 0 0 ...</span></span>
-<span id="cb39-13"><a href="str-funktion.html#cb39-13" aria-hidden="true" tabindex="-1"></a><span class="do">##  $ gear: num  4 4 4 3 3 3 3 4 4 4 ...</span></span>
-<span id="cb39-14"><a href="str-funktion.html#cb39-14" aria-hidden="true" tabindex="-1"></a><span class="do">##  $ carb: num  4 4 1 1 2 1 4 2 2 4 ...</span></span></code></pre></div>
+<div class="sourceCode" id="cb58"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb58-1"><a href="str-funktion.html#cb58-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Erkunden des Datensatzes mtcars</span></span>
+<span id="cb58-2"><a href="str-funktion.html#cb58-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(mtcars)</span>
+<span id="cb58-3"><a href="str-funktion.html#cb58-3" aria-hidden="true" tabindex="-1"></a><span class="do">## &#39;data.frame&#39;:    32 obs. of  11 variables:</span></span>
+<span id="cb58-4"><a href="str-funktion.html#cb58-4" aria-hidden="true" tabindex="-1"></a><span class="do">##  $ mpg : num  21 21 22.8 21.4 18.7 18.1 14.3 24.4 22.8 19.2 ...</span></span>
+<span id="cb58-5"><a href="str-funktion.html#cb58-5" aria-hidden="true" tabindex="-1"></a><span class="do">##  $ cyl : num  6 6 4 6 8 6 8 4 4 6 ...</span></span>
+<span id="cb58-6"><a href="str-funktion.html#cb58-6" aria-hidden="true" tabindex="-1"></a><span class="do">##  $ disp: num  160 160 108 258 360 ...</span></span>
+<span id="cb58-7"><a href="str-funktion.html#cb58-7" aria-hidden="true" tabindex="-1"></a><span class="do">##  $ hp  : num  110 110 93 110 175 105 245 62 95 123 ...</span></span>
+<span id="cb58-8"><a href="str-funktion.html#cb58-8" aria-hidden="true" tabindex="-1"></a><span class="do">##  $ drat: num  3.9 3.9 3.85 3.08 3.15 2.76 3.21 3.69 3.92 3.92 ...</span></span>
+<span id="cb58-9"><a href="str-funktion.html#cb58-9" aria-hidden="true" tabindex="-1"></a><span class="do">##  $ wt  : num  2.62 2.88 2.32 3.21 3.44 ...</span></span>
+<span id="cb58-10"><a href="str-funktion.html#cb58-10" aria-hidden="true" tabindex="-1"></a><span class="do">##  $ qsec: num  16.5 17 18.6 19.4 17 ...</span></span>
+<span id="cb58-11"><a href="str-funktion.html#cb58-11" aria-hidden="true" tabindex="-1"></a><span class="do">##  $ vs  : num  0 0 1 1 0 1 0 1 1 1 ...</span></span>
+<span id="cb58-12"><a href="str-funktion.html#cb58-12" aria-hidden="true" tabindex="-1"></a><span class="do">##  $ am  : num  1 1 1 0 0 0 0 0 0 0 ...</span></span>
+<span id="cb58-13"><a href="str-funktion.html#cb58-13" aria-hidden="true" tabindex="-1"></a><span class="do">##  $ gear: num  4 4 4 3 3 3 3 4 4 4 ...</span></span>
+<span id="cb58-14"><a href="str-funktion.html#cb58-14" aria-hidden="true" tabindex="-1"></a><span class="do">##  $ carb: num  4 4 1 1 2 1 4 2 2 4 ...</span></span></code></pre></div>
 <p>Wir können an der Datenstruktur erkennen, dass es sich um einen <code>data.frame</code> handelt mit 32 observations von 11 Variablen. Alle haben den Datentyp <code>numeric</code>. Die Liste ist jedoch so lang, dass sie nicht komplett dargestellt wird. Wollen wir nur die ersten fünf Einträge anzeigen geht dies mit der <code>head()</code> Funktion und die letzten fünf Einträge mit der <code>tail()</code> Funktion:</p>
-<div class="sourceCode" id="cb40"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb40-1"><a href="str-funktion.html#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(mtcars, <span class="at">n =</span> <span class="dv">5</span>)</span>
-<span id="cb40-2"><a href="str-funktion.html#cb40-2" aria-hidden="true" tabindex="-1"></a><span class="do">##                    mpg cyl disp  hp drat    wt  qsec vs am gear carb</span></span>
-<span id="cb40-3"><a href="str-funktion.html#cb40-3" aria-hidden="true" tabindex="-1"></a><span class="do">## Mazda RX4         21.0   6  160 110 3.90 2.620 16.46  0  1    4    4</span></span>
-<span id="cb40-4"><a href="str-funktion.html#cb40-4" aria-hidden="true" tabindex="-1"></a><span class="do">## Mazda RX4 Wag     21.0   6  160 110 3.90 2.875 17.02  0  1    4    4</span></span>
-<span id="cb40-5"><a href="str-funktion.html#cb40-5" aria-hidden="true" tabindex="-1"></a><span class="do">## Datsun 710        22.8   4  108  93 3.85 2.320 18.61  1  1    4    1</span></span>
-<span id="cb40-6"><a href="str-funktion.html#cb40-6" aria-hidden="true" tabindex="-1"></a><span class="do">## Hornet 4 Drive    21.4   6  258 110 3.08 3.215 19.44  1  0    3    1</span></span>
-<span id="cb40-7"><a href="str-funktion.html#cb40-7" aria-hidden="true" tabindex="-1"></a><span class="do">## Hornet Sportabout 18.7   8  360 175 3.15 3.440 17.02  0  0    3    2</span></span>
-<span id="cb40-8"><a href="str-funktion.html#cb40-8" aria-hidden="true" tabindex="-1"></a><span class="fu">tail</span>(mtcars, <span class="at">n =</span> <span class="dv">5</span>)</span>
-<span id="cb40-9"><a href="str-funktion.html#cb40-9" aria-hidden="true" tabindex="-1"></a><span class="do">##                 mpg cyl  disp  hp drat    wt qsec vs am gear carb</span></span>
-<span id="cb40-10"><a href="str-funktion.html#cb40-10" aria-hidden="true" tabindex="-1"></a><span class="do">## Lotus Europa   30.4   4  95.1 113 3.77 1.513 16.9  1  1    5    2</span></span>
-<span id="cb40-11"><a href="str-funktion.html#cb40-11" aria-hidden="true" tabindex="-1"></a><span class="do">## Ford Pantera L 15.8   8 351.0 264 4.22 3.170 14.5  0  1    5    4</span></span>
-<span id="cb40-12"><a href="str-funktion.html#cb40-12" aria-hidden="true" tabindex="-1"></a><span class="do">## Ferrari Dino   19.7   6 145.0 175 3.62 2.770 15.5  0  1    5    6</span></span>
-<span id="cb40-13"><a href="str-funktion.html#cb40-13" aria-hidden="true" tabindex="-1"></a><span class="do">## Maserati Bora  15.0   8 301.0 335 3.54 3.570 14.6  0  1    5    8</span></span>
-<span id="cb40-14"><a href="str-funktion.html#cb40-14" aria-hidden="true" tabindex="-1"></a><span class="do">## Volvo 142E     21.4   4 121.0 109 4.11 2.780 18.6  1  1    4    2</span></span></code></pre></div>
+<div class="sourceCode" id="cb59"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb59-1"><a href="str-funktion.html#cb59-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(mtcars, <span class="at">n =</span> <span class="dv">5</span>)</span>
+<span id="cb59-2"><a href="str-funktion.html#cb59-2" aria-hidden="true" tabindex="-1"></a><span class="do">##                    mpg cyl disp  hp drat    wt  qsec vs am gear carb</span></span>
+<span id="cb59-3"><a href="str-funktion.html#cb59-3" aria-hidden="true" tabindex="-1"></a><span class="do">## Mazda RX4         21.0   6  160 110 3.90 2.620 16.46  0  1    4    4</span></span>
+<span id="cb59-4"><a href="str-funktion.html#cb59-4" aria-hidden="true" tabindex="-1"></a><span class="do">## Mazda RX4 Wag     21.0   6  160 110 3.90 2.875 17.02  0  1    4    4</span></span>
+<span id="cb59-5"><a href="str-funktion.html#cb59-5" aria-hidden="true" tabindex="-1"></a><span class="do">## Datsun 710        22.8   4  108  93 3.85 2.320 18.61  1  1    4    1</span></span>
+<span id="cb59-6"><a href="str-funktion.html#cb59-6" aria-hidden="true" tabindex="-1"></a><span class="do">## Hornet 4 Drive    21.4   6  258 110 3.08 3.215 19.44  1  0    3    1</span></span>
+<span id="cb59-7"><a href="str-funktion.html#cb59-7" aria-hidden="true" tabindex="-1"></a><span class="do">## Hornet Sportabout 18.7   8  360 175 3.15 3.440 17.02  0  0    3    2</span></span>
+<span id="cb59-8"><a href="str-funktion.html#cb59-8" aria-hidden="true" tabindex="-1"></a><span class="fu">tail</span>(mtcars, <span class="at">n =</span> <span class="dv">5</span>)</span>
+<span id="cb59-9"><a href="str-funktion.html#cb59-9" aria-hidden="true" tabindex="-1"></a><span class="do">##                 mpg cyl  disp  hp drat    wt qsec vs am gear carb</span></span>
+<span id="cb59-10"><a href="str-funktion.html#cb59-10" aria-hidden="true" tabindex="-1"></a><span class="do">## Lotus Europa   30.4   4  95.1 113 3.77 1.513 16.9  1  1    5    2</span></span>
+<span id="cb59-11"><a href="str-funktion.html#cb59-11" aria-hidden="true" tabindex="-1"></a><span class="do">## Ford Pantera L 15.8   8 351.0 264 4.22 3.170 14.5  0  1    5    4</span></span>
+<span id="cb59-12"><a href="str-funktion.html#cb59-12" aria-hidden="true" tabindex="-1"></a><span class="do">## Ferrari Dino   19.7   6 145.0 175 3.62 2.770 15.5  0  1    5    6</span></span>
+<span id="cb59-13"><a href="str-funktion.html#cb59-13" aria-hidden="true" tabindex="-1"></a><span class="do">## Maserati Bora  15.0   8 301.0 335 3.54 3.570 14.6  0  1    5    8</span></span>
+<span id="cb59-14"><a href="str-funktion.html#cb59-14" aria-hidden="true" tabindex="-1"></a><span class="do">## Volvo 142E     21.4   4 121.0 109 4.11 2.780 18.6  1  1    4    2</span></span></code></pre></div>
 <p>Wenn man den Namen des Datensatzes / Objektes in die Funktion <code>View()</code> - V dabei groß geschrieben - eingibt, dann kann man sich den Datensatz auch im Viewer Fenster von R ansehen.</p>
-<div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb41-1"><a href="str-funktion.html#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="fu">View</span>(mtcars)</span></code></pre></div>
+<div class="sourceCode" id="cb60"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb60-1"><a href="str-funktion.html#cb60-1" aria-hidden="true" tabindex="-1"></a><span class="fu">View</span>(mtcars)</span></code></pre></div>
 </div>
             </section>
 
@@ -456,6 +462,10 @@ gitbook.start({
 "text": null
 },
 "download": null,
+"search": {
+"engine": "lunr",
+"options": null
+},
 "toc": {
 "collapse": "section",
 "scroll_highlight": true
@@ -467,6 +477,20 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>

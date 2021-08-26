@@ -4,21 +4,21 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>3.1 Datentypen | Daten Analyse mit R - Dokumentation</title>
-  <meta name="description" content="Dies ist eine Dokumentation um R bei der explorativen Datenanalyse in den Geowissenschaften einzusetzen." />
-  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+  <title>3.1 Datentypen | Daten Analyse mit RStudio - Dokumentation</title>
+  <meta name="description" content="Explorative Datenanalyse in den Geowissenschaften" />
+  <meta name="generator" content="bookdown 0.23 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="3.1 Datentypen | Daten Analyse mit R - Dokumentation" />
+  <meta property="og:title" content="3.1 Datentypen | Daten Analyse mit RStudio - Dokumentation" />
   <meta property="og:type" content="book" />
   
   
-  <meta property="og:description" content="Dies ist eine Dokumentation um R bei der explorativen Datenanalyse in den Geowissenschaften einzusetzen." />
+  <meta property="og:description" content="Explorative Datenanalyse in den Geowissenschaften" />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="3.1 Datentypen | Daten Analyse mit R - Dokumentation" />
+  <meta name="twitter:title" content="3.1 Datentypen | Daten Analyse mit RStudio - Dokumentation" />
   
-  <meta name="twitter:description" content="Dies ist eine Dokumentation um R bei der explorativen Datenanalyse in den Geowissenschaften einzusetzen." />
+  <meta name="twitter:description" content="Explorative Datenanalyse in den Geowissenschaften" />
   
 
 <meta name="author" content="Dr. Kristof Dorau" />
@@ -32,8 +32,8 @@
   
 <link rel="prev" href="grundlagen.html"/>
 <link rel="next" href="datenstrukturen.html"/>
-<script src="assets/header-attrs-2.9/header-attrs.js"></script>
-<script src="assets/jquery-2.2.3/jquery.min.js"></script>
+<script src="assets/header-attrs-2.10/header-attrs.js"></script>
+<script src="assets/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <link href="assets/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="assets/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="assets/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -52,6 +52,7 @@
 
 <link href="assets/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
 <script src="assets/anchor-sections-1.0.1/anchor-sections.js"></script>
+<script src="assets/twitter-widget-0.0.1/widgets.js"></script>
 
 
 <style type="text/css">
@@ -202,21 +203,21 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="4.1" data-path="tidy-data.html"><a href="tidy-data.html"><i class="fa fa-check"></i><b>4.1</b> Tidy data</a></li>
 <li class="chapter" data-level="4.2" data-path="dateiformate.html"><a href="dateiformate.html"><i class="fa fa-check"></i><b>4.2</b> Dateiformate</a></li>
-<li class="chapter" data-level="4.3" data-path="readrread-delim.html"><a href="readrread-delim.html"><i class="fa fa-check"></i><b>4.3</b> readr::read_delim()</a></li>
+<li class="chapter" data-level="4.3" data-path="readrread_delim.html"><a href="readrread_delim.html"><i class="fa fa-check"></i><b>4.3</b> readr::read_delim()</a></li>
 <li class="chapter" data-level="4.4" data-path="arbeiten-mit-zeiten.html"><a href="arbeiten-mit-zeiten.html"><i class="fa fa-check"></i><b>4.4</b> Arbeiten mit Zeiten</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="daten-manipulieren.html"><a href="daten-manipulieren.html"><i class="fa fa-check"></i><b>5</b> Daten manipulieren</a>
 <ul>
-<li class="chapter" data-level="5.1" data-path="select-variablen-auswählen-spaltenweise.html"><a href="select-variablen-auswählen-spaltenweise.html"><i class="fa fa-check"></i><b>5.1</b> select() - Variablen auswählen (spaltenweise)</a></li>
-<li class="chapter" data-level="5.2" data-path="filter-filtern-von-variablen-zeilenweise.html"><a href="filter-filtern-von-variablen-zeilenweise.html"><i class="fa fa-check"></i><b>5.2</b> filter() - Filtern von Variablen (zeilenweise)</a></li>
-<li class="chapter" data-level="5.3" data-path="arrange-sortieren-des-datensatzes.html"><a href="arrange-sortieren-des-datensatzes.html"><i class="fa fa-check"></i><b>5.3</b> arrange() - Sortieren des Datensatzes</a></li>
-<li class="chapter" data-level="5.4" data-path="mutate-erstelle-neue-variablen.html"><a href="mutate-erstelle-neue-variablen.html"><i class="fa fa-check"></i><b>5.4</b> mutate() - Erstelle neue Variablen</a></li>
-<li class="chapter" data-level="5.5" data-path="summarize-zusammenfassung-von-variablen.html"><a href="summarize-zusammenfassung-von-variablen.html"><i class="fa fa-check"></i><b>5.5</b> summarize() - Zusammenfassung von Variablen</a></li>
-<li class="chapter" data-level="5.6" data-path="group-by-gruppiere-variablen.html"><a href="group-by-gruppiere-variablen.html"><i class="fa fa-check"></i><b>5.6</b> group_by - Gruppiere Variablen</a></li>
-<li class="chapter" data-level="5.7" data-path="across-anwenden-von-funktionen-auf-spalten.html"><a href="across-anwenden-von-funktionen-auf-spalten.html"><i class="fa fa-check"></i><b>5.7</b> across() - Anwenden von Funktionen auf Spalten</a></li>
+<li class="chapter" data-level="5.1" data-path="select---variablen-auswählen-spaltenweise.html"><a href="select---variablen-auswählen-spaltenweise.html"><i class="fa fa-check"></i><b>5.1</b> select() - Variablen auswählen (spaltenweise)</a></li>
+<li class="chapter" data-level="5.2" data-path="filter---filtern-von-variablen-zeilenweise.html"><a href="filter---filtern-von-variablen-zeilenweise.html"><i class="fa fa-check"></i><b>5.2</b> filter() - Filtern von Variablen (zeilenweise)</a></li>
+<li class="chapter" data-level="5.3" data-path="arrange---sortieren-des-datensatzes.html"><a href="arrange---sortieren-des-datensatzes.html"><i class="fa fa-check"></i><b>5.3</b> arrange() - Sortieren des Datensatzes</a></li>
+<li class="chapter" data-level="5.4" data-path="mutate---erstelle-neue-variablen.html"><a href="mutate---erstelle-neue-variablen.html"><i class="fa fa-check"></i><b>5.4</b> mutate() - Erstelle neue Variablen</a></li>
+<li class="chapter" data-level="5.5" data-path="summarize---zusammenfassung-von-variablen.html"><a href="summarize---zusammenfassung-von-variablen.html"><i class="fa fa-check"></i><b>5.5</b> summarize() - Zusammenfassung von Variablen</a></li>
+<li class="chapter" data-level="5.6" data-path="group_by---gruppiere-variablen.html"><a href="group_by---gruppiere-variablen.html"><i class="fa fa-check"></i><b>5.6</b> group_by - Gruppiere Variablen</a></li>
+<li class="chapter" data-level="5.7" data-path="across---anwenden-von-funktionen-auf-spalten.html"><a href="across---anwenden-von-funktionen-auf-spalten.html"><i class="fa fa-check"></i><b>5.7</b> across() - Anwenden von Funktionen auf Spalten</a></li>
 <li class="chapter" data-level="5.8" data-path="joins.html"><a href="joins.html"><i class="fa fa-check"></i><b>5.8</b> joins</a></li>
-<li class="chapter" data-level="5.9" data-path="pivot-longer-long-data-format.html"><a href="pivot-longer-long-data-format.html"><i class="fa fa-check"></i><b>5.9</b> pivot_longer() - Long data format</a></li>
-<li class="chapter" data-level="5.10" data-path="pivot-wider-wider-data-format.html"><a href="pivot-wider-wider-data-format.html"><i class="fa fa-check"></i><b>5.10</b> pivot_wider() - wider data format</a></li>
+<li class="chapter" data-level="5.9" data-path="pivot_longer---long-data-format.html"><a href="pivot_longer---long-data-format.html"><i class="fa fa-check"></i><b>5.9</b> pivot_longer() - Long data format</a></li>
+<li class="chapter" data-level="5.10" data-path="pivot_wider---wider-data-format.html"><a href="pivot_wider---wider-data-format.html"><i class="fa fa-check"></i><b>5.10</b> pivot_wider() - wider data format</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="explorative-datenanalyse.html"><a href="explorative-datenanalyse.html"><i class="fa fa-check"></i><b>6</b> Explorative-Datenanalyse</a>
 <ul>
@@ -224,16 +225,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="7" data-path="datenvisualisierung.html"><a href="datenvisualisierung.html"><i class="fa fa-check"></i><b>7</b> Datenvisualisierung</a>
 <ul>
-<li class="chapter" data-level="7.1" data-path="ggplot2-grammar-of-graphics.html"><a href="ggplot2-grammar-of-graphics.html"><i class="fa fa-check"></i><b>7.1</b> ggplot2 - grammar of graphics</a>
+<li class="chapter" data-level="7.1" data-path="ggplot2---grammar-of-graphics.html"><a href="ggplot2---grammar-of-graphics.html"><i class="fa fa-check"></i><b>7.1</b> ggplot2 - grammar of graphics</a>
 <ul>
-<li class="chapter" data-level="7.1.1" data-path="ggplot2-grammar-of-graphics.html"><a href="ggplot2-grammar-of-graphics.html#schlüsselkomponenten"><i class="fa fa-check"></i><b>7.1.1</b> Schlüsselkomponenten</a></li>
-<li class="chapter" data-level="7.1.2" data-path="ggplot2-grammar-of-graphics.html"><a href="ggplot2-grammar-of-graphics.html#aesthetics-color-size-shape"><i class="fa fa-check"></i><b>7.1.2</b> Aesthetics (color, size, shape)</a></li>
-<li class="chapter" data-level="7.1.3" data-path="ggplot2-grammar-of-graphics.html"><a href="ggplot2-grammar-of-graphics.html#smoothers-and-models"><i class="fa fa-check"></i><b>7.1.3</b> Smoothers and models</a></li>
-<li class="chapter" data-level="7.1.4" data-path="ggplot2-grammar-of-graphics.html"><a href="ggplot2-grammar-of-graphics.html#labels"><i class="fa fa-check"></i><b>7.1.4</b> Labels</a></li>
-<li class="chapter" data-level="7.1.5" data-path="ggplot2-grammar-of-graphics.html"><a href="ggplot2-grammar-of-graphics.html#themes"><i class="fa fa-check"></i><b>7.1.5</b> Themes</a></li>
-<li class="chapter" data-level="7.1.6" data-path="ggplot2-grammar-of-graphics.html"><a href="ggplot2-grammar-of-graphics.html#facets"><i class="fa fa-check"></i><b>7.1.6</b> Facets</a></li>
-<li class="chapter" data-level="7.1.7" data-path="ggplot2-grammar-of-graphics.html"><a href="ggplot2-grammar-of-graphics.html#coordinate-system"><i class="fa fa-check"></i><b>7.1.7</b> Coordinate system</a></li>
-<li class="chapter" data-level="7.1.8" data-path="ggplot2-grammar-of-graphics.html"><a href="ggplot2-grammar-of-graphics.html#annotations"><i class="fa fa-check"></i><b>7.1.8</b> Annotations</a></li>
+<li class="chapter" data-level="7.1.1" data-path="ggplot2---grammar-of-graphics.html"><a href="ggplot2---grammar-of-graphics.html#schlüsselkomponenten"><i class="fa fa-check"></i><b>7.1.1</b> Schlüsselkomponenten</a></li>
+<li class="chapter" data-level="7.1.2" data-path="ggplot2---grammar-of-graphics.html"><a href="ggplot2---grammar-of-graphics.html#aesthetics-color-size-shape"><i class="fa fa-check"></i><b>7.1.2</b> Aesthetics (color, size, shape)</a></li>
+<li class="chapter" data-level="7.1.3" data-path="ggplot2---grammar-of-graphics.html"><a href="ggplot2---grammar-of-graphics.html#smoothers-and-models"><i class="fa fa-check"></i><b>7.1.3</b> Smoothers and models</a></li>
+<li class="chapter" data-level="7.1.4" data-path="ggplot2---grammar-of-graphics.html"><a href="ggplot2---grammar-of-graphics.html#labels"><i class="fa fa-check"></i><b>7.1.4</b> Labels</a></li>
+<li class="chapter" data-level="7.1.5" data-path="ggplot2---grammar-of-graphics.html"><a href="ggplot2---grammar-of-graphics.html#themes"><i class="fa fa-check"></i><b>7.1.5</b> Themes</a></li>
+<li class="chapter" data-level="7.1.6" data-path="ggplot2---grammar-of-graphics.html"><a href="ggplot2---grammar-of-graphics.html#facets"><i class="fa fa-check"></i><b>7.1.6</b> Facets</a></li>
+<li class="chapter" data-level="7.1.7" data-path="ggplot2---grammar-of-graphics.html"><a href="ggplot2---grammar-of-graphics.html#coordinate-system"><i class="fa fa-check"></i><b>7.1.7</b> Coordinate system</a></li>
+<li class="chapter" data-level="7.1.8" data-path="ggplot2---grammar-of-graphics.html"><a href="ggplot2---grammar-of-graphics.html#annotations"><i class="fa fa-check"></i><b>7.1.8</b> Annotations</a></li>
 </ul></li>
 <li class="chapter" data-level="7.2" data-path="verknüfpen-von-tidyverse-und-ggplot.html"><a href="verknüfpen-von-tidyverse-und-ggplot.html"><i class="fa fa-check"></i><b>7.2</b> Verknüfpen von tidyverse und ggplot</a></li>
 <li class="chapter" data-level="7.3" data-path="arbeiten-mit-zeiten-1.html"><a href="arbeiten-mit-zeiten-1.html"><i class="fa fa-check"></i><b>7.3</b> Arbeiten mit Zeiten</a>
@@ -315,34 +316,39 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="13.2" data-path="github-pages.html"><a href="github-pages.html"><i class="fa fa-check"></i><b>13.2</b> Github pages</a></li>
 <li class="chapter" data-level="13.3" data-path="emojiys.html"><a href="emojiys.html"><i class="fa fa-check"></i><b>13.3</b> Emojiys</a></li>
 </ul></li>
-<li class="chapter" data-level="14" data-path="blogdown.html"><a href="blogdown.html"><i class="fa fa-check"></i><b>14</b> Blogdown</a>
+<li class="chapter" data-level="14" data-path="blogdown.html"><a href="blogdown.html"><i class="fa fa-check"></i><b>14</b> Blogdown</a></li>
+<li class="chapter" data-level="15" data-path="setup-a-homepage-with-hugo-and-blogdown.html"><a href="setup-a-homepage-with-hugo-and-blogdown.html"><i class="fa fa-check"></i><b>15</b> Setup a homepage with Hugo and blogdown</a>
 <ul>
-<li class="chapter" data-level="14.1" data-path="github-1.html"><a href="github-1.html"><i class="fa fa-check"></i><b>14.1</b> Github</a></li>
-<li class="chapter" data-level="14.2" data-path="domain-name.html"><a href="domain-name.html"><i class="fa fa-check"></i><b>14.2</b> Domain name</a></li>
-<li class="chapter" data-level="14.3" data-path="homepage.html"><a href="homepage.html"><i class="fa fa-check"></i><b>14.3</b> Homepage</a></li>
-<li class="chapter" data-level="14.4" data-path="wowchemystarter-academic.html"><a href="wowchemystarter-academic.html"><i class="fa fa-check"></i><b>14.4</b> “wowchemy/starter-academic”</a></li>
-<li class="chapter" data-level="14.5" data-path="where-to-adjust-the-homepage.html"><a href="where-to-adjust-the-homepage.html"><i class="fa fa-check"></i><b>14.5</b> Where to adjust the Homepage</a></li>
-<li class="chapter" data-level="14.6" data-path="workflow-1.html"><a href="workflow-1.html"><i class="fa fa-check"></i><b>14.6</b> Workflow</a></li>
-<li class="chapter" data-level="14.7" data-path="yaml-metadata.html"><a href="yaml-metadata.html"><i class="fa fa-check"></i><b>14.7</b> YAML metadata</a></li>
+<li class="chapter" data-level="15.1" data-path="github-1.html"><a href="github-1.html"><i class="fa fa-check"></i><b>15.1</b> Github</a></li>
+<li class="chapter" data-level="15.2" data-path="domain-name.html"><a href="domain-name.html"><i class="fa fa-check"></i><b>15.2</b> Domain name</a></li>
+<li class="chapter" data-level="15.3" data-path="homepage.html"><a href="homepage.html"><i class="fa fa-check"></i><b>15.3</b> Homepage</a></li>
+<li class="chapter" data-level="15.4" data-path="wowchemystarter-academic.html"><a href="wowchemystarter-academic.html"><i class="fa fa-check"></i><b>15.4</b> “wowchemy/starter-academic”</a></li>
+<li class="chapter" data-level="15.5" data-path="where-to-adjust-the-homepage.html"><a href="where-to-adjust-the-homepage.html"><i class="fa fa-check"></i><b>15.5</b> Where to adjust the Homepage</a></li>
+<li class="chapter" data-level="15.6" data-path="workflow-1.html"><a href="workflow-1.html"><i class="fa fa-check"></i><b>15.6</b> Workflow</a></li>
+<li class="chapter" data-level="15.7" data-path="yaml-metadata.html"><a href="yaml-metadata.html"><i class="fa fa-check"></i><b>15.7</b> YAML metadata</a></li>
 </ul></li>
-<li class="chapter" data-level="15" data-path="diverses.html"><a href="diverses.html"><i class="fa fa-check"></i><b>15</b> Diverses</a>
+<li class="chapter" data-level="16" data-path="shiny.html"><a href="shiny.html"><i class="fa fa-check"></i><b>16</b> Shiny</a>
 <ul>
-<li class="chapter" data-level="15.1" data-path="troubleshooting.html"><a href="troubleshooting.html"><i class="fa fa-check"></i><b>15.1</b> Troubleshooting</a>
-<ul>
-<li class="chapter" data-level="15.1.1" data-path="troubleshooting.html"><a href="troubleshooting.html#entfernen-aller-packages"><i class="fa fa-check"></i><b>15.1.1</b> Entfernen aller packages</a></li>
+<li class="chapter" data-level="16.1" data-path="ui-benutzeroberfläche.html"><a href="ui-benutzeroberfläche.html"><i class="fa fa-check"></i><b>16.1</b> UI Benutzeroberfläche</a></li>
+<li class="chapter" data-level="16.2" data-path="welche-befehle-sollen-ausgeführt-werden.html"><a href="welche-befehle-sollen-ausgeführt-werden.html"><i class="fa fa-check"></i><b>16.2</b> Welche Befehle sollen ausgeführt werden</a></li>
+<li class="chapter" data-level="16.3" data-path="beispiel-speicherkoog.html"><a href="beispiel-speicherkoog.html"><i class="fa fa-check"></i><b>16.3</b> Beispiel Speicherkoog</a></li>
 </ul></li>
-<li class="chapter" data-level="15.2" data-path="shortcuts.html"><a href="shortcuts.html"><i class="fa fa-check"></i><b>15.2</b> Shortcuts</a></li>
-<li class="chapter" data-level="15.3" data-path="faqs.html"><a href="faqs.html"><i class="fa fa-check"></i><b>15.3</b> FAQs</a>
+<li class="chapter" data-level="17" data-path="diverses.html"><a href="diverses.html"><i class="fa fa-check"></i><b>17</b> Diverses</a>
 <ul>
-<li class="chapter" data-level="15.3.1" data-path="faqs.html"><a href="faqs.html#rstudio-1"><i class="fa fa-check"></i><b>15.3.1</b> RStudio</a></li>
-<li class="chapter" data-level="15.3.2" data-path="faqs.html"><a href="faqs.html#datenmanipulation"><i class="fa fa-check"></i><b>15.3.2</b> Datenmanipulation</a></li>
-</ul></li>
-<li class="chapter" data-level="15.4" data-path="visualisation.html"><a href="visualisation.html"><i class="fa fa-check"></i><b>15.4</b> Visualisation</a>
+<li class="chapter" data-level="17.0.1" data-path="diverses.html"><a href="diverses.html#entfernen-aller-packages"><i class="fa fa-check"></i><b>17.0.1</b> Entfernen aller packages</a></li>
+<li class="chapter" data-level="17.0.2" data-path="diverses.html"><a href="diverses.html#shortcuts"><i class="fa fa-check"></i><b>17.0.2</b> Shortcuts</a></li>
+<li class="chapter" data-level="17.1" data-path="faqs.html"><a href="faqs.html"><i class="fa fa-check"></i><b>17.1</b> FAQs</a>
 <ul>
-<li class="chapter" data-level="15.4.1" data-path="visualisation.html"><a href="visualisation.html#superscripts-and-subscripts"><i class="fa fa-check"></i><b>15.4.1</b> Superscripts and subscripts</a></li>
-<li class="chapter" data-level="15.4.2" data-path="visualisation.html"><a href="visualisation.html#modifying-labels-in-faceted-plots"><i class="fa fa-check"></i><b>15.4.2</b> Modifying labels in faceted plots</a></li>
+<li class="chapter" data-level="17.1.1" data-path="faqs.html"><a href="faqs.html#kalender-erstellen"><i class="fa fa-check"></i><b>17.1.1</b> Kalender erstellen</a></li>
+<li class="chapter" data-level="17.1.2" data-path="faqs.html"><a href="faqs.html#rstudio-1"><i class="fa fa-check"></i><b>17.1.2</b> RStudio</a></li>
+<li class="chapter" data-level="17.1.3" data-path="faqs.html"><a href="faqs.html#datenmanipulation"><i class="fa fa-check"></i><b>17.1.3</b> Datenmanipulation</a></li>
 </ul></li>
-<li class="chapter" data-level="15.5" data-path="glossary.html"><a href="glossary.html"><i class="fa fa-check"></i><b>15.5</b> Glossary</a></li>
+<li class="chapter" data-level="17.2" data-path="visualisation.html"><a href="visualisation.html"><i class="fa fa-check"></i><b>17.2</b> Visualisation</a>
+<ul>
+<li class="chapter" data-level="17.2.1" data-path="visualisation.html"><a href="visualisation.html#superscripts-and-subscripts"><i class="fa fa-check"></i><b>17.2.1</b> Superscripts and subscripts</a></li>
+<li class="chapter" data-level="17.2.2" data-path="visualisation.html"><a href="visualisation.html#modifying-labels-in-faceted-plots"><i class="fa fa-check"></i><b>17.2.2</b> Modifying labels in faceted plots</a></li>
+</ul></li>
+<li class="chapter" data-level="17.3" data-path="glossary.html"><a href="glossary.html"><i class="fa fa-check"></i><b>17.3</b> Glossary</a></li>
 </ul></li>
 </ul>
 
@@ -353,7 +359,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Daten Analyse mit R - Dokumentation</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Daten Analyse mit RStudio - Dokumentation</a>
           </h1>
         </div>
 
@@ -370,8 +376,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><code>double</code> (auch als <code>numeric</code> bezeichnet; c(1L, 2L, 3L))</li>
 <li><code>character</code> (c(“these are”, “some strings”))</li>
 </ul>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-5"></span>
-<img src="images/079.png" alt="Atomic vectors, source: https://adv-r.hadley.nz/vectors-chap.html" width="162" />
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-41"></span>
+<img src="images/079.png" alt="Atomic vectors, source: https://adv-r.hadley.nz/vectors-chap.html" width="100%" />
 <p class="caption">
 Figure 3.4: Atomic vectors, source: <a href="https://adv-r.hadley.nz/vectors-chap.html" class="uri">https://adv-r.hadley.nz/vectors-chap.html</a>
 </p>
@@ -408,31 +414,31 @@ Figure 3.4: Atomic vectors, source: <a href="https://adv-r.hadley.nz/vectors-cha
 <div id="numerische-objekte" class="section level3" number="3.1.1">
 <h3><span class="header-section-number">3.1.1</span> Numerische Objekte</h3>
 <p>Zahlenwerte in R werden als <code>numeric</code> bezeichnet mit der Unterteilung in <code>integer</code> (ganze Zahlen) oder <code>double</code> (Dezimalzahlen). Die Zuweisung von R, selbst wenn ich eine ganze Zahl zuweise, ist jedoch vom Typ double.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="datentypen.html#cb1-1" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="dv">4</span></span>
-<span id="cb1-2"><a href="datentypen.html#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">typeof</span>(a)</span>
-<span id="cb1-3"><a href="datentypen.html#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] &quot;double&quot;</span></span></code></pre></div>
+<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="datentypen.html#cb20-1" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="dv">4</span></span>
+<span id="cb20-2"><a href="datentypen.html#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="fu">typeof</span>(a)</span>
+<span id="cb20-3"><a href="datentypen.html#cb20-3" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] &quot;double&quot;</span></span></code></pre></div>
 <p>💡 Mit der Funktion <code>typeof()</code> kann der Objekttyp erfragt werden.</p>
 <p>Um eine ganze Zahl wiederzugeben muss ein L hinter die Zahl gesetzt werden.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="datentypen.html#cb2-1" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> 4L</span>
-<span id="cb2-2"><a href="datentypen.html#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">typeof</span>(a)</span>
-<span id="cb2-3"><a href="datentypen.html#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] &quot;integer&quot;</span></span></code></pre></div>
+<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="datentypen.html#cb21-1" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> 4L</span>
+<span id="cb21-2"><a href="datentypen.html#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="fu">typeof</span>(a)</span>
+<span id="cb21-3"><a href="datentypen.html#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] &quot;integer&quot;</span></span></code></pre></div>
 </div>
 <div id="textobjekte" class="section level3" number="3.1.2">
 <h3><span class="header-section-number">3.1.2</span> Textobjekte</h3>
 <p>Ein <code>character</code> Objekt sind Namen wie <code>"Kristof"</code>, <code>"Tim"</code>, <code>"Beste Norddeutschland Exkursion der Welt"</code> (Textvariablen werden auch als <em>string</em> bezeichnet). Um ein <code>character</code> Objekt zu definieren sind die Anführungsstriche als einfache <code>' '</code> oder doppelte <code>" "</code> Anführungszeichen wichtig!</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="datentypen.html#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Dies sind alles character Objekte </span></span>
-<span id="cb3-2"><a href="datentypen.html#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="st">&quot;Kristof&quot;</span></span>
-<span id="cb3-3"><a href="datentypen.html#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] &quot;Kristof&quot;</span></span>
-<span id="cb3-4"><a href="datentypen.html#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="st">&quot;Tim&quot;</span></span>
-<span id="cb3-5"><a href="datentypen.html#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] &quot;Tim&quot;</span></span>
-<span id="cb3-6"><a href="datentypen.html#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="st">&quot;Beste Norddeutschland Exkursion der Welt&quot;</span></span>
-<span id="cb3-7"><a href="datentypen.html#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] &quot;Beste Norddeutschland Exkursion der Welt&quot;</span></span></code></pre></div>
+<div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb22-1"><a href="datentypen.html#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Dies sind alles character Objekte </span></span>
+<span id="cb22-2"><a href="datentypen.html#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="st">&quot;Kristof&quot;</span></span>
+<span id="cb22-3"><a href="datentypen.html#cb22-3" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] &quot;Kristof&quot;</span></span>
+<span id="cb22-4"><a href="datentypen.html#cb22-4" aria-hidden="true" tabindex="-1"></a><span class="st">&quot;Tim&quot;</span></span>
+<span id="cb22-5"><a href="datentypen.html#cb22-5" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] &quot;Tim&quot;</span></span>
+<span id="cb22-6"><a href="datentypen.html#cb22-6" aria-hidden="true" tabindex="-1"></a><span class="st">&quot;Beste Norddeutschland Exkursion der Welt&quot;</span></span>
+<span id="cb22-7"><a href="datentypen.html#cb22-7" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] &quot;Beste Norddeutschland Exkursion der Welt&quot;</span></span></code></pre></div>
 <p>Bestimmte Funktionen brauchen einen numerical input, wohingegen andere einen character input benötigen. Schaue was passiert:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="datentypen.html#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(<span class="fu">c</span>(<span class="st">&quot;5&quot;</span>, <span class="st">&quot;1&quot;</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb23-1"><a href="datentypen.html#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(<span class="fu">c</span>(<span class="st">&quot;5&quot;</span>, <span class="st">&quot;1&quot;</span>))</span></code></pre></div>
 <p><strong>Warnmeldung:In mean.default(c(“5”, “1”)) :Argument ist weder numerisch noch boolesch: gebe NA zurück</strong></p>
 <p>Lasse ich die Anführungsstriche weg, dann ist wieder alles im Lot:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="datentypen.html#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(<span class="fu">c</span>(<span class="dv">5</span>, <span class="dv">1</span>))</span>
-<span id="cb5-2"><a href="datentypen.html#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] 3</span></span></code></pre></div>
+<div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb24-1"><a href="datentypen.html#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(<span class="fu">c</span>(<span class="dv">5</span>, <span class="dv">1</span>))</span>
+<span id="cb24-2"><a href="datentypen.html#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] 3</span></span></code></pre></div>
 </div>
 <div id="logicals" class="section level3" number="3.1.3">
 <h3><span class="header-section-number">3.1.3</span> Logicals</h3>
@@ -483,18 +489,18 @@ Figure 3.4: Atomic vectors, source: <a href="https://adv-r.hadley.nz/vectors-cha
 <div id="fehlende-werte" class="section level3" number="3.1.4">
 <h3><span class="header-section-number">3.1.4</span> Fehlende Werte</h3>
 <p>In R werden fehlende Werte mit <code>NA</code> für <code>not available</code> gekennzeichnet. Für bestimmte Funktionen und Anwendungen ist es wichtig, falls ein <code>NA</code> Wert in einer Zeitreihe auftritt (🤯 …leider ist dies in langen Zeitreihen fast immer der Fall), R explizit zu sagen was mit diesen Werten getan werden soll.</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="datentypen.html#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Ich habe einen Vektor mit einem fehlenden Wert NA</span></span>
-<span id="cb6-2"><a href="datentypen.html#cb6-2" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="cn">NA</span>,<span class="dv">5</span>)</span>
-<span id="cb6-3"><a href="datentypen.html#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(a)</span>
-<span id="cb6-4"><a href="datentypen.html#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] NA</span></span></code></pre></div>
+<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="datentypen.html#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Ich habe einen Vektor mit einem fehlenden Wert NA</span></span>
+<span id="cb25-2"><a href="datentypen.html#cb25-2" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="cn">NA</span>,<span class="dv">5</span>)</span>
+<span id="cb25-3"><a href="datentypen.html#cb25-3" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(a)</span>
+<span id="cb25-4"><a href="datentypen.html#cb25-4" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] NA</span></span></code></pre></div>
 <p>Hm…der Mittelwert von 1,2,3,4,NA und 5 ist NA und nicht eine Zahl? Wie kommt das bloß. In dem Fall ist es nützlich in die Dokumentation der Funktion <code>mean()</code> nachzuschauen.</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="datentypen.html#cb7-1" aria-hidden="true" tabindex="-1"></a>?mean</span></code></pre></div>
+<div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb26-1"><a href="datentypen.html#cb26-1" aria-hidden="true" tabindex="-1"></a>?mean</span></code></pre></div>
 <p><strong>Default S3 method: mean(x, trim = 0, na.rm = FALSE, …)</strong></p>
 <p>Die default Argumente der Funktion lauten <code>na.rm = FALSE</code>, was soviel bedeutet <strong>na</strong> Werte nicht zu entfernen sondern in die Berechnung mit einzubeziehen.</p>
 <p>💡 na steht für fehlende Werte (NA) und rm ist die Kurzform für remove, also entfernen.</p>
 <p>Damit unsere Rechnung funktioniert müssen wir in der <code>mean()</code> Funktion das Argument <code>na.rm = TRUE</code> setzen, also erst die fehlende Werte entfernen und dann den Mittelwert berechnen:</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="datentypen.html#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(a, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb8-2"><a href="datentypen.html#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] 3</span></span></code></pre></div>
+<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="datentypen.html#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(a, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb27-2"><a href="datentypen.html#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] 3</span></span></code></pre></div>
 <p>💪 Es funktioniert! Dies ist tatsächlich einer der häufigsten Fehler und egal wie häufig man daran denkt, es kommt immer wieder vor das dies einer der Gründe ist warum man sich Stunden den Kopf über ein nicht funktionierendes Skript zerbricht 🤯</p>
 </div>
 <div id="weitere-objekttypen" class="section level3" number="3.1.5">
@@ -515,8 +521,8 @@ Figure 3.4: Atomic vectors, source: <a href="https://adv-r.hadley.nz/vectors-cha
 <li>class (bedient S3 Objekte, bspw. <code>factor</code>, <code>date</code> und <code>POSIXct</code>)</li>
 </ul>
 <p>Wenn ein Objekt in R ein <em>class</em> Attribut besitzt wird es automatisch in ein <strong>S3 object</strong> umgewandelt und unterscheidet sich dadurch von einem normalen Vektor.</p>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-14"></span>
-<img src="images/080.png" alt="S3 atomic vectors, source: https://adv-r.hadley.nz/vectors-chap.html#s3-atomic-vectors" width="150" />
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-50"></span>
+<img src="images/080.png" alt="S3 atomic vectors, source: https://adv-r.hadley.nz/vectors-chap.html#s3-atomic-vectors" width="100%" />
 <p class="caption">
 Figure 3.5: S3 atomic vectors, source: <a href="https://adv-r.hadley.nz/vectors-chap.html#s3-atomic-vectors" class="uri">https://adv-r.hadley.nz/vectors-chap.html#s3-atomic-vectors</a>
 </p>
@@ -527,14 +533,14 @@ Figure 3.5: S3 atomic vectors, source: <a href="https://adv-r.hadley.nz/vectors-
 <div id="objekttypen-ändern" class="section level3" number="3.1.6">
 <h3><span class="header-section-number">3.1.6</span> Objekttypen ändern</h3>
 <p>Die Syntax in R um Objekte umzuwandeln lautet <code>as.[Objekttyp]</code>.</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="datentypen.html#cb9-1" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="st">&quot;25&quot;</span></span>
-<span id="cb9-2"><a href="datentypen.html#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">typeof</span>(a)</span>
-<span id="cb9-3"><a href="datentypen.html#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] &quot;character&quot;</span></span>
-<span id="cb9-4"><a href="datentypen.html#cb9-4" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(a)</span>
-<span id="cb9-5"><a href="datentypen.html#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="fu">typeof</span>(a)</span>
-<span id="cb9-6"><a href="datentypen.html#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] &quot;double&quot;</span></span></code></pre></div>
+<div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb28-1"><a href="datentypen.html#cb28-1" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="st">&quot;25&quot;</span></span>
+<span id="cb28-2"><a href="datentypen.html#cb28-2" aria-hidden="true" tabindex="-1"></a><span class="fu">typeof</span>(a)</span>
+<span id="cb28-3"><a href="datentypen.html#cb28-3" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] &quot;character&quot;</span></span>
+<span id="cb28-4"><a href="datentypen.html#cb28-4" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(a)</span>
+<span id="cb28-5"><a href="datentypen.html#cb28-5" aria-hidden="true" tabindex="-1"></a><span class="fu">typeof</span>(a)</span>
+<span id="cb28-6"><a href="datentypen.html#cb28-6" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] &quot;double&quot;</span></span></code></pre></div>
 <p>Dies klappt allerdings nur, insofern die Umwandlung logisch ist. In allen anderen Fällen gibt es eine Warnmeldung unter Erzeugung von <code>NA</code>s anstelle der Werte.</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="datentypen.html#cb10-1" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(<span class="st">&quot;Beste Norddeutschland Exkursion der Welt&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="datentypen.html#cb29-1" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(<span class="st">&quot;Beste Norddeutschland Exkursion der Welt&quot;</span>)</span></code></pre></div>
 <p><strong>## Warning: NAs introduced by coercion</strong></p>
 </div>
 </div>
@@ -588,6 +594,10 @@ gitbook.start({
 "text": null
 },
 "download": null,
+"search": {
+"engine": "lunr",
+"options": null
+},
 "toc": {
 "collapse": "section",
 "scroll_highlight": true
@@ -599,6 +609,20 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>
