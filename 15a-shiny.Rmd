@@ -27,6 +27,43 @@ my_theme <- theme(
 
 ```
 
+```{r echo = F}
+# Daten Speicherkoog einlesen
+koog_raw <- readr::read_delim("data/data.csv", delim = ";", 
+                          col_types = readr::cols(
+                            # date = überschreibt die Spalte mit der neuen Spezifikation
+                            date = readr::col_datetime(format = "%d.%m.%Y %H:%M") 
+  ))
+koog_raw <- janitor::clean_names(koog_raw)
+koog <- koog_raw %>%
+  dplyr::mutate(across(contains("eh"), ~. + 207))
+# Erstelle neue Spalten mit Zeitstempeln
+koog <- koog %>%
+  mutate(year = lubridate::year(date),
+         month = lubridate::month(date),
+         day = lubridate::day(date),
+         hour = lubridate::hour(date), 
+         daily = format(date, "%Y-%m-%d"),
+         monthly = format(date, "%Y-%m"))
+
+# Tagesmittelwerte
+koog_day <- koog %>%
+  group_by(daily) %>%
+  summarise_if(is.numeric, mean, na.rm = T) %>%
+  mutate(daily = as.Date(daily))
+
+# Monatsmittelwerte
+koog_month <- koog %>%
+  group_by(monthly) %>%
+  summarise_if(is.numeric, mean, na.rm = T)
+  
+# Jahresmittelwerte
+koog_year <- koog %>%
+  group_by(year) %>%
+  summarise_if(is.numeric, mean, na.rm = T)
+
+```
+
 🔍 [Mastering Shiny - Build interactive apps, reports, dashboards](https://mastering-shiny.org/index.html)
 
 🔍 [https://www.youtube.com/watch?v=tfN10IUX9Lo](https://www.youtube.com/watch?v=tfN10IUX9Lo)
@@ -41,7 +78,7 @@ knitr::include_graphics("images/081.png")
 
 Die zwei Hauptkomponenten einer shiny app sind **UI** (für User Interface; definiert wie die App aussehen soll) und **server function** (definiert wie die App arbeiten soll). 
 
-```{r}
+```{r eval = F}
 # lade shiny
 library(shiny)
 # create UI
@@ -74,7 +111,7 @@ Dadurch wird eine `app.R` Datei erstellt, in der die shiny app definiert wird.
 
 Als nächste gestalten und modifizieren wir die UI Oberfläche:
 
-```{r}
+```{r eval = F}
 ui <- fluidPage(
   selectInput("dataset", label = "Dataset", choices = ls("package:datasets")),
   verbatimTextOutput("summary"),
@@ -86,7 +123,7 @@ ui <- fluidPage(
 * `selectInput()` lässt den Nutzer mit der App interagieren, indem eine Box bereitgestellt wird mit dem Label "Dataset".
 * `verbatimTextOutput()` und `tableOutput()` sind Funktionen um shiny zu vermitteln, wo und wie der Output dargestellt werden soll. 
 
-```{r}
+```{r eval = F}
 # run the shinyapp again
 shinyApp(ui, server)
 ```
@@ -95,7 +132,7 @@ shinyApp(ui, server)
 
 Shiny verwendet *reactive programming*, dass bedeutet wir müssen shiny vermitteln **wie** eine Berechnung oder Darstellung durchgeführt wird und nicht **die** eine Berechnung durchzuführen. 
 
-```{r}
+```{r eval = F}
 # define server function
 server <- function(input, output, session) {
   output$summary <- renderPrint({
@@ -116,7 +153,7 @@ shinyApp(ui, server)
 
 Das Objekt `server` kann noch besser definiert werden durch eine *reactive expression*. Dadurch muss man Objekte (in diesem Beispiel `get(input$dataset, "package:datasets")`) nur einmal definieren. Eine reactive expression wird dabei wie ein Funktionsaufruf genutzt:
 
-```{r}
+```{r eval = F}
 server <- function(input, output, session) {
   # Create a reactive expression
   dataset <- reactive({
@@ -138,7 +175,7 @@ shinyApp(ui, server)
 
 ## Beispiel Speicherkoog
 
-```{r}
+```{r eval = F}
 # Transform the data to long format to filter by id and display value in the app
 data <- koog_day %>%
   select(daily, contains("st")) %>%
@@ -146,47 +183,5 @@ data <- koog_day %>%
 
 str(data)
 
-
-ui <- fluidPage(
-    h1()  
-    titlePanel("My first web app for Polder Koog"),
-    sidebarLayout(
-      sidebarPanel(
-        selectInput("param", "Select a Parameter", choices = data$id)
-        ),
-      mainPanel(
-    verbatimTextOutput("summary")
-  )
-  )
-)
-  
-
-server <- function(input, output, session) {
-  
-  dataset <- reactive({
-    get(input$param, data)
-  })
-  
-  output$summary <- renderPrint({
-    summary(dataset())
-
-  })
-  
-  }
-
-
-shinyApp(ui, server)
-
 ```
-
-
-p2 <- data %>% filter(daily >= input$range1[1] & daily <= input&range1[2]) %>% ggplot()
-
-
-sliderInput(inputId = "range1", label = "Select the time period", 
-                  min = as.POSIXct("2010-04-01"),
-                  max = as.POSIXct("2020-12-31"),
-                  value = c(as.POSIXct("2010-04-01"), as.POSIXct("2020-12-31"))
-                  )
-
 

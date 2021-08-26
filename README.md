@@ -1,3 +1,3 @@
 # documentation
 
-Die Dokumentation kann unter https://soilr.github.io/dokumentation/ gelesen werden. 
+Die Dokumentation kann unter https://soilr.github.io/doku/ gelesen werden. 

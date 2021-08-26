@@ -4,7 +4,7 @@ editor_options:
   chunk_output_type: console
 ---
 
-## Diverses 
+# Diverses 
 
 *Der Beitrag wurde das letzte mal am `r format(Sys.time(), '%d %B, %Y')` editiert*
 
@@ -17,29 +17,17 @@ knitr::opts_chunk$set(fig.align = "center", collapse = T, echo = TRUE, message =
 
 # loading multiple packages at once with `pacman`
 # create a vector name
-<<<<<<< HEAD
-packages <- c("ggplot2", "tidyverse", "markdown", "knitr", "matrixStats", "patchwork", "lubridate", "plotly",  "naniar", "stlplus", "gt", "dygraphs", "htmltools", "ggpmisc", "forcats", "RColorBrewer", "Kendall", "rstudioapi", "multcompView", "plyr", "bookdown", "janitor", "ggpubr", "moments", "ggthemes", "hexbin", "ggridges", "ggstream", "openair", "treemapify", "MBA", "akima", "sf", "rnaturalearth", "rnaturalearthdata", "rgeos", "ggspatial", "factoextra", "FactoMineR", "gapminder", "calendR", "pacman")
-=======
 packages <- c("tidyverse", "markdown", "knitr", "matrixStats", "patchwork", "lubridate", "plotly",  "naniar", "stlplus", "gt", "dygraphs", "htmltools", "zoo", "xts", "ggpmisc", "forcats", "RColorBrewer", "Kendall", "rstudioapi", "multcompView", "plyr", "bookdown", "janitor", "rstatix", "ggpubr", "moments", "tweetrmd", "ggthemes", "hexbin", "ggridges", "ggstream", "openair", "treemapify", "MBA", "akima", "PlotSvalbard", "sf", "rnaturalearth", "rnaturalearthdata", "rgeos", "ggspatial", "factoextra", "FactoMineR", "gapminder", "calendR")
->>>>>>> 267c07bc527bdaad545501409f2f10dd93abaf07
 
 # Load the packages vector 
 pacman::p_load(packages, character.only = T)
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 267c07bc527bdaad545501409f2f10dd93abaf07
 my_theme <- theme(
   panel.background = element_rect(fill = "white", color = "black"),
   panel.grid.major = element_blank(), 
   panel.grid.minor = element_blank(), 
   panel.border = element_blank())
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 267c07bc527bdaad545501409f2f10dd93abaf07
 ```
 
 ### Entfernen aller packages
@@ -63,11 +51,10 @@ my_theme <- theme(
  pkgs.to.remove <- ip[,1]
  head(pkgs.to.remove)
 # remove the packages
-<<<<<<< HEAD
+
  sapply(pkgs.to.remove, remove.packages, lib = path.lib)
-=======
- sapply(pkgs.to.remove, remove.packages, lib = path.lib)]
->>>>>>> 267c07bc527bdaad545501409f2f10dd93abaf07
+
+
 
 ```
 
@@ -114,10 +101,6 @@ koog_year <- koog %>%
   group_by(year) %>%
   summarise_if(is.numeric, mean, na.rm = T)
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 267c07bc527bdaad545501409f2f10dd93abaf07
 ```
 
 ## FAQs
@@ -155,10 +138,7 @@ calendR(year = 2021,
         start = "M",
         special.days = "weekend") # Color all weekends
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 267c07bc527bdaad545501409f2f10dd93abaf07
 ```
 
 
