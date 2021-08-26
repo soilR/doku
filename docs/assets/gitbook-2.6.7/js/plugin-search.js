@@ -1,15 +1,11 @@
 gitbook.require(["gitbook", "lodash", "jQuery"], function(gitbook, _, $) {
     var index = null;
-<<<<<<< HEAD
     var fuse = null;
     var _search = {engine: 'lunr', opts: {}};
-=======
->>>>>>> 267c07bc527bdaad545501409f2f10dd93abaf07
     var $searchInput, $searchLabel, $searchForm;
     var $highlighted = [], hi, hiOpts = { className: 'search-highlight' };
     var collapse = false, toc_visible = [];
 
-<<<<<<< HEAD
     function init(config) {
         // Instantiate search settings
         _search = gitbook.storage.get("search", {
@@ -23,8 +19,6 @@ gitbook.require(["gitbook", "lodash", "jQuery"], function(gitbook, _, $) {
         gitbook.storage.set("search", _search);
     }
 
-=======
->>>>>>> 267c07bc527bdaad545501409f2f10dd93abaf07
     // Use a specific index
     function loadIndex(data) {
         // [Yihui] In bookdown, I use a character matrix to store the chapter
@@ -35,7 +29,6 @@ gitbook.require(["gitbook", "lodash", "jQuery"], function(gitbook, _, $) {
         // lunr cannot handle non-English text very well, e.g. the default
         // tokenizer cannot deal with Chinese text, so we may want to replace
         // lunr with a dumb simple text matching approach.
-<<<<<<< HEAD
         if (_search.engine === 'lunr') {
           index = lunr(function () {
             this.ref('url');
@@ -66,20 +59,6 @@ gitbook.require(["gitbook", "lodash", "jQuery"], function(gitbook, _, $) {
             },
             _search.opts
         ));
-=======
-        index = lunr(function () {
-          this.ref('url');
-          this.field('title', { boost: 10 });
-          this.field('body');
-        });
-        data.map(function(item) {
-          index.add({
-            url: item[0],
-            title: item[1],
-            body: item[2]
-          });
-        });
->>>>>>> 267c07bc527bdaad545501409f2f10dd93abaf07
     }
 
     // Fetch the search index
@@ -90,7 +69,6 @@ gitbook.require(["gitbook", "lodash", "jQuery"], function(gitbook, _, $) {
 
     // Search for a term and return results
     function search(q) {
-<<<<<<< HEAD
         let results = [];
         switch (_search.engine) {
             case 'fuse':
@@ -118,22 +96,6 @@ gitbook.require(["gitbook", "lodash", "jQuery"], function(gitbook, _, $) {
 
         // [Yihui] Highlight the search keyword on current page
         $highlighted = $('.page-inner')
-=======
-        if (!index) return;
-
-        var results = _.chain(index.search(q))
-        .map(function(result) {
-            var parts = result.ref.split("#");
-            return {
-                path: parts[0],
-                hash: parts[1]
-            };
-        })
-        .value();
-
-        // [Yihui] Highlight the search keyword on current page
-        $highlighted = results.length === 0 ? [] : $('.page-inner')
->>>>>>> 267c07bc527bdaad545501409f2f10dd93abaf07
           .unhighlight(hiOpts).highlight(q, hiOpts).find('span.search-highlight');
         scrollToHighlighted(0);
 
@@ -256,10 +218,7 @@ gitbook.require(["gitbook", "lodash", "jQuery"], function(gitbook, _, $) {
     gitbook.events.bind("start", function(e, config) {
         // [Yihui] disable search
         if (config.search === false) return;
-<<<<<<< HEAD
         init(config);
-=======
->>>>>>> 267c07bc527bdaad545501409f2f10dd93abaf07
         collapse = !config.toc || config.toc.collapse === 'section' ||
           config.toc.collapse === 'subsection';
 
