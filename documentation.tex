@@ -115,7 +115,7 @@
 
 \title{Daten Analyse mit RStudio - Dokumentation}
 \author{Dr.~Kristof Dorau}
-\date{Aktualisiert am: 2021-08-26 21:18:30}
+\date{Aktualisiert am: 2021-08-26 22:16:08}
 
 \begin{document}
 \maketitle
@@ -1576,10 +1576,10 @@ Definition
 \begin{Highlighting}[]
 \CommentTok{\# Die Zahlen 1 bis 5 treten nur einmal auf}
 \FunctionTok{sample}\NormalTok{(}\AttributeTok{x =} \DecValTok{1}\SpecialCharTok{:}\DecValTok{5}\NormalTok{, }\AttributeTok{size =} \DecValTok{5}\NormalTok{)}
-\DocumentationTok{\#\# [1] 2 4 1 3 5}
+\DocumentationTok{\#\# [1] 1 3 5 4 2}
 \CommentTok{\# Die Zahlen 1 bis 5 können ggf. mehrmals auftreten hei replace = TRUE}
 \FunctionTok{sample}\NormalTok{(}\AttributeTok{x =} \DecValTok{1}\SpecialCharTok{:}\DecValTok{5}\NormalTok{, }\AttributeTok{size =} \DecValTok{5}\NormalTok{, }\AttributeTok{replace =}\NormalTok{ T)}
-\DocumentationTok{\#\# [1] 4 4 3 5 3}
+\DocumentationTok{\#\# [1] 5 1 2 3 3}
 \end{Highlighting}
 \end{Shaded}
 
@@ -1757,10 +1757,10 @@ Lasst uns den Mittelwert und die Standardabweichung des Redoxpotentziales der Ze
 \begin{Highlighting}[]
 \CommentTok{\# Mittelwert }
 \FunctionTok{mean}\NormalTok{(eh)}
-\DocumentationTok{\#\# [1] 655.2677}
+\DocumentationTok{\#\# [1] 658.5736}
 \CommentTok{\# SD}
 \FunctionTok{sd}\NormalTok{(eh)}
-\DocumentationTok{\#\# [1] 28.27485}
+\DocumentationTok{\#\# [1] 29.46584}
 \end{Highlighting}
 \end{Shaded}
 
@@ -1809,7 +1809,7 @@ Eine wichtige Funktion um Informationen über einen Datensatz oder ein Objekt zu
 \begin{Highlighting}[]
 \CommentTok{\# Erkunden eines Vektors mit 100 Zufallszahlen}
 \FunctionTok{str}\NormalTok{(eh)}
-\DocumentationTok{\#\#  num [1:100] 695 615 633 704 618 ...}
+\DocumentationTok{\#\#  num [1:100] 640 641 680 693 665 ...}
 \end{Highlighting}
 \end{Shaded}
 
@@ -2597,7 +2597,7 @@ oxy10:oxy150 & Sauerstoffgehalt & \%-Luftsättigung \\
 \hypertarget{arbeiten-mit-zeiten}{%
 \subsection{Arbeiten mit Zeiten}\label{arbeiten-mit-zeiten}}
 
-In der Spalte \texttt{time} stehen die Zeilennummern und unter \texttt{date} finden wir das Datum, allerdings als \texttt{character} hinterlegt. Beim Einlesen der Daten denkt R, dass es sich um Text handelt aber wir wissen es besser. Wir müssen R nun explizit mitteilen wie unser Zeitstempel \texttt{date} codiert ist, nämlich mit \texttt{\%Tag.\%Monat.\%Jahr\ \%Stunde:\%Minute}. In R wird ein Datum jedoch mit 2021-08-26 21:18:41 angegeben. Wir tun also folgendes:
+In der Spalte \texttt{time} stehen die Zeilennummern und unter \texttt{date} finden wir das Datum, allerdings als \texttt{character} hinterlegt. Beim Einlesen der Daten denkt R, dass es sich um Text handelt aber wir wissen es besser. Wir müssen R nun explizit mitteilen wie unser Zeitstempel \texttt{date} codiert ist, nämlich mit \texttt{\%Tag.\%Monat.\%Jahr\ \%Stunde:\%Minute}. In R wird ein Datum jedoch mit 2021-08-26 22:16:17 angegeben. Wir tun also folgendes:
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -4785,16 +4785,16 @@ Beim pivoting können wir uns Informationen in den Zeilennamen auch zunutze mach
 \DocumentationTok{\#\# \# A tibble: 10 x 3}
 \DocumentationTok{\#\#    st\_10 st\_20 st\_30}
 \DocumentationTok{\#\#    \textless{}dbl\textgreater{} \textless{}dbl\textgreater{} \textless{}dbl\textgreater{}}
-\DocumentationTok{\#\#  1 11.9   7.11  8.58}
-\DocumentationTok{\#\#  2 11.2   7.78  9.06}
-\DocumentationTok{\#\#  3  9.22  7.79  8.28}
-\DocumentationTok{\#\#  4  9.04  9.14  7.75}
-\DocumentationTok{\#\#  5 12.3   8.39  8.15}
-\DocumentationTok{\#\#  6  8.90 10.4   6.41}
-\DocumentationTok{\#\#  7 10.8   8.69  8.88}
-\DocumentationTok{\#\#  8  8.35  8.32  8.31}
-\DocumentationTok{\#\#  9 10.9   7.17  7.42}
-\DocumentationTok{\#\# 10  9.61 10.1   8.42}
+\DocumentationTok{\#\#  1  9.35  8.13  7.99}
+\DocumentationTok{\#\#  2 11.4  10.1   7.99}
+\DocumentationTok{\#\#  3 11.4   6.22  8.10}
+\DocumentationTok{\#\#  4 10.1   7.54  8.16}
+\DocumentationTok{\#\#  5 10.4  10.9   9.03}
+\DocumentationTok{\#\#  6  8.85  8.09  7.97}
+\DocumentationTok{\#\#  7  9.12  9.66  7.32}
+\DocumentationTok{\#\#  8 11.0  10.7   9.67}
+\DocumentationTok{\#\#  9 10.8   6.99  8.12}
+\DocumentationTok{\#\# 10  9.13 10.7   8.01}
 \CommentTok{\# Erstelle tibble test\_long im long format}
 \NormalTok{test\_long }\OtherTok{\textless{}{-}}\NormalTok{ test }\SpecialCharTok{\%\textgreater{}\%}
   \FunctionTok{pivot\_longer}\NormalTok{(}\AttributeTok{cols =} \FunctionTok{contains}\NormalTok{(}\StringTok{"st"}\NormalTok{), }\AttributeTok{names\_to =} \FunctionTok{c}\NormalTok{(}\StringTok{"Parameter"}\NormalTok{, }\StringTok{"Depth"}\NormalTok{), }\AttributeTok{values\_to =} \StringTok{"Wert"}\NormalTok{, }\AttributeTok{names\_sep =} \StringTok{"\_"}\NormalTok{) }\CommentTok{\# Gebe an wie die Informationen im Spaltenname getrennt sind}
@@ -4802,16 +4802,16 @@ Beim pivoting können wir uns Informationen in den Zeilennamen auch zunutze mach
 \DocumentationTok{\#\# \# A tibble: 30 x 3}
 \DocumentationTok{\#\#    Parameter Depth  Wert}
 \DocumentationTok{\#\#    \textless{}chr\textgreater{}     \textless{}chr\textgreater{} \textless{}dbl\textgreater{}}
-\DocumentationTok{\#\#  1 st        10    11.9 }
-\DocumentationTok{\#\#  2 st        20     7.11}
-\DocumentationTok{\#\#  3 st        30     8.58}
-\DocumentationTok{\#\#  4 st        10    11.2 }
-\DocumentationTok{\#\#  5 st        20     7.78}
-\DocumentationTok{\#\#  6 st        30     9.06}
-\DocumentationTok{\#\#  7 st        10     9.22}
-\DocumentationTok{\#\#  8 st        20     7.79}
-\DocumentationTok{\#\#  9 st        30     8.28}
-\DocumentationTok{\#\# 10 st        10     9.04}
+\DocumentationTok{\#\#  1 st        10     9.35}
+\DocumentationTok{\#\#  2 st        20     8.13}
+\DocumentationTok{\#\#  3 st        30     7.99}
+\DocumentationTok{\#\#  4 st        10    11.4 }
+\DocumentationTok{\#\#  5 st        20    10.1 }
+\DocumentationTok{\#\#  6 st        30     7.99}
+\DocumentationTok{\#\#  7 st        10    11.4 }
+\DocumentationTok{\#\#  8 st        20     6.22}
+\DocumentationTok{\#\#  9 st        30     8.10}
+\DocumentationTok{\#\# 10 st        10    10.1 }
 \DocumentationTok{\#\# \# ... with 20 more rows}
 \end{Highlighting}
 \end{Shaded}
@@ -7320,7 +7320,37 @@ Bei vielen 100 Dateien folgender Tipp: Markieren aller Einträge mit ``strg + A'
 \caption{Commit von vielen Dateien}\label{fig:unnamed-chunk-303}
 \end{figure}
 
-Eine andere Möglichkeit ist im Terminal \texttt{git\ add\ -\/-all} und dann die commit Nachricht mit \texttt{git\ commit\ -m\ "TEXT"} eingeben. Nicht vergessen danach mit \texttt{git\ push} oder über den grünen Push button im Git Fenster die Nachrichten auf github zu übertragen. Mit
+Eine andere Möglichkeit ist im Terminal einzugeben
+
+\begin{itemize}
+\tightlist
+\item
+  \texttt{git\ add\ -\/-all}
+\item
+  \texttt{git\ commit\ -m\ "TEXT"}
+\item
+  \texttt{git\ push}
+\end{itemize}
+
+Falls Dateinamen zu lang sind können ebenfalls Probleme entstehen \href{https://stackoverflow.com/questions/52699177/how-to-fix-filename-too-long-error-during-git-clone/52699496}{stackoverflow}. Dann empfiehlt sich:
+
+\begin{itemize}
+\tightlist
+\item
+  \texttt{git\ clone\ -c\ core.longpaths=true\ \textless{}repo-url\textgreater{}}
+\end{itemize}
+
+einzugeben. Dann wird die Option ``lange Dateinnamen'' für das spezielle repository deaktiviert.
+
+Falls Systemdateien sich auf dem lokalen Ordner befiden (bspw. \texttt{nul}) kann man diese entfernen mit:
+
+\begin{itemize}
+\tightlist
+\item
+  rechtsklick und ``Git Bash Here''
+\item
+  Schreibe: ``rm nul'' (oder die jeweilige \emph{Dateiname.Dateiendung}\ldots falls keine Dateiendung vorhanden wie bei diese MS-DOS Datei dann weglassen)
+\end{itemize}
 
 \hypertarget{ordner-lokal-behalten-aber-auf-git-luxf6schen}{%
 \subsubsection{Ordner lokal behalten aber auf Git löschen}\label{ordner-lokal-behalten-aber-auf-git-luxf6schen}}

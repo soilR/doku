@@ -4858,7 +4858,22 @@ Bei vielen 100 Dateien folgender Tipp: Markieren aller Einträge mit "strg + A" 
 knitr::include_graphics("images/074.png")
 ```
 
-Eine andere Möglichkeit ist im Terminal `git add --all` und dann die commit Nachricht mit `git commit -m "TEXT"` eingeben. Nicht vergessen danach mit `git push` oder über den grünen Push button im Git Fenster die Nachrichten auf github zu übertragen. Mit 
+Eine andere Möglichkeit ist im Terminal einzugeben 
+
+- `git add --all` 
+- `git commit -m "TEXT"`
+- `git push`
+
+Falls Dateinamen zu lang sind können ebenfalls Probleme entstehen [stackoverflow](https://stackoverflow.com/questions/52699177/how-to-fix-filename-too-long-error-during-git-clone/52699496). Dann empfiehlt sich:
+
+- `git clone -c core.longpaths=true <repo-url>` 
+
+einzugeben. Dann wird die Option "lange Dateinnamen" für das spezielle repository deaktiviert. 
+
+Falls Systemdateien sich auf dem lokalen Ordner befiden (bspw. `nul`) kann man diese entfernen mit:
+
+- rechtsklick und "Git Bash Here"
+- Schreibe: "rm nul" (oder die jeweilige *Dateiname.Dateiendung*...falls keine Dateiendung vorhanden wie bei diese MS-DOS Datei dann weglassen)
 
 ### Ordner lokal behalten aber auf Git löschen
 

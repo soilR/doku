@@ -420,7 +420,22 @@ Figure 12.4: Kopieren der URL für das Verknüpfen des Projektes
 Figure 12.5: Commit von vielen Dateien
 </p>
 </div>
-<p>Eine andere Möglichkeit ist im Terminal <code>git add --all</code> und dann die commit Nachricht mit <code>git commit -m "TEXT"</code> eingeben. Nicht vergessen danach mit <code>git push</code> oder über den grünen Push button im Git Fenster die Nachrichten auf github zu übertragen. Mit</p>
+<p>Eine andere Möglichkeit ist im Terminal einzugeben</p>
+<ul>
+<li><code>git add --all</code></li>
+<li><code>git commit -m "TEXT"</code></li>
+<li><code>git push</code></li>
+</ul>
+<p>Falls Dateinamen zu lang sind können ebenfalls Probleme entstehen <a href="https://stackoverflow.com/questions/52699177/how-to-fix-filename-too-long-error-during-git-clone/52699496">stackoverflow</a>. Dann empfiehlt sich:</p>
+<ul>
+<li><code>git clone -c core.longpaths=true &lt;repo-url&gt;</code></li>
+</ul>
+<p>einzugeben. Dann wird die Option “lange Dateinnamen” für das spezielle repository deaktiviert.</p>
+<p>Falls Systemdateien sich auf dem lokalen Ordner befiden (bspw. <code>nul</code>) kann man diese entfernen mit:</p>
+<ul>
+<li>rechtsklick und “Git Bash Here”</li>
+<li>Schreibe: “rm nul” (oder die jeweilige <em>Dateiname.Dateiendung</em>…falls keine Dateiendung vorhanden wie bei diese MS-DOS Datei dann weglassen)</li>
+</ul>
 </div>
 <div id="ordner-lokal-behalten-aber-auf-git-löschen" class="section level3" number="12.1.3">
 <h3><span class="header-section-number">12.1.3</span> Ordner lokal behalten aber auf Git löschen</h3>
