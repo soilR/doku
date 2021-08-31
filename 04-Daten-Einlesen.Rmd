@@ -1,3 +1,8 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
 # Wie lese ich Daten ein
 
 *Der Beitrag wurde das letzte mal am `r format(Sys.time(), '%d %B, %Y')` editiert*
@@ -16,13 +21,11 @@ packages <- c("tidyverse", "markdown", "knitr", "matrixStats", "patchwork", "lub
 # Load the packages vector 
 pacman::p_load(packages, character.only = T)
 
-
 my_theme <- theme(
   panel.background = element_rect(fill = "white", color = "black"),
   panel.grid.major = element_blank(), 
   panel.grid.minor = element_blank(), 
   panel.border = element_blank())
-
 ```
 
 Wir sind immer noch nicht ganz bei dem Punkt angekommen, was es mit dem Begriff *tidy* auf sich hat. Soviel soll aber gesagt sein: Daten in der "freien Laufbahn" sind immer **dreckig** und NICHT **tidy**.
@@ -133,7 +136,7 @@ head(koog_raw, n = 10)
 
 Wir haben ja bereits gesagt, dass es praktischer ist ausschließlich die Spalten mit Kleinbuchstaben (*snake_case*) zu belegen. Es gibt eine einfache Funktion mit `janitor::clean_names()`, welche automatisch die Spalten kohärent umcodiert und individuell vergibt:
 
-```{r echo = F, fig.cap="Illustration von @allison_horst: https://twitter.com/allison_horst"}
+```{r echo = F, fig.cap="Illustration von Allison Horst"}
 knitr::include_graphics("images/034.png")
 ```
 
@@ -194,11 +197,11 @@ Super...nun haben wir ein sogenanntes `POSIXct` Objekt. Dies ist eine Datum+Zeit
 
 💡 Mit der Funktion `Sys.time()` könnt ihr euch das aktuell Datum + Uhrzeit anzeigen lassen
 
-```{r echo = F, fig.cap="Illustration von @allison_horst: https://twitter.com/allison_horst"}
+```{r echo = F, fig.cap="Illustration von Allison Horst"}
 knitr::include_graphics("images/035.png")
 ```
 
-```{r echo = F, fig.cap="Illustration von @allison_horst: https://twitter.com/allison_horst"}
+```{r echo = F, fig.cap="Illustration von Allison Horst"}
 knitr::include_graphics("images/036.png")
 ```
 
@@ -220,4 +223,3 @@ koog_raw %>%
 ```{r echo = F}
 koog_raw <- janitor::clean_names(koog_raw)
 ```
-

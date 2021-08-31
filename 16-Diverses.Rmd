@@ -11,7 +11,7 @@ knitr::opts_chunk$set(fig.align = "center", collapse = T, echo = TRUE, message =
 
 # loading multiple packages at once with `pacman`
 # create a vector name
-packages <- c("tidyverse", "markdown", "knitr", "matrixStats", "patchwork", "lubridate", "plotly",  "naniar", "stlplus", "gt", "dygraphs", "htmltools", "zoo", "xts", "ggpmisc", "forcats", "RColorBrewer", "Kendall", "rstudioapi", "multcompView", "plyr", "bookdown", "janitor", "rstatix", "ggpubr", "moments", "tweetrmd", "ggthemes", "hexbin", "ggridges", "ggstream", "openair", "treemapify", "MBA", "akima", "PlotSvalbard", "sf", "rnaturalearth", "rnaturalearthdata", "rgeos", "ggspatial", "factoextra", "FactoMineR", "gapminder", "calendR")
+packages <- c("tidyverse", "markdown", "knitr", "matrixStats", "patchwork", "lubridate", "plotly",  "naniar", "stlplus", "gt", "dygraphs", "htmltools", "zoo", "xts", "ggpmisc", "forcats", "RColorBrewer", "Kendall", "rstudioapi", "multcompView", "plyr", "bookdown", "janitor", "rstatix", "ggpubr", "moments", "tweetrmd", "ggthemes", "hexbin", "ggridges", "ggstream", "openair", "treemapify", "MBA", "akima", "sf", "rnaturalearth", "rnaturalearthdata", "rgeos", "ggspatial", "factoextra", "FactoMineR", "gapminder", "calendR")
 
 # Load the packages vector 
 pacman::p_load(packages, character.only = T)
@@ -24,7 +24,7 @@ my_theme <- theme(
 
 ```
 
-### Entfernen aller packages
+## Entfernen aller packages
 
 * Falls es beim arbeiten mit R und den dazugehoerigen packages zu Problemen kommt hilft der folgende Befehl diese zu loeschen: 
 
@@ -52,7 +52,7 @@ my_theme <- theme(
 
 ```
 
-### Shortcuts
+## Shortcuts
 
 Was wäre das Leben ohne shortcuts. Für viele Anwendungen spart es wahnsinnig viel Zeit. 
 
@@ -175,7 +175,7 @@ gapminder %>%
 #### String manipulation 
 
 🔍 [http://www.endmemo.com/r/gsub.php](http://www.endmemo.com/r/gsub.php)
-🔍 [https://bookdown.org/rdpeng/rprogdatascience/r-nuts-and-bolts.html#summary](https://bookdown.org/rdpeng/rprogdatascience/r-nuts-and-bolts.html#summary)
+🔍 [https://bookdown.org/rdpeng/rprogdatascience/r-nuts-and-bolts.html](https://bookdown.org/rdpeng/rprogdatascience/r-nuts-and-bolts.html)
 
 Die wichtigsten R Funktionen um Strings zu bearbeiten sind:
 
@@ -291,7 +291,7 @@ x %>%
 
 🔍 [https://biostats.w.uib.no/modifying-labels-in-faceted-plots/](https://biostats.w.uib.no/modifying-labels-in-faceted-plots/)
 
-```{r echo=F, fig.cap="@Henry Wang taken from: https://henrywang.nl/ggplot2-theme-elements-demonstration/"}
+```{r echo=F, fig.cap="Henry Wang taken from: https://henrywang.nl/ggplot2-theme-elements-demonstration/"}
 include_graphics("images/048.png")
 ```
 
@@ -365,7 +365,7 @@ p + theme(panel.spacing.x = unit(1.25, "cm"))
         Benutzer.
     -   Synonym = "terminal", "command line", and "console"
 
--   [GUI](https://de.wikipedia.org/wiki/Grafische_Benutzeroberfl%C3%A4che)
+-   [GUI](https://de.wikipedia.org/wiki/Grafische_BenutzeroberflC3A4che)
 
     -   Grafische Benutzeroberfläche oder auch grafische
         Benutzerschnittstelle oder Bedienoberfläche (Abk. GUI von

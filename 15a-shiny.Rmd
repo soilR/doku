@@ -11,10 +11,8 @@ knitr::opts_chunk$set(fig.align = "center", collapse = T, echo = TRUE, message =
 
 # loading multiple packages at once with `pacman`
 # create a vector name
-packages <- c("tidyverse", "markdown", "knitr", "matrixStats", "patchwork", "lubridate", "plotly",  "naniar", "stlplus", "gt", "dygraphs", "htmltools", "zoo", "xts", "ggpmisc", "forcats", "RColorBrewer", "Kendall", "rstudioapi", "multcompView", "plyr", "bookdown", "janitor", "rstatix", "ggpubr", "moments", "tweetrmd", "ggthemes", "hexbin", "ggridges", "ggstream", "openair", "treemapify", "MBA", "akima", "PlotSvalbard", "sf", "rnaturalearth", "rnaturalearthdata", "rgeos", "ggspatial", "factoextra", "FactoMineR", "gapminder", "ggforce", "gh", "globals", "openintro", "profvis", 
-  "RSQLite", "shiny", "shinycssloaders", "shinyFeedback", 
-  "shinythemes", "testthat", "thematic", "tidyverse", "vroom", 
-  "waiter", "xml2", "zeallot", "shiny", "rsconnect")
+packages <- c("tidyverse", "markdown", "knitr", "matrixStats", "patchwork", "lubridate", "plotly",  "naniar", "stlplus", "gt", "dygraphs", "htmltools", "zoo", "xts", "ggpmisc", "forcats", "RColorBrewer", "Kendall", "rstudioapi", "multcompView", "plyr", "bookdown", "janitor", "rstatix", "ggpubr", "moments", "tweetrmd", "ggthemes", "hexbin", "ggridges", "ggstream", "openair", "treemapify", "MBA", "akima", "sf", "rnaturalearth", "rnaturalearthdata", "rgeos", "ggspatial", "factoextra", "FactoMineR", "gapminder", "ggforce", "gh", "globals", "openintro", "profvis", "RSQLite", "shiny", "shinycssloaders", "shinyFeedback", 
+  "shinythemes", "testthat", "thematic", "tidyverse", "vroom", "waiter", "xml2", "zeallot", "shiny", "rsconnect")
  
 # Load the packages vector 
 pacman::p_load(packages, character.only = T)
@@ -29,39 +27,8 @@ my_theme <- theme(
 
 ```{r echo = F}
 # Daten Speicherkoog einlesen
-koog_raw <- readr::read_delim("data/data.csv", delim = ";", 
-                          col_types = readr::cols(
-                            # date = überschreibt die Spalte mit der neuen Spezifikation
-                            date = readr::col_datetime(format = "%d.%m.%Y %H:%M") 
-  ))
-koog_raw <- janitor::clean_names(koog_raw)
-koog <- koog_raw %>%
-  dplyr::mutate(across(contains("eh"), ~. + 207))
-# Erstelle neue Spalten mit Zeitstempeln
-koog <- koog %>%
-  mutate(year = lubridate::year(date),
-         month = lubridate::month(date),
-         day = lubridate::day(date),
-         hour = lubridate::hour(date), 
-         daily = format(date, "%Y-%m-%d"),
-         monthly = format(date, "%Y-%m"))
-
-# Tagesmittelwerte
-koog_day <- koog %>%
-  group_by(daily) %>%
-  summarise_if(is.numeric, mean, na.rm = T) %>%
-  mutate(daily = as.Date(daily))
-
-# Monatsmittelwerte
-koog_month <- koog %>%
-  group_by(monthly) %>%
-  summarise_if(is.numeric, mean, na.rm = T)
-  
-# Jahresmittelwerte
-koog_year <- koog %>%
-  group_by(year) %>%
-  summarise_if(is.numeric, mean, na.rm = T)
-
+koog_day <- readr::read_csv("data/data_daily.csv")
+koog_year <- readr::read_csv("data/data_year.csv")
 ```
 
 🔍 [Mastering Shiny - Build interactive apps, reports, dashboards](https://mastering-shiny.org/index.html)
@@ -153,26 +120,6 @@ shinyApp(ui, server)
 
 Das Objekt `server` kann noch besser definiert werden durch eine *reactive expression*. Dadurch muss man Objekte (in diesem Beispiel `get(input$dataset, "package:datasets")`) nur einmal definieren. Eine reactive expression wird dabei wie ein Funktionsaufruf genutzt:
 
-```{r eval = F}
-server <- function(input, output, session) {
-  # Create a reactive expression
-  dataset <- reactive({
-    get(input$dataset, "package:datasets")
-  })
-
-  output$summary <- renderPrint({
-    # Use a reactive expression by calling it like a function
-    summary(dataset())
-  })
-  
-  output$table <- renderTable({
-    dataset()
-  })
-}
-
-shinyApp(ui, server)
-```
-
 ## Beispiel Speicherkoog
 
 ```{r eval = F}
@@ -180,8 +127,6 @@ shinyApp(ui, server)
 data <- koog_day %>%
   select(daily, contains("st")) %>%
   pivot_longer(cols = contains("st"), names_to = "id")
-
 str(data)
-
 ```
 

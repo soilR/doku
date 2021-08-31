@@ -1,3 +1,8 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
 # Erste Schritte mit R
 
 *Der Beitrag wurde das letzte mal am `r format(Sys.time(), '%d %B, %Y')` editiert*
@@ -309,7 +314,6 @@ Einige Dinge die man bei der Benennung von Objekten berücksichtigen sollte:
 mittelwert <- 2.5
 mein_alter <- 32
 groesse_in_cm <- 175
-
 # Schlechte Objektnamen
 x1 <- 2.5
 var2 <- 32
@@ -320,7 +324,7 @@ Ich persönlich bevorzuge **snake_case** Wörter. Später lernen wir noch, dass 
 
 💡 Gute Objektnamen sollten kurz und prägnant sein! Lange Namen sind nicht intuitiv und Buchstaben alleine sagen auch nichts aus. Als Beispiel: Die durchschnittliche Lufttemperatur im Speicherkoog für März kann man mit `airtemp_march_koog` abkürzen.
 
-```{r echo=F, fig.cap="Illustration von @allison_horst: https://twitter.com/allison_horst", fig.width=6, out.width="100%"}
+```{r echo=F, fig.cap = "Illustration von Allison Horst", fig.width=6, out.width="100%"}
 knitr::include_graphics("images/016.png")
 ```
 

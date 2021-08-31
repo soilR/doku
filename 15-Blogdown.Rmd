@@ -11,7 +11,7 @@ knitr::opts_chunk$set(fig.align = "center", collapse = T, echo = TRUE, message =
 
 # loading multiple packages at once with `pacman`
 # create a vector name
-packages <- c("tidyverse", "markdown", "knitr", "matrixStats", "patchwork", "lubridate", "plotly",  "naniar", "stlplus", "gt", "dygraphs", "htmltools", "zoo", "xts", "ggpmisc", "forcats", "RColorBrewer", "Kendall", "rstudioapi", "multcompView", "plyr", "bookdown", "janitor", "rstatix", "ggpubr", "moments", "tweetrmd", "ggthemes", "hexbin", "ggridges", "ggstream", "openair", "treemapify", "MBA", "akima", "PlotSvalbard", "sf", "rnaturalearth", "rnaturalearthdata", "rgeos", "ggspatial", "factoextra", "FactoMineR")
+packages <- c("tidyverse", "markdown", "knitr", "matrixStats", "patchwork", "lubridate", "plotly",  "naniar", "stlplus", "gt", "dygraphs", "htmltools", "zoo", "xts", "ggpmisc", "forcats", "RColorBrewer", "Kendall", "rstudioapi", "multcompView", "plyr", "bookdown", "janitor", "rstatix", "ggpubr", "moments", "tweetrmd", "ggthemes", "hexbin", "ggridges", "ggstream", "openair", "treemapify", "MBA", "akima", "sf", "rnaturalearth", "rnaturalearthdata", "rgeos", "ggspatial", "factoextra", "FactoMineR")
  
 # Load the packages vector 
 pacman::p_load(packages, character.only = T)
@@ -22,14 +22,13 @@ my_theme <- theme(
   panel.grid.major = element_blank(), 
   panel.grid.minor = element_blank(), 
   panel.border = element_blank())
-
 ```
 
-# Setup a homepage with Hugo and blogdown
+## Setup a homepage with Hugo and blogdown
 
 * A great read is from the developer of blogdown (Allison Horst) [How
     to build a Hugo page with
-    blogdown](https://alison.rbind.io/post/new-year-new-blogdown/#pre-requisites)
+    blogdown](https://alison.rbind.io/post/new-year-new-blogdown/)
 * Pre-requisites you need
     -   R and RStudio
     -   GitHub [What is Github](https://happygitwithr.com/).
@@ -87,7 +86,7 @@ my_theme <- theme(
         directory using absolute path, works regardless of your current
         working directory: cd /home/my_username/Desktop. Windows uses a
         slightly different syntax with the slashes between the folder
-        names reversed, , e.g. cd C:\Users\MY\_USERNAME\Desktop. - Pro
+        names reversed, - Pro
         tip 1: Dragging and dropping a file or folder into the terminal
         window will paste the absolute path into the window. - Pro tip
         2: Use the tab key to autocomplete unambiguous directory and
@@ -111,11 +110,6 @@ my_theme <- theme(
     -   
 
 -   HTTPS remotes look like <https://github.com/><OWNER>/<REPO>.git.
-
--   SSH remotes look like
-    [git\@github.com](mailto:git@github.com){.email}:<OWNER>/<REPO>.git.
-
-    -   
 
 -   Clone the new GitHub repository to your computer via RStudio
 
@@ -151,7 +145,7 @@ my_theme <- theme(
 
 ## Domain name
 
--   [See](https://bookdown.org/yihui/blogdown/domain-name.html#domain-name)
+-   [See](https://bookdown.org/yihui/blogdown/domain-name.html)
 -   While you can use the free subdomain names like those provided by
     GitHub or Netlify, it may be a better idea to own a domain name of
     your own. The cost of an apex domain is minimal (typically the
@@ -201,7 +195,7 @@ usethis::use_github() # requires a GitHub PAT
     -   Xie, Y., Thomas, A., Presmanes Hill, A., 2018. blogdown -
         Creating Websites with R Markdown. CRC Press, Boca Raton.
     -   [Allison Hill
-        blog](https://alison.rbind.io/post/new-year-new-blogdown/#pre-requisites)
+        blog](https://alison.rbind.io/post/new-year-new-blogdown/)
 -   Setup a profile for the page with
     -   `blogdown::config_Rprofile()`this will execute a special setup
         at every beginning

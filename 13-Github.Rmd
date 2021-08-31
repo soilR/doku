@@ -12,7 +12,7 @@ knitr::opts_chunk$set(fig.align = "center", collapse = T, echo = TRUE, message =
 # loading multiple packages at once with `pacman`
 # create a vector name
 packages <- c("tidyverse", "markdown", "knitr", "matrixStats", "patchwork", "lubridate", "plotly",  "naniar", "stlplus", "gt", "dygraphs", "htmltools", "zoo", "xts", "ggpmisc", "forcats", "RColorBrewer", "Kendall", "rstudioapi", "multcompView", "plyr", "bookdown", "janitor", "rstatix", "ggpubr", "moments", "tweetrmd", "ggthemes", "hexbin", "ggridges", "ggstream", "openair", "treemapify", "MBA", "akima", "sf", "rnaturalearth", "rnaturalearthdata", "rgeos", "ggspatial", "factoextra", "FactoMineR")
- 
+
 # Load the packages vector 
 pacman::p_load(packages, character.only = T)
 
@@ -36,11 +36,8 @@ Schritt 1:
         3rd-party software". Otherwise, we believe it is good to accept
         the defaults.
     -   Note that RStudio for Windows prefers for Git to be installed
-        below C:/Program Files and this appears to be the default. This
-        implies, for example, that the Git executable on my Windows
-        system is found at C:/Program Files/Git/bin/git.exe. Unless you
-        have specific reasons to otherwise, follow this convention.
--   Now: Introduce yourself to Git
+        below C:/Prgram Files and this appears to be the default. 
+    -   Now: Introduce yourself to Git
 
 ```{r eval=F, echo=T}
 # library(usethis)
@@ -80,20 +77,6 @@ Schritt 1:
         Finder/Explorer/File Manager. Use ls -a to also list hidden
         files, such as .Rhistory and .git.
 
-    -   cd (change directory). Allows you to navigate through your
-        directories by changing the shell's working directory. You can
-        navigate like so: go to subdirectory foo of current working
-        directory: cd foo go to parent of current working directory: cd
-        .. go to your "home" directory: cd \~ or simply cd go to
-        directory using absolute path, works regardless of your current
-        working directory: cd /home/my_username/Desktop. Windows uses a
-        slightly different syntax with the slashes between the folder
-        names reversed, , e.g. cd C:\Users\MY\_USERNAME\Desktop. - Pro
-        tip 1: Dragging and dropping a file or folder into the terminal
-        window will paste the absolute path into the window. - Pro tip
-        2: Use the tab key to autocomplete unambiguous directory and
-        file names. Hit tab twice to see all ambiguous options.
-
         -   Use arrow-up and arrow-down to repeat previous commands. Or
             search for previous commands with CTRL + r.
 
@@ -115,8 +98,7 @@ Schritt 1:
     -   In RStudio, start a new Project:
     -   File \> New Project \> Version Control \> Git.
     -   In "Repository URL", paste the URL of your new GitHub
-        repository. It will be something like this
-        <https://github.com/jennybc/myrepo.git>.
+        repository.
 
 
 ## Projekt erstellen

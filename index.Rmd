@@ -1,12 +1,14 @@
 --- 
 title: "Daten Analyse mit RStudio - Dokumentation"
 author: "Dr. Kristof Dorau"
-date: "Aktualisiert am: `r Sys.time()`"
+date: 'Aktualisiert am: `r Sys.time()`'
+description: Explorative Datenanalyse in den Geowissenschaften
 site: bookdown::bookdown_site
-description: "Explorative Datenanalyse in den Geowissenschaften"
 ---
 
 ```{r include=FALSE}
+
+options(tinytex.verbose = TRUE) # https://yihui.org/tinytex/r/#debugging
 
 knitr::opts_chunk$set(fig.align = "center", collapse = T, echo = TRUE, message = FALSE, warning = FALSE, fig.width=6, out.width="100%")
 

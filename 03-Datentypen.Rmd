@@ -1,3 +1,8 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
 # Grundlagen
 
 *Der Beitrag wurde das letzte mal am `r format(Sys.time(), '%d %B, %Y')` editiert*
@@ -45,11 +50,11 @@ knitr::include_graphics("images/013a.png")
     + **Nominal** keine Hierarchie oder Ordnung in den Werten (e.g. Geschlecht (männlich/weiblich) hat keine interne Struktur
     + **Ordinal** hat eine interne Ordnung (e.g. Gesundheitsstatus differenziert nach schlecht/mäßig/gut/hervorragend)
     
-```{r echo=F, fig.cap="Illustration von @allison_horst: https://twitter.com/allison_horst"}
+```{r echo=F, fig.cap="Illustration von Allison Horst"}
 knitr::include_graphics("images/018.png")
 ```
 
-```{r echo=F, fig.cap="Illustration von @allison_horst: https://twitter.com/allison_horst"}
+```{r echo=F, fig.cap="Illustration von Allison Horst"}
 knitr::include_graphics("images/019.png")
 ```
 
@@ -185,7 +190,7 @@ Vektoren in R weisen verschiedene Attribute auf. Die zwei wichtigsten Attribute 
 
 Wenn ein Objekt in R ein *class* Attribut besitzt wird es automatisch in ein **S3 object** umgewandelt und unterscheidet sich dadurch von einem normalen Vektor. 
 
-```{r echo=F, fig.cap="S3 atomic vectors, source: https://adv-r.hadley.nz/vectors-chap.html#s3-atomic-vectors"}
+```{r echo=F, fig.cap="S3 atomic vectors, source: https://adv-r.hadley.nz/vectors-chap.html"}
 knitr::include_graphics("images/080.png")
 ```
 
@@ -468,7 +473,6 @@ df1 <- data.frame(
 )
 typeof(df1)
 attributes(df1)
-
 # create a tibble
 df2 <- tibble(
   x = c("a", "b", "c"),
@@ -476,11 +480,7 @@ df2 <- tibble(
 )
 typeof(df2)
 attributes(df2)
-
 ```
-
-
-
 
 ## Zufallszahlen erzeugen
 
@@ -500,7 +500,7 @@ sample(x = 1:5, size = 5)
 sample(x = 1:5, size = 5, replace = T)
 ```
 
-```{r echo=F, fig.cap="Illustration von @allison_horst: https://twitter.com/allison_horst"}
+```{r echo=F, fig.cap="Illustration von Allison Horst"}
 knitr::include_graphics("images/017.png")
 ```
 
@@ -572,7 +572,6 @@ p3 <- a %>%
     ) +
     geom_vline(aes(xintercept = mean(.)), color = "red") +
     my_theme
-
 p1 + p2 + p3
 ```
 

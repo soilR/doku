@@ -11,7 +11,7 @@ knitr::opts_chunk$set(fig.align = "center", collapse = T, echo = TRUE, message =
 
 # loading multiple packages at once with `pacman`
 # create a vector name
-packages <- c("tidyverse", "markdown", "knitr", "matrixStats", "patchwork", "lubridate", "plotly",  "naniar", "stlplus", "gt", "dygraphs", "htmltools", "zoo", "xts", "ggpmisc", "forcats", "RColorBrewer", "Kendall", "rstudioapi", "multcompView", "plyr", "bookdown", "janitor", "rstatix", "ggpubr", "moments", "tweetrmd", "ggthemes", "hexbin", "ggridges", "ggstream", "openair", "treemapify", "MBA", "akima", "PlotSvalbard", "sf", "rnaturalearth", "rnaturalearthdata", "rgeos", "ggspatial", "factoextra", "FactoMineR")
+packages <- c("tidyverse", "markdown", "knitr", "matrixStats", "patchwork", "lubridate", "plotly",  "naniar", "stlplus", "gt", "dygraphs", "htmltools", "zoo", "xts", "ggpmisc", "forcats", "RColorBrewer", "Kendall", "rstudioapi", "multcompView", "plyr", "bookdown", "janitor", "rstatix", "ggpubr", "moments", "tweetrmd", "ggthemes", "hexbin", "ggridges", "ggstream", "openair", "treemapify", "MBA", "akima", "sf", "rnaturalearth", "rnaturalearthdata", "rgeos", "ggspatial", "factoextra", "FactoMineR")
  
 # Load the packages vector 
 pacman::p_load(packages, character.only = T)
@@ -27,38 +27,8 @@ my_theme <- theme(
 
 ```{r echo = F}
 # Daten Speicherkoog einlesen
-koog_raw <- readr::read_delim("data/data.csv", delim = ";", 
-                          col_types = readr::cols(
-                            # date = überschreibt die Spalte mit der neuen Spezifikation
-                            date = readr::col_datetime(format = "%d.%m.%Y %H:%M") 
-  ))
-koog_raw <- janitor::clean_names(koog_raw)
-koog <- koog_raw %>%
-  dplyr::mutate(across(contains("eh"), ~. + 207))
-# Erstelle neue Spalten mit Zeitstempeln
-koog <- koog %>%
-  mutate(year = lubridate::year(date),
-         month = lubridate::month(date),
-         day = lubridate::day(date),
-         hour = lubridate::hour(date), 
-         daily = format(date, "%Y-%m-%d"),
-         monthly = format(date, "%Y-%m"))
-
-# Tagesmittelwerte
-koog_day <- koog %>%
-  group_by(daily) %>%
-  summarise_if(is.numeric, mean, na.rm = T)
-
-# Monatsmittelwerte
-koog_month <- koog %>%
-  group_by(monthly) %>%
-  summarise_if(is.numeric, mean, na.rm = T)
-
-# Jahresmittelwerte
-koog_year <- koog %>%
-  group_by(year) %>%
-  summarise_if(is.numeric, mean, na.rm = T)
-
+koog_day <- readr::read_csv("data/data_daily.csv")
+koog_year <- readr::read_csv("data/data_year.csv")
 ```
 
 ## Verteilung der Daten
@@ -67,12 +37,12 @@ Auf die verschiedenen Darstellungsformen gehen wir noch nicht ein, aber die Vert
 
 ```{r}
 # Als Histogram mit der Anzahl der observations
-koog %>%
+koog_day %>%
   ggplot(aes(st10)) +
   geom_histogram(bins = 100) # Die Anzahl der bins spiegelt die Klassen wieder. Default sind 30 
 
 # Oder als Dichteverteilung
-koog %>%
+koog_day %>%
   ggplot(aes(st10)) +
   geom_density()
 ```
@@ -84,10 +54,8 @@ Optisch sieht es nach einer bimodalen Verteilung aus. Statistische Tests wie Kor
 Die Null-Hypothese des Test besagt, dass die Probenverteilung normal ist. Ist der Test also signfikant, ist die Verteilung **nicht-normalverteilt**. 
 
 ```{r}
-
 library(rstatix)
 rstatix::shapiro_test(koog_day$at)
-
 ```
 Die Daten der Lufttemperatur sind nicht normalverteilt, da der p Wert signfikant ist (p < 0.001). Wir müssen die Null-Hypothese also zurückweisen. Es gibt aber Möglichkeiten dennoch bestimmte Tests durchzuführen, auch wenn die Daten keine Normalverteilung aufweisen. Das Zauberwort lautet:
 
@@ -109,7 +77,6 @@ Zuerst wollen wir uns die Dichteverteilung der Daten für die Lufttemperatur im 
 koog_day %>%
   ggdensity(x = "at", fill = "lightgray", title = "Air temperature") +
   stat_overlay_normal_density(color = "red", linetype = "dashed")
-
 ```
 
 Die Schiefe der Daten kann mit der Funktion `skewness` aus dem `moments::` package analysiert werden. Positive Schiefe (rechtsschief) Median < Mean und Negative Schiefe (linksschief) Median > Mean
@@ -313,11 +280,9 @@ df_ec <- readr::read_delim("data/data_ecuador.csv", delim = ";", col_types =
                             Alpyro = col_double()
                           )
                         )
-
 # Laden der packages
 library(factoextra)
 library(FactoMineR)
-
 ```
 
 ### Datenauswahl
@@ -345,10 +310,8 @@ Bei einer PCA werden die Daten häufig standardisiert, also skaliert. Dies ist b
 💡 Wenn man die Funktion `PCA()` im FactoMineR verwendet, gibt es das Argument die Daten zu standardisieren. Dies muss also nicht im Vorfeld durchgeführt werden. 
 
 ```{r}
-
 pca <- PCA(df_pca[,-c(1:2)], scale.unit = T, ncp = 5, graph = F) # Makes the PCA but without the site_name and depth grouping value
 pca
-
 ```
 
 Das Ergebnis der Funktion `PCA()` ist eine Liste mit verschiedenen Komponenten. 
@@ -367,11 +330,9 @@ Wichtige FUnktionen in dem factoextra package lauten:
 Eigenvalues messen die Stärke der Variation jeder PC. 
 
 ```{r}
-
 eig.val <- get_eigenvalue(pca)
 eig.val %>%
   head(n = 5)
-
 ```
 
 Für den Ecuador Datensatz erklären die Eigenvalues der ersten zwei PCs 83% der Varianz (das ist viel). Wieviele PCs für die Auswahl der PCA wichtig sind lässt sich nicht objektiv sagen. Eine Möglichkeit ist es einen Wert festzulegen, mit dem man selber zufrieden ist:
@@ -381,9 +342,7 @@ Für den Ecuador Datensatz erklären die Eigenvalues der ersten zwei PCs 83% der
 Eine graphische Darstellung der Eigenvalue ist auch eine Möglichkeit:
 
 ```{r}
-
 fviz_eig(pca, addlabels = T, ylim = c(0,60))
-
 ```
 
 In der Darstellung sind die EIgenvalues absteigend sortiert und man wählt den Punkt aus, wo die vebleibenden Eigenvalues gleichbleibend klein bleiben (in unserem Fall ab der dritten PC). 
@@ -393,10 +352,8 @@ In der Darstellung sind die EIgenvalues absteigend sortiert und man wählt den P
 Die einfachste Methode ist mit der Funktion `get_pca_var()`. 
 
 ```{r}
-
 var <- get_pca_var(pca)
 var
-
 ```
 
 Die vier verschiedenen Komponenten von `get_pca_var()` können genutzt werden um die Ergebnisse auf verschiedenen Art darzustellen:
@@ -415,9 +372,7 @@ head(var$contrib)
 Um die Variablen im Koordinatensystem darzustellen eignet sich der folgende Befehl:
 
 ```{r}
-
 fviz_pca_var(pca, repel = T)
-
 ```
 
 Dieser Plot wird auch als **Variable correlation plot** bezeichnet und zeigt die Beziehung zwischen den Variablen:
@@ -428,9 +383,7 @@ Dieser Plot wird auch als **Variable correlation plot** bezeichnet und zeigt die
 Die Qualität der Darstellung wird über **cos2** definiert (quadrierter Cosinus, quadrierte Koordinaten). Darstellen kann man den Zusammenhang als barplot:
 
 ```{r}
-
 fviz_cos2(pca, choice = "var")
-
 ```
 
 Ein großer cos2 Wert bedeutet eine gute Repräsentation der Variable auf der PC. In diesem Fall ist die Variable nah am Kreisumfang positioniert. 
@@ -444,7 +397,6 @@ Wenn eine Variable also perfekt durch nur zwei PCs dargestellt wird, dann ist de
 Die QUalität der Variable kann auch farblich dargestellt werden:
 
 ```{r}
-
 fviz_pca_var(pca, col.var = "cos2", gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07"), 
              repel = TRUE # Avoid text overlapping
              )
@@ -462,21 +414,16 @@ Der Beitrag einer Variable für die Variabilität einer PC wird in % angegeben.
 ```{r}
 # Show the variables contributing to PC1
 fviz_contrib(pca, choice = "var", axes = 1)
-
 # Show the variables contributing to PC2
 fviz_contrib(pca, choice = "var", axes = 2)
-
 # Show the variables contributing to PC1 AND PC2
 fviz_contrib(pca, choice = "var", axes = 1:2)
-
 ```
 
 SOM, pH und hwsc tragen am meisten zu PC1 und PC2 bei, die mineralogischen Kennwerte des Eisens spielen eine untergeordnete Rolle. 
 
 ```{r}
-
 fviz_pca_var(pca, col.var = "contrib", repel = T, gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07"))
-
 ```
 
 Je näher der Pfeil am Kreisumfang positioniert ist, desto größer ist der Beitrag einer Variable für die Separierung der Daten. 
@@ -486,9 +433,7 @@ Je näher der Pfeil am Kreisumfang positioniert ist, desto größer ist der Beit
 Die Informationen der Individuen können mit der Funktion `get_pca_ind()` abgerufen werden. 
 
 ```{r}
-
 ind <- get_pca_ind(pca)
-
 # Coordinates of individuals
 head(ind$coord)
 # Quality of individuals
@@ -500,21 +445,17 @@ head(ind$contrib)
 Plots: Quality and contribution 
 
 ```{r}
-
 fviz_pca_ind(pca, repel = T)
-
 ```
 
 Individuen können auch nach dem cos2 Wert gruppiert werden
 
 ```{r}
-
 # Group by color
 fviz_pca_ind(pca, col.ind = "cos2", 
              gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07"),
              repel = TRUE # Avoid text overlapping (slow if many points)
              )
-
 ```
 
 💡 Individuen mit ähnlichen Eigenschaften werden zusammen gruppiert.
@@ -522,9 +463,7 @@ fviz_pca_ind(pca, col.ind = "cos2",
 Um den Anteil (contribution) der ersten zwei PC (DIM.1 und DIM.2) darzustellen schreibe:
 
 ```{r}
-
 fviz_contrib(pca, choice = "ind", axes = 1:2)
-
 ```
 
 Die Proben 39,42,36,37 tragen am meisten für die Separierung der Daten bei, die Proben 2,3,5 am wenigsten. 
@@ -538,13 +477,10 @@ Wie für Variablen können auch Individuen farblich dargestellt werden, bspw. na
 df_pca <- df_ec %>%
   select(site_name, depth, som:P2O5, -mat_amorph, -index) %>%
   na.omit() # Mit dem Befehl werden NA Werte aus den Daten entfernt...wichtig (!) bevor die PCA durchgeführt werden kann
-
 # Create one data frame only for the grouping variable
 df_var <- df_pca %>%
   select(site_name, depth)
-
 pca <- PCA(df_pca[,-c(1:2)], scale.unit = T, ncp = 5, graph = F) # Makes the PCA but without the site_name and depth grouping value
-
 # Gruppieren nach Standort
 fviz_pca_ind(pca,
              col.ind = df_var$site_name, # color by site_name
@@ -553,7 +489,6 @@ fviz_pca_ind(pca,
              legend.title = "Plot",
              repel = TRUE # to not have overlapping text in the figure
              )
-
 # Gruppieren nach Tiefe
 fviz_pca_ind(pca,
              geom.var = "arrow",
@@ -563,7 +498,6 @@ fviz_pca_ind(pca,
              legend.title = "Plot",
              repel = TRUE # to not have overlapping text in the figure
              )
-
 ```
 
 In diese Darstellung fließen ALLE numerischen Variablen des Datensatzes ein. Die Paramo-Standorte clustern sehr schön zusammen und es gibt eine Separierung von AC1 und AC2. Besonders AC2 unterscheidet sich signifikant. Ein sehr schönes Ergebnis, dass den Einfluss von 100 Jahren landwirtschaftliche Nutzung hervorhebt.
@@ -571,7 +505,6 @@ In diese Darstellung fließen ALLE numerischen Variablen des Datensatzes ein. Di
 #### Figure
 
 ```{r}
-
 # Gruppieren nach Standort
 p1 <- fviz_pca_ind(pca,
              col.ind = df_var$site_name, # color by site_name
@@ -580,7 +513,6 @@ p1 <- fviz_pca_ind(pca,
              legend.title = "Plot",
              repel = TRUE # to not have overlapping text in the figure
              )
-
 # Gruppieren nach Tiefe
 p2 <- fviz_pca_ind(pca,
              geom.var = "arrow",
@@ -590,11 +522,9 @@ p2 <- fviz_pca_ind(pca,
              legend.title = "Depth",
              repel = TRUE # to not have overlapping text in the figure
              )
-
 p1 + p2 + plot_annotation(tag_levels = "A")
 
 ggsave("images/results/PCA_1.png", width = 12, height = 5)
-
 
 fviz_pca_biplot(pca, repel = TRUE,#to not have overlapping text
                 #variables
@@ -612,8 +542,4 @@ fviz_pca_biplot(pca, repel = TRUE,#to not have overlapping text
 ggsave("images/results/PCA_2.png", width = 9, height = 9)
 
 ```
-
-
-
-
 

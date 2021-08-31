@@ -1,3 +1,8 @@
+---
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
 # Datenvisualisierung
 
 *Der Beitrag wurde das letzte mal am `r format(Sys.time(), '%d %B, %Y')` editiert*
@@ -11,7 +16,7 @@ knitr::opts_chunk$set(fig.align = "center", collapse = T, echo = TRUE, message =
 
 # loading multiple packages at once with `pacman`
 # create a vector name
-packages <- c("tidyverse", "markdown", "knitr", "matrixStats", "patchwork", "lubridate", "plotly",  "naniar", "stlplus", "gt", "dygraphs", "htmltools", "zoo", "xts", "ggpmisc", "forcats", "RColorBrewer", "Kendall", "rstudioapi", "multcompView", "plyr", "bookdown", "janitor", "rstatix", "ggpubr", "moments", "tweetrmd", "ggthemes", "hexbin", "ggridges", "ggstream", "openair", "treemapify", "MBA", "akima", "PlotSvalbard")
+packages <- c("tidyverse", "markdown", "knitr", "matrixStats", "patchwork", "lubridate", "plotly",  "naniar", "stlplus", "gt", "dygraphs", "htmltools", "zoo", "xts", "ggpmisc", "forcats", "RColorBrewer", "Kendall", "rstudioapi", "multcompView", "plyr", "bookdown", "janitor", "rstatix", "ggpubr", "moments", "tweetrmd", "ggthemes", "hexbin", "ggridges", "ggstream", "openair", "treemapify", "MBA", "akima", "ggridges")
  
 # Load the packages vector 
 pacman::p_load(packages, character.only = T)
@@ -27,39 +32,8 @@ my_theme <- theme(
 
 ```{r echo = F}
 # Daten Speicherkoog einlesen
-koog_raw <- readr::read_delim("data/data.csv", delim = ";", 
-                          col_types = readr::cols(
-                            # date = überschreibt die Spalte mit der neuen Spezifikation
-                            date = readr::col_datetime(format = "%d.%m.%Y %H:%M") 
-  ))
-koog_raw <- janitor::clean_names(koog_raw)
-koog <- koog_raw %>%
-  dplyr::mutate(across(contains("eh"), ~. + 207))
-# Erstelle neue Spalten mit Zeitstempeln
-koog <- koog %>%
-  mutate(year = lubridate::year(date),
-         month = lubridate::month(date),
-         day = lubridate::day(date),
-         hour = lubridate::hour(date), 
-         daily = format(date, "%Y-%m-%d"),
-         monthly = format(date, "%Y-%m"))
-
-# Tagesmittelwerte
-koog_day <- koog %>%
-  group_by(daily) %>%
-  summarise_if(is.numeric, mean, na.rm = T) %>%
-  mutate(daily = as.Date(daily))
-
-# Monatsmittelwerte
-koog_month <- koog %>%
-  group_by(monthly) %>%
-  summarise_if(is.numeric, mean, na.rm = T)
-
-# Jahresmittelwerte
-koog_year <- koog %>%
-  group_by(year) %>%
-  summarise_if(is.numeric, mean, na.rm = T)
-
+koog_day <- readr::read_csv("data/data_daily.csv")
+koog_year <- readr::read_csv("data/data_year.csv")
 ```
 
 🚨 Das folgende Kapitel mit Vorsicht genießen! Wenn ich meine Sache gut mache, dann ergibt sich ein großes Suchtpotenzial!
@@ -70,7 +44,7 @@ knitr::include_graphics("images/050.png")
 
 🔍 Wie immer ist jedem die Literatur von Hadly Wickham ans Herz gelegt [ggplot2: Elegant Graphics for Data Analysis](https://ggplot2-book.org/introduction.html)
 
-Über die Möglichkeiten eine Basis-Abbildung aufzupimpen ist dieser [Blogbeitrag](https://www.cedricscherer.com/2019/05/17/the-evolution-of-a-ggplot-ep.-1/) und dieser [Blogbeitrag](https://www.cedricscherer.com/2019/08/05/a-ggplot2-tutorial-for-beautiful-plotting-in-r/#colors) ans Herz gelegt. 
+Über die Möglichkeiten eine Basis-Abbildung aufzupimpen ist dieser [Blogbeitrag](https://www.cedricscherer.com/2019/05/17/the-evolution-of-a-ggplot-ep.-1/) und dieser [Blogbeitrag](https://www.cedricscherer.com/2019/08/05/a-ggplot2-tutorial-for-beautiful-plotting-in-r/) ans Herz gelegt. 
 
 ```{r echo = F, fig.cap="Source from: https://www.cedricscherer.com/", out.width="100%"}
 knitr::include_graphics("images/053.png")
@@ -135,10 +109,6 @@ p <- ggplot(data = koog_day, aes(x = daily, y = st10))
 p + geom_line()
 # Boxplotdiagram
 p + geom_boxplot()
-# Säulendiagram
-p + geom_col()
-# Flächendiagram
-p + geom_area()
 ```
 
 ... und viele weitere. Man kann dabei auch mehrere geoms in einem Plot erstellen:
@@ -287,12 +257,8 @@ Mit der Funktion `expression()` können wir Sonderzeichen setzen aber auch Zahle
 p + theme_bw()
 # klassisch
 p + theme_classic()
-# Cleveland
-p + theme_cleveland()
 # Komplett ohne Achsen etc. 
 p + theme_void()
-# Für die Excel Nostalgie
-p + theme_excel()
 ```
 
 Und noch eine weitere Vielzahl. Wir sind auf diese themese aber nicht begrenzt, sondern können alles editieren. Wollen wir die Farbe des Textes in rot ändern, müssen wir folgendes tun:
@@ -1311,8 +1277,4 @@ lolli %>%
   scale_fill_viridis_d() +
   my_theme +
   theme(legend.position = "none")
-
-
 ```
-
-

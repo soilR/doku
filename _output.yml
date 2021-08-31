@@ -11,5 +11,9 @@ bookdown::gitbook:
         position: fixed
 bookdown::pdf_book:
   keep_tex: yes
+  latex_engine: xelatex
 bookdown::html_book:
   css: toc.css
+pdf_document:
+  latex_engine: xelatex
+

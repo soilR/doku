@@ -26,38 +26,8 @@ my_theme <- theme(
 
 ```{r echo = F}
 # Daten Speicherkoog einlesen
-koog_raw <- readr::read_delim("data/data.csv", delim = ";", 
-                          col_types = readr::cols(
-                            # date = überschreibt die Spalte mit der neuen Spezifikation
-                            date = readr::col_datetime(format = "%d.%m.%Y %H:%M") 
-  ))
-koog_raw <- janitor::clean_names(koog_raw)
-koog <- koog_raw %>%
-  dplyr::mutate(across(contains("eh"), ~. + 207))
-# Erstelle neue Spalten mit Zeitstempeln
-koog <- koog %>%
-  mutate(year = lubridate::year(date),
-         month = lubridate::month(date),
-         day = lubridate::day(date),
-         hour = lubridate::hour(date), 
-         daily = format(date, "%Y-%m-%d"),
-         monthly = format(date, "%Y-%m"))
-
-# Tagesmittelwerte
-koog_day <- koog %>%
-  group_by(daily) %>%
-  summarise_if(is.numeric, mean, na.rm = T)
-
-# Monatsmittelwerte
-koog_month <- koog %>%
-  group_by(monthly) %>%
-  summarise_if(is.numeric, mean, na.rm = T)
-
-# Jahresmittelwerte
-koog_year <- koog %>%
-  group_by(year) %>%
-  summarise_if(is.numeric, mean, na.rm = T)
-
+koog_day <- readr::read_csv("data/data_daily.csv")
+koog_year <- readr::read_csv("data/data_year.csv")
 ```
 
 Bevor wir uns an das vermeintlich schönste Thema reinstürzen - der Datenvisualisierung - gehen wir in diesem Kapitel auf die explorative Datenanalyse (EDA) ein. 
@@ -78,34 +48,34 @@ Elektroden und Gerätschaften im Gelände sind wie Menschen - sie wollen gut gep
 
 ```{r}
 # Tritt ein NA in unserem Vektor auf
-any_na(koog$st10)
+any_na(koog_day$st10)
 ```
 
 Es befinden sich also Fehlwerte in st10. 
 
 ```{r}
 # Mit are_na bekommen wir einen Vektor mit TRUE und FALSE über NA Werte angezeigt
-are_na(koog$st10) %>%
+are_na(koog_day$st10) %>%
   head(n = 10)
 ```
 
 Wir können uns auch eine Prozentzahl angeben lassen, indem wir die Anzahl der NA Werte in unserem Vektor durch die Länge des Vektors teilen:
 
 ```{r}
-n_miss(koog$st10) / nrow(koog) * 100
+n_miss(koog_day$st10) / nrow(koog_day) * 100
 ```
-Es fehlen also 2.5% Der Daten. Das ist erstmal nicht viel. Mithilfe des `vis_dat` packages kann man schnell und leicht überprüfen wie die zeitliche Verteilung der Werte ist. Es spielt schließlich schon eine Rolle, ob ich jeden Tag einen systematischen Fehlwert habe oder die Fehlwerte en block während einer bestimmten Periode auftreten. 
+Es fehlen also 2.2% Der Daten. Das ist erstmal nicht viel. Mithilfe des `vis_dat` packages kann man schnell und leicht überprüfen wie die zeitliche Verteilung der Werte ist. Es spielt schließlich schon eine Rolle, ob ich jeden Tag einen systematischen Fehlwert habe oder die Fehlwerte en block während einer bestimmten Periode auftreten. 
 
 ```{r}
-koog %>%
+koog_day %>%
   select(st10) %>%
   visdat::vis_miss()
 ```
 
-Wir sehen also, dass 2,5% des Datensatzes keine Werte enthalten und für nur kurze Perioden auftreten. Für die elektrische Leitfähigkeit `ec` ist dies leider nicht der Fall. Speziell zu Beginn der Untersuchung gab es immer wieder Ausfälle. Diese Werte sind also im Allgemeinen mit Vorsicht zu bewerten. 
+Wir sehen also, dass 2,2% des Datensatzes keine Werte enthalten und für nur kurze Perioden auftreten. Für die elektrische Leitfähigkeit `ec` ist dies leider nicht der Fall. Speziell zu Beginn der Untersuchung gab es immer wieder Ausfälle. Diese Werte sind also im Allgemeinen mit Vorsicht zu bewerten. 
 
 ```{r}
-koog %>%
+koog_day %>%
   select(ec) %>%
   visdat::vis_miss()
 ```
@@ -113,7 +83,7 @@ koog %>%
 Tabellarisch kann man sich die Daten natürlich auch angeben lassen:
 
 ```{r}
-koog %>%
+koog_day %>%
   select(!contains("oxy")) %>%
   miss_var_summary(order = T) %>%
   head(n = 5)
