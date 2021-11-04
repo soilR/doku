@@ -381,16 +381,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb157-8"><a href="pivoting-to-longer-format.html#cb157-8" aria-hidden="true" tabindex="-1"></a><span class="do">## # A tibble: 10 x 3</span></span>
 <span id="cb157-9"><a href="pivoting-to-longer-format.html#cb157-9" aria-hidden="true" tabindex="-1"></a><span class="do">##    st_10 st_20 st_30</span></span>
 <span id="cb157-10"><a href="pivoting-to-longer-format.html#cb157-10" aria-hidden="true" tabindex="-1"></a><span class="do">##    &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;</span></span>
-<span id="cb157-11"><a href="pivoting-to-longer-format.html#cb157-11" aria-hidden="true" tabindex="-1"></a><span class="do">##  1 10.2   7.81  8.47</span></span>
-<span id="cb157-12"><a href="pivoting-to-longer-format.html#cb157-12" aria-hidden="true" tabindex="-1"></a><span class="do">##  2  8.59  9.19  7.95</span></span>
-<span id="cb157-13"><a href="pivoting-to-longer-format.html#cb157-13" aria-hidden="true" tabindex="-1"></a><span class="do">##  3  9.12  8.91  8.72</span></span>
-<span id="cb157-14"><a href="pivoting-to-longer-format.html#cb157-14" aria-hidden="true" tabindex="-1"></a><span class="do">##  4 10.5   9.84  6.30</span></span>
-<span id="cb157-15"><a href="pivoting-to-longer-format.html#cb157-15" aria-hidden="true" tabindex="-1"></a><span class="do">##  5  9.23  8.35  5.69</span></span>
-<span id="cb157-16"><a href="pivoting-to-longer-format.html#cb157-16" aria-hidden="true" tabindex="-1"></a><span class="do">##  6  8.66  8.60  8.11</span></span>
-<span id="cb157-17"><a href="pivoting-to-longer-format.html#cb157-17" aria-hidden="true" tabindex="-1"></a><span class="do">##  7  9.15  9.83  6.42</span></span>
-<span id="cb157-18"><a href="pivoting-to-longer-format.html#cb157-18" aria-hidden="true" tabindex="-1"></a><span class="do">##  8 11.3  10.3   9.76</span></span>
-<span id="cb157-19"><a href="pivoting-to-longer-format.html#cb157-19" aria-hidden="true" tabindex="-1"></a><span class="do">##  9  9.92  9.08  8.28</span></span>
-<span id="cb157-20"><a href="pivoting-to-longer-format.html#cb157-20" aria-hidden="true" tabindex="-1"></a><span class="do">## 10 10.7   7.82 10.4</span></span>
+<span id="cb157-11"><a href="pivoting-to-longer-format.html#cb157-11" aria-hidden="true" tabindex="-1"></a><span class="do">##  1 10.9  10.9   7.03</span></span>
+<span id="cb157-12"><a href="pivoting-to-longer-format.html#cb157-12" aria-hidden="true" tabindex="-1"></a><span class="do">##  2 11.2   9.25  8.11</span></span>
+<span id="cb157-13"><a href="pivoting-to-longer-format.html#cb157-13" aria-hidden="true" tabindex="-1"></a><span class="do">##  3 10.3  10.4   9.52</span></span>
+<span id="cb157-14"><a href="pivoting-to-longer-format.html#cb157-14" aria-hidden="true" tabindex="-1"></a><span class="do">##  4 10.4   8.14  8.78</span></span>
+<span id="cb157-15"><a href="pivoting-to-longer-format.html#cb157-15" aria-hidden="true" tabindex="-1"></a><span class="do">##  5  9.49  8.28  7.89</span></span>
+<span id="cb157-16"><a href="pivoting-to-longer-format.html#cb157-16" aria-hidden="true" tabindex="-1"></a><span class="do">##  6 11.1   9.22  7.47</span></span>
+<span id="cb157-17"><a href="pivoting-to-longer-format.html#cb157-17" aria-hidden="true" tabindex="-1"></a><span class="do">##  7  9.26  8.99  7.89</span></span>
+<span id="cb157-18"><a href="pivoting-to-longer-format.html#cb157-18" aria-hidden="true" tabindex="-1"></a><span class="do">##  8 11.4   9.80  8.39</span></span>
+<span id="cb157-19"><a href="pivoting-to-longer-format.html#cb157-19" aria-hidden="true" tabindex="-1"></a><span class="do">##  9 10.9   7.91  9.04</span></span>
+<span id="cb157-20"><a href="pivoting-to-longer-format.html#cb157-20" aria-hidden="true" tabindex="-1"></a><span class="do">## 10 11.0   8.65  8.28</span></span>
 <span id="cb157-21"><a href="pivoting-to-longer-format.html#cb157-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Erstelle tibble test_long im long format</span></span>
 <span id="cb157-22"><a href="pivoting-to-longer-format.html#cb157-22" aria-hidden="true" tabindex="-1"></a>test_long <span class="ot">&lt;-</span> test <span class="sc">%&gt;%</span></span>
 <span id="cb157-23"><a href="pivoting-to-longer-format.html#cb157-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(<span class="at">cols =</span> <span class="fu">contains</span>(<span class="st">&quot;st&quot;</span>), <span class="at">names_to =</span> <span class="fu">c</span>(<span class="st">&quot;Parameter&quot;</span>, <span class="st">&quot;Depth&quot;</span>), <span class="at">values_to =</span> <span class="st">&quot;Wert&quot;</span>, <span class="at">names_sep =</span> <span class="st">&quot;_&quot;</span>) <span class="co"># Gebe an wie die Informationen im Spaltenname getrennt sind</span></span>
@@ -398,16 +398,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb157-25"><a href="pivoting-to-longer-format.html#cb157-25" aria-hidden="true" tabindex="-1"></a><span class="do">## # A tibble: 30 x 3</span></span>
 <span id="cb157-26"><a href="pivoting-to-longer-format.html#cb157-26" aria-hidden="true" tabindex="-1"></a><span class="do">##    Parameter Depth  Wert</span></span>
 <span id="cb157-27"><a href="pivoting-to-longer-format.html#cb157-27" aria-hidden="true" tabindex="-1"></a><span class="do">##    &lt;chr&gt;     &lt;chr&gt; &lt;dbl&gt;</span></span>
-<span id="cb157-28"><a href="pivoting-to-longer-format.html#cb157-28" aria-hidden="true" tabindex="-1"></a><span class="do">##  1 st        10    10.2 </span></span>
-<span id="cb157-29"><a href="pivoting-to-longer-format.html#cb157-29" aria-hidden="true" tabindex="-1"></a><span class="do">##  2 st        20     7.81</span></span>
-<span id="cb157-30"><a href="pivoting-to-longer-format.html#cb157-30" aria-hidden="true" tabindex="-1"></a><span class="do">##  3 st        30     8.47</span></span>
-<span id="cb157-31"><a href="pivoting-to-longer-format.html#cb157-31" aria-hidden="true" tabindex="-1"></a><span class="do">##  4 st        10     8.59</span></span>
-<span id="cb157-32"><a href="pivoting-to-longer-format.html#cb157-32" aria-hidden="true" tabindex="-1"></a><span class="do">##  5 st        20     9.19</span></span>
-<span id="cb157-33"><a href="pivoting-to-longer-format.html#cb157-33" aria-hidden="true" tabindex="-1"></a><span class="do">##  6 st        30     7.95</span></span>
-<span id="cb157-34"><a href="pivoting-to-longer-format.html#cb157-34" aria-hidden="true" tabindex="-1"></a><span class="do">##  7 st        10     9.12</span></span>
-<span id="cb157-35"><a href="pivoting-to-longer-format.html#cb157-35" aria-hidden="true" tabindex="-1"></a><span class="do">##  8 st        20     8.91</span></span>
-<span id="cb157-36"><a href="pivoting-to-longer-format.html#cb157-36" aria-hidden="true" tabindex="-1"></a><span class="do">##  9 st        30     8.72</span></span>
-<span id="cb157-37"><a href="pivoting-to-longer-format.html#cb157-37" aria-hidden="true" tabindex="-1"></a><span class="do">## 10 st        10    10.5 </span></span>
+<span id="cb157-28"><a href="pivoting-to-longer-format.html#cb157-28" aria-hidden="true" tabindex="-1"></a><span class="do">##  1 st        10    10.9 </span></span>
+<span id="cb157-29"><a href="pivoting-to-longer-format.html#cb157-29" aria-hidden="true" tabindex="-1"></a><span class="do">##  2 st        20    10.9 </span></span>
+<span id="cb157-30"><a href="pivoting-to-longer-format.html#cb157-30" aria-hidden="true" tabindex="-1"></a><span class="do">##  3 st        30     7.03</span></span>
+<span id="cb157-31"><a href="pivoting-to-longer-format.html#cb157-31" aria-hidden="true" tabindex="-1"></a><span class="do">##  4 st        10    11.2 </span></span>
+<span id="cb157-32"><a href="pivoting-to-longer-format.html#cb157-32" aria-hidden="true" tabindex="-1"></a><span class="do">##  5 st        20     9.25</span></span>
+<span id="cb157-33"><a href="pivoting-to-longer-format.html#cb157-33" aria-hidden="true" tabindex="-1"></a><span class="do">##  6 st        30     8.11</span></span>
+<span id="cb157-34"><a href="pivoting-to-longer-format.html#cb157-34" aria-hidden="true" tabindex="-1"></a><span class="do">##  7 st        10    10.3 </span></span>
+<span id="cb157-35"><a href="pivoting-to-longer-format.html#cb157-35" aria-hidden="true" tabindex="-1"></a><span class="do">##  8 st        20    10.4 </span></span>
+<span id="cb157-36"><a href="pivoting-to-longer-format.html#cb157-36" aria-hidden="true" tabindex="-1"></a><span class="do">##  9 st        30     9.52</span></span>
+<span id="cb157-37"><a href="pivoting-to-longer-format.html#cb157-37" aria-hidden="true" tabindex="-1"></a><span class="do">## 10 st        10    10.4 </span></span>
 <span id="cb157-38"><a href="pivoting-to-longer-format.html#cb157-38" aria-hidden="true" tabindex="-1"></a><span class="do">## # ... with 20 more rows</span></span></code></pre></div>
 </div>
             </section>

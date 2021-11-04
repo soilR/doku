@@ -430,10 +430,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Lasst uns den Mittelwert und die Standardabweichung des Redoxpotentziales der Zeitreihe berechnen (wenn nicht explizit erwähnt beziehe ich mich immer auf den E<sub>H</sub> Wert in mV gemessen).</p>
 <div class="sourceCode" id="cb56"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb56-1"><a href="rechnen-mit-vektoren.html#cb56-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Mittelwert </span></span>
 <span id="cb56-2"><a href="rechnen-mit-vektoren.html#cb56-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(eh)</span>
-<span id="cb56-3"><a href="rechnen-mit-vektoren.html#cb56-3" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] 651.7362</span></span>
+<span id="cb56-3"><a href="rechnen-mit-vektoren.html#cb56-3" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] 659.047</span></span>
 <span id="cb56-4"><a href="rechnen-mit-vektoren.html#cb56-4" aria-hidden="true" tabindex="-1"></a><span class="co"># SD</span></span>
 <span id="cb56-5"><a href="rechnen-mit-vektoren.html#cb56-5" aria-hidden="true" tabindex="-1"></a><span class="fu">sd</span>(eh)</span>
-<span id="cb56-6"><a href="rechnen-mit-vektoren.html#cb56-6" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] 27.86363</span></span></code></pre></div>
+<span id="cb56-6"><a href="rechnen-mit-vektoren.html#cb56-6" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] 30.72994</span></span></code></pre></div>
 <p>Kein Problem mehr für uns 😎</p>
 <p>Vektoren sind simple 1-dimensionale Objekte in R. Wir haben jedoch auch schon Objekte wie Matrix, dataframe oder Listen kennengelernt. Eine grundlegende Sache einer Matrix oder eines dataframe ist es, dass die Vektoren <strong>diesselbe</strong> Länge haben müssen! Dies lässt sich mit der Funktion <code>length()</code> überprüfen. Wie lang war nochmal unser <code>eh</code> Vektor?</p>
 <div class="sourceCode" id="cb57"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb57-1"><a href="rechnen-mit-vektoren.html#cb57-1" aria-hidden="true" tabindex="-1"></a><span class="fu">length</span>(eh)</span>

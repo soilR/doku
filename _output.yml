@@ -2,14 +2,10 @@ bookdown::gitbook:
   lib_dir: assets
   split_by: section
   config:
-      toc:
-        collapse: section
-        scroll_highlight: yes
-        before: null
-        after: null
-      toolbar:
-        position: fixed
-bookdown::pdf_book:
-  keep_tex: yes
-  latex_engine: xelatex
-
+    toc:
+      collapse: section
+      scroll_highlight: yes
+      before: null
+      after: null
+    toolbar: 
+      position: fixed
