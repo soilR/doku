@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 5 Daten manipulieren | Daten Analyse mit RStudio - Dokumentation</title>
   <meta name="description" content="Explorative Datenanalyse in den Geowissenschaften" />
-  <meta name="generator" content="bookdown 0.23 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 5 Daten manipulieren | Daten Analyse mit RStudio - Dokumentation" />
   <meta property="og:type" content="book" />
@@ -32,8 +32,9 @@
   
 <link rel="prev" href="arbeiten-mit-zeiten.html"/>
 <link rel="next" href="select---variablen-auswählen-spaltenweise.html"/>
-<script src="assets/header-attrs-2.10/header-attrs.js"></script>
+<script src="assets/header-attrs-2.11/header-attrs.js"></script>
 <script src="assets/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="assets/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="assets/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="assets/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -41,7 +42,6 @@
 <link href="assets/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="assets/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
 <link href="assets/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
-
 
 
 
@@ -368,7 +368,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="daten-manipulieren" class="section level1" number="5">
 <h1><span class="header-section-number">Chapter 5</span> Daten manipulieren</h1>
-<p><em>Der Beitrag wurde das letzte mal am 30 August, 2021 editiert</em></p>
+<p><em>Der Beitrag wurde das letzte mal am 04 November, 2021 editiert</em></p>
 <p>Mit Daten Manipulation meinen wir nicht unsere Daten so zu frisieren, dass etwas rauskommt was wir gerne hätten. Es bedeutet vielmehr die Daten so auszuwählen, dass wir aus einer großen Menge Daten selektieren können, um damit besser zu Arbeiten. Einer der wichtigsten Operatoren um eine Vielzahl an Auswahlmöglichkeiten zu treffen ist der <code>%&gt;%</code> Operator (pipe). Ausgesprochen lautet die Funktion soviel wie “und dann”. Mit dem <code>%&gt;%</code> Operator können Daten in eine Funktion überführt werden oder zwei aufeinander aufbauende Funktionen miteinander verknüpft werden.</p>
 <div class="sourceCode" id="cb87"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb87-1"><a href="daten-manipulieren.html#cb87-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Die folgenden Zeilen sind identisch</span></span>
 <span id="cb87-2"><a href="daten-manipulieren.html#cb87-2" aria-hidden="true" tabindex="-1"></a><span class="fu">f</span>(x)</span>
@@ -411,7 +411,6 @@ Figure 5.1: Illustration von Allison Horst
     </div>
   </div>
 <script src="assets/gitbook-2.6.7/js/app.min.js"></script>
-<script src="assets/gitbook-2.6.7/js/lunr.js"></script>
 <script src="assets/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="assets/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="assets/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -452,7 +451,7 @@ gitbook.start({
 },
 "download": ["documentation.pdf"],
 "search": {
-"engine": "lunr",
+"engine": "fuse",
 "options": null
 },
 "toc": {

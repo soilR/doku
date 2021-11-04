@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>7.4 pivoting to longer format | Daten Analyse mit RStudio - Dokumentation</title>
   <meta name="description" content="Explorative Datenanalyse in den Geowissenschaften" />
-  <meta name="generator" content="bookdown 0.23 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
   <meta property="og:title" content="7.4 pivoting to longer format | Daten Analyse mit RStudio - Dokumentation" />
   <meta property="og:type" content="book" />
@@ -32,8 +32,9 @@
   
 <link rel="prev" href="arbeiten-mit-zeiten-1.html"/>
 <link rel="next" href="good-practices.html"/>
-<script src="assets/header-attrs-2.10/header-attrs.js"></script>
+<script src="assets/header-attrs-2.11/header-attrs.js"></script>
 <script src="assets/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="assets/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="assets/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="assets/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -41,7 +42,6 @@
 <link href="assets/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="assets/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
 <link href="assets/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
-
 
 
 
@@ -394,16 +394,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb184-8"><a href="pivoting-to-longer-format.html#cb184-8" aria-hidden="true" tabindex="-1"></a><span class="do">## # A tibble: 10 x 3</span></span>
 <span id="cb184-9"><a href="pivoting-to-longer-format.html#cb184-9" aria-hidden="true" tabindex="-1"></a><span class="do">##    st_10 st_20 st_30</span></span>
 <span id="cb184-10"><a href="pivoting-to-longer-format.html#cb184-10" aria-hidden="true" tabindex="-1"></a><span class="do">##    &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;</span></span>
-<span id="cb184-11"><a href="pivoting-to-longer-format.html#cb184-11" aria-hidden="true" tabindex="-1"></a><span class="do">##  1  9.52  8.17  6.53</span></span>
-<span id="cb184-12"><a href="pivoting-to-longer-format.html#cb184-12" aria-hidden="true" tabindex="-1"></a><span class="do">##  2 11.3   7.75  8.69</span></span>
-<span id="cb184-13"><a href="pivoting-to-longer-format.html#cb184-13" aria-hidden="true" tabindex="-1"></a><span class="do">##  3  9.84  8.00  8.33</span></span>
-<span id="cb184-14"><a href="pivoting-to-longer-format.html#cb184-14" aria-hidden="true" tabindex="-1"></a><span class="do">##  4  9.05  8.46  8.92</span></span>
-<span id="cb184-15"><a href="pivoting-to-longer-format.html#cb184-15" aria-hidden="true" tabindex="-1"></a><span class="do">##  5  9.24  7.18  6.38</span></span>
-<span id="cb184-16"><a href="pivoting-to-longer-format.html#cb184-16" aria-hidden="true" tabindex="-1"></a><span class="do">##  6  8.64  8.20  8.49</span></span>
-<span id="cb184-17"><a href="pivoting-to-longer-format.html#cb184-17" aria-hidden="true" tabindex="-1"></a><span class="do">##  7  9.02  8.25  8.01</span></span>
-<span id="cb184-18"><a href="pivoting-to-longer-format.html#cb184-18" aria-hidden="true" tabindex="-1"></a><span class="do">##  8 10.6  10.1   6.89</span></span>
-<span id="cb184-19"><a href="pivoting-to-longer-format.html#cb184-19" aria-hidden="true" tabindex="-1"></a><span class="do">##  9 11.2   9.71  7.45</span></span>
-<span id="cb184-20"><a href="pivoting-to-longer-format.html#cb184-20" aria-hidden="true" tabindex="-1"></a><span class="do">## 10  9.20  8.78  7.98</span></span>
+<span id="cb184-11"><a href="pivoting-to-longer-format.html#cb184-11" aria-hidden="true" tabindex="-1"></a><span class="do">##  1  9.36  7.14  9.13</span></span>
+<span id="cb184-12"><a href="pivoting-to-longer-format.html#cb184-12" aria-hidden="true" tabindex="-1"></a><span class="do">##  2  9.78  6.69  8.73</span></span>
+<span id="cb184-13"><a href="pivoting-to-longer-format.html#cb184-13" aria-hidden="true" tabindex="-1"></a><span class="do">##  3 10.4   9.32  7.45</span></span>
+<span id="cb184-14"><a href="pivoting-to-longer-format.html#cb184-14" aria-hidden="true" tabindex="-1"></a><span class="do">##  4 10.2   8.20  7.27</span></span>
+<span id="cb184-15"><a href="pivoting-to-longer-format.html#cb184-15" aria-hidden="true" tabindex="-1"></a><span class="do">##  5 10.6   7.99  7.12</span></span>
+<span id="cb184-16"><a href="pivoting-to-longer-format.html#cb184-16" aria-hidden="true" tabindex="-1"></a><span class="do">##  6 10.6   7.49  7.61</span></span>
+<span id="cb184-17"><a href="pivoting-to-longer-format.html#cb184-17" aria-hidden="true" tabindex="-1"></a><span class="do">##  7  9.97 10.3   7.59</span></span>
+<span id="cb184-18"><a href="pivoting-to-longer-format.html#cb184-18" aria-hidden="true" tabindex="-1"></a><span class="do">##  8 10.3  10.3   7.18</span></span>
+<span id="cb184-19"><a href="pivoting-to-longer-format.html#cb184-19" aria-hidden="true" tabindex="-1"></a><span class="do">##  9  9.90  8.43  7.49</span></span>
+<span id="cb184-20"><a href="pivoting-to-longer-format.html#cb184-20" aria-hidden="true" tabindex="-1"></a><span class="do">## 10 11.2   7.54  6.99</span></span>
 <span id="cb184-21"><a href="pivoting-to-longer-format.html#cb184-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Erstelle tibble test_long im long format</span></span>
 <span id="cb184-22"><a href="pivoting-to-longer-format.html#cb184-22" aria-hidden="true" tabindex="-1"></a>test_long <span class="ot">&lt;-</span> test <span class="sc">%&gt;%</span></span>
 <span id="cb184-23"><a href="pivoting-to-longer-format.html#cb184-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(<span class="at">cols =</span> <span class="fu">contains</span>(<span class="st">&quot;st&quot;</span>), <span class="at">names_to =</span> <span class="fu">c</span>(<span class="st">&quot;Parameter&quot;</span>, <span class="st">&quot;Depth&quot;</span>), <span class="at">values_to =</span> <span class="st">&quot;Wert&quot;</span>, <span class="at">names_sep =</span> <span class="st">&quot;_&quot;</span>) <span class="co"># Gebe an wie die Informationen im Spaltenname getrennt sind</span></span>
@@ -411,16 +411,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb184-25"><a href="pivoting-to-longer-format.html#cb184-25" aria-hidden="true" tabindex="-1"></a><span class="do">## # A tibble: 30 x 3</span></span>
 <span id="cb184-26"><a href="pivoting-to-longer-format.html#cb184-26" aria-hidden="true" tabindex="-1"></a><span class="do">##    Parameter Depth  Wert</span></span>
 <span id="cb184-27"><a href="pivoting-to-longer-format.html#cb184-27" aria-hidden="true" tabindex="-1"></a><span class="do">##    &lt;chr&gt;     &lt;chr&gt; &lt;dbl&gt;</span></span>
-<span id="cb184-28"><a href="pivoting-to-longer-format.html#cb184-28" aria-hidden="true" tabindex="-1"></a><span class="do">##  1 st        10     9.52</span></span>
-<span id="cb184-29"><a href="pivoting-to-longer-format.html#cb184-29" aria-hidden="true" tabindex="-1"></a><span class="do">##  2 st        20     8.17</span></span>
-<span id="cb184-30"><a href="pivoting-to-longer-format.html#cb184-30" aria-hidden="true" tabindex="-1"></a><span class="do">##  3 st        30     6.53</span></span>
-<span id="cb184-31"><a href="pivoting-to-longer-format.html#cb184-31" aria-hidden="true" tabindex="-1"></a><span class="do">##  4 st        10    11.3 </span></span>
-<span id="cb184-32"><a href="pivoting-to-longer-format.html#cb184-32" aria-hidden="true" tabindex="-1"></a><span class="do">##  5 st        20     7.75</span></span>
-<span id="cb184-33"><a href="pivoting-to-longer-format.html#cb184-33" aria-hidden="true" tabindex="-1"></a><span class="do">##  6 st        30     8.69</span></span>
-<span id="cb184-34"><a href="pivoting-to-longer-format.html#cb184-34" aria-hidden="true" tabindex="-1"></a><span class="do">##  7 st        10     9.84</span></span>
-<span id="cb184-35"><a href="pivoting-to-longer-format.html#cb184-35" aria-hidden="true" tabindex="-1"></a><span class="do">##  8 st        20     8.00</span></span>
-<span id="cb184-36"><a href="pivoting-to-longer-format.html#cb184-36" aria-hidden="true" tabindex="-1"></a><span class="do">##  9 st        30     8.33</span></span>
-<span id="cb184-37"><a href="pivoting-to-longer-format.html#cb184-37" aria-hidden="true" tabindex="-1"></a><span class="do">## 10 st        10     9.05</span></span>
+<span id="cb184-28"><a href="pivoting-to-longer-format.html#cb184-28" aria-hidden="true" tabindex="-1"></a><span class="do">##  1 st        10     9.36</span></span>
+<span id="cb184-29"><a href="pivoting-to-longer-format.html#cb184-29" aria-hidden="true" tabindex="-1"></a><span class="do">##  2 st        20     7.14</span></span>
+<span id="cb184-30"><a href="pivoting-to-longer-format.html#cb184-30" aria-hidden="true" tabindex="-1"></a><span class="do">##  3 st        30     9.13</span></span>
+<span id="cb184-31"><a href="pivoting-to-longer-format.html#cb184-31" aria-hidden="true" tabindex="-1"></a><span class="do">##  4 st        10     9.78</span></span>
+<span id="cb184-32"><a href="pivoting-to-longer-format.html#cb184-32" aria-hidden="true" tabindex="-1"></a><span class="do">##  5 st        20     6.69</span></span>
+<span id="cb184-33"><a href="pivoting-to-longer-format.html#cb184-33" aria-hidden="true" tabindex="-1"></a><span class="do">##  6 st        30     8.73</span></span>
+<span id="cb184-34"><a href="pivoting-to-longer-format.html#cb184-34" aria-hidden="true" tabindex="-1"></a><span class="do">##  7 st        10    10.4 </span></span>
+<span id="cb184-35"><a href="pivoting-to-longer-format.html#cb184-35" aria-hidden="true" tabindex="-1"></a><span class="do">##  8 st        20     9.32</span></span>
+<span id="cb184-36"><a href="pivoting-to-longer-format.html#cb184-36" aria-hidden="true" tabindex="-1"></a><span class="do">##  9 st        30     7.45</span></span>
+<span id="cb184-37"><a href="pivoting-to-longer-format.html#cb184-37" aria-hidden="true" tabindex="-1"></a><span class="do">## 10 st        10    10.2 </span></span>
 <span id="cb184-38"><a href="pivoting-to-longer-format.html#cb184-38" aria-hidden="true" tabindex="-1"></a><span class="do">## # ... with 20 more rows</span></span></code></pre></div>
 </div>
             </section>
@@ -433,7 +433,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     </div>
   </div>
 <script src="assets/gitbook-2.6.7/js/app.min.js"></script>
-<script src="assets/gitbook-2.6.7/js/lunr.js"></script>
 <script src="assets/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="assets/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="assets/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -474,7 +473,7 @@ gitbook.start({
 },
 "download": ["documentation.pdf"],
 "search": {
-"engine": "lunr",
+"engine": "fuse",
 "options": null
 },
 "toc": {

@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>4.4 Arbeiten mit Zeiten | Daten Analyse mit RStudio - Dokumentation</title>
   <meta name="description" content="Explorative Datenanalyse in den Geowissenschaften" />
-  <meta name="generator" content="bookdown 0.23 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
   <meta property="og:title" content="4.4 Arbeiten mit Zeiten | Daten Analyse mit RStudio - Dokumentation" />
   <meta property="og:type" content="book" />
@@ -32,8 +32,9 @@
   
 <link rel="prev" href="readrread_delim.html"/>
 <link rel="next" href="daten-manipulieren.html"/>
-<script src="assets/header-attrs-2.10/header-attrs.js"></script>
+<script src="assets/header-attrs-2.11/header-attrs.js"></script>
 <script src="assets/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="assets/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="assets/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="assets/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -41,7 +42,6 @@
 <link href="assets/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="assets/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
 <link href="assets/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
-
 
 
 
@@ -368,7 +368,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="arbeiten-mit-zeiten" class="section level2" number="4.4">
 <h2><span class="header-section-number">4.4</span> Arbeiten mit Zeiten</h2>
-<p>In der Spalte <code>time</code> stehen die Zeilennummern und unter <code>date</code> finden wir das Datum, allerdings als <code>character</code> hinterlegt. Beim Einlesen der Daten denkt R, dass es sich um Text handelt aber wir wissen es besser. Wir müssen R nun explizit mitteilen wie unser Zeitstempel <code>date</code> codiert ist, nämlich mit <code>%Tag.%Monat.%Jahr %Stunde:%Minute</code>. In R wird ein Datum jedoch mit 2021-08-30 16:35:18 angegeben. Wir tun also folgendes:</p>
+<p>In der Spalte <code>time</code> stehen die Zeilennummern und unter <code>date</code> finden wir das Datum, allerdings als <code>character</code> hinterlegt. Beim Einlesen der Daten denkt R, dass es sich um Text handelt aber wir wissen es besser. Wir müssen R nun explizit mitteilen wie unser Zeitstempel <code>date</code> codiert ist, nämlich mit <code>%Tag.%Monat.%Jahr %Stunde:%Minute</code>. In R wird ein Datum jedoch mit 2021-11-04 12:04:44 angegeben. Wir tun also folgendes:</p>
 <div class="sourceCode" id="cb85"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb85-1"><a href="arbeiten-mit-zeiten.html#cb85-1" aria-hidden="true" tabindex="-1"></a>koog_raw <span class="ot">&lt;-</span> readr<span class="sc">::</span><span class="fu">read_delim</span>(<span class="st">&quot;data/data.csv&quot;</span>, <span class="at">delim =</span> <span class="st">&quot;;&quot;</span>, </span>
 <span id="cb85-2"><a href="arbeiten-mit-zeiten.html#cb85-2" aria-hidden="true" tabindex="-1"></a>                          <span class="at">col_types =</span> readr<span class="sc">::</span><span class="fu">cols</span>(</span>
 <span id="cb85-3"><a href="arbeiten-mit-zeiten.html#cb85-3" aria-hidden="true" tabindex="-1"></a>                            <span class="co"># date = überschreibt die Spalte mit der neuen Spezifikation</span></span>
@@ -447,7 +447,6 @@ Figure 4.8: Illustration von Allison Horst
     </div>
   </div>
 <script src="assets/gitbook-2.6.7/js/app.min.js"></script>
-<script src="assets/gitbook-2.6.7/js/lunr.js"></script>
 <script src="assets/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="assets/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="assets/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -488,7 +487,7 @@ gitbook.start({
 },
 "download": ["documentation.pdf"],
 "search": {
-"engine": "lunr",
+"engine": "fuse",
 "options": null
 },
 "toc": {

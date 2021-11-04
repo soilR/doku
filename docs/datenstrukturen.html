@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>3.2 Datenstrukturen | Daten Analyse mit RStudio - Dokumentation</title>
   <meta name="description" content="Explorative Datenanalyse in den Geowissenschaften" />
-  <meta name="generator" content="bookdown 0.23 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
   <meta property="og:title" content="3.2 Datenstrukturen | Daten Analyse mit RStudio - Dokumentation" />
   <meta property="og:type" content="book" />
@@ -32,8 +32,9 @@
   
 <link rel="prev" href="datentypen.html"/>
 <link rel="next" href="zufallszahlen-erzeugen.html"/>
-<script src="assets/header-attrs-2.10/header-attrs.js"></script>
+<script src="assets/header-attrs-2.11/header-attrs.js"></script>
 <script src="assets/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="assets/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="assets/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="assets/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -41,7 +42,6 @@
 <link href="assets/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="assets/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
 <link href="assets/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
-
 
 
 
@@ -713,14 +713,14 @@ Figure 3.7: Darstellung von Datenstrukturen
 <span id="cb49-22"><a href="datenstrukturen.html#cb49-22" aria-hidden="true" tabindex="-1"></a><span class="fu">typeof</span>(df2)</span>
 <span id="cb49-23"><a href="datenstrukturen.html#cb49-23" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] &quot;list&quot;</span></span>
 <span id="cb49-24"><a href="datenstrukturen.html#cb49-24" aria-hidden="true" tabindex="-1"></a><span class="fu">attributes</span>(df2)</span>
-<span id="cb49-25"><a href="datenstrukturen.html#cb49-25" aria-hidden="true" tabindex="-1"></a><span class="do">## $names</span></span>
-<span id="cb49-26"><a href="datenstrukturen.html#cb49-26" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] &quot;x&quot; &quot;y&quot;</span></span>
+<span id="cb49-25"><a href="datenstrukturen.html#cb49-25" aria-hidden="true" tabindex="-1"></a><span class="do">## $class</span></span>
+<span id="cb49-26"><a href="datenstrukturen.html#cb49-26" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] &quot;tbl_df&quot;     &quot;tbl&quot;        &quot;data.frame&quot;</span></span>
 <span id="cb49-27"><a href="datenstrukturen.html#cb49-27" aria-hidden="true" tabindex="-1"></a><span class="do">## </span></span>
 <span id="cb49-28"><a href="datenstrukturen.html#cb49-28" aria-hidden="true" tabindex="-1"></a><span class="do">## $row.names</span></span>
 <span id="cb49-29"><a href="datenstrukturen.html#cb49-29" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] 1 2 3</span></span>
 <span id="cb49-30"><a href="datenstrukturen.html#cb49-30" aria-hidden="true" tabindex="-1"></a><span class="do">## </span></span>
-<span id="cb49-31"><a href="datenstrukturen.html#cb49-31" aria-hidden="true" tabindex="-1"></a><span class="do">## $class</span></span>
-<span id="cb49-32"><a href="datenstrukturen.html#cb49-32" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] &quot;tbl_df&quot;     &quot;tbl&quot;        &quot;data.frame&quot;</span></span></code></pre></div>
+<span id="cb49-31"><a href="datenstrukturen.html#cb49-31" aria-hidden="true" tabindex="-1"></a><span class="do">## $names</span></span>
+<span id="cb49-32"><a href="datenstrukturen.html#cb49-32" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] &quot;x&quot; &quot;y&quot;</span></span></code></pre></div>
 </div>
 </div>
 </div>
@@ -734,7 +734,6 @@ Figure 3.7: Darstellung von Datenstrukturen
     </div>
   </div>
 <script src="assets/gitbook-2.6.7/js/app.min.js"></script>
-<script src="assets/gitbook-2.6.7/js/lunr.js"></script>
 <script src="assets/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="assets/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="assets/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -775,7 +774,7 @@ gitbook.start({
 },
 "download": ["documentation.pdf"],
 "search": {
-"engine": "lunr",
+"engine": "fuse",
 "options": null
 },
 "toc": {

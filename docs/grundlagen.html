@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 3 Grundlagen | Daten Analyse mit RStudio - Dokumentation</title>
   <meta name="description" content="Explorative Datenanalyse in den Geowissenschaften" />
-  <meta name="generator" content="bookdown 0.23 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 3 Grundlagen | Daten Analyse mit RStudio - Dokumentation" />
   <meta property="og:type" content="book" />
@@ -32,8 +32,9 @@
   
 <link rel="prev" href="cheatsheets.html"/>
 <link rel="next" href="datentypen.html"/>
-<script src="assets/header-attrs-2.10/header-attrs.js"></script>
+<script src="assets/header-attrs-2.11/header-attrs.js"></script>
 <script src="assets/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="assets/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="assets/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="assets/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -41,7 +42,6 @@
 <link href="assets/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="assets/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
 <link href="assets/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
-
 
 
 
@@ -368,7 +368,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="grundlagen" class="section level1" number="3">
 <h1><span class="header-section-number">Chapter 3</span> Grundlagen</h1>
-<p><em>Der Beitrag wurde das letzte mal am 30 August, 2021 editiert</em></p>
+<p><em>Der Beitrag wurde das letzte mal am 04 November, 2021 editiert</em></p>
 <p>Im folgenden lernen wir mehr zu Datentypen in R und welche Rolle sie spielen. Ganz grundlegend lassen sich verschiedene Strukturen unterscheiden <a href="https://statsandr.com/blog/variable-types-and-examples/">Zusammenfassung</a>:</p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-38"></span>
 <img src="images/013a.png" alt="Grundlegende Datenstruktur" width="100%" />
@@ -421,7 +421,6 @@ Figure 3.3: Illustration von Allison Horst
     </div>
   </div>
 <script src="assets/gitbook-2.6.7/js/app.min.js"></script>
-<script src="assets/gitbook-2.6.7/js/lunr.js"></script>
 <script src="assets/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="assets/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="assets/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -462,7 +461,7 @@ gitbook.start({
 },
 "download": ["documentation.pdf"],
 "search": {
-"engine": "lunr",
+"engine": "fuse",
 "options": null
 },
 "toc": {

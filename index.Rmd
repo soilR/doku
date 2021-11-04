@@ -22,7 +22,6 @@ packages <- c("tidyverse", "markdown", "knitr", "matrixStats", "patchwork", "lub
 # Load the packages vector 
 pacman::p_load(packages, character.only = T)
 
-
 my_theme <- theme(
   panel.background = element_rect(fill = "white", color = "black"),
   panel.grid.major = element_blank(), 

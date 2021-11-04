@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>3.4 Rechnen mit Vektoren | Daten Analyse mit RStudio - Dokumentation</title>
   <meta name="description" content="Explorative Datenanalyse in den Geowissenschaften" />
-  <meta name="generator" content="bookdown 0.23 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
   <meta property="og:title" content="3.4 Rechnen mit Vektoren | Daten Analyse mit RStudio - Dokumentation" />
   <meta property="og:type" content="book" />
@@ -32,8 +32,9 @@
   
 <link rel="prev" href="zufallszahlen-erzeugen.html"/>
 <link rel="next" href="str-funktion.html"/>
-<script src="assets/header-attrs-2.10/header-attrs.js"></script>
+<script src="assets/header-attrs-2.11/header-attrs.js"></script>
 <script src="assets/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="assets/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="assets/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="assets/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -41,7 +42,6 @@
 <link href="assets/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="assets/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
 <link href="assets/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
-
 
 
 
@@ -443,10 +443,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Lasst uns den Mittelwert und die Standardabweichung des Redoxpotentziales der Zeitreihe berechnen (wenn nicht explizit erwähnt beziehe ich mich immer auf den E<sub>H</sub> Wert in mV gemessen).</p>
 <div class="sourceCode" id="cb55"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb55-1"><a href="rechnen-mit-vektoren.html#cb55-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Mittelwert </span></span>
 <span id="cb55-2"><a href="rechnen-mit-vektoren.html#cb55-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(eh)</span>
-<span id="cb55-3"><a href="rechnen-mit-vektoren.html#cb55-3" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] 659.8589</span></span>
+<span id="cb55-3"><a href="rechnen-mit-vektoren.html#cb55-3" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] 659.0768</span></span>
 <span id="cb55-4"><a href="rechnen-mit-vektoren.html#cb55-4" aria-hidden="true" tabindex="-1"></a><span class="co"># SD</span></span>
 <span id="cb55-5"><a href="rechnen-mit-vektoren.html#cb55-5" aria-hidden="true" tabindex="-1"></a><span class="fu">sd</span>(eh)</span>
-<span id="cb55-6"><a href="rechnen-mit-vektoren.html#cb55-6" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] 29.09811</span></span></code></pre></div>
+<span id="cb55-6"><a href="rechnen-mit-vektoren.html#cb55-6" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] 29.81557</span></span></code></pre></div>
 <p>Kein Problem mehr für uns 😎</p>
 <p>Vektoren sind simple 1-dimensionale Objekte in R. Wir haben jedoch auch schon Objekte wie Matrix, dataframe oder Listen kennengelernt. Eine grundlegende Sache einer Matrix oder eines dataframe ist es, dass die Vektoren <strong>diesselbe</strong> Länge haben müssen! Dies lässt sich mit der Funktion <code>length()</code> überprüfen. Wie lang war nochmal unser <code>eh</code> Vektor?</p>
 <div class="sourceCode" id="cb56"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb56-1"><a href="rechnen-mit-vektoren.html#cb56-1" aria-hidden="true" tabindex="-1"></a><span class="fu">length</span>(eh)</span>
@@ -499,7 +499,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     </div>
   </div>
 <script src="assets/gitbook-2.6.7/js/app.min.js"></script>
-<script src="assets/gitbook-2.6.7/js/lunr.js"></script>
 <script src="assets/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="assets/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="assets/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -540,7 +539,7 @@ gitbook.start({
 },
 "download": ["documentation.pdf"],
 "search": {
-"engine": "lunr",
+"engine": "fuse",
 "options": null
 },
 "toc": {

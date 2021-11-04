@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>3.5 str() Funktion | Daten Analyse mit RStudio - Dokumentation</title>
   <meta name="description" content="Explorative Datenanalyse in den Geowissenschaften" />
-  <meta name="generator" content="bookdown 0.23 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
   <meta property="og:title" content="3.5 str() Funktion | Daten Analyse mit RStudio - Dokumentation" />
   <meta property="og:type" content="book" />
@@ -32,8 +32,9 @@
   
 <link rel="prev" href="rechnen-mit-vektoren.html"/>
 <link rel="next" href="selektion-von-spaltenzeilen-in-dataframes.html"/>
-<script src="assets/header-attrs-2.10/header-attrs.js"></script>
+<script src="assets/header-attrs-2.11/header-attrs.js"></script>
 <script src="assets/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="assets/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="assets/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="assets/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -41,7 +42,6 @@
 <link href="assets/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="assets/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
 <link href="assets/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
-
 
 
 
@@ -371,7 +371,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Eine wichtige Funktion um Informationen über einen Datensatz oder ein Objekt zu bekommen ist die Funktion <code>str()</code>, kurz für <strong>structure</strong>. Diese Funktion lässt sich auf alle Datenstrukturen in R anweden, also für Vektoren, Listen, Matrix und dataframes.</p>
 <div class="sourceCode" id="cb57"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb57-1"><a href="str-funktion.html#cb57-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Erkunden eines Vektors mit 100 Zufallszahlen</span></span>
 <span id="cb57-2"><a href="str-funktion.html#cb57-2" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(eh)</span>
-<span id="cb57-3"><a href="str-funktion.html#cb57-3" aria-hidden="true" tabindex="-1"></a><span class="do">##  num [1:100] 609 676 654 686 672 ...</span></span></code></pre></div>
+<span id="cb57-3"><a href="str-funktion.html#cb57-3" aria-hidden="true" tabindex="-1"></a><span class="do">##  num [1:100] 675 625 621 704 639 ...</span></span></code></pre></div>
 <p>Hier kann man folgende Informationen draus ablesen:</p>
 <ul>
 <li>Es handelt sich um ein <code>numeric</code> Datenformat</li>
@@ -421,7 +421,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     </div>
   </div>
 <script src="assets/gitbook-2.6.7/js/app.min.js"></script>
-<script src="assets/gitbook-2.6.7/js/lunr.js"></script>
 <script src="assets/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="assets/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="assets/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -462,7 +461,7 @@ gitbook.start({
 },
 "download": ["documentation.pdf"],
 "search": {
-"engine": "lunr",
+"engine": "fuse",
 "options": null
 },
 "toc": {
