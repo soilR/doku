@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>9.3 Korrelationen | Daten Analyse mit RStudio - Dokumentation</title>
+  <title>8.3 Korrelationen | Daten Analyse mit RStudio - Dokumentation</title>
   <meta name="description" content="Explorative Datenanalyse in den Geowissenschaften" />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="9.3 Korrelationen | Daten Analyse mit RStudio - Dokumentation" />
+  <meta property="og:title" content="8.3 Korrelationen | Daten Analyse mit RStudio - Dokumentation" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="9.3 Korrelationen | Daten Analyse mit RStudio - Dokumentation" />
+  <meta name="twitter:title" content="8.3 Korrelationen | Daten Analyse mit RStudio - Dokumentation" />
   
   <meta name="twitter:description" content="Explorative Datenanalyse in den Geowissenschaften" />
   
@@ -142,7 +142,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="1.2.2" data-path="falbeispiele.html"><a href="falbeispiele.html#mtcars-datensatz"><i class="fa fa-check"></i><b>1.2.2</b> <code>mtcars</code> Datensatz</a></li>
 </ul></li>
 <li class="chapter" data-level="1.3" data-path="über-mich.html"><a href="über-mich.html"><i class="fa fa-check"></i><b>1.3</b> Über mich</a></li>
-<li class="chapter" data-level="1.4" data-path="literatur.html"><a href="literatur.html"><i class="fa fa-check"></i><b>1.4</b> Literatur 🔍</a></li>
+<li class="chapter" data-level="1.4" data-path="literatur.html"><a href="literatur.html"><i class="fa fa-check"></i><b>1.4</b> Literatur</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="erste-schritte-mit-r.html"><a href="erste-schritte-mit-r.html"><i class="fa fa-check"></i><b>2</b> Erste Schritte mit R</a>
 <ul>
@@ -206,148 +206,135 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="4.3" data-path="readrread_delim.html"><a href="readrread_delim.html"><i class="fa fa-check"></i><b>4.3</b> readr::read_delim()</a></li>
 <li class="chapter" data-level="4.4" data-path="arbeiten-mit-zeiten.html"><a href="arbeiten-mit-zeiten.html"><i class="fa fa-check"></i><b>4.4</b> Arbeiten mit Zeiten</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="daten-manipulieren.html"><a href="daten-manipulieren.html"><i class="fa fa-check"></i><b>5</b> Daten manipulieren</a>
+<li class="chapter" data-level="5" data-path="explorative-datenanalyse.html"><a href="explorative-datenanalyse.html"><i class="fa fa-check"></i><b>5</b> Explorative-Datenanalyse</a>
 <ul>
-<li class="chapter" data-level="5.1" data-path="select---variablen-auswählen-spaltenweise.html"><a href="select---variablen-auswählen-spaltenweise.html"><i class="fa fa-check"></i><b>5.1</b> select() - Variablen auswählen (spaltenweise)</a></li>
-<li class="chapter" data-level="5.2" data-path="filter---filtern-von-variablen-zeilenweise.html"><a href="filter---filtern-von-variablen-zeilenweise.html"><i class="fa fa-check"></i><b>5.2</b> filter() - Filtern von Variablen (zeilenweise)</a></li>
-<li class="chapter" data-level="5.3" data-path="arrange---sortieren-des-datensatzes.html"><a href="arrange---sortieren-des-datensatzes.html"><i class="fa fa-check"></i><b>5.3</b> arrange() - Sortieren des Datensatzes</a></li>
-<li class="chapter" data-level="5.4" data-path="mutate---erstelle-neue-variablen.html"><a href="mutate---erstelle-neue-variablen.html"><i class="fa fa-check"></i><b>5.4</b> mutate() - Erstelle neue Variablen</a></li>
-<li class="chapter" data-level="5.5" data-path="summarize---zusammenfassung-von-variablen.html"><a href="summarize---zusammenfassung-von-variablen.html"><i class="fa fa-check"></i><b>5.5</b> summarize() - Zusammenfassung von Variablen</a></li>
-<li class="chapter" data-level="5.6" data-path="group_by---gruppiere-variablen.html"><a href="group_by---gruppiere-variablen.html"><i class="fa fa-check"></i><b>5.6</b> group_by - Gruppiere Variablen</a></li>
-<li class="chapter" data-level="5.7" data-path="across---anwenden-von-funktionen-auf-spalten.html"><a href="across---anwenden-von-funktionen-auf-spalten.html"><i class="fa fa-check"></i><b>5.7</b> across() - Anwenden von Funktionen auf Spalten</a></li>
-<li class="chapter" data-level="5.8" data-path="joins.html"><a href="joins.html"><i class="fa fa-check"></i><b>5.8</b> joins</a></li>
-<li class="chapter" data-level="5.9" data-path="pivot_longer---long-data-format.html"><a href="pivot_longer---long-data-format.html"><i class="fa fa-check"></i><b>5.9</b> pivot_longer() - Long data format</a></li>
-<li class="chapter" data-level="5.10" data-path="pivot_wider---wider-data-format.html"><a href="pivot_wider---wider-data-format.html"><i class="fa fa-check"></i><b>5.10</b> pivot_wider() - wider data format</a></li>
+<li class="chapter" data-level="5.1" data-path="fehlende-werte-1.html"><a href="fehlende-werte-1.html"><i class="fa fa-check"></i><b>5.1</b> Fehlende Werte</a></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="explorative-datenanalyse.html"><a href="explorative-datenanalyse.html"><i class="fa fa-check"></i><b>6</b> Explorative-Datenanalyse</a>
+<li class="chapter" data-level="6" data-path="datenvisualisierung.html"><a href="datenvisualisierung.html"><i class="fa fa-check"></i><b>6</b> Datenvisualisierung</a>
 <ul>
-<li class="chapter" data-level="6.1" data-path="fehlende-werte-1.html"><a href="fehlende-werte-1.html"><i class="fa fa-check"></i><b>6.1</b> Fehlende Werte</a></li>
+<li class="chapter" data-level="6.1" data-path="ggplot2---grammar-of-graphics.html"><a href="ggplot2---grammar-of-graphics.html"><i class="fa fa-check"></i><b>6.1</b> ggplot2 - grammar of graphics</a>
+<ul>
+<li class="chapter" data-level="6.1.1" data-path="ggplot2---grammar-of-graphics.html"><a href="ggplot2---grammar-of-graphics.html#schlüsselkomponenten"><i class="fa fa-check"></i><b>6.1.1</b> Schlüsselkomponenten</a></li>
+<li class="chapter" data-level="6.1.2" data-path="ggplot2---grammar-of-graphics.html"><a href="ggplot2---grammar-of-graphics.html#aesthetics-color-size-shape"><i class="fa fa-check"></i><b>6.1.2</b> Aesthetics (color, size, shape)</a></li>
+<li class="chapter" data-level="6.1.3" data-path="ggplot2---grammar-of-graphics.html"><a href="ggplot2---grammar-of-graphics.html#smoothers-and-models"><i class="fa fa-check"></i><b>6.1.3</b> Smoothers and models</a></li>
+<li class="chapter" data-level="6.1.4" data-path="ggplot2---grammar-of-graphics.html"><a href="ggplot2---grammar-of-graphics.html#labels"><i class="fa fa-check"></i><b>6.1.4</b> Labels</a></li>
+<li class="chapter" data-level="6.1.5" data-path="ggplot2---grammar-of-graphics.html"><a href="ggplot2---grammar-of-graphics.html#themes"><i class="fa fa-check"></i><b>6.1.5</b> Themes</a></li>
+<li class="chapter" data-level="6.1.6" data-path="ggplot2---grammar-of-graphics.html"><a href="ggplot2---grammar-of-graphics.html#facets"><i class="fa fa-check"></i><b>6.1.6</b> Facets</a></li>
+<li class="chapter" data-level="6.1.7" data-path="ggplot2---grammar-of-graphics.html"><a href="ggplot2---grammar-of-graphics.html#coordinate-system"><i class="fa fa-check"></i><b>6.1.7</b> Coordinate system</a></li>
+<li class="chapter" data-level="6.1.8" data-path="ggplot2---grammar-of-graphics.html"><a href="ggplot2---grammar-of-graphics.html#annotations"><i class="fa fa-check"></i><b>6.1.8</b> Annotations</a></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="datenvisualisierung.html"><a href="datenvisualisierung.html"><i class="fa fa-check"></i><b>7</b> Datenvisualisierung</a>
+<li class="chapter" data-level="6.2" data-path="verknüfpen-von-tidyverse-und-ggplot.html"><a href="verknüfpen-von-tidyverse-und-ggplot.html"><i class="fa fa-check"></i><b>6.2</b> Verknüfpen von tidyverse und ggplot</a></li>
+<li class="chapter" data-level="6.3" data-path="arbeiten-mit-zeiten-1.html"><a href="arbeiten-mit-zeiten-1.html"><i class="fa fa-check"></i><b>6.3</b> Arbeiten mit Zeiten</a>
 <ul>
-<li class="chapter" data-level="7.1" data-path="ggplot2---grammar-of-graphics.html"><a href="ggplot2---grammar-of-graphics.html"><i class="fa fa-check"></i><b>7.1</b> ggplot2 - grammar of graphics</a>
-<ul>
-<li class="chapter" data-level="7.1.1" data-path="ggplot2---grammar-of-graphics.html"><a href="ggplot2---grammar-of-graphics.html#schlüsselkomponenten"><i class="fa fa-check"></i><b>7.1.1</b> Schlüsselkomponenten</a></li>
-<li class="chapter" data-level="7.1.2" data-path="ggplot2---grammar-of-graphics.html"><a href="ggplot2---grammar-of-graphics.html#aesthetics-color-size-shape"><i class="fa fa-check"></i><b>7.1.2</b> Aesthetics (color, size, shape)</a></li>
-<li class="chapter" data-level="7.1.3" data-path="ggplot2---grammar-of-graphics.html"><a href="ggplot2---grammar-of-graphics.html#smoothers-and-models"><i class="fa fa-check"></i><b>7.1.3</b> Smoothers and models</a></li>
-<li class="chapter" data-level="7.1.4" data-path="ggplot2---grammar-of-graphics.html"><a href="ggplot2---grammar-of-graphics.html#labels"><i class="fa fa-check"></i><b>7.1.4</b> Labels</a></li>
-<li class="chapter" data-level="7.1.5" data-path="ggplot2---grammar-of-graphics.html"><a href="ggplot2---grammar-of-graphics.html#themes"><i class="fa fa-check"></i><b>7.1.5</b> Themes</a></li>
-<li class="chapter" data-level="7.1.6" data-path="ggplot2---grammar-of-graphics.html"><a href="ggplot2---grammar-of-graphics.html#facets"><i class="fa fa-check"></i><b>7.1.6</b> Facets</a></li>
-<li class="chapter" data-level="7.1.7" data-path="ggplot2---grammar-of-graphics.html"><a href="ggplot2---grammar-of-graphics.html#coordinate-system"><i class="fa fa-check"></i><b>7.1.7</b> Coordinate system</a></li>
-<li class="chapter" data-level="7.1.8" data-path="ggplot2---grammar-of-graphics.html"><a href="ggplot2---grammar-of-graphics.html#annotations"><i class="fa fa-check"></i><b>7.1.8</b> Annotations</a></li>
+<li class="chapter" data-level="6.3.1" data-path="arbeiten-mit-zeiten-1.html"><a href="arbeiten-mit-zeiten-1.html#strings"><i class="fa fa-check"></i><b>6.3.1</b> strings</a></li>
+<li class="chapter" data-level="6.3.2" data-path="arbeiten-mit-zeiten-1.html"><a href="arbeiten-mit-zeiten-1.html#von-individuellen-komponenten"><i class="fa fa-check"></i><b>6.3.2</b> Von individuellen Komponenten</a></li>
+<li class="chapter" data-level="6.3.3" data-path="arbeiten-mit-zeiten-1.html"><a href="arbeiten-mit-zeiten-1.html#ein-bestehendes-objekt"><i class="fa fa-check"></i><b>6.3.3</b> Ein bestehendes Objekt</a></li>
+<li class="chapter" data-level="6.3.4" data-path="arbeiten-mit-zeiten-1.html"><a href="arbeiten-mit-zeiten-1.html#darstellung-in-abbildungen"><i class="fa fa-check"></i><b>6.3.4</b> Darstellung in Abbildungen</a></li>
 </ul></li>
-<li class="chapter" data-level="7.2" data-path="verknüfpen-von-tidyverse-und-ggplot.html"><a href="verknüfpen-von-tidyverse-und-ggplot.html"><i class="fa fa-check"></i><b>7.2</b> Verknüfpen von tidyverse und ggplot</a></li>
-<li class="chapter" data-level="7.3" data-path="arbeiten-mit-zeiten-1.html"><a href="arbeiten-mit-zeiten-1.html"><i class="fa fa-check"></i><b>7.3</b> Arbeiten mit Zeiten</a>
+<li class="chapter" data-level="6.4" data-path="pivoting-to-longer-format.html"><a href="pivoting-to-longer-format.html"><i class="fa fa-check"></i><b>6.4</b> pivoting to longer format</a></li>
+<li class="chapter" data-level="6.5" data-path="good-practices.html"><a href="good-practices.html"><i class="fa fa-check"></i><b>6.5</b> Good practices</a></li>
+<li class="chapter" data-level="6.6" data-path="speichern-eines-plots.html"><a href="speichern-eines-plots.html"><i class="fa fa-check"></i><b>6.6</b> Speichern eines plots</a></li>
+<li class="chapter" data-level="6.7" data-path="formen-der-darstellung.html"><a href="formen-der-darstellung.html"><i class="fa fa-check"></i><b>6.7</b> Formen der Darstellung</a>
 <ul>
-<li class="chapter" data-level="7.3.1" data-path="arbeiten-mit-zeiten-1.html"><a href="arbeiten-mit-zeiten-1.html#strings"><i class="fa fa-check"></i><b>7.3.1</b> strings</a></li>
-<li class="chapter" data-level="7.3.2" data-path="arbeiten-mit-zeiten-1.html"><a href="arbeiten-mit-zeiten-1.html#von-individuellen-komponenten"><i class="fa fa-check"></i><b>7.3.2</b> Von individuellen Komponenten</a></li>
-<li class="chapter" data-level="7.3.3" data-path="arbeiten-mit-zeiten-1.html"><a href="arbeiten-mit-zeiten-1.html#ein-bestehendes-objekt"><i class="fa fa-check"></i><b>7.3.3</b> Ein bestehendes Objekt</a></li>
-<li class="chapter" data-level="7.3.4" data-path="arbeiten-mit-zeiten-1.html"><a href="arbeiten-mit-zeiten-1.html#darstellung-in-abbildungen"><i class="fa fa-check"></i><b>7.3.4</b> Darstellung in Abbildungen</a></li>
+<li class="chapter" data-level="6.7.1" data-path="formen-der-darstellung.html"><a href="formen-der-darstellung.html#overplotting"><i class="fa fa-check"></i><b>6.7.1</b> Overplotting</a></li>
+<li class="chapter" data-level="6.7.2" data-path="formen-der-darstellung.html"><a href="formen-der-darstellung.html#positions-argument"><i class="fa fa-check"></i><b>6.7.2</b> Positions Argument</a></li>
+<li class="chapter" data-level="6.7.3" data-path="formen-der-darstellung.html"><a href="formen-der-darstellung.html#inspirationen"><i class="fa fa-check"></i><b>6.7.3</b> Inspirationen</a></li>
 </ul></li>
-<li class="chapter" data-level="7.4" data-path="pivoting-to-longer-format.html"><a href="pivoting-to-longer-format.html"><i class="fa fa-check"></i><b>7.4</b> pivoting to longer format</a></li>
-<li class="chapter" data-level="7.5" data-path="good-practices.html"><a href="good-practices.html"><i class="fa fa-check"></i><b>7.5</b> Good practices</a></li>
-<li class="chapter" data-level="7.6" data-path="speichern-eines-plots.html"><a href="speichern-eines-plots.html"><i class="fa fa-check"></i><b>7.6</b> Speichern eines plots</a></li>
-<li class="chapter" data-level="7.7" data-path="formen-der-darstellung.html"><a href="formen-der-darstellung.html"><i class="fa fa-check"></i><b>7.7</b> Formen der Darstellung</a>
+<li class="chapter" data-level="6.8" data-path="farbauswahl.html"><a href="farbauswahl.html"><i class="fa fa-check"></i><b>6.8</b> Farbauswahl</a>
 <ul>
-<li class="chapter" data-level="7.7.1" data-path="formen-der-darstellung.html"><a href="formen-der-darstellung.html#overplotting"><i class="fa fa-check"></i><b>7.7.1</b> Overplotting</a></li>
-<li class="chapter" data-level="7.7.2" data-path="formen-der-darstellung.html"><a href="formen-der-darstellung.html#positions-argument"><i class="fa fa-check"></i><b>7.7.2</b> Positions Argument</a></li>
-<li class="chapter" data-level="7.7.3" data-path="formen-der-darstellung.html"><a href="formen-der-darstellung.html#inspirationen"><i class="fa fa-check"></i><b>7.7.3</b> Inspirationen</a></li>
-</ul></li>
-<li class="chapter" data-level="7.8" data-path="farbauswahl.html"><a href="farbauswahl.html"><i class="fa fa-check"></i><b>7.8</b> Farbauswahl</a>
-<ul>
-<li class="chapter" data-level="7.8.1" data-path="farbauswahl.html"><a href="farbauswahl.html#beispiele-für-unterschiedliche-farben"><i class="fa fa-check"></i><b>7.8.1</b> Beispiele für unterschiedliche Farben</a></li>
+<li class="chapter" data-level="6.8.1" data-path="farbauswahl.html"><a href="farbauswahl.html#beispiele-für-unterschiedliche-farben"><i class="fa fa-check"></i><b>6.8.1</b> Beispiele für unterschiedliche Farben</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="8" data-path="karten-erstellen-in-r.html"><a href="karten-erstellen-in-r.html"><i class="fa fa-check"></i><b>8</b> Karten erstellen in R 🌍</a>
+<li class="chapter" data-level="7" data-path="karten-erstellen-in-r.html"><a href="karten-erstellen-in-r.html"><i class="fa fa-check"></i><b>7</b> Karten erstellen in R 🌍</a>
 <ul>
-<li class="chapter" data-level="8.1" data-path="datenquellen.html"><a href="datenquellen.html"><i class="fa fa-check"></i><b>8.1</b> Datenquellen</a></li>
-<li class="chapter" data-level="8.2" data-path="packages.html"><a href="packages.html"><i class="fa fa-check"></i><b>8.2</b> Packages</a>
+<li class="chapter" data-level="7.1" data-path="datenquellen.html"><a href="datenquellen.html"><i class="fa fa-check"></i><b>7.1</b> Datenquellen</a></li>
+<li class="chapter" data-level="7.2" data-path="packages.html"><a href="packages.html"><i class="fa fa-check"></i><b>7.2</b> Packages</a>
 <ul>
-<li class="chapter" data-level="8.2.1" data-path="packages.html"><a href="packages.html#rgdal-package"><i class="fa fa-check"></i><b>8.2.1</b> <code>rgdal</code> package</a></li>
+<li class="chapter" data-level="7.2.1" data-path="packages.html"><a href="packages.html#rgdal-package"><i class="fa fa-check"></i><b>7.2.1</b> <code>rgdal</code> package</a></li>
 </ul></li>
-<li class="chapter" data-level="8.3" data-path="übungen.html"><a href="übungen.html"><i class="fa fa-check"></i><b>8.3</b> Übungen</a>
+<li class="chapter" data-level="7.3" data-path="übungen.html"><a href="übungen.html"><i class="fa fa-check"></i><b>7.3</b> Übungen</a>
 <ul>
-<li class="chapter" data-level="8.3.1" data-path="übungen.html"><a href="übungen.html#erstelle-eine-karte-der-bundesrepublik"><i class="fa fa-check"></i><b>8.3.1</b> Erstelle eine Karte der Bundesrepublik</a></li>
-<li class="chapter" data-level="8.3.2" data-path="übungen.html"><a href="übungen.html#erstelle-eine-weltkarte"><i class="fa fa-check"></i><b>8.3.2</b> Erstelle eine Weltkarte</a></li>
-</ul></li>
-</ul></li>
-<li class="chapter" data-level="9" data-path="statistische-auswertungen.html"><a href="statistische-auswertungen.html"><i class="fa fa-check"></i><b>9</b> Statistische Auswertungen</a>
-<ul>
-<li class="chapter" data-level="9.1" data-path="verteilung-der-daten.html"><a href="verteilung-der-daten.html"><i class="fa fa-check"></i><b>9.1</b> Verteilung der Daten</a></li>
-<li class="chapter" data-level="9.2" data-path="datentransformation.html"><a href="datentransformation.html"><i class="fa fa-check"></i><b>9.2</b> Datentransformation</a></li>
-<li class="chapter" data-level="9.3" data-path="korrelationen.html"><a href="korrelationen.html"><i class="fa fa-check"></i><b>9.3</b> Korrelationen</a>
-<ul>
-<li class="chapter" data-level="9.3.1" data-path="korrelationen.html"><a href="korrelationen.html#pearsons-korrelationkoeffizient-r"><i class="fa fa-check"></i><b>9.3.1</b> Pearson’s Korrelationkoeffizient (r)</a></li>
-<li class="chapter" data-level="9.3.2" data-path="korrelationen.html"><a href="korrelationen.html#signifikanztest"><i class="fa fa-check"></i><b>9.3.2</b> Signifikanztest</a></li>
-<li class="chapter" data-level="9.3.3" data-path="korrelationen.html"><a href="korrelationen.html#korrelation-vs.-regression"><i class="fa fa-check"></i><b>9.3.3</b> Korrelation vs. Regression</a></li>
-</ul></li>
-<li class="chapter" data-level="9.4" data-path="pca.html"><a href="pca.html"><i class="fa fa-check"></i><b>9.4</b> PCA</a>
-<ul>
-<li class="chapter" data-level="9.4.1" data-path="pca.html"><a href="pca.html#datenauswahl"><i class="fa fa-check"></i><b>9.4.1</b> Datenauswahl</a></li>
-<li class="chapter" data-level="9.4.2" data-path="pca.html"><a href="pca.html#daten-standardisieren"><i class="fa fa-check"></i><b>9.4.2</b> Daten Standardisieren</a></li>
-<li class="chapter" data-level="9.4.3" data-path="pca.html"><a href="pca.html#eigenvalues"><i class="fa fa-check"></i><b>9.4.3</b> Eigenvalues</a></li>
-<li class="chapter" data-level="9.4.4" data-path="pca.html"><a href="pca.html#darstellen-der-ergebnisse"><i class="fa fa-check"></i><b>9.4.4</b> Darstellen der Ergebnisse</a></li>
+<li class="chapter" data-level="7.3.1" data-path="übungen.html"><a href="übungen.html#erstelle-eine-karte-der-bundesrepublik"><i class="fa fa-check"></i><b>7.3.1</b> Erstelle eine Karte der Bundesrepublik</a></li>
+<li class="chapter" data-level="7.3.2" data-path="übungen.html"><a href="übungen.html#erstelle-eine-weltkarte"><i class="fa fa-check"></i><b>7.3.2</b> Erstelle eine Weltkarte</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="10" data-path="datenmanagement.html"><a href="datenmanagement.html"><i class="fa fa-check"></i><b>10</b> Datenmanagement</a></li>
-<li class="chapter" data-level="11" data-path="reporting-in-rmarkdown.html"><a href="reporting-in-rmarkdown.html"><i class="fa fa-check"></i><b>11</b> Reporting in Rmarkdown</a>
+<li class="chapter" data-level="8" data-path="statistische-auswertungen.html"><a href="statistische-auswertungen.html"><i class="fa fa-check"></i><b>8</b> Statistische Auswertungen</a>
 <ul>
-<li class="chapter" data-level="11.1" data-path="mathematische-befehle.html"><a href="mathematische-befehle.html"><i class="fa fa-check"></i><b>11.1</b> Mathematische Befehle</a>
+<li class="chapter" data-level="8.1" data-path="verteilung-der-daten.html"><a href="verteilung-der-daten.html"><i class="fa fa-check"></i><b>8.1</b> Verteilung der Daten</a></li>
+<li class="chapter" data-level="8.2" data-path="datentransformation.html"><a href="datentransformation.html"><i class="fa fa-check"></i><b>8.2</b> Datentransformation</a></li>
+<li class="chapter" data-level="8.3" data-path="korrelationen.html"><a href="korrelationen.html"><i class="fa fa-check"></i><b>8.3</b> Korrelationen</a>
 <ul>
-<li class="chapter" data-level="11.1.1" data-path="mathematische-befehle.html"><a href="mathematische-befehle.html#brüche"><i class="fa fa-check"></i><b>11.1.1</b> Brüche</a></li>
-<li class="chapter" data-level="11.1.2" data-path="mathematische-befehle.html"><a href="mathematische-befehle.html#hoch--und-tiefstellung"><i class="fa fa-check"></i><b>11.1.2</b> Hoch- und Tiefstellung</a></li>
-<li class="chapter" data-level="11.1.3" data-path="mathematische-befehle.html"><a href="mathematische-befehle.html#quadratwurzel"><i class="fa fa-check"></i><b>11.1.3</b> Quadratwurzel</a></li>
+<li class="chapter" data-level="8.3.1" data-path="korrelationen.html"><a href="korrelationen.html#pearsons-korrelationkoeffizient-r"><i class="fa fa-check"></i><b>8.3.1</b> Pearson’s Korrelationkoeffizient (r)</a></li>
+<li class="chapter" data-level="8.3.2" data-path="korrelationen.html"><a href="korrelationen.html#signifikanztest"><i class="fa fa-check"></i><b>8.3.2</b> Signifikanztest</a></li>
+<li class="chapter" data-level="8.3.3" data-path="korrelationen.html"><a href="korrelationen.html#korrelation-vs.-regression"><i class="fa fa-check"></i><b>8.3.3</b> Korrelation vs. Regression</a></li>
+</ul></li>
+<li class="chapter" data-level="8.4" data-path="pca.html"><a href="pca.html"><i class="fa fa-check"></i><b>8.4</b> PCA</a>
+<ul>
+<li class="chapter" data-level="8.4.1" data-path="pca.html"><a href="pca.html#datenauswahl"><i class="fa fa-check"></i><b>8.4.1</b> Datenauswahl</a></li>
+<li class="chapter" data-level="8.4.2" data-path="pca.html"><a href="pca.html#daten-standardisieren"><i class="fa fa-check"></i><b>8.4.2</b> Daten Standardisieren</a></li>
+<li class="chapter" data-level="8.4.3" data-path="pca.html"><a href="pca.html#eigenvalues"><i class="fa fa-check"></i><b>8.4.3</b> Eigenvalues</a></li>
+<li class="chapter" data-level="8.4.4" data-path="pca.html"><a href="pca.html#darstellen-der-ergebnisse"><i class="fa fa-check"></i><b>8.4.4</b> Darstellen der Ergebnisse</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="12" data-path="github.html"><a href="github.html"><i class="fa fa-check"></i><b>12</b> Github</a>
+<li class="chapter" data-level="9" data-path="datenmanagement.html"><a href="datenmanagement.html"><i class="fa fa-check"></i><b>9</b> Datenmanagement</a></li>
+<li class="chapter" data-level="10" data-path="reporting-in-rmarkdown.html"><a href="reporting-in-rmarkdown.html"><i class="fa fa-check"></i><b>10</b> Reporting in Rmarkdown</a>
 <ul>
-<li class="chapter" data-level="12.1" data-path="projekt-erstellen.html"><a href="projekt-erstellen.html"><i class="fa fa-check"></i><b>12.1</b> Projekt erstellen</a>
+<li class="chapter" data-level="10.1" data-path="mathematische-befehle.html"><a href="mathematische-befehle.html"><i class="fa fa-check"></i><b>10.1</b> Mathematische Befehle</a>
 <ul>
-<li class="chapter" data-level="12.1.1" data-path="projekt-erstellen.html"><a href="projekt-erstellen.html#workflow"><i class="fa fa-check"></i><b>12.1.1</b> Workflow</a></li>
-<li class="chapter" data-level="12.1.2" data-path="projekt-erstellen.html"><a href="projekt-erstellen.html#synchronisieren-vieler-dateien"><i class="fa fa-check"></i><b>12.1.2</b> Synchronisieren vieler Dateien</a></li>
-<li class="chapter" data-level="12.1.3" data-path="projekt-erstellen.html"><a href="projekt-erstellen.html#ordner-lokal-behalten-aber-auf-git-löschen"><i class="fa fa-check"></i><b>12.1.3</b> Ordner lokal behalten aber auf Git löschen</a></li>
+<li class="chapter" data-level="10.1.1" data-path="mathematische-befehle.html"><a href="mathematische-befehle.html#brüche"><i class="fa fa-check"></i><b>10.1.1</b> Brüche</a></li>
+<li class="chapter" data-level="10.1.2" data-path="mathematische-befehle.html"><a href="mathematische-befehle.html#hoch--und-tiefstellung"><i class="fa fa-check"></i><b>10.1.2</b> Hoch- und Tiefstellung</a></li>
+<li class="chapter" data-level="10.1.3" data-path="mathematische-befehle.html"><a href="mathematische-befehle.html#quadratwurzel"><i class="fa fa-check"></i><b>10.1.3</b> Quadratwurzel</a></li>
 </ul></li>
-<li class="chapter" data-level="12.2" data-path="cache-säubern.html"><a href="cache-säubern.html"><i class="fa fa-check"></i><b>12.2</b> Cache säubern</a></li>
 </ul></li>
-<li class="chapter" data-level="13" data-path="bookdown.html"><a href="bookdown.html"><i class="fa fa-check"></i><b>13</b> Bookdown</a>
+<li class="chapter" data-level="11" data-path="github.html"><a href="github.html"><i class="fa fa-check"></i><b>11</b> Github</a>
 <ul>
-<li class="chapter" data-level="13.1" data-path="vorbereitung.html"><a href="vorbereitung.html"><i class="fa fa-check"></i><b>13.1</b> Vorbereitung</a></li>
-<li class="chapter" data-level="13.2" data-path="github-pages.html"><a href="github-pages.html"><i class="fa fa-check"></i><b>13.2</b> Github pages</a></li>
-<li class="chapter" data-level="13.3" data-path="emojiys.html"><a href="emojiys.html"><i class="fa fa-check"></i><b>13.3</b> Emojiys</a></li>
+<li class="chapter" data-level="11.1" data-path="projekt-erstellen.html"><a href="projekt-erstellen.html"><i class="fa fa-check"></i><b>11.1</b> Projekt erstellen</a>
+<ul>
+<li class="chapter" data-level="11.1.1" data-path="projekt-erstellen.html"><a href="projekt-erstellen.html#workflow"><i class="fa fa-check"></i><b>11.1.1</b> Workflow</a></li>
+<li class="chapter" data-level="11.1.2" data-path="projekt-erstellen.html"><a href="projekt-erstellen.html#synchronisieren-vieler-dateien"><i class="fa fa-check"></i><b>11.1.2</b> Synchronisieren vieler Dateien</a></li>
+<li class="chapter" data-level="11.1.3" data-path="projekt-erstellen.html"><a href="projekt-erstellen.html#ordner-lokal-behalten-aber-auf-git-löschen"><i class="fa fa-check"></i><b>11.1.3</b> Ordner lokal behalten aber auf Git löschen</a></li>
 </ul></li>
-<li class="chapter" data-level="14" data-path="blogdown.html"><a href="blogdown.html"><i class="fa fa-check"></i><b>14</b> Blogdown</a>
-<ul>
-<li class="chapter" data-level="14.1" data-path="setup-a-homepage-with-hugo-and-blogdown.html"><a href="setup-a-homepage-with-hugo-and-blogdown.html"><i class="fa fa-check"></i><b>14.1</b> Setup a homepage with Hugo and blogdown</a></li>
-<li class="chapter" data-level="14.2" data-path="github-1.html"><a href="github-1.html"><i class="fa fa-check"></i><b>14.2</b> Github</a></li>
-<li class="chapter" data-level="14.3" data-path="domain-name.html"><a href="domain-name.html"><i class="fa fa-check"></i><b>14.3</b> Domain name</a></li>
-<li class="chapter" data-level="14.4" data-path="homepage.html"><a href="homepage.html"><i class="fa fa-check"></i><b>14.4</b> Homepage</a></li>
-<li class="chapter" data-level="14.5" data-path="wowchemystarter-academic.html"><a href="wowchemystarter-academic.html"><i class="fa fa-check"></i><b>14.5</b> “wowchemy/starter-academic”</a></li>
-<li class="chapter" data-level="14.6" data-path="where-to-adjust-the-homepage.html"><a href="where-to-adjust-the-homepage.html"><i class="fa fa-check"></i><b>14.6</b> Where to adjust the Homepage</a></li>
-<li class="chapter" data-level="14.7" data-path="workflow-1.html"><a href="workflow-1.html"><i class="fa fa-check"></i><b>14.7</b> Workflow</a></li>
-<li class="chapter" data-level="14.8" data-path="yaml-metadata.html"><a href="yaml-metadata.html"><i class="fa fa-check"></i><b>14.8</b> YAML metadata</a></li>
+<li class="chapter" data-level="11.2" data-path="cache-säubern.html"><a href="cache-säubern.html"><i class="fa fa-check"></i><b>11.2</b> Cache säubern</a></li>
 </ul></li>
-<li class="chapter" data-level="15" data-path="shiny.html"><a href="shiny.html"><i class="fa fa-check"></i><b>15</b> Shiny</a>
+<li class="chapter" data-level="12" data-path="bookdown.html"><a href="bookdown.html"><i class="fa fa-check"></i><b>12</b> Bookdown</a>
 <ul>
-<li class="chapter" data-level="15.1" data-path="ui-benutzeroberfläche.html"><a href="ui-benutzeroberfläche.html"><i class="fa fa-check"></i><b>15.1</b> UI Benutzeroberfläche</a></li>
-<li class="chapter" data-level="15.2" data-path="welche-befehle-sollen-ausgeführt-werden.html"><a href="welche-befehle-sollen-ausgeführt-werden.html"><i class="fa fa-check"></i><b>15.2</b> Welche Befehle sollen ausgeführt werden</a></li>
-<li class="chapter" data-level="15.3" data-path="beispiel-speicherkoog.html"><a href="beispiel-speicherkoog.html"><i class="fa fa-check"></i><b>15.3</b> Beispiel Speicherkoog</a></li>
+<li class="chapter" data-level="12.1" data-path="vorbereitung.html"><a href="vorbereitung.html"><i class="fa fa-check"></i><b>12.1</b> Vorbereitung</a></li>
+<li class="chapter" data-level="12.2" data-path="github-pages.html"><a href="github-pages.html"><i class="fa fa-check"></i><b>12.2</b> Github pages</a></li>
+<li class="chapter" data-level="12.3" data-path="emojiys.html"><a href="emojiys.html"><i class="fa fa-check"></i><b>12.3</b> Emojiys</a></li>
 </ul></li>
-<li class="chapter" data-level="16" data-path="diverses.html"><a href="diverses.html"><i class="fa fa-check"></i><b>16</b> Diverses</a>
+<li class="chapter" data-level="13" data-path="blogdown.html"><a href="blogdown.html"><i class="fa fa-check"></i><b>13</b> Blogdown</a>
 <ul>
-<li class="chapter" data-level="16.1" data-path="entfernen-aller-packages.html"><a href="entfernen-aller-packages.html"><i class="fa fa-check"></i><b>16.1</b> Entfernen aller packages</a></li>
-<li class="chapter" data-level="16.2" data-path="shortcuts.html"><a href="shortcuts.html"><i class="fa fa-check"></i><b>16.2</b> Shortcuts</a></li>
-<li class="chapter" data-level="16.3" data-path="faqs.html"><a href="faqs.html"><i class="fa fa-check"></i><b>16.3</b> FAQs</a>
-<ul>
-<li class="chapter" data-level="16.3.1" data-path="faqs.html"><a href="faqs.html#kalender-erstellen"><i class="fa fa-check"></i><b>16.3.1</b> Kalender erstellen</a></li>
-<li class="chapter" data-level="16.3.2" data-path="faqs.html"><a href="faqs.html#rstudio-1"><i class="fa fa-check"></i><b>16.3.2</b> RStudio</a></li>
-<li class="chapter" data-level="16.3.3" data-path="faqs.html"><a href="faqs.html#datenmanipulation"><i class="fa fa-check"></i><b>16.3.3</b> Datenmanipulation</a></li>
+<li class="chapter" data-level="13.1" data-path="setup-a-homepage-with-hugo-and-blogdown.html"><a href="setup-a-homepage-with-hugo-and-blogdown.html"><i class="fa fa-check"></i><b>13.1</b> Setup a homepage with Hugo and blogdown</a></li>
+<li class="chapter" data-level="13.2" data-path="github-1.html"><a href="github-1.html"><i class="fa fa-check"></i><b>13.2</b> Github</a></li>
+<li class="chapter" data-level="13.3" data-path="domain-name.html"><a href="domain-name.html"><i class="fa fa-check"></i><b>13.3</b> Domain name</a></li>
+<li class="chapter" data-level="13.4" data-path="homepage.html"><a href="homepage.html"><i class="fa fa-check"></i><b>13.4</b> Homepage</a></li>
+<li class="chapter" data-level="13.5" data-path="wowchemystarter-academic.html"><a href="wowchemystarter-academic.html"><i class="fa fa-check"></i><b>13.5</b> “wowchemy/starter-academic”</a></li>
+<li class="chapter" data-level="13.6" data-path="where-to-adjust-the-homepage.html"><a href="where-to-adjust-the-homepage.html"><i class="fa fa-check"></i><b>13.6</b> Where to adjust the Homepage</a></li>
+<li class="chapter" data-level="13.7" data-path="workflow-1.html"><a href="workflow-1.html"><i class="fa fa-check"></i><b>13.7</b> Workflow</a></li>
+<li class="chapter" data-level="13.8" data-path="yaml-metadata.html"><a href="yaml-metadata.html"><i class="fa fa-check"></i><b>13.8</b> YAML metadata</a></li>
 </ul></li>
-<li class="chapter" data-level="16.4" data-path="visualisation.html"><a href="visualisation.html"><i class="fa fa-check"></i><b>16.4</b> Visualisation</a>
+<li class="chapter" data-level="14" data-path="shiny.html"><a href="shiny.html"><i class="fa fa-check"></i><b>14</b> Shiny</a>
 <ul>
-<li class="chapter" data-level="16.4.1" data-path="visualisation.html"><a href="visualisation.html#superscripts-and-subscripts"><i class="fa fa-check"></i><b>16.4.1</b> Superscripts and subscripts</a></li>
-<li class="chapter" data-level="16.4.2" data-path="visualisation.html"><a href="visualisation.html#modifying-labels-in-faceted-plots"><i class="fa fa-check"></i><b>16.4.2</b> Modifying labels in faceted plots</a></li>
+<li class="chapter" data-level="14.1" data-path="ui-benutzeroberfläche.html"><a href="ui-benutzeroberfläche.html"><i class="fa fa-check"></i><b>14.1</b> UI Benutzeroberfläche</a></li>
+<li class="chapter" data-level="14.2" data-path="welche-befehle-sollen-ausgeführt-werden.html"><a href="welche-befehle-sollen-ausgeführt-werden.html"><i class="fa fa-check"></i><b>14.2</b> Welche Befehle sollen ausgeführt werden</a></li>
+<li class="chapter" data-level="14.3" data-path="beispiel-speicherkoog.html"><a href="beispiel-speicherkoog.html"><i class="fa fa-check"></i><b>14.3</b> Beispiel Speicherkoog</a></li>
 </ul></li>
-<li class="chapter" data-level="16.5" data-path="glossary.html"><a href="glossary.html"><i class="fa fa-check"></i><b>16.5</b> Glossary</a></li>
+<li class="chapter" data-level="15" data-path="diverses.html"><a href="diverses.html"><i class="fa fa-check"></i><b>15</b> Diverses</a>
+<ul>
+<li class="chapter" data-level="15.1" data-path="entfernen-aller-packages.html"><a href="entfernen-aller-packages.html"><i class="fa fa-check"></i><b>15.1</b> Entfernen aller packages</a></li>
+<li class="chapter" data-level="15.2" data-path="shortcuts.html"><a href="shortcuts.html"><i class="fa fa-check"></i><b>15.2</b> Shortcuts</a></li>
+<li class="chapter" data-level="15.3" data-path="faqs.html"><a href="faqs.html"><i class="fa fa-check"></i><b>15.3</b> FAQs</a>
+<ul>
+<li class="chapter" data-level="15.3.1" data-path="faqs.html"><a href="faqs.html#kalender-erstellen"><i class="fa fa-check"></i><b>15.3.1</b> Kalender erstellen</a></li>
+<li class="chapter" data-level="15.3.2" data-path="faqs.html"><a href="faqs.html#rstudio-1"><i class="fa fa-check"></i><b>15.3.2</b> RStudio</a></li>
+<li class="chapter" data-level="15.3.3" data-path="faqs.html"><a href="faqs.html#datenmanipulation"><i class="fa fa-check"></i><b>15.3.3</b> Datenmanipulation</a></li>
+</ul></li>
+<li class="chapter" data-level="15.4" data-path="visualisation.html"><a href="visualisation.html"><i class="fa fa-check"></i><b>15.4</b> Visualisation</a>
+<ul>
+<li class="chapter" data-level="15.4.1" data-path="visualisation.html"><a href="visualisation.html#superscripts-and-subscripts"><i class="fa fa-check"></i><b>15.4.1</b> Superscripts and subscripts</a></li>
+<li class="chapter" data-level="15.4.2" data-path="visualisation.html"><a href="visualisation.html#modifying-labels-in-faceted-plots"><i class="fa fa-check"></i><b>15.4.2</b> Modifying labels in faceted plots</a></li>
+</ul></li>
+<li class="chapter" data-level="15.5" data-path="glossary.html"><a href="glossary.html"><i class="fa fa-check"></i><b>15.5</b> Glossary</a></li>
 </ul></li>
 </ul>
 
@@ -366,8 +353,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="korrelationen" class="section level2" number="9.3">
-<h2><span class="header-section-number">9.3</span> Korrelationen</h2>
+<div id="korrelationen" class="section level2" number="8.3">
+<h2><span class="header-section-number">8.3</span> Korrelationen</h2>
 <p>🔍 <a href="https://towardsdatascience.com/eveything-you-need-to-know-about-interpreting-correlations-2c485841c0b8">https://towardsdatascience.com/</a></p>
 <p>Eine Korrelation gehört zu den weit verbreitesten statistischen Maßen. Die Anwendung muss jedoch mit besonderem Augenmaß erfolgen, andernfalls gibt es auch Fehlerquellen. Eine vermeintliche Korrelation aus einer Population kann auch Zufall sein und muss nicht unbedingt durch das Prinzip Ursache-Wirkung verursacht sein. Daher sollte eine Korrelation immer mit einem Signifikanztest verknüpft werden.</p>
 <p>Korrelation beschreiben, wie sich Variablen in Abhängigkeit einer anderen Variable verhalten. Beispielsweise</p>
@@ -376,57 +363,57 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>Jahr des Tages und Lufttemperatur</li>
 <li>Bierkonsum und Bauchumfang</li>
 </ul>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-263"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-225"></span>
 <img src="images/055.png" alt="Illustration von Z. Jaadi: https://towardsdatascience.com" width="100%" />
 <p class="caption">
-Figure 9.2: Illustration von Z. Jaadi: <a href="https://towardsdatascience.com" class="uri">https://towardsdatascience.com</a>
+Figure 8.2: Illustration von Z. Jaadi: <a href="https://towardsdatascience.com" class="uri">https://towardsdatascience.com</a>
 </p>
 </div>
 <p><strong>Positive Korrelation</strong>: Zwei Variablen gehen in diesselbe Richtung.
 <strong>Negative Korrelation</strong>: Zwei Variablen bewegen sich in gegengesetzte Richtung.
 <strong>Neutrale Korrelation</strong>: Es gibt keinen Zusammenhang zwischen den Variablen.</p>
 <p>Die Form einer Korrelation kann unterschiedlich ausgeprägt sein:</p>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-264"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-226"></span>
 <img src="images/056.png" alt="Illustration von Z. Jaadi: https://towardsdatascience.com" width="100%" />
 <p class="caption">
-Figure 9.3: Illustration von Z. Jaadi: <a href="https://towardsdatascience.com" class="uri">https://towardsdatascience.com</a>
+Figure 8.3: Illustration von Z. Jaadi: <a href="https://towardsdatascience.com" class="uri">https://towardsdatascience.com</a>
 </p>
 </div>
 <p><strong>Lineare Korrelation</strong>: Variablen verändern sich in konstanter Rate und erfüllen die Gleichung Y = aX + b (Die Beziehung lässt sich als Gerade beschreiben).
 <strong>Nicht-lineare Korrelation</strong>: Variablen verändern sich nicht in konstanter Rate. Die Form kann parabolisch, hyperbolisch, … etc. sein.
 <strong>Monotone Korrelation</strong>: Die Variablen tendieren in diesselbe Richtung, jedoch nicht in gleicher Rate. Alle lineare Korrelationen sind also monoton, der umgekehrte Prozess muss jedoch nicht unbedingt richtig sein.</p>
 <p>Scatterplots oder Punktdiagramme sind sinnvoll, um visuell einen Überblick über die Verteilung der Daten zu bekommen. Nehmen wir mal das Beispiel Batteriespannung der Station im Speicherkoog und gemessene Solarstrahlung:</p>
-<div class="sourceCode" id="cb256"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb256-1"><a href="korrelationen.html#cb256-1" aria-hidden="true" tabindex="-1"></a>koog_day <span class="sc">%&gt;%</span></span>
-<span id="cb256-2"><a href="korrelationen.html#cb256-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(sr, bat)) <span class="sc">+</span></span>
-<span id="cb256-3"><a href="korrelationen.html#cb256-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
-<span id="cb256-4"><a href="korrelationen.html#cb256-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
-<span id="cb256-5"><a href="korrelationen.html#cb256-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">&quot;Solarstrahlung (W/m²)&quot;</span>,</span>
-<span id="cb256-6"><a href="korrelationen.html#cb256-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">&quot;Batteriespannung (V)&quot;</span></span>
-<span id="cb256-7"><a href="korrelationen.html#cb256-7" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div>
-<p><img src="documentation_files/figure-html/unnamed-chunk-265-1.png" width="100%" style="display: block; margin: auto;" /></p>
-<div id="pearsons-korrelationkoeffizient-r" class="section level3" number="9.3.1">
-<h3><span class="header-section-number">9.3.1</span> Pearson’s Korrelationkoeffizient (r)</h3>
+<div class="sourceCode" id="cb229"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb229-1"><a href="korrelationen.html#cb229-1" aria-hidden="true" tabindex="-1"></a>koog_day <span class="sc">%&gt;%</span></span>
+<span id="cb229-2"><a href="korrelationen.html#cb229-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(sr, bat)) <span class="sc">+</span></span>
+<span id="cb229-3"><a href="korrelationen.html#cb229-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb229-4"><a href="korrelationen.html#cb229-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb229-5"><a href="korrelationen.html#cb229-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">&quot;Solarstrahlung (W/m²)&quot;</span>,</span>
+<span id="cb229-6"><a href="korrelationen.html#cb229-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">&quot;Batteriespannung (V)&quot;</span></span>
+<span id="cb229-7"><a href="korrelationen.html#cb229-7" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div>
+<p><img src="documentation_files/figure-html/unnamed-chunk-227-1.png" width="100%" style="display: block; margin: auto;" /></p>
+<div id="pearsons-korrelationkoeffizient-r" class="section level3" number="8.3.1">
+<h3><span class="header-section-number">8.3.1</span> Pearson’s Korrelationkoeffizient (r)</h3>
 <p>Dieses Maß wird verwendet um Stärke und Richtung eines linearen Zusammenhanges zwischen zwei Variablen vorherzusagen. Mathematisch lässt ausgedrückt teilt man die Co-Varianz von zwei Variablen mit dem Produkt der Standardabweichung:</p>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-266"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-228"></span>
 <img src="images/057.png" alt="Illustration von Z. Jaadi: https://towardsdatascience.com" width="100%" />
 <p class="caption">
-Figure 9.4: Illustration von Z. Jaadi: <a href="https://towardsdatascience.com" class="uri">https://towardsdatascience.com</a>
+Figure 8.4: Illustration von Z. Jaadi: <a href="https://towardsdatascience.com" class="uri">https://towardsdatascience.com</a>
 </p>
 </div>
 <p>Die Werte von r variieren zwischen -1 und 1, wobei 1 einen perfekten positiven Zusammenhang darstellt und -1 einen einen perfekten negativen. Die Größe von Pearson’s r könnnte wie folgt eingeteilt werden:</p>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-267"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-229"></span>
 <img src="images/058.png" alt="Illustration von Z. Jaadi: https://towardsdatascience.com" width="100%" />
 <p class="caption">
-Figure 9.5: Illustration von Z. Jaadi: <a href="https://towardsdatascience.com" class="uri">https://towardsdatascience.com</a>
+Figure 8.5: Illustration von Z. Jaadi: <a href="https://towardsdatascience.com" class="uri">https://towardsdatascience.com</a>
 </p>
 </div>
 <p>In R können wir Pearson’s r mit der Funktion <code>stats::cor()</code> berechnen:</p>
-<div class="sourceCode" id="cb257"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb257-1"><a href="korrelationen.html#cb257-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cor</span>(koog_day<span class="sc">$</span>sr, koog_day<span class="sc">$</span>bat, <span class="at">use =</span> <span class="st">&quot;complete.obs&quot;</span>, <span class="at">method =</span> <span class="st">&quot;pearson&quot;</span>)</span>
-<span id="cb257-2"><a href="korrelationen.html#cb257-2" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] 0.5694954</span></span></code></pre></div>
+<div class="sourceCode" id="cb230"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb230-1"><a href="korrelationen.html#cb230-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cor</span>(koog_day<span class="sc">$</span>sr, koog_day<span class="sc">$</span>bat, <span class="at">use =</span> <span class="st">&quot;complete.obs&quot;</span>, <span class="at">method =</span> <span class="st">&quot;pearson&quot;</span>)</span>
+<span id="cb230-2"><a href="korrelationen.html#cb230-2" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] 0.5694954</span></span></code></pre></div>
 <p>Mit dem Argument <code>method =</code> können wir die drei Optionen nach Spearman, Pearson oder Kendall’s Tau angeben. Falls wir fehlende Werte in unserem Datensatz haben, was bei uns der Fall ist, dann müssen wir dies im Argument angeben. Wir setzen das Argument <code>complete.obs</code> um Zeilenweise fehlende Werte aus dem Datensatz zu werfen und von der Korrelation auszuschließen.</p>
 </div>
-<div id="signifikanztest" class="section level3" number="9.3.2">
-<h3><span class="header-section-number">9.3.2</span> Signifikanztest</h3>
+<div id="signifikanztest" class="section level3" number="8.3.2">
+<h3><span class="header-section-number">8.3.2</span> Signifikanztest</h3>
 <p>Die Beziehung zwischen zwei Variablen zu quantifizieren ist nur ein Teil der Geschichte. Häufig stellt man Korrelationen zwischen verschiedenen Variablen auf, wobei sich die Population dabei unterscheiden kann. Was wir wollen ist also ein Nachweis, dass unsere Beobachtung innerhalb der Population wahr oder falsch ist, welches wir durch aufstellen einer Testhypothese erreichen.</p>
 <p>Formulierung:</p>
 <ul>
@@ -440,10 +427,10 @@ Figure 9.5: Illustration von Z. Jaadi: <a href="https://towardsdatascience.com" 
 <p>Die <em>alternative Hypothese</em> ist immer das, was wir versuchen nachzuweisen (also in unserem Fall das der Zusammenhang signifikant ist mit ρ ≠ 0). Die <em>Null Hypothese</em> versuchen wir zurückzuweisen, also das es keinen signfikanten Zusammenhang gibt mit ρ = 0.</p>
 <p><strong>Schritt 2</strong></p>
 <p>Wir wenden einen T-Test (auch Student’s T-Test genannt) an um anhang des Stichprobenumfangs n Rückschlüsse über die Gesamte Population zu treffen. Der Wert t des Tests erhalten wir durch:</p>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-269"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-231"></span>
 <img src="images/059.png" alt="Illustration von Z. Jaadi: https://towardsdatascience.com" width="100%" />
 <p class="caption">
-Figure 9.6: Illustration von Z. Jaadi: <a href="https://towardsdatascience.com" class="uri">https://towardsdatascience.com</a>
+Figure 8.6: Illustration von Z. Jaadi: <a href="https://towardsdatascience.com" class="uri">https://towardsdatascience.com</a>
 </p>
 </div>
 <p>mit n = Stichprobenumfang und r = Korrelationskoeffizient. Je größer der T-Wert ist, desto wahrscheinlicher ist es das die Korrelation wiederholbar und damit signifikant ist. Aber wie groß ist groß genug? Das ist der nächste Schritt.</p>
@@ -454,26 +441,26 @@ Figure 9.6: Illustration von Z. Jaadi: <a href="https://towardsdatascience.com" 
 <li>Wenn der p-Wert größer ist, können wir die Null-Hypothese nicht zurückweisen und es gibt keinen signfikanten Zusammenhang zwischen den Variablen.</li>
 </ul>
 <p>In R können wir den p-Wert mit der Funktion <code>cor.test()</code> berechnen:</p>
-<div class="sourceCode" id="cb258"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb258-1"><a href="korrelationen.html#cb258-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cor.test</span>(koog_day<span class="sc">$</span>sr, koog_day<span class="sc">$</span>bat, <span class="at">method =</span> <span class="st">&quot;pearson&quot;</span>, <span class="at">na.action =</span> <span class="st">&quot;na.omit&quot;</span>)</span>
-<span id="cb258-2"><a href="korrelationen.html#cb258-2" aria-hidden="true" tabindex="-1"></a><span class="do">## </span></span>
-<span id="cb258-3"><a href="korrelationen.html#cb258-3" aria-hidden="true" tabindex="-1"></a><span class="do">##  Pearson&#39;s product-moment correlation</span></span>
-<span id="cb258-4"><a href="korrelationen.html#cb258-4" aria-hidden="true" tabindex="-1"></a><span class="do">## </span></span>
-<span id="cb258-5"><a href="korrelationen.html#cb258-5" aria-hidden="true" tabindex="-1"></a><span class="do">## data:  koog_day$sr and koog_day$bat</span></span>
-<span id="cb258-6"><a href="korrelationen.html#cb258-6" aria-hidden="true" tabindex="-1"></a><span class="do">## t = 42.641, df = 3788, p-value &lt; 2.2e-16</span></span>
-<span id="cb258-7"><a href="korrelationen.html#cb258-7" aria-hidden="true" tabindex="-1"></a><span class="do">## alternative hypothesis: true correlation is not equal to 0</span></span>
-<span id="cb258-8"><a href="korrelationen.html#cb258-8" aria-hidden="true" tabindex="-1"></a><span class="do">## 95 percent confidence interval:</span></span>
-<span id="cb258-9"><a href="korrelationen.html#cb258-9" aria-hidden="true" tabindex="-1"></a><span class="do">##  0.5475856 0.5906248</span></span>
-<span id="cb258-10"><a href="korrelationen.html#cb258-10" aria-hidden="true" tabindex="-1"></a><span class="do">## sample estimates:</span></span>
-<span id="cb258-11"><a href="korrelationen.html#cb258-11" aria-hidden="true" tabindex="-1"></a><span class="do">##       cor </span></span>
-<span id="cb258-12"><a href="korrelationen.html#cb258-12" aria-hidden="true" tabindex="-1"></a><span class="do">## 0.5694954</span></span></code></pre></div>
+<div class="sourceCode" id="cb231"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb231-1"><a href="korrelationen.html#cb231-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cor.test</span>(koog_day<span class="sc">$</span>sr, koog_day<span class="sc">$</span>bat, <span class="at">method =</span> <span class="st">&quot;pearson&quot;</span>, <span class="at">na.action =</span> <span class="st">&quot;na.omit&quot;</span>)</span>
+<span id="cb231-2"><a href="korrelationen.html#cb231-2" aria-hidden="true" tabindex="-1"></a><span class="do">## </span></span>
+<span id="cb231-3"><a href="korrelationen.html#cb231-3" aria-hidden="true" tabindex="-1"></a><span class="do">##  Pearson&#39;s product-moment correlation</span></span>
+<span id="cb231-4"><a href="korrelationen.html#cb231-4" aria-hidden="true" tabindex="-1"></a><span class="do">## </span></span>
+<span id="cb231-5"><a href="korrelationen.html#cb231-5" aria-hidden="true" tabindex="-1"></a><span class="do">## data:  koog_day$sr and koog_day$bat</span></span>
+<span id="cb231-6"><a href="korrelationen.html#cb231-6" aria-hidden="true" tabindex="-1"></a><span class="do">## t = 42.641, df = 3788, p-value &lt; 2.2e-16</span></span>
+<span id="cb231-7"><a href="korrelationen.html#cb231-7" aria-hidden="true" tabindex="-1"></a><span class="do">## alternative hypothesis: true correlation is not equal to 0</span></span>
+<span id="cb231-8"><a href="korrelationen.html#cb231-8" aria-hidden="true" tabindex="-1"></a><span class="do">## 95 percent confidence interval:</span></span>
+<span id="cb231-9"><a href="korrelationen.html#cb231-9" aria-hidden="true" tabindex="-1"></a><span class="do">##  0.5475856 0.5906248</span></span>
+<span id="cb231-10"><a href="korrelationen.html#cb231-10" aria-hidden="true" tabindex="-1"></a><span class="do">## sample estimates:</span></span>
+<span id="cb231-11"><a href="korrelationen.html#cb231-11" aria-hidden="true" tabindex="-1"></a><span class="do">##       cor </span></span>
+<span id="cb231-12"><a href="korrelationen.html#cb231-12" aria-hidden="true" tabindex="-1"></a><span class="do">## 0.5694954</span></span></code></pre></div>
 <p>Unser p-Wert ist &lt; 2.2e-16 und damit niedriger als unser Signfikanzlevel bei 0.05 (α = 0.05). Wir können die Null-Hypothese also zurückweisen es gibt einen signfikanten linearen Zusammenhang in unseren Variablen Solarstrahlung und Batteriespannung.</p>
 </div>
-<div id="korrelation-vs.-regression" class="section level3" number="9.3.3">
-<h3><span class="header-section-number">9.3.3</span> Korrelation vs. Regression</h3>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-271"></span>
+<div id="korrelation-vs.-regression" class="section level3" number="8.3.3">
+<h3><span class="header-section-number">8.3.3</span> Korrelation vs. Regression</h3>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-233"></span>
 <img src="images/060.png" alt="Illustration von Z. Jaadi: https://towardsdatascience.com" width="100%" />
 <p class="caption">
-Figure 9.7: Illustration von Z. Jaadi: <a href="https://towardsdatascience.com" class="uri">https://towardsdatascience.com</a>
+Figure 8.7: Illustration von Z. Jaadi: <a href="https://towardsdatascience.com" class="uri">https://towardsdatascience.com</a>
 </p>
 </div>
 <p>Diese Begriffe werden häufig durcheinander geworfen. Korrelation ist ein statistisches Maß um die Richtung und Stärke eines Zusammenhanges wiederzugeben. Regression ist eine Technik um die abhängige Variable y vorherzusagen basierend auf der bekannten Variable x und der Gleichung y = a + bx.</p>

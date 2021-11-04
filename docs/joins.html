@@ -142,7 +142,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="1.2.2" data-path="falbeispiele.html"><a href="falbeispiele.html#mtcars-datensatz"><i class="fa fa-check"></i><b>1.2.2</b> <code>mtcars</code> Datensatz</a></li>
 </ul></li>
 <li class="chapter" data-level="1.3" data-path="über-mich.html"><a href="über-mich.html"><i class="fa fa-check"></i><b>1.3</b> Über mich</a></li>
-<li class="chapter" data-level="1.4" data-path="literatur.html"><a href="literatur.html"><i class="fa fa-check"></i><b>1.4</b> Literatur 🔍</a></li>
+<li class="chapter" data-level="1.4" data-path="literatur.html"><a href="literatur.html"><i class="fa fa-check"></i><b>1.4</b> Literatur</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="erste-schritte-mit-r.html"><a href="erste-schritte-mit-r.html"><i class="fa fa-check"></i><b>2</b> Erste Schritte mit R</a>
 <ul>
@@ -376,80 +376,80 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>full_join()</li>
 </ul>
 <p>umgesetzt werden.</p>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-151"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-150"></span>
 <img src="images/044.png" alt="Illustration von C.Wilke: https://wilkelab.org/SDS375/" width="100%" />
 <p class="caption">
 Figure 5.8: Illustration von C.Wilke: <a href="https://wilkelab.org/SDS375/" class="uri">https://wilkelab.org/SDS375/</a>
 </p>
 </div>
-<div class="sourceCode" id="cb109"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb109-1"><a href="joins.html#cb109-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Bandmitglieder</span></span>
-<span id="cb109-2"><a href="joins.html#cb109-2" aria-hidden="true" tabindex="-1"></a>band_members <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
-<span id="cb109-3"><a href="joins.html#cb109-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">name =</span> <span class="fu">c</span>(<span class="st">&quot;Mick&quot;</span>, <span class="st">&quot;John&quot;</span>, <span class="st">&quot;Paul&quot;</span>), </span>
-<span id="cb109-4"><a href="joins.html#cb109-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">band =</span> <span class="fu">c</span>(<span class="st">&quot;Stones&quot;</span>, <span class="st">&quot;Beatles&quot;</span>, <span class="st">&quot;Beatles&quot;</span>)</span>
-<span id="cb109-5"><a href="joins.html#cb109-5" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb109-6"><a href="joins.html#cb109-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb109-7"><a href="joins.html#cb109-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Instrumente von Bandmitgliedern</span></span>
-<span id="cb109-8"><a href="joins.html#cb109-8" aria-hidden="true" tabindex="-1"></a>band_instruments <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
-<span id="cb109-9"><a href="joins.html#cb109-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">name =</span> <span class="fu">c</span>(<span class="st">&quot;John&quot;</span>, <span class="st">&quot;Paul&quot;</span>, <span class="st">&quot;Keith&quot;</span>), </span>
-<span id="cb109-10"><a href="joins.html#cb109-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">plays =</span> <span class="fu">c</span>(<span class="st">&quot;guitar&quot;</span>, <span class="st">&quot;bass&quot;</span>, <span class="st">&quot;guitar&quot;</span>)</span>
-<span id="cb109-11"><a href="joins.html#cb109-11" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb109-12"><a href="joins.html#cb109-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb109-13"><a href="joins.html#cb109-13" aria-hidden="true" tabindex="-1"></a>band_members</span>
-<span id="cb109-14"><a href="joins.html#cb109-14" aria-hidden="true" tabindex="-1"></a><span class="do">## # A tibble: 3 x 2</span></span>
-<span id="cb109-15"><a href="joins.html#cb109-15" aria-hidden="true" tabindex="-1"></a><span class="do">##   name  band   </span></span>
-<span id="cb109-16"><a href="joins.html#cb109-16" aria-hidden="true" tabindex="-1"></a><span class="do">##   &lt;chr&gt; &lt;chr&gt;  </span></span>
-<span id="cb109-17"><a href="joins.html#cb109-17" aria-hidden="true" tabindex="-1"></a><span class="do">## 1 Mick  Stones </span></span>
-<span id="cb109-18"><a href="joins.html#cb109-18" aria-hidden="true" tabindex="-1"></a><span class="do">## 2 John  Beatles</span></span>
-<span id="cb109-19"><a href="joins.html#cb109-19" aria-hidden="true" tabindex="-1"></a><span class="do">## 3 Paul  Beatles</span></span>
-<span id="cb109-20"><a href="joins.html#cb109-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb109-21"><a href="joins.html#cb109-21" aria-hidden="true" tabindex="-1"></a>band_instruments</span>
-<span id="cb109-22"><a href="joins.html#cb109-22" aria-hidden="true" tabindex="-1"></a><span class="do">## # A tibble: 3 x 2</span></span>
-<span id="cb109-23"><a href="joins.html#cb109-23" aria-hidden="true" tabindex="-1"></a><span class="do">##   name  plays </span></span>
-<span id="cb109-24"><a href="joins.html#cb109-24" aria-hidden="true" tabindex="-1"></a><span class="do">##   &lt;chr&gt; &lt;chr&gt; </span></span>
-<span id="cb109-25"><a href="joins.html#cb109-25" aria-hidden="true" tabindex="-1"></a><span class="do">## 1 John  guitar</span></span>
-<span id="cb109-26"><a href="joins.html#cb109-26" aria-hidden="true" tabindex="-1"></a><span class="do">## 2 Paul  bass  </span></span>
-<span id="cb109-27"><a href="joins.html#cb109-27" aria-hidden="true" tabindex="-1"></a><span class="do">## 3 Keith guitar</span></span>
-<span id="cb109-28"><a href="joins.html#cb109-28" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb109-29"><a href="joins.html#cb109-29" aria-hidden="true" tabindex="-1"></a><span class="co"># Verknüpfe Table rechts mit links</span></span>
-<span id="cb109-30"><a href="joins.html#cb109-30" aria-hidden="true" tabindex="-1"></a><span class="fu">left_join</span>(band_members, band_instruments)</span>
-<span id="cb109-31"><a href="joins.html#cb109-31" aria-hidden="true" tabindex="-1"></a><span class="do">## # A tibble: 3 x 3</span></span>
-<span id="cb109-32"><a href="joins.html#cb109-32" aria-hidden="true" tabindex="-1"></a><span class="do">##   name  band    plays </span></span>
-<span id="cb109-33"><a href="joins.html#cb109-33" aria-hidden="true" tabindex="-1"></a><span class="do">##   &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt; </span></span>
-<span id="cb109-34"><a href="joins.html#cb109-34" aria-hidden="true" tabindex="-1"></a><span class="do">## 1 Mick  Stones  &lt;NA&gt;  </span></span>
-<span id="cb109-35"><a href="joins.html#cb109-35" aria-hidden="true" tabindex="-1"></a><span class="do">## 2 John  Beatles guitar</span></span>
-<span id="cb109-36"><a href="joins.html#cb109-36" aria-hidden="true" tabindex="-1"></a><span class="do">## 3 Paul  Beatles bass</span></span>
-<span id="cb109-37"><a href="joins.html#cb109-37" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb109-38"><a href="joins.html#cb109-38" aria-hidden="true" tabindex="-1"></a><span class="co"># Verknüpfe Table links mit rechts</span></span>
-<span id="cb109-39"><a href="joins.html#cb109-39" aria-hidden="true" tabindex="-1"></a><span class="fu">right_join</span>(band_members, band_instruments)</span>
-<span id="cb109-40"><a href="joins.html#cb109-40" aria-hidden="true" tabindex="-1"></a><span class="do">## # A tibble: 3 x 3</span></span>
-<span id="cb109-41"><a href="joins.html#cb109-41" aria-hidden="true" tabindex="-1"></a><span class="do">##   name  band    plays </span></span>
-<span id="cb109-42"><a href="joins.html#cb109-42" aria-hidden="true" tabindex="-1"></a><span class="do">##   &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt; </span></span>
-<span id="cb109-43"><a href="joins.html#cb109-43" aria-hidden="true" tabindex="-1"></a><span class="do">## 1 John  Beatles guitar</span></span>
-<span id="cb109-44"><a href="joins.html#cb109-44" aria-hidden="true" tabindex="-1"></a><span class="do">## 2 Paul  Beatles bass  </span></span>
-<span id="cb109-45"><a href="joins.html#cb109-45" aria-hidden="true" tabindex="-1"></a><span class="do">## 3 Keith &lt;NA&gt;    guitar</span></span>
-<span id="cb109-46"><a href="joins.html#cb109-46" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb109-47"><a href="joins.html#cb109-47" aria-hidden="true" tabindex="-1"></a><span class="co"># Verknüpfe die Schnittmengen</span></span>
-<span id="cb109-48"><a href="joins.html#cb109-48" aria-hidden="true" tabindex="-1"></a><span class="fu">inner_join</span>(band_members, band_instruments)</span>
-<span id="cb109-49"><a href="joins.html#cb109-49" aria-hidden="true" tabindex="-1"></a><span class="do">## # A tibble: 2 x 3</span></span>
-<span id="cb109-50"><a href="joins.html#cb109-50" aria-hidden="true" tabindex="-1"></a><span class="do">##   name  band    plays </span></span>
-<span id="cb109-51"><a href="joins.html#cb109-51" aria-hidden="true" tabindex="-1"></a><span class="do">##   &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt; </span></span>
-<span id="cb109-52"><a href="joins.html#cb109-52" aria-hidden="true" tabindex="-1"></a><span class="do">## 1 John  Beatles guitar</span></span>
-<span id="cb109-53"><a href="joins.html#cb109-53" aria-hidden="true" tabindex="-1"></a><span class="do">## 2 Paul  Beatles bass</span></span>
-<span id="cb109-54"><a href="joins.html#cb109-54" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb109-55"><a href="joins.html#cb109-55" aria-hidden="true" tabindex="-1"></a><span class="co"># Verknüpfe alle Fälle</span></span>
-<span id="cb109-56"><a href="joins.html#cb109-56" aria-hidden="true" tabindex="-1"></a><span class="fu">full_join</span>(band_members, band_instruments)</span>
-<span id="cb109-57"><a href="joins.html#cb109-57" aria-hidden="true" tabindex="-1"></a><span class="do">## # A tibble: 4 x 3</span></span>
-<span id="cb109-58"><a href="joins.html#cb109-58" aria-hidden="true" tabindex="-1"></a><span class="do">##   name  band    plays </span></span>
-<span id="cb109-59"><a href="joins.html#cb109-59" aria-hidden="true" tabindex="-1"></a><span class="do">##   &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt; </span></span>
-<span id="cb109-60"><a href="joins.html#cb109-60" aria-hidden="true" tabindex="-1"></a><span class="do">## 1 Mick  Stones  &lt;NA&gt;  </span></span>
-<span id="cb109-61"><a href="joins.html#cb109-61" aria-hidden="true" tabindex="-1"></a><span class="do">## 2 John  Beatles guitar</span></span>
-<span id="cb109-62"><a href="joins.html#cb109-62" aria-hidden="true" tabindex="-1"></a><span class="do">## 3 Paul  Beatles bass  </span></span>
-<span id="cb109-63"><a href="joins.html#cb109-63" aria-hidden="true" tabindex="-1"></a><span class="do">## 4 Keith &lt;NA&gt;    guitar</span></span></code></pre></div>
+<div class="sourceCode" id="cb110"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb110-1"><a href="joins.html#cb110-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Bandmitglieder</span></span>
+<span id="cb110-2"><a href="joins.html#cb110-2" aria-hidden="true" tabindex="-1"></a>band_members <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
+<span id="cb110-3"><a href="joins.html#cb110-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">name =</span> <span class="fu">c</span>(<span class="st">&quot;Mick&quot;</span>, <span class="st">&quot;John&quot;</span>, <span class="st">&quot;Paul&quot;</span>), </span>
+<span id="cb110-4"><a href="joins.html#cb110-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">band =</span> <span class="fu">c</span>(<span class="st">&quot;Stones&quot;</span>, <span class="st">&quot;Beatles&quot;</span>, <span class="st">&quot;Beatles&quot;</span>)</span>
+<span id="cb110-5"><a href="joins.html#cb110-5" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb110-6"><a href="joins.html#cb110-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb110-7"><a href="joins.html#cb110-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Instrumente von Bandmitgliedern</span></span>
+<span id="cb110-8"><a href="joins.html#cb110-8" aria-hidden="true" tabindex="-1"></a>band_instruments <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
+<span id="cb110-9"><a href="joins.html#cb110-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">name =</span> <span class="fu">c</span>(<span class="st">&quot;John&quot;</span>, <span class="st">&quot;Paul&quot;</span>, <span class="st">&quot;Keith&quot;</span>), </span>
+<span id="cb110-10"><a href="joins.html#cb110-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">plays =</span> <span class="fu">c</span>(<span class="st">&quot;guitar&quot;</span>, <span class="st">&quot;bass&quot;</span>, <span class="st">&quot;guitar&quot;</span>)</span>
+<span id="cb110-11"><a href="joins.html#cb110-11" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb110-12"><a href="joins.html#cb110-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb110-13"><a href="joins.html#cb110-13" aria-hidden="true" tabindex="-1"></a>band_members</span>
+<span id="cb110-14"><a href="joins.html#cb110-14" aria-hidden="true" tabindex="-1"></a><span class="do">## # A tibble: 3 x 2</span></span>
+<span id="cb110-15"><a href="joins.html#cb110-15" aria-hidden="true" tabindex="-1"></a><span class="do">##   name  band   </span></span>
+<span id="cb110-16"><a href="joins.html#cb110-16" aria-hidden="true" tabindex="-1"></a><span class="do">##   &lt;chr&gt; &lt;chr&gt;  </span></span>
+<span id="cb110-17"><a href="joins.html#cb110-17" aria-hidden="true" tabindex="-1"></a><span class="do">## 1 Mick  Stones </span></span>
+<span id="cb110-18"><a href="joins.html#cb110-18" aria-hidden="true" tabindex="-1"></a><span class="do">## 2 John  Beatles</span></span>
+<span id="cb110-19"><a href="joins.html#cb110-19" aria-hidden="true" tabindex="-1"></a><span class="do">## 3 Paul  Beatles</span></span>
+<span id="cb110-20"><a href="joins.html#cb110-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb110-21"><a href="joins.html#cb110-21" aria-hidden="true" tabindex="-1"></a>band_instruments</span>
+<span id="cb110-22"><a href="joins.html#cb110-22" aria-hidden="true" tabindex="-1"></a><span class="do">## # A tibble: 3 x 2</span></span>
+<span id="cb110-23"><a href="joins.html#cb110-23" aria-hidden="true" tabindex="-1"></a><span class="do">##   name  plays </span></span>
+<span id="cb110-24"><a href="joins.html#cb110-24" aria-hidden="true" tabindex="-1"></a><span class="do">##   &lt;chr&gt; &lt;chr&gt; </span></span>
+<span id="cb110-25"><a href="joins.html#cb110-25" aria-hidden="true" tabindex="-1"></a><span class="do">## 1 John  guitar</span></span>
+<span id="cb110-26"><a href="joins.html#cb110-26" aria-hidden="true" tabindex="-1"></a><span class="do">## 2 Paul  bass  </span></span>
+<span id="cb110-27"><a href="joins.html#cb110-27" aria-hidden="true" tabindex="-1"></a><span class="do">## 3 Keith guitar</span></span>
+<span id="cb110-28"><a href="joins.html#cb110-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb110-29"><a href="joins.html#cb110-29" aria-hidden="true" tabindex="-1"></a><span class="co"># Verknüpfe Table rechts mit links</span></span>
+<span id="cb110-30"><a href="joins.html#cb110-30" aria-hidden="true" tabindex="-1"></a><span class="fu">left_join</span>(band_members, band_instruments)</span>
+<span id="cb110-31"><a href="joins.html#cb110-31" aria-hidden="true" tabindex="-1"></a><span class="do">## # A tibble: 3 x 3</span></span>
+<span id="cb110-32"><a href="joins.html#cb110-32" aria-hidden="true" tabindex="-1"></a><span class="do">##   name  band    plays </span></span>
+<span id="cb110-33"><a href="joins.html#cb110-33" aria-hidden="true" tabindex="-1"></a><span class="do">##   &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt; </span></span>
+<span id="cb110-34"><a href="joins.html#cb110-34" aria-hidden="true" tabindex="-1"></a><span class="do">## 1 Mick  Stones  &lt;NA&gt;  </span></span>
+<span id="cb110-35"><a href="joins.html#cb110-35" aria-hidden="true" tabindex="-1"></a><span class="do">## 2 John  Beatles guitar</span></span>
+<span id="cb110-36"><a href="joins.html#cb110-36" aria-hidden="true" tabindex="-1"></a><span class="do">## 3 Paul  Beatles bass</span></span>
+<span id="cb110-37"><a href="joins.html#cb110-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb110-38"><a href="joins.html#cb110-38" aria-hidden="true" tabindex="-1"></a><span class="co"># Verknüpfe Table links mit rechts</span></span>
+<span id="cb110-39"><a href="joins.html#cb110-39" aria-hidden="true" tabindex="-1"></a><span class="fu">right_join</span>(band_members, band_instruments)</span>
+<span id="cb110-40"><a href="joins.html#cb110-40" aria-hidden="true" tabindex="-1"></a><span class="do">## # A tibble: 3 x 3</span></span>
+<span id="cb110-41"><a href="joins.html#cb110-41" aria-hidden="true" tabindex="-1"></a><span class="do">##   name  band    plays </span></span>
+<span id="cb110-42"><a href="joins.html#cb110-42" aria-hidden="true" tabindex="-1"></a><span class="do">##   &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt; </span></span>
+<span id="cb110-43"><a href="joins.html#cb110-43" aria-hidden="true" tabindex="-1"></a><span class="do">## 1 John  Beatles guitar</span></span>
+<span id="cb110-44"><a href="joins.html#cb110-44" aria-hidden="true" tabindex="-1"></a><span class="do">## 2 Paul  Beatles bass  </span></span>
+<span id="cb110-45"><a href="joins.html#cb110-45" aria-hidden="true" tabindex="-1"></a><span class="do">## 3 Keith &lt;NA&gt;    guitar</span></span>
+<span id="cb110-46"><a href="joins.html#cb110-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb110-47"><a href="joins.html#cb110-47" aria-hidden="true" tabindex="-1"></a><span class="co"># Verknüpfe die Schnittmengen</span></span>
+<span id="cb110-48"><a href="joins.html#cb110-48" aria-hidden="true" tabindex="-1"></a><span class="fu">inner_join</span>(band_members, band_instruments)</span>
+<span id="cb110-49"><a href="joins.html#cb110-49" aria-hidden="true" tabindex="-1"></a><span class="do">## # A tibble: 2 x 3</span></span>
+<span id="cb110-50"><a href="joins.html#cb110-50" aria-hidden="true" tabindex="-1"></a><span class="do">##   name  band    plays </span></span>
+<span id="cb110-51"><a href="joins.html#cb110-51" aria-hidden="true" tabindex="-1"></a><span class="do">##   &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt; </span></span>
+<span id="cb110-52"><a href="joins.html#cb110-52" aria-hidden="true" tabindex="-1"></a><span class="do">## 1 John  Beatles guitar</span></span>
+<span id="cb110-53"><a href="joins.html#cb110-53" aria-hidden="true" tabindex="-1"></a><span class="do">## 2 Paul  Beatles bass</span></span>
+<span id="cb110-54"><a href="joins.html#cb110-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb110-55"><a href="joins.html#cb110-55" aria-hidden="true" tabindex="-1"></a><span class="co"># Verknüpfe alle Fälle</span></span>
+<span id="cb110-56"><a href="joins.html#cb110-56" aria-hidden="true" tabindex="-1"></a><span class="fu">full_join</span>(band_members, band_instruments)</span>
+<span id="cb110-57"><a href="joins.html#cb110-57" aria-hidden="true" tabindex="-1"></a><span class="do">## # A tibble: 4 x 3</span></span>
+<span id="cb110-58"><a href="joins.html#cb110-58" aria-hidden="true" tabindex="-1"></a><span class="do">##   name  band    plays </span></span>
+<span id="cb110-59"><a href="joins.html#cb110-59" aria-hidden="true" tabindex="-1"></a><span class="do">##   &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt; </span></span>
+<span id="cb110-60"><a href="joins.html#cb110-60" aria-hidden="true" tabindex="-1"></a><span class="do">## 1 Mick  Stones  &lt;NA&gt;  </span></span>
+<span id="cb110-61"><a href="joins.html#cb110-61" aria-hidden="true" tabindex="-1"></a><span class="do">## 2 John  Beatles guitar</span></span>
+<span id="cb110-62"><a href="joins.html#cb110-62" aria-hidden="true" tabindex="-1"></a><span class="do">## 3 Paul  Beatles bass  </span></span>
+<span id="cb110-63"><a href="joins.html#cb110-63" aria-hidden="true" tabindex="-1"></a><span class="do">## 4 Keith &lt;NA&gt;    guitar</span></span></code></pre></div>
 <p>Es gibt auch eine Möglichkeit viele data.frames in R in Form einer Liste zu verknüpfen. Dazu wird das package <code>plyr::</code> benötigt und die FUnktion <code>join_all()</code></p>
-<div class="sourceCode" id="cb110"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb110-1"><a href="joins.html#cb110-1" aria-hidden="true" tabindex="-1"></a><span class="co"># x,y,z sind die Dateinamen die verknüpft werden sollen</span></span>
-<span id="cb110-2"><a href="joins.html#cb110-2" aria-hidden="true" tabindex="-1"></a><span class="co"># by = ist die Spalte die verknüpft werden soll</span></span>
-<span id="cb110-3"><a href="joins.html#cb110-3" aria-hidden="true" tabindex="-1"></a><span class="co"># type = left bedeutet, dass alle neuen Spalten an data..frame x angepasst werden</span></span>
-<span id="cb110-4"><a href="joins.html#cb110-4" aria-hidden="true" tabindex="-1"></a>plyr<span class="sc">::</span><span class="fu">join_all</span>(<span class="fu">list</span>(x,y,z), <span class="at">by=</span><span class="st">&#39;Flag&#39;</span>, <span class="at">type=</span><span class="st">&#39;left&#39;</span>) </span></code></pre></div>
+<div class="sourceCode" id="cb111"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb111-1"><a href="joins.html#cb111-1" aria-hidden="true" tabindex="-1"></a><span class="co"># x,y,z sind die Dateinamen die verknüpft werden sollen</span></span>
+<span id="cb111-2"><a href="joins.html#cb111-2" aria-hidden="true" tabindex="-1"></a><span class="co"># by = ist die Spalte die verknüpft werden soll</span></span>
+<span id="cb111-3"><a href="joins.html#cb111-3" aria-hidden="true" tabindex="-1"></a><span class="co"># type = left bedeutet, dass alle neuen Spalten an data..frame x angepasst werden</span></span>
+<span id="cb111-4"><a href="joins.html#cb111-4" aria-hidden="true" tabindex="-1"></a>plyr<span class="sc">::</span><span class="fu">join_all</span>(<span class="fu">list</span>(x,y,z), <span class="at">by=</span><span class="st">&#39;Flag&#39;</span>, <span class="at">type=</span><span class="st">&#39;left&#39;</span>) </span></code></pre></div>
 </div>
             </section>
 

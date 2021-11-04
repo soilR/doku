@@ -566,9 +566,9 @@ ceiling_date(x, "minute")
 Im Folgenden schauen wir uns nun den Verlauf der Bodentemperatur in 10 cm Tiefe an. Die X Achse ist lesbar, lässt sich aber besser darstellen:
 
 ```{r}
-p <- koog %>%
-  filter(date < as.POSIXct("2010-04-30 23:00")) %>%
-  ggplot(aes(date, st10)) +
+p <- koog_day %>%
+  filter(daily < as.POSIXct("2010-04-30")) %>%
+  ggplot(aes(daily, st10)) +
   geom_line()
 p
 ```
@@ -588,15 +588,15 @@ p + scale_x_date(date_breaks = "1 week")
 
 ```{r}
 # Setze die breaks wöchentlich
-p + scale_x_datetime(date_breaks = "1 week")
+p + scale_x_date(date_breaks = "1 week")
 # Wöchentliche Skalierung und KW des Jahres
-p + scale_x_datetime(date_breaks = "1 week", date_labels = "%W")
+p + scale_x_date(date_breaks = "1 week", date_labels = "%W")
 # Tagesbasis
-p + scale_x_datetime(date_breaks = "1 day", date_labels = "%m-%d")
+p + scale_x_date(date_breaks = "1 day", date_labels = "%m-%d")
 # Tagesbasis und jetzt auch lesbar
-p + scale_x_datetime(date_breaks = "4 day", date_labels = "%m-%d")
+p + scale_x_date(date_breaks = "4 day", date_labels = "%m-%d")
 # Tagesbasis und jetzt auch lesbar mit minor breaks auf Tagesbasis
-p + scale_x_datetime(date_breaks = "4 day", date_labels = "%m-%d", minor_breaks = "1 day")
+p + scale_x_date(date_breaks = "4 day", date_labels = "%m-%d", minor_breaks = "1 day")
 ```
 
 Für alle Jahre geht dies natürlich auch:

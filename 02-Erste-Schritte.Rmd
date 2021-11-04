@@ -36,7 +36,7 @@ R ist eine Programmiersprache für Datenanalyse mit vielen Möglichkeiten der Da
 
 Bevor wir starten müssen noch einige Dinge installiert werden. Ein Tutorial dazu findet ihr auch hier:
 
-```{r echo=F}
+```{r}
 knitr::include_url("https://www.youtube.com/watch?v=NZxSA80lF1I&t=53s")
 ```
 
@@ -201,9 +201,9 @@ Einen klaren Gedanken auf das Papier zu bringen ist nicht so einfach. Beim Schre
 
 ```{r echo=T, eval=F}
 library(tidyverse)
-df<-read.csv("data/data.csv", sep = ";")
-ggplot2::ggplot(df, aes(wt,EH100b))+geom_point()
-cor(df$wt, df$EH100a, use = "complete", method = "pearson")
+df<-read.csv("data/data_year.csv", sep = ",")
+ggplot2::ggplot(df, aes(wt,eh100b))+geom_point()
+cor(df$wt, df$eh100a, use = "complete", method = "pearson")
 ```
 
 💪 Beispiel
@@ -213,13 +213,13 @@ cor(df$wt, df$EH100a, use = "complete", method = "pearson")
 library(tidyverse)
 # Lese den Datensatz "data" vom Speicherkoog ein
 # Das Trennzeichen ist Semikolon
-df <- read.csv("data/data.csv", sep = ";")
-# Stelle den Grundwasserstand (wt; in cm) und das Redoxpotenzial in 100 cm Tiefe dar (in mV)
+df <- read.csv("data/data_year.csv", sep = ",")
+# Stelle den mittleren Grundwasserstand (wt; in cm) dar
 ggplot(data = df, aes(x = wt)) + 
-    geom_histogram()
+    geom_boxplot()
 # Berechne Pearson Korrelationskoeffizient zwischen Grundwasserstand und Redoxpotenzial in 100 cm Tiefe.
 # Entferne vorher fehlende Werte
-cor(df$wt, df$EH100a, use = "complete", method = "pearson")
+cor(df$wt, df$eh100a, use = "complete", method = "pearson")
 ```
 
 ## Objekte und Funktionen

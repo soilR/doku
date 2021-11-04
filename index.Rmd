@@ -28,7 +28,58 @@ my_theme <- theme(
   panel.grid.minor = element_blank(), 
   panel.border = element_blank())
 
+
 ```
+
+```{r eval = F, echo = F}
+# Prepare the data
+# This is only done once and this code chunk dont needs to be further evaluated
+# Daten Speicherkoog einlesen
+readr::read_delim("data/data.csv", delim = ";",
+                          col_types = readr::cols(
+                            # date = überschreibt die Spalte mit der neuen Spezifikation
+                            date = readr::col_datetime(format = "%d.%m.%Y %H:%M") 
+  )) %>%
+  janitor::clean_names() %>%
+  filter(date < as.POSIXct("2010-05-01 00:00")) %>%
+  write.csv("data/data_koog_example.csv")
+
+koog_raw <- readr::read_delim("data/data.csv", lazy = F, delim = ";", 
+                          col_types = readr::cols(
+                            # date = überschreibt die Spalte mit der neuen Spezifikation
+                            date = readr::col_datetime(format = "%d.%m.%Y %H:%M") 
+  )) %>% janitor::clean_names() %>%
+  dplyr::mutate(across(contains("eh"), ~. + 207)) %>%
+  mutate(year = lubridate::year(date),
+         month = lubridate::month(date),
+         day = lubridate::day(date),
+         hour = lubridate::hour(date), 
+         daily = format(date, "%Y-%m-%d"),
+         monthly = format(date, "%Y-%m"))
+
+# write hourly data
+readr::write_csv(x = koog_raw, file = "data/data_hourly.csv")
+# Tagesmittelwerte
+koog_day <- koog_raw %>%
+  group_by(daily) %>%
+  summarise_if(is.numeric, mean, na.rm = T) %>%
+  mutate(daily = as.Date(daily)) %>%
+  select(!contains("oxy"))
+# write daily data
+readr::write_csv(x = koog_day, file = "data/data_daily.csv")
+# Monatsmittelwerte
+koog_month <- koog_raw %>%
+  group_by(monthly) %>%
+  summarise_if(is.numeric, mean, na.rm = T)
+# Jahresmittelwerte
+koog_year <- koog_raw %>%
+  group_by(year) %>%
+  summarise_if(is.numeric, mean, na.rm = T)
+# write yearly data
+readr::write_csv(x = koog_year, file = "data/data_year.csv")
+
+```
+
 
 # Einleitung
 
@@ -99,7 +150,7 @@ Hi, ich bin Kristof und mit Leib und Seele Bodenkundler. Neben dreckigen Händen
 
 R und ich haben also (Stand 09.04.2021) 1-jähriges und was soll ich sagen...😍 Ich hoffe wir werden noch viele schöne Jahre miteinander haben und ich kann den ein oder anderen überzeugen sich dieser Partnerschaft anzuschließen.
 
-## Literatur 🔍
+## Literatur
 
 Diese Dokumentation orientiert sich stark an den folgenden Quellen, hinsichtlich Aufbau, Inhalt und Abbildungen. Quasi ein großer Kuchen mit vielen Inhaltsstoffen, die dem Leser hoffentlich schmecken werden. Als wesentliche Quellen zu nennen sind:
 

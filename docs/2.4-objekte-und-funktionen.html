@@ -15,19 +15,13 @@
 <meta name="author" content="Dr. Kristof Dorau" />
 
 
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  TeX: { equationNumbers: { autoNumber: "AMS" } }
-});
-</script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <meta name="description" content="Explorative Datenanalyse in den Geowissenschaften">
 
 <title>2.4 Objekte und Funktionen | Daten Analyse mit RStudio - Dokumentation</title>
 
-<script src="libs/header-attrs-2.10/header-attrs.js"></script>
-<script src="libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
 <script src="libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -43,7 +37,6 @@ MathJax.Hub.Config({
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
 <script src="libs/navigation-1.1/tabsets.js"></script>
-<script src="libs/twitter-widget-0.0.1/widgets.js"></script>
 
 
 <style type="text/css">code{white-space: pre;}</style>
@@ -163,7 +156,7 @@ details > summary {
 <li><a href="1.2-falbeispiele.html#mtcars-datensatz"><span class="toc-section-number">1.2.2</span> <code>mtcars</code> Datensatz</a></li>
 </ul></li>
 <li><a href="1.3-über-mich.html#über-mich"><span class="toc-section-number">1.3</span> Über mich</a></li>
-<li><a href="1.4-literatur.html#literatur"><span class="toc-section-number">1.4</span> Literatur 🔍</a></li>
+<li><a href="1.4-literatur.html#literatur"><span class="toc-section-number">1.4</span> Literatur</a></li>
 </ul></li>
 <li><a href="2-erste-schritte-mit-r.html#erste-schritte-mit-r"><span class="toc-section-number">2</span> Erste Schritte mit R</a>
 <ul>
@@ -220,156 +213,6 @@ details > summary {
 <li><a href="3.7-erstellen-von-eigenen-funktionen.html#nutze-...-als-platzhalter"><span class="toc-section-number">3.7.2</span> Nutze <code>...</code> als Platzhalter</a></li>
 </ul></li>
 </ul></li>
-<li><a href="4-wie-lese-ich-daten-ein.html#wie-lese-ich-daten-ein"><span class="toc-section-number">4</span> Wie lese ich Daten ein</a>
-<ul>
-<li><a href="4.1-tidy-data.html#tidy-data"><span class="toc-section-number">4.1</span> Tidy data</a></li>
-<li><a href="4.2-dateiformate.html#dateiformate"><span class="toc-section-number">4.2</span> Dateiformate</a></li>
-<li><a href="4.3-readrread_delim.html#readrread_delim"><span class="toc-section-number">4.3</span> readr::read_delim()</a></li>
-<li><a href="4.4-arbeiten-mit-zeiten.html#arbeiten-mit-zeiten"><span class="toc-section-number">4.4</span> Arbeiten mit Zeiten</a></li>
-</ul></li>
-<li><a href="5-daten-manipulieren.html#daten-manipulieren"><span class="toc-section-number">5</span> Daten manipulieren</a>
-<ul>
-<li><a href="5.1-select---variablen-auswählen-spaltenweise.html#select---variablen-auswählen-spaltenweise"><span class="toc-section-number">5.1</span> select() - Variablen auswählen (spaltenweise)</a></li>
-<li><a href="5.2-filter---filtern-von-variablen-zeilenweise.html#filter---filtern-von-variablen-zeilenweise"><span class="toc-section-number">5.2</span> filter() - Filtern von Variablen (zeilenweise)</a></li>
-<li><a href="5.3-arrange---sortieren-des-datensatzes.html#arrange---sortieren-des-datensatzes"><span class="toc-section-number">5.3</span> arrange() - Sortieren des Datensatzes</a></li>
-<li><a href="5.4-mutate---erstelle-neue-variablen.html#mutate---erstelle-neue-variablen"><span class="toc-section-number">5.4</span> mutate() - Erstelle neue Variablen</a></li>
-<li><a href="5.5-summarize---zusammenfassung-von-variablen.html#summarize---zusammenfassung-von-variablen"><span class="toc-section-number">5.5</span> summarize() - Zusammenfassung von Variablen</a></li>
-<li><a href="5.6-group_by---gruppiere-variablen.html#group_by---gruppiere-variablen"><span class="toc-section-number">5.6</span> group_by - Gruppiere Variablen</a></li>
-<li><a href="5.7-across---anwenden-von-funktionen-auf-spalten.html#across---anwenden-von-funktionen-auf-spalten"><span class="toc-section-number">5.7</span> across() - Anwenden von Funktionen auf Spalten</a></li>
-<li><a href="5.8-joins.html#joins"><span class="toc-section-number">5.8</span> joins</a></li>
-<li><a href="5.9-pivot_longer---long-data-format.html#pivot_longer---long-data-format"><span class="toc-section-number">5.9</span> pivot_longer() - Long data format</a></li>
-<li><a href="5.10-pivot_wider---wider-data-format.html#pivot_wider---wider-data-format"><span class="toc-section-number">5.10</span> pivot_wider() - wider data format</a></li>
-</ul></li>
-<li><a href="6-explorative-datenanalyse.html#explorative-datenanalyse"><span class="toc-section-number">6</span> Explorative-Datenanalyse</a>
-<ul>
-<li><a href="6.1-fehlende-werte-1.html#fehlende-werte-1"><span class="toc-section-number">6.1</span> Fehlende Werte</a></li>
-</ul></li>
-<li><a href="7-datenvisualisierung.html#datenvisualisierung"><span class="toc-section-number">7</span> Datenvisualisierung</a>
-<ul>
-<li><a href="7.1-ggplot2---grammar-of-graphics.html#ggplot2---grammar-of-graphics"><span class="toc-section-number">7.1</span> ggplot2 - grammar of graphics</a>
-<ul>
-<li><a href="7.1-ggplot2---grammar-of-graphics.html#schlüsselkomponenten"><span class="toc-section-number">7.1.1</span> Schlüsselkomponenten</a></li>
-<li><a href="7.1-ggplot2---grammar-of-graphics.html#aesthetics-color-size-shape"><span class="toc-section-number">7.1.2</span> Aesthetics (color, size, shape)</a></li>
-<li><a href="7.1-ggplot2---grammar-of-graphics.html#smoothers-and-models"><span class="toc-section-number">7.1.3</span> Smoothers and models</a></li>
-<li><a href="7.1-ggplot2---grammar-of-graphics.html#labels"><span class="toc-section-number">7.1.4</span> Labels</a></li>
-<li><a href="7.1-ggplot2---grammar-of-graphics.html#themes"><span class="toc-section-number">7.1.5</span> Themes</a></li>
-<li><a href="7.1-ggplot2---grammar-of-graphics.html#facets"><span class="toc-section-number">7.1.6</span> Facets</a></li>
-<li><a href="7.1-ggplot2---grammar-of-graphics.html#coordinate-system"><span class="toc-section-number">7.1.7</span> Coordinate system</a></li>
-<li><a href="7.1-ggplot2---grammar-of-graphics.html#annotations"><span class="toc-section-number">7.1.8</span> Annotations</a></li>
-</ul></li>
-<li><a href="7.2-verknüfpen-von-tidyverse-und-ggplot.html#verknüfpen-von-tidyverse-und-ggplot"><span class="toc-section-number">7.2</span> Verknüfpen von tidyverse und ggplot</a></li>
-<li><a href="7.3-arbeiten-mit-zeiten-1.html#arbeiten-mit-zeiten-1"><span class="toc-section-number">7.3</span> Arbeiten mit Zeiten</a>
-<ul>
-<li><a href="7.3-arbeiten-mit-zeiten-1.html#strings"><span class="toc-section-number">7.3.1</span> strings</a></li>
-<li><a href="7.3-arbeiten-mit-zeiten-1.html#von-individuellen-komponenten"><span class="toc-section-number">7.3.2</span> Von individuellen Komponenten</a></li>
-<li><a href="7.3-arbeiten-mit-zeiten-1.html#ein-bestehendes-objekt"><span class="toc-section-number">7.3.3</span> Ein bestehendes Objekt</a></li>
-<li><a href="7.3-arbeiten-mit-zeiten-1.html#darstellung-in-abbildungen"><span class="toc-section-number">7.3.4</span> Darstellung in Abbildungen</a></li>
-</ul></li>
-<li><a href="7.4-pivoting-to-longer-format.html#pivoting-to-longer-format"><span class="toc-section-number">7.4</span> pivoting to longer format</a></li>
-<li><a href="7.5-good-practices.html#good-practices"><span class="toc-section-number">7.5</span> Good practices</a></li>
-<li><a href="7.6-speichern-eines-plots.html#speichern-eines-plots"><span class="toc-section-number">7.6</span> Speichern eines plots</a></li>
-<li><a href="7.7-formen-der-darstellung.html#formen-der-darstellung"><span class="toc-section-number">7.7</span> Formen der Darstellung</a>
-<ul>
-<li><a href="7.7-formen-der-darstellung.html#overplotting"><span class="toc-section-number">7.7.1</span> Overplotting</a></li>
-<li><a href="7.7-formen-der-darstellung.html#positions-argument"><span class="toc-section-number">7.7.2</span> Positions Argument</a></li>
-<li><a href="7.7-formen-der-darstellung.html#inspirationen"><span class="toc-section-number">7.7.3</span> Inspirationen</a></li>
-</ul></li>
-<li><a href="7.8-farbauswahl.html#farbauswahl"><span class="toc-section-number">7.8</span> Farbauswahl</a>
-<ul>
-<li><a href="7.8-farbauswahl.html#beispiele-für-unterschiedliche-farben"><span class="toc-section-number">7.8.1</span> Beispiele für unterschiedliche Farben</a></li>
-</ul></li>
-</ul></li>
-<li><a href="8-karten-erstellen-in-r.html#karten-erstellen-in-r"><span class="toc-section-number">8</span> Karten erstellen in R 🌍</a>
-<ul>
-<li><a href="8.1-datenquellen.html#datenquellen"><span class="toc-section-number">8.1</span> Datenquellen</a></li>
-<li><a href="8.2-packages.html#packages"><span class="toc-section-number">8.2</span> Packages</a>
-<ul>
-<li><a href="8.2-packages.html#rgdal-package"><span class="toc-section-number">8.2.1</span> <code>rgdal</code> package</a></li>
-</ul></li>
-<li><a href="8.3-übungen.html#übungen"><span class="toc-section-number">8.3</span> Übungen</a>
-<ul>
-<li><a href="8.3-übungen.html#erstelle-eine-karte-der-bundesrepublik"><span class="toc-section-number">8.3.1</span> Erstelle eine Karte der Bundesrepublik</a></li>
-<li><a href="8.3-übungen.html#erstelle-eine-weltkarte"><span class="toc-section-number">8.3.2</span> Erstelle eine Weltkarte</a></li>
-</ul></li>
-</ul></li>
-<li><a href="9-statistische-auswertungen.html#statistische-auswertungen"><span class="toc-section-number">9</span> Statistische Auswertungen</a>
-<ul>
-<li><a href="9.1-verteilung-der-daten.html#verteilung-der-daten"><span class="toc-section-number">9.1</span> Verteilung der Daten</a></li>
-<li><a href="9.2-datentransformation.html#datentransformation"><span class="toc-section-number">9.2</span> Datentransformation</a></li>
-<li><a href="9.3-korrelationen.html#korrelationen"><span class="toc-section-number">9.3</span> Korrelationen</a>
-<ul>
-<li><a href="9.3-korrelationen.html#pearsons-korrelationkoeffizient-r"><span class="toc-section-number">9.3.1</span> Pearson’s Korrelationkoeffizient (r)</a></li>
-<li><a href="9.3-korrelationen.html#signifikanztest"><span class="toc-section-number">9.3.2</span> Signifikanztest</a></li>
-<li><a href="9.3-korrelationen.html#korrelation-vs.-regression"><span class="toc-section-number">9.3.3</span> Korrelation vs. Regression</a></li>
-</ul></li>
-<li><a href="9.4-pca.html#pca"><span class="toc-section-number">9.4</span> PCA</a>
-<ul>
-<li><a href="9.4-pca.html#datenauswahl"><span class="toc-section-number">9.4.1</span> Datenauswahl</a></li>
-<li><a href="9.4-pca.html#daten-standardisieren"><span class="toc-section-number">9.4.2</span> Daten Standardisieren</a></li>
-<li><a href="9.4-pca.html#eigenvalues"><span class="toc-section-number">9.4.3</span> Eigenvalues</a></li>
-<li><a href="9.4-pca.html#darstellen-der-ergebnisse"><span class="toc-section-number">9.4.4</span> Darstellen der Ergebnisse</a></li>
-</ul></li>
-</ul></li>
-<li><a href="10-datenmanagement.html#datenmanagement"><span class="toc-section-number">10</span> Datenmanagement</a></li>
-<li><a href="11-reporting-in-rmarkdown.html#reporting-in-rmarkdown"><span class="toc-section-number">11</span> Reporting in Rmarkdown</a>
-<ul>
-<li><a href="11.1-mathematische-befehle.html#mathematische-befehle"><span class="toc-section-number">11.1</span> Mathematische Befehle</a>
-<ul>
-<li><a href="11.1-mathematische-befehle.html#brüche"><span class="toc-section-number">11.1.1</span> Brüche</a></li>
-<li><a href="11.1-mathematische-befehle.html#hoch--und-tiefstellung"><span class="toc-section-number">11.1.2</span> Hoch- und Tiefstellung</a></li>
-<li><a href="11.1-mathematische-befehle.html#quadratwurzel"><span class="toc-section-number">11.1.3</span> Quadratwurzel</a></li>
-</ul></li>
-</ul></li>
-<li><a href="12-github.html#github"><span class="toc-section-number">12</span> Github</a>
-<ul>
-<li><a href="12.1-projekt-erstellen.html#projekt-erstellen"><span class="toc-section-number">12.1</span> Projekt erstellen</a>
-<ul>
-<li><a href="12.1-projekt-erstellen.html#workflow"><span class="toc-section-number">12.1.1</span> Workflow</a></li>
-<li><a href="12.1-projekt-erstellen.html#synchronisieren-vieler-dateien"><span class="toc-section-number">12.1.2</span> Synchronisieren vieler Dateien</a></li>
-<li><a href="12.1-projekt-erstellen.html#ordner-lokal-behalten-aber-auf-git-löschen"><span class="toc-section-number">12.1.3</span> Ordner lokal behalten aber auf Git löschen</a></li>
-</ul></li>
-<li><a href="12.2-cache-säubern.html#cache-säubern"><span class="toc-section-number">12.2</span> Cache säubern</a></li>
-</ul></li>
-<li><a href="13-bookdown.html#bookdown"><span class="toc-section-number">13</span> Bookdown</a>
-<ul>
-<li><a href="13.1-vorbereitung.html#vorbereitung"><span class="toc-section-number">13.1</span> Vorbereitung</a></li>
-<li><a href="13.2-github-pages.html#github-pages"><span class="toc-section-number">13.2</span> Github pages</a></li>
-<li><a href="13.3-emojiys.html#emojiys"><span class="toc-section-number">13.3</span> Emojiys</a></li>
-</ul></li>
-<li><a href="14-blogdown.html#blogdown"><span class="toc-section-number">14</span> Blogdown</a>
-<ul>
-<li><a href="14.1-setup-a-homepage-with-hugo-and-blogdown.html#setup-a-homepage-with-hugo-and-blogdown"><span class="toc-section-number">14.1</span> Setup a homepage with Hugo and blogdown</a></li>
-<li><a href="14.2-github-1.html#github-1"><span class="toc-section-number">14.2</span> Github</a></li>
-<li><a href="14.3-domain-name.html#domain-name"><span class="toc-section-number">14.3</span> Domain name</a></li>
-<li><a href="14.4-homepage.html#homepage"><span class="toc-section-number">14.4</span> Homepage</a></li>
-<li><a href="14.5-wowchemystarter-academic.html#wowchemystarter-academic"><span class="toc-section-number">14.5</span> “wowchemy/starter-academic”</a></li>
-<li><a href="14.6-where-to-adjust-the-homepage.html#where-to-adjust-the-homepage"><span class="toc-section-number">14.6</span> Where to adjust the Homepage</a></li>
-<li><a href="14.7-workflow-1.html#workflow-1"><span class="toc-section-number">14.7</span> Workflow</a></li>
-<li><a href="14.8-yaml-metadata.html#yaml-metadata"><span class="toc-section-number">14.8</span> YAML metadata</a></li>
-</ul></li>
-<li><a href="15-shiny.html#shiny"><span class="toc-section-number">15</span> Shiny</a>
-<ul>
-<li><a href="15.1-ui-benutzeroberfläche.html#ui-benutzeroberfläche"><span class="toc-section-number">15.1</span> UI Benutzeroberfläche</a></li>
-<li><a href="15.2-welche-befehle-sollen-ausgeführt-werden.html#welche-befehle-sollen-ausgeführt-werden"><span class="toc-section-number">15.2</span> Welche Befehle sollen ausgeführt werden</a></li>
-<li><a href="15.3-beispiel-speicherkoog.html#beispiel-speicherkoog"><span class="toc-section-number">15.3</span> Beispiel Speicherkoog</a></li>
-</ul></li>
-<li><a href="16-diverses.html#diverses"><span class="toc-section-number">16</span> Diverses</a>
-<ul>
-<li><a href="16.1-entfernen-aller-packages.html#entfernen-aller-packages"><span class="toc-section-number">16.1</span> Entfernen aller packages</a></li>
-<li><a href="16.2-shortcuts.html#shortcuts"><span class="toc-section-number">16.2</span> Shortcuts</a></li>
-<li><a href="16.3-faqs.html#faqs"><span class="toc-section-number">16.3</span> FAQs</a>
-<ul>
-<li><a href="16.3-faqs.html#kalender-erstellen"><span class="toc-section-number">16.3.1</span> Kalender erstellen</a></li>
-<li><a href="16.3-faqs.html#rstudio-1"><span class="toc-section-number">16.3.2</span> RStudio</a></li>
-<li><a href="16.3-faqs.html#datenmanipulation"><span class="toc-section-number">16.3.3</span> Datenmanipulation</a></li>
-</ul></li>
-<li><a href="16.4-visualisation.html#visualisation"><span class="toc-section-number">16.4</span> Visualisation</a>
-<ul>
-<li><a href="16.4-visualisation.html#superscripts-and-subscripts"><span class="toc-section-number">16.4.1</span> Superscripts and subscripts</a></li>
-<li><a href="16.4-visualisation.html#modifying-labels-in-faceted-plots"><span class="toc-section-number">16.4.2</span> Modifying labels in faceted plots</a></li>
-</ul></li>
-<li><a href="16.5-glossary.html#glossary"><span class="toc-section-number">16.5</span> Glossary</a></li>
-</ul></li>
 </ul>
 </div>
 </div>
@@ -379,11 +222,11 @@ details > summary {
 <div id="objekte-und-funktionen" class="section level2" number="2.4">
 <h2><span class="header-section-number">2.4</span> Objekte und Funktionen</h2>
 <p>R arbeitet fast ausschließlich mit zwei Dingen: Objekte und Funktionen. Im Folgenden Beispiel definieren wir ein Objekt (5 gemessene Werte der Lufttemperatur) mit der Funktion <code>c()</code>.</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="2.4-objekte-und-funktionen.html#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Erstelle ein Objekt Lufttemperatur</span></span>
-<span id="cb9-2"><a href="2.4-objekte-und-funktionen.html#cb9-2" aria-hidden="true" tabindex="-1"></a>lt <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">13.5</span>, <span class="fl">16.7</span>, <span class="fl">18.3</span>, <span class="fl">21.9</span>, <span class="fl">3.9</span>)</span>
-<span id="cb9-3"><a href="2.4-objekte-und-funktionen.html#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Berechne die mittlere Lufttemperatur </span></span>
-<span id="cb9-4"><a href="2.4-objekte-und-funktionen.html#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(lt)</span>
-<span id="cb9-5"><a href="2.4-objekte-und-funktionen.html#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] 14.86</span></span></code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="2.4-objekte-und-funktionen.html#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Erstelle ein Objekt Lufttemperatur</span></span>
+<span id="cb10-2"><a href="2.4-objekte-und-funktionen.html#cb10-2" aria-hidden="true" tabindex="-1"></a>lt <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">13.5</span>, <span class="fl">16.7</span>, <span class="fl">18.3</span>, <span class="fl">21.9</span>, <span class="fl">3.9</span>)</span>
+<span id="cb10-3"><a href="2.4-objekte-und-funktionen.html#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Berechne die mittlere Lufttemperatur </span></span>
+<span id="cb10-4"><a href="2.4-objekte-und-funktionen.html#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(lt)</span>
+<span id="cb10-5"><a href="2.4-objekte-und-funktionen.html#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] 14.86</span></span></code></pre></div>
 <p>Ein Objekt in R kann alles sein, bspw. ein</p>
 <ul>
 <li>Datensatz (data frames im Englischen; eine Sonderform des data frame ist ein tibble aber dazu später mehr)</li>
@@ -400,49 +243,49 @@ details > summary {
 <div id="neue-objekte-erstellen" class="section level3" number="2.4.1">
 <h3><span class="header-section-number">2.4.1</span> Neue Objekte erstellen</h3>
 <p>Einer der wichtigsten Kommandos in R ist der Befehl ein bestimmtes Objekt zuzuweisen mit <code>&lt;-</code>.</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="2.4-objekte-und-funktionen.html#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Erstelle ein Objekt mit dem Namen a und weisen ihm einen Satz zu</span></span>
-<span id="cb10-2"><a href="2.4-objekte-und-funktionen.html#cb10-2" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="st">&quot;Beste Norddeutschland Exkursion der Welt&quot;</span></span></code></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="2.4-objekte-und-funktionen.html#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Erstelle ein Objekt mit dem Namen a und weisen ihm einen Satz zu</span></span>
+<span id="cb11-2"><a href="2.4-objekte-und-funktionen.html#cb11-2" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="st">&quot;Beste Norddeutschland Exkursion der Welt&quot;</span></span></code></pre></div>
 <p>Schaue was passiert wenn du <code>a</code> in die Konsole eintippst.</p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="2.4-objekte-und-funktionen.html#cb11-1" aria-hidden="true" tabindex="-1"></a>a</span>
-<span id="cb11-2"><a href="2.4-objekte-und-funktionen.html#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] &quot;Beste Norddeutschland Exkursion der Welt&quot;</span></span></code></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="2.4-objekte-und-funktionen.html#cb12-1" aria-hidden="true" tabindex="-1"></a>a</span>
+<span id="cb12-2"><a href="2.4-objekte-und-funktionen.html#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] &quot;Beste Norddeutschland Exkursion der Welt&quot;</span></span></code></pre></div>
 <p>Was passiert wenn du <code>aa</code> eintippst?</p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="2.4-objekte-und-funktionen.html#cb12-1" aria-hidden="true" tabindex="-1"></a>aa</span></code></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="2.4-objekte-und-funktionen.html#cb13-1" aria-hidden="true" tabindex="-1"></a>aa</span></code></pre></div>
 <p><strong>Fehler: Objekt ‘aa’ nicht gefunden</strong></p>
 <p>Richtig, wir haben das Objekt <code>aa</code> noch nicht definiert und daher kann es in unserer Arbeitsumgebung (Environment) auch nicht gefunden werden.</p>
 <p>Objekte können auch miteinander verbunden werden:</p>
-<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="2.4-objekte-und-funktionen.html#cb13-1" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="dv">1</span></span>
-<span id="cb13-2"><a href="2.4-objekte-und-funktionen.html#cb13-2" aria-hidden="true" tabindex="-1"></a>b <span class="ot">&lt;-</span> <span class="dv">100</span></span>
-<span id="cb13-3"><a href="2.4-objekte-und-funktionen.html#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Was ist a + b?</span></span>
-<span id="cb13-4"><a href="2.4-objekte-und-funktionen.html#cb13-4" aria-hidden="true" tabindex="-1"></a>a<span class="sc">+</span>b</span>
-<span id="cb13-5"><a href="2.4-objekte-und-funktionen.html#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] 101</span></span>
-<span id="cb13-6"><a href="2.4-objekte-und-funktionen.html#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Weise die Berechnung a + b dem Objekt c zu </span></span>
-<span id="cb13-7"><a href="2.4-objekte-und-funktionen.html#cb13-7" aria-hidden="true" tabindex="-1"></a>c <span class="ot">&lt;-</span> a <span class="sc">+</span> b</span>
-<span id="cb13-8"><a href="2.4-objekte-und-funktionen.html#cb13-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Was passiert wenn du c in die Konsole eintippst?</span></span>
-<span id="cb13-9"><a href="2.4-objekte-und-funktionen.html#cb13-9" aria-hidden="true" tabindex="-1"></a>c</span>
-<span id="cb13-10"><a href="2.4-objekte-und-funktionen.html#cb13-10" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] 101</span></span></code></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="2.4-objekte-und-funktionen.html#cb14-1" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="dv">1</span></span>
+<span id="cb14-2"><a href="2.4-objekte-und-funktionen.html#cb14-2" aria-hidden="true" tabindex="-1"></a>b <span class="ot">&lt;-</span> <span class="dv">100</span></span>
+<span id="cb14-3"><a href="2.4-objekte-und-funktionen.html#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Was ist a + b?</span></span>
+<span id="cb14-4"><a href="2.4-objekte-und-funktionen.html#cb14-4" aria-hidden="true" tabindex="-1"></a>a<span class="sc">+</span>b</span>
+<span id="cb14-5"><a href="2.4-objekte-und-funktionen.html#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] 101</span></span>
+<span id="cb14-6"><a href="2.4-objekte-und-funktionen.html#cb14-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Weise die Berechnung a + b dem Objekt c zu </span></span>
+<span id="cb14-7"><a href="2.4-objekte-und-funktionen.html#cb14-7" aria-hidden="true" tabindex="-1"></a>c <span class="ot">&lt;-</span> a <span class="sc">+</span> b</span>
+<span id="cb14-8"><a href="2.4-objekte-und-funktionen.html#cb14-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Was passiert wenn du c in die Konsole eintippst?</span></span>
+<span id="cb14-9"><a href="2.4-objekte-und-funktionen.html#cb14-9" aria-hidden="true" tabindex="-1"></a>c</span>
+<span id="cb14-10"><a href="2.4-objekte-und-funktionen.html#cb14-10" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] 101</span></span></code></pre></div>
 <p>Bei der Bennenung von Objekten gibt es auch Fehlerpotentzial:</p>
-<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="2.4-objekte-und-funktionen.html#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Dies sind falsch benannte Objekte</span></span>
-<span id="cb14-2"><a href="2.4-objekte-und-funktionen.html#cb14-2" aria-hidden="true" tabindex="-1"></a>Luft temperatur <span class="ot">&lt;-</span> <span class="dv">23</span> <span class="co"># Hat ein Leerzeichen</span></span>
-<span id="cb14-3"><a href="2.4-objekte-und-funktionen.html#cb14-3" aria-hidden="true" tabindex="-1"></a>5lufttemperatur <span class="ot">&lt;-</span> <span class="dv">23</span> <span class="co"># Beginnt mit einer Zahl</span></span>
-<span id="cb14-4"><a href="2.4-objekte-und-funktionen.html#cb14-4" aria-hidden="true" tabindex="-1"></a>lufttemperatur<span class="sc">!</span> <span class="er">&lt;</span><span class="sc">-</span> <span class="dv">23</span> <span class="co"># Nicht gültiger character &quot;!&quot;</span></span></code></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="2.4-objekte-und-funktionen.html#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Dies sind falsch benannte Objekte</span></span>
+<span id="cb15-2"><a href="2.4-objekte-und-funktionen.html#cb15-2" aria-hidden="true" tabindex="-1"></a>Luft temperatur <span class="ot">&lt;-</span> <span class="dv">23</span> <span class="co"># Hat ein Leerzeichen</span></span>
+<span id="cb15-3"><a href="2.4-objekte-und-funktionen.html#cb15-3" aria-hidden="true" tabindex="-1"></a>5lufttemperatur <span class="ot">&lt;-</span> <span class="dv">23</span> <span class="co"># Beginnt mit einer Zahl</span></span>
+<span id="cb15-4"><a href="2.4-objekte-und-funktionen.html#cb15-4" aria-hidden="true" tabindex="-1"></a>lufttemperatur<span class="sc">!</span> <span class="er">&lt;</span><span class="sc">-</span> <span class="dv">23</span> <span class="co"># Nicht gültiger character &quot;!&quot;</span></span></code></pre></div>
 <p>Darüber hinaus ist es wichtig zu wissen, dass R seeeeEeehr sensibel gegenüber Groß- und Kleinschreibung ist. Die folgenden Objekte sind alle individuell:</p>
-<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="2.4-objekte-und-funktionen.html#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Dies sind drei verschiedene Objekte</span></span>
-<span id="cb15-2"><a href="2.4-objekte-und-funktionen.html#cb15-2" aria-hidden="true" tabindex="-1"></a>test <span class="ot">&lt;-</span> <span class="dv">1</span></span>
-<span id="cb15-3"><a href="2.4-objekte-und-funktionen.html#cb15-3" aria-hidden="true" tabindex="-1"></a>TEST <span class="ot">&lt;-</span> <span class="dv">100</span></span>
-<span id="cb15-4"><a href="2.4-objekte-und-funktionen.html#cb15-4" aria-hidden="true" tabindex="-1"></a>tEsT <span class="ot">&lt;-</span> <span class="dv">1000</span></span></code></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="2.4-objekte-und-funktionen.html#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Dies sind drei verschiedene Objekte</span></span>
+<span id="cb16-2"><a href="2.4-objekte-und-funktionen.html#cb16-2" aria-hidden="true" tabindex="-1"></a>test <span class="ot">&lt;-</span> <span class="dv">1</span></span>
+<span id="cb16-3"><a href="2.4-objekte-und-funktionen.html#cb16-3" aria-hidden="true" tabindex="-1"></a>TEST <span class="ot">&lt;-</span> <span class="dv">100</span></span>
+<span id="cb16-4"><a href="2.4-objekte-und-funktionen.html#cb16-4" aria-hidden="true" tabindex="-1"></a>tEsT <span class="ot">&lt;-</span> <span class="dv">1000</span></span></code></pre></div>
 <p>💡 Große Buchstaben sollten bei der Benennung von Objekten nach Möglichkeit vermieden werden. Es dauert einfach länger <code>MYDATA</code> oder <code>MyData</code> zu tippen als <code>mydata</code> ohne Umschalttaste.</p>
 <p>Einige Dinge die man bei der Benennung von Objekten berücksichtigen sollte:</p>
-<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="2.4-objekte-und-funktionen.html#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Gute Objektnamen</span></span>
-<span id="cb16-2"><a href="2.4-objekte-und-funktionen.html#cb16-2" aria-hidden="true" tabindex="-1"></a>mittelwert <span class="ot">&lt;-</span> <span class="fl">2.5</span></span>
-<span id="cb16-3"><a href="2.4-objekte-und-funktionen.html#cb16-3" aria-hidden="true" tabindex="-1"></a>mein_alter <span class="ot">&lt;-</span> <span class="dv">32</span></span>
-<span id="cb16-4"><a href="2.4-objekte-und-funktionen.html#cb16-4" aria-hidden="true" tabindex="-1"></a>groesse_in_cm <span class="ot">&lt;-</span> <span class="dv">175</span></span>
-<span id="cb16-5"><a href="2.4-objekte-und-funktionen.html#cb16-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Schlechte Objektnamen</span></span>
-<span id="cb16-6"><a href="2.4-objekte-und-funktionen.html#cb16-6" aria-hidden="true" tabindex="-1"></a>x1 <span class="ot">&lt;-</span> <span class="fl">2.5</span></span>
-<span id="cb16-7"><a href="2.4-objekte-und-funktionen.html#cb16-7" aria-hidden="true" tabindex="-1"></a>var2 <span class="ot">&lt;-</span> <span class="dv">32</span></span>
-<span id="cb16-8"><a href="2.4-objekte-und-funktionen.html#cb16-8" aria-hidden="true" tabindex="-1"></a>asdasdasd <span class="ot">&lt;-</span> <span class="dv">175</span></span></code></pre></div>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="2.4-objekte-und-funktionen.html#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Gute Objektnamen</span></span>
+<span id="cb17-2"><a href="2.4-objekte-und-funktionen.html#cb17-2" aria-hidden="true" tabindex="-1"></a>mittelwert <span class="ot">&lt;-</span> <span class="fl">2.5</span></span>
+<span id="cb17-3"><a href="2.4-objekte-und-funktionen.html#cb17-3" aria-hidden="true" tabindex="-1"></a>mein_alter <span class="ot">&lt;-</span> <span class="dv">32</span></span>
+<span id="cb17-4"><a href="2.4-objekte-und-funktionen.html#cb17-4" aria-hidden="true" tabindex="-1"></a>groesse_in_cm <span class="ot">&lt;-</span> <span class="dv">175</span></span>
+<span id="cb17-5"><a href="2.4-objekte-und-funktionen.html#cb17-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Schlechte Objektnamen</span></span>
+<span id="cb17-6"><a href="2.4-objekte-und-funktionen.html#cb17-6" aria-hidden="true" tabindex="-1"></a>x1 <span class="ot">&lt;-</span> <span class="fl">2.5</span></span>
+<span id="cb17-7"><a href="2.4-objekte-und-funktionen.html#cb17-7" aria-hidden="true" tabindex="-1"></a>var2 <span class="ot">&lt;-</span> <span class="dv">32</span></span>
+<span id="cb17-8"><a href="2.4-objekte-und-funktionen.html#cb17-8" aria-hidden="true" tabindex="-1"></a>asdasdasd <span class="ot">&lt;-</span> <span class="dv">175</span></span></code></pre></div>
 <p>Ich persönlich bevorzuge <strong>snake_case</strong> Wörter. Später lernen wir noch, dass sich diese Wörter durch ein Argument - den Namen Separator <code>name_sep</code> - trennen lassen. Dies wird beim Umstrukturieren von Daten wichtig. Egal welches Schema man auch wählt, einheitlich vorzugehen ist das Wichtigste.</p>
 <p>💡 Gute Objektnamen sollten kurz und prägnant sein! Lange Namen sind nicht intuitiv und Buchstaben alleine sagen auch nichts aus. Als Beispiel: Die durchschnittliche Lufttemperatur im Speicherkoog für März kann man mit <code>airtemp_march_koog</code> abkürzen.</p>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-33"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-34"></span>
 <img src="images/016.png" alt="Illustration von Allison Horst" width="100%" />
 <p class="caption">
 Figure 2.11: Illustration von Allison Horst
@@ -452,21 +295,21 @@ Figure 2.11: Illustration von Allison Horst
 <div id="beispiel-umrechnen-von-c-in-k" class="section level3" number="2.4.2">
 <h3><span class="header-section-number">2.4.2</span> Beispiel: Umrechnen von °C in K</h3>
 <p>Der Mittelwert der Jahresdurchschnittstemperatur im Speicherkoog beträgt 10.14 °C. Mit Skalaren kann man einfache Rechenoperationen durchführen.</p>
-<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="2.4-objekte-und-funktionen.html#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Mittelwert der Lufttemperatur in °C</span></span>
-<span id="cb17-2"><a href="2.4-objekte-und-funktionen.html#cb17-2" aria-hidden="true" tabindex="-1"></a>mittel_at <span class="ot">&lt;-</span> <span class="fl">10.14</span></span>
-<span id="cb17-3"><a href="2.4-objekte-und-funktionen.html#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Lasst uns die Lufttemperatur umrechnen von °C in K</span></span>
-<span id="cb17-4"><a href="2.4-objekte-und-funktionen.html#cb17-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 0 °C sind 273.15 K</span></span>
-<span id="cb17-5"><a href="2.4-objekte-und-funktionen.html#cb17-5" aria-hidden="true" tabindex="-1"></a>mittel_at <span class="sc">+</span> <span class="fl">273.15</span></span>
-<span id="cb17-6"><a href="2.4-objekte-und-funktionen.html#cb17-6" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] 283.29</span></span></code></pre></div>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="2.4-objekte-und-funktionen.html#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Mittelwert der Lufttemperatur in °C</span></span>
+<span id="cb18-2"><a href="2.4-objekte-und-funktionen.html#cb18-2" aria-hidden="true" tabindex="-1"></a>mittel_at <span class="ot">&lt;-</span> <span class="fl">10.14</span></span>
+<span id="cb18-3"><a href="2.4-objekte-und-funktionen.html#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Lasst uns die Lufttemperatur umrechnen von °C in K</span></span>
+<span id="cb18-4"><a href="2.4-objekte-und-funktionen.html#cb18-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 0 °C sind 273.15 K</span></span>
+<span id="cb18-5"><a href="2.4-objekte-und-funktionen.html#cb18-5" aria-hidden="true" tabindex="-1"></a>mittel_at <span class="sc">+</span> <span class="fl">273.15</span></span>
+<span id="cb18-6"><a href="2.4-objekte-und-funktionen.html#cb18-6" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] 283.29</span></span></code></pre></div>
 <p>Das Jahresmittel der Lufttemperatur beträgt also 283,3 K.</p>
-<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="2.4-objekte-und-funktionen.html#cb18-1" aria-hidden="true" tabindex="-1"></a>mittel_at</span>
-<span id="cb18-2"><a href="2.4-objekte-und-funktionen.html#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] 10.14</span></span></code></pre></div>
+<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="2.4-objekte-und-funktionen.html#cb19-1" aria-hidden="true" tabindex="-1"></a>mittel_at</span>
+<span id="cb19-2"><a href="2.4-objekte-und-funktionen.html#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] 10.14</span></span></code></pre></div>
 <p>Ups….wieso wird <code>mittel_at</code> denn trotzdem in °C angezeigt ?! Denke daran:</p>
 <p>🚨 <strong>Um ein Objekt zu ändern, muss es neu zugewiesen werden!</strong></p>
-<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="2.4-objekte-und-funktionen.html#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Zuweisung des Jahresmittels der Lufttemperatur in K anstelle von °C</span></span>
-<span id="cb19-2"><a href="2.4-objekte-und-funktionen.html#cb19-2" aria-hidden="true" tabindex="-1"></a>mittel_at_k <span class="ot">&lt;-</span> mittel_at <span class="sc">+</span> <span class="fl">273.15</span></span>
-<span id="cb19-3"><a href="2.4-objekte-und-funktionen.html#cb19-3" aria-hidden="true" tabindex="-1"></a>mittel_at_k</span>
-<span id="cb19-4"><a href="2.4-objekte-und-funktionen.html#cb19-4" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] 283.29</span></span></code></pre></div>
+<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="2.4-objekte-und-funktionen.html#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Zuweisung des Jahresmittels der Lufttemperatur in K anstelle von °C</span></span>
+<span id="cb20-2"><a href="2.4-objekte-und-funktionen.html#cb20-2" aria-hidden="true" tabindex="-1"></a>mittel_at_k <span class="ot">&lt;-</span> mittel_at <span class="sc">+</span> <span class="fl">273.15</span></span>
+<span id="cb20-3"><a href="2.4-objekte-und-funktionen.html#cb20-3" aria-hidden="true" tabindex="-1"></a>mittel_at_k</span>
+<span id="cb20-4"><a href="2.4-objekte-und-funktionen.html#cb20-4" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] 283.29</span></span></code></pre></div>
 <p>Wenn ihr bis hierhin gekommen seid, dann habt ihr schon eine ganze Menge verinnerlicht. Nicht das wir uns schon zurücklehnen wollen, aber ein ein wenig Grund zum Feiern ist es dennoch 🎉🍻.</p>
 </div>
 </div>

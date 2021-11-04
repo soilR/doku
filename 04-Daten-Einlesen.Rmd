@@ -104,13 +104,13 @@ Nun wollen wir lernen, einen großen Datensatz einzulesen. Dazu verwenden wir di
 
 eingelesen werden können. Dazu geben wir den Dateipfad relativ zu unserem Arbeitsverzeichnis an. Ich habe bspw. meine Daten zum einlesen in einem Unterordner `data`. Von der Datei selber wird der Pfad durch `/` getrennt angegeben. 
 
-```{r}
+```{r eval = F}
 # Laden der Daten mit der Funktion read_csv
-koog_raw <- readr::read_csv("data/data.csv")
+koog_raw <- readr::read_csv2("data/data_year.csv")
 koog_raw
 ```
 
-Ui, hier ist aber etwas schief gelaufen. Wir haben die Datei erfolgreich in unserer Arbeitsumgebung laden können aber 94537 observations bei nur einer Variable?! Schaut euch den Datensatz `koog_raw` mal genauer an, indem ihr auf das Symbol (rot umrandet) klickt: 
+Ui, hier ist aber etwas schief gelaufen. Wir haben die Datei erfolgreich in unserer Arbeitsumgebung laden können aber 12 observations bei nur einer Variable?! Schaut euch den Datensatz `koog_raw` mal genauer an, indem ihr auf das Symbol (rot umrandet) klickt: 
 
 ```{r echo = F, fig.cap="Environment"}
 knitr::include_graphics("images/031.png")
@@ -119,7 +119,7 @@ knitr::include_graphics("images/031.png")
 Richtig, wir haben vergessen den Zahlenseparator richtig zu setzen. read_csv() und read_csv2 sind Spezialformen der Funktion `read_delim()`. Zukünftig werden wir `read_delim()` verwenden wenn nicht klar ist, wie die Trennzeichen in unseren Rohdaten hinterlegt sind. Bei uns ist es ein `;` und kein `,`. 
 
 ```{r}
-koog_raw <- readr::read_delim("data/data.csv", delim = ";")
+koog_raw <- readr::read_delim("data/data_year.csv", delim = ",")
 ```
 
 💡 Wenn ihr in der Klammer von read_delim() den Tab drückt (siehe unten) dann bekommt ihr einen Vorschlag, welche Argumente in der Funktion belegt werden können. 
@@ -140,7 +140,7 @@ Wir haben ja bereits gesagt, dass es praktischer ist ausschließlich die Spalten
 knitr::include_graphics("images/034.png")
 ```
 
-```{r}
+```{r eval = F}
 koog_raw <- janitor::clean_names(koog_raw)
 head(koog_raw, n = 5)
 ```
@@ -175,12 +175,9 @@ Wofür stehen die einzelnen Spalten also:
 In der Spalte `time` stehen die Zeilennummern und unter `date` finden wir das Datum, allerdings als `character` hinterlegt. Beim Einlesen der Daten denkt R, dass es sich um Text handelt aber wir wissen es besser. Wir müssen R nun explizit mitteilen wie unser Zeitstempel `date` codiert ist, nämlich mit `%Tag.%Monat.%Jahr %Stunde:%Minute`. In R wird ein Datum jedoch mit `r Sys.time()` angegeben. Wir tun also folgendes:
 
 ```{r}
-koog_raw <- readr::read_delim("data/data.csv", delim = ";", 
-                          col_types = readr::cols(
-                            # date = überschreibt die Spalte mit der neuen Spezifikation
-                            date = readr::col_datetime(format = "%d.%m.%Y %H:%M") 
-  ))
-head(koog_raw, n = c(5,2))
+koog_raw <- readr::read_delim("data/data_koog_example.csv", delim = ",")
+head(koog_raw, n = c(5,3))
+
 ```
 
 Super...nun haben wir ein sogenanntes `POSIXct` Objekt. Dies ist eine Datum+Zeitangabe in R und lässt sich mit einfachen Funktionen in eine andere Darstellungsform codieren. Welche Möglichkeiten es gibt Zeiten zu codieren könnt ihr unter `?strptime` nachlesen. Die gängisten Kürzel findet ihr aber hier aufgelistet:
@@ -218,8 +215,4 @@ koog_raw %>%
   select(date) %>%
   mutate(date = month(date)) %>% # Extrahiere das Jahr mit der Funktion `month()`
   head(n = 5)
-```
-
-```{r echo = F}
-koog_raw <- janitor::clean_names(koog_raw)
 ```

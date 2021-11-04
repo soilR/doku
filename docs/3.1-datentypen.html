@@ -15,19 +15,13 @@
 <meta name="author" content="Dr. Kristof Dorau" />
 
 
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  TeX: { equationNumbers: { autoNumber: "AMS" } }
-});
-</script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <meta name="description" content="Explorative Datenanalyse in den Geowissenschaften">
 
 <title>3.1 Datentypen | Daten Analyse mit RStudio - Dokumentation</title>
 
-<script src="libs/header-attrs-2.10/header-attrs.js"></script>
-<script src="libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
 <script src="libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -43,7 +37,6 @@ MathJax.Hub.Config({
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
 <script src="libs/navigation-1.1/tabsets.js"></script>
-<script src="libs/twitter-widget-0.0.1/widgets.js"></script>
 
 
 <style type="text/css">code{white-space: pre;}</style>
@@ -163,7 +156,7 @@ details > summary {
 <li><a href="1.2-falbeispiele.html#mtcars-datensatz"><span class="toc-section-number">1.2.2</span> <code>mtcars</code> Datensatz</a></li>
 </ul></li>
 <li><a href="1.3-über-mich.html#über-mich"><span class="toc-section-number">1.3</span> Über mich</a></li>
-<li><a href="1.4-literatur.html#literatur"><span class="toc-section-number">1.4</span> Literatur 🔍</a></li>
+<li><a href="1.4-literatur.html#literatur"><span class="toc-section-number">1.4</span> Literatur</a></li>
 </ul></li>
 <li><a href="2-erste-schritte-mit-r.html#erste-schritte-mit-r"><span class="toc-section-number">2</span> Erste Schritte mit R</a>
 <ul>
@@ -220,156 +213,6 @@ details > summary {
 <li><a href="3.7-erstellen-von-eigenen-funktionen.html#nutze-...-als-platzhalter"><span class="toc-section-number">3.7.2</span> Nutze <code>...</code> als Platzhalter</a></li>
 </ul></li>
 </ul></li>
-<li><a href="4-wie-lese-ich-daten-ein.html#wie-lese-ich-daten-ein"><span class="toc-section-number">4</span> Wie lese ich Daten ein</a>
-<ul>
-<li><a href="4.1-tidy-data.html#tidy-data"><span class="toc-section-number">4.1</span> Tidy data</a></li>
-<li><a href="4.2-dateiformate.html#dateiformate"><span class="toc-section-number">4.2</span> Dateiformate</a></li>
-<li><a href="4.3-readrread_delim.html#readrread_delim"><span class="toc-section-number">4.3</span> readr::read_delim()</a></li>
-<li><a href="4.4-arbeiten-mit-zeiten.html#arbeiten-mit-zeiten"><span class="toc-section-number">4.4</span> Arbeiten mit Zeiten</a></li>
-</ul></li>
-<li><a href="5-daten-manipulieren.html#daten-manipulieren"><span class="toc-section-number">5</span> Daten manipulieren</a>
-<ul>
-<li><a href="5.1-select---variablen-auswählen-spaltenweise.html#select---variablen-auswählen-spaltenweise"><span class="toc-section-number">5.1</span> select() - Variablen auswählen (spaltenweise)</a></li>
-<li><a href="5.2-filter---filtern-von-variablen-zeilenweise.html#filter---filtern-von-variablen-zeilenweise"><span class="toc-section-number">5.2</span> filter() - Filtern von Variablen (zeilenweise)</a></li>
-<li><a href="5.3-arrange---sortieren-des-datensatzes.html#arrange---sortieren-des-datensatzes"><span class="toc-section-number">5.3</span> arrange() - Sortieren des Datensatzes</a></li>
-<li><a href="5.4-mutate---erstelle-neue-variablen.html#mutate---erstelle-neue-variablen"><span class="toc-section-number">5.4</span> mutate() - Erstelle neue Variablen</a></li>
-<li><a href="5.5-summarize---zusammenfassung-von-variablen.html#summarize---zusammenfassung-von-variablen"><span class="toc-section-number">5.5</span> summarize() - Zusammenfassung von Variablen</a></li>
-<li><a href="5.6-group_by---gruppiere-variablen.html#group_by---gruppiere-variablen"><span class="toc-section-number">5.6</span> group_by - Gruppiere Variablen</a></li>
-<li><a href="5.7-across---anwenden-von-funktionen-auf-spalten.html#across---anwenden-von-funktionen-auf-spalten"><span class="toc-section-number">5.7</span> across() - Anwenden von Funktionen auf Spalten</a></li>
-<li><a href="5.8-joins.html#joins"><span class="toc-section-number">5.8</span> joins</a></li>
-<li><a href="5.9-pivot_longer---long-data-format.html#pivot_longer---long-data-format"><span class="toc-section-number">5.9</span> pivot_longer() - Long data format</a></li>
-<li><a href="5.10-pivot_wider---wider-data-format.html#pivot_wider---wider-data-format"><span class="toc-section-number">5.10</span> pivot_wider() - wider data format</a></li>
-</ul></li>
-<li><a href="6-explorative-datenanalyse.html#explorative-datenanalyse"><span class="toc-section-number">6</span> Explorative-Datenanalyse</a>
-<ul>
-<li><a href="6.1-fehlende-werte-1.html#fehlende-werte-1"><span class="toc-section-number">6.1</span> Fehlende Werte</a></li>
-</ul></li>
-<li><a href="7-datenvisualisierung.html#datenvisualisierung"><span class="toc-section-number">7</span> Datenvisualisierung</a>
-<ul>
-<li><a href="7.1-ggplot2---grammar-of-graphics.html#ggplot2---grammar-of-graphics"><span class="toc-section-number">7.1</span> ggplot2 - grammar of graphics</a>
-<ul>
-<li><a href="7.1-ggplot2---grammar-of-graphics.html#schlüsselkomponenten"><span class="toc-section-number">7.1.1</span> Schlüsselkomponenten</a></li>
-<li><a href="7.1-ggplot2---grammar-of-graphics.html#aesthetics-color-size-shape"><span class="toc-section-number">7.1.2</span> Aesthetics (color, size, shape)</a></li>
-<li><a href="7.1-ggplot2---grammar-of-graphics.html#smoothers-and-models"><span class="toc-section-number">7.1.3</span> Smoothers and models</a></li>
-<li><a href="7.1-ggplot2---grammar-of-graphics.html#labels"><span class="toc-section-number">7.1.4</span> Labels</a></li>
-<li><a href="7.1-ggplot2---grammar-of-graphics.html#themes"><span class="toc-section-number">7.1.5</span> Themes</a></li>
-<li><a href="7.1-ggplot2---grammar-of-graphics.html#facets"><span class="toc-section-number">7.1.6</span> Facets</a></li>
-<li><a href="7.1-ggplot2---grammar-of-graphics.html#coordinate-system"><span class="toc-section-number">7.1.7</span> Coordinate system</a></li>
-<li><a href="7.1-ggplot2---grammar-of-graphics.html#annotations"><span class="toc-section-number">7.1.8</span> Annotations</a></li>
-</ul></li>
-<li><a href="7.2-verknüfpen-von-tidyverse-und-ggplot.html#verknüfpen-von-tidyverse-und-ggplot"><span class="toc-section-number">7.2</span> Verknüfpen von tidyverse und ggplot</a></li>
-<li><a href="7.3-arbeiten-mit-zeiten-1.html#arbeiten-mit-zeiten-1"><span class="toc-section-number">7.3</span> Arbeiten mit Zeiten</a>
-<ul>
-<li><a href="7.3-arbeiten-mit-zeiten-1.html#strings"><span class="toc-section-number">7.3.1</span> strings</a></li>
-<li><a href="7.3-arbeiten-mit-zeiten-1.html#von-individuellen-komponenten"><span class="toc-section-number">7.3.2</span> Von individuellen Komponenten</a></li>
-<li><a href="7.3-arbeiten-mit-zeiten-1.html#ein-bestehendes-objekt"><span class="toc-section-number">7.3.3</span> Ein bestehendes Objekt</a></li>
-<li><a href="7.3-arbeiten-mit-zeiten-1.html#darstellung-in-abbildungen"><span class="toc-section-number">7.3.4</span> Darstellung in Abbildungen</a></li>
-</ul></li>
-<li><a href="7.4-pivoting-to-longer-format.html#pivoting-to-longer-format"><span class="toc-section-number">7.4</span> pivoting to longer format</a></li>
-<li><a href="7.5-good-practices.html#good-practices"><span class="toc-section-number">7.5</span> Good practices</a></li>
-<li><a href="7.6-speichern-eines-plots.html#speichern-eines-plots"><span class="toc-section-number">7.6</span> Speichern eines plots</a></li>
-<li><a href="7.7-formen-der-darstellung.html#formen-der-darstellung"><span class="toc-section-number">7.7</span> Formen der Darstellung</a>
-<ul>
-<li><a href="7.7-formen-der-darstellung.html#overplotting"><span class="toc-section-number">7.7.1</span> Overplotting</a></li>
-<li><a href="7.7-formen-der-darstellung.html#positions-argument"><span class="toc-section-number">7.7.2</span> Positions Argument</a></li>
-<li><a href="7.7-formen-der-darstellung.html#inspirationen"><span class="toc-section-number">7.7.3</span> Inspirationen</a></li>
-</ul></li>
-<li><a href="7.8-farbauswahl.html#farbauswahl"><span class="toc-section-number">7.8</span> Farbauswahl</a>
-<ul>
-<li><a href="7.8-farbauswahl.html#beispiele-für-unterschiedliche-farben"><span class="toc-section-number">7.8.1</span> Beispiele für unterschiedliche Farben</a></li>
-</ul></li>
-</ul></li>
-<li><a href="8-karten-erstellen-in-r.html#karten-erstellen-in-r"><span class="toc-section-number">8</span> Karten erstellen in R 🌍</a>
-<ul>
-<li><a href="8.1-datenquellen.html#datenquellen"><span class="toc-section-number">8.1</span> Datenquellen</a></li>
-<li><a href="8.2-packages.html#packages"><span class="toc-section-number">8.2</span> Packages</a>
-<ul>
-<li><a href="8.2-packages.html#rgdal-package"><span class="toc-section-number">8.2.1</span> <code>rgdal</code> package</a></li>
-</ul></li>
-<li><a href="8.3-übungen.html#übungen"><span class="toc-section-number">8.3</span> Übungen</a>
-<ul>
-<li><a href="8.3-übungen.html#erstelle-eine-karte-der-bundesrepublik"><span class="toc-section-number">8.3.1</span> Erstelle eine Karte der Bundesrepublik</a></li>
-<li><a href="8.3-übungen.html#erstelle-eine-weltkarte"><span class="toc-section-number">8.3.2</span> Erstelle eine Weltkarte</a></li>
-</ul></li>
-</ul></li>
-<li><a href="9-statistische-auswertungen.html#statistische-auswertungen"><span class="toc-section-number">9</span> Statistische Auswertungen</a>
-<ul>
-<li><a href="9.1-verteilung-der-daten.html#verteilung-der-daten"><span class="toc-section-number">9.1</span> Verteilung der Daten</a></li>
-<li><a href="9.2-datentransformation.html#datentransformation"><span class="toc-section-number">9.2</span> Datentransformation</a></li>
-<li><a href="9.3-korrelationen.html#korrelationen"><span class="toc-section-number">9.3</span> Korrelationen</a>
-<ul>
-<li><a href="9.3-korrelationen.html#pearsons-korrelationkoeffizient-r"><span class="toc-section-number">9.3.1</span> Pearson’s Korrelationkoeffizient (r)</a></li>
-<li><a href="9.3-korrelationen.html#signifikanztest"><span class="toc-section-number">9.3.2</span> Signifikanztest</a></li>
-<li><a href="9.3-korrelationen.html#korrelation-vs.-regression"><span class="toc-section-number">9.3.3</span> Korrelation vs. Regression</a></li>
-</ul></li>
-<li><a href="9.4-pca.html#pca"><span class="toc-section-number">9.4</span> PCA</a>
-<ul>
-<li><a href="9.4-pca.html#datenauswahl"><span class="toc-section-number">9.4.1</span> Datenauswahl</a></li>
-<li><a href="9.4-pca.html#daten-standardisieren"><span class="toc-section-number">9.4.2</span> Daten Standardisieren</a></li>
-<li><a href="9.4-pca.html#eigenvalues"><span class="toc-section-number">9.4.3</span> Eigenvalues</a></li>
-<li><a href="9.4-pca.html#darstellen-der-ergebnisse"><span class="toc-section-number">9.4.4</span> Darstellen der Ergebnisse</a></li>
-</ul></li>
-</ul></li>
-<li><a href="10-datenmanagement.html#datenmanagement"><span class="toc-section-number">10</span> Datenmanagement</a></li>
-<li><a href="11-reporting-in-rmarkdown.html#reporting-in-rmarkdown"><span class="toc-section-number">11</span> Reporting in Rmarkdown</a>
-<ul>
-<li><a href="11.1-mathematische-befehle.html#mathematische-befehle"><span class="toc-section-number">11.1</span> Mathematische Befehle</a>
-<ul>
-<li><a href="11.1-mathematische-befehle.html#brüche"><span class="toc-section-number">11.1.1</span> Brüche</a></li>
-<li><a href="11.1-mathematische-befehle.html#hoch--und-tiefstellung"><span class="toc-section-number">11.1.2</span> Hoch- und Tiefstellung</a></li>
-<li><a href="11.1-mathematische-befehle.html#quadratwurzel"><span class="toc-section-number">11.1.3</span> Quadratwurzel</a></li>
-</ul></li>
-</ul></li>
-<li><a href="12-github.html#github"><span class="toc-section-number">12</span> Github</a>
-<ul>
-<li><a href="12.1-projekt-erstellen.html#projekt-erstellen"><span class="toc-section-number">12.1</span> Projekt erstellen</a>
-<ul>
-<li><a href="12.1-projekt-erstellen.html#workflow"><span class="toc-section-number">12.1.1</span> Workflow</a></li>
-<li><a href="12.1-projekt-erstellen.html#synchronisieren-vieler-dateien"><span class="toc-section-number">12.1.2</span> Synchronisieren vieler Dateien</a></li>
-<li><a href="12.1-projekt-erstellen.html#ordner-lokal-behalten-aber-auf-git-löschen"><span class="toc-section-number">12.1.3</span> Ordner lokal behalten aber auf Git löschen</a></li>
-</ul></li>
-<li><a href="12.2-cache-säubern.html#cache-säubern"><span class="toc-section-number">12.2</span> Cache säubern</a></li>
-</ul></li>
-<li><a href="13-bookdown.html#bookdown"><span class="toc-section-number">13</span> Bookdown</a>
-<ul>
-<li><a href="13.1-vorbereitung.html#vorbereitung"><span class="toc-section-number">13.1</span> Vorbereitung</a></li>
-<li><a href="13.2-github-pages.html#github-pages"><span class="toc-section-number">13.2</span> Github pages</a></li>
-<li><a href="13.3-emojiys.html#emojiys"><span class="toc-section-number">13.3</span> Emojiys</a></li>
-</ul></li>
-<li><a href="14-blogdown.html#blogdown"><span class="toc-section-number">14</span> Blogdown</a>
-<ul>
-<li><a href="14.1-setup-a-homepage-with-hugo-and-blogdown.html#setup-a-homepage-with-hugo-and-blogdown"><span class="toc-section-number">14.1</span> Setup a homepage with Hugo and blogdown</a></li>
-<li><a href="14.2-github-1.html#github-1"><span class="toc-section-number">14.2</span> Github</a></li>
-<li><a href="14.3-domain-name.html#domain-name"><span class="toc-section-number">14.3</span> Domain name</a></li>
-<li><a href="14.4-homepage.html#homepage"><span class="toc-section-number">14.4</span> Homepage</a></li>
-<li><a href="14.5-wowchemystarter-academic.html#wowchemystarter-academic"><span class="toc-section-number">14.5</span> “wowchemy/starter-academic”</a></li>
-<li><a href="14.6-where-to-adjust-the-homepage.html#where-to-adjust-the-homepage"><span class="toc-section-number">14.6</span> Where to adjust the Homepage</a></li>
-<li><a href="14.7-workflow-1.html#workflow-1"><span class="toc-section-number">14.7</span> Workflow</a></li>
-<li><a href="14.8-yaml-metadata.html#yaml-metadata"><span class="toc-section-number">14.8</span> YAML metadata</a></li>
-</ul></li>
-<li><a href="15-shiny.html#shiny"><span class="toc-section-number">15</span> Shiny</a>
-<ul>
-<li><a href="15.1-ui-benutzeroberfläche.html#ui-benutzeroberfläche"><span class="toc-section-number">15.1</span> UI Benutzeroberfläche</a></li>
-<li><a href="15.2-welche-befehle-sollen-ausgeführt-werden.html#welche-befehle-sollen-ausgeführt-werden"><span class="toc-section-number">15.2</span> Welche Befehle sollen ausgeführt werden</a></li>
-<li><a href="15.3-beispiel-speicherkoog.html#beispiel-speicherkoog"><span class="toc-section-number">15.3</span> Beispiel Speicherkoog</a></li>
-</ul></li>
-<li><a href="16-diverses.html#diverses"><span class="toc-section-number">16</span> Diverses</a>
-<ul>
-<li><a href="16.1-entfernen-aller-packages.html#entfernen-aller-packages"><span class="toc-section-number">16.1</span> Entfernen aller packages</a></li>
-<li><a href="16.2-shortcuts.html#shortcuts"><span class="toc-section-number">16.2</span> Shortcuts</a></li>
-<li><a href="16.3-faqs.html#faqs"><span class="toc-section-number">16.3</span> FAQs</a>
-<ul>
-<li><a href="16.3-faqs.html#kalender-erstellen"><span class="toc-section-number">16.3.1</span> Kalender erstellen</a></li>
-<li><a href="16.3-faqs.html#rstudio-1"><span class="toc-section-number">16.3.2</span> RStudio</a></li>
-<li><a href="16.3-faqs.html#datenmanipulation"><span class="toc-section-number">16.3.3</span> Datenmanipulation</a></li>
-</ul></li>
-<li><a href="16.4-visualisation.html#visualisation"><span class="toc-section-number">16.4</span> Visualisation</a>
-<ul>
-<li><a href="16.4-visualisation.html#superscripts-and-subscripts"><span class="toc-section-number">16.4.1</span> Superscripts and subscripts</a></li>
-<li><a href="16.4-visualisation.html#modifying-labels-in-faceted-plots"><span class="toc-section-number">16.4.2</span> Modifying labels in faceted plots</a></li>
-</ul></li>
-<li><a href="16.5-glossary.html#glossary"><span class="toc-section-number">16.5</span> Glossary</a></li>
-</ul></li>
 </ul>
 </div>
 </div>
@@ -385,7 +228,7 @@ details > summary {
 <li><code>double</code> (auch als <code>numeric</code> bezeichnet; c(1L, 2L, 3L))</li>
 <li><code>character</code> (c(“these are”, “some strings”))</li>
 </ul>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-41"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-42"></span>
 <img src="images/079.png" alt="Atomic vectors, source: https://adv-r.hadley.nz/vectors-chap.html" width="100%" />
 <p class="caption">
 Figure 3.4: Atomic vectors, source: <a href="https://adv-r.hadley.nz/vectors-chap.html" class="uri">https://adv-r.hadley.nz/vectors-chap.html</a>
@@ -423,31 +266,31 @@ Figure 3.4: Atomic vectors, source: <a href="https://adv-r.hadley.nz/vectors-cha
 <div id="numerische-objekte" class="section level3" number="3.1.1">
 <h3><span class="header-section-number">3.1.1</span> Numerische Objekte</h3>
 <p>Zahlenwerte in R werden als <code>numeric</code> bezeichnet mit der Unterteilung in <code>integer</code> (ganze Zahlen) oder <code>double</code> (Dezimalzahlen). Die Zuweisung von R, selbst wenn ich eine ganze Zahl zuweise, ist jedoch vom Typ double.</p>
-<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="3.1-datentypen.html#cb20-1" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="dv">4</span></span>
-<span id="cb20-2"><a href="3.1-datentypen.html#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="fu">typeof</span>(a)</span>
-<span id="cb20-3"><a href="3.1-datentypen.html#cb20-3" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] &quot;double&quot;</span></span></code></pre></div>
+<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="3.1-datentypen.html#cb21-1" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="dv">4</span></span>
+<span id="cb21-2"><a href="3.1-datentypen.html#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="fu">typeof</span>(a)</span>
+<span id="cb21-3"><a href="3.1-datentypen.html#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] &quot;double&quot;</span></span></code></pre></div>
 <p>💡 Mit der Funktion <code>typeof()</code> kann der Objekttyp erfragt werden.</p>
 <p>Um eine ganze Zahl wiederzugeben muss ein L hinter die Zahl gesetzt werden.</p>
-<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="3.1-datentypen.html#cb21-1" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> 4L</span>
-<span id="cb21-2"><a href="3.1-datentypen.html#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="fu">typeof</span>(a)</span>
-<span id="cb21-3"><a href="3.1-datentypen.html#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] &quot;integer&quot;</span></span></code></pre></div>
+<div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb22-1"><a href="3.1-datentypen.html#cb22-1" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> 4L</span>
+<span id="cb22-2"><a href="3.1-datentypen.html#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="fu">typeof</span>(a)</span>
+<span id="cb22-3"><a href="3.1-datentypen.html#cb22-3" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] &quot;integer&quot;</span></span></code></pre></div>
 </div>
 <div id="textobjekte" class="section level3" number="3.1.2">
 <h3><span class="header-section-number">3.1.2</span> Textobjekte</h3>
 <p>Ein <code>character</code> Objekt sind Namen wie <code>"Kristof"</code>, <code>"Tim"</code>, <code>"Beste Norddeutschland Exkursion der Welt"</code> (Textvariablen werden auch als <em>string</em> bezeichnet). Um ein <code>character</code> Objekt zu definieren sind die Anführungsstriche als einfache <code>' '</code> oder doppelte <code>" "</code> Anführungszeichen wichtig!</p>
-<div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb22-1"><a href="3.1-datentypen.html#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Dies sind alles character Objekte </span></span>
-<span id="cb22-2"><a href="3.1-datentypen.html#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="st">&quot;Kristof&quot;</span></span>
-<span id="cb22-3"><a href="3.1-datentypen.html#cb22-3" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] &quot;Kristof&quot;</span></span>
-<span id="cb22-4"><a href="3.1-datentypen.html#cb22-4" aria-hidden="true" tabindex="-1"></a><span class="st">&quot;Tim&quot;</span></span>
-<span id="cb22-5"><a href="3.1-datentypen.html#cb22-5" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] &quot;Tim&quot;</span></span>
-<span id="cb22-6"><a href="3.1-datentypen.html#cb22-6" aria-hidden="true" tabindex="-1"></a><span class="st">&quot;Beste Norddeutschland Exkursion der Welt&quot;</span></span>
-<span id="cb22-7"><a href="3.1-datentypen.html#cb22-7" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] &quot;Beste Norddeutschland Exkursion der Welt&quot;</span></span></code></pre></div>
+<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb23-1"><a href="3.1-datentypen.html#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Dies sind alles character Objekte </span></span>
+<span id="cb23-2"><a href="3.1-datentypen.html#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="st">&quot;Kristof&quot;</span></span>
+<span id="cb23-3"><a href="3.1-datentypen.html#cb23-3" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] &quot;Kristof&quot;</span></span>
+<span id="cb23-4"><a href="3.1-datentypen.html#cb23-4" aria-hidden="true" tabindex="-1"></a><span class="st">&quot;Tim&quot;</span></span>
+<span id="cb23-5"><a href="3.1-datentypen.html#cb23-5" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] &quot;Tim&quot;</span></span>
+<span id="cb23-6"><a href="3.1-datentypen.html#cb23-6" aria-hidden="true" tabindex="-1"></a><span class="st">&quot;Beste Norddeutschland Exkursion der Welt&quot;</span></span>
+<span id="cb23-7"><a href="3.1-datentypen.html#cb23-7" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] &quot;Beste Norddeutschland Exkursion der Welt&quot;</span></span></code></pre></div>
 <p>Bestimmte Funktionen brauchen einen numerical input, wohingegen andere einen character input benötigen. Schaue was passiert:</p>
-<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb23-1"><a href="3.1-datentypen.html#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(<span class="fu">c</span>(<span class="st">&quot;5&quot;</span>, <span class="st">&quot;1&quot;</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb24-1"><a href="3.1-datentypen.html#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(<span class="fu">c</span>(<span class="st">&quot;5&quot;</span>, <span class="st">&quot;1&quot;</span>))</span></code></pre></div>
 <p><strong>Warnmeldung:In mean.default(c(“5”, “1”)) :Argument ist weder numerisch noch boolesch: gebe NA zurück</strong></p>
 <p>Lasse ich die Anführungsstriche weg, dann ist wieder alles im Lot:</p>
-<div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb24-1"><a href="3.1-datentypen.html#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(<span class="fu">c</span>(<span class="dv">5</span>, <span class="dv">1</span>))</span>
-<span id="cb24-2"><a href="3.1-datentypen.html#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] 3</span></span></code></pre></div>
+<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="3.1-datentypen.html#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(<span class="fu">c</span>(<span class="dv">5</span>, <span class="dv">1</span>))</span>
+<span id="cb25-2"><a href="3.1-datentypen.html#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] 3</span></span></code></pre></div>
 </div>
 <div id="logicals" class="section level3" number="3.1.3">
 <h3><span class="header-section-number">3.1.3</span> Logicals</h3>
@@ -498,18 +341,18 @@ Figure 3.4: Atomic vectors, source: <a href="https://adv-r.hadley.nz/vectors-cha
 <div id="fehlende-werte" class="section level3" number="3.1.4">
 <h3><span class="header-section-number">3.1.4</span> Fehlende Werte</h3>
 <p>In R werden fehlende Werte mit <code>NA</code> für <code>not available</code> gekennzeichnet. Für bestimmte Funktionen und Anwendungen ist es wichtig, falls ein <code>NA</code> Wert in einer Zeitreihe auftritt (🤯 …leider ist dies in langen Zeitreihen fast immer der Fall), R explizit zu sagen was mit diesen Werten getan werden soll.</p>
-<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="3.1-datentypen.html#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Ich habe einen Vektor mit einem fehlenden Wert NA</span></span>
-<span id="cb25-2"><a href="3.1-datentypen.html#cb25-2" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="cn">NA</span>,<span class="dv">5</span>)</span>
-<span id="cb25-3"><a href="3.1-datentypen.html#cb25-3" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(a)</span>
-<span id="cb25-4"><a href="3.1-datentypen.html#cb25-4" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] NA</span></span></code></pre></div>
+<div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb26-1"><a href="3.1-datentypen.html#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Ich habe einen Vektor mit einem fehlenden Wert NA</span></span>
+<span id="cb26-2"><a href="3.1-datentypen.html#cb26-2" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="cn">NA</span>,<span class="dv">5</span>)</span>
+<span id="cb26-3"><a href="3.1-datentypen.html#cb26-3" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(a)</span>
+<span id="cb26-4"><a href="3.1-datentypen.html#cb26-4" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] NA</span></span></code></pre></div>
 <p>Hm…der Mittelwert von 1,2,3,4,NA und 5 ist NA und nicht eine Zahl? Wie kommt das bloß. In dem Fall ist es nützlich in die Dokumentation der Funktion <code>mean()</code> nachzuschauen.</p>
-<div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb26-1"><a href="3.1-datentypen.html#cb26-1" aria-hidden="true" tabindex="-1"></a>?mean</span></code></pre></div>
+<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="3.1-datentypen.html#cb27-1" aria-hidden="true" tabindex="-1"></a>?mean</span></code></pre></div>
 <p><strong>Default S3 method: mean(x, trim = 0, na.rm = FALSE, …)</strong></p>
 <p>Die default Argumente der Funktion lauten <code>na.rm = FALSE</code>, was soviel bedeutet <strong>na</strong> Werte nicht zu entfernen sondern in die Berechnung mit einzubeziehen.</p>
 <p>💡 na steht für fehlende Werte (NA) und rm ist die Kurzform für remove, also entfernen.</p>
 <p>Damit unsere Rechnung funktioniert müssen wir in der <code>mean()</code> Funktion das Argument <code>na.rm = TRUE</code> setzen, also erst die fehlende Werte entfernen und dann den Mittelwert berechnen:</p>
-<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="3.1-datentypen.html#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(a, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb27-2"><a href="3.1-datentypen.html#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] 3</span></span></code></pre></div>
+<div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb28-1"><a href="3.1-datentypen.html#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(a, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb28-2"><a href="3.1-datentypen.html#cb28-2" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] 3</span></span></code></pre></div>
 <p>💪 Es funktioniert! Dies ist tatsächlich einer der häufigsten Fehler und egal wie häufig man daran denkt, es kommt immer wieder vor das dies einer der Gründe ist warum man sich Stunden den Kopf über ein nicht funktionierendes Skript zerbricht 🤯</p>
 </div>
 <div id="weitere-objekttypen" class="section level3" number="3.1.5">
@@ -530,7 +373,7 @@ Figure 3.4: Atomic vectors, source: <a href="https://adv-r.hadley.nz/vectors-cha
 <li>class (bedient S3 Objekte, bspw. <code>factor</code>, <code>date</code> und <code>POSIXct</code>)</li>
 </ul>
 <p>Wenn ein Objekt in R ein <em>class</em> Attribut besitzt wird es automatisch in ein <strong>S3 object</strong> umgewandelt und unterscheidet sich dadurch von einem normalen Vektor.</p>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-50"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-51"></span>
 <img src="images/080.png" alt="S3 atomic vectors, source: https://adv-r.hadley.nz/vectors-chap.html" width="100%" />
 <p class="caption">
 Figure 3.5: S3 atomic vectors, source: <a href="https://adv-r.hadley.nz/vectors-chap.html" class="uri">https://adv-r.hadley.nz/vectors-chap.html</a>
@@ -542,14 +385,14 @@ Figure 3.5: S3 atomic vectors, source: <a href="https://adv-r.hadley.nz/vectors-
 <div id="objekttypen-ändern" class="section level3" number="3.1.6">
 <h3><span class="header-section-number">3.1.6</span> Objekttypen ändern</h3>
 <p>Die Syntax in R um Objekte umzuwandeln lautet <code>as.[Objekttyp]</code>.</p>
-<div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb28-1"><a href="3.1-datentypen.html#cb28-1" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="st">&quot;25&quot;</span></span>
-<span id="cb28-2"><a href="3.1-datentypen.html#cb28-2" aria-hidden="true" tabindex="-1"></a><span class="fu">typeof</span>(a)</span>
-<span id="cb28-3"><a href="3.1-datentypen.html#cb28-3" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] &quot;character&quot;</span></span>
-<span id="cb28-4"><a href="3.1-datentypen.html#cb28-4" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(a)</span>
-<span id="cb28-5"><a href="3.1-datentypen.html#cb28-5" aria-hidden="true" tabindex="-1"></a><span class="fu">typeof</span>(a)</span>
-<span id="cb28-6"><a href="3.1-datentypen.html#cb28-6" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] &quot;double&quot;</span></span></code></pre></div>
+<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="3.1-datentypen.html#cb29-1" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="st">&quot;25&quot;</span></span>
+<span id="cb29-2"><a href="3.1-datentypen.html#cb29-2" aria-hidden="true" tabindex="-1"></a><span class="fu">typeof</span>(a)</span>
+<span id="cb29-3"><a href="3.1-datentypen.html#cb29-3" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] &quot;character&quot;</span></span>
+<span id="cb29-4"><a href="3.1-datentypen.html#cb29-4" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(a)</span>
+<span id="cb29-5"><a href="3.1-datentypen.html#cb29-5" aria-hidden="true" tabindex="-1"></a><span class="fu">typeof</span>(a)</span>
+<span id="cb29-6"><a href="3.1-datentypen.html#cb29-6" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] &quot;double&quot;</span></span></code></pre></div>
 <p>Dies klappt allerdings nur, insofern die Umwandlung logisch ist. In allen anderen Fällen gibt es eine Warnmeldung unter Erzeugung von <code>NA</code>s anstelle der Werte.</p>
-<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="3.1-datentypen.html#cb29-1" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(<span class="st">&quot;Beste Norddeutschland Exkursion der Welt&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb30"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb30-1"><a href="3.1-datentypen.html#cb30-1" aria-hidden="true" tabindex="-1"></a>a <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(<span class="st">&quot;Beste Norddeutschland Exkursion der Welt&quot;</span>)</span></code></pre></div>
 <p><strong>## Warning: NAs introduced by coercion</strong></p>
 </div>
 </div>
